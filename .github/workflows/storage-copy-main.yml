@@ -3,6 +3,9 @@ name: Blob storage website CI
 on:
     push:
         branches: [ main ]
+    pull_request:
+        types: [opened, synchronize, reopened, closed]
+        branches: [main]
 
 jobs:
   build:
@@ -32,3 +35,14 @@ jobs:
       run: |
             az logout
       if: always()
+      
+  close_pull_request_job:
+    if: github.event_name == 'pull_request' && github.event.action == 'closed'
+    runs-on: ubuntu-latest
+    name: Close Pull Request Job
+    steps:
+      - name: Close Pull Request
+        uses: superbrothers/close-pull-request@v3
+        with:
+        # Optional. Post a issue comment just before closing a pull request.
+                comment: "Closing PR"
