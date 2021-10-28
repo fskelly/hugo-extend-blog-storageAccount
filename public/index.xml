@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Fletcher&#39;s Cloud Journey</title>
-        <link>https://cloud.fskelly.com/</link>
+        <link>https://cloudadventures.fskelly.com/</link>
         <description>Recent content on Fletcher&#39;s Cloud Journey</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 25 Aug 2021 05:58:18 +0200</lastBuildDate><atom:link href="https://cloud.fskelly.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 25 Aug 2021 05:58:18 +0200</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Azure Resource Group Enterprise Scale Landing Zone queries</title>
-        <link>https://cloud.fskelly.com/p/azure-resource-group-enterprise-scale-landing-zone-queries/</link>
+        <link>https://cloudadventures.fskelly.com/p/azure-resource-group-enterprise-scale-landing-zone-queries/</link>
         <pubDate>Wed, 25 Aug 2021 05:58:18 +0200</pubDate>
         
-        <guid>https://cloud.fskelly.com/p/azure-resource-group-enterprise-scale-landing-zone-queries/</guid>
+        <guid>https://cloudadventures.fskelly.com/p/azure-resource-group-enterprise-scale-landing-zone-queries/</guid>
         <description>&lt;h1 id=&#34;azure-resource-graph-examples&#34;&gt;Azure Resource Graph Examples&lt;/h1&gt;
 &lt;p&gt;😄&lt;/p&gt;
 &lt;!-- ![Azure Resource Graph](resourcegraph-scaled.png) --&gt;
@@ -48,10 +48,10 @@
         </item>
         <item>
         <title>Bicep Troubleshooting</title>
-        <link>https://cloud.fskelly.com/p/bicep-troubleshooting/</link>
+        <link>https://cloudadventures.fskelly.com/p/bicep-troubleshooting/</link>
         <pubDate>Fri, 02 Jul 2021 05:40:16 +0200</pubDate>
         
-        <guid>https://cloud.fskelly.com/p/bicep-troubleshooting/</guid>
+        <guid>https://cloudadventures.fskelly.com/p/bicep-troubleshooting/</guid>
         <description>&lt;h1 id=&#34;some-basic-troubleshooting-with-azure-bicephttpsdocsmicrosoftcomen-usazureazure-resource-managerbicepoverview&#34;&gt;Some basic &amp;ldquo;troubleshooting&amp;rdquo; with &lt;a class=&#34;link&#34; href=&#34;https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Azure Bicep&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;So, let me start with this. The team and the community behind Azure Bicep are amazing. There are some great examples &lt;a class=&#34;link&#34; href=&#34;https://github.com/Azure/bicep&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -99,10 +99,10 @@
         </item>
         <item>
         <title>Cli List Locations and Peers</title>
-        <link>https://cloud.fskelly.com/p/cli-list-locations-and-peers/</link>
+        <link>https://cloudadventures.fskelly.com/p/cli-list-locations-and-peers/</link>
         <pubDate>Wed, 05 May 2021 07:03:02 +0200</pubDate>
         
-        <guid>https://cloud.fskelly.com/p/cli-list-locations-and-peers/</guid>
+        <guid>https://cloudadventures.fskelly.com/p/cli-list-locations-and-peers/</guid>
         <description>&lt;h1 id=&#34;how-to-use-the-azure-cli-to-list-azure-locations-and-their-peers&#34;&gt;How to use the Azure CLI to list Azure Locations and their peers&lt;/h1&gt;
 &lt;p&gt;So this will be a &amp;ldquo;quick post&amp;rdquo; that shows some great functionality within the &lt;a class=&#34;link&#34; href=&#34;https://docs.microsoft.com/en-us/cli/azure/install-azure-cli&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Azure CLI&lt;/a&gt; with &lt;code&gt;az account list-locations&lt;/code&gt;. With this command you can expect some output like below, you actually get a lot of content back.&lt;/p&gt;
@@ -161,10 +161,10 @@
         </item>
         <item>
         <title>Azure Rest Api Postman Basics</title>
-        <link>https://cloud.fskelly.com/p/azure-rest-api-postman-basics/</link>
+        <link>https://cloudadventures.fskelly.com/p/azure-rest-api-postman-basics/</link>
         <pubDate>Wed, 14 Apr 2021 09:02:18 +0200</pubDate>
         
-        <guid>https://cloud.fskelly.com/p/azure-rest-api-postman-basics/</guid>
+        <guid>https://cloudadventures.fskelly.com/p/azure-rest-api-postman-basics/</guid>
         <description>&lt;h1 id=&#34;absolute-basics-with-azure-and-postmanwwwpostmancom&#34;&gt;Absolute basics with Azure and &lt;a class=&#34;link&#34; href=&#34;www.postman.com&#34; &gt;PostMan&lt;/a&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;getting-started&#34;&gt;Getting started&lt;/h2&gt;
 &lt;p&gt;Many of the articles I have found online with regards to the &lt;a class=&#34;link&#34; href=&#34;https://docs.microsoft.com/en-us/rest/api/azure/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -249,10 +249,10 @@ With most of the Postman queries, the &amp;ldquo;&lt;strong&gt;Pre-request Scrip
         </item>
         <item>
         <title>Expiring Keys and Secrets within Azure Key Vault</title>
-        <link>https://cloud.fskelly.com/p/expiring-keys-and-secrets-within-azure-key-vault/</link>
+        <link>https://cloudadventures.fskelly.com/p/expiring-keys-and-secrets-within-azure-key-vault/</link>
         <pubDate>Mon, 18 Jan 2021 07:06:03 +0200</pubDate>
         
-        <guid>https://cloud.fskelly.com/p/expiring-keys-and-secrets-within-azure-key-vault/</guid>
+        <guid>https://cloudadventures.fskelly.com/p/expiring-keys-and-secrets-within-azure-key-vault/</guid>
         <description>&lt;p&gt;I was working with a customer the other day and a fairly simple ask came up, I however could not find an immediate answer within the portal.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;How do I check for expiring keys within the Azure KeyVault?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Now being a PowerShell person, I never gave this much thought as for most tasks or actions I perform on the Azure Platform is done through PowerShell, AP, or CLI. So easy enough, however, not everyone knows how to do this in PowerShell. So, I created a simple script.&lt;/p&gt;
@@ -295,10 +295,10 @@ With most of the Postman queries, the &amp;ldquo;&lt;strong&gt;Pre-request Scrip
         </item>
         <item>
         <title>Azure Ghost Cms and Cdn</title>
-        <link>https://cloud.fskelly.com/p/azure-ghost-cms-and-cdn/</link>
+        <link>https://cloudadventures.fskelly.com/p/azure-ghost-cms-and-cdn/</link>
         <pubDate>Mon, 11 Jan 2021 07:00:18 +0200</pubDate>
         
-        <guid>https://cloud.fskelly.com/p/azure-ghost-cms-and-cdn/</guid>
+        <guid>https://cloudadventures.fskelly.com/p/azure-ghost-cms-and-cdn/</guid>
         <description>&lt;p&gt;I moved my blog onto HUGO. Not everyone would want to do this necessarily, there is a bit of a learning curve, part of the reason &lt;strong&gt;I DID IT&lt;/strong&gt; :). However there are other platforms you can use and still add more functionality if you want.&lt;/p&gt;
 &lt;p&gt;You can use &lt;a class=&#34;link&#34; href=&#34;https://ghost.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Ghost&lt;/a&gt; and add an &lt;a class=&#34;link&#34; href=&#34;https://docs.microsoft.com/en-us/azure/cdn/cdn-overview&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -541,10 +541,10 @@ This process should not take too long, but now we want a &lt;strong&gt;certifica
         </item>
         <item>
         <title>My New Blog Home with Azure Static Web App</title>
-        <link>https://cloud.fskelly.com/p/my-new-blog-home-with-azure-static-web-app/</link>
+        <link>https://cloudadventures.fskelly.com/p/my-new-blog-home-with-azure-static-web-app/</link>
         <pubDate>Tue, 05 Jan 2021 15:57:04 +0200</pubDate>
         
-        <guid>https://cloud.fskelly.com/p/my-new-blog-home-with-azure-static-web-app/</guid>
+        <guid>https://cloudadventures.fskelly.com/p/my-new-blog-home-with-azure-static-web-app/</guid>
         <description>&lt;p&gt;So, I have spent the last few days / weeks deciding the best way to host a blog. Now I have a decidedly &amp;ldquo;split personality&amp;rdquo;. By this I mean I like to segregate my work and personal hobbies. This can be quite beneficial as this allows me to test a few things.&lt;/p&gt;
 &lt;h3 id=&#34;a-few-key-decisions&#34;&gt;A few key decisions&lt;/h3&gt;
 &lt;ol&gt;
@@ -567,10 +567,10 @@ This process should not take too long, but now we want a &lt;strong&gt;certifica
         </item>
         <item>
         <title>Importance of Networking Azure</title>
-        <link>https://cloud.fskelly.com/p/importance-of-networking-azure/</link>
+        <link>https://cloudadventures.fskelly.com/p/importance-of-networking-azure/</link>
         <pubDate>Wed, 07 Aug 2019 16:33:36 +0200</pubDate>
         
-        <guid>https://cloud.fskelly.com/p/importance-of-networking-azure/</guid>
+        <guid>https://cloudadventures.fskelly.com/p/importance-of-networking-azure/</guid>
         <description>&lt;p&gt;As a start to this blog post, I think it is important to understand how I see my role as a CSA (Cloud Solution Architect) with my customer. I am primarily a trusted advisor and my customers respect what I have to say, I question and challenge my customers in a constructive way to approach the challenge or problem statement in a different way. I have an amazing role of using Azure as my LEGO playpen and then building a custom solution (LEGO model) to help my customers.&lt;/p&gt;
 &lt;p&gt;So, of late I have been having a lot of networking discussions with my customers. Now these discussions have been ranging from a new customer to a very advanced customer that has been using Azure for quite some time. These have also ranged from new connection options to extend their on-premises connectivity into Azure, which we call &amp;ldquo;Hybrid Connectivity&amp;rdquo;, as well as networking considerations once in the cloud with Azure Native connectivity such AKS (Azure Kubernetes Service) and ACI (Azure Container Instances) to simply name the current most top of mind topics.&lt;/p&gt;
 &lt;p&gt;So, having these discussions is not an uncommon practice and these are the types of discussions that should be happening, there is nothing wrong with this. All that is happening more and more often is that these discussions are happening in isolation as opposed to the customer working on having a holistic approach to this discussion and working on a full cloud networking solution.&lt;/p&gt;
@@ -580,10 +580,10 @@ This process should not take too long, but now we want a &lt;strong&gt;certifica
         </item>
         <item>
         <title>Csa Tools of the Trade</title>
-        <link>https://cloud.fskelly.com/p/csa-tools-of-the-trade/</link>
+        <link>https://cloudadventures.fskelly.com/p/csa-tools-of-the-trade/</link>
         <pubDate>Tue, 09 Jul 2019 16:46:43 +0200</pubDate>
         
-        <guid>https://cloud.fskelly.com/p/csa-tools-of-the-trade/</guid>
+        <guid>https://cloudadventures.fskelly.com/p/csa-tools-of-the-trade/</guid>
         <description>&lt;p&gt;So a question I often get asked is &amp;ldquo;what tools or products do you use?&amp;rdquo;. So I decided to do a post around the tools and technologies that I personally use on a daily basis. So to start this is what people see on my screen on a daily basis.&lt;/p&gt;
 &lt;p&gt;&lt;figure 
 	&gt;
@@ -630,10 +630,10 @@ This process should not take too long, but now we want a &lt;strong&gt;certifica
         </item>
         <item>
         <title>Network Security Group Change Alerting</title>
-        <link>https://cloud.fskelly.com/p/network-security-group-change-alerting/</link>
+        <link>https://cloudadventures.fskelly.com/p/network-security-group-change-alerting/</link>
         <pubDate>Wed, 20 Feb 2019 08:21:49 +0200</pubDate>
         
-        <guid>https://cloud.fskelly.com/p/network-security-group-change-alerting/</guid>
+        <guid>https://cloudadventures.fskelly.com/p/network-security-group-change-alerting/</guid>
         <description>&lt;p&gt;So, I was with a customer and they are asking for a fairly standard alert.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&amp;ldquo;Please alert me when an NSG is added or modified&amp;rdquo;&lt;/strong&gt;. Seems simply enough, however this is not as simply as you think. So I used my favourite search and found the following, “How to receive an email on Azure Network Security Group Rule changes“, this is great content and after testing, it works exactly as expected. I just found one little concern with this approach; this is simply finding the required ID for the action group. I have now investigated and found some code to make this a little easier.&lt;/p&gt;
 &lt;p&gt;AZ CLI&lt;/p&gt;

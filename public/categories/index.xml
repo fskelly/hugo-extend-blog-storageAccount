@@ -2,71 +2,71 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Fletcher&#39;s Cloud Journey</title>
-    <link>https://cloud.fskelly.com/categories/</link>
+    <link>https://cloudadventures.fskelly.com/categories/</link>
     <description>Recent content in Categories on Fletcher&#39;s Cloud Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Aug 2021 05:58:18 +0200</lastBuildDate><atom:link href="https://cloud.fskelly.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Aug 2021 05:58:18 +0200</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Azure</title>
-      <link>https://cloud.fskelly.com/categories/azure/</link>
+      <link>https://cloudadventures.fskelly.com/categories/azure/</link>
       <pubDate>Wed, 25 Aug 2021 05:58:18 +0200</pubDate>
       
-      <guid>https://cloud.fskelly.com/categories/azure/</guid>
+      <guid>https://cloudadventures.fskelly.com/categories/azure/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Resource Graph</title>
-      <link>https://cloud.fskelly.com/categories/resource-graph/</link>
+      <link>https://cloudadventures.fskelly.com/categories/resource-graph/</link>
       <pubDate>Wed, 25 Aug 2021 05:58:18 +0200</pubDate>
       
-      <guid>https://cloud.fskelly.com/categories/resource-graph/</guid>
+      <guid>https://cloudadventures.fskelly.com/categories/resource-graph/</guid>
       <description></description>
     </item>
     
     <item>
       <title>IaC</title>
-      <link>https://cloud.fskelly.com/categories/iac/</link>
+      <link>https://cloudadventures.fskelly.com/categories/iac/</link>
       <pubDate>Fri, 02 Jul 2021 05:40:16 +0200</pubDate>
       
-      <guid>https://cloud.fskelly.com/categories/iac/</guid>
+      <guid>https://cloudadventures.fskelly.com/categories/iac/</guid>
       <description></description>
     </item>
     
     <item>
       <title>AZ CLI</title>
-      <link>https://cloud.fskelly.com/categories/az-cli/</link>
+      <link>https://cloudadventures.fskelly.com/categories/az-cli/</link>
       <pubDate>Wed, 05 May 2021 07:03:02 +0200</pubDate>
       
-      <guid>https://cloud.fskelly.com/categories/az-cli/</guid>
+      <guid>https://cloudadventures.fskelly.com/categories/az-cli/</guid>
       <description></description>
     </item>
     
     <item>
       <title>command line</title>
-      <link>https://cloud.fskelly.com/categories/command-line/</link>
+      <link>https://cloudadventures.fskelly.com/categories/command-line/</link>
       <pubDate>Wed, 05 May 2021 07:03:02 +0200</pubDate>
       
-      <guid>https://cloud.fskelly.com/categories/command-line/</guid>
+      <guid>https://cloudadventures.fskelly.com/categories/command-line/</guid>
       <description></description>
     </item>
     
     <item>
       <title>API</title>
-      <link>https://cloud.fskelly.com/categories/api/</link>
+      <link>https://cloudadventures.fskelly.com/categories/api/</link>
       <pubDate>Wed, 14 Apr 2021 09:02:18 +0200</pubDate>
       
-      <guid>https://cloud.fskelly.com/categories/api/</guid>
+      <guid>https://cloudadventures.fskelly.com/categories/api/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Test</title>
-      <link>https://cloud.fskelly.com/categories/test/</link>
+      <link>https://cloudadventures.fskelly.com/categories/test/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cloud.fskelly.com/categories/test/</guid>
+      <guid>https://cloudadventures.fskelly.com/categories/test/</guid>
       <description></description>
     </item>
     
