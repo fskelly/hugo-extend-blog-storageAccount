@@ -22,7 +22,6 @@ _testmain.go
 *.exe
 *.test
 
-public
 #/themes
 .DS_Store
 /themes/hugo-theme-stack/i18n/de.yaml
