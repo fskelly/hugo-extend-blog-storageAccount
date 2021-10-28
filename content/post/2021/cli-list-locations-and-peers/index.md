@@ -1,7 +1,7 @@
 ---
 title: "Cli List Locations and Peers"
 date: 2021-05-05T07:03:02+02:00
-Description: ""
+Description: "Using the Azure cli to return data centre locations and their peers"
 Tags: ["quick post", "az cli"]
 Categories: ["command line", "Azure", "AZ CLI"]
 DisableComments: false
