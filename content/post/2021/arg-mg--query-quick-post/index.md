@@ -12,6 +12,8 @@ categories:
 
 # Azure Resource Graph Examples
 
+:smile:
+
 <!-- ![Azure Resource Graph](resourcegraph-scaled.png) -->
 
 <!-- {{< figure src="resourcegraph-scaled.png" title="Azure Resource Graph">}} -->
