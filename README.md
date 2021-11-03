@@ -19,5 +19,5 @@ This is the backend of my [Azure Storage Account based blog](https://cloudadvent
 
 See below for the badge for the status of this process :smile:
 
-[![Blob storage website CI](https://github.com/fskelly/hugo-extend-blog-storageAccount/actions/workflows/storage-copy-main.yml/badge.svg?branch=main)](https://github.com/fskelly/hugo-extend-blog-storageAccount/actions/workflows/storage-copy-main.yml)
+[![Blob storage website CI](https://github.com/fskelly/hugo-extend-blog-storageAccount/actions/workflows/storage-copy-main.yml/badge.svg?branch=main)](https://github.com/fskelly/hugo-extend-blog-storageAccount/actions/workflows/storage-copy-main.yml)  
 [![Blob Storage Copy - PreProd](https://github.com/fskelly/hugo-extend-blog-storageAccount/actions/workflows/preprod.yml/badge.svg)](https://github.com/fskelly/hugo-extend-blog-storageAccount/actions/workflows/preprod.yml)
