@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Management Pack on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/management-pack/</link>
+    <description>Recent content in Management Pack on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 09 Jul 2012 05:43:13 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/management-pack/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Service Requests – Re-assignment notification</title>
+      <link>https://cloudadventures.fskelly.com/2012/07/09/service-requests-re-assignment-notification/</link>
+      <pubDate>Mon, 09 Jul 2012 05:43:13 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/07/09/service-requests-re-assignment-notification/</guid>
+      <description>So, in an effort to get my business ready for Service Requests as we use mainly Incidents and we are beginning our journey into Service Requests and differentiating between Service Requests (day to day operations) and Incidents (something is broken), I needed to reproduce a workflow to notify the “AssignedToUser” when a new Service Request is assigned to him or her. I already had a downloaded Management Pack for Incident Re-assignment notifications which was modified for my purposes, so this was a good place to start.</description>
+    </item>
+    
+  </channel>
+</rss>

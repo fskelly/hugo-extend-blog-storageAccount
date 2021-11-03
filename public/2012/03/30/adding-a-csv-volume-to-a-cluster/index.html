@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+     Adding a CSV volume to a Cluster | 
+    Fletcher&#39;s Tech Blog
+  
+</title><meta name="description" content="A day in the life of a Cloud Engineer."><meta name="author" content="Fletcher Kelly">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="/favicon.ico">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+
+
+<link rel="canonical" href="https://cloudadventures.fskelly.com/2012/03/30/adding-a-csv-volume-to-a-cluster/"><meta property="og:title" content="Adding a CSV volume to a Cluster" />
+<meta property="og:description" content="So, now you are at the point where you need to present a CSV Volume to your cluster.
+I have created this guide to make your life a little easier. Doing this is actually quite simple, but there are a few gotchas.
+Gotcha 1 : If you create / carve the LUN and forget to allow multiple access, only the first IQN / WWN will be able to access it." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cloudadventures.fskelly.com/2012/03/30/adding-a-csv-volume-to-a-cluster/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2012-03-30T07:03:07+00:00" />
+<meta property="article:modified_time" content="2012-03-30T07:03:07+00:00" />
+
+<meta itemprop="name" content="Adding a CSV volume to a Cluster">
+<meta itemprop="description" content="So, now you are at the point where you need to present a CSV Volume to your cluster.
+I have created this guide to make your life a little easier. Doing this is actually quite simple, but there are a few gotchas.
+Gotcha 1 : If you create / carve the LUN and forget to allow multiple access, only the first IQN / WWN will be able to access it."><meta itemprop="datePublished" content="2012-03-30T07:03:07+00:00" />
+<meta itemprop="dateModified" content="2012-03-30T07:03:07+00:00" />
+<meta itemprop="wordCount" content="290">
+<meta itemprop="keywords" content="Cluster,CSV,Failover Cluster,Storage," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Adding a CSV volume to a Cluster"/>
+<meta name="twitter:description" content="So, now you are at the point where you need to present a CSV Volume to your cluster.
+I have created this guide to make your life a little easier. Doing this is actually quite simple, but there are a few gotchas.
+Gotcha 1 : If you create / carve the LUN and forget to allow multiple access, only the first IQN / WWN will be able to access it."/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://cloudadventures.fskelly.com">Fletcher&#39;s Tech Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">March 30, 2012</p>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>290 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>2 mins read</span>
+                        </div>
+
+                        <h1>Adding a CSV volume to a Cluster</h1>
+
+                        
+                    </div>
+                </div><div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="content">
+                            <p> </p>
+<p>So, now you are at the point where you need to present a CSV Volume to your cluster.</p>
+<p>I have created this guide to make your life a little easier. Doing this is actually quite simple, but there are a few gotchas.</p>
+<p>Gotcha 1 : If you create / carve the LUN and forget to allow multiple access, only the first IQN / WWN will be able to access it.</p>
+<p>Gotcha 2 : If you present the disk to the “Storage” (highlighted below) portion of your cluster and do NOT create a simple volume, you will not be able to do this from Disk Management as the Cluster will have a lock on it. Simply delete the volume from the “Storage” and then create the simple volume.</p>
+<p><a href="http://fskelly.files.wordpress.com/2012/03/image.png"><!-- raw HTML omitted --></a></p>
+<p>Okay, so getting past that.</p>
+<p>Step 1: Create / Carve the LUN from your Storage.</p>
+<p>Step 2: Remember to allow multiple access to the volume.</p>
+<p>Step 3: Present the Storage to all the Nodes in the Cluster.</p>
+<p>Step 4: Bring the disk online</p>
+<p>Step 5: Initialize the disk</p>
+<p>Step 6: Create a simple volume, there is NO need to assign a drive letter.</p>
+<p>Step 7: Open Failover Cluster Manager and Select “Storage” and Click “Add a disk”</p>
+<p><a href="http://fskelly.files.wordpress.com/2012/03/image1.png"><!-- raw HTML omitted --></a></p>
+<p>Step 8: Add the Disk, you should see the newly presented disk, select the disk and click OK. The disk will show up as online under “Available Storage”. You can rename the disk according by double clicking the disk and changing the name in “Resource Name”</p>
+<p><a href="http://fskelly.files.wordpress.com/2012/03/image2.png"><!-- raw HTML omitted --></a></p>
+<p><a href="http://fskelly.files.wordpress.com/2012/03/image3.png"><!-- raw HTML omitted --></a></p>
+<p>Step 9: Now it is time to make it a “CSV”, Click “Cluster Shared Volumes” and click “Add Storage”</p>
+<p><a href="http://fskelly.files.wordpress.com/2012/03/image4.png"><!-- raw HTML omitted --></a></p>
+<p>Step 10: Select the Disk you want to add and click “OK”</p>
+<p><a href="http://fskelly.files.wordpress.com/2012/03/image5.png"><!-- raw HTML omitted --></a></p>
+<p>Disk is now online and a CSV.</p>
+<p>Follow me</p>
+<p><a href="http://www.facebook.com/fletcher.kelly"><!-- raw HTML omitted --></a> <a href="http://twitter.com/#!/fskelly"><!-- raw HTML omitted --></a></p>
+<p><a href="http://fskelly.files.wordpress.com/2012/03/mcc11_logo_horizontal_2-color_thumb_2.jpg"><!-- raw HTML omitted --></a></p>
+
+                        </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="/tags/cluster">
+                                    <i class="fas fa-tag mr-2"></i>Cluster
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/csv">
+                                    <i class="fas fa-tag mr-2"></i>CSV
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/failover-cluster">
+                                    <i class="fas fa-tag mr-2"></i>Failover Cluster
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/storage">
+                                    <i class="fas fa-tag mr-2"></i>Storage
+                                </a></div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2012%2f03%2f30%2fadding-a-csv-volume-to-a-cluster%2f&text=Adding%20a%20CSV%20volume%20to%20a%20Cluster">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2012%2f03%2f30%2fadding-a-csv-volume-to-a-cluster%2f&title=Adding%20a%20CSV%20volume%20to%20a%20Cluster">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fcloudadventures.fskelly.com%2f2012%2f03%2f30%2fadding-a-csv-volume-to-a-cluster%2f&t=Adding%20a%20CSV%20volume%20to%20a%20Cluster">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2012%2f03%2f30%2fadding-a-csv-volume-to-a-cluster%2f&title=Adding%20a%20CSV%20volume%20to%20a%20Cluster">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div><div class="row justify-content-center my-3">
+                    <div class="col-lg-8">
+                        <div id="commento"></div>
+                        <script src="https://commento.io"></script>
+                    </div>
+                </div></article>
+        </div>
+    </div>
+
+    
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://cloudadventures.fskelly.com/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                            <a href="https://github.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://linkedin.com/in/fletcherkelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://twitter.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright © 2019–2021, Fletcher Kelly; all rights reserved.
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="/dist/main.d608eadfe5ac0688902e.min.js"></script>
+        
+    
+
+
+
+<script>
+    window.Prism = window.Prism || {};
+    window.Prism.manual = true;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-XXXX', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+</body>
+</html>

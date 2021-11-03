@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+     AssignedTo and AffectedUser with Powershell – Service Manager | 
+    Fletcher&#39;s Tech Blog
+  
+</title><meta name="description" content="A day in the life of a Cloud Engineer."><meta name="author" content="Fletcher Kelly">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="/favicon.ico">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+
+
+<link rel="canonical" href="https://cloudadventures.fskelly.com/2012/12/20/assignedto-and-affecteduser-with-powershell-service-manager/"><meta property="og:title" content="AssignedTo and AffectedUser with Powershell – Service Manager" />
+<meta property="og:description" content="So recently I got an e-mail to my newly setup e-mail address, for just this reason , from someone asking if I knew a way to do the following.
+ “I was trying to find a way to find all Incidents related to a specific person (assigned to or affected user) using PowerShell” So, I decided the best to answer this with a blog post as maybe there are other people out there asking the same question." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cloudadventures.fskelly.com/2012/12/20/assignedto-and-affecteduser-with-powershell-service-manager/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2012-12-20T08:22:35+00:00" />
+<meta property="article:modified_time" content="2012-12-20T08:22:35+00:00" />
+
+<meta itemprop="name" content="AssignedTo and AffectedUser with Powershell – Service Manager">
+<meta itemprop="description" content="So recently I got an e-mail to my newly setup e-mail address, for just this reason , from someone asking if I knew a way to do the following.
+ “I was trying to find a way to find all Incidents related to a specific person (assigned to or affected user) using PowerShell” So, I decided the best to answer this with a blog post as maybe there are other people out there asking the same question."><meta itemprop="datePublished" content="2012-12-20T08:22:35+00:00" />
+<meta itemprop="dateModified" content="2012-12-20T08:22:35+00:00" />
+<meta itemprop="wordCount" content="693">
+<meta itemprop="keywords" content="Affected User,AffectedUser,Assigned to user,Assignedto,Inident,powershell,SCSM,SCSM 2012,SMLets,WorkItem," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="AssignedTo and AffectedUser with Powershell – Service Manager"/>
+<meta name="twitter:description" content="So recently I got an e-mail to my newly setup e-mail address, for just this reason , from someone asking if I knew a way to do the following.
+ “I was trying to find a way to find all Incidents related to a specific person (assigned to or affected user) using PowerShell” So, I decided the best to answer this with a blog post as maybe there are other people out there asking the same question."/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://cloudadventures.fskelly.com">Fletcher&#39;s Tech Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">December 20, 2012</p>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>693 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>4 mins read</span>
+                        </div>
+
+                        <h1>AssignedTo and AffectedUser with Powershell – Service Manager</h1>
+
+                        
+                    </div>
+                </div><div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="content">
+                            <p><!-- raw HTML omitted -->So recently I got an e-mail to my newly setup e-mail address, for just this reason <!-- raw HTML omitted -->,  from someone asking if I knew a way to do the following.<!-- raw HTML omitted --></p>
+<p><a href="/wp-content/uploads/2012/12/image_thumb17.png"><!-- raw HTML omitted --></a></p>
+<blockquote>
+<p><!-- raw HTML omitted -->“I was trying to find a way to find all Incidents related to a specific person (assigned  to or affected user) using PowerShell”<!-- raw HTML omitted --></p>
+</blockquote>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->So, I decided the best to answer this with a blog post as maybe there are other people out there asking the same question. This is a quick solution using<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p>[sourcecode language=”powershell”]get-scsmincident[/sourcecode]</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->At this moment in time, this will address ONLY incidents. I will work on some code using<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p>[sourcecode language=”powershell”]get-scsmobject[/sourcecode]</p>
+<p><!-- raw HTML omitted -->to reference work items. I will add the pieces of code as I go and explain the code.<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->First lets start by importing the required module, <!-- raw HTML omitted --><a href="http://smlets.codeplex.com"><!-- raw HTML omitted -->SMLets<!-- raw HTML omitted --></a> <!-- raw HTML omitted -->can be downloaded <!-- raw HTML omitted --><a href="http://smlets.codeplex.com/releases/view/84853"><!-- raw HTML omitted -->here<!-- raw HTML omitted --></a></p>
+<p>[sourcecode language=”powershell”]import-module smlets[/sourcecode]</p>
+<p><!-- raw HTML omitted -->I am running these commands on a computer that is <!-- raw HTML omitted -->NOT the Management Server<!-- raw HTML omitted -->. So I need to specify a computer name when I am running these commands. So, in the next line I create a<!-- raw HTML omitted --></p>
+<p>[sourcecode language=”powershell”]$computername[/sourcecode]</p>
+<p><!-- raw HTML omitted -->variable to make my life easier. If you are running these commands on the Management Server, you can remove the<!-- raw HTML omitted --></p>
+<p>[sourcecode language=”powershell”]-computername $computername[/sourcecode]</p>
+<p><!-- raw HTML omitted -->piece of code. Below is how I created this, please use the name of your Management Server<!-- raw HTML omitted --></p>
+<p>[sourcecode language=”powershell”]$computername = “name of your Management Server&quot;[/sourcecode]</p>
+<p><!-- raw HTML omitted -->Ok, so now lets get all active incidents. I will run a PowerShell Command to get all Incidents that are NOT EQUAL to “Resolved” or “Closed”. This allows us to cover all other incident statuses you may have created. Notice the <!-- raw HTML omitted -->–ne operator.<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p>[sourcecode language=”powershell”]$allincidents = Get-SCSMIncident -ComputerName $computername | Where-Object {$_.Status -ne &ldquo;resolved&rdquo; -and $_.status -ne &ldquo;closed&rdquo;}[/sourcecode]</p>
+<p><!-- raw HTML omitted -->So now we have all the incidents in an object, now what????<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->Personally, I choose to sort the information, enter<!-- raw HTML omitted --></p>
+<p>[sourcecode language=”powershell”]Sort-Object[/sourcecode]</p>
+<p><!-- raw HTML omitted -->with Powershell. So, to elaborate a little further you can use<!-- raw HTML omitted --></p>
+<p>[sourcecode language=”powershell”]get-member[/sourcecode]</p>
+<p><!-- raw HTML omitted -->or<!-- raw HTML omitted --> “<!-- raw HTML omitted -->GM”<!-- raw HTML omitted --> <!-- raw HTML omitted -->for short and “pipe” your variable to “GM” / Get-member<!-- raw HTML omitted --></p>
+<p>[sourcecode language=”powershell”]$allincidents | gm [/sourcecode]</p>
+<p><!-- raw HTML omitted -->OR <!-- raw HTML omitted --></p>
+<p>[sourcecode language=”powershell”]$allincidents | get-member [/sourcecode]</p>
+<p><a href="/wp-content/uploads/2012/12/image17.png"><!-- raw HTML omitted --></a></p>
+<p><!-- raw HTML omitted -->Now you have a list of all the properties you can use. You can also go deeper into the ‘Members’ of the object. You can do the following as well<!-- raw HTML omitted --></p>
+<p>[sourcecode language=”powershell”]$allincidents.affecteduser | gm [/sourcecode]</p>
+<p><!-- raw HTML omitted -->It is simply a case of playing around and digging a little bit.<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->So now back to the<!-- raw HTML omitted --></p>
+<p>[sourcecode language=”powershell”]Sort-Object[/sourcecode]</p>
+<p>. <!-- raw HTML omitted -->I wanted to sort by AssignedTo user, this can be easily changed by changing the<!-- raw HTML omitted --></p>
+<p>[sourcecode language=”powershell”]-Property [/sourcecode]</p>
+<p><!-- raw HTML omitted -->field of the <!-- raw HTML omitted --></p>
+<p>[sourcecode language=”powershell”]sort-object [/sourcecode]</p>
+<p><!-- raw HTML omitted -->I also chose for this example to display the information in a useful grid. This too can be changed as needed.<!-- raw HTML omitted --></p>
+<p>[sourcecode language=”powershell”]$allincidents | Sort-Object -Property Assignedto | Select-Object -Property ID, Displayname, AffectedUser, Assignedto | Out-GridView[/sourcecode]</p>
+<p><!-- raw HTML omitted -->You will get some results like the below.<!-- raw HTML omitted --></p>
+<p><a href="/wp-content/uploads/2012/12/image18.png"><!-- raw HTML omitted --></a></p>
+<p><!-- raw HTML omitted -->You can also limit the results by “Assigned To” user like such using either<!-- raw HTML omitted --></p>
+<p>[sourcecode language=”powershell”]-like [/sourcecode]</p>
+<p><!-- raw HTML omitted -->or<!-- raw HTML omitted --></p>
+<p>[sourcecode language=”powershell”]-eq [/sourcecode]</p>
+<p><!-- raw HTML omitted -->operators. Examples below<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->-like operator. The example is finding all calls assigned to a user where the name is like “Kok*”. This time without the<!-- raw HTML omitted --> <!-- raw HTML omitted -->“out-gridview”<!-- raw HTML omitted --></p>
+<p>[sourcecode language=”powershell”]$allincidents | Where-Object {$_.assignedto.displayname -like &ldquo;kok*&quot;} [/sourcecode]</p>
+<p><a href="/wp-content/uploads/2012/12/image19.png"><!-- raw HTML omitted --></a></p>
+<p><!-- raw HTML omitted -->-eq operator. This example finds all incidents assigned to a user with a specific name. In my example I am using “Desmond Hilton”<!-- raw HTML omitted --></p>
+<p>[sourcecode language=”powershell”]$allincidents | Where-Object {$_.assignedto.displayname -eq &ldquo;Desmond Hilton&rdquo;}[/sourcecode]</p>
+<p><a href="/wp-content/uploads/2012/12/image20.png"><!-- raw HTML omitted --></a></p>
+<p><!-- raw HTML omitted -->The PowerShell code can be easily adapted to meet the requirements for the <!-- raw HTML omitted -->“Affected User”<!-- raw HTML omitted -->. We simply change the value to use with the current object like such. I use<!-- raw HTML omitted --></p>
+<p>[sourcecode language=”powershell”]$Get-member[/sourcecode]</p>
+<p><!-- raw HTML omitted -->on “Affecteduser”<!-- raw HTML omitted --></p>
+<p>[sourcecode language=”powershell”]$allincidents.affecteduser|gm[/sourcecode]</p>
+<p>. <!-- raw HTML omitted -->Again you can use the<!-- raw HTML omitted --></p>
+<p>[sourcecode language=”powershell”]-like [/sourcecode]</p>
+<p>or</p>
+<p>[sourcecode language=”powershell”]-eq [/sourcecode]</p>
+<p><!-- raw HTML omitted -->operators<!-- raw HTML omitted --></p>
+<p>[sourcecode language=”powershell”]$allincidents | Where-Object {$_.assignedto.displayname -like &ldquo;kok*&quot;} [/sourcecode]</p>
+<p><!-- raw HTML omitted -->-like operator. In this example I am using the Name “like” Roland<!-- raw HTML omitted --></p>
+<p>[sourcecode language=”powershell”]$allincidents | Where-Object {$_.affecteduser.DisplayName -like &ldquo;Roland*&quot;}[/sourcecode]</p>
+<p><a href="/wp-content/uploads/2012/12/image21.png"><!-- raw HTML omitted --></a></p>
+<p><!-- raw HTML omitted -->-eq operator. In this example I am using the “Affected User” name of “Andre Botes”<!-- raw HTML omitted --></p>
+<p>[sourcecode language=”powershell”]$allincidents | Where-Object {$_.affecteduser.DisplayName -eq &ldquo;andre Botes&rdquo;}[/sourcecode]</p>
+<p><a href="/wp-content/uploads/2012/12/image22.png"><!-- raw HTML omitted --></a></p>
+<p><!-- raw HTML omitted -->This should help you to make more in-depth queries and enjoy using PowerShell and <!-- raw HTML omitted --><a href="http://smlets.codeplex.com"><!-- raw HTML omitted -->SMLets<!-- raw HTML omitted --></a> <!-- raw HTML omitted -->to get valuable information from System Center Service Manager.<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->I have also setup an new e-mail address to help with Service Manger queries. you can e-mail me at <!-- raw HTML omitted -->systemcenterguyza ”at” live ”dot” com<!-- raw HTML omitted -->  (<!-- raw HTML omitted --><a href="mailto:systemcenterguyza@live.com"><!-- raw HTML omitted -->systemcenterguyza@live.com<!-- raw HTML omitted --></a><!-- raw HTML omitted -->) and I will assist as much as I can.<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->I have also setup a new Twitter account to focus the Information around the System Center Suite.<!-- raw HTML omitted --></p>
+<p><a href="http://twitter.com/syscenterguyza"><!-- raw HTML omitted --></a></p>
+<p><a href="/wp-content/uploads/2012/12/image_thumb24.png"><!-- raw HTML omitted --></a></p>
+<p><!-- raw HTML omitted -->Follow me.<!-- raw HTML omitted --></p>
+<p><a href="http://www.facebook.com/fletcher.kelly"><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></a><a href="http://twitter.com/#!/fskelly"><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></a></p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+
+                        </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="/tags/affected-user">
+                                    <i class="fas fa-tag mr-2"></i>Affected User
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/affecteduser">
+                                    <i class="fas fa-tag mr-2"></i>AffectedUser
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/assigned-to-user">
+                                    <i class="fas fa-tag mr-2"></i>Assigned to user
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/assignedto">
+                                    <i class="fas fa-tag mr-2"></i>Assignedto
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/inident">
+                                    <i class="fas fa-tag mr-2"></i>Inident
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/powershell">
+                                    <i class="fas fa-tag mr-2"></i>powershell
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/scsm">
+                                    <i class="fas fa-tag mr-2"></i>SCSM
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/scsm-2012">
+                                    <i class="fas fa-tag mr-2"></i>SCSM 2012
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/smlets">
+                                    <i class="fas fa-tag mr-2"></i>SMLets
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/workitem">
+                                    <i class="fas fa-tag mr-2"></i>WorkItem
+                                </a></div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2012%2f12%2f20%2fassignedto-and-affecteduser-with-powershell-service-manager%2f&text=AssignedTo%20and%20AffectedUser%20with%20Powershell%20%e2%80%93%20Service%20Manager">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2012%2f12%2f20%2fassignedto-and-affecteduser-with-powershell-service-manager%2f&title=AssignedTo%20and%20AffectedUser%20with%20Powershell%20%e2%80%93%20Service%20Manager">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fcloudadventures.fskelly.com%2f2012%2f12%2f20%2fassignedto-and-affecteduser-with-powershell-service-manager%2f&t=AssignedTo%20and%20AffectedUser%20with%20Powershell%20%e2%80%93%20Service%20Manager">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2012%2f12%2f20%2fassignedto-and-affecteduser-with-powershell-service-manager%2f&title=AssignedTo%20and%20AffectedUser%20with%20Powershell%20%e2%80%93%20Service%20Manager">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div><div class="row justify-content-center my-3">
+                    <div class="col-lg-8">
+                        <div id="commento"></div>
+                        <script src="https://commento.io"></script>
+                    </div>
+                </div></article>
+        </div>
+    </div>
+
+    <div class="related-content row mt-5 row-cols-1 row-cols-lg-3"><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2011/05/17/using-smlets-practically/" class="d-block"><div class="card-body">
+            <h4 class="card-title">Using SMLets practically</h4>
+            <p class="card-text text-muted text-uppercase">May 17, 2011</p>
+            <div class="card-text">
+                In my previous post, SCSM And Powershell, I mentioned that I am now starting to play with get-scsmobject. In this post I also created a script. That script has now been evolved into a proper get-scsmobject script.$Now=(get-date).AddDays(-7)
+$CId=(Get-SCSMEnumeration -ComputerName &#34;ms-ec-hdm01&#34;IncidentStatusEnum.Closed$).id
+$RId=(Get-SCSMEnumeration -ComputerName &#34;ms-ec-hdm01&#34;IncidentStatusEnum.Resolved$).id
+$Class=Get-SCSMClass -ComputerName &#34;ms-ec-hdm01&#34;System.WorkItem.Incident$$cType=&#34;Microsoft.EnterpriseManagement.Common.EnterpriseManagementObjectCriteria&#34;#$cString = “Status != ‘$CId’ and Status != ‘$RId’ and TargetResolutionTime &lt; ‘$Now’ and TargetResolutionTime Is Not Null”$cStringClosed=&#34;Status = ‘$CId’and CreatedDate &gt;&#39;$Now’&#34;$cStringResolved=&#34;Status = ‘$RId’and CreatedDate &gt;&#39;$Now’&#34;$cStringAll=&#34;CreatedDate &gt;&#39;$Now&#39;&#34;$critClosed=new-object $cType$cStringClosed,$Class$critResolved=new-object $cType$cStringResolved,$Class$critAll=new-object $cType$cStringOther,$Class$closed=Get-SCSMObject -ComputerName &#34;ms-ec-hdm01&#34;-Criteria $critClosed$resolved=Get-SCSMObject -ComputerName &#34;ms-ec-hdm01&#34;-Criteria $critResolved$all=Get-SCSMObject -ComputerName &#34;ms-ec-hdm01&#34;-Criteria $critAll#$all = Get-SCSMObject -ComputerName “ms-ec-hdm01” -Class (Get-SCSMClass -ComputerName “ms-ec-hdm01” System.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2012/12/14/how-do-i-learn-system-center-service-manager-2012/" class="d-block"><div class="card-body">
+            <h4 class="card-title">How do I “learn” System Center Service Manager 2012?</h4>
+            <p class="card-text text-muted text-uppercase">December 14, 2012</p>
+            <div class="card-text">
+                So, I recently made a very simple comment on Facebook. This lead to some interesting comment and questions being raised about Service Manager about “Training for Service Desk” staff” in particular. At this moment in time, there is no “Service Desk Staff” training that I am aware of. So I decided to try and address this as best I could.I have decided to consolidate some of the more important components and concepts of Service Manager and place them in one spot.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2012/11/01/auto-closing-work-items-made-easyservice-manager-2012/" class="d-block"><div class="card-body">
+            <h4 class="card-title">Auto-Closing work items made easy–Service Manager 2012</h4>
+            <p class="card-text text-muted text-uppercase">November 1, 2012</p>
+            <div class="card-text">
+                So, there are a few ways of tackling the issue of automatically closing Incidents/Change Requests within Service Manager. Most of these solutions rely on a script leveraging SMLets. So you would create a script and then create a workflow and end up importing the Management Pack into Service Manager. The issue with this is the following, it is quite time consuming and should change under the hood with Service Manager, like the changes from 2010 to 2012, your script will most likely stop working.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div></div>
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://cloudadventures.fskelly.com/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                            <a href="https://github.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://linkedin.com/in/fletcherkelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://twitter.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright © 2019–2021, Fletcher Kelly; all rights reserved.
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="/dist/main.d608eadfe5ac0688902e.min.js"></script>
+        
+    
+
+
+
+<script>
+    window.Prism = window.Prism || {};
+    window.Prism.manual = true;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-XXXX', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+</body>
+</html>

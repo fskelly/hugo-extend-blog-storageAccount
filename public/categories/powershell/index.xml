@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PowerShell on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/categories/powershell/</link>
+    <description>Recent content in PowerShell on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 27 Aug 2015 06:21:12 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/categories/powershell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SLA Reporting with PowerShell and SCSM</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2015-08-27-sla-reporting-with-powershell-and-scsm/</link>
+      <pubDate>Thu, 27 Aug 2015 06:21:12 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2015-08-27-sla-reporting-with-powershell-and-scsm/</guid>
+      <description>I always get asked about reporting from my customers, and specifically around SLA&amp;rsquo;s. SLA&amp;rsquo;s are very important to most companies as this is part of the tracking mechanism of employees and vendors and the like.
+SMLETS is needed for this, it is built to be run from the server, if you need to run from your local machine, please install SMLets, copy the SDK Binaries folder and use the -computername where applicable with the SMLets commands.</description>
+    </item>
+    
+    <item>
+      <title>Grey Agent Fixing with Orchestrator</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2015-04-14-grey-agent-fixing-with-orchestrator/</link>
+      <pubDate>Tue, 14 Apr 2015 05:08:44 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2015-04-14-grey-agent-fixing-with-orchestrator/</guid>
+      <description>So, here is the scenario, we managed a lot of customer’s System Centre Operations Manager (SCOM) environments. One of the most common issues we run into, it is the “Grey Agent” issue, where an agent is no longer reporting into SCOM. There might be a few reasons for this, however one of the most common and effective ways to fix this to clear the agent cache. By this, we simply mean connecting to the agent, stopping the “SCOM” service, deleting the content of the “Health Service State” folder and then restarting the “SCOM” service.</description>
+    </item>
+    
+    <item>
+      <title>Deploy a VM – SCSM, SCVMM, SCORCH – all working in harmony</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2014-07-31-deploy-a-vm-scsm-scvmm-scorch-all-working-in-harmony/</link>
+      <pubDate>Thu, 31 Jul 2014 12:19:03 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2014-07-31-deploy-a-vm-scsm-scvmm-scorch-all-working-in-harmony/</guid>
+      <description>So, it has been a while.
+So, the requirement for this project was as follow.
+ Use Service Manager. Provide a portal for logging a VM Creation request. Build the computername based on a predetermined pattern. Determine first available name. Perform a capacity check. Deploy the set number of VMs.  I am going to skip over the first 2 Points, there are numerous topics covering this. So, onto point 3, I created a Service Request Extension, if anyone would like some info on this, also plenty of articles, please let me know and I can do a blog post on the Extension, or I can make the extension available for you to seal yourselves.</description>
+    </item>
+    
+    <item>
+      <title>Send Email to 3rd Party from SCSM Console – PowerShell and Console Task</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2013-11-15-send-email-to-3rd-party-from-scsm-console-powershell-and-console-task/</link>
+      <pubDate>Fri, 15 Nov 2013 11:58:48 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2013-11-15-send-email-to-3rd-party-from-scsm-console-powershell-and-console-task/</guid>
+      <description>So recently, I had a customer ask me for the following as their previous incident management system had this functionality.
+The customer wanted to be able to send an &amp;ldquo;Update Email&amp;rdquo; to a 3rd party from the SCSM Console with automatically placing the reference number into said email. They needed the functionality of sending to any email address. This was a requirement for the type of business they are in.</description>
+    </item>
+    
+    <item>
+      <title>Backup Network Configuration with PowerShell</title>
+      <link>https://cloudadventures.fskelly.com/2013/10/09/backup-network-config-with-powershell/</link>
+      <pubDate>Wed, 09 Oct 2013 19:30:29 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/10/09/backup-network-config-with-powershell/</guid>
+      <description>So, one of the consultants in the company I work at came to me with a strange request.
+The request from the customer he was helping was the following. They wanted a way to connect to all the switches within their environment and then run some commands against the switch after connecting to the switch on port 23. Once the connection has been made, then some commands are run to get the current running configuration.</description>
+    </item>
+    
+    <item>
+      <title>Inactive Incidents–E-mail assigned to User</title>
+      <link>https://cloudadventures.fskelly.com/2012/10/10/inactive-incidentse-mail-assigned-to-user/</link>
+      <pubDate>Wed, 10 Oct 2012 07:34:02 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/10/10/inactive-incidentse-mail-assigned-to-user/</guid>
+      <description>Just recently I was looking for a way to notify users about Inactive incidents as I have some departments that tend to ignore their work items and an e-mail about their “untouched” incidents seems to motivate them. So after some searching I found this scriptfrom Andreas BaumgartenPlease note : I only modified this script to extend its use to other Statuses to be monitored. All credit for the script goes entirely to Andreas BaumgartenCode is below[sourcecode language=”powershell”]# Configure Last Modified Days Before</description>
+    </item>
+    
+    <item>
+      <title>Powershell Transcript logging</title>
+      <link>https://cloudadventures.fskelly.com/2012/03/29/powershell-transcript-logging/</link>
+      <pubDate>Thu, 29 Mar 2012 07:20:47 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/03/29/powershell-transcript-logging/</guid>
+      <description>I have recently started keeping a track of all my PowerShell.
+Just a nice simple update.
+So, I decided to create a “simple” PowerShell script that would keep a track of all my transcripts. The script would create a file name based on date and place the transcript file in a folder of your choice, this is hard-coded in the script and can be easily modified.
+Hope you like it and find it useful.</description>
+    </item>
+    
+    <item>
+      <title>Testing Domain Controller Connectivity (using PowerShell)</title>
+      <link>https://cloudadventures.fskelly.com/2012/01/24/testing-domain-controller-connectivity-using-powershell/</link>
+      <pubDate>Tue, 24 Jan 2012 11:04:36 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/01/24/testing-domain-controller-connectivity-using-powershell/</guid>
+      <description>I believe that the best way to improve your skill is to test and push yourself. I am currently on a mission to get a lot more comfortable with PowerShell ( as it lives up to its name, it is very POWERful).
+I need to check a few domains up and running and like to keep an eye on my Domain Controllers as they are obviously the base of Active Directory.</description>
+    </item>
+    
+    <item>
+      <title>Some more SMlets commands (more detail)</title>
+      <link>https://cloudadventures.fskelly.com/2011/07/18/some-more-smlets-commands-more-detail/</link>
+      <pubDate>Mon, 18 Jul 2011 11:45:18 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/07/18/some-more-smlets-commands-more-detail/</guid>
+      <description>Would you like a nice graphical breakdown of all calls logged in (x) days and there status?
+I know I would. So, of course I have been working on such a script using smlets v3.
+So far, this is what the script does.
+ Takes the current date and time and subtracts 7 days and presents you with a nice HTML output which is mailed to the user. (Both the date and time and who to mail the output to is configurable.</description>
+    </item>
+    
+    <item>
+      <title>DPM and Invoke-Command, bring the DPM shell to your machine</title>
+      <link>https://cloudadventures.fskelly.com/2011/06/15/dpm-and-invoke-command-bring-the-dpm-shell-to-your-machine/</link>
+      <pubDate>Wed, 15 Jun 2011 15:13:42 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/06/15/dpm-and-invoke-command-bring-the-dpm-shell-to-your-machine/</guid>
+      <description>Not that long ago, I created an article about DPM and I referenced DPM commands to be run in the DPM shell and only now realised that not everyone has the DPM console installed as this is not the easiest console to install and get working.
+So, I am now the Proud Owner of Learn Windows PowerShell in a month of Lunches and I am an now playing and have figured out how to import the necessary commands with Remoting.</description>
+    </item>
+    
+    <item>
+      <title>SCSM and Powershell</title>
+      <link>https://cloudadventures.fskelly.com/2011/05/10/scsm-and-powershell/</link>
+      <pubDate>Tue, 10 May 2011 06:42:52 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/05/10/scsm-and-powershell/</guid>
+      <description>Hi all,
+i have been playing with SMLets3 and get-scsmobject and using information from the post by Travis Wright, Using SMLets Beta 3 Post #1 – Using Get-SCSMObject, Get-SCSMClass to Dump Data from SCSM. This is an amazing post and I have been able to create a script that queries all Cases created after a certain date. It then gives you the breakdown of Open, Closed, Resolved and other status cases, which is then e-mailed to you.</description>
+    </item>
+    
+  </channel>
+</rss>

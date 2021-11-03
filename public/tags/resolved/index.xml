@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>resolved on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/resolved/</link>
+    <description>Recent content in resolved on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 01 Nov 2012 05:41:13 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/resolved/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Auto-Closing work items made easy–Service Manager 2012</title>
+      <link>https://cloudadventures.fskelly.com/2012/11/01/auto-closing-work-items-made-easyservice-manager-2012/</link>
+      <pubDate>Thu, 01 Nov 2012 05:41:13 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/11/01/auto-closing-work-items-made-easyservice-manager-2012/</guid>
+      <description>So, there are a few ways of tackling the issue of automatically closing Incidents/Change Requests within Service Manager. Most of these solutions rely on a script leveraging SMLets. So you would create a script and then create a workflow and end up importing the Management Pack into Service Manager. The issue with this is the following, it is quite time consuming and should change under the hood with Service Manager, like the changes from 2010 to 2012, your script will most likely stop working.</description>
+    </item>
+    
+  </channel>
+</rss>

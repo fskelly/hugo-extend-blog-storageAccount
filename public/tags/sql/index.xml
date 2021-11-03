@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SQL on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/sql/</link>
+    <description>Recent content in SQL on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 07 May 2012 11:44:25 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpsMan 2007 R2–Collation, Collation, Collation!!!!!!</title>
+      <link>https://cloudadventures.fskelly.com/2012/05/07/opsman-2007-r2collation-collation-collation/</link>
+      <pubDate>Mon, 07 May 2012 11:44:25 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/05/07/opsman-2007-r2collation-collation-collation/</guid>
+      <description>So, recently I decided to take the plunge and upgrade to SCOM 2012. So, there were a few pre-requisites that I needed as per the prereq checker that is built into OpsMan 2012.The “big ones” were as follows. 1. OpsMan 2007 R2 CU52. And FTS (Full Text Search) for SQL. So, these seem easy enough to fix. 1. Simple downloadCumulative Update 5 for System Center Operations Manager 2007 R2and install. To be honest, I found this articlesuper helpful for the installation of this Cumulative Update, nice and easy to follow.</description>
+    </item>
+    
+    <item>
+      <title>“Blue Wednesday”</title>
+      <link>https://cloudadventures.fskelly.com/2010/10/27/blue-wednesday/</link>
+      <pubDate>Wed, 27 Oct 2010 12:27:29 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2010/10/27/blue-wednesday/</guid>
+      <description>Do you ever have those days where it just starts bad and gets worse?
+“Man Alive, what a day it has been and it is not over yet”
+First, simple network change, enabling DHCP helper on our new Infrastructure. Sounds simple, right?. Well, our switches are stacked for connectivity and storage, so a reboot of the switches means shutting down the environment, IP and iSCSI. So I go and do this, not knowing about our cluster needing 3 nodes active, what a mission.</description>
+    </item>
+    
+  </channel>
+</rss>

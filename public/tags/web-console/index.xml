@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web Console on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/web-console/</link>
+    <description>Recent content in Web Console on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 22 Jan 2013 09:32:19 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/web-console/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cireson Analyst Web Console</title>
+      <link>https://cloudadventures.fskelly.com/2013/01/22/cireson-analyst-web-console/</link>
+      <pubDate>Tue, 22 Jan 2013 09:32:19 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/01/22/cireson-analyst-web-console/</guid>
+      <description>I have always heard complaints from some of the analysts in my company about having to install the Service Manager Console on their machines and then complaining about having to learn a new application.
+So, I went searching around and found a great application called Cireson SCSM Web Console, this allows analysts to update Incidents via a newly designed web portal for Analysts. Since the console is designed in HTML5, the web console is browser agnostic.</description>
+    </item>
+    
+  </channel>
+</rss>

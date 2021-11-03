@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Upgrade on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/upgrade/</link>
+    <description>Recent content in Upgrade on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 30 Apr 2012 07:09:49 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/upgrade/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Upgrading from SCSM 2010 / SCSM 2012 PRE-RTM to SCSM 2012 RTM</title>
+      <link>https://cloudadventures.fskelly.com/2012/04/30/upgrading-from-scsm-2010-scsm-2012-pre-rtm-to-scsm-2012-rtm/</link>
+      <pubDate>Mon, 30 Apr 2012 07:09:49 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/04/30/upgrading-from-scsm-2010-scsm-2012-pre-rtm-to-scsm-2012-rtm/</guid>
+      <description>So, You are now ready to take the plunge and upgrade to SCSM 2012 RTM as it now “publically” available.
+There is great documentation, obviously, on TECHNET. I have however found out a few other things which will helpfully make your transition a little easier. I have found that the following can cause some complications and how to “mitigate” these if you will.
+Service Manager 2010
+Connectors – Please make sure that your connectors are NOT running while you do the upgrade, the upgrade will work, however your connectors will run and attempt to catch up with itself.</description>
+    </item>
+    
+    <item>
+      <title>Service Manager 2012 Management Server (Upgrade)</title>
+      <link>https://cloudadventures.fskelly.com/2011/11/24/service-manager-2012-management-server-upgrade/</link>
+      <pubDate>Thu, 24 Nov 2011 05:36:25 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/11/24/service-manager-2012-management-server-upgrade/</guid>
+      <description>So, for the Management Server.
+This was very easy and quite painless for me.
+ Backup Encryption Key (for Disaster Recovery Purposes) Install Windows Server 2008 R2 SP1 (This is a pre-requisite for SCSM 2012) Remove Operations Manager Agent if this is installed, as the installer WILL stop you from continuing if the OpsMan Agent is installed. Run the Upgrade, PLEASE NOTE that if the Portal is installed on your Management Server, it will be REMOVED during the upgrade.</description>
+    </item>
+    
+    <item>
+      <title>Service Manager 2012 Data Warehouse (Upgrade)</title>
+      <link>https://cloudadventures.fskelly.com/2011/11/22/service-manager-2012-data-warehouse-upgrade/</link>
+      <pubDate>Tue, 22 Nov 2011 07:25:40 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/11/22/service-manager-2012-data-warehouse-upgrade/</guid>
+      <description>So, my journey with System Centre Service Manager 2012 Beta has begun and so far I have indeed found some funnies.
+I will be blogging about them, to make everyone else’s life a little bit easier and in the hope of better product adoption for this product. It is simply put a fantastic product.
+Ok, so the first time I ran the upgrade (remember I have a pre-prod environment), so I was able to rollback and did not have to follow Disaster Recovery with the Failure.</description>
+    </item>
+    
+  </channel>
+</rss>

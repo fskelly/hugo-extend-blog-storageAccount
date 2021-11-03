@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ServiceManager on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/servicemanager/</link>
+    <description>Recent content in ServiceManager on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 22 Jan 2013 09:32:19 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/servicemanager/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cireson Analyst Web Console</title>
+      <link>https://cloudadventures.fskelly.com/2013/01/22/cireson-analyst-web-console/</link>
+      <pubDate>Tue, 22 Jan 2013 09:32:19 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/01/22/cireson-analyst-web-console/</guid>
+      <description>I have always heard complaints from some of the analysts in my company about having to install the Service Manager Console on their machines and then complaining about having to learn a new application.
+So, I went searching around and found a great application called Cireson SCSM Web Console, this allows analysts to update Incidents via a newly designed web portal for Analysts. Since the console is designed in HTML5, the web console is browser agnostic.</description>
+    </item>
+    
+    <item>
+      <title>Inactive Incidents–E-mail assigned to User</title>
+      <link>https://cloudadventures.fskelly.com/2012/10/10/inactive-incidentse-mail-assigned-to-user/</link>
+      <pubDate>Wed, 10 Oct 2012 07:34:02 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/10/10/inactive-incidentse-mail-assigned-to-user/</guid>
+      <description>Just recently I was looking for a way to notify users about Inactive incidents as I have some departments that tend to ignore their work items and an e-mail about their “untouched” incidents seems to motivate them. So after some searching I found this scriptfrom Andreas BaumgartenPlease note : I only modified this script to extend its use to other Statuses to be monitored. All credit for the script goes entirely to Andreas BaumgartenCode is below[sourcecode language=”powershell”]# Configure Last Modified Days Before</description>
+    </item>
+    
+    <item>
+      <title>Why is my Service Manager so slow?</title>
+      <link>https://cloudadventures.fskelly.com/2012/06/26/why-is-my-service-manager-so-slow/</link>
+      <pubDate>Tue, 26 Jun 2012 07:16:36 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/06/26/why-is-my-service-manager-so-slow/</guid>
+      <description>So, I have been running Service Manager for quite some time now. From SCSM 2010 to SCSM SP1 and most of the CU’s before I upgraded to SCSM 2012 Beta and RC and then to RTM (with the help of a Microsoft TAP Program). Service Manager is now quite entrenched in our business and has been running quite well for a very long time. However, a little while ago we began to experience performance issues with the Console and the logging of calls and the application of Workflows.</description>
+    </item>
+    
+  </channel>
+</rss>

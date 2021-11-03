@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>notification on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/notification/</link>
+    <description>Recent content in notification on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 10 Oct 2012 07:34:02 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/notification/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Inactive Incidents–E-mail assigned to User</title>
+      <link>https://cloudadventures.fskelly.com/2012/10/10/inactive-incidentse-mail-assigned-to-user/</link>
+      <pubDate>Wed, 10 Oct 2012 07:34:02 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/10/10/inactive-incidentse-mail-assigned-to-user/</guid>
+      <description>Just recently I was looking for a way to notify users about Inactive incidents as I have some departments that tend to ignore their work items and an e-mail about their “untouched” incidents seems to motivate them. So after some searching I found this scriptfrom Andreas BaumgartenPlease note : I only modified this script to extend its use to other Statuses to be monitored. All credit for the script goes entirely to Andreas BaumgartenCode is below[sourcecode language=”powershell”]# Configure Last Modified Days Before</description>
+    </item>
+    
+  </channel>
+</rss>

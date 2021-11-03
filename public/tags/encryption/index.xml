@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Encryption on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/encryption/</link>
+    <description>Recent content in Encryption on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 04 Nov 2010 14:57:21 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/encryption/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I inadvertently tested our DR</title>
+      <link>https://cloudadventures.fskelly.com/2010/11/04/how-i-inadvertently-tested-our-dr/</link>
+      <pubDate>Thu, 04 Nov 2010 14:57:21 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2010/11/04/how-i-inadvertently-tested-our-dr/</guid>
+      <description>I decided to yet again sue Bitlocker, even knowing the previous experencies i have with it. It previously cost me all my data, however i had backed up all my data. I am sure by now you know where this is going. So, the weekend just past i decided to Encrypt my Hard Drive using BitLocker. I am not sure what i did to piss off Murphy, but as usual with me and BitLocker something went wrong.</description>
+    </item>
+    
+  </channel>
+</rss>

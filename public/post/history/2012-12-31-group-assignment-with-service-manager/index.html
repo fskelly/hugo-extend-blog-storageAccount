@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+     Group assignment with Service Manager | 
+    Fletcher&#39;s Tech Blog
+  
+</title><meta name="description" content="A day in the life of a Cloud Engineer."><meta name="author" content="Fletcher Kelly">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="/favicon.ico">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+
+
+<link rel="canonical" href="https://cloudadventures.fskelly.com/post/history/2012-12-31-group-assignment-with-service-manager/"><meta property="og:title" content="Group assignment with Service Manager" />
+<meta property="og:description" content="So one of the biggest issues I have with Service Manager is actually user based as seems to be quite difficult to teach the concept of this for some strange reason. So, as a work-around I have created views that cater for the issue I am about to discuss.
+The issue is as follows, when a Work Item gets re-assigned to a new Analyst, 99% of the time, the associated Support Group does NOT get changed." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cloudadventures.fskelly.com/post/history/2012-12-31-group-assignment-with-service-manager/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2012-12-31T06:58:52+00:00" />
+<meta property="article:modified_time" content="2012-12-31T06:58:52+00:00" />
+
+<meta itemprop="name" content="Group assignment with Service Manager">
+<meta itemprop="description" content="So one of the biggest issues I have with Service Manager is actually user based as seems to be quite difficult to teach the concept of this for some strange reason. So, as a work-around I have created views that cater for the issue I am about to discuss.
+The issue is as follows, when a Work Item gets re-assigned to a new Analyst, 99% of the time, the associated Support Group does NOT get changed."><meta itemprop="datePublished" content="2012-12-31T06:58:52+00:00" />
+<meta itemprop="dateModified" content="2012-12-31T06:58:52+00:00" />
+<meta itemprop="wordCount" content="482">
+<meta itemprop="keywords" content="SCSM,Assigned to user,Assignment," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Group assignment with Service Manager"/>
+<meta name="twitter:description" content="So one of the biggest issues I have with Service Manager is actually user based as seems to be quite difficult to teach the concept of this for some strange reason. So, as a work-around I have created views that cater for the issue I am about to discuss.
+The issue is as follows, when a Work Item gets re-assigned to a new Analyst, 99% of the time, the associated Support Group does NOT get changed."/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://cloudadventures.fskelly.com">Fletcher&#39;s Tech Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">December 31, 2012</p>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>482 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>3 mins read</span>
+                        </div>
+
+                        <h1>Group assignment with Service Manager</h1>
+
+                        <ul class="authors list-inline"><li class="list-inline-item mr-3">
+                    <div class="media author"><a href="/authors/fletcher-kelly/" class="mr-3">
+                                    <picture>
+                                        <source srcset="/authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_64x0_resize_q75_box.jpg 1x, /authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_128x0_resize_q100_box.jpg 2x, /authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_192x0_resize_q100_box.jpg 3x">
+                                        <img src="/authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_64x0_resize_q75_box.jpg" class="rounded-circle" alt="Fletcher Kelly">
+                                    </picture>
+                                </a><div class="media-body">
+                            <h5 class="name my-0"><a href="/authors/fletcher-kelly/" class="small">Fletcher Kelly</a>
+                            </h5><p class="social small text-muted">
+                                    <a href="https://twitter.com/@fskelly">@fskelly</a>
+                                </p></div>
+                    </div>
+                </li></ul>
+                    </div>
+                </div><div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="content">
+                            <!-- raw HTML omitted -->
+<p>So one of the biggest issues I have with Service Manager is actually user based as seems to be quite difficult to teach the concept of this for some strange reason. So, as a work-around I have created views that cater for the issue I am about to discuss.</p>
+<p>The issue is as follows, when a Work Item gets re-assigned to a new Analyst, 99% of the time, the associated Support Group does NOT get changed. Let’s take the following example.</p>
+<blockquote>
+<p>An incident is logged and is automatically assigned to the “Service Desk” team, now an analysts investigates the incident and determines that the incident actually belongs to a member of the “Network Team”. So, typically, the “Assigned to” person is changed and the new analyst will get an e-mail stating that a call has been assigned to him/her. However, the incident now reflects the following</p>
+</blockquote>
+<p>Analyst -&gt; Changed<br>
+Network Analyst -&gt; NOT changed</p>
+<p>So basically, if you were to have a queue or view that shows up all incidents assigned to the “Network Team”, this incident would not show up however the analyst has received and e-mail stating that an Incident has been assigned to him/her, it can of course be found by using “Assigned to Me” View.</p>
+<p>There is a <a href="http://www.cireson.com/app-store/scsm-group-assign/">solution</a> here. Enter <a href="https://www.cireson.com">Cireson</a> and their fantastic applications for Service Manager. <a href="http://www.cireson.com/app-store/scsm-group-assign/">SCSM Group Assign</a> allows the extended functionality of selecting the required Support Group and then NARROWS the list of Analysts to that specific group. This ensures that BOTH theSupport Group andAnalyst are changed at time of re-assignment, making the creation of views and <a href="https://docs.microsoft.com/en-us/previous-versions/system-center/service-manager-2010-sp1/ff461077(v=technet.10)?redirectedfrom=MSDN">Queues</a> a lot simpler and then ensures that your views based on Support Group are 100% accurate. The <a href="http://www.cireson.com/app-store/scsm-group-assign/">solution</a> extends the context pane and adds a &ldquo;Assign Analyst by Group&rdquo; option</p>
+<figure class="figure">
+    <a href="/wp-content/uploads/2012/12/image_thumb25.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/wp-content/uploads/2012/12/image_thumb25.png" width="595" height="90"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<p>What <a href="http://www.cireson.com/app-store/scsm-group-assign/">SCSM Group Assign</a> allows you to is the following (this is my test lab), you will however get the idea.</p>
+<p>Below is a screenshot of the groups that I have created within Active Directory to “illustrate” my different Support Groups. You will see a few groups.</p>
+<ol>
+<li>For all analysts</li>
+<li>To represent different support Groups (I have called them Tier 1,2 and 3, as this is the vanilla experience with SCSM)</li>
+</ol>
+<figure class="figure">
+    <a href="/wp-content/uploads/2012/12/image015_thumb.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/wp-content/uploads/2012/12/image015_thumb.png" width="595" height="90"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<p>Ok, so below is a screenshot of a re-assignment using the new “Assign Analyst by Group” option. For this example I have used “Tier 1”. Note how the “Analyst” selection is limited to only 2 Analysts as per my groups earlier. Namely Analyst 1 and Analyst 2.</p>
+<figure class="figure">
+    <a href="/wp-content/uploads/2012/12/tier1-group-assign_thumb.jpg" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/wp-content/uploads/2012/12/tier1-group-assign_thumb.jpg" width="595" height="90"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<p>The next screenshot depicts the same process only to “Tier 2” this time. This time the selection is limited to Analyst 3 and Analyst 4.</p>
+<figure class="figure">
+    <a href="/wp-content/uploads/2012/12/tier2-group-assign_thumb.jpg" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/wp-content/uploads/2012/12/tier2-group-assign_thumb.jpg" width="595" height="90"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<p>The re-assignment is logged in Service Manager in the exact same way as any analyst assignment. This is an extension of the capabilities of Service Manager.</p>
+<p>I would highly recommend <a href="http://www.cireson.com/app-store/scsm-group-assign/">SCSM Group Assign</a> for any Service Manager installation.</p>
+<p>Follow me,</p>
+<p><a href="https://www.twitter.com/fskelly">Twitter</a><br>
+<a href="https://linkedin.com/in/fletcherkelly">LinkedIn</a></p>
+
+                        </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="/tags/scsm">
+                                    <i class="fas fa-tag mr-2"></i>SCSM
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/assigned-to-user">
+                                    <i class="fas fa-tag mr-2"></i>Assigned to user
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/assignment">
+                                    <i class="fas fa-tag mr-2"></i>Assignment
+                                </a></div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2fhistory%2f2012-12-31-group-assignment-with-service-manager%2f&text=Group%20assignment%20with%20Service%20Manager">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2fhistory%2f2012-12-31-group-assignment-with-service-manager%2f&title=Group%20assignment%20with%20Service%20Manager">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2fhistory%2f2012-12-31-group-assignment-with-service-manager%2f&t=Group%20assignment%20with%20Service%20Manager">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2fhistory%2f2012-12-31-group-assignment-with-service-manager%2f&title=Group%20assignment%20with%20Service%20Manager">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div><div class="row justify-content-center my-3">
+                    <div class="col-lg-8">
+                        <div id="commento"></div>
+                        <script src="https://commento.io"></script>
+                    </div>
+                </div></article>
+        </div>
+    </div>
+
+    <div class="related-content row mt-5 row-cols-1 row-cols-lg-3"><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2012/12/20/assignedto-and-affecteduser-with-powershell-service-manager/" class="d-block"><div class="card-body">
+            <h4 class="card-title">AssignedTo and AffectedUser with Powershell – Service Manager</h4>
+            <p class="card-text text-muted text-uppercase">December 20, 2012</p>
+            <div class="card-text">
+                So recently I got an e-mail to my newly setup e-mail address, for just this reason , from someone asking if I knew a way to do the following.
+ “I was trying to find a way to find all Incidents related to a specific person (assigned to or affected user) using PowerShell” So, I decided the best to answer this with a blog post as maybe there are other people out there asking the same question.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2012/12/14/how-do-i-learn-system-center-service-manager-2012/" class="d-block"><div class="card-body">
+            <h4 class="card-title">How do I “learn” System Center Service Manager 2012?</h4>
+            <p class="card-text text-muted text-uppercase">December 14, 2012</p>
+            <div class="card-text">
+                So, I recently made a very simple comment on Facebook. This lead to some interesting comment and questions being raised about Service Manager about “Training for Service Desk” staff” in particular. At this moment in time, there is no “Service Desk Staff” training that I am aware of. So I decided to try and address this as best I could.I have decided to consolidate some of the more important components and concepts of Service Manager and place them in one spot.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2012/11/01/auto-closing-work-items-made-easyservice-manager-2012/" class="d-block"><div class="card-body">
+            <h4 class="card-title">Auto-Closing work items made easy–Service Manager 2012</h4>
+            <p class="card-text text-muted text-uppercase">November 1, 2012</p>
+            <div class="card-text">
+                So, there are a few ways of tackling the issue of automatically closing Incidents/Change Requests within Service Manager. Most of these solutions rely on a script leveraging SMLets. So you would create a script and then create a workflow and end up importing the Management Pack into Service Manager. The issue with this is the following, it is quite time consuming and should change under the hood with Service Manager, like the changes from 2010 to 2012, your script will most likely stop working.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div></div>
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://cloudadventures.fskelly.com/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                            <a href="https://github.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://linkedin.com/in/fletcherkelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://twitter.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright © 2019–2021, Fletcher Kelly; all rights reserved.
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="/dist/main.d608eadfe5ac0688902e.min.js"></script>
+        
+    
+
+
+
+<script>
+    window.Prism = window.Prism || {};
+    window.Prism.manual = true;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-XXXX', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+</body>
+</html>

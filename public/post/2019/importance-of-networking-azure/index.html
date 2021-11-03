@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+     Importance of Networking in Azure | 
+    Fletcher&#39;s Tech Blog
+  
+</title><meta name="description" content="Why is networking so important in Azure?"><meta name="author" content="Fletcher Kelly">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="/favicon.ico">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+
+
+<link rel="canonical" href="https://cloudadventures.fskelly.com/post/2019/importance-of-networking-azure/"><meta property="og:title" content="Importance of Networking in Azure" />
+<meta property="og:description" content="Why is networking so important in Azure?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cloudadventures.fskelly.com/post/2019/importance-of-networking-azure/" /><meta property="og:image" content="https://cloudadventures.fskelly.com/2019/networking.jpg" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2019-08-07T16:33:36+02:00" />
+<meta property="article:modified_time" content="2019-08-07T16:33:36+02:00" />
+
+<meta itemprop="name" content="Importance of Networking in Azure">
+<meta itemprop="description" content="Why is networking so important in Azure?"><meta itemprop="datePublished" content="2019-08-07T16:33:36+02:00" />
+<meta itemprop="dateModified" content="2019-08-07T16:33:36+02:00" />
+<meta itemprop="wordCount" content="387"><meta itemprop="image" content="https://cloudadventures.fskelly.com/2019/networking.jpg">
+<meta itemprop="keywords" content="architecture,CSA,networking,powershell," /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://cloudadventures.fskelly.com/2019/networking.jpg"/>
+
+<meta name="twitter:title" content="Importance of Networking in Azure"/>
+<meta name="twitter:description" content="Why is networking so important in Azure?"/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://cloudadventures.fskelly.com">Fletcher&#39;s Tech Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">August 7, 2019</p>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>387 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>2 mins read</span>
+                        </div>
+
+                        <h1>Importance of Networking in Azure</h1>
+
+                        <ul class="authors list-inline"><li class="list-inline-item mr-3">
+                    <div class="media author"><a href="/authors/fletcher-kelly/" class="mr-3">
+                                    <picture>
+                                        <source srcset="/authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_64x0_resize_q75_box.jpg 1x, /authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_128x0_resize_q100_box.jpg 2x, /authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_192x0_resize_q100_box.jpg 3x">
+                                        <img src="/authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_64x0_resize_q75_box.jpg" class="rounded-circle" alt="Fletcher Kelly">
+                                    </picture>
+                                </a><div class="media-body">
+                            <h5 class="name my-0"><a href="/authors/fletcher-kelly/" class="small">Fletcher Kelly</a>
+                            </h5><p class="social small text-muted">
+                                    <a href="https://twitter.com/@fskelly">@fskelly</a>
+                                </p></div>
+                    </div>
+                </li></ul>
+                    </div>
+                </div><div class="row justify-content-center mb-3">
+                                <div class="col-lg-10">
+                                    <img data-src="/images/2019/networking_hu2a9be243c0932c14d4bdbcff8836aa87_178633_900x500_fit_q75_box.jpg" class="img-fluid rounded mx-auto d-block" alt="Importance of Networking in Azure">
+                                </div>
+                            </div><div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="content">
+                            <p>As a start to this blog post, I think it is important to understand how I see my role as a CSA (Cloud Solution Architect) with my customer. I am primarily a trusted advisor and my customers respect what I have to say, I question and challenge my customers in a constructive way to approach the challenge or problem statement in a different way. I have an amazing role of using Azure as my LEGO playpen and then building a custom solution (LEGO model) to help my customers.</p>
+<p>So, of late I have been having a lot of networking discussions with my customers. Now these discussions have been ranging from a new customer to a very advanced customer that has been using Azure for quite some time. These have also ranged from new connection options to extend their on-premises connectivity into Azure, which we call &ldquo;Hybrid Connectivity&rdquo;, as well as networking considerations once in the cloud with Azure Native connectivity such AKS (Azure Kubernetes Service) and ACI (Azure Container Instances) to simply name the current most top of mind topics.</p>
+<p>So, having these discussions is not an uncommon practice and these are the types of discussions that should be happening, there is nothing wrong with this. All that is happening more and more often is that these discussions are happening in isolation as opposed to the customer working on having a holistic approach to this discussion and working on a full cloud networking solution.</p>
+<p>You cannot necessarily think of networking in silos anymore. Yes, networking can be silo&rsquo;ed and many people do this. However with the &ldquo;new world&rdquo; of cloud and the networking associated to this concept, networking is now a critical point on your cloud journey. There are multiple options available here as a start. THe main role of a Cloud SOlutions Architect or more importantly a trusted advisor, is to understand the requirements of your customer and work with the required teams, usually networking, InfoSec, business owner and Application owner to determine the correct networking option for the cusotmer. This would be a mix of solutions and architectures.</p>
+<p>This is a great start to understanding which technologies can or could be used to serve a particular need and then this can be built up to a solution that is extendable and usable by your customer.</p>
+
+                        </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="/tags/architecture">
+                                    <i class="fas fa-tag mr-2"></i>architecture
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/csa">
+                                    <i class="fas fa-tag mr-2"></i>CSA
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/networking">
+                                    <i class="fas fa-tag mr-2"></i>networking
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/powershell">
+                                    <i class="fas fa-tag mr-2"></i>powershell
+                                </a></div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2f2019%2fimportance-of-networking-azure%2f&text=Importance%20of%20Networking%20in%20Azure">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2f2019%2fimportance-of-networking-azure%2f&title=Importance%20of%20Networking%20in%20Azure">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2f2019%2fimportance-of-networking-azure%2f&t=Importance%20of%20Networking%20in%20Azure">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2f2019%2fimportance-of-networking-azure%2f&title=Importance%20of%20Networking%20in%20Azure">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div><div class="row justify-content-center my-3">
+                    <div class="col-lg-8">
+                        <div id="commento"></div>
+                        <script src="https://commento.io"></script>
+                    </div>
+                </div></article>
+        </div>
+    </div>
+
+    <div class="related-content row mt-5 row-cols-1 row-cols-lg-3"><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/post/2019/csa-tools-of-the-trade/" class="d-block"><img data-src="/images/2019/toolbox_hu77618a475428863a0b189406d0eceb4f_58778_700x350_fill_q75_box_smart1.jpg" class="card-img-top mx-auto d-block" alt="Cloud Solutions Architect - Tools of the Trade"><div class="card-body">
+            <h4 class="card-title">Cloud Solutions Architect - Tools of the Trade</h4>
+            <p class="card-text text-muted text-uppercase">July 9, 2019</p>
+            <div class="card-text">
+                So a question I often get asked is “what tools or products do you use?”. So I decided to do a post around the tools and technologies that I personally use on a daily basis. So to start this is what people see on my screen on a daily basis.
+This is my most common tool, Visual Studio Code, the version shown above is actually the Insiders Build. The primary reason for this tool is that is a “container” for other tools and functionality.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/post/2019/network-security-group-change-alerting/" class="d-block"><img data-src="/images/2021/azNSG_huea3d5727bdb1a296681a67bb8f082132_4295_700x350_fill_q75_box_smart1.jpg" class="card-img-top mx-auto d-block" alt="Network Security Group Change Alerting"><div class="card-body">
+            <h4 class="card-title">Network Security Group Change Alerting</h4>
+            <p class="card-text text-muted text-uppercase">February 20, 2019</p>
+            <div class="card-text">
+                So, I was with a customer and they are asking for a fairly standard alert.
+“Please alert me when an NSG is added or modified”. Seems simply enough, however this is not as simply as you think. So I used my favourite search and found the following, “How to receive an email on Azure Network Security Group Rule changes“, this is great content and after testing, it works exactly as expected.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2013/10/20/finding-off-site-ready-tapes-for-system-center-data-protection-manager-with-system-center-orchestrator/" class="d-block"><div class="card-body">
+            <h4 class="card-title">Finding off site ready tapes for System Center Data Protection Manager with System Center Orchestrator</h4>
+            <p class="card-text text-muted text-uppercase">October 20, 2013</p>
+            <div class="card-text">
+                So, I am quite a keen user of PowerShell and System Centre Orchestrator. Ok, so I recently had a request from a customer that went as follows “I need DPM to alert me when tapes are ready to be taken off-site.”
+DPM does not seen to have this functionality out of the box within the Graphical User Interface (GUI). All is NOT lost, Data Protection Manager has a PowerShell component and i was sure i could figure out a way to get this to work within PowerShell.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div></div>
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://cloudadventures.fskelly.com/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                            <a href="https://github.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://linkedin.com/in/fletcherkelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://twitter.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright © 2019–2021, Fletcher Kelly; all rights reserved.
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="/dist/main.d608eadfe5ac0688902e.min.js"></script>
+        
+    
+
+
+
+<script>
+    window.Prism = window.Prism || {};
+    window.Prism.manual = true;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-XXXX', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+</body>
+</html>

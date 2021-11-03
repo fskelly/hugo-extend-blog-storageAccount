@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+     Service Request Load Testing for SCSM | 
+    Fletcher&#39;s Tech Blog
+  
+</title><meta name="description" content="A day in the life of a Cloud Engineer."><meta name="author" content="Fletcher Kelly">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="/favicon.ico">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+
+
+<link rel="canonical" href="https://cloudadventures.fskelly.com/2013/09/11/service-request-load-testing-for-scsm/"><meta property="og:title" content="Service Request Load Testing for SCSM" />
+<meta property="og:description" content="I have found a great for load testing SCSM with Incidents. The script uses SMLets to generate Incidents and you can then gauge how your system would handle the load you are planning within your Production Environment.
+I will not go into the detail of the script as this blog post does a great job of explaining it. SO this got me to thinking about other Load Testing you could perform." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cloudadventures.fskelly.com/2013/09/11/service-request-load-testing-for-scsm/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2013-09-11T19:30:51+00:00" />
+<meta property="article:modified_time" content="2013-09-11T19:30:51+00:00" />
+
+<meta itemprop="name" content="Service Request Load Testing for SCSM">
+<meta itemprop="description" content="I have found a great for load testing SCSM with Incidents. The script uses SMLets to generate Incidents and you can then gauge how your system would handle the load you are planning within your Production Environment.
+I will not go into the detail of the script as this blog post does a great job of explaining it. SO this got me to thinking about other Load Testing you could perform."><meta itemprop="datePublished" content="2013-09-11T19:30:51+00:00" />
+<meta itemprop="dateModified" content="2013-09-11T19:30:51+00:00" />
+<meta itemprop="wordCount" content="582">
+<meta itemprop="keywords" content="load testing,powershell,script,SCSM,SCSM 2012,workflow," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Service Request Load Testing for SCSM"/>
+<meta name="twitter:description" content="I have found a great for load testing SCSM with Incidents. The script uses SMLets to generate Incidents and you can then gauge how your system would handle the load you are planning within your Production Environment.
+I will not go into the detail of the script as this blog post does a great job of explaining it. SO this got me to thinking about other Load Testing you could perform."/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://cloudadventures.fskelly.com">Fletcher&#39;s Tech Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">September 11, 2013</p>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>582 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>3 mins read</span>
+                        </div>
+
+                        <h1>Service Request Load Testing for SCSM</h1>
+
+                        
+                    </div>
+                </div><div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="content">
+                            <p>I have found a great for load testing <a href="http://blogs.catapultsystems.com/mdowst/archive/2013/07/10/powershell-script-to-load-test-scsm.aspx">SCSM with Incidents</a>. The script uses <a href="http://smlets.codeplex.com/">SMLets</a> to generate Incidents and you can then gauge how your system would handle the load you are planning within your Production Environment.</p>
+<p>I will not go into the detail of the script as this <a href="http://blogs.catapultsystems.com/mdowst/archive/2013/07/10/powershell-script-to-load-test-scsm.aspx">blog post</a> does a great job of explaining it. SO this got me to thinking about other Load Testing you could perform. The most common Load Test is with Incidents. However, i decided that another good load test would be Service Requests. What is nice about this load test, is that it uses a Management Pack which I have included in this post. The Management Pack contains a Service Request Template with a Manual Activity added as the first Activity. This will allow you to test Service Requests and well as Activities, which would in turn, test any workflows or runbooks that you have configured.</p>
+<p>For my environment, i have additional runbooks which are also triggered when Manual Activities are completed or when Review Activities are completed. So with this Load Test script it also test my runbooks and other workflows.</p>
+<p>Remember, to set a different Implementer for the Manual Activity to allow the runbooks or workflows to be triggered off correctly. Remember, no Manual Activity Implementer or if the implementer has no email address, your emails will not be triggered correctly. Below, is a breakdown of the script I am using.</p>
+<p>Script<br>
+[code language=”powershell”]<br>
+#SMLets is needed for the script to work<br>
+Import-Module SMlets</p>
+<p>#the number of Service requests to be created<br>
+$SRCount = 10</p>
+<p>#the delay between attempts<br>
+$delay = 10</p>
+<p># Display Start Time<br>
+$StartTime = get-date<br>
+Write-Host &ldquo;Started&rdquo;<br>
+Write-Host $StartTime<br>
+Write-Host &ldquo;——————-`n&rdquo;<br>
+Write-Host &ldquo;Creating Service Request&rdquo;<br>
+Write-Host &ldquo;——————-&rdquo;<br>
+$i =1</p>
+<p>while ($i -le $SRCount)<br>
+{</p>
+<p>#Variable / Class Setup<br>
+$srClass = Get-SCSMClass -name System.WorkItem.ServiceRequest$<br>
+$srprior = Get-SCSMEnumeration -Name ServiceRequestPriorityEnum.Medium<br>
+$srurg = Get-SCSMEnumeration -Name ServiceRequestUrgencyEnum.Medium<br>
+$ararea = get-SCSMEnumeration -Name ServiceRequestAreaEnum.Other</p>
+<p>#building your own SR Title<br>
+$title = &ldquo;Fletcher Load Testing $i – &quot; + (get-date)</p>
+<p>#Service Request Arguements<br>
+$srargs = @{<br>
+Title = $title;<br>
+Urgency = $srurg;<br>
+Priority = $srprior;<br>
+ID = “SR{0}”;<br>
+Area = $ararea;<br>
+Description = “Created by Script”<br>
+}</p>
+<p>#Create Service Request<br>
+New-SCSMOBject -Class $srClass -PropertyHashtable $srargs</p>
+<p>#Get Projection &amp; Object for Created Service Request<br>
+$srTypeProjection = Get-SCSMTypeProjection -name System.WorkItem.ServiceRequestProjection$<br>
+$SRProj = Get-scsmobjectprojection -ProjectionName $srTypeProjection.Name -filter “title -eq $title”</p>
+<p>#Get Template<br>
+$template = Get-SCSMObjectTemplate -DisplayName &ldquo;Load Test SR Template&rdquo;</p>
+<p>#Set Template<br>
+Set-SCSMObjectTemplate -Projection $SRProj -Template $template<br>
+$SR = Get-SCSMObject -Class (Get-SCSMClass -Name System.WorkItem.ServiceRequest$) -filter &ldquo;Title -eq $title&rdquo;<br>
+$SRName = $SR.name<br>
+$SRTitle = $SR.Title<br>
+Write-Host $SRName &quot; – &quot; $SRTitle<br>
+#$SRName</p>
+<p># Pause before creating next SR<br>
+Start-Sleep -s 5</p>
+<p>#getting the above created Service Request<br>
+$ServiceRequestToUpdate = Get-SCSMObject -Class (Get-SCSMClass -Name System.WorkItem.ServiceRequest$) -Filter &ldquo;Id -eq $SRName&rdquo;</p>
+<p>#get the Realted Child Manual Activity<br>
+$ChildActivities = (Get-SCSMRelationshipObject -BySource $ServiceRequestToUpdate | ?{$_.RelationshipID -eq &ldquo;2DA498BE-0485-B2B2-D520-6EBD1698E61B&rdquo;})</p>
+<p>$get the ID Value<br>
+$MAIDToUpdate = $ChildActivities.targetobject.values<a href="http://fskelly.files.wordpress.com/2012/06/mcc11_logo_horizontal_2-color_thumb__thumb1.jpg?w=244&amp;h=99">9</a>.value</p>
+<p>#getting the MA Class<br>
+$Class = Get-SCSMClass -Name System.WorkItem.Activity.ManualActivity</p>
+<p>#getting the &ldquo;Active&rdquo; Status<br>
+$StatusActive = Get-SCSMEnumeration -name ActivityStatusEnum.Active</p>
+<p>$Activity = Get-SCSMObject -Class $Class | ? {$_.ID -eq $MAIDToUpdate}</p>
+<p>#setting MA to Active<br>
+Set-SCSMObject -SMObject $Activity -Property &ldquo;Status&rdquo; -Value $StatusActive</p>
+<p>#showing current status<br>
+Write-host $MAIDToUpdate &quot; is now &quot; $StatusActive<br>
+$i +=1<br>
+Start-Sleep -s $delay<br>
+}</p>
+<p># Display End Time<br>
+Write-Host &ldquo;_<strong>_</strong>_<strong>_</strong>_<strong>_</strong>_____`n&rdquo;<br>
+$EndTime = get-date<br>
+Write-Host = &ldquo;Finished&rdquo;<br>
+Write-Host $EndTime<br>
+#End of Script</p>
+<h1 id="heading"></h1>
+<p>[/code]<br>
+The script can also be downloaded from the Technet Gallery <a href="http://gallery.technet.microsoft.com/Service-Manager-Service-42a964e6">here.</a></p>
+<p><a href="mailto:systemcenterguyza@live.com">(E-Mail me)</a></p>
+<p><img src="/wp-content/uploads/2013/02/image_thumb_thumb_thumb_thumb_thumb1-1.png?w=497" alt=""></p>
+<p>Follow me.</p>
+<p><img src="http://fskelly.files.wordpress.com/2012/06/facebook-small322252222.jpg?w=44&amp;h=44" alt=""> Facebook (Personal)</p>
+<p><img src="http://fskelly.files.wordpress.com/2012/06/twitter-small322252222.jpg?w=44&amp;h=44" alt=""> Twitter (Personal &amp; System Centre)</p>
+<p><img src="/wp-content/uploads/2013/02/scsmlogo25232.jpg?w=56&amp;h=43" alt=""> Twitter (System Centre Focused)</p>
+<p><img src="http://fskelly.files.wordpress.com/2012/06/mcc11_logo_horizontal_2-color_thumb__thumb1.jpg?w=244&amp;h=99" alt=""></p>
+
+                        </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="/tags/load-testing">
+                                    <i class="fas fa-tag mr-2"></i>load testing
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/powershell">
+                                    <i class="fas fa-tag mr-2"></i>powershell
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/script">
+                                    <i class="fas fa-tag mr-2"></i>script
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/scsm">
+                                    <i class="fas fa-tag mr-2"></i>SCSM
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/scsm-2012">
+                                    <i class="fas fa-tag mr-2"></i>SCSM 2012
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/workflow">
+                                    <i class="fas fa-tag mr-2"></i>workflow
+                                </a></div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2013%2f09%2f11%2fservice-request-load-testing-for-scsm%2f&text=Service%20Request%20Load%20Testing%20for%20SCSM">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2013%2f09%2f11%2fservice-request-load-testing-for-scsm%2f&title=Service%20Request%20Load%20Testing%20for%20SCSM">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fcloudadventures.fskelly.com%2f2013%2f09%2f11%2fservice-request-load-testing-for-scsm%2f&t=Service%20Request%20Load%20Testing%20for%20SCSM">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2013%2f09%2f11%2fservice-request-load-testing-for-scsm%2f&title=Service%20Request%20Load%20Testing%20for%20SCSM">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div><div class="row justify-content-center my-3">
+                    <div class="col-lg-8">
+                        <div id="commento"></div>
+                        <script src="https://commento.io"></script>
+                    </div>
+                </div></article>
+        </div>
+    </div>
+
+    <div class="related-content row mt-5 row-cols-1 row-cols-lg-3"><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2012/12/20/assignedto-and-affecteduser-with-powershell-service-manager/" class="d-block"><div class="card-body">
+            <h4 class="card-title">AssignedTo and AffectedUser with Powershell – Service Manager</h4>
+            <p class="card-text text-muted text-uppercase">December 20, 2012</p>
+            <div class="card-text">
+                So recently I got an e-mail to my newly setup e-mail address, for just this reason , from someone asking if I knew a way to do the following.
+ “I was trying to find a way to find all Incidents related to a specific person (assigned to or affected user) using PowerShell” So, I decided the best to answer this with a blog post as maybe there are other people out there asking the same question.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2013/06/26/cireson-it-asset-management-with-service-manager/" class="d-block"><div class="card-body">
+            <h4 class="card-title">Cireson IT Asset Management with Service Manager</h4>
+            <p class="card-text text-muted text-uppercase">June 26, 2013</p>
+            <div class="card-text">
+                Cireson have recently released an new enhancement to the Service Manager console called the Cireson SCSM Asset Management App. This particular application is very easy to install. To install the application into the console, it is simply a case of importing a few management packs and some XML files and DLL files. This is very easy to do and the installation instructions provided by Cireson are very simple and easy to follow as with all Cireson add-ins I have worked with in the past.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2013/02/21/cireson-my-active-work-items/" class="d-block"><div class="card-body">
+            <h4 class="card-title">Cireson My Active Work Items</h4>
+            <p class="card-text text-muted text-uppercase">February 21, 2013</p>
+            <div class="card-text">
+                So, Cireson has been hard at work to fill a few gaps present within the Service Manager space. Cireson has created an application called My Active Work Items to bring all information assigned to your user token in one place. For Service Manager 2010, you could create the Work Items assigned to Me view. This was a good start for SCSM 2010 and this continues to work with SCSM 2012. However, with SCSM 2012, there are a few shortcomings of this view.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div></div>
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://cloudadventures.fskelly.com/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                            <a href="https://github.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://linkedin.com/in/fletcherkelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://twitter.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright © 2019–2021, Fletcher Kelly; all rights reserved.
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="/dist/main.d608eadfe5ac0688902e.min.js"></script>
+        
+    
+
+
+
+<script>
+    window.Prism = window.Prism || {};
+    window.Prism.manual = true;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-XXXX', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+</body>
+</html>

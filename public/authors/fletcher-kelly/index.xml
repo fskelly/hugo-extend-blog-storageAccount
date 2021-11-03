@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/authors/fletcher-kelly/</link>
+    <description>Recent content on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 25 Aug 2021 05:58:18 +0200</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/authors/fletcher-kelly/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure Resource Group Enterprise Scale Landing Zone queries</title>
+      <link>https://cloudadventures.fskelly.com/post/2021/arg-mg-query-quick-post/</link>
+      <pubDate>Wed, 25 Aug 2021 05:58:18 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/2021/arg-mg-query-quick-post/</guid>
+      <description>Azure Resource Graph Examples This is just a quick post. I am slowly working on building a collection of Resource Graph Queries - they can be found here and will grow over time. It just takes some time to build these.
+They will be broken down into a folder structure based upon the Critical Design Areas of Enterprise Scale Landing Zone
+Hope this helps and keep an eye out for more.</description>
+    </item>
+    
+    <item>
+      <title>Bicep Troubleshooting</title>
+      <link>https://cloudadventures.fskelly.com/post/2021/bicep-troubleshooting/</link>
+      <pubDate>Fri, 02 Jul 2021 05:40:16 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/2021/bicep-troubleshooting/</guid>
+      <description>Some basic &amp;ldquo;troubleshooting&amp;rdquo; with Azure Bicep
+So, let me start with this. The team and the community behind Azure Bicep are amazing. There are some great examples here. I often use these as a base and the rip apart or add to meet my needs, you do NOT need to start from ground zero. :smile:
+When you are deploying bicep templates you command will look something like this.
+$bicepFile = &amp;quot;.</description>
+    </item>
+    
+    <item>
+      <title>Azure CLI - List Locations and Peers</title>
+      <link>https://cloudadventures.fskelly.com/post/2021/cli-list-locations-and-peers/</link>
+      <pubDate>Wed, 05 May 2021 07:03:02 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/2021/cli-list-locations-and-peers/</guid>
+      <description>How to use the Azure CLI to list Azure Locations and their peers So this will be a &amp;ldquo;quick post&amp;rdquo; that shows some great functionality within the Azure CLI with az account list-locations. With this command you can expect some output like below, you actually get a lot of content back.
+{&amp;quot;displayName&amp;quot;: &amp;quot;Brazil Southeast&amp;quot;,&amp;quot;id&amp;quot;: &amp;quot;/subscriptions/949ef534-07f5-4138-8b79-aae16a71310c/locations/brazilsoutheast&amp;quot;,&amp;quot;metadata&amp;quot;: {&amp;quot;geographyGroup&amp;quot;: &amp;quot;South America&amp;quot;,&amp;quot;latitude&amp;quot;: &amp;quot;-22.90278&amp;quot;,&amp;quot;longitude&amp;quot;: &amp;quot;-43.2075&amp;quot;,&amp;quot;pairedRegion&amp;quot;: [{&amp;quot;id&amp;quot;: &amp;quot;/subscriptions/949ef534-07f5-4138-8b79-aae16a71310c/locations/brazilsouth&amp;quot;,&amp;quot;name&amp;quot;: &amp;quot;brazilsouth&amp;quot;,&amp;quot;subscriptionId&amp;quot;: null}],&amp;quot;physicalLocation&amp;quot;: &amp;quot;Rio&amp;quot;,&amp;quot;regionCategory&amp;quot;: &amp;quot;Other&amp;quot;,&amp;quot;regionType&amp;quot;: &amp;quot;Physical&amp;quot;},&amp;quot;name&amp;quot;: &amp;quot;brazilsoutheast&amp;quot;,&amp;quot;regionalDisplayName&amp;quot;: &amp;quot;(South America) Brazil Southeast&amp;quot;,&amp;quot;subscriptionId&amp;quot;: null} If you look at some of the examples, you will also see some &amp;ldquo;logical&amp;rdquo; locations, example below, there is a way of adding a query to remove these to display only &amp;ldquo;physical&amp;rdquo; locations.</description>
+    </item>
+    
+    <item>
+      <title>Azure Rest Api Postman Basics</title>
+      <link>https://cloudadventures.fskelly.com/post/2021/azure-rest-api-postman-basics/</link>
+      <pubDate>Wed, 14 Apr 2021 09:02:18 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/2021/azure-rest-api-postman-basics/</guid>
+      <description>Absolute basics with Azure and PostMan
+Getting started Many of the articles I have found online with regards to the Azure REST API assume a fair level of familiarity with Azure which can be a good and bad thing. You see the Azure Portal makes interacting with the Azure REST API very easy as a lot of the &amp;ldquo;prerequisite&amp;rdquo; work is done in the portal as part of the process. For this blog post we will work on something quite basic, &amp;ldquo;Create a Virtual Machine&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Expiring Keys and Secrets within Azure Key Vault</title>
+      <link>https://cloudadventures.fskelly.com/post/2021/expiring-keys-azure-key-vault/</link>
+      <pubDate>Mon, 18 Jan 2021 07:06:03 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/2021/expiring-keys-azure-key-vault/</guid>
+      <description>I was working with a customer the other day and a fairly simple ask came up, I however could not find an immediate answer within the portal.
+How do I check for expiring keys within the Azure KeyVault?
+Now being a PowerShell person, I never gave this much thought as for most tasks or actions I perform on the Azure Platform is done through PowerShell, AP, or CLI. So easy enough, however, not everyone knows how to do this in PowerShell.</description>
+    </item>
+    
+    <item>
+      <title>My New Blog Home with Azure Static Web App</title>
+      <link>https://cloudadventures.fskelly.com/post/2021/my-new-blog-home/</link>
+      <pubDate>Mon, 18 Jan 2021 07:06:03 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/2021/my-new-blog-home/</guid>
+      <description>So, I have spent the last few days / weeks deciding the best way to host a blog. Now I have a decidedly &amp;ldquo;split personality&amp;rdquo;. By this I mean I like to segregate my work and personal hobbies. This can be quite beneficial as this allows me to test a few things.
+A few key decisions  Must be version controlled - good practice and forces me to get more familiar with git.</description>
+    </item>
+    
+    <item>
+      <title>Azure Ghost CMS and Azure CDN</title>
+      <link>https://cloudadventures.fskelly.com/post/2021/azure-ghost-cms-and-cdn/</link>
+      <pubDate>Mon, 11 Jan 2021 07:00:18 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/2021/azure-ghost-cms-and-cdn/</guid>
+      <description>I moved my blog onto HUGO. Not everyone would want to do this necessarily, there is a bit of a learning curve, part of the reason I DID IT :). However there are other platforms you can use and still add more functionality if you want.
+You can use Ghost and add an Azure CDN. This is what this blog post will cover.
+There are some very clever people out there that have made this very easy for you.</description>
+    </item>
+    
+    <item>
+      <title>Importance of Networking in Azure</title>
+      <link>https://cloudadventures.fskelly.com/post/2019/importance-of-networking-azure/</link>
+      <pubDate>Wed, 07 Aug 2019 16:33:36 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/2019/importance-of-networking-azure/</guid>
+      <description>As a start to this blog post, I think it is important to understand how I see my role as a CSA (Cloud Solution Architect) with my customer. I am primarily a trusted advisor and my customers respect what I have to say, I question and challenge my customers in a constructive way to approach the challenge or problem statement in a different way. I have an amazing role of using Azure as my LEGO playpen and then building a custom solution (LEGO model) to help my customers.</description>
+    </item>
+    
+    <item>
+      <title>Cloud Solutions Architect - Tools of the Trade</title>
+      <link>https://cloudadventures.fskelly.com/post/2019/csa-tools-of-the-trade/</link>
+      <pubDate>Tue, 09 Jul 2019 16:46:43 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/2019/csa-tools-of-the-trade/</guid>
+      <description>So a question I often get asked is &amp;ldquo;what tools or products do you use?&amp;rdquo;. So I decided to do a post around the tools and technologies that I personally use on a daily basis. So to start this is what people see on my screen on a daily basis.
+This is my most common tool, Visual Studio Code, the version shown above is actually the Insiders Build. The primary reason for this tool is that is a &amp;ldquo;container&amp;rdquo; for other tools and functionality.</description>
+    </item>
+    
+    <item>
+      <title>Network Security Group Change Alerting</title>
+      <link>https://cloudadventures.fskelly.com/post/2019/network-security-group-change-alerting/</link>
+      <pubDate>Wed, 20 Feb 2019 08:21:49 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/2019/network-security-group-change-alerting/</guid>
+      <description>So, I was with a customer and they are asking for a fairly standard alert.
+&amp;ldquo;Please alert me when an NSG is added or modified&amp;rdquo;. Seems simply enough, however this is not as simply as you think. So I used my favourite search and found the following, “How to receive an email on Azure Network Security Group Rule changes“, this is great content and after testing, it works exactly as expected.</description>
+    </item>
+    
+    <item>
+      <title>SLA Reporting with PowerShell and SCSM</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2015-08-27-sla-reporting-with-powershell-and-scsm/</link>
+      <pubDate>Thu, 27 Aug 2015 06:21:12 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2015-08-27-sla-reporting-with-powershell-and-scsm/</guid>
+      <description>I always get asked about reporting from my customers, and specifically around SLA&amp;rsquo;s. SLA&amp;rsquo;s are very important to most companies as this is part of the tracking mechanism of employees and vendors and the like.
+SMLETS is needed for this, it is built to be run from the server, if you need to run from your local machine, please install SMLets, copy the SDK Binaries folder and use the -computername where applicable with the SMLets commands.</description>
+    </item>
+    
+    <item>
+      <title>Grey Agent Fixing with Orchestrator</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2015-04-14-grey-agent-fixing-with-orchestrator/</link>
+      <pubDate>Tue, 14 Apr 2015 05:08:44 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2015-04-14-grey-agent-fixing-with-orchestrator/</guid>
+      <description>So, here is the scenario, we managed a lot of customer’s System Centre Operations Manager (SCOM) environments. One of the most common issues we run into, it is the “Grey Agent” issue, where an agent is no longer reporting into SCOM. There might be a few reasons for this, however one of the most common and effective ways to fix this to clear the agent cache. By this, we simply mean connecting to the agent, stopping the “SCOM” service, deleting the content of the “Health Service State” folder and then restarting the “SCOM” service.</description>
+    </item>
+    
+    <item>
+      <title>Deploy a VM – SCSM, SCVMM, SCORCH – all working in harmony</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2014-07-31-deploy-a-vm-scsm-scvmm-scorch-all-working-in-harmony/</link>
+      <pubDate>Thu, 31 Jul 2014 12:19:03 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2014-07-31-deploy-a-vm-scsm-scvmm-scorch-all-working-in-harmony/</guid>
+      <description>So, it has been a while.
+So, the requirement for this project was as follow.
+ Use Service Manager. Provide a portal for logging a VM Creation request. Build the computername based on a predetermined pattern. Determine first available name. Perform a capacity check. Deploy the set number of VMs.  I am going to skip over the first 2 Points, there are numerous topics covering this. So, onto point 3, I created a Service Request Extension, if anyone would like some info on this, also plenty of articles, please let me know and I can do a blog post on the Extension, or I can make the extension available for you to seal yourselves.</description>
+    </item>
+    
+    <item>
+      <title>Cireson Outlook Console</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2014-06-17-cireson-outloook-console/</link>
+      <pubDate>Tue, 17 Jun 2014 06:01:55 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2014-06-17-cireson-outloook-console/</guid>
+      <description>So, Cireson hase been investing into System Centre Service Manager (SCSM) very heavily and the end results are WELL worth it.
+The Cireson Outlook Console has been out a little while, however it just keeps getting better and better. The Console is super easy to install. The Install instructions are provided by Cireson. There are a few steps to follow as well as the installation of an Outlook Plugin.
+Yes, as you may have guessed from the name, this allows you to connect to Service Manager with almost a full experience directly from OUTLOOK, how great is that.</description>
+    </item>
+    
+    <item>
+      <title>Adding Comments to Work Items with Orchestrator</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2014-04-04-adding-comments-to-work-items-with-orchestrator/</link>
+      <pubDate>Fri, 04 Apr 2014 08:18:16 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2014-04-04-adding-comments-to-work-items-with-orchestrator/</guid>
+      <description>Hi All,
+It has been a little while, i have been quite involved with an Integration Project. With this project there was a requirement to add comments to a Work Item. The information is passed on from &amp;ldquo;System A&amp;rdquo; to &amp;ldquo;System B&amp;rdquo; via XML. Using PowerShell, extracting the XML contents is not too difficult, if anyone would like to dive into that a little bit, please let me know with Comments.</description>
+    </item>
+    
+    <item>
+      <title>Send Email to 3rd Party from SCSM Console – PowerShell and Console Task</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2013-11-15-send-email-to-3rd-party-from-scsm-console-powershell-and-console-task/</link>
+      <pubDate>Fri, 15 Nov 2013 11:58:48 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2013-11-15-send-email-to-3rd-party-from-scsm-console-powershell-and-console-task/</guid>
+      <description>So recently, I had a customer ask me for the following as their previous incident management system had this functionality.
+The customer wanted to be able to send an &amp;ldquo;Update Email&amp;rdquo; to a 3rd party from the SCSM Console with automatically placing the reference number into said email. They needed the functionality of sending to any email address. This was a requirement for the type of business they are in.</description>
+    </item>
+    
+    <item>
+      <title>Group assignment with Service Manager</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2012-12-31-group-assignment-with-service-manager/</link>
+      <pubDate>Mon, 31 Dec 2012 06:58:52 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2012-12-31-group-assignment-with-service-manager/</guid>
+      <description>So one of the biggest issues I have with Service Manager is actually user based as seems to be quite difficult to teach the concept of this for some strange reason. So, as a work-around I have created views that cater for the issue I am about to discuss.
+The issue is as follows, when a Work Item gets re-assigned to a new Analyst, 99% of the time, the associated Support Group does NOT get changed.</description>
+    </item>
+    
+  </channel>
+</rss>

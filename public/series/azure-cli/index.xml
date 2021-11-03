@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Azure CLI on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/series/azure-cli/</link>
+    <description>Recent content in Azure CLI on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 05 May 2021 07:03:02 +0200</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/series/azure-cli/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure CLI - List Locations and Peers</title>
+      <link>https://cloudadventures.fskelly.com/post/2021/cli-list-locations-and-peers/</link>
+      <pubDate>Wed, 05 May 2021 07:03:02 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/2021/cli-list-locations-and-peers/</guid>
+      <description>How to use the Azure CLI to list Azure Locations and their peers So this will be a &amp;ldquo;quick post&amp;rdquo; that shows some great functionality within the Azure CLI with az account list-locations. With this command you can expect some output like below, you actually get a lot of content back.
+{&amp;quot;displayName&amp;quot;: &amp;quot;Brazil Southeast&amp;quot;,&amp;quot;id&amp;quot;: &amp;quot;/subscriptions/949ef534-07f5-4138-8b79-aae16a71310c/locations/brazilsoutheast&amp;quot;,&amp;quot;metadata&amp;quot;: {&amp;quot;geographyGroup&amp;quot;: &amp;quot;South America&amp;quot;,&amp;quot;latitude&amp;quot;: &amp;quot;-22.90278&amp;quot;,&amp;quot;longitude&amp;quot;: &amp;quot;-43.2075&amp;quot;,&amp;quot;pairedRegion&amp;quot;: [{&amp;quot;id&amp;quot;: &amp;quot;/subscriptions/949ef534-07f5-4138-8b79-aae16a71310c/locations/brazilsouth&amp;quot;,&amp;quot;name&amp;quot;: &amp;quot;brazilsouth&amp;quot;,&amp;quot;subscriptionId&amp;quot;: null}],&amp;quot;physicalLocation&amp;quot;: &amp;quot;Rio&amp;quot;,&amp;quot;regionCategory&amp;quot;: &amp;quot;Other&amp;quot;,&amp;quot;regionType&amp;quot;: &amp;quot;Physical&amp;quot;},&amp;quot;name&amp;quot;: &amp;quot;brazilsoutheast&amp;quot;,&amp;quot;regionalDisplayName&amp;quot;: &amp;quot;(South America) Brazil Southeast&amp;quot;,&amp;quot;subscriptionId&amp;quot;: null} If you look at some of the examples, you will also see some &amp;ldquo;logical&amp;rdquo; locations, example below, there is a way of adding a query to remove these to display only &amp;ldquo;physical&amp;rdquo; locations.</description>
+    </item>
+    
+  </channel>
+</rss>

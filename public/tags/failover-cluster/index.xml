@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Failover Cluster on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/failover-cluster/</link>
+    <description>Recent content in Failover Cluster on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 28 Aug 2012 13:35:56 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/failover-cluster/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Networking issues with Hyper-V</title>
+      <link>https://cloudadventures.fskelly.com/2012/08/28/networking-issues-with-hyper-v/</link>
+      <pubDate>Tue, 28 Aug 2012 13:35:56 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/08/28/networking-issues-with-hyper-v/</guid>
+      <description>Just recently I was running into some very strange issues with my Hyper-V Cluster. we have numerous NICs to allow for redundancy and better throughput for our clustered environment. We have a total of 11 NICs on our server to cater for Guest LAN, iSCSI, guest iSCSI (as we present SAN storage directly to the Guests), HeartBeat and Live Migration. So, I was getting a little concerned when I was performing maintenance and/or “Live Migrations” and my VMs were losing network connectivity both on LAN connections and iSCSI connections which was causing major issues with my VMs needing external storage as this was mostly SQL or file shares.</description>
+    </item>
+    
+    <item>
+      <title>Adding a CSV volume to a Cluster</title>
+      <link>https://cloudadventures.fskelly.com/2012/03/30/adding-a-csv-volume-to-a-cluster/</link>
+      <pubDate>Fri, 30 Mar 2012 07:03:07 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/03/30/adding-a-csv-volume-to-a-cluster/</guid>
+      <description>So, now you are at the point where you need to present a CSV Volume to your cluster.
+I have created this guide to make your life a little easier. Doing this is actually quite simple, but there are a few gotchas.
+Gotcha 1 : If you create / carve the LUN and forget to allow multiple access, only the first IQN / WWN will be able to access it.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>work items on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/work-items/</link>
+    <description>Recent content in work items on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 21 Feb 2013 09:10:11 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/work-items/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cireson My Active Work Items</title>
+      <link>https://cloudadventures.fskelly.com/2013/02/21/cireson-my-active-work-items/</link>
+      <pubDate>Thu, 21 Feb 2013 09:10:11 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/02/21/cireson-my-active-work-items/</guid>
+      <description>So, Cireson has been hard at work to fill a few gaps present within the Service Manager space. Cireson has created an application called My Active Work Items to bring all information assigned to your user token in one place. For Service Manager 2010, you could create the Work Items assigned to Me view. This was a good start for SCSM 2010 and this continues to work with SCSM 2012. However, with SCSM 2012, there are a few shortcomings of this view.</description>
+    </item>
+    
+    <item>
+      <title>Auto-Closing work items made easy–Service Manager 2012</title>
+      <link>https://cloudadventures.fskelly.com/2012/11/01/auto-closing-work-items-made-easyservice-manager-2012/</link>
+      <pubDate>Thu, 01 Nov 2012 05:41:13 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/11/01/auto-closing-work-items-made-easyservice-manager-2012/</guid>
+      <description>So, there are a few ways of tackling the issue of automatically closing Incidents/Change Requests within Service Manager. Most of these solutions rely on a script leveraging SMLets. So you would create a script and then create a workflow and end up importing the Management Pack into Service Manager. The issue with this is the following, it is quite time consuming and should change under the hood with Service Manager, like the changes from 2010 to 2012, your script will most likely stop working.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+     To Protect or NOT to Protect | 
+    Fletcher&#39;s Tech Blog
+  
+</title><meta name="description" content="A day in the life of a Cloud Engineer."><meta name="author" content="Fletcher Kelly">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="/favicon.ico">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+
+
+<link rel="canonical" href="https://cloudadventures.fskelly.com/2011/05/24/to-protect-or-not-to-protect/"><meta property="og:title" content="To Protect or NOT to Protect" />
+<meta property="og:description" content="I have finally found some time to look some more into DPM and decided to modify my environment and created some additional PROTECTION GROUPS. I am particularly chuffed as I have not done this before. Make no error, I have used DPM extensively for mailbox recoveries (Execs and other users crying about loosing items), recovering of databases and VHD (see some of my previous posts). So back to my point, the Protection groups were created without any hassle and now I have a dedicated SharePoint Protection Group." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cloudadventures.fskelly.com/2011/05/24/to-protect-or-not-to-protect/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2011-05-24T14:05:12+00:00" />
+<meta property="article:modified_time" content="2011-05-24T14:05:12+00:00" />
+
+<meta itemprop="name" content="To Protect or NOT to Protect">
+<meta itemprop="description" content="I have finally found some time to look some more into DPM and decided to modify my environment and created some additional PROTECTION GROUPS. I am particularly chuffed as I have not done this before. Make no error, I have used DPM extensively for mailbox recoveries (Execs and other users crying about loosing items), recovering of databases and VHD (see some of my previous posts). So back to my point, the Protection groups were created without any hassle and now I have a dedicated SharePoint Protection Group."><meta itemprop="datePublished" content="2011-05-24T14:05:12+00:00" />
+<meta itemprop="dateModified" content="2011-05-24T14:05:12+00:00" />
+<meta itemprop="wordCount" content="228">
+<meta itemprop="keywords" content="DPM,powershell,Protection Group,Sharepoint," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="To Protect or NOT to Protect"/>
+<meta name="twitter:description" content="I have finally found some time to look some more into DPM and decided to modify my environment and created some additional PROTECTION GROUPS. I am particularly chuffed as I have not done this before. Make no error, I have used DPM extensively for mailbox recoveries (Execs and other users crying about loosing items), recovering of databases and VHD (see some of my previous posts). So back to my point, the Protection groups were created without any hassle and now I have a dedicated SharePoint Protection Group."/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://cloudadventures.fskelly.com">Fletcher&#39;s Tech Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">May 24, 2011</p>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>228 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>2 mins read</span>
+                        </div>
+
+                        <h1>To Protect or NOT to Protect</h1>
+
+                        
+                    </div>
+                </div><div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="content">
+                            <p>I have finally found some time to look some more into DPM and decided to modify my environment and created some additional PROTECTION GROUPS. I am particularly chuffed as I have not done this before. Make no error, I have used DPM extensively for mailbox recoveries (Execs and other users crying about loosing items), recovering of databases and VHD (see some of my <a href="http://fskelly.wordpress.com/2011/03/14/the-joys-of-dpm-and-the-pains-of-sql/">previous</a> <a href="http://fskelly.wordpress.com/2011/05/03/the-crisis-week/">posts</a>). So back to my point, the Protection groups were created without any hassle and now I have a dedicated SharePoint Protection Group.</p>
+<p>See below, an extract from a script from Scripting Repository, many thanks to it’s author</p>
+<p><a href="http://gallery.technet.microsoft.com/scriptcenter/1c9c61ce-688f-4ef0-8d9b-cd93cd703c45">http://gallery.technet.microsoft.com/scriptcenter/1c9c61ce-688f-4ef0-8d9b-cd93cd703c45</a></p>
+<p><a href="http://fskelly.files.wordpress.com/2011/05/image1.png"><!-- raw HTML omitted --></a></p>
+<p>I did however run into a few hiccups and have learnt a few amount<!-- raw HTML omitted --></p>
+<p>There are a few pre-reqs that are needed before the Sharepoint Protection Group can be created.</p>
+<p>ConfigureSharePoint.exe must be run on the server were WSS / MOSS is located.</p>
+<p><a href="http://technet.microsoft.com/en-us/library/dd441708.aspx">http://technet.microsoft.com/en-us/library/dd441708.aspx</a></p>
+<p>The SharePoint VSS writer must be started and the SQL VSS Writer must be started.</p>
+<p>Then, if like me, you had protected the SQL databases separately, these WSS / MOSS databases will need to be removed from the Protection Group.</p>
+<p>Then a few pieces are added, see screenshot below.</p>
+<p><a href="http://fskelly.files.wordpress.com/2011/05/image2.png"><!-- raw HTML omitted --></a></p>
+<p>It does not look like much, however if you look at the “Recovery Options”, it will look a little more familiar with a few more familiar databases.</p>
+<p><a href="http://fskelly.files.wordpress.com/2011/05/image3.png"><!-- raw HTML omitted --></a></p>
+<p>Hopefully this helps you</p>
+<p> </p>
+<p>Follow me</p>
+<p><a href="http://www.facebook.com/fletcher.kelly"><!-- raw HTML omitted --></a> <a href="http://twitter.com/#!/fskelly"><!-- raw HTML omitted --></a></p>
+
+                        </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="/tags/dpm">
+                                    <i class="fas fa-tag mr-2"></i>DPM
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/powershell">
+                                    <i class="fas fa-tag mr-2"></i>powershell
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/protection-group">
+                                    <i class="fas fa-tag mr-2"></i>Protection Group
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/sharepoint">
+                                    <i class="fas fa-tag mr-2"></i>Sharepoint
+                                </a></div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2011%2f05%2f24%2fto-protect-or-not-to-protect%2f&text=To%20Protect%20or%20NOT%20to%20Protect">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2011%2f05%2f24%2fto-protect-or-not-to-protect%2f&title=To%20Protect%20or%20NOT%20to%20Protect">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fcloudadventures.fskelly.com%2f2011%2f05%2f24%2fto-protect-or-not-to-protect%2f&t=To%20Protect%20or%20NOT%20to%20Protect">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2011%2f05%2f24%2fto-protect-or-not-to-protect%2f&title=To%20Protect%20or%20NOT%20to%20Protect">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div><div class="row justify-content-center my-3">
+                    <div class="col-lg-8">
+                        <div id="commento"></div>
+                        <script src="https://commento.io"></script>
+                    </div>
+                </div></article>
+        </div>
+    </div>
+
+    <div class="related-content row mt-5 row-cols-1 row-cols-lg-3"><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2011/05/20/powershell-console-to-power-all-plugins/" class="d-block"><div class="card-body">
+            <h4 class="card-title">POWERshell console to power all plugins</h4>
+            <p class="card-text text-muted text-uppercase">May 20, 2011</p>
+            <div class="card-text">
+                I do not know about everyone else. I am a rather busy admin and quite fond of powershell and scripting. However, I also have a separate admin account for doing my administrative tasks. Now when you are working with multiple systems, all of which have PowerShell consoles, it can become a little bit of a pain opening a console for Exchange 2010, Operations Manager 2010, Virtual Machine Manager and Service Manager to name a few.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2011/05/17/using-smlets-practically/" class="d-block"><div class="card-body">
+            <h4 class="card-title">Using SMLets practically</h4>
+            <p class="card-text text-muted text-uppercase">May 17, 2011</p>
+            <div class="card-text">
+                In my previous post, SCSM And Powershell, I mentioned that I am now starting to play with get-scsmobject. In this post I also created a script. That script has now been evolved into a proper get-scsmobject script.$Now=(get-date).AddDays(-7)
+$CId=(Get-SCSMEnumeration -ComputerName &#34;ms-ec-hdm01&#34;IncidentStatusEnum.Closed$).id
+$RId=(Get-SCSMEnumeration -ComputerName &#34;ms-ec-hdm01&#34;IncidentStatusEnum.Resolved$).id
+$Class=Get-SCSMClass -ComputerName &#34;ms-ec-hdm01&#34;System.WorkItem.Incident$$cType=&#34;Microsoft.EnterpriseManagement.Common.EnterpriseManagementObjectCriteria&#34;#$cString = “Status != ‘$CId’ and Status != ‘$RId’ and TargetResolutionTime &lt; ‘$Now’ and TargetResolutionTime Is Not Null”$cStringClosed=&#34;Status = ‘$CId’and CreatedDate &gt;&#39;$Now’&#34;$cStringResolved=&#34;Status = ‘$RId’and CreatedDate &gt;&#39;$Now’&#34;$cStringAll=&#34;CreatedDate &gt;&#39;$Now&#39;&#34;$critClosed=new-object $cType$cStringClosed,$Class$critResolved=new-object $cType$cStringResolved,$Class$critAll=new-object $cType$cStringOther,$Class$closed=Get-SCSMObject -ComputerName &#34;ms-ec-hdm01&#34;-Criteria $critClosed$resolved=Get-SCSMObject -ComputerName &#34;ms-ec-hdm01&#34;-Criteria $critResolved$all=Get-SCSMObject -ComputerName &#34;ms-ec-hdm01&#34;-Criteria $critAll#$all = Get-SCSMObject -ComputerName “ms-ec-hdm01” -Class (Get-SCSMClass -ComputerName “ms-ec-hdm01” System.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2011/05/03/the-crisis-week/" class="d-block"><div class="card-body">
+            <h4 class="card-title">The “crisis” week</h4>
+            <p class="card-text text-muted text-uppercase">May 3, 2011</p>
+            <div class="card-text">
+                Hi All,
+The last two weeks have been a little nutty for me. I have however, learnt to appreciate a few more things in life.
+  No matter how good your planning for DR, there is always that one thing that catches you. We have a generator, which is great. Now, when we cutover from generator power to mains power and then the main building power trips, life becomes interesting.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div></div>
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://cloudadventures.fskelly.com/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                            <a href="https://github.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://linkedin.com/in/fletcherkelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://twitter.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright © 2019–2021, Fletcher Kelly; all rights reserved.
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="/dist/main.d608eadfe5ac0688902e.min.js"></script>
+        
+    
+
+
+
+<script>
+    window.Prism = window.Prism || {};
+    window.Prism.manual = true;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-XXXX', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+</body>
+</html>

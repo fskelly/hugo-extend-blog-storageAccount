@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>powershell on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/powershell/</link>
+    <description>Recent content in powershell on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 18 Jan 2021 07:06:03 +0200</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Expiring Keys and Secrets within Azure Key Vault</title>
+      <link>https://cloudadventures.fskelly.com/post/2021/expiring-keys-azure-key-vault/</link>
+      <pubDate>Mon, 18 Jan 2021 07:06:03 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/2021/expiring-keys-azure-key-vault/</guid>
+      <description>I was working with a customer the other day and a fairly simple ask came up, I however could not find an immediate answer within the portal.
+How do I check for expiring keys within the Azure KeyVault?
+Now being a PowerShell person, I never gave this much thought as for most tasks or actions I perform on the Azure Platform is done through PowerShell, AP, or CLI. So easy enough, however, not everyone knows how to do this in PowerShell.</description>
+    </item>
+    
+    <item>
+      <title>Importance of Networking in Azure</title>
+      <link>https://cloudadventures.fskelly.com/post/2019/importance-of-networking-azure/</link>
+      <pubDate>Wed, 07 Aug 2019 16:33:36 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/2019/importance-of-networking-azure/</guid>
+      <description>As a start to this blog post, I think it is important to understand how I see my role as a CSA (Cloud Solution Architect) with my customer. I am primarily a trusted advisor and my customers respect what I have to say, I question and challenge my customers in a constructive way to approach the challenge or problem statement in a different way. I have an amazing role of using Azure as my LEGO playpen and then building a custom solution (LEGO model) to help my customers.</description>
+    </item>
+    
+    <item>
+      <title>Cloud Solutions Architect - Tools of the Trade</title>
+      <link>https://cloudadventures.fskelly.com/post/2019/csa-tools-of-the-trade/</link>
+      <pubDate>Tue, 09 Jul 2019 16:46:43 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/2019/csa-tools-of-the-trade/</guid>
+      <description>So a question I often get asked is &amp;ldquo;what tools or products do you use?&amp;rdquo;. So I decided to do a post around the tools and technologies that I personally use on a daily basis. So to start this is what people see on my screen on a daily basis.
+This is my most common tool, Visual Studio Code, the version shown above is actually the Insiders Build. The primary reason for this tool is that is a &amp;ldquo;container&amp;rdquo; for other tools and functionality.</description>
+    </item>
+    
+    <item>
+      <title>Network Security Group Change Alerting</title>
+      <link>https://cloudadventures.fskelly.com/post/2019/network-security-group-change-alerting/</link>
+      <pubDate>Wed, 20 Feb 2019 08:21:49 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/2019/network-security-group-change-alerting/</guid>
+      <description>So, I was with a customer and they are asking for a fairly standard alert.
+&amp;ldquo;Please alert me when an NSG is added or modified&amp;rdquo;. Seems simply enough, however this is not as simply as you think. So I used my favourite search and found the following, “How to receive an email on Azure Network Security Group Rule changes“, this is great content and after testing, it works exactly as expected.</description>
+    </item>
+    
+    <item>
+      <title>SLA Reporting with PowerShell and SCSM</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2015-08-27-sla-reporting-with-powershell-and-scsm/</link>
+      <pubDate>Thu, 27 Aug 2015 06:21:12 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2015-08-27-sla-reporting-with-powershell-and-scsm/</guid>
+      <description>I always get asked about reporting from my customers, and specifically around SLA&amp;rsquo;s. SLA&amp;rsquo;s are very important to most companies as this is part of the tracking mechanism of employees and vendors and the like.
+SMLETS is needed for this, it is built to be run from the server, if you need to run from your local machine, please install SMLets, copy the SDK Binaries folder and use the -computername where applicable with the SMLets commands.</description>
+    </item>
+    
+    <item>
+      <title>Adding Comments to Work Items with Orchestrator</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2014-04-04-adding-comments-to-work-items-with-orchestrator/</link>
+      <pubDate>Fri, 04 Apr 2014 08:18:16 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2014-04-04-adding-comments-to-work-items-with-orchestrator/</guid>
+      <description>Hi All,
+It has been a little while, i have been quite involved with an Integration Project. With this project there was a requirement to add comments to a Work Item. The information is passed on from &amp;ldquo;System A&amp;rdquo; to &amp;ldquo;System B&amp;rdquo; via XML. Using PowerShell, extracting the XML contents is not too difficult, if anyone would like to dive into that a little bit, please let me know with Comments.</description>
+    </item>
+    
+    <item>
+      <title>Send Email to 3rd Party from SCSM Console – PowerShell and Console Task</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2013-11-15-send-email-to-3rd-party-from-scsm-console-powershell-and-console-task/</link>
+      <pubDate>Fri, 15 Nov 2013 11:58:48 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2013-11-15-send-email-to-3rd-party-from-scsm-console-powershell-and-console-task/</guid>
+      <description>So recently, I had a customer ask me for the following as their previous incident management system had this functionality.
+The customer wanted to be able to send an &amp;ldquo;Update Email&amp;rdquo; to a 3rd party from the SCSM Console with automatically placing the reference number into said email. They needed the functionality of sending to any email address. This was a requirement for the type of business they are in.</description>
+    </item>
+    
+    <item>
+      <title>Finding off site ready tapes for System Center Data Protection Manager with System Center Orchestrator</title>
+      <link>https://cloudadventures.fskelly.com/2013/10/20/finding-off-site-ready-tapes-for-system-center-data-protection-manager-with-system-center-orchestrator/</link>
+      <pubDate>Sun, 20 Oct 2013 12:30:19 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/10/20/finding-off-site-ready-tapes-for-system-center-data-protection-manager-with-system-center-orchestrator/</guid>
+      <description>So, I am quite a keen user of PowerShell and System Centre Orchestrator. Ok, so I recently had a request from a customer that went as follows “I need DPM to alert me when tapes are ready to be taken off-site.”
+DPM does not seen to have this functionality out of the box within the Graphical User Interface (GUI). All is NOT lost, Data Protection Manager has a PowerShell component and i was sure i could figure out a way to get this to work within PowerShell.</description>
+    </item>
+    
+    <item>
+      <title>Service Request Load Testing for SCSM</title>
+      <link>https://cloudadventures.fskelly.com/2013/09/11/service-request-load-testing-for-scsm/</link>
+      <pubDate>Wed, 11 Sep 2013 19:30:51 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/09/11/service-request-load-testing-for-scsm/</guid>
+      <description>I have found a great for load testing SCSM with Incidents. The script uses SMLets to generate Incidents and you can then gauge how your system would handle the load you are planning within your Production Environment.
+I will not go into the detail of the script as this blog post does a great job of explaining it. SO this got me to thinking about other Load Testing you could perform.</description>
+    </item>
+    
+    <item>
+      <title>AssignedTo and AffectedUser with Powershell – Service Manager</title>
+      <link>https://cloudadventures.fskelly.com/2012/12/20/assignedto-and-affecteduser-with-powershell-service-manager/</link>
+      <pubDate>Thu, 20 Dec 2012 08:22:35 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/12/20/assignedto-and-affecteduser-with-powershell-service-manager/</guid>
+      <description>So recently I got an e-mail to my newly setup e-mail address, for just this reason , from someone asking if I knew a way to do the following.
+ “I was trying to find a way to find all Incidents related to a specific person (assigned to or affected user) using PowerShell” So, I decided the best to answer this with a blog post as maybe there are other people out there asking the same question.</description>
+    </item>
+    
+    <item>
+      <title>Basic Cluster Troubleshooting</title>
+      <link>https://cloudadventures.fskelly.com/2012/06/07/basic-cluster-troubleshooting/</link>
+      <pubDate>Thu, 07 Jun 2012 12:17:25 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/06/07/basic-cluster-troubleshooting/</guid>
+      <description>So, just last night, we had an issue with our cluster.One of our disks would not come online. We were seeing an error event ID: 1304 as below.
+So, we began to investigate as all the Technet articles state that the drive is corrupted and Disk Signatures need to be changed, however we have had no major changes in the last little while. We were also able to view to CSV Volume from our SAN management tools.</description>
+    </item>
+    
+    <item>
+      <title>Rebuilding the OpsMan Client Cache</title>
+      <link>https://cloudadventures.fskelly.com/2012/01/17/rebuilding-the-opsman-client-cache/</link>
+      <pubDate>Tue, 17 Jan 2012 07:16:27 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/01/17/rebuilding-the-opsman-client-cache/</guid>
+      <description>Just recently I had the need to “rebuild” the client cache on a lot of my servers, due to a slight hiccup with our Network and subsequently our Operations Manager Server. So I decided to use PowerShell, if you need to repeat it, script it.
+So, I simply built a script to connect to the required machine, stop the “Health Service”, delete the files from the required folder and then restart the “Health Service”.</description>
+    </item>
+    
+    <item>
+      <title>Documenting the Environment</title>
+      <link>https://cloudadventures.fskelly.com/2011/09/01/documenting-the-environment/</link>
+      <pubDate>Thu, 01 Sep 2011 07:16:09 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/09/01/documenting-the-environment/</guid>
+      <description>Hi All,
+It has been a really busy time for me. However, I am very happy with life at the moment. Just recently I received a “Microsoft Community Contributor” award from Microsoft.
+
+I know I have been a little quite the last little while. I have been busy doing a job that everyone loves (I wish there was a font for sarcasm). I have been VERY busy documenting my production environment including Hyper-V, Active Directory and Exchange.</description>
+    </item>
+    
+    <item>
+      <title>Get-hotfix on Steroids</title>
+      <link>https://cloudadventures.fskelly.com/2011/07/11/get-hotfix-on-steroids/</link>
+      <pubDate>Mon, 11 Jul 2011 12:25:28 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/07/11/get-hotfix-on-steroids/</guid>
+      <description>Hi All,
+I have taken the get-hotfix and tweaked it so something useful for my environment.
+I have uploaded the .ps1 file to Technet.
+My script can be found here
+Hope you find this helpful.
+Follow me</description>
+    </item>
+    
+    <item>
+      <title>Building more redundancy and replicating folder structure</title>
+      <link>https://cloudadventures.fskelly.com/2011/07/07/building-more-redundancy-and-replicating-folder-structure/</link>
+      <pubDate>Thu, 07 Jul 2011 06:15:39 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/07/07/building-more-redundancy-and-replicating-folder-structure/</guid>
+      <description>We have had a few failures of the power kind (thanks to the electricity provider in South Africa, who will remain nameless). So we have now had to build in further redundancy to cater for this and for other business needs. There is nothing worse than getting a phone call saying that critical services are unavailable at a CRITICAL time. What a nightmare. So a few plans were set in motion.</description>
+    </item>
+    
+    <item>
+      <title>Changing your Protection Server in DPM to another server</title>
+      <link>https://cloudadventures.fskelly.com/2011/05/27/changing-your-protection-server-in-dpm-to-another-server/</link>
+      <pubDate>Fri, 27 May 2011 09:17:03 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/05/27/changing-your-protection-server-in-dpm-to-another-server/</guid>
+      <description>Have you ever been in a situation where you have either removed or added a new DPM server to your environment?
+It happened to me just the other day, I had to “re-think” my DPM design and starting using “Local” to each Data Centre DPM servers to backup my data at each Data Centre. However, this was not the case before this, we were using the same product, but a different strategy.</description>
+    </item>
+    
+    <item>
+      <title>To Protect or NOT to Protect</title>
+      <link>https://cloudadventures.fskelly.com/2011/05/24/to-protect-or-not-to-protect/</link>
+      <pubDate>Tue, 24 May 2011 14:05:12 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/05/24/to-protect-or-not-to-protect/</guid>
+      <description>I have finally found some time to look some more into DPM and decided to modify my environment and created some additional PROTECTION GROUPS. I am particularly chuffed as I have not done this before. Make no error, I have used DPM extensively for mailbox recoveries (Execs and other users crying about loosing items), recovering of databases and VHD (see some of my previous posts). So back to my point, the Protection groups were created without any hassle and now I have a dedicated SharePoint Protection Group.</description>
+    </item>
+    
+    <item>
+      <title>POWERshell console to power all plugins</title>
+      <link>https://cloudadventures.fskelly.com/2011/05/20/powershell-console-to-power-all-plugins/</link>
+      <pubDate>Fri, 20 May 2011 11:07:09 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/05/20/powershell-console-to-power-all-plugins/</guid>
+      <description>I do not know about everyone else. I am a rather busy admin and quite fond of powershell and scripting. However, I also have a separate admin account for doing my administrative tasks. Now when you are working with multiple systems, all of which have PowerShell consoles, it can become a little bit of a pain opening a console for Exchange 2010, Operations Manager 2010, Virtual Machine Manager and Service Manager to name a few.</description>
+    </item>
+    
+    <item>
+      <title>Using SMLets practically</title>
+      <link>https://cloudadventures.fskelly.com/2011/05/17/using-smlets-practically/</link>
+      <pubDate>Tue, 17 May 2011 11:27:51 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/05/17/using-smlets-practically/</guid>
+      <description>In my previous post, SCSM And Powershell, I mentioned that I am now starting to play with get-scsmobject. In this post I also created a script. That script has now been evolved into a proper get-scsmobject script.$Now=(get-date).AddDays(-7)
+$CId=(Get-SCSMEnumeration -ComputerName &amp;quot;ms-ec-hdm01&amp;quot;IncidentStatusEnum.Closed$).id
+$RId=(Get-SCSMEnumeration -ComputerName &amp;quot;ms-ec-hdm01&amp;quot;IncidentStatusEnum.Resolved$).id
+$Class=Get-SCSMClass -ComputerName &amp;quot;ms-ec-hdm01&amp;quot;System.WorkItem.Incident$$cType=&amp;quot;Microsoft.EnterpriseManagement.Common.EnterpriseManagementObjectCriteria&amp;quot;#$cString = &amp;ldquo;Status != &amp;lsquo;$CId&amp;rsquo; and Status != &amp;lsquo;$RId&amp;rsquo; and TargetResolutionTime &amp;lt; &amp;lsquo;$Now&amp;rsquo; and TargetResolutionTime Is Not Null&amp;rdquo;$cStringClosed=&amp;quot;Status = &amp;lsquo;$CId&amp;rsquo;and CreatedDate &amp;gt;&#39;$Now&amp;rsquo;&amp;quot;$cStringResolved=&amp;quot;Status = &amp;lsquo;$RId&amp;rsquo;and CreatedDate &amp;gt;&#39;$Now&amp;rsquo;&amp;quot;$cStringAll=&amp;quot;CreatedDate &amp;gt;&#39;$Now&#39;&amp;quot;$critClosed=new-object $cType$cStringClosed,$Class$critResolved=new-object $cType$cStringResolved,$Class$critAll=new-object $cType$cStringOther,$Class$closed=Get-SCSMObject -ComputerName &amp;quot;ms-ec-hdm01&amp;quot;-Criteria $critClosed$resolved=Get-SCSMObject -ComputerName &amp;quot;ms-ec-hdm01&amp;quot;-Criteria $critResolved$all=Get-SCSMObject -ComputerName &amp;quot;ms-ec-hdm01&amp;quot;-Criteria $critAll#$all = Get-SCSMObject -ComputerName &amp;ldquo;ms-ec-hdm01&amp;rdquo; -Class (Get-SCSMClass -ComputerName &amp;ldquo;ms-ec-hdm01&amp;rdquo; System.</description>
+    </item>
+    
+  </channel>
+</rss>

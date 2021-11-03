@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ITAM on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/itam/</link>
+    <description>Recent content in ITAM on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 27 Aug 2013 14:11:29 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/itam/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New features–Cireson IT Asset Management</title>
+      <link>https://cloudadventures.fskelly.com/2013/08/27/new-featurescireson-it-asset-management/</link>
+      <pubDate>Tue, 27 Aug 2013 14:11:29 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/08/27/new-featurescireson-it-asset-management/</guid>
+      <description>I have previously done a post on CIreson IT Asset Management. However the people at Cireson have been very busy with new features to be added to their ITAM (IT Asset Management) tool.
+Cireson Asset Management: New Feature Highlights
+After recently releasing the newest version of the Asset Management app for Microsoft System Centre (Features Press Release), this post goes a little more in depth to explain some of the amazing features included in this latest release.</description>
+    </item>
+    
+    <item>
+      <title>Cireson IT Asset Management with Service Manager</title>
+      <link>https://cloudadventures.fskelly.com/2013/06/26/cireson-it-asset-management-with-service-manager/</link>
+      <pubDate>Wed, 26 Jun 2013 10:23:48 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/06/26/cireson-it-asset-management-with-service-manager/</guid>
+      <description>Cireson have recently released an new enhancement to the Service Manager console called the Cireson SCSM Asset Management App. This particular application is very easy to install. To install the application into the console, it is simply a case of importing a few management packs and some XML files and DLL files. This is very easy to do and the installation instructions provided by Cireson are very simple and easy to follow as with all Cireson add-ins I have worked with in the past.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+     Importing data into Service Manager–CSV import and XML | 
+    Fletcher&#39;s Tech Blog
+  
+</title><meta name="description" content="A day in the life of a Cloud Engineer."><meta name="author" content="Fletcher Kelly">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="/favicon.ico">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+
+
+<link rel="canonical" href="https://cloudadventures.fskelly.com/2013/04/23/importing-data-into-service-managercsv-import-and-xml/"><meta property="og:title" content="Importing data into Service Manager–CSV import and XML" />
+<meta property="og:description" content="So, just recently I was asked by a customer to import data from an “old” SCSM system. The customer is moving to new hardware within the organization and is using this opportunity to clean up Service Manager and re-import only clean data.So, the challenge is the following.The customer wants to import Change Requests from the “old” Service Manager to the “new” Service Manager. Ok, so after some research and confirmation, it is NOT possible to simply move data from one Service Manager installation to another." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cloudadventures.fskelly.com/2013/04/23/importing-data-into-service-managercsv-import-and-xml/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2013-04-23T05:27:42+00:00" />
+<meta property="article:modified_time" content="2013-04-23T05:27:42+00:00" />
+
+<meta itemprop="name" content="Importing data into Service Manager–CSV import and XML">
+<meta itemprop="description" content="So, just recently I was asked by a customer to import data from an “old” SCSM system. The customer is moving to new hardware within the organization and is using this opportunity to clean up Service Manager and re-import only clean data.So, the challenge is the following.The customer wants to import Change Requests from the “old” Service Manager to the “new” Service Manager. Ok, so after some research and confirmation, it is NOT possible to simply move data from one Service Manager installation to another."><meta itemprop="datePublished" content="2013-04-23T05:27:42+00:00" />
+<meta itemprop="dateModified" content="2013-04-23T05:27:42+00:00" />
+<meta itemprop="wordCount" content="612">
+<meta itemprop="keywords" content="Change Request,CSV,CSV Import,Data Import,import,SCSM 2012," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Importing data into Service Manager–CSV import and XML"/>
+<meta name="twitter:description" content="So, just recently I was asked by a customer to import data from an “old” SCSM system. The customer is moving to new hardware within the organization and is using this opportunity to clean up Service Manager and re-import only clean data.So, the challenge is the following.The customer wants to import Change Requests from the “old” Service Manager to the “new” Service Manager. Ok, so after some research and confirmation, it is NOT possible to simply move data from one Service Manager installation to another."/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://cloudadventures.fskelly.com">Fletcher&#39;s Tech Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">April 23, 2013</p>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>612 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>3 mins read</span>
+                        </div>
+
+                        <h1>Importing data into Service Manager–CSV import and XML</h1>
+
+                        
+                    </div>
+                </div><div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="content">
+                            <p><!-- raw HTML omitted -->So, just recently I was asked by a customer to import data from an “old” SCSM system. The customer is moving to new hardware within the organization and is using this opportunity to clean up Service Manager and re-import only clean data.<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->So, the challenge is the following.<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->The customer wants to import Change Requests from the “old” Service Manager to the “new” Service Manager. Ok, so after some research and confirmation, it is NOT possible to simply move data from one Service Manager installation to another. I decided the best way to handle this would be to import the data using a CSV file. As a start I used the following links<!-- raw HTML omitted --></p>
+<p><a href="http://www.netiviaconsulting.com/2012/05/04/importing-work-items-in-bulk-into-scsm2012-via-csv-import-connector/" title="http://www.netiviaconsulting.com/2012/05/04/importing-work-items-in-bulk-into-scsm2012-via-csv-import-connector/">http://www.netiviaconsulting.com/2012/05/04/importing-work-items-in-bulk-into-scsm2012-via-csv-import-connector/</a></p>
+<p><a href="http://blogs.technet.com/b/servicemanager/archive/2009/05/26/using-the-csv-import-feature.aspx" title="http://blogs.technet.com/b/servicemanager/archive/2009/05/26/using-the-csv-import-feature.aspx">http://blogs.technet.com/b/servicemanager/archive/2009/05/26/using-the-csv-import-feature.aspx</a></p>
+<p><!-- raw HTML omitted -->So, now onto the “meat” of the work, it is entirely up to you what data you would like to import.<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->Below is a sample of my XML file. It caters for the basic information on the Change Request form and for my customers needs, it caters for SIX Manual Activities and ONE Review Activity. I will break this down into smaller pieces in a moment.<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->The Appendix “A” <!-- raw HTML omitted --><a href="http://blogs.technet.com/b/servicemanager/archive/2009/05/26/appendix-a-to-previous-post.aspx"><!-- raw HTML omitted -->here<!-- raw HTML omitted --></a> <!-- raw HTML omitted -->is key to the import process.<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->XML Code<!-- raw HTML omitted --></p>
+<p>[code language=”xml”]<br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted -->[/code]</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><code>&lt;span style=&quot;font-family:Tahoma;font-size:small;&quot;&gt;Okay, so now time to break it down into smaller easier to manage bits.&lt;/span&gt;</code></p>
+<p><code>&lt;span style=&quot;font-family:Tahoma;&quot;&gt;&lt;span style=&quot;font-size:small;&quot;&gt;Base Change Request Projection Class. This is the framework for Change Request and this example included the “Created By” extension. All the property id’s can be found in the appendix &lt;/span&gt;&lt;a href=&quot;http://blogs.technet.com/b/servicemanager/archive/2009/05/26/appendix-a-to-previous-post.aspx&quot;&gt;&lt;span style=&quot;font-size:small;&quot;&gt;here&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-size:small;&quot;&gt;. Please note that the example below does NOT include the “Projection” closing XML Brace as this is included further down with the original coding.&lt;/span&gt;&lt;/span&gt;</code></p>
+<p><code>&lt;span style=&quot;font-family:Tahoma;font-size:small;&quot;&gt;XML Code&lt;/span&gt;</code></p>
+<p>[code language=”xml”]<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+<p><!-- raw HTML omitted -->[/code]</p>
+<!-- raw HTML omitted -->
+<p><code>&lt;span style=&quot;font-family:Tahoma;font-size:small;&quot;&gt;So, now after this I have simply “bolted” on as many Manual Activities as I needed for my customer. In this case, it is SEVEN. I have a sample of the XML code below which can be simply copied and pasted as many times as needed. Please note that the example below does NOT include the “Projection” closing XML Brace as this is included further down with the original coding.&lt;/span&gt;</code></p>
+<p><code>&lt;span style=&quot;font-family:Tahoma;font-size:small;&quot;&gt;XML Code&lt;/span&gt;</code></p>
+<p>[code language=”xml”]<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+<p><!-- raw HTML omitted -->[/code]</p>
+<!-- raw HTML omitted -->
+<p><code>&lt;span style=&quot;font-family:Tahoma;font-size:small;&quot;&gt;And now I needed to add a Review Activity, again this is just the simple information needed. &lt;/span&gt;</code></p>
+<p><code>&lt;span style=&quot;font-family:Tahoma;font-size:small;&quot;&gt;XML Code&lt;/span&gt;</code></p>
+<p>[code language=”xml”]<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+<p><!-- raw HTML omitted -->[/code]</p>
+<!-- raw HTML omitted -->
+<p><code>&lt;span style=&quot;font-family:Tahoma;font-size:small;&quot;&gt;So, all the components together created the XML file for the Projection that I needed.&lt;/span&gt;</code></p>
+<p><code>&lt;span style=&quot;font-family:Tahoma;&quot;&gt;&lt;span style=&quot;font-size:small;&quot;&gt;Ok, so this is ONE piece of the puzzle. In order for the CSV import to work within Service Manager, you need a CSV file as well. Building the CSV file is actually quite easy. Simple use all &lt;code&gt;</code><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p>[code language=”xml”]   <!-- raw HTML omitted --> <!-- raw HTML omitted -->[/code]</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><code>&lt;span style=&quot;font-family:Tahoma;&quot;&gt;&lt;span style=&quot;font-size:small;&quot;&gt;&lt;code&gt;&lt;span style=&quot;font-family:Tahoma;font-size:small;&quot;&gt;tags as CSV headers.&lt;/span&gt;</code><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><code>&lt;span style=&quot;font-family:Tahoma;font-size:small;&quot;&gt;&lt;code&gt;&lt;code&gt;&lt;span style=&quot;font-family:Tahoma;&quot;&gt;&lt;span style=&quot;font-size:small;&quot;&gt;Populate the file as needed. Now lets import the file. By the way, I have noticed that if the file is created in Excel (2013 at least) and saved a .csv, Excle uses “;” and NOT “,”. So simple open the application in Notepad and do a search and replace.&lt;/span&gt;&lt;/span&gt;</code><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><code>&lt;span style=&quot;font-family:Tahoma;&quot;&gt;&lt;code&gt;&lt;code&gt;&lt;span style=&quot;font-family:Tahoma;font-size:small;&quot;&gt;Sample file (CSV)&lt;/span&gt;</code><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><code>&lt;code&gt;&lt;code&gt;&lt;span style=&quot;font-family:Tahoma;font-size:small;&quot;&gt;Headers are based on Property values within the XML File.&lt;/span&gt;</code><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p>CR{0},CR notes,CR Title 1,CR Description 1,CR Contact Method,ChangePriorityEnum.Medium,ChangeImpactEnum.Standard,ChangeRiskEnum.Medium,CR Reason 1,FK,fletcherk,MA{0},0,MA Title 1,fk,fletcherk,MA{0},1,MA Title 2,fk,fletcherk,MA{0},2,MA Title 3,fk,fletcherk,MA{0},3,MA Title 4,fk,fletcherk,MA{0},4,MA Title 5,fk,fletcherk,MA{0},5,MA Title 6,fk,fletcherk,MA{0},6,MA Title 7,fk,fletcherk,RA{0},7,RA Title 1,fk,fletcherk</p>
+<p><!-- raw HTML omitted -->Please note that the Sequence ID can be changed to sort you needs. Remember that the Sequence Number will start at 0. The MA is the prefix for the Manual Activities and the RA is the prefix for Review Activities, please adjust as needed.<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->Also, the {0} ensures id are incremented correctly.<!-- raw HTML omitted --></p>
+<p><a href="http://fskelly.files.wordpress.com/2013/04/image.png"><!-- raw HTML omitted --></a> pl</p>
+<p><!-- raw HTML omitted -->Select XML file and CSV file<!-- raw HTML omitted --></p>
+<p><a href="http://fskelly.files.wordpress.com/2013/04/image1.png"><!-- raw HTML omitted --></a></p>
+<p><a href="http://fskelly.files.wordpress.com/2013/04/image2.png"><!-- raw HTML omitted --></a></p>
+<p><a href="http://fskelly.files.wordpress.com/2013/04/image3.png"><!-- raw HTML omitted --></a></p>
+<p><a href="http://fskelly.files.wordpress.com/2013/04/image4.png"><!-- raw HTML omitted --></a></p>
+<p>You can import as many Change Requests as you wish using this method.</p>
+<p><a href="mailto:systemcenterguyza@live.com">(E-Mail me)</a></p>
+<p><a href="/wp-content/uploads/2013/02/image_thumb_thumb_thumb_thumb_thumb1-1.png"><!-- raw HTML omitted --></a></p>
+<p><!-- raw HTML omitted -->Follow me.<!-- raw HTML omitted --></p>
+<p><a href="http://www.facebook.com/fletcher.kelly"><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></a> Facebook (Personal)</p>
+<p><a href="http://twitter.com/#!/fskelly"><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></a>Twitter (Personal &amp; System Center)</p>
+<p><a href="http://twitter.com/syscenterguyza"><!-- raw HTML omitted --></a> Twitter (System Center Focused)</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+
+                        </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="/tags/change-request">
+                                    <i class="fas fa-tag mr-2"></i>Change Request
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/csv">
+                                    <i class="fas fa-tag mr-2"></i>CSV
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/csv-import">
+                                    <i class="fas fa-tag mr-2"></i>CSV Import
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/data-import">
+                                    <i class="fas fa-tag mr-2"></i>Data Import
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/import">
+                                    <i class="fas fa-tag mr-2"></i>import
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/scsm-2012">
+                                    <i class="fas fa-tag mr-2"></i>SCSM 2012
+                                </a></div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2013%2f04%2f23%2fimporting-data-into-service-managercsv-import-and-xml%2f&text=Importing%20data%20into%20Service%20Manager%e2%80%93CSV%20import%20and%20XML">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2013%2f04%2f23%2fimporting-data-into-service-managercsv-import-and-xml%2f&title=Importing%20data%20into%20Service%20Manager%e2%80%93CSV%20import%20and%20XML">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fcloudadventures.fskelly.com%2f2013%2f04%2f23%2fimporting-data-into-service-managercsv-import-and-xml%2f&t=Importing%20data%20into%20Service%20Manager%e2%80%93CSV%20import%20and%20XML">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2013%2f04%2f23%2fimporting-data-into-service-managercsv-import-and-xml%2f&title=Importing%20data%20into%20Service%20Manager%e2%80%93CSV%20import%20and%20XML">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div><div class="row justify-content-center my-3">
+                    <div class="col-lg-8">
+                        <div id="commento"></div>
+                        <script src="https://commento.io"></script>
+                    </div>
+                </div></article>
+        </div>
+    </div>
+
+    <div class="related-content row mt-5 row-cols-1 row-cols-lg-3"><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2013/02/21/cireson-my-active-work-items/" class="d-block"><div class="card-body">
+            <h4 class="card-title">Cireson My Active Work Items</h4>
+            <p class="card-text text-muted text-uppercase">February 21, 2013</p>
+            <div class="card-text">
+                So, Cireson has been hard at work to fill a few gaps present within the Service Manager space. Cireson has created an application called My Active Work Items to bring all information assigned to your user token in one place. For Service Manager 2010, you could create the Work Items assigned to Me view. This was a good start for SCSM 2010 and this continues to work with SCSM 2012. However, with SCSM 2012, there are a few shortcomings of this view.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2013/01/22/cireson-analyst-web-console/" class="d-block"><div class="card-body">
+            <h4 class="card-title">Cireson Analyst Web Console</h4>
+            <p class="card-text text-muted text-uppercase">January 22, 2013</p>
+            <div class="card-text">
+                I have always heard complaints from some of the analysts in my company about having to install the Service Manager Console on their machines and then complaining about having to learn a new application.
+So, I went searching around and found a great application called Cireson SCSM Web Console, this allows analysts to update Incidents via a newly designed web portal for Analysts. Since the console is designed in HTML5, the web console is browser agnostic.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2012/12/20/assignedto-and-affecteduser-with-powershell-service-manager/" class="d-block"><div class="card-body">
+            <h4 class="card-title">AssignedTo and AffectedUser with Powershell – Service Manager</h4>
+            <p class="card-text text-muted text-uppercase">December 20, 2012</p>
+            <div class="card-text">
+                So recently I got an e-mail to my newly setup e-mail address, for just this reason , from someone asking if I knew a way to do the following.
+ “I was trying to find a way to find all Incidents related to a specific person (assigned to or affected user) using PowerShell” So, I decided the best to answer this with a blog post as maybe there are other people out there asking the same question.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div></div>
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://cloudadventures.fskelly.com/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                            <a href="https://github.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://linkedin.com/in/fletcherkelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://twitter.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright © 2019–2021, Fletcher Kelly; all rights reserved.
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="/dist/main.d608eadfe5ac0688902e.min.js"></script>
+        
+    
+
+
+
+<script>
+    window.Prism = window.Prism || {};
+    window.Prism.manual = true;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-XXXX', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+</body>
+</html>

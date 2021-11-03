@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Self Service Portal on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/categories/self-service-portal/</link>
+    <description>Recent content in Self Service Portal on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 05 Aug 2013 04:53:43 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/categories/self-service-portal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>End User Portal for System Centre Orchestrator</title>
+      <link>https://cloudadventures.fskelly.com/2013/08/05/end-user-portal-for-system-centre-orchestrator/</link>
+      <pubDate>Mon, 05 Aug 2013 04:53:43 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/08/05/end-user-portal-for-system-centre-orchestrator/</guid>
+      <description>So, let’s ay you have invested the time and gotten System Centre Orchestrator up and running in your environment and you have the product performing some day to day tasks and it is working well. However, now you want start using SCO (System Centre Orchestrator) to start performing end user focused tasks like Password Reset, add users to groups or even disabling of users or server testing as part of first line support.</description>
+    </item>
+    
+    <item>
+      <title>System Centre Service Manager 2012 Portal</title>
+      <link>https://cloudadventures.fskelly.com/2011/11/30/system-centre-service-manager-2012-portal/</link>
+      <pubDate>Wed, 30 Nov 2011 16:02:55 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/11/30/system-centre-service-manager-2012-portal/</guid>
+      <description>So now, I move onto the final part of the SCSM 2012 journey, the Portal.
+The install was pretty straight-forward, the most difficult part is deciding how you would split your roles or if you are going to split your roles, here is the guide for role placement.
+So, once you have decided which route you would like to follow, here are the steps I followed.
+ Start the setup.</description>
+    </item>
+    
+  </channel>
+</rss>

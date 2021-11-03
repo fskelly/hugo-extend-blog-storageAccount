@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Console on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/console/</link>
+    <description>Recent content in Console on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 15 Nov 2013 11:58:48 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/console/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Send Email to 3rd Party from SCSM Console – PowerShell and Console Task</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2013-11-15-send-email-to-3rd-party-from-scsm-console-powershell-and-console-task/</link>
+      <pubDate>Fri, 15 Nov 2013 11:58:48 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2013-11-15-send-email-to-3rd-party-from-scsm-console-powershell-and-console-task/</guid>
+      <description>So recently, I had a customer ask me for the following as their previous incident management system had this functionality.
+The customer wanted to be able to send an &amp;ldquo;Update Email&amp;rdquo; to a 3rd party from the SCSM Console with automatically placing the reference number into said email. They needed the functionality of sending to any email address. This was a requirement for the type of business they are in.</description>
+    </item>
+    
+    <item>
+      <title>Cireson My Active Work Items</title>
+      <link>https://cloudadventures.fskelly.com/2013/02/21/cireson-my-active-work-items/</link>
+      <pubDate>Thu, 21 Feb 2013 09:10:11 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/02/21/cireson-my-active-work-items/</guid>
+      <description>So, Cireson has been hard at work to fill a few gaps present within the Service Manager space. Cireson has created an application called My Active Work Items to bring all information assigned to your user token in one place. For Service Manager 2010, you could create the Work Items assigned to Me view. This was a good start for SCSM 2010 and this continues to work with SCSM 2012. However, with SCSM 2012, there are a few shortcomings of this view.</description>
+    </item>
+    
+    <item>
+      <title>Cireson Analyst Web Console</title>
+      <link>https://cloudadventures.fskelly.com/2013/01/22/cireson-analyst-web-console/</link>
+      <pubDate>Tue, 22 Jan 2013 09:32:19 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/01/22/cireson-analyst-web-console/</guid>
+      <description>I have always heard complaints from some of the analysts in my company about having to install the Service Manager Console on their machines and then complaining about having to learn a new application.
+So, I went searching around and found a great application called Cireson SCSM Web Console, this allows analysts to update Incidents via a newly designed web portal for Analysts. Since the console is designed in HTML5, the web console is browser agnostic.</description>
+    </item>
+    
+    <item>
+      <title>ConfigMgr (SCCM) 2012 wont open console–cannot connect to the site</title>
+      <link>https://cloudadventures.fskelly.com/2012/10/29/configmgr-sccm-2012-wont-open-consolecannot-connect-to-the-site/</link>
+      <pubDate>Mon, 29 Oct 2012 09:37:04 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/10/29/configmgr-sccm-2012-wont-open-consolecannot-connect-to-the-site/</guid>
+      <description>So, we have started our migration from ConfigMgr 2007 R2 to SCCM 2012. We have installed the new site and now we have started building the required collections as we are using a mix of old collections from ConfigMgr 2007 ( a lot of the built-in collections that are present in ConfigMgr 2007 are NOT present in SCCM 2012. So of course, copy and paste of the Query language is quite useful and this is one of the first things I would do when you are in the process of a SCCM Migration.</description>
+    </item>
+    
+    <item>
+      <title>Why is my Service Manager so slow?</title>
+      <link>https://cloudadventures.fskelly.com/2012/06/26/why-is-my-service-manager-so-slow/</link>
+      <pubDate>Tue, 26 Jun 2012 07:16:36 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/06/26/why-is-my-service-manager-so-slow/</guid>
+      <description>So, I have been running Service Manager for quite some time now. From SCSM 2010 to SCSM SP1 and most of the CU’s before I upgraded to SCSM 2012 Beta and RC and then to RTM (with the help of a Microsoft TAP Program). Service Manager is now quite entrenched in our business and has been running quite well for a very long time. However, a little while ago we began to experience performance issues with the Console and the logging of calls and the application of Workflows.</description>
+    </item>
+    
+  </channel>
+</rss>

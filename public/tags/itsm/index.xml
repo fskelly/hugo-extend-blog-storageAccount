@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ITSM on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/itsm/</link>
+    <description>Recent content in ITSM on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 31 Jul 2014 12:19:03 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/itsm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deploy a VM – SCSM, SCVMM, SCORCH – all working in harmony</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2014-07-31-deploy-a-vm-scsm-scvmm-scorch-all-working-in-harmony/</link>
+      <pubDate>Thu, 31 Jul 2014 12:19:03 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2014-07-31-deploy-a-vm-scsm-scvmm-scorch-all-working-in-harmony/</guid>
+      <description>So, it has been a while.
+So, the requirement for this project was as follow.
+ Use Service Manager. Provide a portal for logging a VM Creation request. Build the computername based on a predetermined pattern. Determine first available name. Perform a capacity check. Deploy the set number of VMs.  I am going to skip over the first 2 Points, there are numerous topics covering this. So, onto point 3, I created a Service Request Extension, if anyone would like some info on this, also plenty of articles, please let me know and I can do a blog post on the Extension, or I can make the extension available for you to seal yourselves.</description>
+    </item>
+    
+  </channel>
+</rss>

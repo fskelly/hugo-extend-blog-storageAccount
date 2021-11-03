@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>load testing on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/load-testing/</link>
+    <description>Recent content in load testing on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 11 Sep 2013 19:30:51 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/load-testing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Service Request Load Testing for SCSM</title>
+      <link>https://cloudadventures.fskelly.com/2013/09/11/service-request-load-testing-for-scsm/</link>
+      <pubDate>Wed, 11 Sep 2013 19:30:51 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/09/11/service-request-load-testing-for-scsm/</guid>
+      <description>I have found a great for load testing SCSM with Incidents. The script uses SMLets to generate Incidents and you can then gauge how your system would handle the load you are planning within your Production Environment.
+I will not go into the detail of the script as this blog post does a great job of explaining it. SO this got me to thinking about other Load Testing you could perform.</description>
+    </item>
+    
+  </channel>
+</rss>

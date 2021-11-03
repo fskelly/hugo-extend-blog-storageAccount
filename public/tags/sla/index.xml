@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SLA on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/sla/</link>
+    <description>Recent content in SLA on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 27 Aug 2015 06:21:12 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/sla/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SLA Reporting with PowerShell and SCSM</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2015-08-27-sla-reporting-with-powershell-and-scsm/</link>
+      <pubDate>Thu, 27 Aug 2015 06:21:12 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2015-08-27-sla-reporting-with-powershell-and-scsm/</guid>
+      <description>I always get asked about reporting from my customers, and specifically around SLA&amp;rsquo;s. SLA&amp;rsquo;s are very important to most companies as this is part of the tracking mechanism of employees and vendors and the like.
+SMLETS is needed for this, it is built to be run from the server, if you need to run from your local machine, please install SMLets, copy the SDK Binaries folder and use the -computername where applicable with the SMLets commands.</description>
+    </item>
+    
+  </channel>
+</rss>

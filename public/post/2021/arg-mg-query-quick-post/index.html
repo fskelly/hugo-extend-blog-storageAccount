@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+     Azure Resource Group Enterprise Scale Landing Zone queries | 
+    Fletcher&#39;s Tech Blog
+  
+</title><meta name="description" content="Some starter Azure Resource Graph queries."><meta name="author" content="Fletcher Kelly">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="/favicon.ico">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+
+
+<link rel="canonical" href="https://cloudadventures.fskelly.com/post/2021/arg-mg-query-quick-post/"><meta property="og:title" content="Azure Resource Group Enterprise Scale Landing Zone queries" />
+<meta property="og:description" content="Some starter Azure Resource Graph queries." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cloudadventures.fskelly.com/post/2021/arg-mg-query-quick-post/" /><meta property="og:image" content="https://cloudadventures.fskelly.com/2021/resourcegraph.png" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-08-25T05:58:18+02:00" />
+<meta property="article:modified_time" content="2021-08-25T05:58:18+02:00" />
+
+<meta itemprop="name" content="Azure Resource Group Enterprise Scale Landing Zone queries">
+<meta itemprop="description" content="Some starter Azure Resource Graph queries."><meta itemprop="datePublished" content="2021-08-25T05:58:18+02:00" />
+<meta itemprop="dateModified" content="2021-08-25T05:58:18+02:00" />
+<meta itemprop="wordCount" content="77"><meta itemprop="image" content="https://cloudadventures.fskelly.com/2021/resourcegraph.png">
+<meta itemprop="keywords" content="azure,resource graph,quick post," /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://cloudadventures.fskelly.com/2021/resourcegraph.png"/>
+
+<meta name="twitter:title" content="Azure Resource Group Enterprise Scale Landing Zone queries"/>
+<meta name="twitter:description" content="Some starter Azure Resource Graph queries."/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://cloudadventures.fskelly.com">Fletcher&#39;s Tech Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">August 25, 2021</p>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>77 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>1 min read</span>
+                        </div>
+
+                        <h1>Azure Resource Group Enterprise Scale Landing Zone queries</h1>
+
+                        <ul class="authors list-inline"><li class="list-inline-item mr-3">
+                    <div class="media author"><a href="/authors/fletcher-kelly/" class="mr-3">
+                                    <picture>
+                                        <source srcset="/authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_64x0_resize_q75_box.jpg 1x, /authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_128x0_resize_q100_box.jpg 2x, /authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_192x0_resize_q100_box.jpg 3x">
+                                        <img src="/authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_64x0_resize_q75_box.jpg" class="rounded-circle" alt="Fletcher Kelly">
+                                    </picture>
+                                </a><div class="media-body">
+                            <h5 class="name my-0"><a href="/authors/fletcher-kelly/" class="small">Fletcher Kelly</a>
+                            </h5><p class="social small text-muted">
+                                    <a href="https://twitter.com/@fskelly">@fskelly</a>
+                                </p></div>
+                    </div>
+                </li></ul>
+                    </div>
+                </div><div class="row justify-content-center mb-3">
+                                <div class="col-lg-10">
+                                    <img data-src="/images/2021/resourcegraph_hud4e1e1d150e553b307c6feb057825d9a_7939_900x500_fit_box_3.png" class="img-fluid rounded mx-auto d-block" alt="Azure Resource Group Enterprise Scale Landing Zone queries">
+                                </div>
+                            </div><div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="content">
+                            <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="azure-resource-graph-examples">Azure Resource Graph Examples</h2>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>This is just a quick post. I am slowly working on building a collection of Resource Graph Queries - they can be found <a href="https://github.com/fskelly/azure-resource-graph/tree/main/enterpriseScale">here</a> and will grow over time. It just takes some time to build these.</p>
+<p>They will be broken down into a folder structure based upon the <a href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/enterprise-scale/design-guidelines">Critical Design Areas of Enterprise Scale Landing Zone</a></p>
+<p><img src="https://github.com/fskelly/flkelly-cloudblog/blob/main/public/images/blogImages/2021/azureresourcegraph/folderStructure.png?raw=true" alt="folderStructure"></p>
+<p>Hope this helps and keep an eye out for more.</p>
+<p>Follow me for more.<br>
+<a href="https://twitter.com/fskelly">Twitter</a><br>
+<a href="https://www.linkedin.com/in/fletcherkelly/">LinkedIn</a></p>
+
+                        </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="/tags/azure">
+                                    <i class="fas fa-tag mr-2"></i>azure
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/resource-graph">
+                                    <i class="fas fa-tag mr-2"></i>resource graph
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/quick-post">
+                                    <i class="fas fa-tag mr-2"></i>quick post
+                                </a></div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2f2021%2farg-mg-query-quick-post%2f&text=Azure%20Resource%20Group%20Enterprise%20Scale%20Landing%20Zone%20queries">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2f2021%2farg-mg-query-quick-post%2f&title=Azure%20Resource%20Group%20Enterprise%20Scale%20Landing%20Zone%20queries">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2f2021%2farg-mg-query-quick-post%2f&t=Azure%20Resource%20Group%20Enterprise%20Scale%20Landing%20Zone%20queries">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2f2021%2farg-mg-query-quick-post%2f&title=Azure%20Resource%20Group%20Enterprise%20Scale%20Landing%20Zone%20queries">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div><div class="row justify-content-center my-3">
+                    <div class="col-lg-8">
+                        <div id="commento"></div>
+                        <script src="https://commento.io"></script>
+                    </div>
+                </div></article>
+        </div>
+    </div>
+
+    <div class="related-content row mt-5 row-cols-1 row-cols-lg-3"><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/post/2021/bicep-troubleshooting/" class="d-block"><img data-src="/images/2021/bicep_hu54a406db675075db128df153bb3a8311_15797_700x350_fill_box_smart1_3.png" class="card-img-top mx-auto d-block" alt="Bicep Troubleshooting"><div class="card-body">
+            <h4 class="card-title">Bicep Troubleshooting</h4>
+            <p class="card-text text-muted text-uppercase">July 2, 2021</p>
+            <div class="card-text">
+                Some basic “troubleshooting” with Azure Bicep
+So, let me start with this. The team and the community behind Azure Bicep are amazing. There are some great examples here. I often use these as a base and the rip apart or add to meet my needs, you do NOT need to start from ground zero. :smile:
+When you are deploying bicep templates you command will look something like this.
+$bicepFile = &#34;.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/post/2021/cli-list-locations-and-peers/" class="d-block"><img data-src="/images/2021/azcli_hudd928a94cc53377d25f7ff09bf317593_7317_700x350_fill_q75_box_smart1.jpg" class="card-img-top mx-auto d-block" alt="Azure CLI - List Locations and Peers"><div class="card-body">
+            <h4 class="card-title">Azure CLI - List Locations and Peers</h4>
+            <p class="card-text text-muted text-uppercase">May 5, 2021</p>
+            <div class="card-text">
+                How to use the Azure CLI to list Azure Locations and their peers So this will be a “quick post” that shows some great functionality within the Azure CLI with az account list-locations. With this command you can expect some output like below, you actually get a lot of content back.
+{&#34;displayName&#34;: &#34;Brazil Southeast&#34;,&#34;id&#34;: &#34;/subscriptions/949ef534-07f5-4138-8b79-aae16a71310c/locations/brazilsoutheast&#34;,&#34;metadata&#34;: {&#34;geographyGroup&#34;: &#34;South America&#34;,&#34;latitude&#34;: &#34;-22.90278&#34;,&#34;longitude&#34;: &#34;-43.2075&#34;,&#34;pairedRegion&#34;: [{&#34;id&#34;: &#34;/subscriptions/949ef534-07f5-4138-8b79-aae16a71310c/locations/brazilsouth&#34;,&#34;name&#34;: &#34;brazilsouth&#34;,&#34;subscriptionId&#34;: null}],&#34;physicalLocation&#34;: &#34;Rio&#34;,&#34;regionCategory&#34;: &#34;Other&#34;,&#34;regionType&#34;: &#34;Physical&#34;},&#34;name&#34;: &#34;brazilsoutheast&#34;,&#34;regionalDisplayName&#34;: &#34;(South America) Brazil Southeast&#34;,&#34;subscriptionId&#34;: null} If you look at some of the examples, you will also see some “logical” locations, example below, there is a way of adding a query to remove these to display only “physical” locations.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/post/2021/azure-rest-api-postman-basics/" class="d-block"><img data-src="/images/2021/postman_hu681e2af288a94e3b96c1cc27325cb11a_21729_700x350_fill_q75_box_smart1.jpg" class="card-img-top mx-auto d-block" alt="Azure Rest Api Postman Basics"><div class="card-body">
+            <h4 class="card-title">Azure Rest Api Postman Basics</h4>
+            <p class="card-text text-muted text-uppercase">April 14, 2021</p>
+            <div class="card-text">
+                Absolute basics with Azure and PostMan
+Getting started Many of the articles I have found online with regards to the Azure REST API assume a fair level of familiarity with Azure which can be a good and bad thing. You see the Azure Portal makes interacting with the Azure REST API very easy as a lot of the “prerequisite” work is done in the portal as part of the process. For this blog post we will work on something quite basic, “Create a Virtual Machine”.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div></div>
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://cloudadventures.fskelly.com/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                            <a href="https://github.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://linkedin.com/in/fletcherkelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://twitter.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright © 2019–2021, Fletcher Kelly; all rights reserved.
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="/dist/main.d608eadfe5ac0688902e.min.js"></script>
+        
+    
+
+
+
+<script>
+    window.Prism = window.Prism || {};
+    window.Prism.manual = true;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-XXXX', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+</body>
+</html>

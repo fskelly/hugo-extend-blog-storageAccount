@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Service Manager on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/service-manager/</link>
+    <description>Recent content in Service Manager on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 27 Aug 2013 14:11:29 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/service-manager/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New features–Cireson IT Asset Management</title>
+      <link>https://cloudadventures.fskelly.com/2013/08/27/new-featurescireson-it-asset-management/</link>
+      <pubDate>Tue, 27 Aug 2013 14:11:29 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/08/27/new-featurescireson-it-asset-management/</guid>
+      <description>I have previously done a post on CIreson IT Asset Management. However the people at Cireson have been very busy with new features to be added to their ITAM (IT Asset Management) tool.
+Cireson Asset Management: New Feature Highlights
+After recently releasing the newest version of the Asset Management app for Microsoft System Centre (Features Press Release), this post goes a little more in depth to explain some of the amazing features included in this latest release.</description>
+    </item>
+    
+    <item>
+      <title>Cireson IT Asset Management with Service Manager</title>
+      <link>https://cloudadventures.fskelly.com/2013/06/26/cireson-it-asset-management-with-service-manager/</link>
+      <pubDate>Wed, 26 Jun 2013 10:23:48 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/06/26/cireson-it-asset-management-with-service-manager/</guid>
+      <description>Cireson have recently released an new enhancement to the Service Manager console called the Cireson SCSM Asset Management App. This particular application is very easy to install. To install the application into the console, it is simply a case of importing a few management packs and some XML files and DLL files. This is very easy to do and the installation instructions provided by Cireson are very simple and easy to follow as with all Cireson add-ins I have worked with in the past.</description>
+    </item>
+    
+    <item>
+      <title>Cireson Analyst Web Console</title>
+      <link>https://cloudadventures.fskelly.com/2013/01/22/cireson-analyst-web-console/</link>
+      <pubDate>Tue, 22 Jan 2013 09:32:19 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/01/22/cireson-analyst-web-console/</guid>
+      <description>I have always heard complaints from some of the analysts in my company about having to install the Service Manager Console on their machines and then complaining about having to learn a new application.
+So, I went searching around and found a great application called Cireson SCSM Web Console, this allows analysts to update Incidents via a newly designed web portal for Analysts. Since the console is designed in HTML5, the web console is browser agnostic.</description>
+    </item>
+    
+    <item>
+      <title>How do I “learn” System Center Service Manager 2012?</title>
+      <link>https://cloudadventures.fskelly.com/2012/12/14/how-do-i-learn-system-center-service-manager-2012/</link>
+      <pubDate>Fri, 14 Dec 2012 13:38:54 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/12/14/how-do-i-learn-system-center-service-manager-2012/</guid>
+      <description>So, I recently made a very simple comment on Facebook. This lead to some interesting comment and questions being raised about Service Manager about “Training for Service Desk” staff” in particular. At this moment in time, there is no “Service Desk Staff” training that I am aware of. So I decided to try and address this as best I could.I have decided to consolidate some of the more important components and concepts of Service Manager and place them in one spot.</description>
+    </item>
+    
+    <item>
+      <title>Inactive Incidents–E-mail assigned to User</title>
+      <link>https://cloudadventures.fskelly.com/2012/10/10/inactive-incidentse-mail-assigned-to-user/</link>
+      <pubDate>Wed, 10 Oct 2012 07:34:02 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/10/10/inactive-incidentse-mail-assigned-to-user/</guid>
+      <description>Just recently I was looking for a way to notify users about Inactive incidents as I have some departments that tend to ignore their work items and an e-mail about their “untouched” incidents seems to motivate them. So after some searching I found this scriptfrom Andreas BaumgartenPlease note : I only modified this script to extend its use to other Statuses to be monitored. All credit for the script goes entirely to Andreas BaumgartenCode is below[sourcecode language=”powershell”]# Configure Last Modified Days Before</description>
+    </item>
+    
+    <item>
+      <title>Service Requests – Re-assignment notification</title>
+      <link>https://cloudadventures.fskelly.com/2012/07/09/service-requests-re-assignment-notification/</link>
+      <pubDate>Mon, 09 Jul 2012 05:43:13 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/07/09/service-requests-re-assignment-notification/</guid>
+      <description>So, in an effort to get my business ready for Service Requests as we use mainly Incidents and we are beginning our journey into Service Requests and differentiating between Service Requests (day to day operations) and Incidents (something is broken), I needed to reproduce a workflow to notify the “AssignedToUser” when a new Service Request is assigned to him or her. I already had a downloaded Management Pack for Incident Re-assignment notifications which was modified for my purposes, so this was a good place to start.</description>
+    </item>
+    
+    <item>
+      <title>Why is my Service Manager so slow?</title>
+      <link>https://cloudadventures.fskelly.com/2012/06/26/why-is-my-service-manager-so-slow/</link>
+      <pubDate>Tue, 26 Jun 2012 07:16:36 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/06/26/why-is-my-service-manager-so-slow/</guid>
+      <description>So, I have been running Service Manager for quite some time now. From SCSM 2010 to SCSM SP1 and most of the CU’s before I upgraded to SCSM 2012 Beta and RC and then to RTM (with the help of a Microsoft TAP Program). Service Manager is now quite entrenched in our business and has been running quite well for a very long time. However, a little while ago we began to experience performance issues with the Console and the logging of calls and the application of Workflows.</description>
+    </item>
+    
+    <item>
+      <title>Upgrading from SCSM 2010 / SCSM 2012 PRE-RTM to SCSM 2012 RTM</title>
+      <link>https://cloudadventures.fskelly.com/2012/04/30/upgrading-from-scsm-2010-scsm-2012-pre-rtm-to-scsm-2012-rtm/</link>
+      <pubDate>Mon, 30 Apr 2012 07:09:49 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/04/30/upgrading-from-scsm-2010-scsm-2012-pre-rtm-to-scsm-2012-rtm/</guid>
+      <description>So, You are now ready to take the plunge and upgrade to SCSM 2012 RTM as it now “publically” available.
+There is great documentation, obviously, on TECHNET. I have however found out a few other things which will helpfully make your transition a little easier. I have found that the following can cause some complications and how to “mitigate” these if you will.
+Service Manager 2010
+Connectors – Please make sure that your connectors are NOT running while you do the upgrade, the upgrade will work, however your connectors will run and attempt to catch up with itself.</description>
+    </item>
+    
+    <item>
+      <title>System Centre Service Manager 2012 Portal</title>
+      <link>https://cloudadventures.fskelly.com/2011/11/30/system-centre-service-manager-2012-portal/</link>
+      <pubDate>Wed, 30 Nov 2011 16:02:55 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/11/30/system-centre-service-manager-2012-portal/</guid>
+      <description>So now, I move onto the final part of the SCSM 2012 journey, the Portal.
+The install was pretty straight-forward, the most difficult part is deciding how you would split your roles or if you are going to split your roles, here is the guide for role placement.
+So, once you have decided which route you would like to follow, here are the steps I followed.
+ Start the setup.</description>
+    </item>
+    
+    <item>
+      <title>Service Manager 2012 Management Server (Upgrade)</title>
+      <link>https://cloudadventures.fskelly.com/2011/11/24/service-manager-2012-management-server-upgrade/</link>
+      <pubDate>Thu, 24 Nov 2011 05:36:25 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/11/24/service-manager-2012-management-server-upgrade/</guid>
+      <description>So, for the Management Server.
+This was very easy and quite painless for me.
+ Backup Encryption Key (for Disaster Recovery Purposes) Install Windows Server 2008 R2 SP1 (This is a pre-requisite for SCSM 2012) Remove Operations Manager Agent if this is installed, as the installer WILL stop you from continuing if the OpsMan Agent is installed. Run the Upgrade, PLEASE NOTE that if the Portal is installed on your Management Server, it will be REMOVED during the upgrade.</description>
+    </item>
+    
+    <item>
+      <title>Service Manager 2012 Data Warehouse (Upgrade)</title>
+      <link>https://cloudadventures.fskelly.com/2011/11/22/service-manager-2012-data-warehouse-upgrade/</link>
+      <pubDate>Tue, 22 Nov 2011 07:25:40 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/11/22/service-manager-2012-data-warehouse-upgrade/</guid>
+      <description>So, my journey with System Centre Service Manager 2012 Beta has begun and so far I have indeed found some funnies.
+I will be blogging about them, to make everyone else’s life a little bit easier and in the hope of better product adoption for this product. It is simply put a fantastic product.
+Ok, so the first time I ran the upgrade (remember I have a pre-prod environment), so I was able to rollback and did not have to follow Disaster Recovery with the Failure.</description>
+    </item>
+    
+    <item>
+      <title>Scheduled reports with SCSM Data Warehouse</title>
+      <link>https://cloudadventures.fskelly.com/2011/10/26/scheduled-reports-with-scsm-data-warehouse/</link>
+      <pubDate>Wed, 26 Oct 2011 10:26:01 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/10/26/scheduled-reports-with-scsm-data-warehouse/</guid>
+      <description>Hi All,
+I know it has been a little while.
+The reports built into Service Manager are great, however when you try to get a bit creative and automate some of the reports, you are going to run into some issues. So to work around theses issues, I did the following.
+Create a custom report from SQL Reporting Services and modified for my needs, I was focusing more on “Incident Analyst” and I was looking for a breakdown of the number of Incidents per Analysts in a week period.</description>
+    </item>
+    
+  </channel>
+</rss>

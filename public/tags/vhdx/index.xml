@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VHDX on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/vhdx/</link>
+    <description>Recent content in VHDX on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 06 Sep 2012 15:12:58 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/vhdx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Windows Server 2012 Journey</title>
+      <link>https://cloudadventures.fskelly.com/2012/09/06/my-windows-server-2012-journey/</link>
+      <pubDate>Thu, 06 Sep 2012 15:12:58 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/09/06/my-windows-server-2012-journey/</guid>
+      <description>So, my journey with Windows Server 2012 has started. The primary focus of my company’s journey is Hyper-V3. So far, the results are impressive. We are running a cluster consisting of 4 nodes connected to a DAS.So, my lessons learnt so far.1. As per my previous article, be careful with your Hyper-V NICs. While I am discussing NICs, the inclusion of “Out the box” NIC Teaming is great and so far no issues at all.</description>
+    </item>
+    
+  </channel>
+</rss>

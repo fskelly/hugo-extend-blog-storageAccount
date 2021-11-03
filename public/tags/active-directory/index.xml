@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Active Directory on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/active-directory/</link>
+    <description>Recent content in Active Directory on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 24 Jan 2012 11:04:36 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/active-directory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Testing Domain Controller Connectivity (using PowerShell)</title>
+      <link>https://cloudadventures.fskelly.com/2012/01/24/testing-domain-controller-connectivity-using-powershell/</link>
+      <pubDate>Tue, 24 Jan 2012 11:04:36 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/01/24/testing-domain-controller-connectivity-using-powershell/</guid>
+      <description>I believe that the best way to improve your skill is to test and push yourself. I am currently on a mission to get a lot more comfortable with PowerShell ( as it lives up to its name, it is very POWERful).
+I need to check a few domains up and running and like to keep an eye on my Domain Controllers as they are obviously the base of Active Directory.</description>
+    </item>
+    
+    <item>
+      <title>Documenting the Environment</title>
+      <link>https://cloudadventures.fskelly.com/2011/09/01/documenting-the-environment/</link>
+      <pubDate>Thu, 01 Sep 2011 07:16:09 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/09/01/documenting-the-environment/</guid>
+      <description>Hi All,
+It has been a really busy time for me. However, I am very happy with life at the moment. Just recently I received a “Microsoft Community Contributor” award from Microsoft.
+
+I know I have been a little quite the last little while. I have been busy doing a job that everyone loves (I wish there was a font for sarcasm). I have been VERY busy documenting my production environment including Hyper-V, Active Directory and Exchange.</description>
+    </item>
+    
+  </channel>
+</rss>

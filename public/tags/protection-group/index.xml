@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Protection Group on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/protection-group/</link>
+    <description>Recent content in Protection Group on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 24 May 2011 14:05:12 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/protection-group/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>To Protect or NOT to Protect</title>
+      <link>https://cloudadventures.fskelly.com/2011/05/24/to-protect-or-not-to-protect/</link>
+      <pubDate>Tue, 24 May 2011 14:05:12 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/05/24/to-protect-or-not-to-protect/</guid>
+      <description>I have finally found some time to look some more into DPM and decided to modify my environment and created some additional PROTECTION GROUPS. I am particularly chuffed as I have not done this before. Make no error, I have used DPM extensively for mailbox recoveries (Execs and other users crying about loosing items), recovering of databases and VHD (see some of my previous posts). So back to my point, the Protection groups were created without any hassle and now I have a dedicated SharePoint Protection Group.</description>
+    </item>
+    
+  </channel>
+</rss>

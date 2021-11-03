@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Installation on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/installation/</link>
+    <description>Recent content in Installation on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 13 Jun 2012 12:44:38 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/installation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installing System Centre Orchestrator</title>
+      <link>https://cloudadventures.fskelly.com/2012/06/13/installing-system-centre-orchestrator/</link>
+      <pubDate>Wed, 13 Jun 2012 12:44:38 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/06/13/installing-system-centre-orchestrator/</guid>
+      <description>So, just recently I decided to install System Centre Orchestrator. It appears easy enough if you follow the Technet articles. This addresses the need for Service Accounts and the permissions needed by these accounts and there functions. It also helps you to size and decide the Orchestrator installation type that would best suit your environment. It helps you to decide the best way to break the components if you want to.</description>
+    </item>
+    
+  </channel>
+</rss>

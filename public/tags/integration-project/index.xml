@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Integration Project on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/integration-project/</link>
+    <description>Recent content in Integration Project on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 04 Apr 2014 08:18:16 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/integration-project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adding Comments to Work Items with Orchestrator</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2014-04-04-adding-comments-to-work-items-with-orchestrator/</link>
+      <pubDate>Fri, 04 Apr 2014 08:18:16 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2014-04-04-adding-comments-to-work-items-with-orchestrator/</guid>
+      <description>Hi All,
+It has been a little while, i have been quite involved with an Integration Project. With this project there was a requirement to add comments to a Work Item. The information is passed on from &amp;ldquo;System A&amp;rdquo; to &amp;ldquo;System B&amp;rdquo; via XML. Using PowerShell, extracting the XML contents is not too difficult, if anyone would like to dive into that a little bit, please let me know with Comments.</description>
+    </item>
+    
+  </channel>
+</rss>

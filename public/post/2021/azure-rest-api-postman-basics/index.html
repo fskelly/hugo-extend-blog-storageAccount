@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+     Azure Rest Api Postman Basics | 
+    Fletcher&#39;s Tech Blog
+  
+</title><meta name="description" content="Using Postman with the Azure REST API"><meta name="author" content="Fletcher Kelly">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="/favicon.ico">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+
+
+<link rel="canonical" href="https://cloudadventures.fskelly.com/post/2021/azure-rest-api-postman-basics/"><meta property="og:title" content="Azure Rest Api Postman Basics" />
+<meta property="og:description" content="Using Postman with the Azure REST API" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cloudadventures.fskelly.com/post/2021/azure-rest-api-postman-basics/" /><meta property="og:image" content="https://cloudadventures.fskelly.com/2021/postman.jpg" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-04-14T09:02:18+02:00" />
+<meta property="article:modified_time" content="2021-04-14T09:02:18+02:00" />
+
+<meta itemprop="name" content="Azure Rest Api Postman Basics">
+<meta itemprop="description" content="Using Postman with the Azure REST API"><meta itemprop="datePublished" content="2021-04-14T09:02:18+02:00" />
+<meta itemprop="dateModified" content="2021-04-14T09:02:18+02:00" />
+<meta itemprop="wordCount" content="311"><meta itemprop="image" content="https://cloudadventures.fskelly.com/2021/postman.jpg">
+<meta itemprop="keywords" content="azure,api,postman," /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://cloudadventures.fskelly.com/2021/postman.jpg"/>
+
+<meta name="twitter:title" content="Azure Rest Api Postman Basics"/>
+<meta name="twitter:description" content="Using Postman with the Azure REST API"/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://cloudadventures.fskelly.com">Fletcher&#39;s Tech Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">April 14, 2021</p>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>311 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>2 mins read</span>
+                        </div>
+
+                        <h1>Azure Rest Api Postman Basics</h1>
+
+                        <ul class="authors list-inline"><li class="list-inline-item mr-3">
+                    <div class="media author"><a href="/authors/fletcher-kelly/" class="mr-3">
+                                    <picture>
+                                        <source srcset="/authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_64x0_resize_q75_box.jpg 1x, /authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_128x0_resize_q100_box.jpg 2x, /authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_192x0_resize_q100_box.jpg 3x">
+                                        <img src="/authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_64x0_resize_q75_box.jpg" class="rounded-circle" alt="Fletcher Kelly">
+                                    </picture>
+                                </a><div class="media-body">
+                            <h5 class="name my-0"><a href="/authors/fletcher-kelly/" class="small">Fletcher Kelly</a>
+                            </h5><p class="social small text-muted">
+                                    <a href="https://twitter.com/@fskelly">@fskelly</a>
+                                </p></div>
+                    </div>
+                </li></ul>
+                    </div>
+                </div><div class="row justify-content-center mb-3">
+                                <div class="col-lg-10">
+                                    <img data-src="/images/2021/postman_hu681e2af288a94e3b96c1cc27325cb11a_21729_900x500_fit_q75_box.jpg" class="img-fluid rounded mx-auto d-block" alt="Azure Rest Api Postman Basics">
+                                </div>
+                            </div><div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="content">
+                            <p>Absolute basics with Azure and <a href="www.postman.com">PostMan</a></p>
+<h2 id="getting-started">Getting started</h2>
+<p>Many of the articles I have found online with regards to the <a href="https://docs.microsoft.com/en-us/rest/api/azure/">Azure REST API</a> assume a fair level of familiarity with <a href="https://azure.microsoft.com/en-us/">Azure</a> which can be a good and bad thing. You see the <a href="https://portal.azure.com">Azure Portal</a> makes interacting with the Azure REST API very easy as a lot of the &ldquo;prerequisite&rdquo; work is done in the portal as part of the process. For this blog post we will work on something quite basic, &ldquo;<a href="https://portal.azure.com/#create/Microsoft.VirtualMachine">Create a Virtual Machine</a>&rdquo;.</p>
+<p><a href="https://twitter.com/jongallant">Jon Gallant</a> has some great content around this and I did use some content from <a href="https://blog.jongallant.com/2021/02/azure-rest-apis-postman-2021/">here</a>, thank you <a href="https://twitter.com/jongallant">Jon Gallant</a>.</p>
+<p>Within the Azure Portal this is very easy and only requires a few clicks, however under the hood, in order for the Azure REST API to work, there is a lot more going on. Lets dive in :smile:</p>
+<h3 id="api-order">API Order</h3>
+<ol>
+<li>Have a <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal">Resource Group</a> available or create one.</li>
+<li>Have a <a href="https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview">Virtual Network (VNET)</a> available or create one.</li>
+<li>Create a <a href="https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface">Virtual Network Interface Card (NIC)</a> or create one.</li>
+<li>Create a <a href="https://azure.microsoft.com/en-us/services/virtual-machines/">Virtual Machine</a>.</li>
+</ol>
+<p>There is a lot of association and the like that goes on in the background.</p>
+<ol>
+<li>Resource Group created.</li>
+<li>NIC associated to VNET.</li>
+<li>NIC associated to VM.</li>
+<li>VM created in Resource Group.</li>
+</ol>
+<h3 id="using-the-api">Using the API</h3>
+<p>So, what I have done, is simply create a collection within <a href="www.postman.com">Postman</a> that uses both collection variables and &ldquo;Pre-request&rdquo; scripts to make this collection &ldquo;portable&rdquo;.</p>
+<h3 id="postman-collection">Postman Collection</h3>
+<p>I use a set of collection variables to help with the initial API Call.
+<img src="https://github.com/fskelly/flkelly-cloudblog/blob/63833ed0ffe8296fb18d9797663c0cb4a2c305f1/static/images/blogImages/2021/restapipostmanpost/postmanApiCollection.png?raw=true" alt="Postman Api Collection">
+With each of the call you will the variables enclosed with &ldquo;<strong>{}</strong>&rdquo; and path variables prefixed with &ldquo;<strong>:</strong>&rdquo;
+<img src="https://github.com/fskelly/flkelly-cloudblog/blob/63833ed0ffe8296fb18d9797663c0cb4a2c305f1/static/images/blogImages/2021/restapipostmanpost/postmanVariables.png?raw=true" alt="Postman with Variables">
+With most of the Postman queries, the &ldquo;<strong>Pre-request Script</strong>&rdquo; is also used, this is used to set &ldquo;extra&rdquo; pieces of information, for example, specifying a location for the Resource Group.
+<img src="https://github.com/fskelly/flkelly-cloudblog/blob/63833ed0ffe8296fb18d9797663c0cb4a2c305f1/static/images/blogImages/2021/restapipostmanpost/postmanApiPreRequestScript.png?raw=true" alt="Postman with pre-request script"></p>
+<p>So, go forth and play. My Postman Collection can be found <a href="https://github.com/fskelly/flkelly-cloudblog/blob/main/blogFiles/azureApiPostman/Azure%20REST%20-%20repo%20ready.postman_collection.json">here</a></p>
+
+                        </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="/tags/azure">
+                                    <i class="fas fa-tag mr-2"></i>azure
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/api">
+                                    <i class="fas fa-tag mr-2"></i>api
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/postman">
+                                    <i class="fas fa-tag mr-2"></i>postman
+                                </a></div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2f2021%2fazure-rest-api-postman-basics%2f&text=Azure%20Rest%20Api%20Postman%20Basics">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2f2021%2fazure-rest-api-postman-basics%2f&title=Azure%20Rest%20Api%20Postman%20Basics">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2f2021%2fazure-rest-api-postman-basics%2f&t=Azure%20Rest%20Api%20Postman%20Basics">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2f2021%2fazure-rest-api-postman-basics%2f&title=Azure%20Rest%20Api%20Postman%20Basics">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div><div class="row justify-content-center my-3">
+                    <div class="col-lg-8">
+                        <div id="commento"></div>
+                        <script src="https://commento.io"></script>
+                    </div>
+                </div></article>
+        </div>
+    </div>
+
+    <div class="related-content row mt-5 row-cols-1 row-cols-lg-3"><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/post/2021/my-new-blog-home/" class="d-block"><img data-src="/images/2019/house_hu476f0d99e7c17a4feb58e8e247fded9d_19380_700x350_fill_q75_box_smart1.jpg" class="card-img-top mx-auto d-block" alt="My New Blog Home with Azure Static Web App"><div class="card-body">
+            <h4 class="card-title">My New Blog Home with Azure Static Web App</h4>
+            <p class="card-text text-muted text-uppercase">January 18, 2021</p>
+            <div class="card-text">
+                So, I have spent the last few days / weeks deciding the best way to host a blog. Now I have a decidedly “split personality”. By this I mean I like to segregate my work and personal hobbies. This can be quite beneficial as this allows me to test a few things.
+A few key decisions  Must be version controlled - good practice and forces me to get more familiar with git.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/post/2021/expiring-keys-azure-key-vault/" class="d-block"><img data-src="/images/2021/azposh_hua2192da61106921e9d17447b74ab2f46_4646_700x350_fill_q75_box_smart1.jpg" class="card-img-top mx-auto d-block" alt="Expiring Keys and Secrets within Azure Key Vault"><div class="card-body">
+            <h4 class="card-title">Expiring Keys and Secrets within Azure Key Vault</h4>
+            <p class="card-text text-muted text-uppercase">January 18, 2021</p>
+            <div class="card-text">
+                I was working with a customer the other day and a fairly simple ask came up, I however could not find an immediate answer within the portal.
+How do I check for expiring keys within the Azure KeyVault?
+Now being a PowerShell person, I never gave this much thought as for most tasks or actions I perform on the Azure Platform is done through PowerShell, AP, or CLI. So easy enough, however, not everyone knows how to do this in PowerShell.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/post/2021/azure-ghost-cms-and-cdn/" class="d-block"><img data-src="/images/2021/ghostCMS_hu83d523c107b3afc50e1575fefd900c6a_2897_700x350_fill_q75_box_smart1.jpg" class="card-img-top mx-auto d-block" alt="Azure Ghost CMS and Azure CDN"><div class="card-body">
+            <h4 class="card-title">Azure Ghost CMS and Azure CDN</h4>
+            <p class="card-text text-muted text-uppercase">January 11, 2021</p>
+            <div class="card-text">
+                I moved my blog onto HUGO. Not everyone would want to do this necessarily, there is a bit of a learning curve, part of the reason I DID IT :). However there are other platforms you can use and still add more functionality if you want.
+You can use Ghost and add an Azure CDN. This is what this blog post will cover.
+There are some very clever people out there that have made this very easy for you.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div></div>
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://cloudadventures.fskelly.com/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                            <a href="https://github.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://linkedin.com/in/fletcherkelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://twitter.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright © 2019–2021, Fletcher Kelly; all rights reserved.
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="/dist/main.d608eadfe5ac0688902e.min.js"></script>
+        
+    
+
+
+
+<script>
+    window.Prism = window.Prism || {};
+    window.Prism.manual = true;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-XXXX', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+</body>
+</html>

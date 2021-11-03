@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+     Backup Network Configuration with PowerShell | 
+    Fletcher&#39;s Tech Blog
+  
+</title><meta name="description" content="A day in the life of a Cloud Engineer."><meta name="author" content="Fletcher Kelly">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="/favicon.ico">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+
+
+<link rel="canonical" href="https://cloudadventures.fskelly.com/2013/10/09/backup-network-config-with-powershell/"><meta property="og:title" content="Backup Network Configuration with PowerShell" />
+<meta property="og:description" content="So, one of the consultants in the company I work at came to me with a strange request.
+The request from the customer he was helping was the following. They wanted a way to connect to all the switches within their environment and then run some commands against the switch after connecting to the switch on port 23. Once the connection has been made, then some commands are run to get the current running configuration." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cloudadventures.fskelly.com/2013/10/09/backup-network-config-with-powershell/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2013-10-09T19:30:29+00:00" />
+<meta property="article:modified_time" content="2013-10-09T19:30:29+00:00" />
+
+<meta itemprop="name" content="Backup Network Configuration with PowerShell">
+<meta itemprop="description" content="So, one of the consultants in the company I work at came to me with a strange request.
+The request from the customer he was helping was the following. They wanted a way to connect to all the switches within their environment and then run some commands against the switch after connecting to the switch on port 23. Once the connection has been made, then some commands are run to get the current running configuration."><meta itemprop="datePublished" content="2013-10-09T19:30:29+00:00" />
+<meta itemprop="dateModified" content="2013-10-09T19:30:29+00:00" />
+<meta itemprop="wordCount" content="1091">
+<meta itemprop="keywords" content="backup,config,configuration,Network," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Backup Network Configuration with PowerShell"/>
+<meta name="twitter:description" content="So, one of the consultants in the company I work at came to me with a strange request.
+The request from the customer he was helping was the following. They wanted a way to connect to all the switches within their environment and then run some commands against the switch after connecting to the switch on port 23. Once the connection has been made, then some commands are run to get the current running configuration."/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://cloudadventures.fskelly.com">Fletcher&#39;s Tech Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">October 9, 2013</p>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>1091 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>6 mins read</span>
+                        </div>
+
+                        <h1>Backup Network Configuration with PowerShell</h1>
+
+                        
+                    </div>
+                </div><div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="content">
+                            <p>So, one of the consultants in the company I work at came to me with a strange request.</p>
+<p>The request from the customer he was helping was the following. They wanted a way to connect to all the switches within their environment and then run some commands against the switch after connecting to the switch on port 23. Once the connection has been made, then some commands are run to get the current running configuration. Then export this to a text file.</p>
+<p>So I found a basic script <a href="http://brianreiter.org/2011/06/08/cool-powershell-script-replicates-telnet/">here</a>. I have since taken this and modified and extended the script. I have added an array for the IPs to be checked. I have also added some checking prior to running any commands. I have added some testing.</p>
+<p>First, we test the connection and see if the device is responding to pings. If the device is responding to pings, then test and see if the device is configured for telnet. So basically I am looking to see if port 23 is open. If port 23 is not opened, a log file is updated with the IP Address. If the device is not responding to pings, a log file is updated stating the IP of the “non-responding” device.</p>
+<p>As an addition to the script, the files are then added to an e-mail which is sent to whomever you want to add. As part of the email process, a check is done and if an error is thrown, there is more information presented in the console to point you in the correct direction.</p>
+<p>[sourcecode language=”powershell” wraplines=”false” collapse=”false”]</p>
+<p>## PowerShell: Script To Telnet To Remote Hosts And Run Commands Against Them With Output To A File ##<br>
+## Overview: Useful for Telnet connections to Cisco Switches and other devices. Can add additional command strings<br>
+## Usage Examples: Add your environment specific details into the parameters below, or include when calling the script:<br>
+## ./PowerShellTelnetRemoteSession.ps1 &ldquo;127.0.0.1&rdquo; &ldquo;23&rdquo; &ldquo;admin&rdquo; &ldquo;password&rdquo; &ldquo;term len 0&rdquo; &ldquo;en&rdquo; &ldquo;enablepassword&rdquo; &ldquo;show interface&rdquo;</p>
+<p>param(<br>
+#[string] $remoteHost = &ldquo;172.31.0.111&rdquo;,<br>
+#[int] $port = 23,<br>
+[string] $username = &ldquo;admin&rdquo;,<br>
+[string] $password = &ldquo;&rdquo;,<br>
+#[string] $termlength = &ldquo;term len 0&rdquo;, #Useful for older consoles that have line display limitations<br>
+[string] $enable = &ldquo;en&rdquo;, #Useful for appliances like Cisco switches that have an ‘enable’ command mode<br>
+[string] $enablepassword = &ldquo;&rdquo;,<br>
+[string] $command1 = &ldquo;show run&rdquo;, #You can add additional commands below here with additonal strings if you want<br>
+[string] $command2 = &quot; &ldquo;,<br>
+[string] $command3 = &quot; &ldquo;,<br>
+[string] $command4 = &quot; &ldquo;,<br>
+[string] $command5 = &quot; &ldquo;,<br>
+[int] $commandDelay = 1000<br>
+)</p>
+<p>[string] $output = &quot;&rdquo;</p>
+<p>## Read output from a remote host<br>
+function GetOutput<br>
+{<br>
+## Create a buffer to receive the response<br>
+$buffer = New-Object System.Byte[] 4096<br>
+$encoding = New-Object System.Text.AsciiEncoding</p>
+<p>$outputBuffer = &quot;&rdquo;<br>
+$foundMore = $false</p>
+<p>## Read all the data available from the stream, writing it to the<br>
+## output buffer when done.<br>
+do<br>
+{<br>
+## Allow data to buffer for a bit<br>
+Start-Sleep -m 1000</p>
+<p>## Read what data is available<br>
+$foundmore = $false<br>
+$stream.ReadTimeout = 1000</p>
+<p>do<br>
+{<br>
+try<br>
+{<br>
+$read = $stream.Read($buffer, 0, 1024)</p>
+<p>if($read -gt 0)<br>
+{<br>
+$foundmore = $true<br>
+$outputBuffer += ($encoding.GetString($buffer, 0, $read))<br>
+}<br>
+} catch { $foundMore = $false; $read = 0 }<br>
+} while($read -gt 0)<br>
+} while($foundmore)</p>
+<p>$outputBuffer<br>
+}</p>
+<p>function Main<br>
+{<br>
+param ($ip,$port)<br>
+## Open the socket, and connect to the computer on the specified port</p>
+<p>Write-Host &ldquo;Connecting to $ip on port $port&rdquo;</p>
+<p>$socket = New-Object System.Net.Sockets.TcpClient($ip, $port)</p>
+<p>Write-Host &ldquo;Connected. Press ^D followed by [ENTER] to exit.`n&rdquo;</p>
+<p>$stream = $socket.GetStream()</p>
+<p>$writer = New-Object System.IO.StreamWriter $stream</p>
+<p>## Receive the output that has buffered so far<br>
+$SCRIPT:output += GetOutput</p>
+<p>$writer.WriteLine($username)<br>
+$writer.Flush()<br>
+Start-Sleep -m $commandDelay<br>
+$writer.WriteLine($password)<br>
+$writer.Flush()<br>
+#Start-Sleep -m $commandDelay<br>
+#$writer.WriteLine($termlength)<br>
+#$writer.Flush()<br>
+Start-Sleep -m $commandDelay<br>
+$writer.WriteLine($enable)<br>
+$writer.Flush()<br>
+Start-Sleep -m $commandDelay<br>
+$writer.WriteLine($enablepassword)<br>
+$writer.Flush()<br>
+Start-Sleep -m $commandDelay<br>
+$writer.WriteLine($command1) #Add additional entries below here for additional ‘strings’ you created above<br>
+$writer.Flush()<br>
+Start-Sleep -m $commandDelay<br>
+$writer.WriteLine($command2) #Add additional entries below here for additional ‘strings’ you created above<br>
+$writer.Flush()<br>
+Start-Sleep -m $commandDelay<br>
+$writer.WriteLine($command3) #Add additional entries below here for additional ‘strings’ you created above<br>
+$writer.Flush()<br>
+Start-Sleep -m $commandDelay<br>
+$writer.WriteLine($command4) #Add additional entries below here for additional ‘strings’ you created above<br>
+$writer.Flush()<br>
+Start-Sleep -m $commandDelay<br>
+$writer.WriteLine($command5) #Add additional entries below here for additional ‘strings’ you created above<br>
+$writer.Flush()<br>
+Start-Sleep -m $commandDelay<br>
+$SCRIPT:output += GetOutput</p>
+<p>## Close the streams<br>
+$writer.Close()<br>
+$stream.Close()</p>
+<p>#building file name<br>
+$filename = &ldquo;c:\switch$ip – &quot; + $timestamp + &ldquo;.txt&rdquo;</p>
+<p>$output | Out-File $filename #Change this to suit your environment<br>
+}</p>
+<p>#build the list of ips to be interegated<br>
+$ips = &ldquo;192.168.1.2&rdquo;,&ldquo;169.254.2.2&rdquo;,&ldquo;192.168.1.101&rdquo;</p>
+<p>#building a file path<br>
+$timestamp = get-date -Format g | foreach {$_ -replace &ldquo;:&rdquo;,&rdquo;.&quot;}</p>
+<p>#building different file paths for different functions<br>
+$errortimestamp = Get-Date -Format o | foreach {$_ -replace &ldquo;:&rdquo;, &ldquo;.&quot;}<br>
+$errorfilename = &ldquo;c:\switch&quot; + $timestamp + &quot; – ERROR.txt&rdquo;</p>
+<p>#building different file paths for different functions<br>
+$blockedtimestamp = Get-Date -Format o | foreach {$_ -replace &ldquo;:&rdquo;, &ldquo;.&quot;}<br>
+$blockedfilename = &ldquo;c:\switch&quot; + $timestamp + &quot; – blocked.txt&rdquo;</p>
+<p>#looping through each ip in ip list<br>
+foreach ($ip in $ips)<br>
+{<br>
+Write-host &ldquo;Testing $ip&rdquo;<br>
+#test to see if device is responding to pings<br>
+if (Test-Connection $ip -Quiet)<br>
+{<br>
+#creating connection on port 23<br>
+$t = New-Object Net.Sockets.TcpClient<br>
+$t.Connect($ip, 23)</p>
+<p>#if it connects, runs the required function with the ip<br>
+if ($t.Connected)<br>
+{<br>
+. Main $ip &ldquo;23&rdquo;<br>
+}<br>
+#script block for device responding to ping, but port 23 is NOT open<br>
+else<br>
+{<br>
+$portblocked = &ldquo;Port 23 on $ip is closed , You may need to contact your IT team to open it. &quot;<br>
+Add-Content $blockedfilename &ldquo;`n$portblocked&rdquo;<br>
+}<br>
+}<br>
+#script block for NO RESPONSE<br>
+else<br>
+{<br>
+$errorfilename = &ldquo;c:\switch&quot; + $timestamp + &quot; – ERROR.txt&rdquo;<br>
+Add-Content $errorfilename &ldquo;`nCould not ping $ip&rdquo;<br>
+}<br>
+}</p>
+<p>#displaying information on console<br>
+Write-Host &ldquo;Build file list&rdquo; -NoNewline<br>
+#getting file list to be emailed<br>
+$files = Get-ChildItem C:\Switch\ | Where {-NOT $_.PSIsContainer} | foreach {$_.fullname}<br>
+#pausing script<br>
+Start-Sleep 3<br>
+Write-Host &ldquo;`t&rdquo; [File List Built] -ForegroundColor &ldquo;Green&rdquo;</p>
+<p>Write-Host &ldquo;Sending Email&rdquo; -NoNewline</p>
+<p>#building checks for sending emails</p>
+<p>#no error</p>
+<p>#replace as needed<br>
+$to = &ldquo;<!-- raw HTML omitted -->&rdquo;<br>
+$from = &ldquo;<!-- raw HTML omitted -->&rdquo;<br>
+$smtpserver = &ldquo;<!-- raw HTML omitted -->&rdquo;</p>
+<p>try<br>
+{<br>
+Send-MailMessage -Attachments $files -to $to -from $from -Subject &ldquo;Network Config backup – $timestamp&rdquo; -SmtpServer $smtpserver -ErrorAction Stop<br>
+Write-Host &ldquo;`t [Email Sent]&rdquo; -ForegroundColor &ldquo;Green&rdquo;<br>
+}<br>
+#error<br>
+catch<br>
+{<br>
+$ErrorMessage = $_.Exception.Message<br>
+#$ErrorMessage<br>
+if ($ErrorMessage -ne $null)<br>
+{<br>
+Write-Host &ldquo;`t [Unable to send Mail]&rdquo; -ForegroundColor &ldquo;Red&rdquo;<br>
+Write-Host &ldquo;There was an error: $ErrorMessage&rdquo; -ForegroundColor &ldquo;Yellow&rdquo;<br>
+}<br>
+}</p>
+<p>Start-Sleep 3<br>
+Write-Host &ldquo;Removing Files&rdquo; -NoNewline<br>
+$files | Remove-Item<br>
+Write-Host &ldquo;`t [Files removed]&rdquo; -ForegroundColor &ldquo;Green&rdquo;</p>
+<p>[/sourcecode]</p>
+<p><a href="mailto:systemcenterguyza@live.com">(E-Mail me)</a></p>
+<p><img src="/wp-content/uploads/2013/02/image_thumb_thumb_thumb_thumb_thumb1-1.png?w=497" alt=""></p>
+<p>Follow me.</p>
+<p><img src="http://fskelly.files.wordpress.com/2012/06/facebook-small322252222.jpg?w=44&amp;h=44" alt=""> Facebook (Personal)</p>
+<p><img src="http://fskelly.files.wordpress.com/2012/06/twitter-small322252222.jpg?w=44&amp;h=44" alt=""> Twitter (Personal &amp; System Centre)</p>
+<p><img src="/wp-content/uploads/2013/02/scsmlogo25232.jpg?w=56&amp;h=43" alt=""> Twitter (System Centre Focused)</p>
+<p><img src="http://fskelly.files.wordpress.com/2012/06/mcc11_logo_horizontal_2-color_thumb__thumb1.jpg?w=244&amp;h=99" alt=""></p>
+
+                        </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="/tags/backup">
+                                    <i class="fas fa-tag mr-2"></i>backup
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/config">
+                                    <i class="fas fa-tag mr-2"></i>config
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/configuration">
+                                    <i class="fas fa-tag mr-2"></i>configuration
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/network">
+                                    <i class="fas fa-tag mr-2"></i>Network
+                                </a></div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2013%2f10%2f09%2fbackup-network-config-with-powershell%2f&text=Backup%20Network%20Configuration%20with%20PowerShell">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2013%2f10%2f09%2fbackup-network-config-with-powershell%2f&title=Backup%20Network%20Configuration%20with%20PowerShell">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fcloudadventures.fskelly.com%2f2013%2f10%2f09%2fbackup-network-config-with-powershell%2f&t=Backup%20Network%20Configuration%20with%20PowerShell">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2013%2f10%2f09%2fbackup-network-config-with-powershell%2f&title=Backup%20Network%20Configuration%20with%20PowerShell">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div><div class="row justify-content-center my-3">
+                    <div class="col-lg-8">
+                        <div id="commento"></div>
+                        <script src="https://commento.io"></script>
+                    </div>
+                </div></article>
+        </div>
+    </div>
+
+    <div class="related-content row mt-5 row-cols-1 row-cols-lg-3"><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2012/08/13/dpm-and-exchange-mail-store-backup-failing/" class="d-block"><div class="card-body">
+            <h4 class="card-title">DPM and Exchange Mail Store Backup failing</h4>
+            <p class="card-text text-muted text-uppercase">August 13, 2012</p>
+            <div class="card-text">
+                
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div></div>
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://cloudadventures.fskelly.com/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                            <a href="https://github.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://linkedin.com/in/fletcherkelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://twitter.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright © 2019–2021, Fletcher Kelly; all rights reserved.
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="/dist/main.d608eadfe5ac0688902e.min.js"></script>
+        
+    
+
+
+
+<script>
+    window.Prism = window.Prism || {};
+    window.Prism.manual = true;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-XXXX', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+</body>
+</html>

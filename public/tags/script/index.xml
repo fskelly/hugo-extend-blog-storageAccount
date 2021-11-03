@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>script on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/script/</link>
+    <description>Recent content in script on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Sun, 20 Oct 2013 12:30:19 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/script/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Finding off site ready tapes for System Center Data Protection Manager with System Center Orchestrator</title>
+      <link>https://cloudadventures.fskelly.com/2013/10/20/finding-off-site-ready-tapes-for-system-center-data-protection-manager-with-system-center-orchestrator/</link>
+      <pubDate>Sun, 20 Oct 2013 12:30:19 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/10/20/finding-off-site-ready-tapes-for-system-center-data-protection-manager-with-system-center-orchestrator/</guid>
+      <description>So, I am quite a keen user of PowerShell and System Centre Orchestrator. Ok, so I recently had a request from a customer that went as follows “I need DPM to alert me when tapes are ready to be taken off-site.”
+DPM does not seen to have this functionality out of the box within the Graphical User Interface (GUI). All is NOT lost, Data Protection Manager has a PowerShell component and i was sure i could figure out a way to get this to work within PowerShell.</description>
+    </item>
+    
+    <item>
+      <title>Service Request Load Testing for SCSM</title>
+      <link>https://cloudadventures.fskelly.com/2013/09/11/service-request-load-testing-for-scsm/</link>
+      <pubDate>Wed, 11 Sep 2013 19:30:51 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/09/11/service-request-load-testing-for-scsm/</guid>
+      <description>I have found a great for load testing SCSM with Incidents. The script uses SMLets to generate Incidents and you can then gauge how your system would handle the load you are planning within your Production Environment.
+I will not go into the detail of the script as this blog post does a great job of explaining it. SO this got me to thinking about other Load Testing you could perform.</description>
+    </item>
+    
+    <item>
+      <title>Some more SMlets commands (more detail)</title>
+      <link>https://cloudadventures.fskelly.com/2011/07/18/some-more-smlets-commands-more-detail/</link>
+      <pubDate>Mon, 18 Jul 2011 11:45:18 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/07/18/some-more-smlets-commands-more-detail/</guid>
+      <description>Would you like a nice graphical breakdown of all calls logged in (x) days and there status?
+I know I would. So, of course I have been working on such a script using smlets v3.
+So far, this is what the script does.
+ Takes the current date and time and subtracts 7 days and presents you with a nice HTML output which is mailed to the user. (Both the date and time and who to mail the output to is configurable.</description>
+    </item>
+    
+    <item>
+      <title>Get-hotfix on Steroids</title>
+      <link>https://cloudadventures.fskelly.com/2011/07/11/get-hotfix-on-steroids/</link>
+      <pubDate>Mon, 11 Jul 2011 12:25:28 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/07/11/get-hotfix-on-steroids/</guid>
+      <description>Hi All,
+I have taken the get-hotfix and tweaked it so something useful for my environment.
+I have uploaded the .ps1 file to Technet.
+My script can be found here
+Hope you find this helpful.
+Follow me</description>
+    </item>
+    
+  </channel>
+</rss>

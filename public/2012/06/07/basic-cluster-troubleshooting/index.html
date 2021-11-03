@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+     Basic Cluster Troubleshooting | 
+    Fletcher&#39;s Tech Blog
+  
+</title><meta name="description" content="A day in the life of a Cloud Engineer."><meta name="author" content="Fletcher Kelly">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="/favicon.ico">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+
+
+<link rel="canonical" href="https://cloudadventures.fskelly.com/2012/06/07/basic-cluster-troubleshooting/"><meta property="og:title" content="Basic Cluster Troubleshooting" />
+<meta property="og:description" content="So, just last night, we had an issue with our cluster.One of our disks would not come online. We were seeing an error event ID: 1304 as below.
+So, we began to investigate as all the Technet articles state that the drive is corrupted and Disk Signatures need to be changed, however we have had no major changes in the last little while. We were also able to view to CSV Volume from our SAN management tools." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cloudadventures.fskelly.com/2012/06/07/basic-cluster-troubleshooting/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2012-06-07T12:17:25+00:00" />
+<meta property="article:modified_time" content="2012-06-07T12:17:25+00:00" />
+
+<meta itemprop="name" content="Basic Cluster Troubleshooting">
+<meta itemprop="description" content="So, just last night, we had an issue with our cluster.One of our disks would not come online. We were seeing an error event ID: 1304 as below.
+So, we began to investigate as all the Technet articles state that the drive is corrupted and Disk Signatures need to be changed, however we have had no major changes in the last little while. We were also able to view to CSV Volume from our SAN management tools."><meta itemprop="datePublished" content="2012-06-07T12:17:25+00:00" />
+<meta itemprop="dateModified" content="2012-06-07T12:17:25+00:00" />
+<meta itemprop="wordCount" content="349">
+<meta itemprop="keywords" content="Cluster Service,CSV,node,owner,powershell,Troubleshooting," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Basic Cluster Troubleshooting"/>
+<meta name="twitter:description" content="So, just last night, we had an issue with our cluster.One of our disks would not come online. We were seeing an error event ID: 1304 as below.
+So, we began to investigate as all the Technet articles state that the drive is corrupted and Disk Signatures need to be changed, however we have had no major changes in the last little while. We were also able to view to CSV Volume from our SAN management tools."/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://cloudadventures.fskelly.com">Fletcher&#39;s Tech Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">June 7, 2012</p>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>349 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>2 mins read</span>
+                        </div>
+
+                        <h1>Basic Cluster Troubleshooting</h1>
+
+                        
+                    </div>
+                </div><div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="content">
+                            <p><!-- raw HTML omitted -->So, just last night, we had an issue with our cluster.<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->One of our disks would not come online. We were seeing an error event ID: 1304 as below.<!-- raw HTML omitted --></p>
+<p><a href="http://fskelly.files.wordpress.com/2012/06/error1304.png"><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></a></p>
+<p><!-- raw HTML omitted -->So, we began to investigate as all the Technet articles state that the drive is corrupted and Disk Signatures need to be changed, however we have had no major changes in the last little while. We were also able to view to CSV Volume from our SAN management tools. So, we were confused. The disk just would not come online.<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->1 . The Quorum was online, or else the cluster would not come online.<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->2. All the nodes were online.<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->3. All Networks were online<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->4. The cluster virtual name and IP was up.<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->However, only CSV would not come online. So, we began to dig a little bit deeper and discovered that the error message was a little misleading, it did however contain some useful information. From the error message we were able to glean the problem node (CSV Owner). We then hopped onto the problem node and after a little digging around, discovered that the volume had been set to OFFLINE. We set the volume to ONLINE and then tried to bring the resource ONLINE in Failover Cluster Manager and hey PRESTO!!! The volume can online and so did my VMs.<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->I have since created a PowerShell script which can be found <!-- raw HTML omitted -->here<!-- raw HTML omitted --> to help the troubleshooting process. All you need to do is provide the list of cluster/s to be checked.  It does the following.<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->1. Check if the nodes state is in an “UP” state. If the node is in an up state, it then checks the status of the Cluster Service and reports if it is up or down.<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->2. It then checks the CSV state and specifies the current owner of the CSV and then lets you know if the CSV online or reserved. This is good.<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->3. Should it get a state other than this, it then proceeds to run a list disk from diskpart on the reported CSV owners to help you find which CSV and which owner to start working on.<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->Follow me.<!-- raw HTML omitted --></p>
+<p><a href="http://www.facebook.com/fletcher.kelly"><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></a><a href="http://twitter.com/#!/fskelly"><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></a></p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+
+                        </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="/tags/cluster-service">
+                                    <i class="fas fa-tag mr-2"></i>Cluster Service
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/csv">
+                                    <i class="fas fa-tag mr-2"></i>CSV
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/node">
+                                    <i class="fas fa-tag mr-2"></i>node
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/owner">
+                                    <i class="fas fa-tag mr-2"></i>owner
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/powershell">
+                                    <i class="fas fa-tag mr-2"></i>powershell
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/troubleshooting">
+                                    <i class="fas fa-tag mr-2"></i>Troubleshooting
+                                </a></div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2012%2f06%2f07%2fbasic-cluster-troubleshooting%2f&text=Basic%20Cluster%20Troubleshooting">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2012%2f06%2f07%2fbasic-cluster-troubleshooting%2f&title=Basic%20Cluster%20Troubleshooting">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fcloudadventures.fskelly.com%2f2012%2f06%2f07%2fbasic-cluster-troubleshooting%2f&t=Basic%20Cluster%20Troubleshooting">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2012%2f06%2f07%2fbasic-cluster-troubleshooting%2f&title=Basic%20Cluster%20Troubleshooting">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div><div class="row justify-content-center my-3">
+                    <div class="col-lg-8">
+                        <div id="commento"></div>
+                        <script src="https://commento.io"></script>
+                    </div>
+                </div></article>
+        </div>
+    </div>
+
+    <div class="related-content row mt-5 row-cols-1 row-cols-lg-3"><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2012/03/30/adding-a-csv-volume-to-a-cluster/" class="d-block"><div class="card-body">
+            <h4 class="card-title">Adding a CSV volume to a Cluster</h4>
+            <p class="card-text text-muted text-uppercase">March 30, 2012</p>
+            <div class="card-text">
+                So, now you are at the point where you need to present a CSV Volume to your cluster.
+I have created this guide to make your life a little easier. Doing this is actually quite simple, but there are a few gotchas.
+Gotcha 1 : If you create / carve the LUN and forget to allow multiple access, only the first IQN / WWN will be able to access it.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2012/01/17/rebuilding-the-opsman-client-cache/" class="d-block"><div class="card-body">
+            <h4 class="card-title">Rebuilding the OpsMan Client Cache</h4>
+            <p class="card-text text-muted text-uppercase">January 17, 2012</p>
+            <div class="card-text">
+                Just recently I had the need to “rebuild” the client cache on a lot of my servers, due to a slight hiccup with our Network and subsequently our Operations Manager Server. So I decided to use PowerShell, if you need to repeat it, script it.
+So, I simply built a script to connect to the required machine, stop the “Health Service”, delete the files from the required folder and then restart the “Health Service”.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2011/09/01/documenting-the-environment/" class="d-block"><div class="card-body">
+            <h4 class="card-title">Documenting the Environment</h4>
+            <p class="card-text text-muted text-uppercase">September 1, 2011</p>
+            <div class="card-text">
+                Hi All,
+It has been a really busy time for me. However, I am very happy with life at the moment. Just recently I received a “Microsoft Community Contributor” award from Microsoft.
+
+I know I have been a little quite the last little while. I have been busy doing a job that everyone loves (I wish there was a font for sarcasm). I have been VERY busy documenting my production environment including Hyper-V, Active Directory and Exchange.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div></div>
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://cloudadventures.fskelly.com/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                            <a href="https://github.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://linkedin.com/in/fletcherkelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://twitter.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright © 2019–2021, Fletcher Kelly; all rights reserved.
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="/dist/main.d608eadfe5ac0688902e.min.js"></script>
+        
+    
+
+
+
+<script>
+    window.Prism = window.Prism || {};
+    window.Prism.manual = true;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-XXXX', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+</body>
+</html>

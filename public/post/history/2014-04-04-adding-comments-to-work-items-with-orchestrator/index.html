@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+     Adding Comments to Work Items with Orchestrator | 
+    Fletcher&#39;s Tech Blog
+  
+</title><meta name="description" content="A day in the life of a Cloud Engineer."><meta name="author" content="Fletcher Kelly">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="/favicon.ico">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+
+
+<link rel="canonical" href="https://cloudadventures.fskelly.com/post/history/2014-04-04-adding-comments-to-work-items-with-orchestrator/"><meta property="og:title" content="Adding Comments to Work Items with Orchestrator" />
+<meta property="og:description" content="Hi All,
+It has been a little while, i have been quite involved with an Integration Project. With this project there was a requirement to add comments to a Work Item. The information is passed on from &ldquo;System A&rdquo; to &ldquo;System B&rdquo; via XML. Using PowerShell, extracting the XML contents is not too difficult, if anyone would like to dive into that a little bit, please let me know with Comments." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cloudadventures.fskelly.com/post/history/2014-04-04-adding-comments-to-work-items-with-orchestrator/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2014-04-04T08:18:16+00:00" />
+<meta property="article:modified_time" content="2014-04-04T08:18:16+00:00" />
+
+<meta itemprop="name" content="Adding Comments to Work Items with Orchestrator">
+<meta itemprop="description" content="Hi All,
+It has been a little while, i have been quite involved with an Integration Project. With this project there was a requirement to add comments to a Work Item. The information is passed on from &ldquo;System A&rdquo; to &ldquo;System B&rdquo; via XML. Using PowerShell, extracting the XML contents is not too difficult, if anyone would like to dive into that a little bit, please let me know with Comments."><meta itemprop="datePublished" content="2014-04-04T08:18:16+00:00" />
+<meta itemprop="dateModified" content="2014-04-04T08:18:16+00:00" />
+<meta itemprop="wordCount" content="299">
+<meta itemprop="keywords" content="SCSM,Integration Project,Orchestrator,PowerShell," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Adding Comments to Work Items with Orchestrator"/>
+<meta name="twitter:description" content="Hi All,
+It has been a little while, i have been quite involved with an Integration Project. With this project there was a requirement to add comments to a Work Item. The information is passed on from &ldquo;System A&rdquo; to &ldquo;System B&rdquo; via XML. Using PowerShell, extracting the XML contents is not too difficult, if anyone would like to dive into that a little bit, please let me know with Comments."/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://cloudadventures.fskelly.com">Fletcher&#39;s Tech Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">April 4, 2014</p>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>299 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>2 mins read</span>
+                        </div>
+
+                        <h1>Adding Comments to Work Items with Orchestrator</h1>
+
+                        <ul class="authors list-inline"><li class="list-inline-item mr-3">
+                    <div class="media author"><a href="/authors/fletcher-kelly/" class="mr-3">
+                                    <picture>
+                                        <source srcset="/authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_64x0_resize_q75_box.jpg 1x, /authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_128x0_resize_q100_box.jpg 2x, /authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_192x0_resize_q100_box.jpg 3x">
+                                        <img src="/authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_64x0_resize_q75_box.jpg" class="rounded-circle" alt="Fletcher Kelly">
+                                    </picture>
+                                </a><div class="media-body">
+                            <h5 class="name my-0"><a href="/authors/fletcher-kelly/" class="small">Fletcher Kelly</a>
+                            </h5><p class="social small text-muted">
+                                    <a href="https://twitter.com/@fskelly">@fskelly</a>
+                                </p></div>
+                    </div>
+                </li></ul>
+                    </div>
+                </div><div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="content">
+                            <!-- raw HTML omitted -->
+<p>Hi All,</p>
+<p>It has been a little while, i have been quite involved with an Integration Project. With this project there was a requirement to add comments to a Work Item. The information is passed on from &ldquo;System A&rdquo; to &ldquo;System B&rdquo; via XML. Using PowerShell, extracting the XML contents is not too difficult, if anyone would like to dive into that a little bit, please let me know with Comments.</p>
+<p>I decided not to re-invent the wheel, so some searching was in order, and I found the following <a href="http://social.technet.microsoft.com/Forums/en-US/63ce41e2-e9c5-4ba0-a28f-30f8e8fb17d2/adding-scsm-user-comment-from-orchestrator-or-powershell">post</a>, this post gave the basics. However every time I tried to add additional comments, the comments were over-written and NOT replaced. Not quite the desired effect. So after some more checking and research and tinkering within the <a href="https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh305220(v=sc.12)?redirectedfrom=MSDN">Service Manager</a>, I discovered the following about comments.</p>
+<p>When adding a Comment, there is adding of a relationship class, already mentioned in this <a href="http://social.technet.microsoft.com/Forums/en-US/63ce41e2-e9c5-4ba0-a28f-30f8e8fb17d2/adding-scsm-user-comment-from-orchestrator-or-powershell">post</a>, however it also uses a GUID.</p>
+<figure class="figure">
+    <a href="/wp-content/uploads/2014/04/2014-04-03_07-51-37_thumb3.jpg" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/wp-content/uploads/2014/04/2014-04-03_07-51-37_thumb3.jpg" width="595" height="90"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<p>There is also another trick to adding comments within Orchestrator, this is discovered by trying to add a comment and then pulling all the available fields and looking at them. It is a small component which can be easily missed. The &ldquo;Display Name&rdquo; must also be the same GUID. So you might be asking how do we get the GUID?</p>
+<p>Well, PowerShell can easily handle this for you.</p>
+<pre><code class="language-powershell">$guid = [System.Guid]::NewGuid().ToString()
+</code></pre>
+<p>You simply use this a pre-cursor step and publish this data from &ldquo;Run .Net Script&rdquo;, so a sample would look like this.</p>
+<figure class="figure">
+    <a href="/wp-content/uploads/2014/04/2014-04-03_07-58-27_thumb1-1.jpg" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/wp-content/uploads/2014/04/2014-04-03_07-58-27_thumb1-1.jpg" width="582" height="214"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<p>Get-Object Properties</p>
+<p>I pass on the ID Value I want to modify from another Runbook</p>
+<figure class="figure">
+    <a href="/wp-content/uploads/2014/04/2014-04-03_07-58-58_thumb1.jpg" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/wp-content/uploads/2014/04/2014-04-03_07-58-58_thumb1.jpg" width="578" height="399"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<p>Create Related Object Properties</p>
+<p>I use an &ldquo;Extended&rdquo; class of comments needed for this project, principal remains the same.</p>
+<figure class="figure">
+    <a href="/wp-content/uploads/2014/04/2014-04-03_08-01-08_thumb3.jpg" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/wp-content/uploads/2014/04/2014-04-03_08-01-08_thumb3.jpg" width="580" height="400"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<p>I hope this saves you some time and add some value.</p>
+<p>Follow me,</p>
+<p><a href="https://www.twitter.com/fskelly">Twitter</a><br>
+<a href="https://linkedin.com/in/fletcherkelly">LinkedIn</a></p>
+
+                        </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="/tags/scsm">
+                                    <i class="fas fa-tag mr-2"></i>SCSM
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/integration-project">
+                                    <i class="fas fa-tag mr-2"></i>Integration Project
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/orchestrator">
+                                    <i class="fas fa-tag mr-2"></i>Orchestrator
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/powershell">
+                                    <i class="fas fa-tag mr-2"></i>PowerShell
+                                </a></div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2fhistory%2f2014-04-04-adding-comments-to-work-items-with-orchestrator%2f&text=Adding%20Comments%20to%20Work%20Items%20with%20Orchestrator">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2fhistory%2f2014-04-04-adding-comments-to-work-items-with-orchestrator%2f&title=Adding%20Comments%20to%20Work%20Items%20with%20Orchestrator">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2fhistory%2f2014-04-04-adding-comments-to-work-items-with-orchestrator%2f&t=Adding%20Comments%20to%20Work%20Items%20with%20Orchestrator">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2fhistory%2f2014-04-04-adding-comments-to-work-items-with-orchestrator%2f&title=Adding%20Comments%20to%20Work%20Items%20with%20Orchestrator">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div><div class="row justify-content-center my-3">
+                    <div class="col-lg-8">
+                        <div id="commento"></div>
+                        <script src="https://commento.io"></script>
+                    </div>
+                </div></article>
+        </div>
+    </div>
+
+    <div class="related-content row mt-5 row-cols-1 row-cols-lg-3"><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/post/history/2013-11-15-send-email-to-3rd-party-from-scsm-console-powershell-and-console-task/" class="d-block"><div class="card-body">
+            <h4 class="card-title">Send Email to 3rd Party from SCSM Console – PowerShell and Console Task</h4>
+            <p class="card-text text-muted text-uppercase">November 15, 2013</p>
+            <div class="card-text">
+                So recently, I had a customer ask me for the following as their previous incident management system had this functionality.
+The customer wanted to be able to send an “Update Email” to a 3rd party from the SCSM Console with automatically placing the reference number into said email. They needed the functionality of sending to any email address. This was a requirement for the type of business they are in.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2013/09/11/service-request-load-testing-for-scsm/" class="d-block"><div class="card-body">
+            <h4 class="card-title">Service Request Load Testing for SCSM</h4>
+            <p class="card-text text-muted text-uppercase">September 11, 2013</p>
+            <div class="card-text">
+                I have found a great for load testing SCSM with Incidents. The script uses SMLets to generate Incidents and you can then gauge how your system would handle the load you are planning within your Production Environment.
+I will not go into the detail of the script as this blog post does a great job of explaining it. SO this got me to thinking about other Load Testing you could perform.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2013/08/05/end-user-portal-for-system-centre-orchestrator/" class="d-block"><div class="card-body">
+            <h4 class="card-title">End User Portal for System Centre Orchestrator</h4>
+            <p class="card-text text-muted text-uppercase">August 5, 2013</p>
+            <div class="card-text">
+                So, let’s ay you have invested the time and gotten System Centre Orchestrator up and running in your environment and you have the product performing some day to day tasks and it is working well. However, now you want start using SCO (System Centre Orchestrator) to start performing end user focused tasks like Password Reset, add users to groups or even disabling of users or server testing as part of first line support.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div></div>
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://cloudadventures.fskelly.com/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                            <a href="https://github.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://linkedin.com/in/fletcherkelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://twitter.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright © 2019–2021, Fletcher Kelly; all rights reserved.
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="/dist/main.d608eadfe5ac0688902e.min.js"></script>
+        
+    
+
+
+
+<script>
+    window.Prism = window.Prism || {};
+    window.Prism.manual = true;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-XXXX', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+</body>
+</html>

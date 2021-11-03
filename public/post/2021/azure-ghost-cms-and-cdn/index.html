@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+     Azure Ghost CMS and Azure CDN | 
+    Fletcher&#39;s Tech Blog
+  
+</title><meta name="description" content="How to run GHOST CMS on Azure."><meta name="author" content="Fletcher Kelly">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="/favicon.ico">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+
+
+<link rel="canonical" href="https://cloudadventures.fskelly.com/post/2021/azure-ghost-cms-and-cdn/"><meta property="og:title" content="Azure Ghost CMS and Azure CDN" />
+<meta property="og:description" content="How to run GHOST CMS on Azure." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cloudadventures.fskelly.com/post/2021/azure-ghost-cms-and-cdn/" /><meta property="og:image" content="https://cloudadventures.fskelly.com/2021/ghostCMS.jpg" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-01-11T07:00:18+02:00" />
+<meta property="article:modified_time" content="2021-01-11T07:00:18+02:00" />
+
+<meta itemprop="name" content="Azure Ghost CMS and Azure CDN">
+<meta itemprop="description" content="How to run GHOST CMS on Azure."><meta itemprop="datePublished" content="2021-01-11T07:00:18+02:00" />
+<meta itemprop="dateModified" content="2021-01-11T07:00:18+02:00" />
+<meta itemprop="wordCount" content="552"><meta itemprop="image" content="https://cloudadventures.fskelly.com/2021/ghostCMS.jpg">
+<meta itemprop="keywords" content="azure,cdn,CMS," /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://cloudadventures.fskelly.com/2021/ghostCMS.jpg"/>
+
+<meta name="twitter:title" content="Azure Ghost CMS and Azure CDN"/>
+<meta name="twitter:description" content="How to run GHOST CMS on Azure."/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://cloudadventures.fskelly.com">Fletcher&#39;s Tech Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">January 11, 2021</p>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>552 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>3 mins read</span>
+                        </div>
+
+                        <h1>Azure Ghost CMS and Azure CDN</h1>
+
+                        <ul class="authors list-inline"><li class="list-inline-item mr-3">
+                    <div class="media author"><a href="/authors/fletcher-kelly/" class="mr-3">
+                                    <picture>
+                                        <source srcset="/authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_64x0_resize_q75_box.jpg 1x, /authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_128x0_resize_q100_box.jpg 2x, /authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_192x0_resize_q100_box.jpg 3x">
+                                        <img src="/authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_64x0_resize_q75_box.jpg" class="rounded-circle" alt="Fletcher Kelly">
+                                    </picture>
+                                </a><div class="media-body">
+                            <h5 class="name my-0"><a href="/authors/fletcher-kelly/" class="small">Fletcher Kelly</a>
+                            </h5><p class="social small text-muted">
+                                    <a href="https://twitter.com/@fskelly">@fskelly</a>
+                                </p></div>
+                    </div>
+                </li></ul>
+                    </div>
+                </div><div class="row justify-content-center mb-3">
+                                <div class="col-lg-10">
+                                    <img data-src="/images/2021/ghostCMS_hu83d523c107b3afc50e1575fefd900c6a_2897_900x500_fit_q75_box.jpg" class="img-fluid rounded mx-auto d-block" alt="Azure Ghost CMS and Azure CDN">
+                                </div>
+                            </div><div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="content">
+                            <p>I moved my blog onto HUGO. Not everyone would want to do this necessarily, there is a bit of a learning curve, part of the reason <strong>I DID IT</strong> :). However there are other platforms you can use and still add more functionality if you want.</p>
+<p>You can use <a href="https://ghost.org/">Ghost</a> and add an <a href="https://docs.microsoft.com/en-us/azure/cdn/cdn-overview">Azure CDN</a>. This is what this blog post will cover.</p>
+<p>There are some very clever people out there that have made this very easy for you. From my research you have 2 main options.</p>
+<ol>
+<li>A &ldquo;simple Web App&rdquo;</li>
+<li>More complex deployment with Containers and a CDN - now this sounds interesting.</li>
+</ol>
+<p>For this post I naturally focused on <strong>option 2</strong> :). A <strong>BIG</strong> shoutout goes to <a href="https://andrewmatveychuk.com/about/">Andrew Matveychuk</a>. I am all about <strong><strong>&ldquo;Standing on the shoulders of giants</strong>&quot;</strong>. I used his <a href="https://github.com/andrewmatveychuk/azure.ghost-web-app-for-containers">repo</a> and then forked it into mine. He has a nice <a href="https://andrewmatveychuk.com/a-one-click-ghost-deployment-on-azure-web-app-for-containers/">blogpost</a> on his journey. I simply unpacked this a little further and went into some more details and highlight some of the potential gotchas and setting up things in more detail with specific focus on the <a href="https://portal.azure.com">Azure Portal</a>.</p>
+<h3 id="deployment">Deployment</h3>
+<p>The deployment is nice and easy thanks to a one-click deploy - thanks again <a href="https://andrewmatveychuk.com/about/">Andrew Matveychuk</a>.</p>
+<p><img src="https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/deploymentsample.png?raw=true" alt="Deployment Start"></p>
+<p><img src="https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/deploymentSequence.png?raw=true" alt="Deployment In Progress"></p>
+<p><img src="https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/deplolymentComplete.png?raw=true" alt="Deployment Complete"></p>
+<p>It <strong>&ldquo;deploys&rdquo;</strong> pretty quickly but, of course, this is just the start of the work.</p>
+<h3 id="during-deployment">During deployment</h3>
+<p>During the deployment of the application you will see the Web App change.</p>
+<p><img src="https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/initialWebApp.png?raw=true" alt="Initial Web App"></p>
+<p>Almost
+<img src="https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/ghostBeingConfigured.png?raw=true" alt="New App being deployed"></p>
+<p>Success!!!<br>
+You will see something <strong>SIMILAR</strong> to this.
+<img src="https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/ghostConfigured.png?raw=true" alt="New App deployed"></p>
+<h3 id="gotcha-with-container-deployment">Gotcha with Container Deployment</h3>
+<p>The solution takes a while to deploy - this seems to be due to some changes made recently by Docker. Do <strong>NOT</strong> be hasty like I was, this can cause issues and create the need for a re-deploy. Instead lets use the logs to see what is going on :)<br>
+Now let&rsquo;s find the log I was talking about.
+<img src="https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/containerLogs.png?raw=true" alt="Docker Logs">
+We are waiting for <strong>this</strong> entry
+<img src="https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/magicMoment-PATIENCE.png?raw=true" alt="Magic Moment"></p>
+<p>So, now to add move value, we can add an <a href="https://docs.microsoft.com/en-us/azure/cdn/cdn-overview">Azure CDN</a> (in this case, this has already been done) and look at configuring your own custom name for this.</p>
+<p><strong>A content delivery network (CDN) is a distributed network of servers that can efficiently deliver web content to users. CDNs' store cached content on edge servers in point-of-presence (POP) locations that are close to end users, to minimize latency.</strong></p>
+<p>So we can add a custom domain to a CDN to make this more pretty and give your site a more more friendly name - you can move away from the <a href="https://xyz.azurewebsites.net">https://xyz.azurewebsites.net</a>, I definitely think a custom domain is far cleaner and &ldquo;more professional&rdquo;. So let&rsquo;s dive in and get this done. :)</p>
+<p>So, there a few steps to get this done. This is well documented <a href="https://docs.microsoft.com/en-us/azure/cdn/cdn-map-content-to-custom-domain?tabs=azure-dns">here</a>, however I will provide more context and give some sample screenshots.</p>
+<p>We have some DNS Settings to configure as per the above article. Below, I have added some sample for the <a href="https://demoghost.fskelly.com/">CDN demo</a> I configure for this blog.</p>
+<ol>
+<li>Create the required verification entries in your DNS Zone. I use <a href="https://www.cloudns.net/">ClouDNS</a> but the process is the same, just how you create the required entries will vary with each provider.
+<img src="https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/cdnVerification.png?raw=true" alt="Required Verification Entries">
+This process should not take too long, but now we want a <strong>certificate</strong> and the joys of TLS</li>
+<li>Start the verification process <img src="https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/cdnCert1.png?raw=true" alt="Start of Process"></li>
+<li>Domain Verification <img src="https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/cdnCert2.png?raw=true" alt="Domain Validation"></li>
+<li>Create a certificate <img src="https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/cdnCert3.png?raw=true" alt="certificate provisioning"></li>
+<li>And completed <img src="https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/cdnCert4.png?raw=true" alt="process complete"></li>
+</ol>
+<p>Now here is the <a href="https://demoghost.fskelly.com">end result</a> - note the HTTPS 👍 <img src="https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/cdnDemoPost.png?raw=true" alt="site with HTTPS Cert"></p>
+
+                        </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="/tags/azure">
+                                    <i class="fas fa-tag mr-2"></i>azure
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/cdn">
+                                    <i class="fas fa-tag mr-2"></i>cdn
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/cms">
+                                    <i class="fas fa-tag mr-2"></i>CMS
+                                </a></div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2f2021%2fazure-ghost-cms-and-cdn%2f&text=Azure%20Ghost%20CMS%20and%20Azure%20CDN">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2f2021%2fazure-ghost-cms-and-cdn%2f&title=Azure%20Ghost%20CMS%20and%20Azure%20CDN">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2f2021%2fazure-ghost-cms-and-cdn%2f&t=Azure%20Ghost%20CMS%20and%20Azure%20CDN">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2f2021%2fazure-ghost-cms-and-cdn%2f&title=Azure%20Ghost%20CMS%20and%20Azure%20CDN">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div><div class="row justify-content-center my-3">
+                    <div class="col-lg-8">
+                        <div id="commento"></div>
+                        <script src="https://commento.io"></script>
+                    </div>
+                </div></article>
+        </div>
+    </div>
+
+    <div class="related-content row mt-5 row-cols-1 row-cols-lg-3"><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/post/2019/network-security-group-change-alerting/" class="d-block"><img data-src="/images/2021/azNSG_huea3d5727bdb1a296681a67bb8f082132_4295_700x350_fill_q75_box_smart1.jpg" class="card-img-top mx-auto d-block" alt="Network Security Group Change Alerting"><div class="card-body">
+            <h4 class="card-title">Network Security Group Change Alerting</h4>
+            <p class="card-text text-muted text-uppercase">February 20, 2019</p>
+            <div class="card-text">
+                So, I was with a customer and they are asking for a fairly standard alert.
+“Please alert me when an NSG is added or modified”. Seems simply enough, however this is not as simply as you think. So I used my favourite search and found the following, “How to receive an email on Azure Network Security Group Rule changes“, this is great content and after testing, it works exactly as expected.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div></div>
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://cloudadventures.fskelly.com/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                            <a href="https://github.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://linkedin.com/in/fletcherkelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://twitter.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright © 2019–2021, Fletcher Kelly; all rights reserved.
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="/dist/main.d608eadfe5ac0688902e.min.js"></script>
+        
+    
+
+
+
+<script>
+    window.Prism = window.Prism || {};
+    window.Prism.manual = true;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-XXXX', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+</body>
+</html>

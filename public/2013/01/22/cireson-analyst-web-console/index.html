@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+     Cireson Analyst Web Console | 
+    Fletcher&#39;s Tech Blog
+  
+</title><meta name="description" content="A day in the life of a Cloud Engineer."><meta name="author" content="Fletcher Kelly">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="/favicon.ico">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+
+
+<link rel="canonical" href="https://cloudadventures.fskelly.com/2013/01/22/cireson-analyst-web-console/"><meta property="og:title" content="Cireson Analyst Web Console" />
+<meta property="og:description" content="I have always heard complaints from some of the analysts in my company about having to install the Service Manager Console on their machines and then complaining about having to learn a new application.
+So, I went searching around and found a great application called Cireson SCSM Web Console, this allows analysts to update Incidents via a newly designed web portal for Analysts. Since the console is designed in HTML5, the web console is browser agnostic." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cloudadventures.fskelly.com/2013/01/22/cireson-analyst-web-console/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2013-01-22T09:32:19+00:00" />
+<meta property="article:modified_time" content="2013-01-22T09:32:19+00:00" />
+
+<meta itemprop="name" content="Cireson Analyst Web Console">
+<meta itemprop="description" content="I have always heard complaints from some of the analysts in my company about having to install the Service Manager Console on their machines and then complaining about having to learn a new application.
+So, I went searching around and found a great application called Cireson SCSM Web Console, this allows analysts to update Incidents via a newly designed web portal for Analysts. Since the console is designed in HTML5, the web console is browser agnostic."><meta itemprop="datePublished" content="2013-01-22T09:32:19+00:00" />
+<meta itemprop="dateModified" content="2013-01-22T09:32:19+00:00" />
+<meta itemprop="wordCount" content="668">
+<meta itemprop="keywords" content="Cireson,Console,SCSM,SCSM 2012,Service Manager,ServiceManager,Web Console," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Cireson Analyst Web Console"/>
+<meta name="twitter:description" content="I have always heard complaints from some of the analysts in my company about having to install the Service Manager Console on their machines and then complaining about having to learn a new application.
+So, I went searching around and found a great application called Cireson SCSM Web Console, this allows analysts to update Incidents via a newly designed web portal for Analysts. Since the console is designed in HTML5, the web console is browser agnostic."/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://cloudadventures.fskelly.com">Fletcher&#39;s Tech Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">January 22, 2013</p>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>668 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>4 mins read</span>
+                        </div>
+
+                        <h1>Cireson Analyst Web Console</h1>
+
+                        
+                    </div>
+                </div><div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="content">
+                            <p>I have always heard complaints from some of the analysts in my company about having to install the Service Manager Console on their machines and then complaining about having to learn a new application.</p>
+<p>So, I went searching around and found a great application called <a href="http://www.cireson.com/app-store/scsm-web-console/">Cireson SCSM Web Console</a>, this allows analysts to update Incidents via a newly designed web portal for Analysts. Since the console is designed in HTML5, the web console is browser agnostic. This face also helps some companies to adopt this as it allows analysts to use all types of devices to update incidents.</p>
+<p>The guide provided to install the application is Comprehensive and easy to follow. Just make sure you do all the steps. I have added some screenshots of errors I got along the way, trying to “jump the gun” and see the new Web Console in action.</p>
+<p>“Issues and Errors” I ran into, all of which are easily fixed.</p>
+<p><!-- raw HTML omitted -->Server error in ‘/’ Application<!-- raw HTML omitted --></p>
+<p><a href="http://fskelly.files.wordpress.com/2013/01/image.png"><!-- raw HTML omitted --></a></p>
+<p>This error is pretty much self-explanatory, I tried to open the console before the Cireson Management Pack had been imported. A simple fix, import the Management Pack.</p>
+<p><a href="http://fskelly.files.wordpress.com/2013/01/image1.png"><!-- raw HTML omitted --></a></p>
+<p>Again, this looks intimidating. This is very easy to fix if you look at error. When you are going through the installation guide, it is very easy to miss a step. Like this, when configuring the web.config file with Active Directory Connector information, it is very easy to find the space for the DN Name of your domain. When the above happens, it is simple a case of not adding the full DN for a <!-- raw HTML omitted -->DOMAIN CONTROLLER<!-- raw HTML omitted -->.</p>
+<p>But now, onto the console in action. Just one side note, for now the <a href="http://www.cireson.com/app-store/scsm-web-console/">Cireson SCSM Web Console</a> handles only incidents, I have heard that plans are in progress for the <a href="http://www.cireson.com/app-store/scsm-web-console/">Cireson SCSM Web Console</a> to be extended to include Service Requests and potentially Problems, WOW!!!!!!</p>
+<p>The <a href="http://www.cireson.com/app-store/scsm-web-console/">Cireson SCSM Web Console</a> is really easy to navigate and very easy to understand, anything you can do in the actual console, you can do on the <a href="http://www.cireson.com/app-store/scsm-web-console/">Cireson SCSM Web Console</a>. So, if you make the <a href="http://www.cireson.com/app-store/scsm-web-console/">Cireson SCSM Web Console</a> publically available, your Analysts can update from anywhere with any device as the Web Console is NOT dependent on <a href="http://www.microsoft.com/getsilverlight/Get-Started/Install/Default.aspx">Microsoft Silverlight</a>.</p>
+<p>As you can see below, the Web Console is very nicely put together and gives you all the information you need at a quick glance.</p>
+<p><a href="http://fskelly.files.wordpress.com/2013/01/image2.png"><!-- raw HTML omitted --></a></p>
+<p>You can click an incident to open it and you will be presented with some detailed information regarding the incident as can be seen below. You can also “Edit Incident” from the Web Console to update it.</p>
+<p><a href="http://fskelly.files.wordpress.com/2013/01/image3.png"><!-- raw HTML omitted --></a></p>
+<p>From the top Level Tabs, you can see you access all the information you could regarding Incidents</p>
+<p><a href="http://fskelly.files.wordpress.com/2013/01/image4.png"><!-- raw HTML omitted --></a></p>
+<p>Below are screenshots of each “Section” from the Top Level Menu”</p>
+<p>Incidents can also be LOGGED from the Web Console, displaying all information from your SCSM Implementation</p>
+<p><a href="http://fskelly.files.wordpress.com/2013/01/image5.png"><!-- raw HTML omitted --></a></p>
+<p>The “My Team’s Incidents” leverages the groups and information provided during the installation of the Web Console and provides a consolidated view of the Incidents assigned to the “Support Group” to which the currently logged on user is a member and this works very nicely with <a href="http://www.cireson.com/app-store/scsm-group-assign/">Cireson SCSM Group Assign</a></p>
+<p><a href="http://fskelly.files.wordpress.com/2013/01/image6.png"><!-- raw HTML omitted --></a></p>
+<p>The “All My Incidents” View provide a view of all incidents assigned to the currently “logged on” user.</p>
+<p><a href="http://fskelly.files.wordpress.com/2013/01/image7.png"><!-- raw HTML omitted --></a></p>
+<p>The “All Incidents” view provides an overview for all incidents within your Service Manager environment. By default, only active incidents are shown, you can select the checkbox to show resolved incidents.</p>
+<p><a href="http://fskelly.files.wordpress.com/2013/01/image8.png"><!-- raw HTML omitted --></a></p>
+<p>The “Search Incidents” views allows you to search via a number of different fields, making it really easy to find any incidents you are looking for.</p>
+<p><a href="http://fskelly.files.wordpress.com/2013/01/image9.png"><!-- raw HTML omitted --></a></p>
+<p>The “Configuration Items” view is the representation of the CI Items within the organization on the Web Console.</p>
+<p><a href="http://fskelly.files.wordpress.com/2013/01/image10.png"><!-- raw HTML omitted --></a></p>
+<p>The <a href="http://www.cireson.com/app-store/scsm-web-console/">Cireson SCSM Web Console</a> is a great addition to your Service Manager environment. It allows incidents to be updated quickly and easily from any device. I would highly recommend it.</p>
+<p><a href="mailto:systemcenterguyza@live.com">(E-Mail me)</a></p>
+<p><a href="http://fskelly.files.wordpress.com/2013/01/image_thumb_thumb_thumb.png"><!-- raw HTML omitted --></a></p>
+<p><!-- raw HTML omitted -->Follow me.<!-- raw HTML omitted --></p>
+<p><a href="http://www.facebook.com/fletcher.kelly"><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></a> Facebook (Personal)</p>
+<p><a href="http://twitter.com/#!/fskelly"><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></a>Twitter (Personal &amp; System Center)</p>
+<p><a href="http://twitter.com/syscenterguyza"><!-- raw HTML omitted --></a> Twitter (System Center Focused)</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+
+                        </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="/tags/cireson">
+                                    <i class="fas fa-tag mr-2"></i>Cireson
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/console">
+                                    <i class="fas fa-tag mr-2"></i>Console
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/scsm">
+                                    <i class="fas fa-tag mr-2"></i>SCSM
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/scsm-2012">
+                                    <i class="fas fa-tag mr-2"></i>SCSM 2012
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/service-manager">
+                                    <i class="fas fa-tag mr-2"></i>Service Manager
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/servicemanager">
+                                    <i class="fas fa-tag mr-2"></i>ServiceManager
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/web-console">
+                                    <i class="fas fa-tag mr-2"></i>Web Console
+                                </a></div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2013%2f01%2f22%2fcireson-analyst-web-console%2f&text=Cireson%20Analyst%20Web%20Console">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2013%2f01%2f22%2fcireson-analyst-web-console%2f&title=Cireson%20Analyst%20Web%20Console">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fcloudadventures.fskelly.com%2f2013%2f01%2f22%2fcireson-analyst-web-console%2f&t=Cireson%20Analyst%20Web%20Console">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2013%2f01%2f22%2fcireson-analyst-web-console%2f&title=Cireson%20Analyst%20Web%20Console">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div><div class="row justify-content-center my-3">
+                    <div class="col-lg-8">
+                        <div id="commento"></div>
+                        <script src="https://commento.io"></script>
+                    </div>
+                </div></article>
+        </div>
+    </div>
+
+    <div class="related-content row mt-5 row-cols-1 row-cols-lg-3"><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2012/12/14/how-do-i-learn-system-center-service-manager-2012/" class="d-block"><div class="card-body">
+            <h4 class="card-title">How do I “learn” System Center Service Manager 2012?</h4>
+            <p class="card-text text-muted text-uppercase">December 14, 2012</p>
+            <div class="card-text">
+                So, I recently made a very simple comment on Facebook. This lead to some interesting comment and questions being raised about Service Manager about “Training for Service Desk” staff” in particular. At this moment in time, there is no “Service Desk Staff” training that I am aware of. So I decided to try and address this as best I could.I have decided to consolidate some of the more important components and concepts of Service Manager and place them in one spot.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2012/06/26/why-is-my-service-manager-so-slow/" class="d-block"><div class="card-body">
+            <h4 class="card-title">Why is my Service Manager so slow?</h4>
+            <p class="card-text text-muted text-uppercase">June 26, 2012</p>
+            <div class="card-text">
+                So, I have been running Service Manager for quite some time now. From SCSM 2010 to SCSM SP1 and most of the CU’s before I upgraded to SCSM 2012 Beta and RC and then to RTM (with the help of a Microsoft TAP Program). Service Manager is now quite entrenched in our business and has been running quite well for a very long time. However, a little while ago we began to experience performance issues with the Console and the logging of calls and the application of Workflows.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2012/04/30/upgrading-from-scsm-2010-scsm-2012-pre-rtm-to-scsm-2012-rtm/" class="d-block"><div class="card-body">
+            <h4 class="card-title">Upgrading from SCSM 2010 / SCSM 2012 PRE-RTM to SCSM 2012 RTM</h4>
+            <p class="card-text text-muted text-uppercase">April 30, 2012</p>
+            <div class="card-text">
+                So, You are now ready to take the plunge and upgrade to SCSM 2012 RTM as it now “publically” available.
+There is great documentation, obviously, on TECHNET. I have however found out a few other things which will helpfully make your transition a little easier. I have found that the following can cause some complications and how to “mitigate” these if you will.
+Service Manager 2010
+Connectors – Please make sure that your connectors are NOT running while you do the upgrade, the upgrade will work, however your connectors will run and attempt to catch up with itself.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div></div>
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://cloudadventures.fskelly.com/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                            <a href="https://github.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://linkedin.com/in/fletcherkelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://twitter.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright © 2019–2021, Fletcher Kelly; all rights reserved.
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="/dist/main.d608eadfe5ac0688902e.min.js"></script>
+        
+    
+
+
+
+<script>
+    window.Prism = window.Prism || {};
+    window.Prism.manual = true;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-XXXX', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+</body>
+</html>

@@ -32,7 +32,7 @@ author = "authors"
 
 [params]
   author = "Fletcher Kelly"
-  description = "Fletcher's Cloud Journey."
+  description = "A day in the life of a Cloud Engineer."
   homepageImage = "/images/homepage-image2.png"
   dateFormat = "January 2, 2006"
   share = true

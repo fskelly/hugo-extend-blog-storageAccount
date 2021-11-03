@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>owner on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/owner/</link>
+    <description>Recent content in owner on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 07 Jun 2012 12:17:25 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/owner/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basic Cluster Troubleshooting</title>
+      <link>https://cloudadventures.fskelly.com/2012/06/07/basic-cluster-troubleshooting/</link>
+      <pubDate>Thu, 07 Jun 2012 12:17:25 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/06/07/basic-cluster-troubleshooting/</guid>
+      <description>So, just last night, we had an issue with our cluster.One of our disks would not come online. We were seeing an error event ID: 1304 as below.
+So, we began to investigate as all the Technet articles state that the drive is corrupted and Disk Signatures need to be changed, however we have had no major changes in the last little while. We were also able to view to CSV Volume from our SAN management tools.</description>
+    </item>
+    
+  </channel>
+</rss>

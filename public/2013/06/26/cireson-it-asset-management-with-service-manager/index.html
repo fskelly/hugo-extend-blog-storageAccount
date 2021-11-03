@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+     Cireson IT Asset Management with Service Manager | 
+    Fletcher&#39;s Tech Blog
+  
+</title><meta name="description" content="A day in the life of a Cloud Engineer."><meta name="author" content="Fletcher Kelly">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="/favicon.ico">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+
+
+<link rel="canonical" href="https://cloudadventures.fskelly.com/2013/06/26/cireson-it-asset-management-with-service-manager/"><meta property="og:title" content="Cireson IT Asset Management with Service Manager" />
+<meta property="og:description" content="Cireson have recently released an new enhancement to the Service Manager console called the Cireson SCSM Asset Management App. This particular application is very easy to install. To install the application into the console, it is simply a case of importing a few management packs and some XML files and DLL files. This is very easy to do and the installation instructions provided by Cireson are very simple and easy to follow as with all Cireson add-ins I have worked with in the past." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cloudadventures.fskelly.com/2013/06/26/cireson-it-asset-management-with-service-manager/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2013-06-26T10:23:48+00:00" />
+<meta property="article:modified_time" content="2013-06-26T10:23:48+00:00" />
+
+<meta itemprop="name" content="Cireson IT Asset Management with Service Manager">
+<meta itemprop="description" content="Cireson have recently released an new enhancement to the Service Manager console called the Cireson SCSM Asset Management App. This particular application is very easy to install. To install the application into the console, it is simply a case of importing a few management packs and some XML files and DLL files. This is very easy to do and the installation instructions provided by Cireson are very simple and easy to follow as with all Cireson add-ins I have worked with in the past."><meta itemprop="datePublished" content="2013-06-26T10:23:48+00:00" />
+<meta itemprop="dateModified" content="2013-06-26T10:23:48+00:00" />
+<meta itemprop="wordCount" content="303">
+<meta itemprop="keywords" content="Asset Import,Asset Management,Cireson,ITAM,SCSM,SCSM 2012,Service Manager," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Cireson IT Asset Management with Service Manager"/>
+<meta name="twitter:description" content="Cireson have recently released an new enhancement to the Service Manager console called the Cireson SCSM Asset Management App. This particular application is very easy to install. To install the application into the console, it is simply a case of importing a few management packs and some XML files and DLL files. This is very easy to do and the installation instructions provided by Cireson are very simple and easy to follow as with all Cireson add-ins I have worked with in the past."/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://cloudadventures.fskelly.com">Fletcher&#39;s Tech Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">June 26, 2013</p>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>303 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>2 mins read</span>
+                        </div>
+
+                        <h1>Cireson IT Asset Management with Service Manager</h1>
+
+                        
+                    </div>
+                </div><div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="content">
+                            <p><a href="http://www.cireson.com/">Cireson</a> have recently released an new enhancement to the <a href="http://technet.microsoft.com/en-us/systemcenter/ee923652.aspx">Service Manager</a> console called the <a href="http://www.cireson.com/app-store/scsm-asset-management/">Cireson SCSM Asset Management App</a>. This particular application is very easy to install. To install the application into the console, it is simply a case of importing a few management packs and some XML files and DLL files. This is very easy to do and the installation instructions provided by <a href="http://www.cireson.com/">Cireson</a> are very simple and easy to follow as with all <a href="http://www.cireson.com/">Cireson</a> add-ins I have worked with in the past.</p>
+<p>In order to get the full benefit from the <a href="http://www.cireson.com/app-store/scsm-asset-management/">Cireson SCSM Asset Management App</a>, I would highly recommend that the <a href="http://technet.microsoft.com/en-us/library/ff460951.aspx">Configuration Manager Connector</a> be enabled within your environment. However, this is NOT a necessity. Within my environment as I run mine as a Lab, it is not always possible to have all the connectors enabled all the time. I was very easily able to configure my workflows (come with the <a href="http://www.cireson.com/app-store/scsm-asset-management/">Cireson SCSM Asset Management App</a>) to work and pull in the required information.</p>
+<p>A sample of my workflow configuration is below. The workflows and settings for the <a href="http://www.cireson.com/app-store/scsm-asset-management/">Cireson SCSM Asset Management App</a> are found under the Administration Wunderbar and then settings as with all <a href="http://www.cireson.com/app-store/">Cireson</a> applications.</p>
+<p>There are settings for both Software and Hardware Collections.</p>
+<p>Software</p>
+<p><a href="/wp-content/uploads/2013/06/image.png"><!-- raw HTML omitted --></a></p>
+<p>Hardware</p>
+<p><a href="/wp-content/uploads/2013/06/image1.png"><!-- raw HTML omitted --></a></p>
+<p>A little lower down on the Hardware tab, this is where the <a href="http://technet.microsoft.com/en-us/library/ff460951.aspx">Configuration Manager Connector</a> would add a tremendous amount of value as you can reference different  value to be used as a Hardware ID. So, if you had the <a href="http://technet.microsoft.com/en-us/library/ff460951.aspx">Configuration Manager Connector</a> enabled, you could reference a Serial Number or Asset Tag. However, it is perfectly feasable to reference Principal name.</p>
+<p><a href="/wp-content/uploads/2013/06/image2.png"><!-- raw HTML omitted --></a></p>
+<p>Under the “Miscellaneous”  tab, is where the logging is configured, which is amazingly helpful for troubleshooting.</p>
+<p><a href="/wp-content/uploads/2013/06/image3-1.png"><!-- raw HTML omitted --></a></p>
+<p><a href="mailto:systemcenterguyza@live.com">(E-Mail me)</a></p>
+<p><img src="/wp-content/uploads/2013/02/image_thumb_thumb_thumb_thumb_thumb1-1.png" alt=""></p>
+<p><!-- raw HTML omitted -->Follow me.<!-- raw HTML omitted --></p>
+<p><img src="http://fskelly.files.wordpress.com/2012/06/facebook-small322252222.jpg?w=44&amp;h=44" alt=""> Facebook (Personal)</p>
+<p><img src="http://fskelly.files.wordpress.com/2012/06/twitter-small322252222.jpg?w=44&amp;h=44" alt=""> Twitter (Personal &amp; System Center)</p>
+<p> <img src="/wp-content/uploads/2013/02/scsmlogo25232.jpg?w=56&amp;h=43" alt="">Twitter (System Center Focused)</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+
+                        </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="/tags/asset-import">
+                                    <i class="fas fa-tag mr-2"></i>Asset Import
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/asset-management">
+                                    <i class="fas fa-tag mr-2"></i>Asset Management
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/cireson">
+                                    <i class="fas fa-tag mr-2"></i>Cireson
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/itam">
+                                    <i class="fas fa-tag mr-2"></i>ITAM
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/scsm">
+                                    <i class="fas fa-tag mr-2"></i>SCSM
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/scsm-2012">
+                                    <i class="fas fa-tag mr-2"></i>SCSM 2012
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/service-manager">
+                                    <i class="fas fa-tag mr-2"></i>Service Manager
+                                </a></div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2013%2f06%2f26%2fcireson-it-asset-management-with-service-manager%2f&text=Cireson%20IT%20Asset%20Management%20with%20Service%20Manager">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2013%2f06%2f26%2fcireson-it-asset-management-with-service-manager%2f&title=Cireson%20IT%20Asset%20Management%20with%20Service%20Manager">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fcloudadventures.fskelly.com%2f2013%2f06%2f26%2fcireson-it-asset-management-with-service-manager%2f&t=Cireson%20IT%20Asset%20Management%20with%20Service%20Manager">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2013%2f06%2f26%2fcireson-it-asset-management-with-service-manager%2f&title=Cireson%20IT%20Asset%20Management%20with%20Service%20Manager">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div><div class="row justify-content-center my-3">
+                    <div class="col-lg-8">
+                        <div id="commento"></div>
+                        <script src="https://commento.io"></script>
+                    </div>
+                </div></article>
+        </div>
+    </div>
+
+    <div class="related-content row mt-5 row-cols-1 row-cols-lg-3"><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2013/01/22/cireson-analyst-web-console/" class="d-block"><div class="card-body">
+            <h4 class="card-title">Cireson Analyst Web Console</h4>
+            <p class="card-text text-muted text-uppercase">January 22, 2013</p>
+            <div class="card-text">
+                I have always heard complaints from some of the analysts in my company about having to install the Service Manager Console on their machines and then complaining about having to learn a new application.
+So, I went searching around and found a great application called Cireson SCSM Web Console, this allows analysts to update Incidents via a newly designed web portal for Analysts. Since the console is designed in HTML5, the web console is browser agnostic.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2013/05/17/import-ci-items-with-cireson-asset-import-tool/" class="d-block"><div class="card-body">
+            <h4 class="card-title">Import CI Items with Cireson Asset Import Tool</h4>
+            <p class="card-text text-muted text-uppercase">May 17, 2013</p>
+            <div class="card-text">
+                With my previous post about importing data, I showed you how to use the built-in CSV connector to do this task and how to create the required Projection Classes. However if you are looking for a quicker more automated to achieve this, enter Cireson and their Asset Import Tool. It takes all the guess work out of the import process and handles the Projection Classes for you.
+The installation of the application is easy and requires the copying a DLL file to the Service Manager Installation folder and the import of a Management Pack ( a management Pack Bundle in this case).
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2012/12/14/how-do-i-learn-system-center-service-manager-2012/" class="d-block"><div class="card-body">
+            <h4 class="card-title">How do I “learn” System Center Service Manager 2012?</h4>
+            <p class="card-text text-muted text-uppercase">December 14, 2012</p>
+            <div class="card-text">
+                So, I recently made a very simple comment on Facebook. This lead to some interesting comment and questions being raised about Service Manager about “Training for Service Desk” staff” in particular. At this moment in time, there is no “Service Desk Staff” training that I am aware of. So I decided to try and address this as best I could.I have decided to consolidate some of the more important components and concepts of Service Manager and place them in one spot.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div></div>
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://cloudadventures.fskelly.com/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                            <a href="https://github.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://linkedin.com/in/fletcherkelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://twitter.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright © 2019–2021, Fletcher Kelly; all rights reserved.
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="/dist/main.d608eadfe5ac0688902e.min.js"></script>
+        
+    
+
+
+
+<script>
+    window.Prism = window.Prism || {};
+    window.Prism.manual = true;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-XXXX', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+</body>
+</html>

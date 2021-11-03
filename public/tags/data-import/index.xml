@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Import on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/data-import/</link>
+    <description>Recent content in Data Import on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 23 Apr 2013 05:27:42 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/data-import/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Importing data into Service Manager–CSV import and XML</title>
+      <link>https://cloudadventures.fskelly.com/2013/04/23/importing-data-into-service-managercsv-import-and-xml/</link>
+      <pubDate>Tue, 23 Apr 2013 05:27:42 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/04/23/importing-data-into-service-managercsv-import-and-xml/</guid>
+      <description>So, just recently I was asked by a customer to import data from an “old” SCSM system. The customer is moving to new hardware within the organization and is using this opportunity to clean up Service Manager and re-import only clean data.So, the challenge is the following.The customer wants to import Change Requests from the “old” Service Manager to the “new” Service Manager. Ok, so after some research and confirmation, it is NOT possible to simply move data from one Service Manager installation to another.</description>
+    </item>
+    
+  </channel>
+</rss>

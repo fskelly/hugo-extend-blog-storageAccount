@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Create on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/create/</link>
+    <description>Recent content in Create on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 07 Jul 2011 06:15:39 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/create/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building more redundancy and replicating folder structure</title>
+      <link>https://cloudadventures.fskelly.com/2011/07/07/building-more-redundancy-and-replicating-folder-structure/</link>
+      <pubDate>Thu, 07 Jul 2011 06:15:39 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/07/07/building-more-redundancy-and-replicating-folder-structure/</guid>
+      <description>We have had a few failures of the power kind (thanks to the electricity provider in South Africa, who will remain nameless). So we have now had to build in further redundancy to cater for this and for other business needs. There is nothing worse than getting a phone call saying that critical services are unavailable at a CRITICAL time. What a nightmare. So a few plans were set in motion.</description>
+    </item>
+    
+  </channel>
+</rss>

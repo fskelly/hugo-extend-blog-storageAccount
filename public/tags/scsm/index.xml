@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SCSM on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/scsm/</link>
+    <description>Recent content in SCSM on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 17 Jun 2014 06:01:55 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/scsm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cireson Outlook Console</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2014-06-17-cireson-outloook-console/</link>
+      <pubDate>Tue, 17 Jun 2014 06:01:55 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2014-06-17-cireson-outloook-console/</guid>
+      <description>So, Cireson hase been investing into System Centre Service Manager (SCSM) very heavily and the end results are WELL worth it.
+The Cireson Outlook Console has been out a little while, however it just keeps getting better and better. The Console is super easy to install. The Install instructions are provided by Cireson. There are a few steps to follow as well as the installation of an Outlook Plugin.
+Yes, as you may have guessed from the name, this allows you to connect to Service Manager with almost a full experience directly from OUTLOOK, how great is that.</description>
+    </item>
+    
+    <item>
+      <title>Adding Comments to Work Items with Orchestrator</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2014-04-04-adding-comments-to-work-items-with-orchestrator/</link>
+      <pubDate>Fri, 04 Apr 2014 08:18:16 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2014-04-04-adding-comments-to-work-items-with-orchestrator/</guid>
+      <description>Hi All,
+It has been a little while, i have been quite involved with an Integration Project. With this project there was a requirement to add comments to a Work Item. The information is passed on from &amp;ldquo;System A&amp;rdquo; to &amp;ldquo;System B&amp;rdquo; via XML. Using PowerShell, extracting the XML contents is not too difficult, if anyone would like to dive into that a little bit, please let me know with Comments.</description>
+    </item>
+    
+    <item>
+      <title>Send Email to 3rd Party from SCSM Console – PowerShell and Console Task</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2013-11-15-send-email-to-3rd-party-from-scsm-console-powershell-and-console-task/</link>
+      <pubDate>Fri, 15 Nov 2013 11:58:48 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2013-11-15-send-email-to-3rd-party-from-scsm-console-powershell-and-console-task/</guid>
+      <description>So recently, I had a customer ask me for the following as their previous incident management system had this functionality.
+The customer wanted to be able to send an &amp;ldquo;Update Email&amp;rdquo; to a 3rd party from the SCSM Console with automatically placing the reference number into said email. They needed the functionality of sending to any email address. This was a requirement for the type of business they are in.</description>
+    </item>
+    
+    <item>
+      <title>Service Request Load Testing for SCSM</title>
+      <link>https://cloudadventures.fskelly.com/2013/09/11/service-request-load-testing-for-scsm/</link>
+      <pubDate>Wed, 11 Sep 2013 19:30:51 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/09/11/service-request-load-testing-for-scsm/</guid>
+      <description>I have found a great for load testing SCSM with Incidents. The script uses SMLets to generate Incidents and you can then gauge how your system would handle the load you are planning within your Production Environment.
+I will not go into the detail of the script as this blog post does a great job of explaining it. SO this got me to thinking about other Load Testing you could perform.</description>
+    </item>
+    
+    <item>
+      <title>Cireson IT Asset Management with Service Manager</title>
+      <link>https://cloudadventures.fskelly.com/2013/06/26/cireson-it-asset-management-with-service-manager/</link>
+      <pubDate>Wed, 26 Jun 2013 10:23:48 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/06/26/cireson-it-asset-management-with-service-manager/</guid>
+      <description>Cireson have recently released an new enhancement to the Service Manager console called the Cireson SCSM Asset Management App. This particular application is very easy to install. To install the application into the console, it is simply a case of importing a few management packs and some XML files and DLL files. This is very easy to do and the installation instructions provided by Cireson are very simple and easy to follow as with all Cireson add-ins I have worked with in the past.</description>
+    </item>
+    
+    <item>
+      <title>Cireson My Active Work Items</title>
+      <link>https://cloudadventures.fskelly.com/2013/02/21/cireson-my-active-work-items/</link>
+      <pubDate>Thu, 21 Feb 2013 09:10:11 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/02/21/cireson-my-active-work-items/</guid>
+      <description>So, Cireson has been hard at work to fill a few gaps present within the Service Manager space. Cireson has created an application called My Active Work Items to bring all information assigned to your user token in one place. For Service Manager 2010, you could create the Work Items assigned to Me view. This was a good start for SCSM 2010 and this continues to work with SCSM 2012. However, with SCSM 2012, there are a few shortcomings of this view.</description>
+    </item>
+    
+    <item>
+      <title>Cireson Analyst Web Console</title>
+      <link>https://cloudadventures.fskelly.com/2013/01/22/cireson-analyst-web-console/</link>
+      <pubDate>Tue, 22 Jan 2013 09:32:19 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/01/22/cireson-analyst-web-console/</guid>
+      <description>I have always heard complaints from some of the analysts in my company about having to install the Service Manager Console on their machines and then complaining about having to learn a new application.
+So, I went searching around and found a great application called Cireson SCSM Web Console, this allows analysts to update Incidents via a newly designed web portal for Analysts. Since the console is designed in HTML5, the web console is browser agnostic.</description>
+    </item>
+    
+    <item>
+      <title>Group assignment with Service Manager</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2012-12-31-group-assignment-with-service-manager/</link>
+      <pubDate>Mon, 31 Dec 2012 06:58:52 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2012-12-31-group-assignment-with-service-manager/</guid>
+      <description>So one of the biggest issues I have with Service Manager is actually user based as seems to be quite difficult to teach the concept of this for some strange reason. So, as a work-around I have created views that cater for the issue I am about to discuss.
+The issue is as follows, when a Work Item gets re-assigned to a new Analyst, 99% of the time, the associated Support Group does NOT get changed.</description>
+    </item>
+    
+    <item>
+      <title>AssignedTo and AffectedUser with Powershell – Service Manager</title>
+      <link>https://cloudadventures.fskelly.com/2012/12/20/assignedto-and-affecteduser-with-powershell-service-manager/</link>
+      <pubDate>Thu, 20 Dec 2012 08:22:35 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/12/20/assignedto-and-affecteduser-with-powershell-service-manager/</guid>
+      <description>So recently I got an e-mail to my newly setup e-mail address, for just this reason , from someone asking if I knew a way to do the following.
+ “I was trying to find a way to find all Incidents related to a specific person (assigned to or affected user) using PowerShell” So, I decided the best to answer this with a blog post as maybe there are other people out there asking the same question.</description>
+    </item>
+    
+    <item>
+      <title>How do I “learn” System Center Service Manager 2012?</title>
+      <link>https://cloudadventures.fskelly.com/2012/12/14/how-do-i-learn-system-center-service-manager-2012/</link>
+      <pubDate>Fri, 14 Dec 2012 13:38:54 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/12/14/how-do-i-learn-system-center-service-manager-2012/</guid>
+      <description>So, I recently made a very simple comment on Facebook. This lead to some interesting comment and questions being raised about Service Manager about “Training for Service Desk” staff” in particular. At this moment in time, there is no “Service Desk Staff” training that I am aware of. So I decided to try and address this as best I could.I have decided to consolidate some of the more important components and concepts of Service Manager and place them in one spot.</description>
+    </item>
+    
+    <item>
+      <title>Auto-Closing work items made easy–Service Manager 2012</title>
+      <link>https://cloudadventures.fskelly.com/2012/11/01/auto-closing-work-items-made-easyservice-manager-2012/</link>
+      <pubDate>Thu, 01 Nov 2012 05:41:13 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/11/01/auto-closing-work-items-made-easyservice-manager-2012/</guid>
+      <description>So, there are a few ways of tackling the issue of automatically closing Incidents/Change Requests within Service Manager. Most of these solutions rely on a script leveraging SMLets. So you would create a script and then create a workflow and end up importing the Management Pack into Service Manager. The issue with this is the following, it is quite time consuming and should change under the hood with Service Manager, like the changes from 2010 to 2012, your script will most likely stop working.</description>
+    </item>
+    
+    <item>
+      <title>Exchange Connector – SCSM 2012</title>
+      <link>https://cloudadventures.fskelly.com/2012/09/19/exchange-connector-scsm-2012/</link>
+      <pubDate>Wed, 19 Sep 2012 07:13:10 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/09/19/exchange-connector-scsm-2012/</guid>
+      <description>So, I decided to extend the functionality of Service Manager even more with the Exchange Connector. If you follow the guide it is nice and easy to install. The configuration is quite simply as well, here is a link which gives the configuration in some detail to make you life a little. Once the connector is installed is when I found a little “gotcha” if you will. With the connector, it updates any incident with the same template, which can cause issues and potentially change your Priority and Urgency which can lead to some skewed reporting.</description>
+    </item>
+    
+    <item>
+      <title>Upgrading from SCSM 2010 / SCSM 2012 PRE-RTM to SCSM 2012 RTM</title>
+      <link>https://cloudadventures.fskelly.com/2012/04/30/upgrading-from-scsm-2010-scsm-2012-pre-rtm-to-scsm-2012-rtm/</link>
+      <pubDate>Mon, 30 Apr 2012 07:09:49 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/04/30/upgrading-from-scsm-2010-scsm-2012-pre-rtm-to-scsm-2012-rtm/</guid>
+      <description>So, You are now ready to take the plunge and upgrade to SCSM 2012 RTM as it now “publically” available.
+There is great documentation, obviously, on TECHNET. I have however found out a few other things which will helpfully make your transition a little easier. I have found that the following can cause some complications and how to “mitigate” these if you will.
+Service Manager 2010
+Connectors – Please make sure that your connectors are NOT running while you do the upgrade, the upgrade will work, however your connectors will run and attempt to catch up with itself.</description>
+    </item>
+    
+    <item>
+      <title>System Centre Service Manager 2012 Portal</title>
+      <link>https://cloudadventures.fskelly.com/2011/11/30/system-centre-service-manager-2012-portal/</link>
+      <pubDate>Wed, 30 Nov 2011 16:02:55 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/11/30/system-centre-service-manager-2012-portal/</guid>
+      <description>So now, I move onto the final part of the SCSM 2012 journey, the Portal.
+The install was pretty straight-forward, the most difficult part is deciding how you would split your roles or if you are going to split your roles, here is the guide for role placement.
+So, once you have decided which route you would like to follow, here are the steps I followed.
+ Start the setup.</description>
+    </item>
+    
+    <item>
+      <title>Service Manager 2012 Management Server (Upgrade)</title>
+      <link>https://cloudadventures.fskelly.com/2011/11/24/service-manager-2012-management-server-upgrade/</link>
+      <pubDate>Thu, 24 Nov 2011 05:36:25 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/11/24/service-manager-2012-management-server-upgrade/</guid>
+      <description>So, for the Management Server.
+This was very easy and quite painless for me.
+ Backup Encryption Key (for Disaster Recovery Purposes) Install Windows Server 2008 R2 SP1 (This is a pre-requisite for SCSM 2012) Remove Operations Manager Agent if this is installed, as the installer WILL stop you from continuing if the OpsMan Agent is installed. Run the Upgrade, PLEASE NOTE that if the Portal is installed on your Management Server, it will be REMOVED during the upgrade.</description>
+    </item>
+    
+    <item>
+      <title>Service Manager 2012 Data Warehouse (Upgrade)</title>
+      <link>https://cloudadventures.fskelly.com/2011/11/22/service-manager-2012-data-warehouse-upgrade/</link>
+      <pubDate>Tue, 22 Nov 2011 07:25:40 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/11/22/service-manager-2012-data-warehouse-upgrade/</guid>
+      <description>So, my journey with System Centre Service Manager 2012 Beta has begun and so far I have indeed found some funnies.
+I will be blogging about them, to make everyone else’s life a little bit easier and in the hope of better product adoption for this product. It is simply put a fantastic product.
+Ok, so the first time I ran the upgrade (remember I have a pre-prod environment), so I was able to rollback and did not have to follow Disaster Recovery with the Failure.</description>
+    </item>
+    
+    <item>
+      <title>Scheduled reports with SCSM Data Warehouse</title>
+      <link>https://cloudadventures.fskelly.com/2011/10/26/scheduled-reports-with-scsm-data-warehouse/</link>
+      <pubDate>Wed, 26 Oct 2011 10:26:01 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/10/26/scheduled-reports-with-scsm-data-warehouse/</guid>
+      <description>Hi All,
+I know it has been a little while.
+The reports built into Service Manager are great, however when you try to get a bit creative and automate some of the reports, you are going to run into some issues. So to work around theses issues, I did the following.
+Create a custom report from SQL Reporting Services and modified for my needs, I was focusing more on “Incident Analyst” and I was looking for a breakdown of the number of Incidents per Analysts in a week period.</description>
+    </item>
+    
+    <item>
+      <title>Some more SMlets commands (more detail)</title>
+      <link>https://cloudadventures.fskelly.com/2011/07/18/some-more-smlets-commands-more-detail/</link>
+      <pubDate>Mon, 18 Jul 2011 11:45:18 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/07/18/some-more-smlets-commands-more-detail/</guid>
+      <description>Would you like a nice graphical breakdown of all calls logged in (x) days and there status?
+I know I would. So, of course I have been working on such a script using smlets v3.
+So far, this is what the script does.
+ Takes the current date and time and subtracts 7 days and presents you with a nice HTML output which is mailed to the user. (Both the date and time and who to mail the output to is configurable.</description>
+    </item>
+    
+    <item>
+      <title>Using SMLets practically</title>
+      <link>https://cloudadventures.fskelly.com/2011/05/17/using-smlets-practically/</link>
+      <pubDate>Tue, 17 May 2011 11:27:51 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/05/17/using-smlets-practically/</guid>
+      <description>In my previous post, SCSM And Powershell, I mentioned that I am now starting to play with get-scsmobject. In this post I also created a script. That script has now been evolved into a proper get-scsmobject script.$Now=(get-date).AddDays(-7)
+$CId=(Get-SCSMEnumeration -ComputerName &amp;quot;ms-ec-hdm01&amp;quot;IncidentStatusEnum.Closed$).id
+$RId=(Get-SCSMEnumeration -ComputerName &amp;quot;ms-ec-hdm01&amp;quot;IncidentStatusEnum.Resolved$).id
+$Class=Get-SCSMClass -ComputerName &amp;quot;ms-ec-hdm01&amp;quot;System.WorkItem.Incident$$cType=&amp;quot;Microsoft.EnterpriseManagement.Common.EnterpriseManagementObjectCriteria&amp;quot;#$cString = &amp;ldquo;Status != &amp;lsquo;$CId&amp;rsquo; and Status != &amp;lsquo;$RId&amp;rsquo; and TargetResolutionTime &amp;lt; &amp;lsquo;$Now&amp;rsquo; and TargetResolutionTime Is Not Null&amp;rdquo;$cStringClosed=&amp;quot;Status = &amp;lsquo;$CId&amp;rsquo;and CreatedDate &amp;gt;&#39;$Now&amp;rsquo;&amp;quot;$cStringResolved=&amp;quot;Status = &amp;lsquo;$RId&amp;rsquo;and CreatedDate &amp;gt;&#39;$Now&amp;rsquo;&amp;quot;$cStringAll=&amp;quot;CreatedDate &amp;gt;&#39;$Now&#39;&amp;quot;$critClosed=new-object $cType$cStringClosed,$Class$critResolved=new-object $cType$cStringResolved,$Class$critAll=new-object $cType$cStringOther,$Class$closed=Get-SCSMObject -ComputerName &amp;quot;ms-ec-hdm01&amp;quot;-Criteria $critClosed$resolved=Get-SCSMObject -ComputerName &amp;quot;ms-ec-hdm01&amp;quot;-Criteria $critResolved$all=Get-SCSMObject -ComputerName &amp;quot;ms-ec-hdm01&amp;quot;-Criteria $critAll#$all = Get-SCSMObject -ComputerName &amp;ldquo;ms-ec-hdm01&amp;rdquo; -Class (Get-SCSMClass -ComputerName &amp;ldquo;ms-ec-hdm01&amp;rdquo; System.</description>
+    </item>
+    
+    <item>
+      <title>SCSM and Powershell</title>
+      <link>https://cloudadventures.fskelly.com/2011/05/10/scsm-and-powershell/</link>
+      <pubDate>Tue, 10 May 2011 06:42:52 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/05/10/scsm-and-powershell/</guid>
+      <description>Hi all,
+i have been playing with SMLets3 and get-scsmobject and using information from the post by Travis Wright, Using SMLets Beta 3 Post #1 – Using Get-SCSMObject, Get-SCSMClass to Dump Data from SCSM. This is an amazing post and I have been able to create a script that queries all Cases created after a certain date. It then gives you the breakdown of Open, Closed, Resolved and other status cases, which is then e-mailed to you.</description>
+    </item>
+    
+    <item>
+      <title>The “crisis” week</title>
+      <link>https://cloudadventures.fskelly.com/2011/05/03/the-crisis-week/</link>
+      <pubDate>Tue, 03 May 2011 08:44:31 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/05/03/the-crisis-week/</guid>
+      <description>Hi All,
+The last two weeks have been a little nutty for me. I have however, learnt to appreciate a few more things in life.
+  No matter how good your planning for DR, there is always that one thing that catches you. We have a generator, which is great. Now, when we cutover from generator power to mains power and then the main building power trips, life becomes interesting.</description>
+    </item>
+    
+  </channel>
+</rss>

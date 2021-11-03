@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>azure on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/azure/</link>
+    <description>Recent content in azure on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 25 Aug 2021 05:58:18 +0200</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/azure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure Resource Group Enterprise Scale Landing Zone queries</title>
+      <link>https://cloudadventures.fskelly.com/post/2021/arg-mg-query-quick-post/</link>
+      <pubDate>Wed, 25 Aug 2021 05:58:18 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/2021/arg-mg-query-quick-post/</guid>
+      <description>Azure Resource Graph Examples This is just a quick post. I am slowly working on building a collection of Resource Graph Queries - they can be found here and will grow over time. It just takes some time to build these.
+They will be broken down into a folder structure based upon the Critical Design Areas of Enterprise Scale Landing Zone
+Hope this helps and keep an eye out for more.</description>
+    </item>
+    
+    <item>
+      <title>Bicep Troubleshooting</title>
+      <link>https://cloudadventures.fskelly.com/post/2021/bicep-troubleshooting/</link>
+      <pubDate>Fri, 02 Jul 2021 05:40:16 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/2021/bicep-troubleshooting/</guid>
+      <description>Some basic &amp;ldquo;troubleshooting&amp;rdquo; with Azure Bicep
+So, let me start with this. The team and the community behind Azure Bicep are amazing. There are some great examples here. I often use these as a base and the rip apart or add to meet my needs, you do NOT need to start from ground zero. :smile:
+When you are deploying bicep templates you command will look something like this.
+$bicepFile = &amp;quot;.</description>
+    </item>
+    
+    <item>
+      <title>Azure CLI - List Locations and Peers</title>
+      <link>https://cloudadventures.fskelly.com/post/2021/cli-list-locations-and-peers/</link>
+      <pubDate>Wed, 05 May 2021 07:03:02 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/2021/cli-list-locations-and-peers/</guid>
+      <description>How to use the Azure CLI to list Azure Locations and their peers So this will be a &amp;ldquo;quick post&amp;rdquo; that shows some great functionality within the Azure CLI with az account list-locations. With this command you can expect some output like below, you actually get a lot of content back.
+{&amp;quot;displayName&amp;quot;: &amp;quot;Brazil Southeast&amp;quot;,&amp;quot;id&amp;quot;: &amp;quot;/subscriptions/949ef534-07f5-4138-8b79-aae16a71310c/locations/brazilsoutheast&amp;quot;,&amp;quot;metadata&amp;quot;: {&amp;quot;geographyGroup&amp;quot;: &amp;quot;South America&amp;quot;,&amp;quot;latitude&amp;quot;: &amp;quot;-22.90278&amp;quot;,&amp;quot;longitude&amp;quot;: &amp;quot;-43.2075&amp;quot;,&amp;quot;pairedRegion&amp;quot;: [{&amp;quot;id&amp;quot;: &amp;quot;/subscriptions/949ef534-07f5-4138-8b79-aae16a71310c/locations/brazilsouth&amp;quot;,&amp;quot;name&amp;quot;: &amp;quot;brazilsouth&amp;quot;,&amp;quot;subscriptionId&amp;quot;: null}],&amp;quot;physicalLocation&amp;quot;: &amp;quot;Rio&amp;quot;,&amp;quot;regionCategory&amp;quot;: &amp;quot;Other&amp;quot;,&amp;quot;regionType&amp;quot;: &amp;quot;Physical&amp;quot;},&amp;quot;name&amp;quot;: &amp;quot;brazilsoutheast&amp;quot;,&amp;quot;regionalDisplayName&amp;quot;: &amp;quot;(South America) Brazil Southeast&amp;quot;,&amp;quot;subscriptionId&amp;quot;: null} If you look at some of the examples, you will also see some &amp;ldquo;logical&amp;rdquo; locations, example below, there is a way of adding a query to remove these to display only &amp;ldquo;physical&amp;rdquo; locations.</description>
+    </item>
+    
+    <item>
+      <title>Azure Rest Api Postman Basics</title>
+      <link>https://cloudadventures.fskelly.com/post/2021/azure-rest-api-postman-basics/</link>
+      <pubDate>Wed, 14 Apr 2021 09:02:18 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/2021/azure-rest-api-postman-basics/</guid>
+      <description>Absolute basics with Azure and PostMan
+Getting started Many of the articles I have found online with regards to the Azure REST API assume a fair level of familiarity with Azure which can be a good and bad thing. You see the Azure Portal makes interacting with the Azure REST API very easy as a lot of the &amp;ldquo;prerequisite&amp;rdquo; work is done in the portal as part of the process. For this blog post we will work on something quite basic, &amp;ldquo;Create a Virtual Machine&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Expiring Keys and Secrets within Azure Key Vault</title>
+      <link>https://cloudadventures.fskelly.com/post/2021/expiring-keys-azure-key-vault/</link>
+      <pubDate>Mon, 18 Jan 2021 07:06:03 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/2021/expiring-keys-azure-key-vault/</guid>
+      <description>I was working with a customer the other day and a fairly simple ask came up, I however could not find an immediate answer within the portal.
+How do I check for expiring keys within the Azure KeyVault?
+Now being a PowerShell person, I never gave this much thought as for most tasks or actions I perform on the Azure Platform is done through PowerShell, AP, or CLI. So easy enough, however, not everyone knows how to do this in PowerShell.</description>
+    </item>
+    
+    <item>
+      <title>My New Blog Home with Azure Static Web App</title>
+      <link>https://cloudadventures.fskelly.com/post/2021/my-new-blog-home/</link>
+      <pubDate>Mon, 18 Jan 2021 07:06:03 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/2021/my-new-blog-home/</guid>
+      <description>So, I have spent the last few days / weeks deciding the best way to host a blog. Now I have a decidedly &amp;ldquo;split personality&amp;rdquo;. By this I mean I like to segregate my work and personal hobbies. This can be quite beneficial as this allows me to test a few things.
+A few key decisions  Must be version controlled - good practice and forces me to get more familiar with git.</description>
+    </item>
+    
+    <item>
+      <title>Azure Ghost CMS and Azure CDN</title>
+      <link>https://cloudadventures.fskelly.com/post/2021/azure-ghost-cms-and-cdn/</link>
+      <pubDate>Mon, 11 Jan 2021 07:00:18 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/2021/azure-ghost-cms-and-cdn/</guid>
+      <description>I moved my blog onto HUGO. Not everyone would want to do this necessarily, there is a bit of a learning curve, part of the reason I DID IT :). However there are other platforms you can use and still add more functionality if you want.
+You can use Ghost and add an Azure CDN. This is what this blog post will cover.
+There are some very clever people out there that have made this very easy for you.</description>
+    </item>
+    
+    <item>
+      <title>Network Security Group Change Alerting</title>
+      <link>https://cloudadventures.fskelly.com/post/2019/network-security-group-change-alerting/</link>
+      <pubDate>Wed, 20 Feb 2019 08:21:49 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/2019/network-security-group-change-alerting/</guid>
+      <description>So, I was with a customer and they are asking for a fairly standard alert.
+&amp;ldquo;Please alert me when an NSG is added or modified&amp;rdquo;. Seems simply enough, however this is not as simply as you think. So I used my favourite search and found the following, “How to receive an email on Azure Network Security Group Rule changes“, this is great content and after testing, it works exactly as expected.</description>
+    </item>
+    
+  </channel>
+</rss>

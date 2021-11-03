@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Operations Manager on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/categories/operations-manager/</link>
+    <description>Recent content in Operations Manager on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 14 Apr 2015 05:08:44 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/categories/operations-manager/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Grey Agent Fixing with Orchestrator</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2015-04-14-grey-agent-fixing-with-orchestrator/</link>
+      <pubDate>Tue, 14 Apr 2015 05:08:44 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2015-04-14-grey-agent-fixing-with-orchestrator/</guid>
+      <description>So, here is the scenario, we managed a lot of customer’s System Centre Operations Manager (SCOM) environments. One of the most common issues we run into, it is the “Grey Agent” issue, where an agent is no longer reporting into SCOM. There might be a few reasons for this, however one of the most common and effective ways to fix this to clear the agent cache. By this, we simply mean connecting to the agent, stopping the “SCOM” service, deleting the content of the “Health Service State” folder and then restarting the “SCOM” service.</description>
+    </item>
+    
+    <item>
+      <title>OpsMan 2007 R2–Collation, Collation, Collation!!!!!!</title>
+      <link>https://cloudadventures.fskelly.com/2012/05/07/opsman-2007-r2collation-collation-collation/</link>
+      <pubDate>Mon, 07 May 2012 11:44:25 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/05/07/opsman-2007-r2collation-collation-collation/</guid>
+      <description>So, recently I decided to take the plunge and upgrade to SCOM 2012. So, there were a few pre-requisites that I needed as per the prereq checker that is built into OpsMan 2012.The “big ones” were as follows. 1. OpsMan 2007 R2 CU52. And FTS (Full Text Search) for SQL. So, these seem easy enough to fix. 1. Simple downloadCumulative Update 5 for System Center Operations Manager 2007 R2and install. To be honest, I found this articlesuper helpful for the installation of this Cumulative Update, nice and easy to follow.</description>
+    </item>
+    
+    <item>
+      <title>Rebuilding the OpsMan Client Cache</title>
+      <link>https://cloudadventures.fskelly.com/2012/01/17/rebuilding-the-opsman-client-cache/</link>
+      <pubDate>Tue, 17 Jan 2012 07:16:27 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/01/17/rebuilding-the-opsman-client-cache/</guid>
+      <description>Just recently I had the need to “rebuild” the client cache on a lot of my servers, due to a slight hiccup with our Network and subsequently our Operations Manager Server. So I decided to use PowerShell, if you need to repeat it, script it.
+So, I simply built a script to connect to the required machine, stop the “Health Service”, delete the files from the required folder and then restart the “Health Service”.</description>
+    </item>
+    
+  </channel>
+</rss>

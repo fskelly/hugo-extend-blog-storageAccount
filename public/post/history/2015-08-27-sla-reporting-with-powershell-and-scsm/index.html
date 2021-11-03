@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+     SLA Reporting with PowerShell and SCSM | 
+    Fletcher&#39;s Tech Blog
+  
+</title><meta name="description" content="A day in the life of a Cloud Engineer."><meta name="author" content="Fletcher Kelly">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="/favicon.ico">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+
+
+<link rel="canonical" href="https://cloudadventures.fskelly.com/post/history/2015-08-27-sla-reporting-with-powershell-and-scsm/"><meta property="og:title" content="SLA Reporting with PowerShell and SCSM" />
+<meta property="og:description" content="I always get asked about reporting from my customers, and specifically around SLA&rsquo;s. SLA&rsquo;s are very important to most companies as this is part of the tracking mechanism of employees and vendors and the like.
+SMLETS is needed for this, it is built to be run from the server, if you need to run from your local machine, please install SMLets, copy the SDK Binaries folder and use the -computername where applicable with the SMLets commands." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cloudadventures.fskelly.com/post/history/2015-08-27-sla-reporting-with-powershell-and-scsm/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2015-08-27T06:21:12+00:00" />
+<meta property="article:modified_time" content="2015-08-27T06:21:12+00:00" />
+
+<meta itemprop="name" content="SLA Reporting with PowerShell and SCSM">
+<meta itemprop="description" content="I always get asked about reporting from my customers, and specifically around SLA&rsquo;s. SLA&rsquo;s are very important to most companies as this is part of the tracking mechanism of employees and vendors and the like.
+SMLETS is needed for this, it is built to be run from the server, if you need to run from your local machine, please install SMLets, copy the SDK Binaries folder and use the -computername where applicable with the SMLets commands."><meta itemprop="datePublished" content="2015-08-27T06:21:12+00:00" />
+<meta itemprop="dateModified" content="2015-08-27T06:21:12+00:00" />
+<meta itemprop="wordCount" content="548">
+<meta itemprop="keywords" content="SLA,SMLets,PowerShell," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="SLA Reporting with PowerShell and SCSM"/>
+<meta name="twitter:description" content="I always get asked about reporting from my customers, and specifically around SLA&rsquo;s. SLA&rsquo;s are very important to most companies as this is part of the tracking mechanism of employees and vendors and the like.
+SMLETS is needed for this, it is built to be run from the server, if you need to run from your local machine, please install SMLets, copy the SDK Binaries folder and use the -computername where applicable with the SMLets commands."/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://cloudadventures.fskelly.com">Fletcher&#39;s Tech Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">August 27, 2015</p>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>548 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>3 mins read</span>
+                        </div>
+
+                        <h1>SLA Reporting with PowerShell and SCSM</h1>
+
+                        <ul class="authors list-inline"><li class="list-inline-item mr-3">
+                    <div class="media author"><a href="/authors/fletcher-kelly/" class="mr-3">
+                                    <picture>
+                                        <source srcset="/authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_64x0_resize_q75_box.jpg 1x, /authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_128x0_resize_q100_box.jpg 2x, /authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_192x0_resize_q100_box.jpg 3x">
+                                        <img src="/authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_64x0_resize_q75_box.jpg" class="rounded-circle" alt="Fletcher Kelly">
+                                    </picture>
+                                </a><div class="media-body">
+                            <h5 class="name my-0"><a href="/authors/fletcher-kelly/" class="small">Fletcher Kelly</a>
+                            </h5><p class="social small text-muted">
+                                    <a href="https://twitter.com/@fskelly">@fskelly</a>
+                                </p></div>
+                    </div>
+                </li></ul>
+                    </div>
+                </div><div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="content">
+                            <!-- raw HTML omitted -->
+<p>I always get asked about reporting from my customers, and specifically around SLA&rsquo;s. SLA&rsquo;s are very important to most companies as this is part of the tracking mechanism of employees and vendors and the like.</p>
+<p><a href="https://github.com/SMLets/SMLets/releases">SMLETS</a> is needed for this, it is built to be run from the server, if you need to run from your local machine, please install SMLets, copy the SDK Binaries folder and use the -computername where applicable with the SMLets commands.</p>
+<p>I have customers that are &ldquo;multi-sourced&rdquo; and the vendors are also using the System Centre Service Manager (SCSM) environment. As such, the request came from my customer to create an easily readable and &ldquo;exportable&rdquo; SLA report. The requirements were as follow.</p>
+<ol>
+<li>All Incidents, Service Request, Change Requests and Problem Requests</li>
+<li>Assigned To Information</li>
+<li>Created By Information</li>
+<li>ID</li>
+<li>Impact</li>
+<li>Urgency</li>
+<li>Priority</li>
+<li>Classification / Area</li>
+<li>Created Date</li>
+<li>Resolved (yes / no), if yes, provide the resolution detail</li>
+<li>Last Modified Date</li>
+<li>Last but not least SLA Information (if there was an SLO / SLA assigned)
+<ol>
+<li>SLA Name</li>
+<li>SLA Status</li>
+<li>Target End Date</li>
+</ol>
+</li>
+</ol>
+<p>As you can see the list is extensive, yes I know I could have built an SSRS Report, however my SQL skills are not the best and I LOVE PowerShell. So, I decided to do the following with PowerShell and with the use of <a href="https://github.com/SMLets/SMLets/releases">SMLets</a> I decided to build this report purely in PowerShell and write the content to an HTML file and then make the content of the HTML file the body of the email.</p>
+<p>The full code can be found <a href="https://github.com/fskelly/hugo-extend-blog-storageAccount/blob/main/externalFiles/2015/08/27/SCSM_SLA_Script.ps1">here</a>, I will highlight the main components / challenges, please feel free to use/abuse my code. Please note that this code is used at your own risk as always. <strong>PLEASE TEST!!!</strong></p>
+<p>The customer wanted to get the file as an attachment and as the body of email, for this I used a switch statement based on the &ldquo;WorkItemType&rdquo;, I then changed the class for the get-scsmobject criteria based upon the workitemtype. Once all the information was gathered, I joined all the files to create a <strong>final</strong> file containing all the information, all I can say here, is that you are going to spend a fair amount of time looking at HTML code (or at least I did), I highly recommend both <a href="http://bluegriffon.org/">BlueGriffon</a> and <a href="https://notepad-plus-plus.org/">NotePad++</a> to assist with this. To get the SLA information, I used the $System.WorkItemHasSLAInstanceInformation$ class to get the SLA information with another switch to cater for an item that has no SLA. I also looked at the history to retrieve the $LastModifiedDate$.</p>
+<p>To get all the information I needed into a manageable format, I used a custom PowerShell Object and added all the information into the object. From an object the data can be easily manipulated into the required format. Basically I write the information from each object out into individual files to meet the customer&rsquo;s needs and then combine these HTML files (hence spending a lot of time ensuring all my HTML Tags were properly closed) into one <strong>complete</strong> HTML file as well.</p>
+<p>For the emailing of the information, you need to specify the &ldquo;TO&rdquo;, the rest I gather from the system itself, as we know the relay that the server is using can send messages and the &ldquo;FROM&rdquo; address will be correct.</p>
+<p>Follow me,</p>
+<p><a href="https://www.twitter.com/fskelly">Twitter</a><br>
+<a href="https://linkedin.com/in/fletcherkelly">LinkedIn</a></p>
+
+                        </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="/tags/sla">
+                                    <i class="fas fa-tag mr-2"></i>SLA
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/smlets">
+                                    <i class="fas fa-tag mr-2"></i>SMLets
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/powershell">
+                                    <i class="fas fa-tag mr-2"></i>PowerShell
+                                </a></div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2fhistory%2f2015-08-27-sla-reporting-with-powershell-and-scsm%2f&text=SLA%20Reporting%20with%20PowerShell%20and%20SCSM">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2fhistory%2f2015-08-27-sla-reporting-with-powershell-and-scsm%2f&title=SLA%20Reporting%20with%20PowerShell%20and%20SCSM">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2fhistory%2f2015-08-27-sla-reporting-with-powershell-and-scsm%2f&t=SLA%20Reporting%20with%20PowerShell%20and%20SCSM">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2fhistory%2f2015-08-27-sla-reporting-with-powershell-and-scsm%2f&title=SLA%20Reporting%20with%20PowerShell%20and%20SCSM">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div><div class="row justify-content-center my-3">
+                    <div class="col-lg-8">
+                        <div id="commento"></div>
+                        <script src="https://commento.io"></script>
+                    </div>
+                </div></article>
+        </div>
+    </div>
+
+    <div class="related-content row mt-5 row-cols-1 row-cols-lg-3"><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/post/history/2014-04-04-adding-comments-to-work-items-with-orchestrator/" class="d-block"><div class="card-body">
+            <h4 class="card-title">Adding Comments to Work Items with Orchestrator</h4>
+            <p class="card-text text-muted text-uppercase">April 4, 2014</p>
+            <div class="card-text">
+                Hi All,
+It has been a little while, i have been quite involved with an Integration Project. With this project there was a requirement to add comments to a Work Item. The information is passed on from “System A” to “System B” via XML. Using PowerShell, extracting the XML contents is not too difficult, if anyone would like to dive into that a little bit, please let me know with Comments.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/post/history/2013-11-15-send-email-to-3rd-party-from-scsm-console-powershell-and-console-task/" class="d-block"><div class="card-body">
+            <h4 class="card-title">Send Email to 3rd Party from SCSM Console – PowerShell and Console Task</h4>
+            <p class="card-text text-muted text-uppercase">November 15, 2013</p>
+            <div class="card-text">
+                So recently, I had a customer ask me for the following as their previous incident management system had this functionality.
+The customer wanted to be able to send an “Update Email” to a 3rd party from the SCSM Console with automatically placing the reference number into said email. They needed the functionality of sending to any email address. This was a requirement for the type of business they are in.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2012/12/20/assignedto-and-affecteduser-with-powershell-service-manager/" class="d-block"><div class="card-body">
+            <h4 class="card-title">AssignedTo and AffectedUser with Powershell – Service Manager</h4>
+            <p class="card-text text-muted text-uppercase">December 20, 2012</p>
+            <div class="card-text">
+                So recently I got an e-mail to my newly setup e-mail address, for just this reason , from someone asking if I knew a way to do the following.
+ “I was trying to find a way to find all Incidents related to a specific person (assigned to or affected user) using PowerShell” So, I decided the best to answer this with a blog post as maybe there are other people out there asking the same question.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div></div>
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://cloudadventures.fskelly.com/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                            <a href="https://github.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://linkedin.com/in/fletcherkelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://twitter.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright © 2019–2021, Fletcher Kelly; all rights reserved.
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="/dist/main.d608eadfe5ac0688902e.min.js"></script>
+        
+    
+
+
+
+<script>
+    window.Prism = window.Prism || {};
+    window.Prism.manual = true;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-XXXX', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+</body>
+</html>

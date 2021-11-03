@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Module on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/module/</link>
+    <description>Recent content in Module on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 20 May 2011 11:07:09 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/module/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>POWERshell console to power all plugins</title>
+      <link>https://cloudadventures.fskelly.com/2011/05/20/powershell-console-to-power-all-plugins/</link>
+      <pubDate>Fri, 20 May 2011 11:07:09 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/05/20/powershell-console-to-power-all-plugins/</guid>
+      <description>I do not know about everyone else. I am a rather busy admin and quite fond of powershell and scripting. However, I also have a separate admin account for doing my administrative tasks. Now when you are working with multiple systems, all of which have PowerShell consoles, it can become a little bit of a pain opening a console for Exchange 2010, Operations Manager 2010, Virtual Machine Manager and Service Manager to name a few.</description>
+    </item>
+    
+  </channel>
+</rss>

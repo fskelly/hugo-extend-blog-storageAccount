@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>iSCSI on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/iscsi/</link>
+    <description>Recent content in iSCSI on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 27 Oct 2010 12:27:29 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/iscsi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>“Blue Wednesday”</title>
+      <link>https://cloudadventures.fskelly.com/2010/10/27/blue-wednesday/</link>
+      <pubDate>Wed, 27 Oct 2010 12:27:29 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2010/10/27/blue-wednesday/</guid>
+      <description>Do you ever have those days where it just starts bad and gets worse?
+“Man Alive, what a day it has been and it is not over yet”
+First, simple network change, enabling DHCP helper on our new Infrastructure. Sounds simple, right?. Well, our switches are stacked for connectivity and storage, so a reboot of the switches means shutting down the environment, IP and iSCSI. So I go and do this, not knowing about our cluster needing 3 nodes active, what a mission.</description>
+    </item>
+    
+  </channel>
+</rss>

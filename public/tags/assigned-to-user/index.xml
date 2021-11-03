@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Assigned to user on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/assigned-to-user/</link>
+    <description>Recent content in Assigned to user on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 31 Dec 2012 06:58:52 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/assigned-to-user/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Group assignment with Service Manager</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2012-12-31-group-assignment-with-service-manager/</link>
+      <pubDate>Mon, 31 Dec 2012 06:58:52 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2012-12-31-group-assignment-with-service-manager/</guid>
+      <description>So one of the biggest issues I have with Service Manager is actually user based as seems to be quite difficult to teach the concept of this for some strange reason. So, as a work-around I have created views that cater for the issue I am about to discuss.
+The issue is as follows, when a Work Item gets re-assigned to a new Analyst, 99% of the time, the associated Support Group does NOT get changed.</description>
+    </item>
+    
+    <item>
+      <title>AssignedTo and AffectedUser with Powershell – Service Manager</title>
+      <link>https://cloudadventures.fskelly.com/2012/12/20/assignedto-and-affecteduser-with-powershell-service-manager/</link>
+      <pubDate>Thu, 20 Dec 2012 08:22:35 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/12/20/assignedto-and-affecteduser-with-powershell-service-manager/</guid>
+      <description>So recently I got an e-mail to my newly setup e-mail address, for just this reason , from someone asking if I knew a way to do the following.
+ “I was trying to find a way to find all Incidents related to a specific person (assigned to or affected user) using PowerShell” So, I decided the best to answer this with a blog post as maybe there are other people out there asking the same question.</description>
+    </item>
+    
+    <item>
+      <title>Inactive Incidents–E-mail assigned to User</title>
+      <link>https://cloudadventures.fskelly.com/2012/10/10/inactive-incidentse-mail-assigned-to-user/</link>
+      <pubDate>Wed, 10 Oct 2012 07:34:02 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/10/10/inactive-incidentse-mail-assigned-to-user/</guid>
+      <description>Just recently I was looking for a way to notify users about Inactive incidents as I have some departments that tend to ignore their work items and an e-mail about their “untouched” incidents seems to motivate them. So after some searching I found this scriptfrom Andreas BaumgartenPlease note : I only modified this script to extend its use to other Statuses to be monitored. All credit for the script goes entirely to Andreas BaumgartenCode is below[sourcecode language=”powershell”]# Configure Last Modified Days Before</description>
+    </item>
+    
+  </channel>
+</rss>

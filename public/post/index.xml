@@ -1,0 +1,1177 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/post/</link>
+    <description>Recent content in Posts on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 25 Aug 2021 05:58:18 +0200</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure Resource Group Enterprise Scale Landing Zone queries</title>
+      <link>https://cloudadventures.fskelly.com/post/2021/arg-mg-query-quick-post/</link>
+      <pubDate>Wed, 25 Aug 2021 05:58:18 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/2021/arg-mg-query-quick-post/</guid>
+      <description>Azure Resource Graph Examples This is just a quick post. I am slowly working on building a collection of Resource Graph Queries - they can be found here and will grow over time. It just takes some time to build these.
+They will be broken down into a folder structure based upon the Critical Design Areas of Enterprise Scale Landing Zone
+Hope this helps and keep an eye out for more.</description>
+    </item>
+    
+    <item>
+      <title>Bicep Troubleshooting</title>
+      <link>https://cloudadventures.fskelly.com/post/2021/bicep-troubleshooting/</link>
+      <pubDate>Fri, 02 Jul 2021 05:40:16 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/2021/bicep-troubleshooting/</guid>
+      <description>Some basic &amp;ldquo;troubleshooting&amp;rdquo; with Azure Bicep
+So, let me start with this. The team and the community behind Azure Bicep are amazing. There are some great examples here. I often use these as a base and the rip apart or add to meet my needs, you do NOT need to start from ground zero. :smile:
+When you are deploying bicep templates you command will look something like this.
+$bicepFile = &amp;quot;.</description>
+    </item>
+    
+    <item>
+      <title>Azure CLI - List Locations and Peers</title>
+      <link>https://cloudadventures.fskelly.com/post/2021/cli-list-locations-and-peers/</link>
+      <pubDate>Wed, 05 May 2021 07:03:02 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/2021/cli-list-locations-and-peers/</guid>
+      <description>How to use the Azure CLI to list Azure Locations and their peers So this will be a &amp;ldquo;quick post&amp;rdquo; that shows some great functionality within the Azure CLI with az account list-locations. With this command you can expect some output like below, you actually get a lot of content back.
+{&amp;quot;displayName&amp;quot;: &amp;quot;Brazil Southeast&amp;quot;,&amp;quot;id&amp;quot;: &amp;quot;/subscriptions/949ef534-07f5-4138-8b79-aae16a71310c/locations/brazilsoutheast&amp;quot;,&amp;quot;metadata&amp;quot;: {&amp;quot;geographyGroup&amp;quot;: &amp;quot;South America&amp;quot;,&amp;quot;latitude&amp;quot;: &amp;quot;-22.90278&amp;quot;,&amp;quot;longitude&amp;quot;: &amp;quot;-43.2075&amp;quot;,&amp;quot;pairedRegion&amp;quot;: [{&amp;quot;id&amp;quot;: &amp;quot;/subscriptions/949ef534-07f5-4138-8b79-aae16a71310c/locations/brazilsouth&amp;quot;,&amp;quot;name&amp;quot;: &amp;quot;brazilsouth&amp;quot;,&amp;quot;subscriptionId&amp;quot;: null}],&amp;quot;physicalLocation&amp;quot;: &amp;quot;Rio&amp;quot;,&amp;quot;regionCategory&amp;quot;: &amp;quot;Other&amp;quot;,&amp;quot;regionType&amp;quot;: &amp;quot;Physical&amp;quot;},&amp;quot;name&amp;quot;: &amp;quot;brazilsoutheast&amp;quot;,&amp;quot;regionalDisplayName&amp;quot;: &amp;quot;(South America) Brazil Southeast&amp;quot;,&amp;quot;subscriptionId&amp;quot;: null} If you look at some of the examples, you will also see some &amp;ldquo;logical&amp;rdquo; locations, example below, there is a way of adding a query to remove these to display only &amp;ldquo;physical&amp;rdquo; locations.</description>
+    </item>
+    
+    <item>
+      <title>Azure Rest Api Postman Basics</title>
+      <link>https://cloudadventures.fskelly.com/post/2021/azure-rest-api-postman-basics/</link>
+      <pubDate>Wed, 14 Apr 2021 09:02:18 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/2021/azure-rest-api-postman-basics/</guid>
+      <description>Absolute basics with Azure and PostMan
+Getting started Many of the articles I have found online with regards to the Azure REST API assume a fair level of familiarity with Azure which can be a good and bad thing. You see the Azure Portal makes interacting with the Azure REST API very easy as a lot of the &amp;ldquo;prerequisite&amp;rdquo; work is done in the portal as part of the process. For this blog post we will work on something quite basic, &amp;ldquo;Create a Virtual Machine&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Expiring Keys and Secrets within Azure Key Vault</title>
+      <link>https://cloudadventures.fskelly.com/post/2021/expiring-keys-azure-key-vault/</link>
+      <pubDate>Mon, 18 Jan 2021 07:06:03 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/2021/expiring-keys-azure-key-vault/</guid>
+      <description>I was working with a customer the other day and a fairly simple ask came up, I however could not find an immediate answer within the portal.
+How do I check for expiring keys within the Azure KeyVault?
+Now being a PowerShell person, I never gave this much thought as for most tasks or actions I perform on the Azure Platform is done through PowerShell, AP, or CLI. So easy enough, however, not everyone knows how to do this in PowerShell.</description>
+    </item>
+    
+    <item>
+      <title>My New Blog Home with Azure Static Web App</title>
+      <link>https://cloudadventures.fskelly.com/post/2021/my-new-blog-home/</link>
+      <pubDate>Mon, 18 Jan 2021 07:06:03 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/2021/my-new-blog-home/</guid>
+      <description>So, I have spent the last few days / weeks deciding the best way to host a blog. Now I have a decidedly &amp;ldquo;split personality&amp;rdquo;. By this I mean I like to segregate my work and personal hobbies. This can be quite beneficial as this allows me to test a few things.
+A few key decisions  Must be version controlled - good practice and forces me to get more familiar with git.</description>
+    </item>
+    
+    <item>
+      <title>Azure Ghost CMS and Azure CDN</title>
+      <link>https://cloudadventures.fskelly.com/post/2021/azure-ghost-cms-and-cdn/</link>
+      <pubDate>Mon, 11 Jan 2021 07:00:18 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/2021/azure-ghost-cms-and-cdn/</guid>
+      <description>I moved my blog onto HUGO. Not everyone would want to do this necessarily, there is a bit of a learning curve, part of the reason I DID IT :). However there are other platforms you can use and still add more functionality if you want.
+You can use Ghost and add an Azure CDN. This is what this blog post will cover.
+There are some very clever people out there that have made this very easy for you.</description>
+    </item>
+    
+    <item>
+      <title>Importance of Networking in Azure</title>
+      <link>https://cloudadventures.fskelly.com/post/2019/importance-of-networking-azure/</link>
+      <pubDate>Wed, 07 Aug 2019 16:33:36 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/2019/importance-of-networking-azure/</guid>
+      <description>As a start to this blog post, I think it is important to understand how I see my role as a CSA (Cloud Solution Architect) with my customer. I am primarily a trusted advisor and my customers respect what I have to say, I question and challenge my customers in a constructive way to approach the challenge or problem statement in a different way. I have an amazing role of using Azure as my LEGO playpen and then building a custom solution (LEGO model) to help my customers.</description>
+    </item>
+    
+    <item>
+      <title>Cloud Solutions Architect - Tools of the Trade</title>
+      <link>https://cloudadventures.fskelly.com/post/2019/csa-tools-of-the-trade/</link>
+      <pubDate>Tue, 09 Jul 2019 16:46:43 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/2019/csa-tools-of-the-trade/</guid>
+      <description>So a question I often get asked is &amp;ldquo;what tools or products do you use?&amp;rdquo;. So I decided to do a post around the tools and technologies that I personally use on a daily basis. So to start this is what people see on my screen on a daily basis.
+This is my most common tool, Visual Studio Code, the version shown above is actually the Insiders Build. The primary reason for this tool is that is a &amp;ldquo;container&amp;rdquo; for other tools and functionality.</description>
+    </item>
+    
+    <item>
+      <title>Network Security Group Change Alerting</title>
+      <link>https://cloudadventures.fskelly.com/post/2019/network-security-group-change-alerting/</link>
+      <pubDate>Wed, 20 Feb 2019 08:21:49 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/2019/network-security-group-change-alerting/</guid>
+      <description>So, I was with a customer and they are asking for a fairly standard alert.
+&amp;ldquo;Please alert me when an NSG is added or modified&amp;rdquo;. Seems simply enough, however this is not as simply as you think. So I used my favourite search and found the following, “How to receive an email on Azure Network Security Group Rule changes“, this is great content and after testing, it works exactly as expected.</description>
+    </item>
+    
+    <item>
+      <title>SLA Reporting with PowerShell and SCSM</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2015-08-27-sla-reporting-with-powershell-and-scsm/</link>
+      <pubDate>Thu, 27 Aug 2015 06:21:12 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2015-08-27-sla-reporting-with-powershell-and-scsm/</guid>
+      <description>I always get asked about reporting from my customers, and specifically around SLA&amp;rsquo;s. SLA&amp;rsquo;s are very important to most companies as this is part of the tracking mechanism of employees and vendors and the like.
+SMLETS is needed for this, it is built to be run from the server, if you need to run from your local machine, please install SMLets, copy the SDK Binaries folder and use the -computername where applicable with the SMLets commands.</description>
+    </item>
+    
+    <item>
+      <title>Grey Agent Fixing with Orchestrator</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2015-04-14-grey-agent-fixing-with-orchestrator/</link>
+      <pubDate>Tue, 14 Apr 2015 05:08:44 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2015-04-14-grey-agent-fixing-with-orchestrator/</guid>
+      <description>So, here is the scenario, we managed a lot of customer’s System Centre Operations Manager (SCOM) environments. One of the most common issues we run into, it is the “Grey Agent” issue, where an agent is no longer reporting into SCOM. There might be a few reasons for this, however one of the most common and effective ways to fix this to clear the agent cache. By this, we simply mean connecting to the agent, stopping the “SCOM” service, deleting the content of the “Health Service State” folder and then restarting the “SCOM” service.</description>
+    </item>
+    
+    <item>
+      <title>Deploy a VM – SCSM, SCVMM, SCORCH – all working in harmony</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2014-07-31-deploy-a-vm-scsm-scvmm-scorch-all-working-in-harmony/</link>
+      <pubDate>Thu, 31 Jul 2014 12:19:03 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2014-07-31-deploy-a-vm-scsm-scvmm-scorch-all-working-in-harmony/</guid>
+      <description>So, it has been a while.
+So, the requirement for this project was as follow.
+ Use Service Manager. Provide a portal for logging a VM Creation request. Build the computername based on a predetermined pattern. Determine first available name. Perform a capacity check. Deploy the set number of VMs.  I am going to skip over the first 2 Points, there are numerous topics covering this. So, onto point 3, I created a Service Request Extension, if anyone would like some info on this, also plenty of articles, please let me know and I can do a blog post on the Extension, or I can make the extension available for you to seal yourselves.</description>
+    </item>
+    
+    <item>
+      <title>Cireson Outlook Console</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2014-06-17-cireson-outloook-console/</link>
+      <pubDate>Tue, 17 Jun 2014 06:01:55 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2014-06-17-cireson-outloook-console/</guid>
+      <description>So, Cireson hase been investing into System Centre Service Manager (SCSM) very heavily and the end results are WELL worth it.
+The Cireson Outlook Console has been out a little while, however it just keeps getting better and better. The Console is super easy to install. The Install instructions are provided by Cireson. There are a few steps to follow as well as the installation of an Outlook Plugin.
+Yes, as you may have guessed from the name, this allows you to connect to Service Manager with almost a full experience directly from OUTLOOK, how great is that.</description>
+    </item>
+    
+    <item>
+      <title>Adding Comments to Work Items with Orchestrator</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2014-04-04-adding-comments-to-work-items-with-orchestrator/</link>
+      <pubDate>Fri, 04 Apr 2014 08:18:16 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2014-04-04-adding-comments-to-work-items-with-orchestrator/</guid>
+      <description>Hi All,
+It has been a little while, i have been quite involved with an Integration Project. With this project there was a requirement to add comments to a Work Item. The information is passed on from &amp;ldquo;System A&amp;rdquo; to &amp;ldquo;System B&amp;rdquo; via XML. Using PowerShell, extracting the XML contents is not too difficult, if anyone would like to dive into that a little bit, please let me know with Comments.</description>
+    </item>
+    
+    <item>
+      <title>Send Email to 3rd Party from SCSM Console – PowerShell and Console Task</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2013-11-15-send-email-to-3rd-party-from-scsm-console-powershell-and-console-task/</link>
+      <pubDate>Fri, 15 Nov 2013 11:58:48 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2013-11-15-send-email-to-3rd-party-from-scsm-console-powershell-and-console-task/</guid>
+      <description>So recently, I had a customer ask me for the following as their previous incident management system had this functionality.
+The customer wanted to be able to send an &amp;ldquo;Update Email&amp;rdquo; to a 3rd party from the SCSM Console with automatically placing the reference number into said email. They needed the functionality of sending to any email address. This was a requirement for the type of business they are in.</description>
+    </item>
+    
+    <item>
+      <title>Finding off site ready tapes for System Center Data Protection Manager with System Center Orchestrator</title>
+      <link>https://cloudadventures.fskelly.com/2013/10/20/finding-off-site-ready-tapes-for-system-center-data-protection-manager-with-system-center-orchestrator/</link>
+      <pubDate>Sun, 20 Oct 2013 12:30:19 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/10/20/finding-off-site-ready-tapes-for-system-center-data-protection-manager-with-system-center-orchestrator/</guid>
+      <description>So, I am quite a keen user of PowerShell and System Centre Orchestrator. Ok, so I recently had a request from a customer that went as follows “I need DPM to alert me when tapes are ready to be taken off-site.”
+DPM does not seen to have this functionality out of the box within the Graphical User Interface (GUI). All is NOT lost, Data Protection Manager has a PowerShell component and i was sure i could figure out a way to get this to work within PowerShell.</description>
+    </item>
+    
+    <item>
+      <title>Backup Network Configuration with PowerShell</title>
+      <link>https://cloudadventures.fskelly.com/2013/10/09/backup-network-config-with-powershell/</link>
+      <pubDate>Wed, 09 Oct 2013 19:30:29 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/10/09/backup-network-config-with-powershell/</guid>
+      <description>So, one of the consultants in the company I work at came to me with a strange request.
+The request from the customer he was helping was the following. They wanted a way to connect to all the switches within their environment and then run some commands against the switch after connecting to the switch on port 23. Once the connection has been made, then some commands are run to get the current running configuration.</description>
+    </item>
+    
+    <item>
+      <title>Service Request Load Testing for SCSM</title>
+      <link>https://cloudadventures.fskelly.com/2013/09/11/service-request-load-testing-for-scsm/</link>
+      <pubDate>Wed, 11 Sep 2013 19:30:51 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/09/11/service-request-load-testing-for-scsm/</guid>
+      <description>I have found a great for load testing SCSM with Incidents. The script uses SMLets to generate Incidents and you can then gauge how your system would handle the load you are planning within your Production Environment.
+I will not go into the detail of the script as this blog post does a great job of explaining it. SO this got me to thinking about other Load Testing you could perform.</description>
+    </item>
+    
+    <item>
+      <title>New features–Cireson IT Asset Management</title>
+      <link>https://cloudadventures.fskelly.com/2013/08/27/new-featurescireson-it-asset-management/</link>
+      <pubDate>Tue, 27 Aug 2013 14:11:29 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/08/27/new-featurescireson-it-asset-management/</guid>
+      <description>I have previously done a post on CIreson IT Asset Management. However the people at Cireson have been very busy with new features to be added to their ITAM (IT Asset Management) tool.
+Cireson Asset Management: New Feature Highlights
+After recently releasing the newest version of the Asset Management app for Microsoft System Centre (Features Press Release), this post goes a little more in depth to explain some of the amazing features included in this latest release.</description>
+    </item>
+    
+    <item>
+      <title>End User Portal for System Centre Orchestrator</title>
+      <link>https://cloudadventures.fskelly.com/2013/08/05/end-user-portal-for-system-centre-orchestrator/</link>
+      <pubDate>Mon, 05 Aug 2013 04:53:43 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/08/05/end-user-portal-for-system-centre-orchestrator/</guid>
+      <description>So, let’s ay you have invested the time and gotten System Centre Orchestrator up and running in your environment and you have the product performing some day to day tasks and it is working well. However, now you want start using SCO (System Centre Orchestrator) to start performing end user focused tasks like Password Reset, add users to groups or even disabling of users or server testing as part of first line support.</description>
+    </item>
+    
+    <item>
+      <title>Cireson IT Asset Management with Service Manager</title>
+      <link>https://cloudadventures.fskelly.com/2013/06/26/cireson-it-asset-management-with-service-manager/</link>
+      <pubDate>Wed, 26 Jun 2013 10:23:48 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/06/26/cireson-it-asset-management-with-service-manager/</guid>
+      <description>Cireson have recently released an new enhancement to the Service Manager console called the Cireson SCSM Asset Management App. This particular application is very easy to install. To install the application into the console, it is simply a case of importing a few management packs and some XML files and DLL files. This is very easy to do and the installation instructions provided by Cireson are very simple and easy to follow as with all Cireson add-ins I have worked with in the past.</description>
+    </item>
+    
+    <item>
+      <title>Import CI Items with Cireson Asset Import Tool</title>
+      <link>https://cloudadventures.fskelly.com/2013/05/17/import-ci-items-with-cireson-asset-import-tool/</link>
+      <pubDate>Fri, 17 May 2013 05:10:29 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/05/17/import-ci-items-with-cireson-asset-import-tool/</guid>
+      <description>With my previous post about importing data, I showed you how to use the built-in CSV connector to do this task and how to create the required Projection Classes. However if you are looking for a quicker more automated to achieve this, enter Cireson and their Asset Import Tool. It takes all the guess work out of the import process and handles the Projection Classes for you.
+The installation of the application is easy and requires the copying a DLL file to the Service Manager Installation folder and the import of a Management Pack ( a management Pack Bundle in this case).</description>
+    </item>
+    
+    <item>
+      <title>Importing data into Service Manager–CSV import and XML</title>
+      <link>https://cloudadventures.fskelly.com/2013/04/23/importing-data-into-service-managercsv-import-and-xml/</link>
+      <pubDate>Tue, 23 Apr 2013 05:27:42 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/04/23/importing-data-into-service-managercsv-import-and-xml/</guid>
+      <description>So, just recently I was asked by a customer to import data from an “old” SCSM system. The customer is moving to new hardware within the organization and is using this opportunity to clean up Service Manager and re-import only clean data.So, the challenge is the following.The customer wants to import Change Requests from the “old” Service Manager to the “new” Service Manager. Ok, so after some research and confirmation, it is NOT possible to simply move data from one Service Manager installation to another.</description>
+    </item>
+    
+    <item>
+      <title>Cireson Risk Calculator</title>
+      <link>https://cloudadventures.fskelly.com/2013/03/20/cireson-risk-calculator/</link>
+      <pubDate>Wed, 20 Mar 2013 21:45:36 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/03/20/cireson-risk-calculator/</guid>
+      <description>When looking at Change Management, usually the most difficult to decide on, is the “Severity” or “Impact” of the Change. This has been addressed by Cireson with one of their many applications. This one is called the SCSM Risk Calculator and as the name suggests, it is an application to help establish “Change Risk” by asking simple questions. It is designed to ask any set of questions, this is of course configurable.</description>
+    </item>
+    
+    <item>
+      <title>Cubes Missing from Data Warehouse and throwing error from within the SCSM Console</title>
+      <link>https://cloudadventures.fskelly.com/2013/02/27/cubes-missing-from-data-warehouse-and-throwing-error-from-within-the-scsm-console/</link>
+      <pubDate>Wed, 27 Feb 2013 13:08:39 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/02/27/cubes-missing-from-data-warehouse-and-throwing-error-from-within-the-scsm-console/</guid>
+      <description>So, just the other day I opened the SCSM console to look at the cubes and process as needed, since some new reports needed to be built and Excel spread sheets created by our BI person for business. So, I start to process the cubes and the first cube starts processing without issue. However when I attempt to process the second cube (Change and Activity Management cube). It presented an error stating that &amp;ldquo;Could not find any resources appropriate for the specified culture or the neutral culture&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Cireson My Active Work Items</title>
+      <link>https://cloudadventures.fskelly.com/2013/02/21/cireson-my-active-work-items/</link>
+      <pubDate>Thu, 21 Feb 2013 09:10:11 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/02/21/cireson-my-active-work-items/</guid>
+      <description>So, Cireson has been hard at work to fill a few gaps present within the Service Manager space. Cireson has created an application called My Active Work Items to bring all information assigned to your user token in one place. For Service Manager 2010, you could create the Work Items assigned to Me view. This was a good start for SCSM 2010 and this continues to work with SCSM 2012. However, with SCSM 2012, there are a few shortcomings of this view.</description>
+    </item>
+    
+    <item>
+      <title>Recover System Center Orchestrator 2012 with runbooks export</title>
+      <link>https://cloudadventures.fskelly.com/2013/02/04/recover-system-center-orchestrator-2012-with-runbooks-export/</link>
+      <pubDate>Mon, 04 Feb 2013 11:17:34 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/02/04/recover-system-center-orchestrator-2012-with-runbooks-export/</guid>
+      <description>Just recently in a test environment, a script or some such other gremlin caused some absolute havoc on my system. Before you ask, I had NO Backup in place of this system. This system was System Center Orchestrator. However, once a week, I do a “sort-of” backup. By this, I mean I export all my Runbooks and place a copy on my local machine and a file server and the SCORCH (System Center ORCHestrator) server.</description>
+    </item>
+    
+    <item>
+      <title>Cireson Analyst Web Console</title>
+      <link>https://cloudadventures.fskelly.com/2013/01/22/cireson-analyst-web-console/</link>
+      <pubDate>Tue, 22 Jan 2013 09:32:19 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/01/22/cireson-analyst-web-console/</guid>
+      <description>I have always heard complaints from some of the analysts in my company about having to install the Service Manager Console on their machines and then complaining about having to learn a new application.
+So, I went searching around and found a great application called Cireson SCSM Web Console, this allows analysts to update Incidents via a newly designed web portal for Analysts. Since the console is designed in HTML5, the web console is browser agnostic.</description>
+    </item>
+    
+    <item>
+      <title>Group assignment with Service Manager</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2012-12-31-group-assignment-with-service-manager/</link>
+      <pubDate>Mon, 31 Dec 2012 06:58:52 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2012-12-31-group-assignment-with-service-manager/</guid>
+      <description>So one of the biggest issues I have with Service Manager is actually user based as seems to be quite difficult to teach the concept of this for some strange reason. So, as a work-around I have created views that cater for the issue I am about to discuss.
+The issue is as follows, when a Work Item gets re-assigned to a new Analyst, 99% of the time, the associated Support Group does NOT get changed.</description>
+    </item>
+    
+    <item>
+      <title>AssignedTo and AffectedUser with Powershell – Service Manager</title>
+      <link>https://cloudadventures.fskelly.com/2012/12/20/assignedto-and-affecteduser-with-powershell-service-manager/</link>
+      <pubDate>Thu, 20 Dec 2012 08:22:35 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/12/20/assignedto-and-affecteduser-with-powershell-service-manager/</guid>
+      <description>So recently I got an e-mail to my newly setup e-mail address, for just this reason , from someone asking if I knew a way to do the following.
+ “I was trying to find a way to find all Incidents related to a specific person (assigned to or affected user) using PowerShell” So, I decided the best to answer this with a blog post as maybe there are other people out there asking the same question.</description>
+    </item>
+    
+    <item>
+      <title>How do I “learn” System Center Service Manager 2012?</title>
+      <link>https://cloudadventures.fskelly.com/2012/12/14/how-do-i-learn-system-center-service-manager-2012/</link>
+      <pubDate>Fri, 14 Dec 2012 13:38:54 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/12/14/how-do-i-learn-system-center-service-manager-2012/</guid>
+      <description>So, I recently made a very simple comment on Facebook. This lead to some interesting comment and questions being raised about Service Manager about “Training for Service Desk” staff” in particular. At this moment in time, there is no “Service Desk Staff” training that I am aware of. So I decided to try and address this as best I could.I have decided to consolidate some of the more important components and concepts of Service Manager and place them in one spot.</description>
+    </item>
+    
+    <item>
+      <title>Exchange Log File Monitoring Orchestration</title>
+      <link>https://cloudadventures.fskelly.com/2012/12/06/exchange-log-file-monitoring-orchestration/</link>
+      <pubDate>Thu, 06 Dec 2012 11:41:28 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/12/06/exchange-log-file-monitoring-orchestration/</guid>
+      <description>So what started this is actually quite simple. We have limited space on our virtual machines and the log files for IIS keeping filling up the drive on our Hub Transport Server (Exchange Server 2010). It is a little know fact, that a certain amount of free space on C: is needed on an Exchange Hub Transport Server, the magic number happens to be 15%. There are a few ways to solve the log file issue.</description>
+    </item>
+    
+    <item>
+      <title>Auto-Closing work items made easy–Service Manager 2012</title>
+      <link>https://cloudadventures.fskelly.com/2012/11/01/auto-closing-work-items-made-easyservice-manager-2012/</link>
+      <pubDate>Thu, 01 Nov 2012 05:41:13 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/11/01/auto-closing-work-items-made-easyservice-manager-2012/</guid>
+      <description>So, there are a few ways of tackling the issue of automatically closing Incidents/Change Requests within Service Manager. Most of these solutions rely on a script leveraging SMLets. So you would create a script and then create a workflow and end up importing the Management Pack into Service Manager. The issue with this is the following, it is quite time consuming and should change under the hood with Service Manager, like the changes from 2010 to 2012, your script will most likely stop working.</description>
+    </item>
+    
+    <item>
+      <title>ConfigMgr (SCCM) 2012 wont open console–cannot connect to the site</title>
+      <link>https://cloudadventures.fskelly.com/2012/10/29/configmgr-sccm-2012-wont-open-consolecannot-connect-to-the-site/</link>
+      <pubDate>Mon, 29 Oct 2012 09:37:04 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/10/29/configmgr-sccm-2012-wont-open-consolecannot-connect-to-the-site/</guid>
+      <description>So, we have started our migration from ConfigMgr 2007 R2 to SCCM 2012. We have installed the new site and now we have started building the required collections as we are using a mix of old collections from ConfigMgr 2007 ( a lot of the built-in collections that are present in ConfigMgr 2007 are NOT present in SCCM 2012. So of course, copy and paste of the Query language is quite useful and this is one of the first things I would do when you are in the process of a SCCM Migration.</description>
+    </item>
+    
+    <item>
+      <title>Inactive Incidents–E-mail assigned to User</title>
+      <link>https://cloudadventures.fskelly.com/2012/10/10/inactive-incidentse-mail-assigned-to-user/</link>
+      <pubDate>Wed, 10 Oct 2012 07:34:02 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/10/10/inactive-incidentse-mail-assigned-to-user/</guid>
+      <description>Just recently I was looking for a way to notify users about Inactive incidents as I have some departments that tend to ignore their work items and an e-mail about their “untouched” incidents seems to motivate them. So after some searching I found this scriptfrom Andreas BaumgartenPlease note : I only modified this script to extend its use to other Statuses to be monitored. All credit for the script goes entirely to Andreas BaumgartenCode is below[sourcecode language=”powershell”]# Configure Last Modified Days Before</description>
+    </item>
+    
+    <item>
+      <title>Exchange Connector – SCSM 2012</title>
+      <link>https://cloudadventures.fskelly.com/2012/09/19/exchange-connector-scsm-2012/</link>
+      <pubDate>Wed, 19 Sep 2012 07:13:10 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/09/19/exchange-connector-scsm-2012/</guid>
+      <description>So, I decided to extend the functionality of Service Manager even more with the Exchange Connector. If you follow the guide it is nice and easy to install. The configuration is quite simply as well, here is a link which gives the configuration in some detail to make you life a little. Once the connector is installed is when I found a little “gotcha” if you will. With the connector, it updates any incident with the same template, which can cause issues and potentially change your Priority and Urgency which can lead to some skewed reporting.</description>
+    </item>
+    
+    <item>
+      <title>My Windows Server 2012 Journey</title>
+      <link>https://cloudadventures.fskelly.com/2012/09/06/my-windows-server-2012-journey/</link>
+      <pubDate>Thu, 06 Sep 2012 15:12:58 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/09/06/my-windows-server-2012-journey/</guid>
+      <description>So, my journey with Windows Server 2012 has started. The primary focus of my company’s journey is Hyper-V3. So far, the results are impressive. We are running a cluster consisting of 4 nodes connected to a DAS.So, my lessons learnt so far.1. As per my previous article, be careful with your Hyper-V NICs. While I am discussing NICs, the inclusion of “Out the box” NIC Teaming is great and so far no issues at all.</description>
+    </item>
+    
+    <item>
+      <title>Networking issues with Hyper-V</title>
+      <link>https://cloudadventures.fskelly.com/2012/08/28/networking-issues-with-hyper-v/</link>
+      <pubDate>Tue, 28 Aug 2012 13:35:56 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/08/28/networking-issues-with-hyper-v/</guid>
+      <description>Just recently I was running into some very strange issues with my Hyper-V Cluster. we have numerous NICs to allow for redundancy and better throughput for our clustered environment. We have a total of 11 NICs on our server to cater for Guest LAN, iSCSI, guest iSCSI (as we present SAN storage directly to the Guests), HeartBeat and Live Migration. So, I was getting a little concerned when I was performing maintenance and/or “Live Migrations” and my VMs were losing network connectivity both on LAN connections and iSCSI connections which was causing major issues with my VMs needing external storage as this was mostly SQL or file shares.</description>
+    </item>
+    
+    <item>
+      <title>DPM and Exchange Mail Store Backup failing</title>
+      <link>https://cloudadventures.fskelly.com/2012/08/13/dpm-and-exchange-mail-store-backup-failing/</link>
+      <pubDate>Mon, 13 Aug 2012 10:06:11 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/08/13/dpm-and-exchange-mail-store-backup-failing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Service Requests – Re-assignment notification</title>
+      <link>https://cloudadventures.fskelly.com/2012/07/09/service-requests-re-assignment-notification/</link>
+      <pubDate>Mon, 09 Jul 2012 05:43:13 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/07/09/service-requests-re-assignment-notification/</guid>
+      <description>So, in an effort to get my business ready for Service Requests as we use mainly Incidents and we are beginning our journey into Service Requests and differentiating between Service Requests (day to day operations) and Incidents (something is broken), I needed to reproduce a workflow to notify the “AssignedToUser” when a new Service Request is assigned to him or her. I already had a downloaded Management Pack for Incident Re-assignment notifications which was modified for my purposes, so this was a good place to start.</description>
+    </item>
+    
+    <item>
+      <title>Why is my Service Manager so slow?</title>
+      <link>https://cloudadventures.fskelly.com/2012/06/26/why-is-my-service-manager-so-slow/</link>
+      <pubDate>Tue, 26 Jun 2012 07:16:36 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/06/26/why-is-my-service-manager-so-slow/</guid>
+      <description>So, I have been running Service Manager for quite some time now. From SCSM 2010 to SCSM SP1 and most of the CU’s before I upgraded to SCSM 2012 Beta and RC and then to RTM (with the help of a Microsoft TAP Program). Service Manager is now quite entrenched in our business and has been running quite well for a very long time. However, a little while ago we began to experience performance issues with the Console and the logging of calls and the application of Workflows.</description>
+    </item>
+    
+    <item>
+      <title>Installing System Centre Orchestrator</title>
+      <link>https://cloudadventures.fskelly.com/2012/06/13/installing-system-centre-orchestrator/</link>
+      <pubDate>Wed, 13 Jun 2012 12:44:38 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/06/13/installing-system-centre-orchestrator/</guid>
+      <description>So, just recently I decided to install System Centre Orchestrator. It appears easy enough if you follow the Technet articles. This addresses the need for Service Accounts and the permissions needed by these accounts and there functions. It also helps you to size and decide the Orchestrator installation type that would best suit your environment. It helps you to decide the best way to break the components if you want to.</description>
+    </item>
+    
+    <item>
+      <title>Basic Cluster Troubleshooting</title>
+      <link>https://cloudadventures.fskelly.com/2012/06/07/basic-cluster-troubleshooting/</link>
+      <pubDate>Thu, 07 Jun 2012 12:17:25 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/06/07/basic-cluster-troubleshooting/</guid>
+      <description>So, just last night, we had an issue with our cluster.One of our disks would not come online. We were seeing an error event ID: 1304 as below.
+So, we began to investigate as all the Technet articles state that the drive is corrupted and Disk Signatures need to be changed, however we have had no major changes in the last little while. We were also able to view to CSV Volume from our SAN management tools.</description>
+    </item>
+    
+    <item>
+      <title>OpsMan 2007 R2–Collation, Collation, Collation!!!!!!</title>
+      <link>https://cloudadventures.fskelly.com/2012/05/07/opsman-2007-r2collation-collation-collation/</link>
+      <pubDate>Mon, 07 May 2012 11:44:25 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/05/07/opsman-2007-r2collation-collation-collation/</guid>
+      <description>So, recently I decided to take the plunge and upgrade to SCOM 2012. So, there were a few pre-requisites that I needed as per the prereq checker that is built into OpsMan 2012.The “big ones” were as follows. 1. OpsMan 2007 R2 CU52. And FTS (Full Text Search) for SQL. So, these seem easy enough to fix. 1. Simple downloadCumulative Update 5 for System Center Operations Manager 2007 R2and install. To be honest, I found this articlesuper helpful for the installation of this Cumulative Update, nice and easy to follow.</description>
+    </item>
+    
+    <item>
+      <title>Upgrading from SCSM 2010 / SCSM 2012 PRE-RTM to SCSM 2012 RTM</title>
+      <link>https://cloudadventures.fskelly.com/2012/04/30/upgrading-from-scsm-2010-scsm-2012-pre-rtm-to-scsm-2012-rtm/</link>
+      <pubDate>Mon, 30 Apr 2012 07:09:49 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/04/30/upgrading-from-scsm-2010-scsm-2012-pre-rtm-to-scsm-2012-rtm/</guid>
+      <description>So, You are now ready to take the plunge and upgrade to SCSM 2012 RTM as it now “publically” available.
+There is great documentation, obviously, on TECHNET. I have however found out a few other things which will helpfully make your transition a little easier. I have found that the following can cause some complications and how to “mitigate” these if you will.
+Service Manager 2010
+Connectors – Please make sure that your connectors are NOT running while you do the upgrade, the upgrade will work, however your connectors will run and attempt to catch up with itself.</description>
+    </item>
+    
+    <item>
+      <title>Service Manager–Are my changes to management packs taking effect?</title>
+      <link>https://cloudadventures.fskelly.com/2012/04/05/service-managerare-my-changes-to-management-packs-taking-effect/</link>
+      <pubDate>Thu, 05 Apr 2012 08:17:01 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/04/05/service-managerare-my-changes-to-management-packs-taking-effect/</guid>
+      <description>Okay,
+So now onto some “basics” or nice to know about Service Manager.
+Some of these I have learnt the hard way and some have been given to me as valuable information to avoid some mishaps if you will.
+  Management Packs, so just about everything you do with Service Manager involves the modification of the Management Pack that the item is contained in. For example, you create a workflow and you then modify the “Enabled” value of the workflow to enabled/disabled in the console.</description>
+    </item>
+    
+    <item>
+      <title>Adding a CSV volume to a Cluster</title>
+      <link>https://cloudadventures.fskelly.com/2012/03/30/adding-a-csv-volume-to-a-cluster/</link>
+      <pubDate>Fri, 30 Mar 2012 07:03:07 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/03/30/adding-a-csv-volume-to-a-cluster/</guid>
+      <description>So, now you are at the point where you need to present a CSV Volume to your cluster.
+I have created this guide to make your life a little easier. Doing this is actually quite simple, but there are a few gotchas.
+Gotcha 1 : If you create / carve the LUN and forget to allow multiple access, only the first IQN / WWN will be able to access it.</description>
+    </item>
+    
+    <item>
+      <title>Powershell Transcript logging</title>
+      <link>https://cloudadventures.fskelly.com/2012/03/29/powershell-transcript-logging/</link>
+      <pubDate>Thu, 29 Mar 2012 07:20:47 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/03/29/powershell-transcript-logging/</guid>
+      <description>I have recently started keeping a track of all my PowerShell.
+Just a nice simple update.
+So, I decided to create a “simple” PowerShell script that would keep a track of all my transcripts. The script would create a file name based on date and place the transcript file in a folder of your choice, this is hard-coded in the script and can be easily modified.
+Hope you like it and find it useful.</description>
+    </item>
+    
+    <item>
+      <title>Testing Domain Controller Connectivity (using PowerShell)</title>
+      <link>https://cloudadventures.fskelly.com/2012/01/24/testing-domain-controller-connectivity-using-powershell/</link>
+      <pubDate>Tue, 24 Jan 2012 11:04:36 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/01/24/testing-domain-controller-connectivity-using-powershell/</guid>
+      <description>I believe that the best way to improve your skill is to test and push yourself. I am currently on a mission to get a lot more comfortable with PowerShell ( as it lives up to its name, it is very POWERful).
+I need to check a few domains up and running and like to keep an eye on my Domain Controllers as they are obviously the base of Active Directory.</description>
+    </item>
+    
+    <item>
+      <title>Rebuilding the OpsMan Client Cache</title>
+      <link>https://cloudadventures.fskelly.com/2012/01/17/rebuilding-the-opsman-client-cache/</link>
+      <pubDate>Tue, 17 Jan 2012 07:16:27 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/01/17/rebuilding-the-opsman-client-cache/</guid>
+      <description>Just recently I had the need to “rebuild” the client cache on a lot of my servers, due to a slight hiccup with our Network and subsequently our Operations Manager Server. So I decided to use PowerShell, if you need to repeat it, script it.
+So, I simply built a script to connect to the required machine, stop the “Health Service”, delete the files from the required folder and then restart the “Health Service”.</description>
+    </item>
+    
+    <item>
+      <title>System Centre Service Manager 2012 Portal</title>
+      <link>https://cloudadventures.fskelly.com/2011/11/30/system-centre-service-manager-2012-portal/</link>
+      <pubDate>Wed, 30 Nov 2011 16:02:55 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/11/30/system-centre-service-manager-2012-portal/</guid>
+      <description>So now, I move onto the final part of the SCSM 2012 journey, the Portal.
+The install was pretty straight-forward, the most difficult part is deciding how you would split your roles or if you are going to split your roles, here is the guide for role placement.
+So, once you have decided which route you would like to follow, here are the steps I followed.
+ Start the setup.</description>
+    </item>
+    
+    <item>
+      <title>Service Manager 2012 Management Server (Upgrade)</title>
+      <link>https://cloudadventures.fskelly.com/2011/11/24/service-manager-2012-management-server-upgrade/</link>
+      <pubDate>Thu, 24 Nov 2011 05:36:25 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/11/24/service-manager-2012-management-server-upgrade/</guid>
+      <description>So, for the Management Server.
+This was very easy and quite painless for me.
+ Backup Encryption Key (for Disaster Recovery Purposes) Install Windows Server 2008 R2 SP1 (This is a pre-requisite for SCSM 2012) Remove Operations Manager Agent if this is installed, as the installer WILL stop you from continuing if the OpsMan Agent is installed. Run the Upgrade, PLEASE NOTE that if the Portal is installed on your Management Server, it will be REMOVED during the upgrade.</description>
+    </item>
+    
+    <item>
+      <title>Service Manager 2012 Data Warehouse (Upgrade)</title>
+      <link>https://cloudadventures.fskelly.com/2011/11/22/service-manager-2012-data-warehouse-upgrade/</link>
+      <pubDate>Tue, 22 Nov 2011 07:25:40 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/11/22/service-manager-2012-data-warehouse-upgrade/</guid>
+      <description>So, my journey with System Centre Service Manager 2012 Beta has begun and so far I have indeed found some funnies.
+I will be blogging about them, to make everyone else’s life a little bit easier and in the hope of better product adoption for this product. It is simply put a fantastic product.
+Ok, so the first time I ran the upgrade (remember I have a pre-prod environment), so I was able to rollback and did not have to follow Disaster Recovery with the Failure.</description>
+    </item>
+    
+    <item>
+      <title>Building a Pre-Production environment for Service Manager 2010</title>
+      <link>https://cloudadventures.fskelly.com/2011/11/09/building-a-pre-production-environment-for-service-manager-2010/</link>
+      <pubDate>Wed, 09 Nov 2011 06:25:16 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/11/09/building-a-pre-production-environment-for-service-manager-2010/</guid>
+      <description>I can now post this, as my steps have been published on the SCSM Team Engineering site here.
+Have you ever needed to build a pre-production environment to test an update or work on workflows, I did.
+Thought I would share this and maybe it would help someone else as well.
+It at the moment consists of the following.
+1 Domain Controller
+1 Management Server
+1 Data Warehouse Server</description>
+    </item>
+    
+    <item>
+      <title>Scheduled reports with SCSM Data Warehouse</title>
+      <link>https://cloudadventures.fskelly.com/2011/10/26/scheduled-reports-with-scsm-data-warehouse/</link>
+      <pubDate>Wed, 26 Oct 2011 10:26:01 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/10/26/scheduled-reports-with-scsm-data-warehouse/</guid>
+      <description>Hi All,
+I know it has been a little while.
+The reports built into Service Manager are great, however when you try to get a bit creative and automate some of the reports, you are going to run into some issues. So to work around theses issues, I did the following.
+Create a custom report from SQL Reporting Services and modified for my needs, I was focusing more on “Incident Analyst” and I was looking for a breakdown of the number of Incidents per Analysts in a week period.</description>
+    </item>
+    
+    <item>
+      <title>Monitoring the Environment</title>
+      <link>https://cloudadventures.fskelly.com/2011/09/30/monitoring-the-environment/</link>
+      <pubDate>Fri, 30 Sep 2011 12:47:13 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/09/30/monitoring-the-environment/</guid>
+      <description>So, a little while ago I had a post about documenting the environment.
+Now, i am in the process of “Monitoring the Environment”. No worries, I have Operations Manager 2007 R2, Great!!!
+So now I log into the Operations Manager Console and see a whole bunch of agents, great stuff! I am also seeing Alerts (not to great, but it appears to be working). Yes, I use the word “appears” quite deliberately.</description>
+    </item>
+    
+    <item>
+      <title>Documenting the Environment</title>
+      <link>https://cloudadventures.fskelly.com/2011/09/01/documenting-the-environment/</link>
+      <pubDate>Thu, 01 Sep 2011 07:16:09 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/09/01/documenting-the-environment/</guid>
+      <description>Hi All,
+It has been a really busy time for me. However, I am very happy with life at the moment. Just recently I received a “Microsoft Community Contributor” award from Microsoft.
+
+I know I have been a little quite the last little while. I have been busy doing a job that everyone loves (I wish there was a font for sarcasm). I have been VERY busy documenting my production environment including Hyper-V, Active Directory and Exchange.</description>
+    </item>
+    
+    <item>
+      <title>Microsoft Word, SharePoint, a Form and NO InfoPath on Server</title>
+      <link>https://cloudadventures.fskelly.com/2011/08/01/microsoft-word-sharepoint-a-form-and-no-infopath-on-server/</link>
+      <pubDate>Mon, 01 Aug 2011 13:33:20 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/08/01/microsoft-word-sharepoint-a-form-and-no-infopath-on-server/</guid>
+      <description>So, just recently I was asked to work yet another miracle.
+The Scope.
+  We need to go paperless.
+  We need to move a certain form to an online platform and make it easy for users to fill in. With a custom picture and add checkboxes on top of that.
+  We need this information to be saved onto a SharePoint site with unique filenames.</description>
+    </item>
+    
+    <item>
+      <title>Some more SMlets commands (more detail)</title>
+      <link>https://cloudadventures.fskelly.com/2011/07/18/some-more-smlets-commands-more-detail/</link>
+      <pubDate>Mon, 18 Jul 2011 11:45:18 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/07/18/some-more-smlets-commands-more-detail/</guid>
+      <description>Would you like a nice graphical breakdown of all calls logged in (x) days and there status?
+I know I would. So, of course I have been working on such a script using smlets v3.
+So far, this is what the script does.
+ Takes the current date and time and subtracts 7 days and presents you with a nice HTML output which is mailed to the user. (Both the date and time and who to mail the output to is configurable.</description>
+    </item>
+    
+    <item>
+      <title>Get-hotfix on Steroids</title>
+      <link>https://cloudadventures.fskelly.com/2011/07/11/get-hotfix-on-steroids/</link>
+      <pubDate>Mon, 11 Jul 2011 12:25:28 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/07/11/get-hotfix-on-steroids/</guid>
+      <description>Hi All,
+I have taken the get-hotfix and tweaked it so something useful for my environment.
+I have uploaded the .ps1 file to Technet.
+My script can be found here
+Hope you find this helpful.
+Follow me</description>
+    </item>
+    
+    <item>
+      <title>Building more redundancy and replicating folder structure</title>
+      <link>https://cloudadventures.fskelly.com/2011/07/07/building-more-redundancy-and-replicating-folder-structure/</link>
+      <pubDate>Thu, 07 Jul 2011 06:15:39 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/07/07/building-more-redundancy-and-replicating-folder-structure/</guid>
+      <description>We have had a few failures of the power kind (thanks to the electricity provider in South Africa, who will remain nameless). So we have now had to build in further redundancy to cater for this and for other business needs. There is nothing worse than getting a phone call saying that critical services are unavailable at a CRITICAL time. What a nightmare. So a few plans were set in motion.</description>
+    </item>
+    
+    <item>
+      <title>DPM and Invoke-Command, bring the DPM shell to your machine</title>
+      <link>https://cloudadventures.fskelly.com/2011/06/15/dpm-and-invoke-command-bring-the-dpm-shell-to-your-machine/</link>
+      <pubDate>Wed, 15 Jun 2011 15:13:42 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/06/15/dpm-and-invoke-command-bring-the-dpm-shell-to-your-machine/</guid>
+      <description>Not that long ago, I created an article about DPM and I referenced DPM commands to be run in the DPM shell and only now realised that not everyone has the DPM console installed as this is not the easiest console to install and get working.
+So, I am now the Proud Owner of Learn Windows PowerShell in a month of Lunches and I am an now playing and have figured out how to import the necessary commands with Remoting.</description>
+    </item>
+    
+    <item>
+      <title>Exchange(ing) e-mail</title>
+      <link>https://cloudadventures.fskelly.com/2011/06/07/exchangeing-e-mail/</link>
+      <pubDate>Tue, 07 Jun 2011 10:47:16 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/06/07/exchangeing-e-mail/</guid>
+      <description>So, it has been another week and as always something new has been learnt. This time, however the product in question was Exchange Server 2010. We had some unexpected downtime for e-mail, so being the cautious person I am, i start checking Exchange. This is the story and the bizarre end result i had. Details to follow.
+So here is the situation. I log onto our OWA in the morning and I am able to connect without any issue.</description>
+    </item>
+    
+    <item>
+      <title>Changing your Protection Server in DPM to another server</title>
+      <link>https://cloudadventures.fskelly.com/2011/05/27/changing-your-protection-server-in-dpm-to-another-server/</link>
+      <pubDate>Fri, 27 May 2011 09:17:03 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/05/27/changing-your-protection-server-in-dpm-to-another-server/</guid>
+      <description>Have you ever been in a situation where you have either removed or added a new DPM server to your environment?
+It happened to me just the other day, I had to “re-think” my DPM design and starting using “Local” to each Data Centre DPM servers to backup my data at each Data Centre. However, this was not the case before this, we were using the same product, but a different strategy.</description>
+    </item>
+    
+    <item>
+      <title>To Protect or NOT to Protect</title>
+      <link>https://cloudadventures.fskelly.com/2011/05/24/to-protect-or-not-to-protect/</link>
+      <pubDate>Tue, 24 May 2011 14:05:12 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/05/24/to-protect-or-not-to-protect/</guid>
+      <description>I have finally found some time to look some more into DPM and decided to modify my environment and created some additional PROTECTION GROUPS. I am particularly chuffed as I have not done this before. Make no error, I have used DPM extensively for mailbox recoveries (Execs and other users crying about loosing items), recovering of databases and VHD (see some of my previous posts). So back to my point, the Protection groups were created without any hassle and now I have a dedicated SharePoint Protection Group.</description>
+    </item>
+    
+    <item>
+      <title>POWERshell console to power all plugins</title>
+      <link>https://cloudadventures.fskelly.com/2011/05/20/powershell-console-to-power-all-plugins/</link>
+      <pubDate>Fri, 20 May 2011 11:07:09 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/05/20/powershell-console-to-power-all-plugins/</guid>
+      <description>I do not know about everyone else. I am a rather busy admin and quite fond of powershell and scripting. However, I also have a separate admin account for doing my administrative tasks. Now when you are working with multiple systems, all of which have PowerShell consoles, it can become a little bit of a pain opening a console for Exchange 2010, Operations Manager 2010, Virtual Machine Manager and Service Manager to name a few.</description>
+    </item>
+    
+    <item>
+      <title>Using SMLets practically</title>
+      <link>https://cloudadventures.fskelly.com/2011/05/17/using-smlets-practically/</link>
+      <pubDate>Tue, 17 May 2011 11:27:51 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/05/17/using-smlets-practically/</guid>
+      <description>In my previous post, SCSM And Powershell, I mentioned that I am now starting to play with get-scsmobject. In this post I also created a script. That script has now been evolved into a proper get-scsmobject script.$Now=(get-date).AddDays(-7)
+$CId=(Get-SCSMEnumeration -ComputerName &amp;quot;ms-ec-hdm01&amp;quot;IncidentStatusEnum.Closed$).id
+$RId=(Get-SCSMEnumeration -ComputerName &amp;quot;ms-ec-hdm01&amp;quot;IncidentStatusEnum.Resolved$).id
+$Class=Get-SCSMClass -ComputerName &amp;quot;ms-ec-hdm01&amp;quot;System.WorkItem.Incident$$cType=&amp;quot;Microsoft.EnterpriseManagement.Common.EnterpriseManagementObjectCriteria&amp;quot;#$cString = &amp;ldquo;Status != &amp;lsquo;$CId&amp;rsquo; and Status != &amp;lsquo;$RId&amp;rsquo; and TargetResolutionTime &amp;lt; &amp;lsquo;$Now&amp;rsquo; and TargetResolutionTime Is Not Null&amp;rdquo;$cStringClosed=&amp;quot;Status = &amp;lsquo;$CId&amp;rsquo;and CreatedDate &amp;gt;&#39;$Now&amp;rsquo;&amp;quot;$cStringResolved=&amp;quot;Status = &amp;lsquo;$RId&amp;rsquo;and CreatedDate &amp;gt;&#39;$Now&amp;rsquo;&amp;quot;$cStringAll=&amp;quot;CreatedDate &amp;gt;&#39;$Now&#39;&amp;quot;$critClosed=new-object $cType$cStringClosed,$Class$critResolved=new-object $cType$cStringResolved,$Class$critAll=new-object $cType$cStringOther,$Class$closed=Get-SCSMObject -ComputerName &amp;quot;ms-ec-hdm01&amp;quot;-Criteria $critClosed$resolved=Get-SCSMObject -ComputerName &amp;quot;ms-ec-hdm01&amp;quot;-Criteria $critResolved$all=Get-SCSMObject -ComputerName &amp;quot;ms-ec-hdm01&amp;quot;-Criteria $critAll#$all = Get-SCSMObject -ComputerName &amp;ldquo;ms-ec-hdm01&amp;rdquo; -Class (Get-SCSMClass -ComputerName &amp;ldquo;ms-ec-hdm01&amp;rdquo; System.</description>
+    </item>
+    
+    <item>
+      <title>SCSM and Powershell</title>
+      <link>https://cloudadventures.fskelly.com/2011/05/10/scsm-and-powershell/</link>
+      <pubDate>Tue, 10 May 2011 06:42:52 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/05/10/scsm-and-powershell/</guid>
+      <description>Hi all,
+i have been playing with SMLets3 and get-scsmobject and using information from the post by Travis Wright, Using SMLets Beta 3 Post #1 – Using Get-SCSMObject, Get-SCSMClass to Dump Data from SCSM. This is an amazing post and I have been able to create a script that queries all Cases created after a certain date. It then gives you the breakdown of Open, Closed, Resolved and other status cases, which is then e-mailed to you.</description>
+    </item>
+    
+    <item>
+      <title>The “crisis” week</title>
+      <link>https://cloudadventures.fskelly.com/2011/05/03/the-crisis-week/</link>
+      <pubDate>Tue, 03 May 2011 08:44:31 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/05/03/the-crisis-week/</guid>
+      <description>Hi All,
+The last two weeks have been a little nutty for me. I have however, learnt to appreciate a few more things in life.
+  No matter how good your planning for DR, there is always that one thing that catches you. We have a generator, which is great. Now, when we cutover from generator power to mains power and then the main building power trips, life becomes interesting.</description>
+    </item>
+    
+    <item>
+      <title>Some more trick and things I have learnt with Service Manager 2010 SP1</title>
+      <link>https://cloudadventures.fskelly.com/2011/03/31/some-more-trick-and-things-i-have-learnt-with-service-manager-2010-sp1/</link>
+      <pubDate>Thu, 31 Mar 2011 10:11:56 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/03/31/some-more-trick-and-things-i-have-learnt-with-service-manager-2010-sp1/</guid>
+      <description>When creating a new Self Service portal, ensure that you log onto on the server using your “Service Manager” Account, the account configured when first creating the Service Manager Server. The portal will install and seem to work. However, when you open the Portal, you will get HTTP 500.
+  When configuring your Data Warehouse, ensure that the Database name has no “–“ in the name as this is NOT supported by the Reporting Component of Service Manager 2010.</description>
+    </item>
+    
+    <item>
+      <title>Service Manager 2010 SP1 Custom Portal</title>
+      <link>https://cloudadventures.fskelly.com/2011/03/29/service-manager-2010-sp1-custom-portal/</link>
+      <pubDate>Tue, 29 Mar 2011 08:15:44 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/03/29/service-manager-2010-sp1-custom-portal/</guid>
+      <description>It has been a little bit of a busy while for me. However, I finally found the time to complete the Custom Service Manager Portal, I have not as yet implemented custom graphics. The end result is great, it has a far cleaner look and like the post says, feels a lot more like SharePoint. Finally you can see a shot of it, NOT in a document. If i can do it, so can anyone.</description>
+    </item>
+    
+    <item>
+      <title>The joys of DPM and the pains of SQL</title>
+      <link>https://cloudadventures.fskelly.com/2011/03/14/the-joys-of-dpm-and-the-pains-of-sql/</link>
+      <pubDate>Mon, 14 Mar 2011 11:36:25 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/03/14/the-joys-of-dpm-and-the-pains-of-sql/</guid>
+      <description>Just recently, as in the weekend just gone, I had a change for an upgrade of SQL 2008 to SQL 2008 R2. The one half went like a dream.
+However the other half, revoking names on purpose, was not so easy. Let’s just say that Reporting Services is not always the easiest thing to upgrade. My upgrade went TERRIBLY wrong. It was however a great learning exercise and at the same time reminds we why i LOVE DPM so much, SQL backups through DPM are the king.</description>
+    </item>
+    
+    <item>
+      <title>Service Manager and all the tricks I have learnt</title>
+      <link>https://cloudadventures.fskelly.com/2011/03/04/service-manager-and-all-the-tricks-i-have-learnt/</link>
+      <pubDate>Fri, 04 Mar 2011 09:27:48 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/03/04/service-manager-and-all-the-tricks-i-have-learnt/</guid>
+      <description>It has been some time since I last blogged, been a really nutty time. however i will make the time to blog and hopefully who ever reads this, it will be of assistance to them.
+The lessons I have learned thus far.
+  Label all your workflows properly, this cost me a case with MS Support only to discover that all workflows and NOW notifications are grouped together. I am assuming that this is to aid the troubleshooting process should something go wrong.</description>
+    </item>
+    
+    <item>
+      <title>How I inadvertently tested our DR</title>
+      <link>https://cloudadventures.fskelly.com/2010/11/04/how-i-inadvertently-tested-our-dr/</link>
+      <pubDate>Thu, 04 Nov 2010 14:57:21 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2010/11/04/how-i-inadvertently-tested-our-dr/</guid>
+      <description>I decided to yet again sue Bitlocker, even knowing the previous experencies i have with it. It previously cost me all my data, however i had backed up all my data. I am sure by now you know where this is going. So, the weekend just past i decided to Encrypt my Hard Drive using BitLocker. I am not sure what i did to piss off Murphy, but as usual with me and BitLocker something went wrong.</description>
+    </item>
+    
+    <item>
+      <title>“Blue Wednesday”</title>
+      <link>https://cloudadventures.fskelly.com/2010/10/27/blue-wednesday/</link>
+      <pubDate>Wed, 27 Oct 2010 12:27:29 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2010/10/27/blue-wednesday/</guid>
+      <description>Do you ever have those days where it just starts bad and gets worse?
+“Man Alive, what a day it has been and it is not over yet”
+First, simple network change, enabling DHCP helper on our new Infrastructure. Sounds simple, right?. Well, our switches are stacked for connectivity and storage, so a reboot of the switches means shutting down the environment, IP and iSCSI. So I go and do this, not knowing about our cluster needing 3 nodes active, what a mission.</description>
+    </item>
+    
+    <item>
+      <title>Streaming Radio with Windows Media Services</title>
+      <link>https://cloudadventures.fskelly.com/2010/10/08/streaming-radio-with-windows-media-services/</link>
+      <pubDate>Fri, 08 Oct 2010 11:23:09 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2010/10/08/streaming-radio-with-windows-media-services/</guid>
+      <description>First install Windows Media Services using which ever link is pertinent to you.
+How to install Windows Media Services in Windows Server 2008
+How to install Windows Media Services for Windows Server 2008 R2
+Once that is done open the necessary console and navigate to create a new Publishing Point
+
+ 
+
+Select the appropriate option, since we are doing live streaming
+
+
+
+For the Encoder URL, the following are for South Africa</description>
+    </item>
+    
+    <item>
+      <title>Hello world!</title>
+      <link>https://cloudadventures.fskelly.com/2010/10/07/hello-world-2/</link>
+      <pubDate>Thu, 07 Oct 2010 10:55:14 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2010/10/07/hello-world-2/</guid>
+      <description>Welcome to WordPress.com. This is your first post. Edit or delete it and start blogging!</description>
+    </item>
+    
+    <item>
+      <title>DPM is a life saver</title>
+      <link>https://cloudadventures.fskelly.com/2010/10/07/dpm-is-a-life-saver/</link>
+      <pubDate>Thu, 07 Oct 2010 09:04:28 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2010/10/07/dpm-is-a-life-saver/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Taking “ONE” note of life</title>
+      <link>https://cloudadventures.fskelly.com/2010/09/29/taking-one-note-of-life/</link>
+      <pubDate>Wed, 29 Sep 2010 05:56:20 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2010/09/29/taking-one-note-of-life/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wipe that “SmugMug” look off of your face.</title>
+      <link>https://cloudadventures.fskelly.com/2010/09/16/wipe-that-smugmug-look-off-of-your-face/</link>
+      <pubDate>Thu, 16 Sep 2010 07:17:28 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2010/09/16/wipe-that-smugmug-look-off-of-your-face/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ITIL, ITIL, ITIL</title>
+      <link>https://cloudadventures.fskelly.com/2010/09/07/itil-itil-itil/</link>
+      <pubDate>Tue, 07 Sep 2010 06:58:41 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2010/09/07/itil-itil-itil/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Time for a change</title>
+      <link>https://cloudadventures.fskelly.com/2010/05/14/time-for-a-change/</link>
+      <pubDate>Fri, 14 May 2010 11:18:52 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2010/05/14/time-for-a-change/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>How a LLOONNGG weekend feels so short</title>
+      <link>https://cloudadventures.fskelly.com/2010/04/09/how-a-lloonngg-weekend-feels-so-short/</link>
+      <pubDate>Fri, 09 Apr 2010 10:04:31 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2010/04/09/how-a-lloonngg-weekend-feels-so-short/</guid>
+      <description>&amp;lt;div style=&amp;quot;width:536px;text-align:right;&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;http://cid-df55bebfd8c052e1.skydrive.live.com/redir.aspx?page=browse&amp;amp;resid=DF55BEBFD8C052E1!2553&amp;amp;ct=photos&amp;quot;&amp;gt;View Full Album&amp;lt;/a&amp;gt; &amp;lt;/div&amp;gt;  </description>
+    </item>
+    
+    <item>
+      <title>Kiosk Roll-out Part II</title>
+      <link>https://cloudadventures.fskelly.com/2010/03/29/kiosk-roll-out-part-ii/</link>
+      <pubDate>Mon, 29 Mar 2010 08:16:06 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2010/03/29/kiosk-roll-out-part-ii/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kiosk Roll-out Part I</title>
+      <link>https://cloudadventures.fskelly.com/2010/03/25/kiosk-roll-out-part-i/</link>
+      <pubDate>Thu, 25 Mar 2010 11:04:09 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2010/03/25/kiosk-roll-out-part-i/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Breath of Fresh Air</title>
+      <link>https://cloudadventures.fskelly.com/2010/03/09/a-breath-of-fresh-air/</link>
+      <pubDate>Tue, 09 Mar 2010 06:35:49 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2010/03/09/a-breath-of-fresh-air/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>“To roll out or not to roll out”</title>
+      <link>https://cloudadventures.fskelly.com/2009/12/18/to-roll-out-or-not-to-roll-out/</link>
+      <pubDate>Fri, 18 Dec 2009 15:06:37 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2009/12/18/to-roll-out-or-not-to-roll-out/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Catch up time</title>
+      <link>https://cloudadventures.fskelly.com/2009/12/08/catch-up-time/</link>
+      <pubDate>Tue, 08 Dec 2009 15:10:10 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2009/12/08/catch-up-time/</guid>
+      <description>&amp;lt;div style=&amp;quot;width:726px;text-align:right;&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;http://cid-df55bebfd8c052e1.skydrive.live.com/redir.aspx?page=browse&amp;amp;resid=DF55BEBFD8C052E1!2437&amp;amp;ct=photos&amp;quot;&amp;gt;View Full Album&amp;lt;/a&amp;gt; &amp;lt;/div&amp;gt;  </description>
+    </item>
+    
+    <item>
+      <title>“Boxed In”</title>
+      <link>https://cloudadventures.fskelly.com/2009/11/17/boxed-in/</link>
+      <pubDate>Tue, 17 Nov 2009 06:12:29 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2009/11/17/boxed-in/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The value of D.I.Y.</title>
+      <link>https://cloudadventures.fskelly.com/2009/11/04/the-value-of-d-i-y/</link>
+      <pubDate>Wed, 04 Nov 2009 12:37:00 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2009/11/04/the-value-of-d-i-y/</guid>
+      <description>&amp;lt;div style=&amp;quot;width:965px;text-align:right;&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;http://cid-df55bebfd8c052e1.skydrive.live.com/redir.aspx?page=browse&amp;amp;resid=DF55BEBFD8C052E1!2403&amp;amp;ct=photos&amp;quot;&amp;gt;View Full Album&amp;lt;/a&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;p&amp;gt; Now for the reason for the post and the true value of D.I.Y. &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; I am quite sure that a lot of you know, having a little bit of DIY sense pays HUGE dividends. With just the sort of luck I have been having as of late. On Saturday, someone decided to re-model my bike and cause some damage to my bike :(.</description>
+    </item>
+    
+    <item>
+      <title>To monitor or not to monitor</title>
+      <link>https://cloudadventures.fskelly.com/2009/10/26/to-monitor-or-not-to-monitor/</link>
+      <pubDate>Mon, 26 Oct 2009 09:19:18 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2009/10/26/to-monitor-or-not-to-monitor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>To encrypt or not to encrypt</title>
+      <link>https://cloudadventures.fskelly.com/2009/10/15/to-encrypt-or-not-to-encrypt/</link>
+      <pubDate>Thu, 15 Oct 2009 11:23:25 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2009/10/15/to-encrypt-or-not-to-encrypt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scuba Photos</title>
+      <link>https://cloudadventures.fskelly.com/2009/10/12/scuba-photos/</link>
+      <pubDate>Mon, 12 Oct 2009 06:17:03 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2009/10/12/scuba-photos/</guid>
+      <description> &amp;lt;div style=&amp;quot;width:965px;text-align:right;&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;http://cid-df55bebfd8c052e1.skydrive.live.com/redir.aspx?page=browse&amp;amp;resid=DF55BEBFD8C052E1!2373&amp;amp;ct=photos&amp;quot;&amp;gt;View Full Album&amp;lt;/a&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;p&amp;gt; &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; &amp;lt;font color=&amp;quot;#ff0000&amp;quot; size=&amp;quot;6&amp;quot; face=&amp;quot;Broadway&amp;quot;&amp;gt;&amp;lt;em&amp;gt;“EMBRACE YOUR INNER GEEK AND ROCK ON”&amp;lt;/em&amp;gt;&amp;lt;/font&amp;gt; &amp;lt;/p&amp;gt;  </description>
+    </item>
+    
+    <item>
+      <title>To new depths</title>
+      <link>https://cloudadventures.fskelly.com/2009/10/05/to-new-depths/</link>
+      <pubDate>Mon, 05 Oct 2009 10:59:00 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2009/10/05/to-new-depths/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>What a wonderful IDEA(pad)</title>
+      <link>https://cloudadventures.fskelly.com/2009/09/23/what-a-wonderful-ideapad/</link>
+      <pubDate>Wed, 23 Sep 2009 12:54:10 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2009/09/23/what-a-wonderful-ideapad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fully Connected (done)</title>
+      <link>https://cloudadventures.fskelly.com/2009/09/21/fully-connected-done/</link>
+      <pubDate>Mon, 21 Sep 2009 11:24:26 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2009/09/21/fully-connected-done/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Finally, fully connected (pending)</title>
+      <link>https://cloudadventures.fskelly.com/2009/09/16/finally-fully-connected-pending/</link>
+      <pubDate>Wed, 16 Sep 2009 11:13:27 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2009/09/16/finally-fully-connected-pending/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A technology catch up for me and Microsoft Fixes that FIX!!!!</title>
+      <link>https://cloudadventures.fskelly.com/2009/09/14/a-technology-catch-up-for-me-and-microsoft-fixes-that-fix/</link>
+      <pubDate>Mon, 14 Sep 2009 06:55:00 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2009/09/14/a-technology-catch-up-for-me-and-microsoft-fixes-that-fix/</guid>
+      <description>&amp;lt;p&amp;gt; Click More Options, bottom of the currently displayed menu. &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; &amp;lt;a href=&amp;quot;http://fskelly.files.wordpress.com/2009/09/optionsaccount6.png&amp;quot; rel=&amp;quot;WLPP&amp;quot;&amp;gt;&amp;lt;img loading=&amp;quot;lazy&amp;quot; style=&amp;quot;display:inline;border-width:0;&amp;quot; title=&amp;quot;options-account&amp;quot; border=&amp;quot;0&amp;quot; alt=&amp;quot;options-account&amp;quot; src=&amp;quot;http://fskelly.files.wordpress.com/2009/09/optionsaccount6.png?w=300&amp;quot; width=&amp;quot;876&amp;quot; height=&amp;quot;750&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; Click Account &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; &amp;lt;a href=&amp;quot;http://fskelly.files.wordpress.com/2009/09/countryregionchange5.png&amp;quot; rel=&amp;quot;WLPP&amp;quot;&amp;gt;&amp;lt;img loading=&amp;quot;lazy&amp;quot; style=&amp;quot;display:inline;border-width:0;&amp;quot; title=&amp;quot;countryregion change&amp;quot; border=&amp;quot;0&amp;quot; alt=&amp;quot;countryregion change&amp;quot; src=&amp;quot;http://fskelly.files.wordpress.com/2009/09/countryregionchange5.png?w=300&amp;quot; width=&amp;quot;883&amp;quot; height=&amp;quot;435&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; Change your country to one that will work with XBOX LIVE &amp;lt;/p&amp;gt;  </description>
+    </item>
+    
+    <item>
+      <title>Unified Troubled Messaging</title>
+      <link>https://cloudadventures.fskelly.com/2009/09/14/unified-troubled-messaging/</link>
+      <pubDate>Mon, 14 Sep 2009 05:43:04 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2009/09/14/unified-troubled-messaging/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sometimes sharing is a great thing.</title>
+      <link>https://cloudadventures.fskelly.com/2009/09/07/sometimes-sharing-is-a-great-thing/</link>
+      <pubDate>Mon, 07 Sep 2009 07:12:30 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2009/09/07/sometimes-sharing-is-a-great-thing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The week that does not want to end</title>
+      <link>https://cloudadventures.fskelly.com/2009/09/04/the-week-that-does-not-want-to-end/</link>
+      <pubDate>Fri, 04 Sep 2009 06:45:06 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2009/09/04/the-week-that-does-not-want-to-end/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Great applications</title>
+      <link>https://cloudadventures.fskelly.com/2009/09/02/great-applications/</link>
+      <pubDate>Wed, 02 Sep 2009 06:03:01 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2009/09/02/great-applications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Life on two wheels</title>
+      <link>https://cloudadventures.fskelly.com/2009/09/01/life-on-two-wheels/</link>
+      <pubDate>Tue, 01 Sep 2009 05:48:20 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2009/09/01/life-on-two-wheels/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The weekend Technology advancement</title>
+      <link>https://cloudadventures.fskelly.com/2009/08/31/the-weekend-technology-advancement/</link>
+      <pubDate>Mon, 31 Aug 2009 04:49:55 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2009/08/31/the-weekend-technology-advancement/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WSS On Windows 7</title>
+      <link>https://cloudadventures.fskelly.com/2009/08/28/wss-on-windows-7/</link>
+      <pubDate>Fri, 28 Aug 2009 05:04:05 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2009/08/28/wss-on-windows-7/</guid>
+      <description>&amp;lt;p&amp;gt; &amp;lt;a title=&amp;quot;http://community.bamboosolutions.com/blogs/bambooteamblog/archive/2009/05/07/installing-wss-3-0-moss-sp2-on-windows-7-rc.aspx&amp;quot; href=&amp;quot;http://community.bamboosolutions.com/blogs/bambooteamblog/archive/2009/05/07/installing-wss-3-0-moss-sp2-on-windows-7-rc.aspx&amp;quot;&amp;gt;http://community.bamboosolutions.com/blogs/bambooteamblog/archive/2009/05/07/installing-wss-3-0-moss-sp2-on-windows-7-rc.aspx&amp;lt;/a&amp;gt; &amp;lt;/p&amp;gt;  </description>
+    </item>
+    
+    <item>
+      <title>The geek is BACK</title>
+      <link>https://cloudadventures.fskelly.com/2009/08/27/the-geek-is-back/</link>
+      <pubDate>Thu, 27 Aug 2009 05:35:54 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2009/08/27/the-geek-is-back/</guid>
+      <description>&amp;lt;p&amp;gt; Playstation 3 – Blu-Ray player and gaming console to boot. &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; So now I have my WHS Server storing content and streaming to my PS3 and my XBOX 360 will be joining the fun soon, finding the wireless adapter for XBOX 360 is not easy. But with time and patience everything is possible. &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; Now the last two things for “ULTIMATE GEEKINESS”. &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; 1. PSP being used with Remote Play to stream content to my PSP when I am not in front of my TV.</description>
+    </item>
+    
+    <item>
+      <title>Roadworks</title>
+      <link>https://cloudadventures.fskelly.com/2009/08/27/roadworks/</link>
+      <pubDate>Thu, 27 Aug 2009 05:19:55 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2009/08/27/roadworks/</guid>
+      <description>&amp;lt;p&amp;gt; It is getting to the point where I have to do OFF-ROAD on my superbike to get around. I will not lie, it is a little fun, but at the same time quite scary. &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; Enough now SANRAL, catch a wake-up and more importantly, catch up with yourselves. &amp;lt;/p&amp;gt;  </description>
+    </item>
+    
+    <item>
+      <title>The Return</title>
+      <link>https://cloudadventures.fskelly.com/2009/04/07/the-return/</link>
+      <pubDate>Tue, 07 Apr 2009 14:03:30 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2009/04/07/the-return/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lost in Space</title>
+      <link>https://cloudadventures.fskelly.com/2008/01/28/lost-in-space/</link>
+      <pubDate>Mon, 28 Jan 2008 13:26:44 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2008/01/28/lost-in-space/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>London is a Zoo and being the animal I am, I somehow survived.</title>
+      <link>https://cloudadventures.fskelly.com/2007/12/18/london-is-a-zoo-and-being-the-animal-i-am-i-somehow-survived/</link>
+      <pubDate>Tue, 18 Dec 2007 17:59:15 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2007/12/18/london-is-a-zoo-and-being-the-animal-i-am-i-somehow-survived/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>11th Hour</title>
+      <link>https://cloudadventures.fskelly.com/2007/12/07/11th-hour/</link>
+      <pubDate>Fri, 07 Dec 2007 09:28:35 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2007/12/07/11th-hour/</guid>
+      <description>&amp;lt;p&amp;gt; &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; The LUNATIC with GPS Unit mounted &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; &amp;lt;a href=&amp;quot;http://blufiles.storage.live.com/y1plfFrpul0llNq31SJdgAJof_6J3wjXsu9iIpjNFYV-2G8lo8WcAl3uJqpxg106X_P7eLQ8nU1ap4&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener&amp;quot;&amp;gt;&amp;lt;img loading=&amp;quot;lazy&amp;quot; height=&amp;quot;200&amp;quot; alt=&amp;quot;IMG_0695_2&amp;quot; src=&amp;quot;http://blufiles.storage.live.com/y1plfFrpul0llNq31SJdgAJof_6J3wjXsu9iIpjNFYV-2G8lo8WcAl3uJqpxg106X_P7eLQ8nU1ap4&amp;quot; width=&amp;quot;150&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;a href=&amp;quot;http://jpvv5a.blu.livefilestore.com/y1pRruePLUILchla5ustZIdox0dekNRwqyfZxd89r3J4DZ9QEN-xs0hrWwYYm20Sct7ttwB30hpaz5R3gNCipXv7YLFG6xiErJW?PARTNER=WRITER&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;http://blufiles.storage.live.com/y1plfFrpul0llNz9osCxEURJkJUDuL5-JC_cYu6ZVJx_BF1fyKJboaf0L7g-5jvrTfUBPo23pkXeXQ&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener&amp;quot;&amp;gt;&amp;lt;img loading=&amp;quot;lazy&amp;quot; height=&amp;quot;200&amp;quot; alt=&amp;quot;IMG_0696_2&amp;quot; src=&amp;quot;http://blufiles.storage.live.com/y1plfFrpul0llNz9osCxEURJkJUDuL5-JC_cYu6ZVJx_BF1fyKJboaf0L7g-5jvrTfUBPo23pkXeXQ&amp;quot; width=&amp;quot;150&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;a href=&amp;quot;http://blufiles.storage.live.com/y1plfFrpul0llMQrGg82ciB3la8Y6l12iPG4_YkHsRxDDQF_CkrrX_njcnPsQF1rA-XIYQnioMVZ2g&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener&amp;quot;&amp;gt;&amp;lt;img loading=&amp;quot;lazy&amp;quot; height=&amp;quot;200&amp;quot; alt=&amp;quot;IMG_0697&amp;quot; src=&amp;quot;http://blufiles.storage.live.com/y1plfFrpul0llMQrGg82ciB3la8Y6l12iPG4_YkHsRxDDQF_CkrrX_njcnPsQF1rA-XIYQnioMVZ2g&amp;quot; width=&amp;quot;267&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;a href=&amp;quot;http://blufiles.storage.live.com/y1plfFrpul0llN-Lgb1B4Y2OEf5bIzpzjyrjeqjt5YIi6aJ3cNN360mLtN7cHt-c0ZrIuKDMylunpg&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener&amp;quot;&amp;gt;&amp;lt;img loading=&amp;quot;lazy&amp;quot; height=&amp;quot;200&amp;quot; alt=&amp;quot;IMG_0698_2&amp;quot; src=&amp;quot;http://blufiles.storage.live.com/y1plfFrpul0llN-Lgb1B4Y2OEf5bIzpzjyrjeqjt5YIi6aJ3cNN360mLtN7cHt-c0ZrIuKDMylunpg&amp;quot; width=&amp;quot;267&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; The LUNATIC having the LED front indicators being fitted &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; &amp;lt;a href=&amp;quot;http://blufiles.storage.live.com/y1plfFrpul0llPiy6PiRz_Y5JVy6bjtP823MC3WC6F-eHl-Trf73J2PINZvYz6HHN8P0xxTEi-6yh8&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener&amp;quot;&amp;gt;&amp;lt;img loading=&amp;quot;lazy&amp;quot; height=&amp;quot;200&amp;quot; alt=&amp;quot;IMG_0679&amp;quot; src=&amp;quot;http://blufiles.</description>
+    </item>
+    
+    <item>
+      <title>3 Generation Run – Day One to Port Elizabeth (26/11/2007)</title>
+      <link>https://cloudadventures.fskelly.com/2007/12/02/3-generation-run-day-one-to-port-elizabeth-26112007/</link>
+      <pubDate>Sun, 02 Dec 2007 16:06:04 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2007/12/02/3-generation-run-day-one-to-port-elizabeth-26112007/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>3 Generation Run – Day Two to Port Elizabeth (27/11/2007)</title>
+      <link>https://cloudadventures.fskelly.com/2007/12/02/3-generation-run-day-two-to-port-elizabeth-27112007/</link>
+      <pubDate>Sun, 02 Dec 2007 15:49:54 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2007/12/02/3-generation-run-day-two-to-port-elizabeth-27112007/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>3 Generation Run – Day One to Johannesburg (01/12/2007)</title>
+      <link>https://cloudadventures.fskelly.com/2007/12/02/3-generation-run-day-one-to-johannesburg-01122007/</link>
+      <pubDate>Sun, 02 Dec 2007 15:34:28 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2007/12/02/3-generation-run-day-one-to-johannesburg-01122007/</guid>
+      <description>&amp;lt;p&amp;gt; &amp;quot;Spot who has been riding in a straight line for a LONG time&amp;quot; &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; Colesberg &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; The most eventful thing on the way back thus far, was the lunch spot. The chosen lunch spot was NOT LICENSED, so no beer or the like, which would have gone down really well at this point (Only ONE, BOTTLE AND THROTTLE DON&amp;amp;#8217;T MIX). The service was also NOT the world&amp;amp;#8217;s best, but the arrived food quickly enough and was warm and that was all that was required.</description>
+    </item>
+    
+    <item>
+      <title>3 Generation Run – Day Two to Johannesburg (02/12/2007)</title>
+      <link>https://cloudadventures.fskelly.com/2007/12/02/3-generation-run-day-two-to-johannesburg-02122007/</link>
+      <pubDate>Sun, 02 Dec 2007 15:13:09 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2007/12/02/3-generation-run-day-two-to-johannesburg-02122007/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Talking about 3 Generation Run</title>
+      <link>https://cloudadventures.fskelly.com/2007/11/22/talking-about-3-generation-run/</link>
+      <pubDate>Thu, 22 Nov 2007 08:52:35 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2007/11/22/talking-about-3-generation-run/</guid>
+      <description>&amp;lt;div&amp;gt; Well, &amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; I never thought I would thought I would live long enough to see this day. It is after all not every day that you get to see three generations of people on bikes. Tackling a total of 2700 KMs in one week. &amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; Well that is the plan; we (Myself, Allan &amp;amp;#123;uncle&amp;amp;#125;, Michaela &amp;amp;#123;mom&amp;amp;#125; and Derrick &amp;amp;#123;grandfather&amp;amp;#125;) leave on the 26th of November and return on the 2nd of December.</description>
+    </item>
+    
+    <item>
+      <title>3 Generation Run</title>
+      <link>https://cloudadventures.fskelly.com/2007/11/21/3-generation-run/</link>
+      <pubDate>Wed, 21 Nov 2007 11:55:17 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2007/11/21/3-generation-run/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+     Cireson Outlook Console | 
+    Fletcher&#39;s Tech Blog
+  
+</title><meta name="description" content="A day in the life of a Cloud Engineer."><meta name="author" content="Fletcher Kelly">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="/favicon.ico">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+
+
+<link rel="canonical" href="https://cloudadventures.fskelly.com/post/history/2014-06-17-cireson-outloook-console/"><meta property="og:title" content="Cireson Outlook Console" />
+<meta property="og:description" content="So, Cireson hase been investing into System Centre Service Manager (SCSM) very heavily and the end results are WELL worth it.
+The Cireson Outlook Console has been out a little while, however it just keeps getting better and better. The Console is super easy to install. The Install instructions are provided by Cireson. There are a few steps to follow as well as the installation of an Outlook Plugin.
+Yes, as you may have guessed from the name, this allows you to connect to Service Manager with almost a full experience directly from OUTLOOK, how great is that." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cloudadventures.fskelly.com/post/history/2014-06-17-cireson-outloook-console/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2014-06-17T06:01:55+00:00" />
+<meta property="article:modified_time" content="2014-06-17T06:01:55+00:00" />
+
+<meta itemprop="name" content="Cireson Outlook Console">
+<meta itemprop="description" content="So, Cireson hase been investing into System Centre Service Manager (SCSM) very heavily and the end results are WELL worth it.
+The Cireson Outlook Console has been out a little while, however it just keeps getting better and better. The Console is super easy to install. The Install instructions are provided by Cireson. There are a few steps to follow as well as the installation of an Outlook Plugin.
+Yes, as you may have guessed from the name, this allows you to connect to Service Manager with almost a full experience directly from OUTLOOK, how great is that."><meta itemprop="datePublished" content="2014-06-17T06:01:55+00:00" />
+<meta itemprop="dateModified" content="2014-06-17T06:01:55+00:00" />
+<meta itemprop="wordCount" content="864">
+<meta itemprop="keywords" content="SCSM,Cireson," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Cireson Outlook Console"/>
+<meta name="twitter:description" content="So, Cireson hase been investing into System Centre Service Manager (SCSM) very heavily and the end results are WELL worth it.
+The Cireson Outlook Console has been out a little while, however it just keeps getting better and better. The Console is super easy to install. The Install instructions are provided by Cireson. There are a few steps to follow as well as the installation of an Outlook Plugin.
+Yes, as you may have guessed from the name, this allows you to connect to Service Manager with almost a full experience directly from OUTLOOK, how great is that."/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://cloudadventures.fskelly.com">Fletcher&#39;s Tech Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">June 17, 2014</p>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>864 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>5 mins read</span>
+                        </div>
+
+                        <h1>Cireson Outlook Console</h1>
+
+                        <ul class="authors list-inline"><li class="list-inline-item mr-3">
+                    <div class="media author"><a href="/authors/fletcher-kelly/" class="mr-3">
+                                    <picture>
+                                        <source srcset="/authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_64x0_resize_q75_box.jpg 1x, /authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_128x0_resize_q100_box.jpg 2x, /authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_192x0_resize_q100_box.jpg 3x">
+                                        <img src="/authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_64x0_resize_q75_box.jpg" class="rounded-circle" alt="Fletcher Kelly">
+                                    </picture>
+                                </a><div class="media-body">
+                            <h5 class="name my-0"><a href="/authors/fletcher-kelly/" class="small">Fletcher Kelly</a>
+                            </h5><p class="social small text-muted">
+                                    <a href="https://twitter.com/@fskelly">@fskelly</a>
+                                </p></div>
+                    </div>
+                </li></ul>
+                    </div>
+                </div><div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="content">
+                            <!-- raw HTML omitted -->
+<p>So, <a href="http://www.cireson.com/">Cireson</a> hase been investing into System Centre Service Manager (SCSM) very heavily and the end results are WELL worth it.</p>
+<p>The <a href="http://cireson.com/apps/outlook-console/">Cireson Outlook Console</a> has been out a little while, however it just keeps getting better and better. The Console is super easy to install. The Install instructions are provided by Cireson. There are a few steps to follow as well as the installation of an Outlook Plugin.</p>
+<p>Yes, as you may have guessed from the name, this allows you to connect to Service Manager with almost a full experience directly from OUTLOOK, how great is that. It simply sits in a corner and connects automatically or it can be set not to, if you are like me and always traveling and do not always have connection to your SCSM Environment. I have tested with extensively, it works VERY WELL over Mobile Broadband (please note that I am in South Africa, the broadband here is NOT great) with a VPN Connection.</p>
+<p>Yes, you read that correctly, it is configured in such a way to be light enough to use or a mobile connection with a VPN connection to your environment. Like I said, well worth the wait.</p>
+<p>So, once the installation is complete and the Management Packs have been imported and the Outlook Plugin has been installed, the fun can start.</p>
+<p>Ok, so onto configuring the Outlook Client,</p>
+<p>Click Settings
+<figure class="figure">
+    <a href="/wp-content/uploads/2014/06/2014-06-17_07-04-42.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/wp-content/uploads/2014/06/2014-06-17_07-04-42.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+</p>
+<p>Configure as needed, you will notice that I have configured some of the features, like &ldquo;When Outlook starts, disable features and don&rsquo;t connect&rdquo;, i have done purely because i am NOT domain joined and do not always want the Outlook Console to always try and connect especially when I am NOT connected to my corporate environment in any way, this can be easily set and configured to meet your needs. I also enable the the &ldquo;Prompt for Credentials when connecting&rdquo;, if I do not do this, it will try to connect using <strong>NON DOMAIN</strong> credentials. <a href="http://www.cireson.com/">Cireson</a> have clearly thought of this scenario. 🙂</p>
+<figure class="figure">
+    <a href="/wp-content/uploads/2014/06/2014-06-17_07-11-13.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/wp-content/uploads/2014/06/2014-06-17_07-11-13.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<p>So, now we can connect to the Environment.</p>
+<figure class="figure">
+    <a href="/wp-content/uploads/2014/06/2014-06-17_07-13-00-1.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/wp-content/uploads/2014/06/2014-06-17_07-13-00-1.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<p>Provide the required username, password and domain.</p>
+<figure class="figure">
+    <a href="/wp-content/uploads/2014/06/2014-06-17_07-14-00-1.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/wp-content/uploads/2014/06/2014-06-17_07-14-00-1.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<p>The connection is usually made quite quickly and you can easily see when the connection has been made as a few more icons will now appear and allow you to start using the real power of the Outlook Connector.</p>
+<figure class="figure">
+    <a href="/wp-content/uploads/2014/06/2014-06-17_07-16-44-1.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/wp-content/uploads/2014/06/2014-06-17_07-16-44-1.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<p>Very quickly, you can see that you can easily Create, Edit and see you Active Work Items. The connector is very intuitive, and easy to use. Simply click one the buttons above or right click on an e-mail, this allows you to create or update a Work Item (yes, you can do this for Problems, Incidents, Changes and Service Requests). This outlook connector really is a ONE-STOP shop for everything Service Manager related.</p>
+<p>Creation is easy, and the subsequent menu are easy to understand</p>
+<figure class="figure">
+    <a href="/wp-content/uploads/2014/06/2014-06-17_07-20-49-1.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/wp-content/uploads/2014/06/2014-06-17_07-20-49-1.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<p>As is editing an incident,</p>
+<figure class="figure">
+    <a href="/wp-content/uploads/2014/06/2014-06-17_07-22-08.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/wp-content/uploads/2014/06/2014-06-17_07-22-08.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<p>With the Edit, it allows to search for the Work Item and then modify the required Work item.</p>
+<figure class="figure">
+    <a href="/wp-content/uploads/2014/06/2014-06-17_07-23-42.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/wp-content/uploads/2014/06/2014-06-17_07-23-42.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<p>The Outlook Console has a very familiar look and feel to it, allowing pretty much all the same functionality as the Native SCSM Console. When it comes to tasks and the like, such as resolving, you will notice that there is NO context pane for these tasks. However, this is solved by Cireson, with the use of a &ldquo;Tasks drop down&rdquo;, allowing for the simplest tasks do to completed as efficiently as possible.</p>
+<figure class="figure">
+    <a href="/wp-content/uploads/2014/06/2014-06-17_07-24-37.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/wp-content/uploads/2014/06/2014-06-17_07-24-37.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<p>Notice the tasks,</p>
+<figure class="figure">
+    <a href="/wp-content/uploads/2014/06/2014-06-17_07-27-58.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/wp-content/uploads/2014/06/2014-06-17_07-27-58.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<p>All tasks like re-assignment work in much the same way as the Native SCSM Console, also allowing for searching as you type.</p>
+<figure class="figure">
+    <a href="/wp-content/uploads/2014/06/2014-06-17_07-29-19.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/wp-content/uploads/2014/06/2014-06-17_07-29-19.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<p>Once all the required updates and/or tasks have been completed, simply click apply or OK, whichever you normal use.</p>
+<h2 id="more-functionality">More Functionality</h2>
+<p>You can also use email received by you to log calls.</p>
+<p>So, here is the scenario, you normally allow people to send email and then the call gets logged, or you get an e-mail directly from a user. This should be a new call or perhaps an update to an existing call, the [Cireson Outlook Console][2] handles this with ease. The [Cireson Outlook Console][2] allows you to update or log Work Items directly from Outlook.</p>
+<p>What is also very nice and handy is that the linking of the Affected user happens automatically, the &ldquo;From&rdquo; is used for the &ldquo;Affected User&rdquo;, in the same way that the Exchange Connector for SCSM works.</p>
+<figure class="figure">
+    <a href="/wp-content/uploads/2014/06/2014-06-17_07-36-44.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/wp-content/uploads/2014/06/2014-06-17_07-36-44.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<figure class="figure">
+    <a href="/wp-content/uploads/2014/06/2014-06-17_07-37-38.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/wp-content/uploads/2014/06/2014-06-17_07-37-38.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<figure class="figure">
+    <a href="/wp-content/uploads/2014/06/2014-06-17_07-38-33.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/wp-content/uploads/2014/06/2014-06-17_07-38-33.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<p>All required Fields completed, OK button is now available.</p>
+<figure class="figure">
+    <a href="http://fskelly.files.wordpress.com/2014/06/2014-06-17_07-42-10.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="http://fskelly.files.wordpress.com/2014/06/2014-06-17_07-42-10.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<p>Updates to work Items are handled in pretty much the same way, select the e-mail, Right Click -&gt; Service Manager -&gt; Choose to Update or add to Work Item. Search for Work Item and and Click OK.</p>
+<figure class="figure">
+    <a href="/wp-content/uploads/2014/06/2014-06-17_07-47-56.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/wp-content/uploads/2014/06/2014-06-17_07-47-56.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<figure class="figure">
+    <a href="/wp-content/uploads/2014/06/2014-06-17_07-51-47-1.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/wp-content/uploads/2014/06/2014-06-17_07-51-47-1.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<p>OK, so you clicked &ldquo;OK&rdquo; and t disappeared, how do I check?</p>
+<p>Very easy, you can use the &ldquo;Edit&rdquo; option and search for Incident and you can check it was added as a log.</p>
+<figure class="figure">
+    <a href="http://fskelly.files.wordpress.com/2014/06/2014-06-17_07-55-47.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="http://fskelly.files.wordpress.com/2014/06/2014-06-17_07-55-47.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<figure class="figure">
+    <a href="/wp-content/uploads/2014/06/2014-06-17_07-56-30.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/wp-content/uploads/2014/06/2014-06-17_07-56-30.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<figure class="figure">
+    <a href="/wp-content/uploads/2014/06/2014-06-17_07-57-18.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/wp-content/uploads/2014/06/2014-06-17_07-57-18.png"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<p>A lot of though has gone into this product, I ALWAYS recommend this product to my customers, as most of us spend the majority of our time within Outlook as it is, this simply adds the immense power of System Centre Service Manager into Outlook as well, allowing you to further empower your IT Staff.</p>
+<p>Follow me,</p>
+<p><a href="https://www.twitter.com/fskelly">Twitter</a><br>
+<a href="https://linkedin.com/in/fletcherkelly">LinkedIn</a></p>
+
+                        </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="/tags/scsm">
+                                    <i class="fas fa-tag mr-2"></i>SCSM
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/cireson">
+                                    <i class="fas fa-tag mr-2"></i>Cireson
+                                </a></div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2fhistory%2f2014-06-17-cireson-outloook-console%2f&text=Cireson%20Outlook%20Console">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2fhistory%2f2014-06-17-cireson-outloook-console%2f&title=Cireson%20Outlook%20Console">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2fhistory%2f2014-06-17-cireson-outloook-console%2f&t=Cireson%20Outlook%20Console">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2fhistory%2f2014-06-17-cireson-outloook-console%2f&title=Cireson%20Outlook%20Console">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div><div class="row justify-content-center my-3">
+                    <div class="col-lg-8">
+                        <div id="commento"></div>
+                        <script src="https://commento.io"></script>
+                    </div>
+                </div></article>
+        </div>
+    </div>
+
+    <div class="related-content row mt-5 row-cols-1 row-cols-lg-3"><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2013/06/26/cireson-it-asset-management-with-service-manager/" class="d-block"><div class="card-body">
+            <h4 class="card-title">Cireson IT Asset Management with Service Manager</h4>
+            <p class="card-text text-muted text-uppercase">June 26, 2013</p>
+            <div class="card-text">
+                Cireson have recently released an new enhancement to the Service Manager console called the Cireson SCSM Asset Management App. This particular application is very easy to install. To install the application into the console, it is simply a case of importing a few management packs and some XML files and DLL files. This is very easy to do and the installation instructions provided by Cireson are very simple and easy to follow as with all Cireson add-ins I have worked with in the past.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2013/01/22/cireson-analyst-web-console/" class="d-block"><div class="card-body">
+            <h4 class="card-title">Cireson Analyst Web Console</h4>
+            <p class="card-text text-muted text-uppercase">January 22, 2013</p>
+            <div class="card-text">
+                I have always heard complaints from some of the analysts in my company about having to install the Service Manager Console on their machines and then complaining about having to learn a new application.
+So, I went searching around and found a great application called Cireson SCSM Web Console, this allows analysts to update Incidents via a newly designed web portal for Analysts. Since the console is designed in HTML5, the web console is browser agnostic.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/post/history/2014-04-04-adding-comments-to-work-items-with-orchestrator/" class="d-block"><div class="card-body">
+            <h4 class="card-title">Adding Comments to Work Items with Orchestrator</h4>
+            <p class="card-text text-muted text-uppercase">April 4, 2014</p>
+            <div class="card-text">
+                Hi All,
+It has been a little while, i have been quite involved with an Integration Project. With this project there was a requirement to add comments to a Work Item. The information is passed on from “System A” to “System B” via XML. Using PowerShell, extracting the XML contents is not too difficult, if anyone would like to dive into that a little bit, please let me know with Comments.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div></div>
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://cloudadventures.fskelly.com/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                            <a href="https://github.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://linkedin.com/in/fletcherkelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://twitter.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright © 2019–2021, Fletcher Kelly; all rights reserved.
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="/dist/main.d608eadfe5ac0688902e.min.js"></script>
+        
+    
+
+
+
+<script>
+    window.Prism = window.Prism || {};
+    window.Prism.manual = true;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-XXXX', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+</body>
+</html>

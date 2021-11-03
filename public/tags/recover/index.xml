@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>recover on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/recover/</link>
+    <description>Recent content in recover on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 04 Feb 2013 11:17:34 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/recover/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Recover System Center Orchestrator 2012 with runbooks export</title>
+      <link>https://cloudadventures.fskelly.com/2013/02/04/recover-system-center-orchestrator-2012-with-runbooks-export/</link>
+      <pubDate>Mon, 04 Feb 2013 11:17:34 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/02/04/recover-system-center-orchestrator-2012-with-runbooks-export/</guid>
+      <description>Just recently in a test environment, a script or some such other gremlin caused some absolute havoc on my system. Before you ask, I had NO Backup in place of this system. This system was System Center Orchestrator. However, once a week, I do a “sort-of” backup. By this, I mean I export all my Runbooks and place a copy on my local machine and a file server and the SCORCH (System Center ORCHestrator) server.</description>
+    </item>
+    
+  </channel>
+</rss>

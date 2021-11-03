@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+     Send Email to 3rd Party from SCSM Console – PowerShell and Console Task | 
+    Fletcher&#39;s Tech Blog
+  
+</title><meta name="description" content="A day in the life of a Cloud Engineer."><meta name="author" content="Fletcher Kelly">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="/favicon.ico">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+
+
+<link rel="canonical" href="https://cloudadventures.fskelly.com/post/history/2013-11-15-send-email-to-3rd-party-from-scsm-console-powershell-and-console-task/"><meta property="og:title" content="Send Email to 3rd Party from SCSM Console – PowerShell and Console Task" />
+<meta property="og:description" content="So recently, I had a customer ask me for the following as their previous incident management system had this functionality.
+The customer wanted to be able to send an &ldquo;Update Email&rdquo; to a 3rd party from the SCSM Console with automatically placing the reference number into said email. They needed the functionality of sending to any email address. This was a requirement for the type of business they are in." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cloudadventures.fskelly.com/post/history/2013-11-15-send-email-to-3rd-party-from-scsm-console-powershell-and-console-task/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2013-11-15T11:58:48+00:00" />
+<meta property="article:modified_time" content="2013-11-15T11:58:48+00:00" />
+
+<meta itemprop="name" content="Send Email to 3rd Party from SCSM Console – PowerShell and Console Task">
+<meta itemprop="description" content="So recently, I had a customer ask me for the following as their previous incident management system had this functionality.
+The customer wanted to be able to send an &ldquo;Update Email&rdquo; to a 3rd party from the SCSM Console with automatically placing the reference number into said email. They needed the functionality of sending to any email address. This was a requirement for the type of business they are in."><meta itemprop="datePublished" content="2013-11-15T11:58:48+00:00" />
+<meta itemprop="dateModified" content="2013-11-15T11:58:48+00:00" />
+<meta itemprop="wordCount" content="974">
+<meta itemprop="keywords" content="SCSM,Console,Orchestrator,PowerShell,Task," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Send Email to 3rd Party from SCSM Console – PowerShell and Console Task"/>
+<meta name="twitter:description" content="So recently, I had a customer ask me for the following as their previous incident management system had this functionality.
+The customer wanted to be able to send an &ldquo;Update Email&rdquo; to a 3rd party from the SCSM Console with automatically placing the reference number into said email. They needed the functionality of sending to any email address. This was a requirement for the type of business they are in."/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://cloudadventures.fskelly.com">Fletcher&#39;s Tech Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">November 15, 2013</p>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>974 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>5 mins read</span>
+                        </div>
+
+                        <h1>Send Email to 3rd Party from SCSM Console – PowerShell and Console Task</h1>
+
+                        <ul class="authors list-inline"><li class="list-inline-item mr-3">
+                    <div class="media author"><a href="/authors/fletcher-kelly/" class="mr-3">
+                                    <picture>
+                                        <source srcset="/authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_64x0_resize_q75_box.jpg 1x, /authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_128x0_resize_q100_box.jpg 2x, /authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_192x0_resize_q100_box.jpg 3x">
+                                        <img src="/authors/fletcher-kelly/fletcher-kelly_hu1961412ea3fc9229cbd8c0509c2bcf00_39727_64x0_resize_q75_box.jpg" class="rounded-circle" alt="Fletcher Kelly">
+                                    </picture>
+                                </a><div class="media-body">
+                            <h5 class="name my-0"><a href="/authors/fletcher-kelly/" class="small">Fletcher Kelly</a>
+                            </h5><p class="social small text-muted">
+                                    <a href="https://twitter.com/@fskelly">@fskelly</a>
+                                </p></div>
+                    </div>
+                </li></ul>
+                    </div>
+                </div><div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="content">
+                            <!-- raw HTML omitted -->
+<p>So recently, I had a customer ask me for the following as their previous incident management system had this functionality.</p>
+<p>The customer wanted to be able to send an &ldquo;Update Email&rdquo; to a 3rd party from the SCSM Console with automatically placing the reference number into said email. They needed the functionality of sending to any email address. This was a requirement for the type of business they are in.</p>
+<p>Please remember that I am by no means a developer. I was thinking of using System Centre Orchestrator, however for this simple requirement, I thought that it might be overkill. I am sure that in time, as the requirements grows and/or changes, System Centre Orchestrator will become a better fit. For this solution, I turned to my friend, <a href="https://docs.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.1">PowerShell</a></p>
+<p>I simply wanted to provide a clean interface for the customer to use. I follow a strict rule of KISS (Keep It Straight and Simple). With the PowerShell script, I provide two input fields.</p>
+<ol>
+<li>Email address of user for update to go to</li>
+<li>Update to be sent to customer.</li>
+</ol>
+<p>The screenshot of what the window looks like</p>
+<figure class="figure">
+    <a href="/wp-content/uploads/2013/11/111913_0952_sendemailto1.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/wp-content/uploads/2013/11/111913_0952_sendemailto1.png" width="595" height="90"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<p>All of this was built in PowerShell with some from [Sapien PrimalForms Community Edition][3] to assist with the GUI part. The GUI is fully functional and tested. &ldquo;Send Update&rdquo; is responsible for sending the update to the specified person and the &ldquo;Cancel&rdquo; simply closes the form nicely and allows you to continue as normal.</p>
+<p>PowerShell Code Below <a href="https://github.com/fskelly/hugo-extend-blog-storageAccount/blob/main/externalFiles/2013/11/15/SendUpdate.ps1">SendEmail</a></p>
+<pre><code class="language-powershell">#region Script Settings
+#&lt;ScriptSettings xmlns=&quot;http://tempuri.org/ScriptSettings.xsd&quot;&gt;
+#  &lt;ScriptPackager&gt;
+#    &lt;process&gt;powershell.exe&lt;/process&gt;
+#    &lt;arguments /&gt;
+#    &lt;extractdir&gt;%TEMP%&lt;/extractdir&gt;
+#    &lt;files /&gt;
+#    &lt;usedefaulticon&gt;true&lt;/usedefaulticon&gt;
+#    &lt;showinsystray&gt;false&lt;/showinsystray&gt;
+#    &lt;altcreds&gt;false&lt;/altcreds&gt;
+#    &lt;efs&gt;true&lt;/efs&gt;
+#    &lt;ntfs&gt;true&lt;/ntfs&gt;
+#    &lt;local&gt;false&lt;/local&gt;
+#    &lt;abortonfail&gt;true&lt;/abortonfail&gt;
+#    &lt;product /&gt;
+#    &lt;version&gt;1.0.0.1&lt;/version&gt;
+#    &lt;versionstring /&gt;
+#    &lt;comments /&gt;
+#    &lt;company /&gt;
+#    &lt;includeinterpreter&gt;false&lt;/includeinterpreter&gt;
+#    &lt;forcecomregistration&gt;false&lt;/forcecomregistration&gt;
+#    &lt;consolemode&gt;false&lt;/consolemode&gt;
+#    &lt;EnableChangelog&gt;false&lt;/EnableChangelog&gt;
+#    &lt;AutoBackup&gt;false&lt;/AutoBackup&gt;
+#    &lt;snapinforce&gt;false&lt;/snapinforce&gt;
+#    &lt;snapinshowprogress&gt;false&lt;/snapinshowprogress&gt;
+#    &lt;snapinautoadd&gt;2&lt;/snapinautoadd&gt;
+#    &lt;snapinpermanentpath /&gt;
+#    &lt;cpumode&gt;1&lt;/cpumode&gt;
+#    &lt;hidepsconsole&gt;false&lt;/hidepsconsole&gt;
+#  &lt;/ScriptPackager&gt;
+#&lt;/ScriptSettings&gt;
+#endregion
+
+param($ID)
+Import-Module 'C:\Program Files\Common Files\SMLets\SMLets.psd1' -Force
+
+#Generated Form Function
+function GenerateForm {
+########################################################################
+# Code Generated By: SAPIEN Technologies PrimalForms (Community Edition) v1.0.10.0
+# Generated On: 2013-11-14 09:08 AM
+# Generated By: Fletcher
+########################################################################
+
+#region Import the Assemblies
+[reflection.assembly]::loadwithpartialname(&quot;System.Windows.Forms&quot;) | Out-Null
+[reflection.assembly]::loadwithpartialname(&quot;System.Drawing&quot;) | Out-Null
+#endregion
+
+#region Generated Form Objects
+$SendUpdateForm = New-Object System.Windows.Forms.Form
+$CancelButton = New-Object System.Windows.Forms.Button
+$SendUpdateButton = New-Object System.Windows.Forms.Button
+$UpdateTextBox = New-Object System.Windows.Forms.TextBox
+$UpdateLabel = New-Object System.Windows.Forms.Label
+$EmailToTextBox = New-Object System.Windows.Forms.TextBox
+$EMailToLabel = New-Object System.Windows.Forms.Label
+$InitialFormWindowState = New-Object System.Windows.Forms.FormWindowState
+#endregion Generated Form Objects
+
+#----------------------------------------------
+#Generated Event Script Blocks
+#----------------------------------------------
+#Provide Custom Code for events specified in PrimalForms.
+$SendUpdateButton_OnClick= 
+{
+	  Write-Host &quot;Send Update&quot;
+		$to = $EmailToTextBox.Text
+		Write-Host $to
+		$from = &quot;enter your from address here&quot;
+		$emailbody = $UpdateTextBox.Text
+$subject = @&quot;
+Update [ID]
+&quot;@
+$body = @&quot;
+$emailbody
+&quot;@
+		#$subject = &quot;Update [ID]&quot;
+		#Write-Host $subject
+		#Write-Host $body
+		$smtpserver = &quot;enter your server here&quot;
+		#[string]$body = $UpdateTextBox.Text
+		#$testcommand = &quot;Send-MailMessage -To $to -From $from -Subject $messagencontent -Body '$body' -SmtpServer $smtpserver&quot;
+		Send-MailMessage -To $to -From $from -Subject $subject -Body $body -SmtpServer $smtpserver
+		#Write-Host $testcommand
+		$SendUpdateForm.Close()
+
+}
+
+$CancelButton_OnClick= 
+{
+$SendUpdateForm.Close()
+}
+
+$OnLoadForm_StateCorrection=
+{#Correct the initial state of the form to prevent the .Net maximized form issue
+	$SendUpdateForm.WindowState = $InitialFormWindowState
+}
+
+#----------------------------------------------
+#region Generated Form Code
+$System_Drawing_Size = New-Object System.Drawing.Size
+$System_Drawing_Size.Height = 323
+$System_Drawing_Size.Width = 409
+$SendUpdateForm.ClientSize = $System_Drawing_Size
+$SendUpdateForm.DataBindings.DefaultDataSourceUpdateMode = 0
+$SendUpdateForm.Name = &quot;SendUpdateForm&quot;
+$SendUpdateForm.Text = &quot;Send Update&quot;
+
+
+$CancelButton.DataBindings.DefaultDataSourceUpdateMode = 0
+
+$System_Drawing_Point = New-Object System.Drawing.Point
+$System_Drawing_Point.X = 182
+$System_Drawing_Point.Y = 264
+$CancelButton.Location = $System_Drawing_Point
+$CancelButton.Name = &quot;CancelButton&quot;
+$System_Drawing_Size = New-Object System.Drawing.Size
+$System_Drawing_Size.Height = 23
+$System_Drawing_Size.Width = 124
+$CancelButton.Size = $System_Drawing_Size
+$CancelButton.TabIndex = 5
+$CancelButton.Text = &quot;Cancel&quot;
+$CancelButton.UseVisualStyleBackColor = $True
+$CancelButton.add_Click($CancelButton_OnClick)
+
+$SendUpdateForm.Controls.Add($CancelButton)
+
+
+$SendUpdateButton.DataBindings.DefaultDataSourceUpdateMode = 0
+
+$System_Drawing_Point = New-Object System.Drawing.Point
+$System_Drawing_Point.X = 35
+$System_Drawing_Point.Y = 264
+$SendUpdateButton.Location = $System_Drawing_Point
+$SendUpdateButton.Name = &quot;SendUpdateButton&quot;
+$System_Drawing_Size = New-Object System.Drawing.Size
+$System_Drawing_Size.Height = 23
+$System_Drawing_Size.Width = 116
+$SendUpdateButton.Size = $System_Drawing_Size
+$SendUpdateButton.TabIndex = 4
+$SendUpdateButton.Text = &quot;Send Update&quot;
+$SendUpdateButton.UseVisualStyleBackColor = $True
+$SendUpdateButton.add_Click($SendUpdateButton_OnClick)
+
+$SendUpdateForm.Controls.Add($SendUpdateButton)
+
+$UpdateTextBox.DataBindings.DefaultDataSourceUpdateMode = 0
+$System_Drawing_Point = New-Object System.Drawing.Point
+$System_Drawing_Point.X = 35
+$System_Drawing_Point.Y = 135
+$UpdateTextBox.Location = $System_Drawing_Point
+$UpdateTextBox.Multiline = $True
+$UpdateTextBox.Name = &quot;UpdateTextBox&quot;
+$System_Drawing_Size = New-Object System.Drawing.Size
+$System_Drawing_Size.Height = 103
+$System_Drawing_Size.Width = 290
+$UpdateTextBox.Size = $System_Drawing_Size
+$UpdateTextBox.TabIndex = 3
+
+$SendUpdateForm.Controls.Add($UpdateTextBox)
+
+$UpdateLabel.DataBindings.DefaultDataSourceUpdateMode = 0
+
+$System_Drawing_Point = New-Object System.Drawing.Point
+$System_Drawing_Point.X = 35
+$System_Drawing_Point.Y = 110
+$UpdateLabel.Location = $System_Drawing_Point
+$UpdateLabel.Name = &quot;UpdateLabel&quot;
+$System_Drawing_Size = New-Object System.Drawing.Size
+$System_Drawing_Size.Height = 22
+$System_Drawing_Size.Width = 359
+$UpdateLabel.Size = $System_Drawing_Size
+$UpdateLabel.TabIndex = 2
+$UpdateLabel.Text = &quot;Please enter the information to be sent to intended recipient:&quot;
+
+$SendUpdateForm.Controls.Add($UpdateLabel)
+
+$EmailToTextBox.DataBindings.DefaultDataSourceUpdateMode = 0
+$System_Drawing_Point = New-Object System.Drawing.Point
+$System_Drawing_Point.X = 35
+$System_Drawing_Point.Y = 54
+$EmailToTextBox.Location = $System_Drawing_Point
+$EmailToTextBox.Name = &quot;EmailToTextBox&quot;
+$System_Drawing_Size = New-Object System.Drawing.Size
+$System_Drawing_Size.Height = 20
+$System_Drawing_Size.Width = 290
+$EmailToTextBox.Size = $System_Drawing_Size
+$EmailToTextBox.TabIndex = 1
+
+$SendUpdateForm.Controls.Add($EmailToTextBox)
+
+$EMailToLabel.DataBindings.DefaultDataSourceUpdateMode = 0
+
+$System_Drawing_Point = New-Object System.Drawing.Point
+$System_Drawing_Point.X = 35
+$System_Drawing_Point.Y = 27
+$EMailToLabel.Location = $System_Drawing_Point
+$EMailToLabel.Name = &quot;EMailToLabel&quot;
+$System_Drawing_Size = New-Object System.Drawing.Size
+$System_Drawing_Size.Height = 24
+$System_Drawing_Size.Width = 439
+$EMailToLabel.Size = $System_Drawing_Size
+$EMailToLabel.TabIndex = 0
+$EMailToLabel.Text = &quot;Please enter the email address of the intended recipient:&quot;
+
+$SendUpdateForm.Controls.Add($EMailToLabel)
+
+#endregion Generated Form Code
+
+#Save the initial state of the form
+$InitialFormWindowState = $SendUpdateForm.WindowState
+#Init the OnLoad event to correct the initial state of the form
+$SendUpdateForm.add_Load($OnLoadForm_StateCorrection)
+#Show the Form
+$SendUpdateForm.ShowDialog()| Out-Null
+
+} #End Function
+
+#Call the Function
+GenerateForm
+</code></pre>
+<p>Ok, so that is the PowerShell side done. Now, it is time to create the console task. This is a fairly straight forward exercise. There are only a few tips I would like to share. I used a shared folder for the scripts and then mapped the console task to the shared folder.</p>
+<p>I have configured the PowerShell script to use a parameter, the ID of the Work Item, this is very easy to configure and ensure that the parameter is passed on. See below.</p>
+<figure class="figure">
+    <a href="/wp-content/uploads/2013/11/111913_0952_sendemailto2.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/wp-content/uploads/2013/11/111913_0952_sendemailto2.png" width="595" height="90"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<p>You will see that I used the &ldquo;Log in action log when this task is run&rdquo;. That is where the Write-host in the PowerShell script becomes handy, the write-host lines are added to the Action Log.</p>
+<p>Please feel free to use and modify to meet your needs.
+Follow me,</p>
+<p><a href="https://www.twitter.com/fskelly">Twitter</a><br>
+<a href="https://linkedin.com/in/fletcherkelly">LinkedIn</a></p>
+
+                        </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="/tags/scsm">
+                                    <i class="fas fa-tag mr-2"></i>SCSM
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/console">
+                                    <i class="fas fa-tag mr-2"></i>Console
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/orchestrator">
+                                    <i class="fas fa-tag mr-2"></i>Orchestrator
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/powershell">
+                                    <i class="fas fa-tag mr-2"></i>PowerShell
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/task">
+                                    <i class="fas fa-tag mr-2"></i>Task
+                                </a></div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2fhistory%2f2013-11-15-send-email-to-3rd-party-from-scsm-console-powershell-and-console-task%2f&text=Send%20Email%20to%203rd%20Party%20from%20SCSM%20Console%20%e2%80%93%20PowerShell%20and%20Console%20Task">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2fhistory%2f2013-11-15-send-email-to-3rd-party-from-scsm-console-powershell-and-console-task%2f&title=Send%20Email%20to%203rd%20Party%20from%20SCSM%20Console%20%e2%80%93%20PowerShell%20and%20Console%20Task">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2fhistory%2f2013-11-15-send-email-to-3rd-party-from-scsm-console-powershell-and-console-task%2f&t=Send%20Email%20to%203rd%20Party%20from%20SCSM%20Console%20%e2%80%93%20PowerShell%20and%20Console%20Task">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fcloudadventures.fskelly.com%2fpost%2fhistory%2f2013-11-15-send-email-to-3rd-party-from-scsm-console-powershell-and-console-task%2f&title=Send%20Email%20to%203rd%20Party%20from%20SCSM%20Console%20%e2%80%93%20PowerShell%20and%20Console%20Task">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div><div class="row justify-content-center my-3">
+                    <div class="col-lg-8">
+                        <div id="commento"></div>
+                        <script src="https://commento.io"></script>
+                    </div>
+                </div></article>
+        </div>
+    </div>
+
+    <div class="related-content row mt-5 row-cols-1 row-cols-lg-3"><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2013/02/21/cireson-my-active-work-items/" class="d-block"><div class="card-body">
+            <h4 class="card-title">Cireson My Active Work Items</h4>
+            <p class="card-text text-muted text-uppercase">February 21, 2013</p>
+            <div class="card-text">
+                So, Cireson has been hard at work to fill a few gaps present within the Service Manager space. Cireson has created an application called My Active Work Items to bring all information assigned to your user token in one place. For Service Manager 2010, you could create the Work Items assigned to Me view. This was a good start for SCSM 2010 and this continues to work with SCSM 2012. However, with SCSM 2012, there are a few shortcomings of this view.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2013/01/22/cireson-analyst-web-console/" class="d-block"><div class="card-body">
+            <h4 class="card-title">Cireson Analyst Web Console</h4>
+            <p class="card-text text-muted text-uppercase">January 22, 2013</p>
+            <div class="card-text">
+                I have always heard complaints from some of the analysts in my company about having to install the Service Manager Console on their machines and then complaining about having to learn a new application.
+So, I went searching around and found a great application called Cireson SCSM Web Console, this allows analysts to update Incidents via a newly designed web portal for Analysts. Since the console is designed in HTML5, the web console is browser agnostic.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2013/09/11/service-request-load-testing-for-scsm/" class="d-block"><div class="card-body">
+            <h4 class="card-title">Service Request Load Testing for SCSM</h4>
+            <p class="card-text text-muted text-uppercase">September 11, 2013</p>
+            <div class="card-text">
+                I have found a great for load testing SCSM with Incidents. The script uses SMLets to generate Incidents and you can then gauge how your system would handle the load you are planning within your Production Environment.
+I will not go into the detail of the script as this blog post does a great job of explaining it. SO this got me to thinking about other Load Testing you could perform.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div></div>
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://cloudadventures.fskelly.com/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                            <a href="https://github.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://linkedin.com/in/fletcherkelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://twitter.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright © 2019–2021, Fletcher Kelly; all rights reserved.
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="/dist/main.d608eadfe5ac0688902e.min.js"></script>
+        
+    
+
+
+
+<script>
+    window.Prism = window.Prism || {};
+    window.Prism.manual = true;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-XXXX', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+</body>
+</html>

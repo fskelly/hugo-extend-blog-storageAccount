@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PSSession on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/pssession/</link>
+    <description>Recent content in PSSession on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 15 Jun 2011 15:13:42 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/pssession/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DPM and Invoke-Command, bring the DPM shell to your machine</title>
+      <link>https://cloudadventures.fskelly.com/2011/06/15/dpm-and-invoke-command-bring-the-dpm-shell-to-your-machine/</link>
+      <pubDate>Wed, 15 Jun 2011 15:13:42 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2011/06/15/dpm-and-invoke-command-bring-the-dpm-shell-to-your-machine/</guid>
+      <description>Not that long ago, I created an article about DPM and I referenced DPM commands to be run in the DPM shell and only now realised that not everyone has the DPM console installed as this is not the easiest console to install and get working.
+So, I am now the Proud Owner of Learn Windows PowerShell in a month of Lunches and I am an now playing and have figured out how to import the necessary commands with Remoting.</description>
+    </item>
+    
+  </channel>
+</rss>

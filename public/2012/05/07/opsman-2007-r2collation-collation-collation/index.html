@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+     OpsMan 2007 R2–Collation, Collation, Collation!!!!!! | 
+    Fletcher&#39;s Tech Blog
+  
+</title><meta name="description" content="A day in the life of a Cloud Engineer."><meta name="author" content="Fletcher Kelly">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="/favicon.ico">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+
+
+<link rel="canonical" href="https://cloudadventures.fskelly.com/2012/05/07/opsman-2007-r2collation-collation-collation/"><meta property="og:title" content="OpsMan 2007 R2–Collation, Collation, Collation!!!!!!" />
+<meta property="og:description" content="So, recently I decided to take the plunge and upgrade to SCOM 2012. So, there were a few pre-requisites that I needed as per the prereq checker that is built into OpsMan 2012.The “big ones” were as follows. 1. OpsMan 2007 R2 CU52. And FTS (Full Text Search) for SQL. So, these seem easy enough to fix. 1. Simple downloadCumulative Update 5 for System Center Operations Manager 2007 R2and install. To be honest, I found this articlesuper helpful for the installation of this Cumulative Update, nice and easy to follow." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cloudadventures.fskelly.com/2012/05/07/opsman-2007-r2collation-collation-collation/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2012-05-07T11:44:25+00:00" />
+<meta property="article:modified_time" content="2012-05-07T11:44:25+00:00" />
+
+<meta itemprop="name" content="OpsMan 2007 R2–Collation, Collation, Collation!!!!!!">
+<meta itemprop="description" content="So, recently I decided to take the plunge and upgrade to SCOM 2012. So, there were a few pre-requisites that I needed as per the prereq checker that is built into OpsMan 2012.The “big ones” were as follows. 1. OpsMan 2007 R2 CU52. And FTS (Full Text Search) for SQL. So, these seem easy enough to fix. 1. Simple downloadCumulative Update 5 for System Center Operations Manager 2007 R2and install. To be honest, I found this articlesuper helpful for the installation of this Cumulative Update, nice and easy to follow."><meta itemprop="datePublished" content="2012-05-07T11:44:25+00:00" />
+<meta itemprop="dateModified" content="2012-05-07T11:44:25+00:00" />
+<meta itemprop="wordCount" content="421">
+<meta itemprop="keywords" content="Collation,OperationsManagerDB,OperationsManagerDW,OpsMan,Reporting Services,SQL," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="OpsMan 2007 R2–Collation, Collation, Collation!!!!!!"/>
+<meta name="twitter:description" content="So, recently I decided to take the plunge and upgrade to SCOM 2012. So, there were a few pre-requisites that I needed as per the prereq checker that is built into OpsMan 2012.The “big ones” were as follows. 1. OpsMan 2007 R2 CU52. And FTS (Full Text Search) for SQL. So, these seem easy enough to fix. 1. Simple downloadCumulative Update 5 for System Center Operations Manager 2007 R2and install. To be honest, I found this articlesuper helpful for the installation of this Cumulative Update, nice and easy to follow."/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://cloudadventures.fskelly.com">Fletcher&#39;s Tech Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">May 7, 2012</p>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>421 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>2 mins read</span>
+                        </div>
+
+                        <h1>OpsMan 2007 R2–Collation, Collation, Collation!!!!!!</h1>
+
+                        
+                    </div>
+                </div><div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="content">
+                            <p><!-- raw HTML omitted -->So, recently I decided to take the plunge and upgrade to SCOM 2012. So, there were a few pre-requisites that I needed as per the prereq checker that is built into OpsMan 2012.<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->The “big ones” were as follows.<!-- raw HTML omitted --></p>
+<blockquote>
+<p><!-- raw HTML omitted -->1. OpsMan 2007 R2 CU5<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->2. And FTS (Full Text Search) for SQL.<!-- raw HTML omitted --></p>
+</blockquote>
+<p><!-- raw HTML omitted -->So, these seem easy enough to fix.<!-- raw HTML omitted --></p>
+<blockquote>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->1. Simple download<!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->Cumulative Update 5 for System Center Operations Manager 2007 R2<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --> <!-- raw HTML omitted -->and install. To be honest, I found <!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->this article<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --> <!-- raw HTML omitted -->super helpful for the installation of this Cumulative Update, nice and easy to follow. Kudos to<!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->Kevin Holman<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->. <!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->So after running through the process step by step, I found that the build number had NOT increased to 6.1.7221.81. Very strange indeed. This needed some more investigation, but more on that just now.<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->2. Simple go and add this feature to your SQL instance, not very difficult to, so I simply walk through the wizard and add the feature.<!-- raw HTML omitted --></p>
+</blockquote>
+<p><!-- raw HTML omitted -->So, now time to run the Pre-Req checker again, and what do you know the Cumulative Update 5 is NO LONGER showing (but remember the build version in the console is NOT reflecting the correct build number. Also, the FTS (Full Text Search) requirement is still there and I am have installed the FTS feature.<!-- raw HTML omitted --></p>
+<p><a href="http://fskelly.files.wordpress.com/2012/05/image.png"><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></a></p>
+<p><!-- raw HTML omitted -->However as you can see below.<!-- raw HTML omitted --></p>
+<p><a href="http://fskelly.files.wordpress.com/2012/05/clip_image002.jpg"><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></a></p>
+<p><!-- raw HTML omitted -->Very strange indeed, so like I said some further investigation is required.<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->I remember being at some Microsoft IT Bootcamps, and the continued emphasis on SQL Collation and OpsMan in general. So I decided to check this. My Version below.<!-- raw HTML omitted --></p>
+<p><a href="http://fskelly.files.wordpress.com/2012/05/clip_image0024.jpg"><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></a></p>
+<p><!-- raw HTML omitted -->As per <!-- raw HTML omitted --><a href="http://technet.microsoft.com/en-us/library/hh205986.aspx"><!-- raw HTML omitted -->this TechNet Article<!-- raw HTML omitted --></a><!-- raw HTML omitted -->, the only supported collation for English is SQL_Latin1_General_CP1_CI_AS. Oh oops!<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->Never fear though, his can be fixed, however the articles must be followed very carefully and within a reasonable amount of time as while you are doing this whole process, your OperationsManager and OperationsManagerDW databases will not be collecting all of the information all of the time. So, there WILL be some (very minimal) data loss in terms of agents reporting into the Management Group.<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->All the articles are TechNet Articles, see below.<!-- raw HTML omitted --></p>
+<p><a href="http://technet.microsoft.com/en-us/library/cc540384.aspx"><!-- raw HTML omitted -->How to Move the OperationsManager Database in Operations Manager 2007<!-- raw HTML omitted --></a></p>
+<p><a href="http://technet.microsoft.com/en-us/library/cc540368.aspx"><!-- raw HTML omitted -->How to Move the OperationsManagerDW Database in Operations Manager 2007<!-- raw HTML omitted --></a></p>
+<p><a href="http://technet.microsoft.com/en-us/library/cc540369.aspx"><!-- raw HTML omitted -->How to Move the Operations Manager Reporting Server in Operations Manager 2007<!-- raw HTML omitted --></a></p>
+<p><!-- raw HTML omitted -->Once, I had made my way through all the articles, I tried my original steps again and this time, without any issues, I was able to install <!-- raw HTML omitted --><a href="http://support.microsoft.com/kb/2495674"><!-- raw HTML omitted -->Cumulative Update 5 for System Center Operations Manager 2007 R2<!-- raw HTML omitted --></a> <!-- raw HTML omitted -->and successfully able to get the pre-req checker to list all pre-reqs met. <!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->Follow me.<!-- raw HTML omitted --></p>
+<p><a href="http://www.facebook.com/fletcher.kelly"><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></a><a href="http://twitter.com/#!/fskelly"><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></a></p>
+<p><a href="http://fskelly.files.wordpress.com/2012/05/mcc11_logo_horizontal_2-color_thumb.jpg"><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></a></p>
+
+                        </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="/tags/collation">
+                                    <i class="fas fa-tag mr-2"></i>Collation
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/operationsmanagerdb">
+                                    <i class="fas fa-tag mr-2"></i>OperationsManagerDB
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/operationsmanagerdw">
+                                    <i class="fas fa-tag mr-2"></i>OperationsManagerDW
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/opsman">
+                                    <i class="fas fa-tag mr-2"></i>OpsMan
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/reporting-services">
+                                    <i class="fas fa-tag mr-2"></i>Reporting Services
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/sql">
+                                    <i class="fas fa-tag mr-2"></i>SQL
+                                </a></div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2012%2f05%2f07%2fopsman-2007-r2collation-collation-collation%2f&text=OpsMan%202007%20R2%e2%80%93Collation%2c%20Collation%2c%20Collation%21%21%21%21%21%21">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2012%2f05%2f07%2fopsman-2007-r2collation-collation-collation%2f&title=OpsMan%202007%20R2%e2%80%93Collation%2c%20Collation%2c%20Collation%21%21%21%21%21%21">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fcloudadventures.fskelly.com%2f2012%2f05%2f07%2fopsman-2007-r2collation-collation-collation%2f&t=OpsMan%202007%20R2%e2%80%93Collation%2c%20Collation%2c%20Collation%21%21%21%21%21%21">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2012%2f05%2f07%2fopsman-2007-r2collation-collation-collation%2f&title=OpsMan%202007%20R2%e2%80%93Collation%2c%20Collation%2c%20Collation%21%21%21%21%21%21">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div><div class="row justify-content-center my-3">
+                    <div class="col-lg-8">
+                        <div id="commento"></div>
+                        <script src="https://commento.io"></script>
+                    </div>
+                </div></article>
+        </div>
+    </div>
+
+    <div class="related-content row mt-5 row-cols-1 row-cols-lg-3"><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2010/10/27/blue-wednesday/" class="d-block"><div class="card-body">
+            <h4 class="card-title">“Blue Wednesday”</h4>
+            <p class="card-text text-muted text-uppercase">October 27, 2010</p>
+            <div class="card-text">
+                Do you ever have those days where it just starts bad and gets worse?
+“Man Alive, what a day it has been and it is not over yet”
+First, simple network change, enabling DHCP helper on our new Infrastructure. Sounds simple, right?. Well, our switches are stacked for connectivity and storage, so a reboot of the switches means shutting down the environment, IP and iSCSI. So I go and do this, not knowing about our cluster needing 3 nodes active, what a mission.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2012/01/17/rebuilding-the-opsman-client-cache/" class="d-block"><div class="card-body">
+            <h4 class="card-title">Rebuilding the OpsMan Client Cache</h4>
+            <p class="card-text text-muted text-uppercase">January 17, 2012</p>
+            <div class="card-text">
+                Just recently I had the need to “rebuild” the client cache on a lot of my servers, due to a slight hiccup with our Network and subsequently our Operations Manager Server. So I decided to use PowerShell, if you need to repeat it, script it.
+So, I simply built a script to connect to the required machine, stop the “Health Service”, delete the files from the required folder and then restart the “Health Service”.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2011/10/26/scheduled-reports-with-scsm-data-warehouse/" class="d-block"><div class="card-body">
+            <h4 class="card-title">Scheduled reports with SCSM Data Warehouse</h4>
+            <p class="card-text text-muted text-uppercase">October 26, 2011</p>
+            <div class="card-text">
+                Hi All,
+I know it has been a little while.
+The reports built into Service Manager are great, however when you try to get a bit creative and automate some of the reports, you are going to run into some issues. So to work around theses issues, I did the following.
+Create a custom report from SQL Reporting Services and modified for my needs, I was focusing more on “Incident Analyst” and I was looking for a breakdown of the number of Incidents per Analysts in a week period.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div></div>
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://cloudadventures.fskelly.com/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                            <a href="https://github.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://linkedin.com/in/fletcherkelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://twitter.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright © 2019–2021, Fletcher Kelly; all rights reserved.
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="/dist/main.d608eadfe5ac0688902e.min.js"></script>
+        
+    
+
+
+
+<script>
+    window.Prism = window.Prism || {};
+    window.Prism.manual = true;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-XXXX', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+</body>
+</html>

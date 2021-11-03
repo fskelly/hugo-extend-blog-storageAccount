@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Orchestrator on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/orchestrator/</link>
+    <description>Recent content in Orchestrator on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 04 Apr 2014 08:18:16 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/orchestrator/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adding Comments to Work Items with Orchestrator</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2014-04-04-adding-comments-to-work-items-with-orchestrator/</link>
+      <pubDate>Fri, 04 Apr 2014 08:18:16 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2014-04-04-adding-comments-to-work-items-with-orchestrator/</guid>
+      <description>Hi All,
+It has been a little while, i have been quite involved with an Integration Project. With this project there was a requirement to add comments to a Work Item. The information is passed on from &amp;ldquo;System A&amp;rdquo; to &amp;ldquo;System B&amp;rdquo; via XML. Using PowerShell, extracting the XML contents is not too difficult, if anyone would like to dive into that a little bit, please let me know with Comments.</description>
+    </item>
+    
+    <item>
+      <title>Send Email to 3rd Party from SCSM Console – PowerShell and Console Task</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2013-11-15-send-email-to-3rd-party-from-scsm-console-powershell-and-console-task/</link>
+      <pubDate>Fri, 15 Nov 2013 11:58:48 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2013-11-15-send-email-to-3rd-party-from-scsm-console-powershell-and-console-task/</guid>
+      <description>So recently, I had a customer ask me for the following as their previous incident management system had this functionality.
+The customer wanted to be able to send an &amp;ldquo;Update Email&amp;rdquo; to a 3rd party from the SCSM Console with automatically placing the reference number into said email. They needed the functionality of sending to any email address. This was a requirement for the type of business they are in.</description>
+    </item>
+    
+    <item>
+      <title>End User Portal for System Centre Orchestrator</title>
+      <link>https://cloudadventures.fskelly.com/2013/08/05/end-user-portal-for-system-centre-orchestrator/</link>
+      <pubDate>Mon, 05 Aug 2013 04:53:43 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/08/05/end-user-portal-for-system-centre-orchestrator/</guid>
+      <description>So, let’s ay you have invested the time and gotten System Centre Orchestrator up and running in your environment and you have the product performing some day to day tasks and it is working well. However, now you want start using SCO (System Centre Orchestrator) to start performing end user focused tasks like Password Reset, add users to groups or even disabling of users or server testing as part of first line support.</description>
+    </item>
+    
+    <item>
+      <title>Recover System Center Orchestrator 2012 with runbooks export</title>
+      <link>https://cloudadventures.fskelly.com/2013/02/04/recover-system-center-orchestrator-2012-with-runbooks-export/</link>
+      <pubDate>Mon, 04 Feb 2013 11:17:34 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/02/04/recover-system-center-orchestrator-2012-with-runbooks-export/</guid>
+      <description>Just recently in a test environment, a script or some such other gremlin caused some absolute havoc on my system. Before you ask, I had NO Backup in place of this system. This system was System Center Orchestrator. However, once a week, I do a “sort-of” backup. By this, I mean I export all my Runbooks and place a copy on my local machine and a file server and the SCORCH (System Center ORCHestrator) server.</description>
+    </item>
+    
+    <item>
+      <title>Exchange Log File Monitoring Orchestration</title>
+      <link>https://cloudadventures.fskelly.com/2012/12/06/exchange-log-file-monitoring-orchestration/</link>
+      <pubDate>Thu, 06 Dec 2012 11:41:28 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/12/06/exchange-log-file-monitoring-orchestration/</guid>
+      <description>So what started this is actually quite simple. We have limited space on our virtual machines and the log files for IIS keeping filling up the drive on our Hub Transport Server (Exchange Server 2010). It is a little know fact, that a certain amount of free space on C: is needed on an Exchange Hub Transport Server, the magic number happens to be 15%. There are a few ways to solve the log file issue.</description>
+    </item>
+    
+    <item>
+      <title>Installing System Centre Orchestrator</title>
+      <link>https://cloudadventures.fskelly.com/2012/06/13/installing-system-centre-orchestrator/</link>
+      <pubDate>Wed, 13 Jun 2012 12:44:38 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/06/13/installing-system-centre-orchestrator/</guid>
+      <description>So, just recently I decided to install System Centre Orchestrator. It appears easy enough if you follow the Technet articles. This addresses the need for Service Accounts and the permissions needed by these accounts and there functions. It also helps you to size and decide the Orchestrator installation type that would best suit your environment. It helps you to decide the best way to break the components if you want to.</description>
+    </item>
+    
+  </channel>
+</rss>

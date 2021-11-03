@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>transcript on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/transcript/</link>
+    <description>Recent content in transcript on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 29 Mar 2012 07:20:47 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/transcript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Powershell Transcript logging</title>
+      <link>https://cloudadventures.fskelly.com/2012/03/29/powershell-transcript-logging/</link>
+      <pubDate>Thu, 29 Mar 2012 07:20:47 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/03/29/powershell-transcript-logging/</guid>
+      <description>I have recently started keeping a track of all my PowerShell.
+Just a nice simple update.
+So, I decided to create a “simple” PowerShell script that would keep a track of all my transcripts. The script would create a file name based on date and place the transcript file in a folder of your choice, this is hard-coded in the script and can be easily modified.
+Hope you like it and find it useful.</description>
+    </item>
+    
+  </channel>
+</rss>

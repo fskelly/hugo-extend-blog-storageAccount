@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Service Manager on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/categories/service-manager/</link>
+    <description>Recent content in Service Manager on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 27 Aug 2015 06:21:12 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/categories/service-manager/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SLA Reporting with PowerShell and SCSM</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2015-08-27-sla-reporting-with-powershell-and-scsm/</link>
+      <pubDate>Thu, 27 Aug 2015 06:21:12 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2015-08-27-sla-reporting-with-powershell-and-scsm/</guid>
+      <description>I always get asked about reporting from my customers, and specifically around SLA&amp;rsquo;s. SLA&amp;rsquo;s are very important to most companies as this is part of the tracking mechanism of employees and vendors and the like.
+SMLETS is needed for this, it is built to be run from the server, if you need to run from your local machine, please install SMLets, copy the SDK Binaries folder and use the -computername where applicable with the SMLets commands.</description>
+    </item>
+    
+    <item>
+      <title>Deploy a VM – SCSM, SCVMM, SCORCH – all working in harmony</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2014-07-31-deploy-a-vm-scsm-scvmm-scorch-all-working-in-harmony/</link>
+      <pubDate>Thu, 31 Jul 2014 12:19:03 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2014-07-31-deploy-a-vm-scsm-scvmm-scorch-all-working-in-harmony/</guid>
+      <description>So, it has been a while.
+So, the requirement for this project was as follow.
+ Use Service Manager. Provide a portal for logging a VM Creation request. Build the computername based on a predetermined pattern. Determine first available name. Perform a capacity check. Deploy the set number of VMs.  I am going to skip over the first 2 Points, there are numerous topics covering this. So, onto point 3, I created a Service Request Extension, if anyone would like some info on this, also plenty of articles, please let me know and I can do a blog post on the Extension, or I can make the extension available for you to seal yourselves.</description>
+    </item>
+    
+    <item>
+      <title>Cireson Outlook Console</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2014-06-17-cireson-outloook-console/</link>
+      <pubDate>Tue, 17 Jun 2014 06:01:55 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2014-06-17-cireson-outloook-console/</guid>
+      <description>So, Cireson hase been investing into System Centre Service Manager (SCSM) very heavily and the end results are WELL worth it.
+The Cireson Outlook Console has been out a little while, however it just keeps getting better and better. The Console is super easy to install. The Install instructions are provided by Cireson. There are a few steps to follow as well as the installation of an Outlook Plugin.
+Yes, as you may have guessed from the name, this allows you to connect to Service Manager with almost a full experience directly from OUTLOOK, how great is that.</description>
+    </item>
+    
+    <item>
+      <title>Service Request Load Testing for SCSM</title>
+      <link>https://cloudadventures.fskelly.com/2013/09/11/service-request-load-testing-for-scsm/</link>
+      <pubDate>Wed, 11 Sep 2013 19:30:51 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/09/11/service-request-load-testing-for-scsm/</guid>
+      <description>I have found a great for load testing SCSM with Incidents. The script uses SMLets to generate Incidents and you can then gauge how your system would handle the load you are planning within your Production Environment.
+I will not go into the detail of the script as this blog post does a great job of explaining it. SO this got me to thinking about other Load Testing you could perform.</description>
+    </item>
+    
+    <item>
+      <title>Import CI Items with Cireson Asset Import Tool</title>
+      <link>https://cloudadventures.fskelly.com/2013/05/17/import-ci-items-with-cireson-asset-import-tool/</link>
+      <pubDate>Fri, 17 May 2013 05:10:29 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/05/17/import-ci-items-with-cireson-asset-import-tool/</guid>
+      <description>With my previous post about importing data, I showed you how to use the built-in CSV connector to do this task and how to create the required Projection Classes. However if you are looking for a quicker more automated to achieve this, enter Cireson and their Asset Import Tool. It takes all the guess work out of the import process and handles the Projection Classes for you.
+The installation of the application is easy and requires the copying a DLL file to the Service Manager Installation folder and the import of a Management Pack ( a management Pack Bundle in this case).</description>
+    </item>
+    
+    <item>
+      <title>Importing data into Service Manager–CSV import and XML</title>
+      <link>https://cloudadventures.fskelly.com/2013/04/23/importing-data-into-service-managercsv-import-and-xml/</link>
+      <pubDate>Tue, 23 Apr 2013 05:27:42 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/04/23/importing-data-into-service-managercsv-import-and-xml/</guid>
+      <description>So, just recently I was asked by a customer to import data from an “old” SCSM system. The customer is moving to new hardware within the organization and is using this opportunity to clean up Service Manager and re-import only clean data.So, the challenge is the following.The customer wants to import Change Requests from the “old” Service Manager to the “new” Service Manager. Ok, so after some research and confirmation, it is NOT possible to simply move data from one Service Manager installation to another.</description>
+    </item>
+    
+    <item>
+      <title>Cubes Missing from Data Warehouse and throwing error from within the SCSM Console</title>
+      <link>https://cloudadventures.fskelly.com/2013/02/27/cubes-missing-from-data-warehouse-and-throwing-error-from-within-the-scsm-console/</link>
+      <pubDate>Wed, 27 Feb 2013 13:08:39 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/02/27/cubes-missing-from-data-warehouse-and-throwing-error-from-within-the-scsm-console/</guid>
+      <description>So, just the other day I opened the SCSM console to look at the cubes and process as needed, since some new reports needed to be built and Excel spread sheets created by our BI person for business. So, I start to process the cubes and the first cube starts processing without issue. However when I attempt to process the second cube (Change and Activity Management cube). It presented an error stating that &amp;ldquo;Could not find any resources appropriate for the specified culture or the neutral culture&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Cireson My Active Work Items</title>
+      <link>https://cloudadventures.fskelly.com/2013/02/21/cireson-my-active-work-items/</link>
+      <pubDate>Thu, 21 Feb 2013 09:10:11 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/02/21/cireson-my-active-work-items/</guid>
+      <description>So, Cireson has been hard at work to fill a few gaps present within the Service Manager space. Cireson has created an application called My Active Work Items to bring all information assigned to your user token in one place. For Service Manager 2010, you could create the Work Items assigned to Me view. This was a good start for SCSM 2010 and this continues to work with SCSM 2012. However, with SCSM 2012, there are a few shortcomings of this view.</description>
+    </item>
+    
+    <item>
+      <title>AssignedTo and AffectedUser with Powershell – Service Manager</title>
+      <link>https://cloudadventures.fskelly.com/2012/12/20/assignedto-and-affecteduser-with-powershell-service-manager/</link>
+      <pubDate>Thu, 20 Dec 2012 08:22:35 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/12/20/assignedto-and-affecteduser-with-powershell-service-manager/</guid>
+      <description>So recently I got an e-mail to my newly setup e-mail address, for just this reason , from someone asking if I knew a way to do the following.
+ “I was trying to find a way to find all Incidents related to a specific person (assigned to or affected user) using PowerShell” So, I decided the best to answer this with a blog post as maybe there are other people out there asking the same question.</description>
+    </item>
+    
+    <item>
+      <title>Auto-Closing work items made easy–Service Manager 2012</title>
+      <link>https://cloudadventures.fskelly.com/2012/11/01/auto-closing-work-items-made-easyservice-manager-2012/</link>
+      <pubDate>Thu, 01 Nov 2012 05:41:13 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/11/01/auto-closing-work-items-made-easyservice-manager-2012/</guid>
+      <description>So, there are a few ways of tackling the issue of automatically closing Incidents/Change Requests within Service Manager. Most of these solutions rely on a script leveraging SMLets. So you would create a script and then create a workflow and end up importing the Management Pack into Service Manager. The issue with this is the following, it is quite time consuming and should change under the hood with Service Manager, like the changes from 2010 to 2012, your script will most likely stop working.</description>
+    </item>
+    
+    <item>
+      <title>Exchange Connector – SCSM 2012</title>
+      <link>https://cloudadventures.fskelly.com/2012/09/19/exchange-connector-scsm-2012/</link>
+      <pubDate>Wed, 19 Sep 2012 07:13:10 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/09/19/exchange-connector-scsm-2012/</guid>
+      <description>So, I decided to extend the functionality of Service Manager even more with the Exchange Connector. If you follow the guide it is nice and easy to install. The configuration is quite simply as well, here is a link which gives the configuration in some detail to make you life a little. Once the connector is installed is when I found a little “gotcha” if you will. With the connector, it updates any incident with the same template, which can cause issues and potentially change your Priority and Urgency which can lead to some skewed reporting.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>performance on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/performance/</link>
+    <description>Recent content in performance on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 26 Jun 2012 07:16:36 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/performance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why is my Service Manager so slow?</title>
+      <link>https://cloudadventures.fskelly.com/2012/06/26/why-is-my-service-manager-so-slow/</link>
+      <pubDate>Tue, 26 Jun 2012 07:16:36 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/06/26/why-is-my-service-manager-so-slow/</guid>
+      <description>So, I have been running Service Manager for quite some time now. From SCSM 2010 to SCSM SP1 and most of the CU’s before I upgraded to SCSM 2012 Beta and RC and then to RTM (with the help of a Microsoft TAP Program). Service Manager is now quite entrenched in our business and has been running quite well for a very long time. However, a little while ago we began to experience performance issues with the Console and the logging of calls and the application of Workflows.</description>
+    </item>
+    
+  </channel>
+</rss>

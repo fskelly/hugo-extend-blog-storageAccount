@@ -1,0 +1,1542 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/</link>
+    <description>Recent content in Tags on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 25 Aug 2021 05:58:18 +0200</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>azure</title>
+      <link>https://cloudadventures.fskelly.com/tags/azure/</link>
+      <pubDate>Wed, 25 Aug 2021 05:58:18 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/azure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>quick post</title>
+      <link>https://cloudadventures.fskelly.com/tags/quick-post/</link>
+      <pubDate>Wed, 25 Aug 2021 05:58:18 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/quick-post/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>resource graph</title>
+      <link>https://cloudadventures.fskelly.com/tags/resource-graph/</link>
+      <pubDate>Wed, 25 Aug 2021 05:58:18 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/resource-graph/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bicep</title>
+      <link>https://cloudadventures.fskelly.com/tags/bicep/</link>
+      <pubDate>Fri, 02 Jul 2021 05:40:16 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/bicep/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iac</title>
+      <link>https://cloudadventures.fskelly.com/tags/iac/</link>
+      <pubDate>Fri, 02 Jul 2021 05:40:16 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/iac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>az cli</title>
+      <link>https://cloudadventures.fskelly.com/tags/az-cli/</link>
+      <pubDate>Wed, 05 May 2021 07:03:02 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/az-cli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>command line</title>
+      <link>https://cloudadventures.fskelly.com/tags/command-line/</link>
+      <pubDate>Wed, 05 May 2021 07:03:02 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/command-line/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>api</title>
+      <link>https://cloudadventures.fskelly.com/tags/api/</link>
+      <pubDate>Wed, 14 Apr 2021 09:02:18 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>postman</title>
+      <link>https://cloudadventures.fskelly.com/tags/postman/</link>
+      <pubDate>Wed, 14 Apr 2021 09:02:18 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/postman/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>azure powershell</title>
+      <link>https://cloudadventures.fskelly.com/tags/azure-powershell/</link>
+      <pubDate>Mon, 18 Jan 2021 07:06:03 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/azure-powershell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>powershell</title>
+      <link>https://cloudadventures.fskelly.com/tags/powershell/</link>
+      <pubDate>Mon, 18 Jan 2021 07:06:03 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/powershell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>static web</title>
+      <link>https://cloudadventures.fskelly.com/tags/static-web/</link>
+      <pubDate>Mon, 18 Jan 2021 07:06:03 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/static-web/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cdn</title>
+      <link>https://cloudadventures.fskelly.com/tags/cdn/</link>
+      <pubDate>Mon, 11 Jan 2021 07:00:18 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/cdn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CMS</title>
+      <link>https://cloudadventures.fskelly.com/tags/cms/</link>
+      <pubDate>Mon, 11 Jan 2021 07:00:18 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/cms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>architecture</title>
+      <link>https://cloudadventures.fskelly.com/tags/architecture/</link>
+      <pubDate>Wed, 07 Aug 2019 16:33:36 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/architecture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CSA</title>
+      <link>https://cloudadventures.fskelly.com/tags/csa/</link>
+      <pubDate>Wed, 07 Aug 2019 16:33:36 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/csa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>networking</title>
+      <link>https://cloudadventures.fskelly.com/tags/networking/</link>
+      <pubDate>Wed, 07 Aug 2019 16:33:36 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/networking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>azure monitor</title>
+      <link>https://cloudadventures.fskelly.com/tags/azure-monitor/</link>
+      <pubDate>Tue, 09 Jul 2019 16:46:43 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/azure-monitor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cloud tools</title>
+      <link>https://cloudadventures.fskelly.com/tags/cloud-tools/</link>
+      <pubDate>Tue, 09 Jul 2019 16:46:43 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/cloud-tools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nsg</title>
+      <link>https://cloudadventures.fskelly.com/tags/nsg/</link>
+      <pubDate>Wed, 20 Feb 2019 08:21:49 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/nsg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SLA</title>
+      <link>https://cloudadventures.fskelly.com/tags/sla/</link>
+      <pubDate>Thu, 27 Aug 2015 06:21:12 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/sla/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SMLets</title>
+      <link>https://cloudadventures.fskelly.com/tags/smlets/</link>
+      <pubDate>Thu, 27 Aug 2015 06:21:12 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/smlets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grey Agent</title>
+      <link>https://cloudadventures.fskelly.com/tags/grey-agent/</link>
+      <pubDate>Tue, 14 Apr 2015 05:08:44 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/grey-agent/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grey Agent Fix</title>
+      <link>https://cloudadventures.fskelly.com/tags/grey-agent-fix/</link>
+      <pubDate>Tue, 14 Apr 2015 05:08:44 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/grey-agent-fix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Runbook</title>
+      <link>https://cloudadventures.fskelly.com/tags/runbook/</link>
+      <pubDate>Tue, 14 Apr 2015 05:08:44 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/runbook/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SCO</title>
+      <link>https://cloudadventures.fskelly.com/tags/sco/</link>
+      <pubDate>Tue, 14 Apr 2015 05:08:44 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/sco/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ITSM</title>
+      <link>https://cloudadventures.fskelly.com/tags/itsm/</link>
+      <pubDate>Thu, 31 Jul 2014 12:19:03 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/itsm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cireson</title>
+      <link>https://cloudadventures.fskelly.com/tags/cireson/</link>
+      <pubDate>Tue, 17 Jun 2014 06:01:55 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/cireson/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SCSM</title>
+      <link>https://cloudadventures.fskelly.com/tags/scsm/</link>
+      <pubDate>Tue, 17 Jun 2014 06:01:55 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/scsm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Integration Project</title>
+      <link>https://cloudadventures.fskelly.com/tags/integration-project/</link>
+      <pubDate>Fri, 04 Apr 2014 08:18:16 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/integration-project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Orchestrator</title>
+      <link>https://cloudadventures.fskelly.com/tags/orchestrator/</link>
+      <pubDate>Fri, 04 Apr 2014 08:18:16 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/orchestrator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Console</title>
+      <link>https://cloudadventures.fskelly.com/tags/console/</link>
+      <pubDate>Fri, 15 Nov 2013 11:58:48 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/console/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Task</title>
+      <link>https://cloudadventures.fskelly.com/tags/task/</link>
+      <pubDate>Fri, 15 Nov 2013 11:58:48 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/task/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DPM</title>
+      <link>https://cloudadventures.fskelly.com/tags/dpm/</link>
+      <pubDate>Sun, 20 Oct 2013 12:30:19 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/dpm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SCORCH</title>
+      <link>https://cloudadventures.fskelly.com/tags/scorch/</link>
+      <pubDate>Sun, 20 Oct 2013 12:30:19 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/scorch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>script</title>
+      <link>https://cloudadventures.fskelly.com/tags/script/</link>
+      <pubDate>Sun, 20 Oct 2013 12:30:19 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/script/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>backup</title>
+      <link>https://cloudadventures.fskelly.com/tags/backup/</link>
+      <pubDate>Wed, 09 Oct 2013 19:30:29 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/backup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>config</title>
+      <link>https://cloudadventures.fskelly.com/tags/config/</link>
+      <pubDate>Wed, 09 Oct 2013 19:30:29 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/config/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>configuration</title>
+      <link>https://cloudadventures.fskelly.com/tags/configuration/</link>
+      <pubDate>Wed, 09 Oct 2013 19:30:29 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/configuration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Network</title>
+      <link>https://cloudadventures.fskelly.com/tags/network/</link>
+      <pubDate>Wed, 09 Oct 2013 19:30:29 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>load testing</title>
+      <link>https://cloudadventures.fskelly.com/tags/load-testing/</link>
+      <pubDate>Wed, 11 Sep 2013 19:30:51 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/load-testing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SCSM 2012</title>
+      <link>https://cloudadventures.fskelly.com/tags/scsm-2012/</link>
+      <pubDate>Wed, 11 Sep 2013 19:30:51 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/scsm-2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>workflow</title>
+      <link>https://cloudadventures.fskelly.com/tags/workflow/</link>
+      <pubDate>Wed, 11 Sep 2013 19:30:51 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/workflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ITAM</title>
+      <link>https://cloudadventures.fskelly.com/tags/itam/</link>
+      <pubDate>Tue, 27 Aug 2013 14:11:29 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/itam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Service Manager</title>
+      <link>https://cloudadventures.fskelly.com/tags/service-manager/</link>
+      <pubDate>Tue, 27 Aug 2013 14:11:29 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/service-manager/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>System Centre</title>
+      <link>https://cloudadventures.fskelly.com/tags/system-centre/</link>
+      <pubDate>Tue, 27 Aug 2013 14:11:29 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/system-centre/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>End User Portal</title>
+      <link>https://cloudadventures.fskelly.com/tags/end-user-portal/</link>
+      <pubDate>Mon, 05 Aug 2013 04:53:43 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/end-user-portal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EUP</title>
+      <link>https://cloudadventures.fskelly.com/tags/eup/</link>
+      <pubDate>Mon, 05 Aug 2013 04:53:43 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/eup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EUPSCO</title>
+      <link>https://cloudadventures.fskelly.com/tags/eupsco/</link>
+      <pubDate>Mon, 05 Aug 2013 04:53:43 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/eupsco/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Asset Import</title>
+      <link>https://cloudadventures.fskelly.com/tags/asset-import/</link>
+      <pubDate>Wed, 26 Jun 2013 10:23:48 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/asset-import/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Asset Management</title>
+      <link>https://cloudadventures.fskelly.com/tags/asset-management/</link>
+      <pubDate>Wed, 26 Jun 2013 10:23:48 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/asset-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CSV</title>
+      <link>https://cloudadventures.fskelly.com/tags/csv/</link>
+      <pubDate>Fri, 17 May 2013 05:10:29 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/csv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CSV Import</title>
+      <link>https://cloudadventures.fskelly.com/tags/csv-import/</link>
+      <pubDate>Fri, 17 May 2013 05:10:29 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/csv-import/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>import</title>
+      <link>https://cloudadventures.fskelly.com/tags/import/</link>
+      <pubDate>Fri, 17 May 2013 05:10:29 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/import/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Change Request</title>
+      <link>https://cloudadventures.fskelly.com/tags/change-request/</link>
+      <pubDate>Tue, 23 Apr 2013 05:27:42 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/change-request/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Import</title>
+      <link>https://cloudadventures.fskelly.com/tags/data-import/</link>
+      <pubDate>Tue, 23 Apr 2013 05:27:42 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/data-import/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cubes</title>
+      <link>https://cloudadventures.fskelly.com/tags/cubes/</link>
+      <pubDate>Wed, 27 Feb 2013 13:08:39 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/cubes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Warehouse</title>
+      <link>https://cloudadventures.fskelly.com/tags/data-warehouse/</link>
+      <pubDate>Wed, 27 Feb 2013 13:08:39 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/data-warehouse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deployment</title>
+      <link>https://cloudadventures.fskelly.com/tags/deployment/</link>
+      <pubDate>Wed, 27 Feb 2013 13:08:39 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/deployment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DWH</title>
+      <link>https://cloudadventures.fskelly.com/tags/dwh/</link>
+      <pubDate>Wed, 27 Feb 2013 13:08:39 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/dwh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Processing</title>
+      <link>https://cloudadventures.fskelly.com/tags/processing/</link>
+      <pubDate>Wed, 27 Feb 2013 13:08:39 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/processing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>work items</title>
+      <link>https://cloudadventures.fskelly.com/tags/work-items/</link>
+      <pubDate>Thu, 21 Feb 2013 09:10:11 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/work-items/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>recover</title>
+      <link>https://cloudadventures.fskelly.com/tags/recover/</link>
+      <pubDate>Mon, 04 Feb 2013 11:17:34 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/recover/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ServiceManager</title>
+      <link>https://cloudadventures.fskelly.com/tags/servicemanager/</link>
+      <pubDate>Tue, 22 Jan 2013 09:32:19 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/servicemanager/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web Console</title>
+      <link>https://cloudadventures.fskelly.com/tags/web-console/</link>
+      <pubDate>Tue, 22 Jan 2013 09:32:19 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/web-console/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Assigned to user</title>
+      <link>https://cloudadventures.fskelly.com/tags/assigned-to-user/</link>
+      <pubDate>Mon, 31 Dec 2012 06:58:52 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/assigned-to-user/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Assignment</title>
+      <link>https://cloudadventures.fskelly.com/tags/assignment/</link>
+      <pubDate>Mon, 31 Dec 2012 06:58:52 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/assignment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Affected User</title>
+      <link>https://cloudadventures.fskelly.com/tags/affected-user/</link>
+      <pubDate>Thu, 20 Dec 2012 08:22:35 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/affected-user/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AffectedUser</title>
+      <link>https://cloudadventures.fskelly.com/tags/affecteduser/</link>
+      <pubDate>Thu, 20 Dec 2012 08:22:35 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/affecteduser/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Assignedto</title>
+      <link>https://cloudadventures.fskelly.com/tags/assignedto/</link>
+      <pubDate>Thu, 20 Dec 2012 08:22:35 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/assignedto/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Inident</title>
+      <link>https://cloudadventures.fskelly.com/tags/inident/</link>
+      <pubDate>Thu, 20 Dec 2012 08:22:35 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/inident/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WorkItem</title>
+      <link>https://cloudadventures.fskelly.com/tags/workitem/</link>
+      <pubDate>Thu, 20 Dec 2012 08:22:35 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/workitem/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Operations Guide</title>
+      <link>https://cloudadventures.fskelly.com/tags/operations-guide/</link>
+      <pubDate>Fri, 14 Dec 2012 13:38:54 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/operations-guide/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Teach</title>
+      <link>https://cloudadventures.fskelly.com/tags/teach/</link>
+      <pubDate>Fri, 14 Dec 2012 13:38:54 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/teach/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tools</title>
+      <link>https://cloudadventures.fskelly.com/tags/tools/</link>
+      <pubDate>Fri, 14 Dec 2012 13:38:54 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/tools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exchange</title>
+      <link>https://cloudadventures.fskelly.com/tags/exchange/</link>
+      <pubDate>Thu, 06 Dec 2012 11:41:28 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/exchange/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IIS</title>
+      <link>https://cloudadventures.fskelly.com/tags/iis/</link>
+      <pubDate>Thu, 06 Dec 2012 11:41:28 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/iis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Logs</title>
+      <link>https://cloudadventures.fskelly.com/tags/logs/</link>
+      <pubDate>Thu, 06 Dec 2012 11:41:28 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/logs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Orchestration</title>
+      <link>https://cloudadventures.fskelly.com/tags/orchestration/</link>
+      <pubDate>Thu, 06 Dec 2012 11:41:28 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/orchestration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>auto close</title>
+      <link>https://cloudadventures.fskelly.com/tags/auto-close/</link>
+      <pubDate>Thu, 01 Nov 2012 05:41:13 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/auto-close/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>completed</title>
+      <link>https://cloudadventures.fskelly.com/tags/completed/</link>
+      <pubDate>Thu, 01 Nov 2012 05:41:13 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/completed/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>resolved</title>
+      <link>https://cloudadventures.fskelly.com/tags/resolved/</link>
+      <pubDate>Thu, 01 Nov 2012 05:41:13 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/resolved/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>connect</title>
+      <link>https://cloudadventures.fskelly.com/tags/connect/</link>
+      <pubDate>Mon, 29 Oct 2012 09:37:04 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/connect/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>failed</title>
+      <link>https://cloudadventures.fskelly.com/tags/failed/</link>
+      <pubDate>Mon, 29 Oct 2012 09:37:04 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/failed/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Native client</title>
+      <link>https://cloudadventures.fskelly.com/tags/native-client/</link>
+      <pubDate>Mon, 29 Oct 2012 09:37:04 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/native-client/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SCCM</title>
+      <link>https://cloudadventures.fskelly.com/tags/sccm/</link>
+      <pubDate>Mon, 29 Oct 2012 09:37:04 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/sccm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>site</title>
+      <link>https://cloudadventures.fskelly.com/tags/site/</link>
+      <pubDate>Mon, 29 Oct 2012 09:37:04 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/site/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SSRS</title>
+      <link>https://cloudadventures.fskelly.com/tags/ssrs/</link>
+      <pubDate>Mon, 29 Oct 2012 09:37:04 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/ssrs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>e-mail</title>
+      <link>https://cloudadventures.fskelly.com/tags/e-mail/</link>
+      <pubDate>Wed, 10 Oct 2012 07:34:02 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/e-mail/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>notification</title>
+      <link>https://cloudadventures.fskelly.com/tags/notification/</link>
+      <pubDate>Wed, 10 Oct 2012 07:34:02 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/notification/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reminder</title>
+      <link>https://cloudadventures.fskelly.com/tags/reminder/</link>
+      <pubDate>Wed, 10 Oct 2012 07:34:02 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/reminder/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exchange connector</title>
+      <link>https://cloudadventures.fskelly.com/tags/exchange-connector/</link>
+      <pubDate>Wed, 19 Sep 2012 07:13:10 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/exchange-connector/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SMTP</title>
+      <link>https://cloudadventures.fskelly.com/tags/smtp/</link>
+      <pubDate>Wed, 19 Sep 2012 07:13:10 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/smtp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2012</title>
+      <link>https://cloudadventures.fskelly.com/tags/2012/</link>
+      <pubDate>Thu, 06 Sep 2012 15:12:58 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hyper-v</title>
+      <link>https://cloudadventures.fskelly.com/tags/hyper-v/</link>
+      <pubDate>Thu, 06 Sep 2012 15:12:58 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/hyper-v/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hyper-V3</title>
+      <link>https://cloudadventures.fskelly.com/tags/hyper-v3/</link>
+      <pubDate>Thu, 06 Sep 2012 15:12:58 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/hyper-v3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Replica</title>
+      <link>https://cloudadventures.fskelly.com/tags/replica/</link>
+      <pubDate>Thu, 06 Sep 2012 15:12:58 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/replica/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VHDX</title>
+      <link>https://cloudadventures.fskelly.com/tags/vhdx/</link>
+      <pubDate>Thu, 06 Sep 2012 15:12:58 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/vhdx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows Server 2012</title>
+      <link>https://cloudadventures.fskelly.com/tags/windows-server-2012/</link>
+      <pubDate>Thu, 06 Sep 2012 15:12:58 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/windows-server-2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Failover Cluster</title>
+      <link>https://cloudadventures.fskelly.com/tags/failover-cluster/</link>
+      <pubDate>Tue, 28 Aug 2012 13:35:56 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/failover-cluster/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NIC</title>
+      <link>https://cloudadventures.fskelly.com/tags/nic/</link>
+      <pubDate>Tue, 28 Aug 2012 13:35:56 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/nic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nics</title>
+      <link>https://cloudadventures.fskelly.com/tags/nics/</link>
+      <pubDate>Tue, 28 Aug 2012 13:35:56 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/nics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Virtual Switches</title>
+      <link>https://cloudadventures.fskelly.com/tags/virtual-switches/</link>
+      <pubDate>Tue, 28 Aug 2012 13:35:56 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/virtual-switches/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Failing</title>
+      <link>https://cloudadventures.fskelly.com/tags/failing/</link>
+      <pubDate>Mon, 13 Aug 2012 10:06:11 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/failing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Management Pack</title>
+      <link>https://cloudadventures.fskelly.com/tags/management-pack/</link>
+      <pubDate>Mon, 09 Jul 2012 05:43:13 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/management-pack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>XML</title>
+      <link>https://cloudadventures.fskelly.com/tags/xml/</link>
+      <pubDate>Mon, 09 Jul 2012 05:43:13 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/xml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>database</title>
+      <link>https://cloudadventures.fskelly.com/tags/database/</link>
+      <pubDate>Tue, 26 Jun 2012 07:16:36 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/database/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>performance</title>
+      <link>https://cloudadventures.fskelly.com/tags/performance/</link>
+      <pubDate>Tue, 26 Jun 2012 07:16:36 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/performance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Troubleshooting</title>
+      <link>https://cloudadventures.fskelly.com/tags/troubleshooting/</link>
+      <pubDate>Tue, 26 Jun 2012 07:16:36 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/troubleshooting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Installation</title>
+      <link>https://cloudadventures.fskelly.com/tags/installation/</link>
+      <pubDate>Wed, 13 Jun 2012 12:44:38 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/installation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Service</title>
+      <link>https://cloudadventures.fskelly.com/tags/service/</link>
+      <pubDate>Wed, 13 Jun 2012 12:44:38 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/service/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cluster Service</title>
+      <link>https://cloudadventures.fskelly.com/tags/cluster-service/</link>
+      <pubDate>Thu, 07 Jun 2012 12:17:25 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/cluster-service/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>node</title>
+      <link>https://cloudadventures.fskelly.com/tags/node/</link>
+      <pubDate>Thu, 07 Jun 2012 12:17:25 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/node/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>owner</title>
+      <link>https://cloudadventures.fskelly.com/tags/owner/</link>
+      <pubDate>Thu, 07 Jun 2012 12:17:25 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/owner/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Collation</title>
+      <link>https://cloudadventures.fskelly.com/tags/collation/</link>
+      <pubDate>Mon, 07 May 2012 11:44:25 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/collation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OperationsManagerDB</title>
+      <link>https://cloudadventures.fskelly.com/tags/operationsmanagerdb/</link>
+      <pubDate>Mon, 07 May 2012 11:44:25 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/operationsmanagerdb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OperationsManagerDW</title>
+      <link>https://cloudadventures.fskelly.com/tags/operationsmanagerdw/</link>
+      <pubDate>Mon, 07 May 2012 11:44:25 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/operationsmanagerdw/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OpsMan</title>
+      <link>https://cloudadventures.fskelly.com/tags/opsman/</link>
+      <pubDate>Mon, 07 May 2012 11:44:25 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/opsman/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reporting Services</title>
+      <link>https://cloudadventures.fskelly.com/tags/reporting-services/</link>
+      <pubDate>Mon, 07 May 2012 11:44:25 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/reporting-services/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SQL</title>
+      <link>https://cloudadventures.fskelly.com/tags/sql/</link>
+      <pubDate>Mon, 07 May 2012 11:44:25 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/sql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Connectors</title>
+      <link>https://cloudadventures.fskelly.com/tags/connectors/</link>
+      <pubDate>Mon, 30 Apr 2012 07:09:49 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/connectors/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Upgrade</title>
+      <link>https://cloudadventures.fskelly.com/tags/upgrade/</link>
+      <pubDate>Mon, 30 Apr 2012 07:09:49 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/upgrade/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cluster</title>
+      <link>https://cloudadventures.fskelly.com/tags/cluster/</link>
+      <pubDate>Fri, 30 Mar 2012 07:03:07 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/cluster/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Storage</title>
+      <link>https://cloudadventures.fskelly.com/tags/storage/</link>
+      <pubDate>Fri, 30 Mar 2012 07:03:07 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/storage/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>profile</title>
+      <link>https://cloudadventures.fskelly.com/tags/profile/</link>
+      <pubDate>Thu, 29 Mar 2012 07:20:47 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/profile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>transcript</title>
+      <link>https://cloudadventures.fskelly.com/tags/transcript/</link>
+      <pubDate>Thu, 29 Mar 2012 07:20:47 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/transcript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Active Directory</title>
+      <link>https://cloudadventures.fskelly.com/tags/active-directory/</link>
+      <pubDate>Tue, 24 Jan 2012 11:04:36 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/active-directory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DC</title>
+      <link>https://cloudadventures.fskelly.com/tags/dc/</link>
+      <pubDate>Tue, 24 Jan 2012 11:04:36 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/dc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Domain Controller</title>
+      <link>https://cloudadventures.fskelly.com/tags/domain-controller/</link>
+      <pubDate>Tue, 24 Jan 2012 11:04:36 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/domain-controller/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cache</title>
+      <link>https://cloudadventures.fskelly.com/tags/cache/</link>
+      <pubDate>Tue, 17 Jan 2012 07:16:27 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/cache/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Operatona Manager</title>
+      <link>https://cloudadventures.fskelly.com/tags/operatona-manager/</link>
+      <pubDate>Tue, 17 Jan 2012 07:16:27 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/operatona-manager/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SSP</title>
+      <link>https://cloudadventures.fskelly.com/tags/ssp/</link>
+      <pubDate>Wed, 30 Nov 2011 16:02:55 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/ssp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GPO</title>
+      <link>https://cloudadventures.fskelly.com/tags/gpo/</link>
+      <pubDate>Thu, 01 Sep 2011 07:16:09 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/gpo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Group Policy</title>
+      <link>https://cloudadventures.fskelly.com/tags/group-policy/</link>
+      <pubDate>Thu, 01 Sep 2011 07:16:09 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/group-policy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MCC</title>
+      <link>https://cloudadventures.fskelly.com/tags/mcc/</link>
+      <pubDate>Thu, 01 Sep 2011 07:16:09 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/mcc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Receive Connector</title>
+      <link>https://cloudadventures.fskelly.com/tags/receive-connector/</link>
+      <pubDate>Thu, 01 Sep 2011 07:16:09 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/receive-connector/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Virtual Machine Manager</title>
+      <link>https://cloudadventures.fskelly.com/tags/virtual-machine-manager/</link>
+      <pubDate>Thu, 01 Sep 2011 07:16:09 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/virtual-machine-manager/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VMM</title>
+      <link>https://cloudadventures.fskelly.com/tags/vmm/</link>
+      <pubDate>Thu, 01 Sep 2011 07:16:09 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/vmm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>InfoPath</title>
+      <link>https://cloudadventures.fskelly.com/tags/infopath/</link>
+      <pubDate>Mon, 01 Aug 2011 13:33:20 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/infopath/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microsoft</title>
+      <link>https://cloudadventures.fskelly.com/tags/microsoft/</link>
+      <pubDate>Mon, 01 Aug 2011 13:33:20 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/microsoft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sharepoint</title>
+      <link>https://cloudadventures.fskelly.com/tags/sharepoint/</link>
+      <pubDate>Mon, 01 Aug 2011 13:33:20 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/sharepoint/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Submit</title>
+      <link>https://cloudadventures.fskelly.com/tags/submit/</link>
+      <pubDate>Mon, 01 Aug 2011 13:33:20 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/submit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VBA</title>
+      <link>https://cloudadventures.fskelly.com/tags/vba/</link>
+      <pubDate>Mon, 01 Aug 2011 13:33:20 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/vba/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Word</title>
+      <link>https://cloudadventures.fskelly.com/tags/word/</link>
+      <pubDate>Mon, 01 Aug 2011 13:33:20 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/word/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>email</title>
+      <link>https://cloudadventures.fskelly.com/tags/email/</link>
+      <pubDate>Mon, 11 Jul 2011 12:25:28 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/email/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>get-hotfix</title>
+      <link>https://cloudadventures.fskelly.com/tags/get-hotfix/</link>
+      <pubDate>Mon, 11 Jul 2011 12:25:28 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/get-hotfix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Create</title>
+      <link>https://cloudadventures.fskelly.com/tags/create/</link>
+      <pubDate>Thu, 07 Jul 2011 06:15:39 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/create/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DFS</title>
+      <link>https://cloudadventures.fskelly.com/tags/dfs/</link>
+      <pubDate>Thu, 07 Jul 2011 06:15:39 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/dfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Distributed File System</title>
+      <link>https://cloudadventures.fskelly.com/tags/distributed-file-system/</link>
+      <pubDate>Thu, 07 Jul 2011 06:15:39 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/distributed-file-system/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Folder Structure</title>
+      <link>https://cloudadventures.fskelly.com/tags/folder-structure/</link>
+      <pubDate>Thu, 07 Jul 2011 06:15:39 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/folder-structure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Replicate</title>
+      <link>https://cloudadventures.fskelly.com/tags/replicate/</link>
+      <pubDate>Thu, 07 Jul 2011 06:15:39 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/replicate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Prtoection Manager</title>
+      <link>https://cloudadventures.fskelly.com/tags/data-prtoection-manager/</link>
+      <pubDate>Wed, 15 Jun 2011 15:13:42 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/data-prtoection-manager/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PSSession</title>
+      <link>https://cloudadventures.fskelly.com/tags/pssession/</link>
+      <pubDate>Wed, 15 Jun 2011 15:13:42 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/pssession/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>eseutil</title>
+      <link>https://cloudadventures.fskelly.com/tags/eseutil/</link>
+      <pubDate>Tue, 07 Jun 2011 10:47:16 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/eseutil/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HUB Transport</title>
+      <link>https://cloudadventures.fskelly.com/tags/hub-transport/</link>
+      <pubDate>Tue, 07 Jun 2011 10:47:16 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/hub-transport/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mail</title>
+      <link>https://cloudadventures.fskelly.com/tags/mail/</link>
+      <pubDate>Tue, 07 Jun 2011 10:47:16 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/mail/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mailflow</title>
+      <link>https://cloudadventures.fskelly.com/tags/mailflow/</link>
+      <pubDate>Tue, 07 Jun 2011 10:47:16 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/mailflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Queue</title>
+      <link>https://cloudadventures.fskelly.com/tags/queue/</link>
+      <pubDate>Tue, 07 Jun 2011 10:47:16 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/queue/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Protection Group</title>
+      <link>https://cloudadventures.fskelly.com/tags/protection-group/</link>
+      <pubDate>Tue, 24 May 2011 14:05:12 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/protection-group/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Elevation</title>
+      <link>https://cloudadventures.fskelly.com/tags/elevation/</link>
+      <pubDate>Fri, 20 May 2011 11:07:09 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/elevation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Module</title>
+      <link>https://cloudadventures.fskelly.com/tags/module/</link>
+      <pubDate>Fri, 20 May 2011 11:07:09 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/module/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PSSnapin</title>
+      <link>https://cloudadventures.fskelly.com/tags/pssnapin/</link>
+      <pubDate>Fri, 20 May 2011 11:07:09 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/pssnapin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cibecs</title>
+      <link>https://cloudadventures.fskelly.com/tags/cibecs/</link>
+      <pubDate>Thu, 04 Nov 2010 14:57:21 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/cibecs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Encryption</title>
+      <link>https://cloudadventures.fskelly.com/tags/encryption/</link>
+      <pubDate>Thu, 04 Nov 2010 14:57:21 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/encryption/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mimecast</title>
+      <link>https://cloudadventures.fskelly.com/tags/mimecast/</link>
+      <pubDate>Thu, 04 Nov 2010 14:57:21 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/mimecast/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Weather</title>
+      <link>https://cloudadventures.fskelly.com/tags/weather/</link>
+      <pubDate>Thu, 04 Nov 2010 14:57:21 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/weather/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DHCP helper</title>
+      <link>https://cloudadventures.fskelly.com/tags/dhcp-helper/</link>
+      <pubDate>Wed, 27 Oct 2010 12:27:29 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/dhcp-helper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iSCSI</title>
+      <link>https://cloudadventures.fskelly.com/tags/iscsi/</link>
+      <pubDate>Wed, 27 Oct 2010 12:27:29 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/iscsi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>technology</title>
+      <link>https://cloudadventures.fskelly.com/tags/technology/</link>
+      <pubDate>Wed, 27 Oct 2010 12:27:29 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/technology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>index</title>
+      <link>https://cloudadventures.fskelly.com/tags/index/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/tags/index/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Runbook on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/runbook/</link>
+    <description>Recent content in Runbook on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 14 Apr 2015 05:08:44 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/runbook/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Grey Agent Fixing with Orchestrator</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2015-04-14-grey-agent-fixing-with-orchestrator/</link>
+      <pubDate>Tue, 14 Apr 2015 05:08:44 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2015-04-14-grey-agent-fixing-with-orchestrator/</guid>
+      <description>So, here is the scenario, we managed a lot of customer’s System Centre Operations Manager (SCOM) environments. One of the most common issues we run into, it is the “Grey Agent” issue, where an agent is no longer reporting into SCOM. There might be a few reasons for this, however one of the most common and effective ways to fix this to clear the agent cache. By this, we simply mean connecting to the agent, stopping the “SCOM” service, deleting the content of the “Health Service State” folder and then restarting the “SCOM” service.</description>
+    </item>
+    
+    <item>
+      <title>Deploy a VM – SCSM, SCVMM, SCORCH – all working in harmony</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2014-07-31-deploy-a-vm-scsm-scvmm-scorch-all-working-in-harmony/</link>
+      <pubDate>Thu, 31 Jul 2014 12:19:03 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2014-07-31-deploy-a-vm-scsm-scvmm-scorch-all-working-in-harmony/</guid>
+      <description>So, it has been a while.
+So, the requirement for this project was as follow.
+ Use Service Manager. Provide a portal for logging a VM Creation request. Build the computername based on a predetermined pattern. Determine first available name. Perform a capacity check. Deploy the set number of VMs.  I am going to skip over the first 2 Points, there are numerous topics covering this. So, onto point 3, I created a Service Request Extension, if anyone would like some info on this, also plenty of articles, please let me know and I can do a blog post on the Extension, or I can make the extension available for you to seal yourselves.</description>
+    </item>
+    
+    <item>
+      <title>Recover System Center Orchestrator 2012 with runbooks export</title>
+      <link>https://cloudadventures.fskelly.com/2013/02/04/recover-system-center-orchestrator-2012-with-runbooks-export/</link>
+      <pubDate>Mon, 04 Feb 2013 11:17:34 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/02/04/recover-system-center-orchestrator-2012-with-runbooks-export/</guid>
+      <description>Just recently in a test environment, a script or some such other gremlin caused some absolute havoc on my system. Before you ask, I had NO Backup in place of this system. This system was System Center Orchestrator. However, once a week, I do a “sort-of” backup. By this, I mean I export all my Runbooks and place a copy on my local machine and a file server and the SCORCH (System Center ORCHestrator) server.</description>
+    </item>
+    
+    <item>
+      <title>Installing System Centre Orchestrator</title>
+      <link>https://cloudadventures.fskelly.com/2012/06/13/installing-system-centre-orchestrator/</link>
+      <pubDate>Wed, 13 Jun 2012 12:44:38 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/06/13/installing-system-centre-orchestrator/</guid>
+      <description>So, just recently I decided to install System Centre Orchestrator. It appears easy enough if you follow the Technet articles. This addresses the need for Service Accounts and the permissions needed by these accounts and there functions. It also helps you to size and decide the Orchestrator installation type that would best suit your environment. It helps you to decide the best way to break the components if you want to.</description>
+    </item>
+    
+  </channel>
+</rss>

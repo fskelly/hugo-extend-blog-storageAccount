@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+     Service Manager and all the tricks I have learnt | 
+    Fletcher&#39;s Tech Blog
+  
+</title><meta name="description" content="A day in the life of a Cloud Engineer."><meta name="author" content="Fletcher Kelly">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="/favicon.ico">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+
+
+<link rel="canonical" href="https://cloudadventures.fskelly.com/2011/03/04/service-manager-and-all-the-tricks-i-have-learnt/"><meta property="og:title" content="Service Manager and all the tricks I have learnt" />
+<meta property="og:description" content="It has been some time since I last blogged, been a really nutty time. however i will make the time to blog and hopefully who ever reads this, it will be of assistance to them.
+The lessons I have learned thus far.
+  Label all your workflows properly, this cost me a case with MS Support only to discover that all workflows and NOW notifications are grouped together. I am assuming that this is to aid the troubleshooting process should something go wrong." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cloudadventures.fskelly.com/2011/03/04/service-manager-and-all-the-tricks-i-have-learnt/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2011-03-04T09:27:48+00:00" />
+<meta property="article:modified_time" content="2011-03-04T09:27:48+00:00" />
+
+<meta itemprop="name" content="Service Manager and all the tricks I have learnt">
+<meta itemprop="description" content="It has been some time since I last blogged, been a really nutty time. however i will make the time to blog and hopefully who ever reads this, it will be of assistance to them.
+The lessons I have learned thus far.
+  Label all your workflows properly, this cost me a case with MS Support only to discover that all workflows and NOW notifications are grouped together. I am assuming that this is to aid the troubleshooting process should something go wrong."><meta itemprop="datePublished" content="2011-03-04T09:27:48+00:00" />
+<meta itemprop="dateModified" content="2011-03-04T09:27:48+00:00" />
+<meta itemprop="wordCount" content="288">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Service Manager and all the tricks I have learnt"/>
+<meta name="twitter:description" content="It has been some time since I last blogged, been a really nutty time. however i will make the time to blog and hopefully who ever reads this, it will be of assistance to them.
+The lessons I have learned thus far.
+  Label all your workflows properly, this cost me a case with MS Support only to discover that all workflows and NOW notifications are grouped together. I am assuming that this is to aid the troubleshooting process should something go wrong."/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://cloudadventures.fskelly.com">Fletcher&#39;s Tech Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">March 4, 2011</p>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>288 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>2 mins read</span>
+                        </div>
+
+                        <h1>Service Manager and all the tricks I have learnt</h1>
+
+                        
+                    </div>
+                </div><div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="content">
+                            <p>It has been some time since I last blogged, been a really nutty time. however i will make the time to blog and hopefully who ever reads this, it will be of assistance to them.</p>
+<p>The lessons I have learned thus far.</p>
+<ol>
+<li>
+<p>Label all your workflows properly, this cost me a case with MS Support only to discover that all workflows and NOW notifications are grouped together. I am assuming that this is to aid the troubleshooting process should something go wrong.</p>
+</li>
+<li>
+<p>A lot of tweaking and customization is actually needed, there are some great tools available for this. There is the <!-- raw HTML omitted --> which is a great help. There is also <a href="http://smlets.codeplex.com/">SMLets</a>, which is a collection of Powershell Cmdlets designed for Service Manager. I would not be able to function correctly without this collection of tools, you can do many things with this tool.</p>
+</li>
+</ol>
+<blockquote>
+<p>a.Force-Activate a case once it has been closed, should a user come back and claim that the case is NOT Resolved, click <a href="http://blogs.litware.se/?p=646">here</a> for the link.</p>
+<p>b, Automatically close “Resolved” cases after a certain period of inactivity. Click <a href="http://blogs.litware.se/?p=632">here</a> for more information. I also took it a step further and used a great application called <a href="http://powerwf.com/">PowerWF</a> and used this <a href="http://www.youtube.com/watch?v=G-K28OBiRfI">link</a> to create the MP, it did need some tweaking though.</p>
+<p>c. Implement the changes slowly, as this product will be a lot for the END Users to come to grips with.</p>
+</blockquote>
+<ol start="3">
+<li>The original e-mail setup with SCSM (NO Service Pack) will only work with e-mail enabled users with your Exchange Organization. I cannot as yet comment on the <a href="http://www.microsoft.com/downloads/en/details.aspx?FamilyID=0b48d1f1-434a-4ee6-8017-fc13f4c16785">System Center Service Manager – Exchange Connector</a>. I will let you know soon.</li>
+</ol>
+<p> </p>
+<p>Keeping it short and sweet for now.</p>
+<p> </p>
+<p><em><strong><!-- raw HTML omitted -->“EMBRACE YOUR INNER GEEK AND<!-- raw HTML omitted --></strong></em></p>
+<p><em><strong><!-- raw HTML omitted -->ROCK ON”<!-- raw HTML omitted --></strong></em></p>
+
+                        </div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2011%2f03%2f04%2fservice-manager-and-all-the-tricks-i-have-learnt%2f&text=Service%20Manager%20and%20all%20the%20tricks%20I%20have%20learnt">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2011%2f03%2f04%2fservice-manager-and-all-the-tricks-i-have-learnt%2f&title=Service%20Manager%20and%20all%20the%20tricks%20I%20have%20learnt">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fcloudadventures.fskelly.com%2f2011%2f03%2f04%2fservice-manager-and-all-the-tricks-i-have-learnt%2f&t=Service%20Manager%20and%20all%20the%20tricks%20I%20have%20learnt">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2011%2f03%2f04%2fservice-manager-and-all-the-tricks-i-have-learnt%2f&title=Service%20Manager%20and%20all%20the%20tricks%20I%20have%20learnt">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div><div class="row justify-content-center my-3">
+                    <div class="col-lg-8">
+                        <div id="commento"></div>
+                        <script src="https://commento.io"></script>
+                    </div>
+                </div></article>
+        </div>
+    </div>
+
+    
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://cloudadventures.fskelly.com/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                            <a href="https://github.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://linkedin.com/in/fletcherkelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://twitter.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright © 2019–2021, Fletcher Kelly; all rights reserved.
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="/dist/main.d608eadfe5ac0688902e.min.js"></script>
+        
+    
+
+
+
+<script>
+    window.Prism = window.Prism || {};
+    window.Prism.manual = true;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-XXXX', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+</body>
+</html>

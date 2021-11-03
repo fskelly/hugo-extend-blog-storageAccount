@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exchange connector on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/exchange-connector/</link>
+    <description>Recent content in Exchange connector on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 19 Sep 2012 07:13:10 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/exchange-connector/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exchange Connector – SCSM 2012</title>
+      <link>https://cloudadventures.fskelly.com/2012/09/19/exchange-connector-scsm-2012/</link>
+      <pubDate>Wed, 19 Sep 2012 07:13:10 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/09/19/exchange-connector-scsm-2012/</guid>
+      <description>So, I decided to extend the functionality of Service Manager even more with the Exchange Connector. If you follow the guide it is nice and easy to install. The configuration is quite simply as well, here is a link which gives the configuration in some detail to make you life a little. Once the connector is installed is when I found a little “gotcha” if you will. With the connector, it updates any incident with the same template, which can cause issues and potentially change your Priority and Urgency which can lead to some skewed reporting.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Operations Guide on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/operations-guide/</link>
+    <description>Recent content in Operations Guide on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 14 Dec 2012 13:38:54 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/operations-guide/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How do I “learn” System Center Service Manager 2012?</title>
+      <link>https://cloudadventures.fskelly.com/2012/12/14/how-do-i-learn-system-center-service-manager-2012/</link>
+      <pubDate>Fri, 14 Dec 2012 13:38:54 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/12/14/how-do-i-learn-system-center-service-manager-2012/</guid>
+      <description>So, I recently made a very simple comment on Facebook. This lead to some interesting comment and questions being raised about Service Manager about “Training for Service Desk” staff” in particular. At this moment in time, there is no “Service Desk Staff” training that I am aware of. So I decided to try and address this as best I could.I have decided to consolidate some of the more important components and concepts of Service Manager and place them in one spot.</description>
+    </item>
+    
+  </channel>
+</rss>

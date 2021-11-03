@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Storage on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/storage/</link>
+    <description>Recent content in Storage on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 30 Mar 2012 07:03:07 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/storage/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adding a CSV volume to a Cluster</title>
+      <link>https://cloudadventures.fskelly.com/2012/03/30/adding-a-csv-volume-to-a-cluster/</link>
+      <pubDate>Fri, 30 Mar 2012 07:03:07 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/03/30/adding-a-csv-volume-to-a-cluster/</guid>
+      <description>So, now you are at the point where you need to present a CSV Volume to your cluster.
+I have created this guide to make your life a little easier. Doing this is actually quite simple, but there are a few gotchas.
+Gotcha 1 : If you create / carve the LUN and forget to allow multiple access, only the first IQN / WWN will be able to access it.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>azure powershell on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/azure-powershell/</link>
+    <description>Recent content in azure powershell on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 18 Jan 2021 07:06:03 +0200</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/azure-powershell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Expiring Keys and Secrets within Azure Key Vault</title>
+      <link>https://cloudadventures.fskelly.com/post/2021/expiring-keys-azure-key-vault/</link>
+      <pubDate>Mon, 18 Jan 2021 07:06:03 +0200</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/2021/expiring-keys-azure-key-vault/</guid>
+      <description>I was working with a customer the other day and a fairly simple ask came up, I however could not find an immediate answer within the portal.
+How do I check for expiring keys within the Azure KeyVault?
+Now being a PowerShell person, I never gave this much thought as for most tasks or actions I perform on the Azure Platform is done through PowerShell, AP, or CLI. So easy enough, however, not everyone knows how to do this in PowerShell.</description>
+    </item>
+    
+  </channel>
+</rss>

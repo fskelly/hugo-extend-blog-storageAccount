@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cireson on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/cireson/</link>
+    <description>Recent content in Cireson on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 17 Jun 2014 06:01:55 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/cireson/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cireson Outlook Console</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2014-06-17-cireson-outloook-console/</link>
+      <pubDate>Tue, 17 Jun 2014 06:01:55 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2014-06-17-cireson-outloook-console/</guid>
+      <description>So, Cireson hase been investing into System Centre Service Manager (SCSM) very heavily and the end results are WELL worth it.
+The Cireson Outlook Console has been out a little while, however it just keeps getting better and better. The Console is super easy to install. The Install instructions are provided by Cireson. There are a few steps to follow as well as the installation of an Outlook Plugin.
+Yes, as you may have guessed from the name, this allows you to connect to Service Manager with almost a full experience directly from OUTLOOK, how great is that.</description>
+    </item>
+    
+    <item>
+      <title>New features–Cireson IT Asset Management</title>
+      <link>https://cloudadventures.fskelly.com/2013/08/27/new-featurescireson-it-asset-management/</link>
+      <pubDate>Tue, 27 Aug 2013 14:11:29 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/08/27/new-featurescireson-it-asset-management/</guid>
+      <description>I have previously done a post on CIreson IT Asset Management. However the people at Cireson have been very busy with new features to be added to their ITAM (IT Asset Management) tool.
+Cireson Asset Management: New Feature Highlights
+After recently releasing the newest version of the Asset Management app for Microsoft System Centre (Features Press Release), this post goes a little more in depth to explain some of the amazing features included in this latest release.</description>
+    </item>
+    
+    <item>
+      <title>Cireson IT Asset Management with Service Manager</title>
+      <link>https://cloudadventures.fskelly.com/2013/06/26/cireson-it-asset-management-with-service-manager/</link>
+      <pubDate>Wed, 26 Jun 2013 10:23:48 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/06/26/cireson-it-asset-management-with-service-manager/</guid>
+      <description>Cireson have recently released an new enhancement to the Service Manager console called the Cireson SCSM Asset Management App. This particular application is very easy to install. To install the application into the console, it is simply a case of importing a few management packs and some XML files and DLL files. This is very easy to do and the installation instructions provided by Cireson are very simple and easy to follow as with all Cireson add-ins I have worked with in the past.</description>
+    </item>
+    
+    <item>
+      <title>Import CI Items with Cireson Asset Import Tool</title>
+      <link>https://cloudadventures.fskelly.com/2013/05/17/import-ci-items-with-cireson-asset-import-tool/</link>
+      <pubDate>Fri, 17 May 2013 05:10:29 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/05/17/import-ci-items-with-cireson-asset-import-tool/</guid>
+      <description>With my previous post about importing data, I showed you how to use the built-in CSV connector to do this task and how to create the required Projection Classes. However if you are looking for a quicker more automated to achieve this, enter Cireson and their Asset Import Tool. It takes all the guess work out of the import process and handles the Projection Classes for you.
+The installation of the application is easy and requires the copying a DLL file to the Service Manager Installation folder and the import of a Management Pack ( a management Pack Bundle in this case).</description>
+    </item>
+    
+    <item>
+      <title>Cireson Analyst Web Console</title>
+      <link>https://cloudadventures.fskelly.com/2013/01/22/cireson-analyst-web-console/</link>
+      <pubDate>Tue, 22 Jan 2013 09:32:19 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2013/01/22/cireson-analyst-web-console/</guid>
+      <description>I have always heard complaints from some of the analysts in my company about having to install the Service Manager Console on their machines and then complaining about having to learn a new application.
+So, I went searching around and found a great application called Cireson SCSM Web Console, this allows analysts to update Incidents via a newly designed web portal for Analysts. Since the console is designed in HTML5, the web console is browser agnostic.</description>
+    </item>
+    
+  </channel>
+</rss>

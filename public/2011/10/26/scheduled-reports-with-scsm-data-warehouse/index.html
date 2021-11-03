@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+     Scheduled reports with SCSM Data Warehouse | 
+    Fletcher&#39;s Tech Blog
+  
+</title><meta name="description" content="A day in the life of a Cloud Engineer."><meta name="author" content="Fletcher Kelly">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="/favicon.ico">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+
+
+<link rel="canonical" href="https://cloudadventures.fskelly.com/2011/10/26/scheduled-reports-with-scsm-data-warehouse/"><meta property="og:title" content="Scheduled reports with SCSM Data Warehouse" />
+<meta property="og:description" content="Hi All,
+I know it has been a little while.
+The reports built into Service Manager are great, however when you try to get a bit creative and automate some of the reports, you are going to run into some issues. So to work around theses issues, I did the following.
+Create a custom report from SQL Reporting Services and modified for my needs, I was focusing more on “Incident Analyst” and I was looking for a breakdown of the number of Incidents per Analysts in a week period." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cloudadventures.fskelly.com/2011/10/26/scheduled-reports-with-scsm-data-warehouse/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2011-10-26T10:26:01+00:00" />
+<meta property="article:modified_time" content="2011-10-26T10:26:01+00:00" />
+
+<meta itemprop="name" content="Scheduled reports with SCSM Data Warehouse">
+<meta itemprop="description" content="Hi All,
+I know it has been a little while.
+The reports built into Service Manager are great, however when you try to get a bit creative and automate some of the reports, you are going to run into some issues. So to work around theses issues, I did the following.
+Create a custom report from SQL Reporting Services and modified for my needs, I was focusing more on “Incident Analyst” and I was looking for a breakdown of the number of Incidents per Analysts in a week period."><meta itemprop="datePublished" content="2011-10-26T10:26:01+00:00" />
+<meta itemprop="dateModified" content="2011-10-26T10:26:01+00:00" />
+<meta itemprop="wordCount" content="750">
+<meta itemprop="keywords" content="Reporting Services,SCSM,Service Manager,System Centre," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Scheduled reports with SCSM Data Warehouse"/>
+<meta name="twitter:description" content="Hi All,
+I know it has been a little while.
+The reports built into Service Manager are great, however when you try to get a bit creative and automate some of the reports, you are going to run into some issues. So to work around theses issues, I did the following.
+Create a custom report from SQL Reporting Services and modified for my needs, I was focusing more on “Incident Analyst” and I was looking for a breakdown of the number of Incidents per Analysts in a week period."/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://cloudadventures.fskelly.com">Fletcher&#39;s Tech Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">October 26, 2011</p>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>750 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>4 mins read</span>
+                        </div>
+
+                        <h1>Scheduled reports with SCSM Data Warehouse</h1>
+
+                        
+                    </div>
+                </div><div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="content">
+                            <p> </p>
+<p>Hi All,</p>
+<p>I know it has been a little while.</p>
+<p>The reports built into Service Manager are great, however when you try to get a bit creative and automate some of the reports, you are going to run into some issues. So to work around theses issues, I did the following.</p>
+<p>Create a custom report from SQL Reporting Services and modified for my needs, I was focusing more on “Incident Analyst” and I was looking for a breakdown of the number of Incidents per Analysts in a week period. This becomes tricky as the Analyst wanted this to be automated for reporting purposes.</p>
+<ol>
+<li>
+<p>If you using SQL 2008 R2, Report Builder 3 will be available to you from the SSRS webpage.</p>
+</li>
+<li>
+<p>Select File, Open, drill down to System Center\ServiceManager\ServiceManager.Console.Reporting.IncidentManagement and select</p>
+</li>
+</ol>
+<blockquote>
+<p>ServiceManager.Report.IncidentManagement.IncidentAnalystReport</p>
+<p>This time it opens OK – let’s try and do a “Save As”, just to see what we can do with a report.</p>
+<p>The first error is complaining about a mismatch between allowed values and the default for the TimeZone parameter:</p>
+<p><a href="http://fskelly.files.wordpress.com/2011/10/clip_image001.jpg"><!-- raw HTML omitted --></a></p>
+<p>To “correct this” go to Parameters, TimeZone – double-click it.</p>
+<p>Select the Default Values and change the option to No default Value:</p>
+<p><a href="http://fskelly.files.wordpress.com/2011/10/clip_image002.jpg"><!-- raw HTML omitted --></a></p>
+<p>Click OK and select Save As (Don’t forget to change the report name again as it would appear that when a failed save occurs then the original name is used – and thus you may make a change to the default report).</p>
+<p>The next error again concerns a defaultvalue for the EndDate_OffsetValue parameter this time.</p>
+<p><a href="http://fskelly.files.wordpress.com/2011/10/clip_image003.jpg"><!-- raw HTML omitted --></a></p>
+<p>Again change the Default Value of this parameter to No Default Value</p>
+<p><a href="http://fskelly.files.wordpress.com/2011/10/clip_image004.jpg"><!-- raw HTML omitted --></a></p>
+<p>Again attempt the Save As (again check the name).  This time it should succeed.</p>
+<p>So now we effectively have a report that we can manipulate to utilise a variable parameter for the StartDate and EndDate values.</p>
+<p>Double-click the StartDate_BaseValue parameter. Click the Default Values option and select “Specify values”</p>
+<p>Click Add and strike the (Null) that appears in the Value form.</p>
+<p>Click the function button</p>
+<p>In the Category chooser, select “Common Functions” “Date &amp; Time”</p>
+<p>Locate the “Today” item and double-click it.</p>
+<p>Close the bracket in the “Set expression for Value option:</p>
+<p><a href="http://fskelly.files.wordpress.com/2011/10/clip_image005.jpg"><!-- raw HTML omitted --></a></p>
+<p>Click OK.</p>
+<p>Repeat this step for the EndDate_BaseValue Parameter.</p>
+<p>Now make the change to the StartDate_OffsetType to switch the interval from the past month to the past week.</p>
+<p>Double-click StartDate_OffsetType, select Default Values and change the Value option from Month to Week.</p>
+<p><a href="http://fskelly.files.wordpress.com/2011/10/clip_image006.jpg"><!-- raw HTML omitted --></a></p>
+<p>So back to Report Manager – drill down to the new report and open it up.  Run the report using the View Report button – no results returned.</p>
+<p>Check the NULL option for Incident IDs</p>
+<p><a href="http://fskelly.files.wordpress.com/2011/10/clip_image007.jpg"><!-- raw HTML omitted --></a></p>
+<p>And now re-run – data as expected.  The Challenge now is to select the NULL option for a scheduled report as opposed to the interactive one.</p>
+<p>Click “New Subscription”</p>
+<p>Populate the Report Delivery Options and Subscription Processing Options as required  – I used a File Share (NB it needs a UNC <a href="///%5Cserver%5Cshare">\server\share</a>) and just set up a schedule in 5 mins time to use an HTML 4 report.  (NB You will need to repeat the password for the account that will write the report after you have clicked the schedule button as it loses the password and saving the subscription will fail)</p>
+<p>Then in the Report Parameter Values ensure the following two options are selected.  NB Do not set these in the Properties, Parameters option of Report Manager as they have a different impact.</p>
+<p><a href="http://fskelly.files.wordpress.com/2011/10/clip_image008.jpg"><!-- raw HTML omitted --></a></p>
+<p><a href="http://fskelly.files.wordpress.com/2011/10/clip_image009.jpg"><!-- raw HTML omitted --></a></p>
+<p>Save the changes and wait for the report to run – this should now pick up the correct “current” date and provide a week’s worth of data!</p>
+</blockquote>
+<ol start="3">
+<li>
+<p>Now, you try to run the report and under “Assigned To User”, you try to use UPN names or Display Names and nothing seems to work! This is because the Report is actually looking for a UserDimkey, this can be seen in this <a href="http://blogs.technet.com/b/servicemanager/archive/2011/03/14/service-manager-data-warehouse-schema-now-available.aspx">post</a>. So how do you get this information. SQL is your friend.</p>
+</li>
+<li>
+<p>Open SQL Management Studio on the Data Warehouse Server and run the following command substituting the User Display name you want to find the UserDimKey for.</p>
+</li>
+</ol>
+<blockquote>
+<p>/*<strong>*\<em>* Script for SelectTopNRows command from SSMS  ***</em></strong>/<br>
+SELECT TOP 1000 [AssetStatus]<br>
+      ,[AssetStatus_ConfigItemAssetStatusId]<br>
+      ,[BaseManagedEntityId]<br>
+      ,[BusinessPhone]<br>
+      ,[BusinessPhone2]<br>
+      ,[City]<br>
+      ,[Company]<br>
+      ,[Country]<br>
+      ,[Department]<br>
+      ,[DisplayName]<br>
+      ,[DistinguishedName]<br>
+      ,[Domain]<br>
+      ,[EmployeeId]<br>
+      ,[EntityDimKey]<br>
+      ,[Fax]<br>
+      ,[FirstName]<br>
+      ,[FQDN]<br>
+      ,[HomePhone]<br>
+      ,[HomePhone2]<br>
+      ,[Initials]<br>
+      ,[InsertedBatchId]<br>
+      ,[IsDeleted]<br>
+      ,[LastName]<br>
+      ,[Mobile]<br>
+      ,[Notes]<br>
+      ,[ObjectStatus]<br>
+      ,[ObjectStatus_ConfigItemObjectStatusId]<br>
+      ,[Office]<br>
+      ,[Pager]<br>
+      ,[SID]<br>
+      ,[SourceId]<br>
+      ,[State]<br>
+      ,[StreetAddress]<br>
+      ,[Title]<br>
+      ,[UpdatedBatchId]<br>
+      ,[UPN]<br>
+      ,[UserDimKey]<br>
+      ,[UserName]<br>
+      ,[Zip]<br>
+  FROM [DWDataMartR2].[dbo].[UserDimvw] where [DisplayName] = <!-- raw HTML omitted -->‘DisplayNameofUserInActiveDirectory<!-- raw HTML omitted --></p>
+</blockquote>
+<p><!-- raw HTML omitted -->5. Once you have this value(s), you can add these value(s) to your report and schedule them successfully.<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->Hope this helps,<!-- raw HTML omitted --></p>
+<p>Follow me</p>
+<p><a href="http://www.facebook.com/fletcher.kelly"><!-- raw HTML omitted --></a> <a href="http://twitter.com/#!/fskelly"><!-- raw HTML omitted --></a></p>
+
+                        </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="/tags/reporting-services">
+                                    <i class="fas fa-tag mr-2"></i>Reporting Services
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/scsm">
+                                    <i class="fas fa-tag mr-2"></i>SCSM
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/service-manager">
+                                    <i class="fas fa-tag mr-2"></i>Service Manager
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/system-centre">
+                                    <i class="fas fa-tag mr-2"></i>System Centre
+                                </a></div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2011%2f10%2f26%2fscheduled-reports-with-scsm-data-warehouse%2f&text=Scheduled%20reports%20with%20SCSM%20Data%20Warehouse">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2011%2f10%2f26%2fscheduled-reports-with-scsm-data-warehouse%2f&title=Scheduled%20reports%20with%20SCSM%20Data%20Warehouse">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fcloudadventures.fskelly.com%2f2011%2f10%2f26%2fscheduled-reports-with-scsm-data-warehouse%2f&t=Scheduled%20reports%20with%20SCSM%20Data%20Warehouse">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2011%2f10%2f26%2fscheduled-reports-with-scsm-data-warehouse%2f&title=Scheduled%20reports%20with%20SCSM%20Data%20Warehouse">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div><div class="row justify-content-center my-3">
+                    <div class="col-lg-8">
+                        <div id="commento"></div>
+                        <script src="https://commento.io"></script>
+                    </div>
+                </div></article>
+        </div>
+    </div>
+
+    <div class="related-content row mt-5 row-cols-1 row-cols-lg-3"><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2011/07/18/some-more-smlets-commands-more-detail/" class="d-block"><div class="card-body">
+            <h4 class="card-title">Some more SMlets commands (more detail)</h4>
+            <p class="card-text text-muted text-uppercase">July 18, 2011</p>
+            <div class="card-text">
+                Would you like a nice graphical breakdown of all calls logged in (x) days and there status?
+I know I would. So, of course I have been working on such a script using smlets v3.
+So far, this is what the script does.
+ Takes the current date and time and subtracts 7 days and presents you with a nice HTML output which is mailed to the user. (Both the date and time and who to mail the output to is configurable.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2011/06/15/dpm-and-invoke-command-bring-the-dpm-shell-to-your-machine/" class="d-block"><div class="card-body">
+            <h4 class="card-title">DPM and Invoke-Command, bring the DPM shell to your machine</h4>
+            <p class="card-text text-muted text-uppercase">June 15, 2011</p>
+            <div class="card-text">
+                Not that long ago, I created an article about DPM and I referenced DPM commands to be run in the DPM shell and only now realised that not everyone has the DPM console installed as this is not the easiest console to install and get working.
+So, I am now the Proud Owner of Learn Windows PowerShell in a month of Lunches and I am an now playing and have figured out how to import the necessary commands with Remoting.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2011/05/27/changing-your-protection-server-in-dpm-to-another-server/" class="d-block"><div class="card-body">
+            <h4 class="card-title">Changing your Protection Server in DPM to another server</h4>
+            <p class="card-text text-muted text-uppercase">May 27, 2011</p>
+            <div class="card-text">
+                Have you ever been in a situation where you have either removed or added a new DPM server to your environment?
+It happened to me just the other day, I had to “re-think” my DPM design and starting using “Local” to each Data Centre DPM servers to backup my data at each Data Centre. However, this was not the case before this, we were using the same product, but a different strategy.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div></div>
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://cloudadventures.fskelly.com/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                            <a href="https://github.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://linkedin.com/in/fletcherkelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://twitter.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright © 2019–2021, Fletcher Kelly; all rights reserved.
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="/dist/main.d608eadfe5ac0688902e.min.js"></script>
+        
+    
+
+
+
+<script>
+    window.Prism = window.Prism || {};
+    window.Prism.manual = true;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-XXXX', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+</body>
+</html>

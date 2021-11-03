@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+     Some more trick and things I have learnt with Service Manager 2010 SP1 | 
+    Fletcher&#39;s Tech Blog
+  
+</title><meta name="description" content="A day in the life of a Cloud Engineer."><meta name="author" content="Fletcher Kelly">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="/favicon.ico">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+
+
+<link rel="canonical" href="https://cloudadventures.fskelly.com/2011/03/31/some-more-trick-and-things-i-have-learnt-with-service-manager-2010-sp1/"><meta property="og:title" content="Some more trick and things I have learnt with Service Manager 2010 SP1" />
+<meta property="og:description" content="When creating a new Self Service portal, ensure that you log onto on the server using your “Service Manager” Account, the account configured when first creating the Service Manager Server. The portal will install and seem to work. However, when you open the Portal, you will get HTTP 500.
+  When configuring your Data Warehouse, ensure that the Database name has no “–“ in the name as this is NOT supported by the Reporting Component of Service Manager 2010." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cloudadventures.fskelly.com/2011/03/31/some-more-trick-and-things-i-have-learnt-with-service-manager-2010-sp1/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2011-03-31T10:11:56+00:00" />
+<meta property="article:modified_time" content="2011-03-31T10:11:56+00:00" />
+
+<meta itemprop="name" content="Some more trick and things I have learnt with Service Manager 2010 SP1">
+<meta itemprop="description" content="When creating a new Self Service portal, ensure that you log onto on the server using your “Service Manager” Account, the account configured when first creating the Service Manager Server. The portal will install and seem to work. However, when you open the Portal, you will get HTTP 500.
+  When configuring your Data Warehouse, ensure that the Database name has no “–“ in the name as this is NOT supported by the Reporting Component of Service Manager 2010."><meta itemprop="datePublished" content="2011-03-31T10:11:56+00:00" />
+<meta itemprop="dateModified" content="2011-03-31T10:11:56+00:00" />
+<meta itemprop="wordCount" content="161">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Some more trick and things I have learnt with Service Manager 2010 SP1"/>
+<meta name="twitter:description" content="When creating a new Self Service portal, ensure that you log onto on the server using your “Service Manager” Account, the account configured when first creating the Service Manager Server. The portal will install and seem to work. However, when you open the Portal, you will get HTTP 500.
+  When configuring your Data Warehouse, ensure that the Database name has no “–“ in the name as this is NOT supported by the Reporting Component of Service Manager 2010."/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://cloudadventures.fskelly.com">Fletcher&#39;s Tech Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">March 31, 2011</p>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>161 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>1 min read</span>
+                        </div>
+
+                        <h1>Some more trick and things I have learnt with Service Manager 2010 SP1</h1>
+
+                        
+                    </div>
+                </div><div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="content">
+                            <ol>
+<li>
+<p>When creating a new Self Service portal, ensure that you log onto on the server using your “Service Manager” Account, the account configured when first creating the Service Manager Server. The portal will install and seem to work. However, when you open the Portal, you will get HTTP 500.</p>
+</li>
+<li>
+<p>When configuring your Data Warehouse, ensure that the Database name has no “–“ in the name as this is NOT supported by the Reporting Component of Service Manager 2010.</p>
+</li>
+<li>
+<p>If you are having any issues with DataWarehouse Jobs, the first steps is to restart all System Centre services.</p>
+</li>
+<li>
+<p>When working with Activities, ensure that you update the Activity before the “End Date and Time” or even though you completed it in time, it will show up as “not completed”</p>
+</li>
+</ol>
+<p> </p>
+<p>Just a heads up when making some changes and what i have learnt thus far.</p>
+<p>More to come!!!</p>
+<p>Hope this helps.</p>
+<p>I am sure of that<!-- raw HTML omitted --></p>
+<p> </p>
+<p><em><strong><!-- raw HTML omitted -->“EMBRACE YOUR INNER GEEK AND<!-- raw HTML omitted --></strong></em></p>
+<p><em><strong><!-- raw HTML omitted -->ROCK ON”<!-- raw HTML omitted --></strong></em></p>
+
+                        </div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2011%2f03%2f31%2fsome-more-trick-and-things-i-have-learnt-with-service-manager-2010-sp1%2f&text=Some%20more%20trick%20and%20things%20I%20have%20learnt%20with%20Service%20Manager%202010%20SP1">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2011%2f03%2f31%2fsome-more-trick-and-things-i-have-learnt-with-service-manager-2010-sp1%2f&title=Some%20more%20trick%20and%20things%20I%20have%20learnt%20with%20Service%20Manager%202010%20SP1">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fcloudadventures.fskelly.com%2f2011%2f03%2f31%2fsome-more-trick-and-things-i-have-learnt-with-service-manager-2010-sp1%2f&t=Some%20more%20trick%20and%20things%20I%20have%20learnt%20with%20Service%20Manager%202010%20SP1">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2011%2f03%2f31%2fsome-more-trick-and-things-i-have-learnt-with-service-manager-2010-sp1%2f&title=Some%20more%20trick%20and%20things%20I%20have%20learnt%20with%20Service%20Manager%202010%20SP1">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div><div class="row justify-content-center my-3">
+                    <div class="col-lg-8">
+                        <div id="commento"></div>
+                        <script src="https://commento.io"></script>
+                    </div>
+                </div></article>
+        </div>
+    </div>
+
+    
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://cloudadventures.fskelly.com/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                            <a href="https://github.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://linkedin.com/in/fletcherkelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://twitter.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright © 2019–2021, Fletcher Kelly; all rights reserved.
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="/dist/main.d608eadfe5ac0688902e.min.js"></script>
+        
+    
+
+
+
+<script>
+    window.Prism = window.Prism || {};
+    window.Prism.manual = true;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-XXXX', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Assignment on Fletcher&#39;s Tech Blog</title>
+    <link>https://cloudadventures.fskelly.com/tags/assignment/</link>
+    <description>Recent content in Assignment on Fletcher&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2019–2021, Fletcher Kelly; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 31 Dec 2012 06:58:52 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/assignment/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Group assignment with Service Manager</title>
+      <link>https://cloudadventures.fskelly.com/post/history/2012-12-31-group-assignment-with-service-manager/</link>
+      <pubDate>Mon, 31 Dec 2012 06:58:52 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/post/history/2012-12-31-group-assignment-with-service-manager/</guid>
+      <description>So one of the biggest issues I have with Service Manager is actually user based as seems to be quite difficult to teach the concept of this for some strange reason. So, as a work-around I have created views that cater for the issue I am about to discuss.
+The issue is as follows, when a Work Item gets re-assigned to a new Analyst, 99% of the time, the associated Support Group does NOT get changed.</description>
+    </item>
+    
+    <item>
+      <title>Service Requests – Re-assignment notification</title>
+      <link>https://cloudadventures.fskelly.com/2012/07/09/service-requests-re-assignment-notification/</link>
+      <pubDate>Mon, 09 Jul 2012 05:43:13 +0000</pubDate>
+      
+      <guid>https://cloudadventures.fskelly.com/2012/07/09/service-requests-re-assignment-notification/</guid>
+      <description>So, in an effort to get my business ready for Service Requests as we use mainly Incidents and we are beginning our journey into Service Requests and differentiating between Service Requests (day to day operations) and Incidents (something is broken), I needed to reproduce a workflow to notify the “AssignedToUser” when a new Service Request is assigned to him or her. I already had a downloaded Management Pack for Incident Re-assignment notifications which was modified for my purposes, so this was a good place to start.</description>
+    </item>
+    
+  </channel>
+</rss>

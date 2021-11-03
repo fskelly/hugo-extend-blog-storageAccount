@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+     DPM and Invoke-Command, bring the DPM shell to your machine | 
+    Fletcher&#39;s Tech Blog
+  
+</title><meta name="description" content="A day in the life of a Cloud Engineer."><meta name="author" content="Fletcher Kelly">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="/favicon.ico">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+
+
+<link rel="canonical" href="https://cloudadventures.fskelly.com/2011/06/15/dpm-and-invoke-command-bring-the-dpm-shell-to-your-machine/"><meta property="og:title" content="DPM and Invoke-Command, bring the DPM shell to your machine" />
+<meta property="og:description" content="Not that long ago, I created an article about DPM and I referenced DPM commands to be run in the DPM shell and only now realised that not everyone has the DPM console installed as this is not the easiest console to install and get working.
+So, I am now the Proud Owner of Learn Windows PowerShell in a month of Lunches and I am an now playing and have figured out how to import the necessary commands with Remoting." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cloudadventures.fskelly.com/2011/06/15/dpm-and-invoke-command-bring-the-dpm-shell-to-your-machine/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2011-06-15T15:13:42+00:00" />
+<meta property="article:modified_time" content="2011-06-15T15:13:42+00:00" />
+
+<meta itemprop="name" content="DPM and Invoke-Command, bring the DPM shell to your machine">
+<meta itemprop="description" content="Not that long ago, I created an article about DPM and I referenced DPM commands to be run in the DPM shell and only now realised that not everyone has the DPM console installed as this is not the easiest console to install and get working.
+So, I am now the Proud Owner of Learn Windows PowerShell in a month of Lunches and I am an now playing and have figured out how to import the necessary commands with Remoting."><meta itemprop="datePublished" content="2011-06-15T15:13:42+00:00" />
+<meta itemprop="dateModified" content="2011-06-15T15:13:42+00:00" />
+<meta itemprop="wordCount" content="328">
+<meta itemprop="keywords" content="Data Prtoection Manager,DPM,PSSession,System Centre," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="DPM and Invoke-Command, bring the DPM shell to your machine"/>
+<meta name="twitter:description" content="Not that long ago, I created an article about DPM and I referenced DPM commands to be run in the DPM shell and only now realised that not everyone has the DPM console installed as this is not the easiest console to install and get working.
+So, I am now the Proud Owner of Learn Windows PowerShell in a month of Lunches and I am an now playing and have figured out how to import the necessary commands with Remoting."/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://cloudadventures.fskelly.com">Fletcher&#39;s Tech Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">June 15, 2011</p>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>328 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>2 mins read</span>
+                        </div>
+
+                        <h1>DPM and Invoke-Command, bring the DPM shell to your machine</h1>
+
+                        
+                    </div>
+                </div><div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="content">
+                            <p>Not that long ago, I created an article about DPM and I referenced DPM commands to be run in the DPM shell and only now realised that not everyone has the DPM console installed as this is not the easiest console to install and get working.</p>
+<p>So, I am now the Proud Owner of <a href="http://www.manning.com/jones/">Learn Windows PowerShell in a month of Lunches</a> and I am an now playing and have figured out how to import the necessary commands with Remoting. There are some steps you need to follow to get PSRemoting working across an enterprise, <a href="http://www.damianflynn.com/2011/01/28/xx/">this</a> might help.</p>
+<p>Once this is done, let the Magic begin.</p>
+<p>First, lets create a <a href="http://technet.microsoft.com/en-us/library/dd347668.aspx">New-PSSession</a></p>
+<ol>
+<li>New-PSSession –ComputerName <!-- raw HTML omitted --> (figured this one out the hard way)</li>
+</ol>
+<p>example : <em>New-PSSession –ComputerName mydpmserver.mydomain.com</em></p>
+<p>Second, lets use <a href="http://technet.microsoft.com/en-us/library/dd347578.aspx">Invoke-Command</a> to import the module (we are going to add the DPM Snapin)</p>
+<ol start="2">
+<li>invoke-Command -ScriptBlock {add-pssnapin Microsoft.DataProtectionManager.PowerShell}  -Session (Get-PSSession –ComputerName <!-- raw HTML omitted -->)</li>
+</ol>
+<p>Third, we are going to import these commands using <a href="http://technet.microsoft.com/en-us/library/dd347575.aspx">Import-PSSession</a> (you can add a prefix here using –prefix to identify them in a unique way)</p>
+<ol start="3">
+<li>Import-PSSession -Session (Get-PSSession -ComputerName <!-- raw HTML omitted -->) -module Microsoft.DataProtectionManager.PowerShell</li>
+</ol>
+<p>Fourth, you can run <a href="http://technet.microsoft.com/en-us/library/dd347726.aspx">Get-Command</a> to confirm this (filtered by DPM)</p>
+<ol start="4">
+<li>Get-Command *DPM*</li>
+</ol>
+<p>Cleaned up transcript and copied into a word file for ease <a href="http://fskelly.files.wordpress.com/2011/06/adding-dpm-commands.docx">here</a></p>
+<p> </p>
+<p>For those of who read my <a href="http://fskelly.wordpress.com/2011/05/27/changing-your-protection-server-in-dpm-to-another-server/">previous post</a>, you would have noticed the attach-productionserver.ps1 command. If you are really observant you would have noticed that it and a few others are not here.</p>
+<p>So, lets try to get a workaround for that.</p>
+<p>It is still a work in progress, however i am using <a href="http://technet.microsoft.com/en-us/library/dd315384.aspx">Enter-PSSession</a> for now</p>
+<ol>
+<li>
+<p>Enter-PSSession –ComputerName <!-- raw HTML omitted --></p>
+</li>
+<li>
+<p>Navigate to the DPM Bin Folder</p>
+</li>
+</ol>
+<p>   cd ‘C:\Program Files\Microsoft DPM\DPM\bin’</p>
+<ol start="3">
+<li>
+<p>You will now see that the attach- commands are available</p>
+</li>
+<li>
+<p>When done, use <a href="http://technet.microsoft.com/en-us/library/dd315322.aspx">Exit-PSSession</a></p>
+</li>
+</ol>
+<p>Cleaned up transcript and copied into a word file for ease <a href="http://fskelly.files.wordpress.com/2011/06/enter-pssessiondpmserver.docx">here</a></p>
+<p> </p>
+<p>I recommend you follow <a href="http://twitter.com/#!/concentrateddon">Don Jones</a>, author of the above mentioned book and PowerShell MVP</p>
+<p>Hope you find this helpful and as interesting as I did.</p>
+<p> </p>
+<p>Follow me</p>
+<p><a href="http://www.facebook.com/fletcher.kelly"><!-- raw HTML omitted --></a> <a href="http://twitter.com/#!/fskelly"><!-- raw HTML omitted --></a></p>
+
+                        </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="/tags/data-prtoection-manager">
+                                    <i class="fas fa-tag mr-2"></i>Data Prtoection Manager
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/dpm">
+                                    <i class="fas fa-tag mr-2"></i>DPM
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/pssession">
+                                    <i class="fas fa-tag mr-2"></i>PSSession
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/system-centre">
+                                    <i class="fas fa-tag mr-2"></i>System Centre
+                                </a></div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2011%2f06%2f15%2fdpm-and-invoke-command-bring-the-dpm-shell-to-your-machine%2f&text=DPM%20and%20Invoke-Command%2c%20bring%20the%20DPM%20shell%20to%20your%20machine">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2011%2f06%2f15%2fdpm-and-invoke-command-bring-the-dpm-shell-to-your-machine%2f&title=DPM%20and%20Invoke-Command%2c%20bring%20the%20DPM%20shell%20to%20your%20machine">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fcloudadventures.fskelly.com%2f2011%2f06%2f15%2fdpm-and-invoke-command-bring-the-dpm-shell-to-your-machine%2f&t=DPM%20and%20Invoke-Command%2c%20bring%20the%20DPM%20shell%20to%20your%20machine">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fcloudadventures.fskelly.com%2f2011%2f06%2f15%2fdpm-and-invoke-command-bring-the-dpm-shell-to-your-machine%2f&title=DPM%20and%20Invoke-Command%2c%20bring%20the%20DPM%20shell%20to%20your%20machine">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div><div class="row justify-content-center my-3">
+                    <div class="col-lg-8">
+                        <div id="commento"></div>
+                        <script src="https://commento.io"></script>
+                    </div>
+                </div></article>
+        </div>
+    </div>
+
+    <div class="related-content row mt-5 row-cols-1 row-cols-lg-3"><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2011/05/27/changing-your-protection-server-in-dpm-to-another-server/" class="d-block"><div class="card-body">
+            <h4 class="card-title">Changing your Protection Server in DPM to another server</h4>
+            <p class="card-text text-muted text-uppercase">May 27, 2011</p>
+            <div class="card-text">
+                Have you ever been in a situation where you have either removed or added a new DPM server to your environment?
+It happened to me just the other day, I had to “re-think” my DPM design and starting using “Local” to each Data Centre DPM servers to backup my data at each Data Centre. However, this was not the case before this, we were using the same product, but a different strategy.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2011/05/24/to-protect-or-not-to-protect/" class="d-block"><div class="card-body">
+            <h4 class="card-title">To Protect or NOT to Protect</h4>
+            <p class="card-text text-muted text-uppercase">May 24, 2011</p>
+            <div class="card-text">
+                I have finally found some time to look some more into DPM and decided to modify my environment and created some additional PROTECTION GROUPS. I am particularly chuffed as I have not done this before. Make no error, I have used DPM extensively for mailbox recoveries (Execs and other users crying about loosing items), recovering of databases and VHD (see some of my previous posts). So back to my point, the Protection groups were created without any hassle and now I have a dedicated SharePoint Protection Group.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/2011/05/03/the-crisis-week/" class="d-block"><div class="card-body">
+            <h4 class="card-title">The “crisis” week</h4>
+            <p class="card-text text-muted text-uppercase">May 3, 2011</p>
+            <div class="card-text">
+                Hi All,
+The last two weeks have been a little nutty for me. I have however, learnt to appreciate a few more things in life.
+  No matter how good your planning for DR, there is always that one thing that catches you. We have a generator, which is great. Now, when we cutover from generator power to mains power and then the main building power trips, life becomes interesting.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div></div>
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://cloudadventures.fskelly.com/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                            <a href="https://github.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://linkedin.com/in/fletcherkelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://twitter.com/fskelly" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright © 2019–2021, Fletcher Kelly; all rights reserved.
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="/dist/main.d608eadfe5ac0688902e.min.js"></script>
+        
+    
+
+
+
+<script>
+    window.Prism = window.Prism || {};
+    window.Prism.manual = true;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-XXXX', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+</body>
+</html>
