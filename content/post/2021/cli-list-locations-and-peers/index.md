@@ -1,16 +1,27 @@
----
-title: "Cli List Locations and Peers"
-date: 2021-05-05T07:03:02+02:00
-Description: "Using the Azure cli to return data centre locations and their peers"
-Tags: ["quick post", "az cli"]
-Categories: ["command line", "Azure", "AZ CLI"]
-DisableComments: false
----
-# How to use the Azure CLI to list Azure Locations and their peers
++++
+authors = [
+    "Fletcher Kelly",
+]
+title = "Azure CLI - List Locations and Peers"
+date = "2021-05-05T07:03:02+02:00"
+description = "Using the Azure cli to return data centre locations and their peers."
+tags = [
+    "azure",
+    "az cli",
+    "command line",
+    "quick post"
+]
+series = ["Azure CLI"]
+images = [
+    "2021/azcli.jpg",
+]
++++
+
+## How to use the Azure CLI to list Azure Locations and their peers
 
 So this will be a "quick post" that shows some great functionality within the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) with ```az account list-locations```. With this command you can expect some output like below, you actually get a lot of content back.
 
-```bash
+```json
 {
     "displayName": "Brazil Southeast",
     "id": "/subscriptions/949ef534-07f5-4138-8b79-aae16a71310c/locations/brazilsoutheast",
@@ -38,7 +49,7 @@ So this will be a "quick post" that shows some great functionality within the [A
 
 If you look at some of the examples, you will also see some *"logical"* locations, example below, there is a way of adding a query to remove these to display only **"physical"** locations.  
 
-```bash
+```json
 {
   "displayName": "United States",
   "id": "/subscriptions/949ef534-07f5-4138-8b79-aae16a71310c/cations/unitedstates",
@@ -63,7 +74,7 @@ I use a simple query to remove all locations without latitide and in my case sim
 az account list-locations --query "[?not_null(metadata.latitude)] .{RegionName:name}" --output json
 ```
 
-```bash
+```json
 {
   "RegionName": "brazilsoutheast"
 }
@@ -75,7 +86,7 @@ So, now to get the paired region, again if we look at the JSON output, there is 
 az account list-locations --query "[?not_null(metadata.latitude)] .{RegionName:name, PairedRegion:metadata.pairedRegion[0].name}" --output json
 ```
 
-```bash
+```json
 {
   "PairedRegion": "brazilsouth",
   "RegionName": "brazilsoutheast"

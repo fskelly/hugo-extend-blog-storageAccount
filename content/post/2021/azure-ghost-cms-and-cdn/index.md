@@ -1,11 +1,19 @@
----
-title: "Azure Ghost Cms and Cdn"
-date: 2021-01-11T07:00:18+02:00
-Description: ""
-Tags: ["azure","cdn","blog","hugo"]
-Categories: []
-DisableComments: false
----
++++
+authors = [
+    "Fletcher Kelly",
+]
+title = "Azure Ghost CMS and Azure CDN"
+date = "2021-01-11T07:00:18+02:00"
+description = "How to run GHOST CMS on Azure."
+tags = [
+    "azure",
+    "cdn",
+    "CMS"
+]
+images = [
+    "2021/ghostCMS.jpg",
+]
++++
 
 I moved my blog onto HUGO. Not everyone would want to do this necessarily, there is a bit of a learning curve, part of the reason **I DID IT** :). However there are other platforms you can use and still add more functionality if you want.  
 

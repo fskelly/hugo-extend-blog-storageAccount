@@ -1,5 +1,7 @@
 +++
-author = "Fletcher Kelly"
+authors = [
+    "Fletcher Kelly",
+]
 title = "Azure Rest Api Postman Basics"
 date = "2021-04-14T09:02:18+02:00"
 Tags = [
@@ -11,11 +13,14 @@ Categories = [
     "Azure", 
     "API"
     ]
+images = [
+    "2021/postman.jpg",
+]
 Description = "Using Postman with the Azure REST API"
 DisableComments = false
 +++
 
-# Absolute basics with Azure and [PostMan](www.postman.com)
+Absolute basics with Azure and [PostMan](www.postman.com)
 
 ## Getting started
 

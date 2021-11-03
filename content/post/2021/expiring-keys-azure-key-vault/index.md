@@ -1,10 +1,21 @@
----
-title: "Expiring Keys and Secrets within Azure Key Vault"
-date: 2021-01-18T07:06:03+02:00
-author: "Fletcher Kelly"
-Description: "Find Azure Keyvault expiring keys with PowerShell"
-draft: false
----
++++
+authors = [
+    "Fletcher Kelly",
+]
+title = "Expiring Keys and Secrets within Azure Key Vault"
+date = "2021-01-18T07:06:03+02:00"
+description = "Find Azure Keyvault expiring keys with PowerShell."
+tags = [
+    "azure",
+    "azure powershell",
+    "command line",
+    "powershell"
+]
+series = ["Azure PowerShell"]
+images = [
+    "2021/azposh.jpg",
+]
++++
 
 I was working with a customer the other day and a fairly simple ask came up, I however could not find an immediate answer within the portal.  
 

@@ -1,18 +1,34 @@
----
++++
+authors = [
+    "Fletcher Kelly",
+]
+title = "Azure Resource Group Enterprise Scale Landing Zone queries"
+date = "2021-08-25T05:58:18+02:00"
+description = "Some starter Azure Resource Graph queries."
+tags = [
+    "azure",
+    "resource graph",
+    "quick post"
+]
+images = [
+    "2021/resourcegraph.png",
+]
++++
+
+<!-- ---
 title: "Azure Resource Group Enterprise Scale Landing Zone queries"
 date: 2021-08-25T05:58:18+02:00
 draft: false
 Description: "Some starter Azure Resource Graph queries."
 Tags: ["azure","resource graph","blog","quick post"]
+author: "Fletcher Kelly"
 #image: resourcegraph.png
 categories: 
     - Azure
     - Resource Graph
----
+--- -->
 
-# Azure Resource Graph Examples
-
-:smile:
+## Azure Resource Graph Examples
 
 <!-- ![Azure Resource Graph](resourcegraph-scaled.png) -->
 
@@ -27,5 +43,5 @@ They will be broken down into a folder structure based upon the [Critical Design
 Hope this helps and keep an eye out for more.
 
 Follow me for more.  
-[Twitter](https://twitter.com/fskelly)
+[Twitter](https://twitter.com/fskelly)  
 [LinkedIn](https://www.linkedin.com/in/fletcherkelly/)
