@@ -1,4 +1,4 @@
-$gitCommitMessage = Read-Host "Plesae enter the commit message"
+$gitCommitMessage = Read-Host "Please enter the commit message"
 git add .
 git commit -m $gitCommitMessage
 git push

@@ -16,7 +16,7 @@
       <description>Azure Resource Graph Examples 😄
  Azure Resource Graph   --This is just a quick post. I am slowly working on building a collection of Resource Graph Queries - they can be found here and will grow over time. It just takes some time to build these.
 They will be broken down into a folder structure based upon the Critical Design Areas of Enterprise Scale Landing Zone
- folderStructure</description>
+folderStructure</description>
     </item>
     
     <item>
@@ -97,7 +97,7 @@ A few key decisions  Must be version controlled - good practice and forces me to
       
       <guid>https://cloudadventures.fskelly.com/p/csa-tools-of-the-trade/</guid>
       <description>So a question I often get asked is &amp;ldquo;what tools or products do you use?&amp;rdquo;. So I decided to do a post around the tools and technologies that I personally use on a daily basis. So to start this is what people see on my screen on a daily basis.
- VSCode 
+VSCode
 This is my most common tool, Visual Studio Code, the version shown above is actually the Insiders Build.</description>
     </item>
     
