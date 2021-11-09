@@ -70,3 +70,8 @@ az bicep build --file .\main.bicep
 This will then throw the actual bicep error, and then you can fix your file and deploy again.
 
 Hope this helps you.
+
+Follow me,
+
+[Twitter](https://www.twitter.com/fskelly)  
+[LinkedIn](https://linkedin.com/in/fletcherkelly)

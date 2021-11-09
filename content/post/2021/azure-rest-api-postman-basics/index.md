@@ -58,3 +58,8 @@ With most of the Postman queries, the "**Pre-request Script**" is also used, thi
 ![Postman with pre-request script](https://github.com/fskelly/flkelly-cloudblog/blob/63833ed0ffe8296fb18d9797663c0cb4a2c305f1/static/images/blogImages/2021/restapipostmanpost/postmanApiPreRequestScript.png?raw=true)
 
 So, go forth and play. My Postman Collection can be found [here](https://github.com/fskelly/flkelly-cloudblog/blob/main/blogFiles/azureApiPostman/Azure%20REST%20-%20repo%20ready.postman_collection.json)
+
+Follow me,
+
+[Twitter](https://www.twitter.com/fskelly)  
+[LinkedIn](https://linkedin.com/in/fletcherkelly)

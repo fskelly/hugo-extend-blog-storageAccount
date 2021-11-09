@@ -17,3 +17,8 @@ So, having these discussions is not an uncommon practice and these are the types
 You cannot necessarily think of networking in silos anymore. Yes, networking can be silo'ed and many people do this. However with the "new world" of cloud and the networking associated to this concept, networking is now a critical point on your cloud journey. There are multiple options available here as a start. THe main role of a Cloud SOlutions Architect or more importantly a trusted advisor, is to understand the requirements of your customer and work with the required teams, usually networking, InfoSec, business owner and Application owner to determine the correct networking option for the cusotmer. This would be a mix of solutions and architectures.
 
 This is a great start to understanding which technologies can or could be used to serve a particular need and then this can be built up to a solution that is extendable and usable by your customer.
+
+Follow me,
+
+[Twitter](https://www.twitter.com/fskelly)  
+[LinkedIn](https://linkedin.com/in/fletcherkelly)

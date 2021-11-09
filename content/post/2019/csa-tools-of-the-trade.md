@@ -25,3 +25,8 @@ Now, aside from Visual Studio Code, I also use the following:
 2. WSL2 (Windows Subsystem for Linux 2), I am running the Preview version of this as it is not yet GA, but so far so good.
 
 I use many other applications, however this is my collection of "go-to" tools. This should be in your "cloud arsenal"
+
+Follow me,
+
+[Twitter](https://www.twitter.com/fskelly)  
+[LinkedIn](https://linkedin.com/in/fletcherkelly)

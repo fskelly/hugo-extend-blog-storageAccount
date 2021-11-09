@@ -92,3 +92,8 @@ az account list-locations --query "[?not_null(metadata.latitude)] .{RegionName:n
   "RegionName": "brazilsoutheast"
 }
 ```
+
+Follow me,
+
+[Twitter](https://www.twitter.com/fskelly)  
+[LinkedIn](https://linkedin.com/in/fletcherkelly)

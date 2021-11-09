@@ -25,3 +25,8 @@ Get-AzActionGroup
 ```
 
 Hope this helps people in the field to find the Resource Group ID more easily.
+
+Follow me,
+
+[Twitter](https://www.twitter.com/fskelly)  
+[LinkedIn](https://linkedin.com/in/fletcherkelly)

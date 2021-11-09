@@ -31,3 +31,8 @@ So now with the basics out of the way,  I needed to chose a static content gener
 The blog you are reading now is hosted with the above criteria and of course a custom domain name.
 
 More to come soon.
+
+Follow me,
+
+[Twitter](https://www.twitter.com/fskelly)  
+[LinkedIn](https://linkedin.com/in/fletcherkelly)

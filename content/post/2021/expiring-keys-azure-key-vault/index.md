@@ -59,3 +59,8 @@ foreach ($nonExpiringSecret in $nonExpiringSecrets)
 ```
 
 As you can see simply replace the variables that you need to, namely *```$vaultName```* (**name of the Azure Keyvault**) and *```$kvRG```* (**name of the Resource Group housing the Azure Keyvault**)
+
+Follow me,
+
+[Twitter](https://www.twitter.com/fskelly)  
+[LinkedIn](https://linkedin.com/in/fletcherkelly)

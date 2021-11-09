@@ -78,3 +78,8 @@ This process should not take too long, but now we want a **certificate** and the
 5. And completed ![process complete](https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/cdnCert4.png?raw=true)
 
 Now here is the [end result](https://demoghost.fskelly.com) - note the HTTPS 👍 ![site with HTTPS Cert](https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/cdnDemoPost.png?raw=true)
+
+Follow me,
+
+[Twitter](https://www.twitter.com/fskelly)  
+[LinkedIn](https://linkedin.com/in/fletcherkelly)
