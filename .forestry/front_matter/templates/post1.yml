@@ -1,0 +1,28 @@
+---
+label: post1
+hide_body: false
+fields:
+- type: list
+  name: authors
+  label: authors
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: list
+  name: Tags
+  label: Tags
+- type: list
+  name: Categories
+  label: Categories
+- type: image_gallery
+  name: images
+  label: images
+- type: text
+  name: Description
+  label: Description
+- type: boolean
+  name: DisableComments
+  label: DisableComments
