@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Prtoection Manager on Fletcher Kelly | Cloud Engineer</title>
+    <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/data-prtoection-manager/</link>
+    <description>Recent content in Data Prtoection Manager on Fletcher Kelly | Cloud Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Jun 2011 15:13:42 +0000</lastBuildDate><atom:link href="https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/data-prtoection-manager/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DPM and Invoke-Command, bring the DPM shell to your machine</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/06/15/dpm-and-invoke-command-bring-the-dpm-shell-to-your-machine/</link>
+      <pubDate>Wed, 15 Jun 2011 15:13:42 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/06/15/dpm-and-invoke-command-bring-the-dpm-shell-to-your-machine/</guid>
+      <description>Not that long ago, I created an article about DPM and I referenced DPM commands to be run in the DPM shell and only now realised that not everyone has the DPM console installed as this is not the easiest console to install and get working.</description>
+    </item>
+    
+    <item>
+      <title>Changing your Protection Server in DPM to another server</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/05/27/changing-your-protection-server-in-dpm-to-another-server/</link>
+      <pubDate>Fri, 27 May 2011 09:17:03 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/05/27/changing-your-protection-server-in-dpm-to-another-server/</guid>
+      <description>Have you ever been in a situation where you have either removed or added a new DPM server to your environment?</description>
+    </item>
+    
+  </channel>
+</rss>

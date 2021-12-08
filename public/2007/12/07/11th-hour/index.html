@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>11th Hour</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description"
+    content="This is meta description">
+    
+    
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Hugo 0.89.1" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://flkellyneucloudblogpre.z16.web.core.windows.net/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://flkellyneucloudblogpre.z16.web.core.windows.net/plugins/themify-icons/themify-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://flkellyneucloudblogpre.z16.web.core.windows.net/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://flkellyneucloudblogpre.z16.web.core.windows.net/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://flkellyneucloudblogpre.z16.web.core.windows.net/images/favicon.png " type="image/x-icon">
+
+  
+  
+  
+
+
+
+<style type="text/css" media="screen">
+  @media (prefers-color-scheme: dark) { 
+    /* Background */ .chroma { color: #f8f8f2; background-color: #272822 }
+/* Other */ .chroma .x {  }
+/* Error */ .chroma .err { color: #960050; background-color: #1e0010 }
+/* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
+/* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }
+/* LineHighlight */ .chroma .hl { display: block; width: 100%;background-color: #ffffcc }
+/* LineNumbersTable */ .chroma .lnt { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
+/* LineNumbers */ .chroma .ln { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
+/* Keyword */ .chroma .k { color: #66d9ef }
+/* KeywordConstant */ .chroma .kc { color: #66d9ef }
+/* KeywordDeclaration */ .chroma .kd { color: #66d9ef }
+/* KeywordNamespace */ .chroma .kn { color: #f92672 }
+/* KeywordPseudo */ .chroma .kp { color: #66d9ef }
+/* KeywordReserved */ .chroma .kr { color: #66d9ef }
+/* KeywordType */ .chroma .kt { color: #66d9ef }
+/* Name */ .chroma .n {  }
+/* NameAttribute */ .chroma .na { color: #a6e22e }
+/* NameBuiltin */ .chroma .nb {  }
+/* NameBuiltinPseudo */ .chroma .bp {  }
+/* NameClass */ .chroma .nc { color: #a6e22e }
+/* NameConstant */ .chroma .no { color: #66d9ef }
+/* NameDecorator */ .chroma .nd { color: #a6e22e }
+/* NameEntity */ .chroma .ni {  }
+/* NameException */ .chroma .ne { color: #a6e22e }
+/* NameFunction */ .chroma .nf { color: #a6e22e }
+/* NameFunctionMagic */ .chroma .fm {  }
+/* NameLabel */ .chroma .nl {  }
+/* NameNamespace */ .chroma .nn {  }
+/* NameOther */ .chroma .nx { color: #a6e22e }
+/* NameProperty */ .chroma .py {  }
+/* NameTag */ .chroma .nt { color: #f92672 }
+/* NameVariable */ .chroma .nv {  }
+/* NameVariableClass */ .chroma .vc {  }
+/* NameVariableGlobal */ .chroma .vg {  }
+/* NameVariableInstance */ .chroma .vi {  }
+/* NameVariableMagic */ .chroma .vm {  }
+/* Literal */ .chroma .l { color: #ae81ff }
+/* LiteralDate */ .chroma .ld { color: #e6db74 }
+/* LiteralString */ .chroma .s { color: #e6db74 }
+/* LiteralStringAffix */ .chroma .sa { color: #e6db74 }
+/* LiteralStringBacktick */ .chroma .sb { color: #e6db74 }
+/* LiteralStringChar */ .chroma .sc { color: #e6db74 }
+/* LiteralStringDelimiter */ .chroma .dl { color: #e6db74 }
+/* LiteralStringDoc */ .chroma .sd { color: #e6db74 }
+/* LiteralStringDouble */ .chroma .s2 { color: #e6db74 }
+/* LiteralStringEscape */ .chroma .se { color: #ae81ff }
+/* LiteralStringHeredoc */ .chroma .sh { color: #e6db74 }
+/* LiteralStringInterpol */ .chroma .si { color: #e6db74 }
+/* LiteralStringOther */ .chroma .sx { color: #e6db74 }
+/* LiteralStringRegex */ .chroma .sr { color: #e6db74 }
+/* LiteralStringSingle */ .chroma .s1 { color: #e6db74 }
+/* LiteralStringSymbol */ .chroma .ss { color: #e6db74 }
+/* LiteralNumber */ .chroma .m { color: #ae81ff }
+/* LiteralNumberBin */ .chroma .mb { color: #ae81ff }
+/* LiteralNumberFloat */ .chroma .mf { color: #ae81ff }
+/* LiteralNumberHex */ .chroma .mh { color: #ae81ff }
+/* LiteralNumberInteger */ .chroma .mi { color: #ae81ff }
+/* LiteralNumberIntegerLong */ .chroma .il { color: #ae81ff }
+/* LiteralNumberOct */ .chroma .mo { color: #ae81ff }
+/* Operator */ .chroma .o { color: #f92672 }
+/* OperatorWord */ .chroma .ow { color: #f92672 }
+/* Punctuation */ .chroma .p {  }
+/* Comment */ .chroma .c { color: #75715e }
+/* CommentHashbang */ .chroma .ch { color: #75715e }
+/* CommentMultiline */ .chroma .cm { color: #75715e }
+/* CommentSingle */ .chroma .c1 { color: #75715e }
+/* CommentSpecial */ .chroma .cs { color: #75715e }
+/* CommentPreproc */ .chroma .cp { color: #75715e }
+/* CommentPreprocFile */ .chroma .cpf { color: #75715e }
+/* Generic */ .chroma .g {  }
+/* GenericDeleted */ .chroma .gd { color: #f92672 }
+/* GenericEmph */ .chroma .ge { font-style: italic }
+/* GenericError */ .chroma .gr {  }
+/* GenericHeading */ .chroma .gh {  }
+/* GenericInserted */ .chroma .gi { color: #a6e22e }
+/* GenericOutput */ .chroma .go {  }
+/* GenericPrompt */ .chroma .gp {  }
+/* GenericStrong */ .chroma .gs { font-weight: bold }
+/* GenericSubheading */ .chroma .gu { color: #75715e }
+/* GenericTraceback */ .chroma .gt {  }
+/* GenericUnderline */ .chroma .gl {  }
+/* TextWhitespace */ .chroma .w {  }
+
+  }
+  @media (prefers-color-scheme: light) { 
+    /* Background */ .chroma { background-color: #f8f8f8 }
+/* Other */ .chroma .x {  }
+/* Error */ .chroma .err {  }
+/* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
+/* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }
+/* LineHighlight */ .chroma .hl { display: block; width: 100%;background-color: #ffffcc }
+/* LineNumbersTable */ .chroma .lnt { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
+/* LineNumbers */ .chroma .ln { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
+/* Keyword */ .chroma .k { color: #aa22ff; font-weight: bold }
+/* KeywordConstant */ .chroma .kc { color: #aa22ff; font-weight: bold }
+/* KeywordDeclaration */ .chroma .kd { color: #aa22ff; font-weight: bold }
+/* KeywordNamespace */ .chroma .kn { color: #aa22ff; font-weight: bold }
+/* KeywordPseudo */ .chroma .kp { color: #aa22ff }
+/* KeywordReserved */ .chroma .kr { color: #aa22ff; font-weight: bold }
+/* KeywordType */ .chroma .kt { color: #00bb00; font-weight: bold }
+/* Name */ .chroma .n {  }
+/* NameAttribute */ .chroma .na { color: #bb4444 }
+/* NameBuiltin */ .chroma .nb { color: #aa22ff }
+/* NameBuiltinPseudo */ .chroma .bp {  }
+/* NameClass */ .chroma .nc { color: #0000ff }
+/* NameConstant */ .chroma .no { color: #880000 }
+/* NameDecorator */ .chroma .nd { color: #aa22ff }
+/* NameEntity */ .chroma .ni { color: #999999; font-weight: bold }
+/* NameException */ .chroma .ne { color: #d2413a; font-weight: bold }
+/* NameFunction */ .chroma .nf { color: #00a000 }
+/* NameFunctionMagic */ .chroma .fm {  }
+/* NameLabel */ .chroma .nl { color: #a0a000 }
+/* NameNamespace */ .chroma .nn { color: #0000ff; font-weight: bold }
+/* NameOther */ .chroma .nx {  }
+/* NameProperty */ .chroma .py {  }
+/* NameTag */ .chroma .nt { color: #008000; font-weight: bold }
+/* NameVariable */ .chroma .nv { color: #b8860b }
+/* NameVariableClass */ .chroma .vc {  }
+/* NameVariableGlobal */ .chroma .vg {  }
+/* NameVariableInstance */ .chroma .vi {  }
+/* NameVariableMagic */ .chroma .vm {  }
+/* Literal */ .chroma .l {  }
+/* LiteralDate */ .chroma .ld {  }
+/* LiteralString */ .chroma .s { color: #bb4444 }
+/* LiteralStringAffix */ .chroma .sa { color: #bb4444 }
+/* LiteralStringBacktick */ .chroma .sb { color: #bb4444 }
+/* LiteralStringChar */ .chroma .sc { color: #bb4444 }
+/* LiteralStringDelimiter */ .chroma .dl { color: #bb4444 }
+/* LiteralStringDoc */ .chroma .sd { color: #bb4444; font-style: italic }
+/* LiteralStringDouble */ .chroma .s2 { color: #bb4444 }
+/* LiteralStringEscape */ .chroma .se { color: #bb6622; font-weight: bold }
+/* LiteralStringHeredoc */ .chroma .sh { color: #bb4444 }
+/* LiteralStringInterpol */ .chroma .si { color: #bb6688; font-weight: bold }
+/* LiteralStringOther */ .chroma .sx { color: #008000 }
+/* LiteralStringRegex */ .chroma .sr { color: #bb6688 }
+/* LiteralStringSingle */ .chroma .s1 { color: #bb4444 }
+/* LiteralStringSymbol */ .chroma .ss { color: #b8860b }
+/* LiteralNumber */ .chroma .m { color: #666666 }
+/* LiteralNumberBin */ .chroma .mb { color: #666666 }
+/* LiteralNumberFloat */ .chroma .mf { color: #666666 }
+/* LiteralNumberHex */ .chroma .mh { color: #666666 }
+/* LiteralNumberInteger */ .chroma .mi { color: #666666 }
+/* LiteralNumberIntegerLong */ .chroma .il { color: #666666 }
+/* LiteralNumberOct */ .chroma .mo { color: #666666 }
+/* Operator */ .chroma .o { color: #666666 }
+/* OperatorWord */ .chroma .ow { color: #aa22ff; font-weight: bold }
+/* Punctuation */ .chroma .p {  }
+/* Comment */ .chroma .c { color: #008800; font-style: italic }
+/* CommentHashbang */ .chroma .ch { color: #008800; font-style: italic }
+/* CommentMultiline */ .chroma .cm { color: #008800; font-style: italic }
+/* CommentSingle */ .chroma .c1 { color: #008800; font-style: italic }
+/* CommentSpecial */ .chroma .cs { color: #008800; font-weight: bold }
+/* CommentPreproc */ .chroma .cp { color: #008800 }
+/* CommentPreprocFile */ .chroma .cpf { color: #008800 }
+/* Generic */ .chroma .g {  }
+/* GenericDeleted */ .chroma .gd { color: #a00000 }
+/* GenericEmph */ .chroma .ge { font-style: italic }
+/* GenericError */ .chroma .gr { color: #ff0000 }
+/* GenericHeading */ .chroma .gh { color: #000080; font-weight: bold }
+/* GenericInserted */ .chroma .gi { color: #00a000 }
+/* GenericOutput */ .chroma .go { color: #888888 }
+/* GenericPrompt */ .chroma .gp { color: #000080; font-weight: bold }
+/* GenericStrong */ .chroma .gs { font-weight: bold }
+/* GenericSubheading */ .chroma .gu { color: #800080; font-weight: bold }
+/* GenericTraceback */ .chroma .gt { color: #0044dd }
+/* GenericUnderline */ .chroma .gl { text-decoration: underline }
+/* TextWhitespace */ .chroma .w { color: #bbbbbb }
+ 
+  }
+  </style>
+
+</head><body>
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="fixed-top navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <a class="navbar-brand"href="https://flkellyneucloudblogpre.z16.web.core.windows.net/"><img class="img-fluid" src="/images/logo.svg" alt="Fletcher Kelly | Cloud Engineer"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://flkellyneucloudblogpre.z16.web.core.windows.net/"> Home </a>
+          </li>
+          
+        </ul>
+        
+        <!-- search -->
+        <div class="search">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://flkellyneucloudblogpre.z16.web.core.windows.net/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation --> <div class="py-5 d-none d-lg-block"></div> 
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto block shadow mb-5">
+        <h2>11th Hour</h2>
+        <div class="mb-3 post-meta">
+          <a href="/author/fskelly">Fskelly</a>,
+          Dec 7, 2007, 
+          <a href="/categories/uncategorized">Uncategorized</a>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<pre><code>&lt;p&gt;
+   
+&lt;/p&gt;
+
+&lt;p&gt;
+  The LUNATIC with GPS Unit mounted
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;a href=&quot;http://blufiles.storage.live.com/y1plfFrpul0llNq31SJdgAJof_6J3wjXsu9iIpjNFYV-2G8lo8WcAl3uJqpxg106X_P7eLQ8nU1ap4&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img loading=&quot;lazy&quot; height=&quot;200&quot; alt=&quot;IMG_0695_2&quot; src=&quot;http://blufiles.storage.live.com/y1plfFrpul0llNq31SJdgAJof_6J3wjXsu9iIpjNFYV-2G8lo8WcAl3uJqpxg106X_P7eLQ8nU1ap4&quot; width=&quot;150&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://jpvv5a.blu.livefilestore.com/y1pRruePLUILchla5ustZIdox0dekNRwqyfZxd89r3J4DZ9QEN-xs0hrWwYYm20Sct7ttwB30hpaz5R3gNCipXv7YLFG6xiErJW?PARTNER=WRITER&quot;&gt;&lt;a href=&quot;http://blufiles.storage.live.com/y1plfFrpul0llNz9osCxEURJkJUDuL5-JC_cYu6ZVJx_BF1fyKJboaf0L7g-5jvrTfUBPo23pkXeXQ&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img loading=&quot;lazy&quot; height=&quot;200&quot; alt=&quot;IMG_0696_2&quot; src=&quot;http://blufiles.storage.live.com/y1plfFrpul0llNz9osCxEURJkJUDuL5-JC_cYu6ZVJx_BF1fyKJboaf0L7g-5jvrTfUBPo23pkXeXQ&quot; width=&quot;150&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://blufiles.storage.live.com/y1plfFrpul0llMQrGg82ciB3la8Y6l12iPG4_YkHsRxDDQF_CkrrX_njcnPsQF1rA-XIYQnioMVZ2g&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img loading=&quot;lazy&quot; height=&quot;200&quot; alt=&quot;IMG_0697&quot; src=&quot;http://blufiles.storage.live.com/y1plfFrpul0llMQrGg82ciB3la8Y6l12iPG4_YkHsRxDDQF_CkrrX_njcnPsQF1rA-XIYQnioMVZ2g&quot; width=&quot;267&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://blufiles.storage.live.com/y1plfFrpul0llN-Lgb1B4Y2OEf5bIzpzjyrjeqjt5YIi6aJ3cNN360mLtN7cHt-c0ZrIuKDMylunpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img loading=&quot;lazy&quot; height=&quot;200&quot; alt=&quot;IMG_0698_2&quot; src=&quot;http://blufiles.storage.live.com/y1plfFrpul0llN-Lgb1B4Y2OEf5bIzpzjyrjeqjt5YIi6aJ3cNN360mLtN7cHt-c0ZrIuKDMylunpg&quot; width=&quot;267&quot; /&gt;&lt;/a&gt;&lt;/p&gt; 
+  
+  &lt;p&gt;
+     
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    The LUNATIC having the LED front indicators being fitted
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+     &lt;a href=&quot;http://blufiles.storage.live.com/y1plfFrpul0llPiy6PiRz_Y5JVy6bjtP823MC3WC6F-eHl-Trf73J2PINZvYz6HHN8P0xxTEi-6yh8&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img loading=&quot;lazy&quot; height=&quot;200&quot; alt=&quot;IMG_0679&quot; src=&quot;http://blufiles.storage.live.com/y1plfFrpul0llPiy6PiRz_Y5JVy6bjtP823MC3WC6F-eHl-Trf73J2PINZvYz6HHN8P0xxTEi-6yh8&quot; width=&quot;267&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://blufiles.storage.live.com/y1plfFrpul0llMlpovNajiMd9v8r1rVZsAlO8wPXEgZGK0J1EDYS4GSiaS6tSBJn0Yz4zv3v92LYfY&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img loading=&quot;lazy&quot; height=&quot;200&quot; alt=&quot;IMG_0680&quot; src=&quot;http://blufiles.storage.live.com/y1plfFrpul0llMlpovNajiMd9v8r1rVZsAlO8wPXEgZGK0J1EDYS4GSiaS6tSBJn0Yz4zv3v92LYfY&quot; width=&quot;267&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://blufiles.storage.live.com/y1plfFrpul0llPmXEfbkebl1kdnaQma1PIWQR44cj9Zk2k5ky0P162uWQjgfVGzFbIUTo9dxO7oi6A&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img loading=&quot;lazy&quot; height=&quot;200&quot; alt=&quot;IMG_0682&quot; src=&quot;http://blufiles.storage.live.com/y1plfFrpul0llPmXEfbkebl1kdnaQma1PIWQR44cj9Zk2k5ky0P162uWQjgfVGzFbIUTo9dxO7oi6A&quot; width=&quot;267&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://blufiles.storage.live.com/y1plfFrpul0llP6aTupHw-8Qp340WXqA5oUO03qPdyPLfdsPvafH5EMGONdAkSzcf2b3ofxhhksMFE&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img loading=&quot;lazy&quot; height=&quot;200&quot; alt=&quot;IMG_0683_2&quot; src=&quot;http://blufiles.storage.live.com/y1plfFrpul0llP6aTupHw-8Qp340WXqA5oUO03qPdyPLfdsPvafH5EMGONdAkSzcf2b3ofxhhksMFE&quot; width=&quot;267&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://blufiles.storage.live.com/y1plfFrpul0llPmXEfbkebl1kdnaQma1PIWQR44cj9Zk2k5ky0P162uWQjgfVGzFbIUTo9dxO7oi6A&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;/a&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    Yuk, &quot;stalk indicators&quot;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    &lt;a href=&quot;http://blufiles.storage.live.com/y1plfFrpul0llMHVo2NAtLRMM9u9e4FgQTEPwy_TZt9liWS7xvZ_0eFhYcU7Riq7c9GPfTALeMOOYk&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img loading=&quot;lazy&quot; height=&quot;200&quot; alt=&quot;IMG_0635&quot; src=&quot;http://blufiles.storage.live.com/y1plfFrpul0llMHVo2NAtLRMM9u9e4FgQTEPwy_TZt9liWS7xvZ_0eFhYcU7Riq7c9GPfTALeMOOYk&quot; width=&quot;267&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://blufiles.storage.live.com/y1plfFrpul0llPn_xdKzhNKZFXvlU4WKLYzdWlXWyoN9CCzEe53v9roA8YNnERqsHT36TwJpSiktLA&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img loading=&quot;lazy&quot; height=&quot;200&quot; alt=&quot;IMG_0637&quot; src=&quot;http://blufiles.storage.live.com/y1plfFrpul0llPn_xdKzhNKZFXvlU4WKLYzdWlXWyoN9CCzEe53v9roA8YNnERqsHT36TwJpSiktLA&quot; width=&quot;150&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://blufiles.storage.live.com/y1plfFrpul0llOal4KdEZeW4Ag5mW9F2aviYztSUuka4jlhflElgLjcwg3Dbopksb8SXYv9z4BYMr0&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img loading=&quot;lazy&quot; height=&quot;200&quot; alt=&quot;IMG_0614&quot; src=&quot;http://blufiles.storage.live.com/y1plfFrpul0llOal4KdEZeW4Ag5mW9F2aviYztSUuka4jlhflElgLjcwg3Dbopksb8SXYv9z4BYMr0&quot; width=&quot;267&quot; /&gt;&lt;/a&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    A work in progress, hm&amp;#8230;&amp;#8230;. streetfighter&amp;#8230;&amp;#8230;&amp;#8230;&amp;#8230;.I DONT THINK SO
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+     &lt;a href=&quot;http://blufiles.storage.live.com/y1plfFrpul0llNCHd00xgh5tNkQv0lAHhA1hL2BrovjRyJjZmvOGoz8JBkwvzhYeIuCkyoMHGkU--M&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img loading=&quot;lazy&quot; height=&quot;200&quot; alt=&quot;IMG_0678&quot; src=&quot;http://blufiles.storage.live.com/y1plfFrpul0llNCHd00xgh5tNkQv0lAHhA1hL2BrovjRyJjZmvOGoz8JBkwvzhYeIuCkyoMHGkU--M&quot; width=&quot;267&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://blufiles.storage.live.com/y1plfFrpul0llOyWaZE6-QJdT9Q0LO1TP90OP5QpshSqML6Cn74w91-IBAUMpLNsYXSTTUjAchvur8&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img loading=&quot;lazy&quot; height=&quot;200&quot; alt=&quot;IMG_0681&quot; src=&quot;http://blufiles.storage.live.com/y1plfFrpul0llOyWaZE6-QJdT9Q0LO1TP90OP5QpshSqML6Cn74w91-IBAUMpLNsYXSTTUjAchvur8&quot; width=&quot;150&quot; /&gt;&lt;/a&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    Yummy&amp;#8230;&amp;#8230;&amp;#8230;&amp;#8230;&amp;#8230;&amp;#8230;..LED indicators and a nice clean look
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    &lt;a href=&quot;http://blufiles.storage.live.com/y1plfFrpul0llNPP_-hSq580gyiPEv_RY3RXcyfAoGldNuVVE_QZUDDjAn-a_Kv6Ydu9Iw3mXUGZTw&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img loading=&quot;lazy&quot; height=&quot;200&quot; alt=&quot;IMG_0689&quot; src=&quot;http://blufiles.storage.live.com/y1plfFrpul0llNPP_-hSq580gyiPEv_RY3RXcyfAoGldNuVVE_QZUDDjAn-a_Kv6Ydu9Iw3mXUGZTw&quot; width=&quot;267&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://blufiles.storage.live.com/y1plfFrpul0llNfhfIoFSg3tnBgQ8mA18cVPGgd-qO-1F01FR1F5wGT3uuYiVCgJLlR9fcCHt8xZKE&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img loading=&quot;lazy&quot; height=&quot;200&quot; alt=&quot;IMG_0690&quot; src=&quot;http://blufiles.storage.live.com/y1plfFrpul0llNfhfIoFSg3tnBgQ8mA18cVPGgd-qO-1F01FR1F5wGT3uuYiVCgJLlR9fcCHt8xZKE&quot; width=&quot;267&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://blufiles.storage.live.com/y1plfFrpul0llNq6iyUVnLaE_B2WhGGuQjfCZtWNIVBK9JXytNcvYqtdTRgTjnBgLF9YjyFWmeXv8g&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img loading=&quot;lazy&quot; height=&quot;200&quot; alt=&quot;IMG_0691&quot; src=&quot;http://blufiles.storage.live.com/y1plfFrpul0llNq6iyUVnLaE_B2WhGGuQjfCZtWNIVBK9JXytNcvYqtdTRgTjnBgLF9YjyFWmeXv8g&quot; width=&quot;267&quot; /&gt;&lt;/a&gt;
+  &lt;/p&gt;&lt;/p&gt; 
+  
+  &lt;p&gt;
+    &lt;/a&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    &lt;/a&gt;
+  &lt;/p&gt;&lt;/div&gt; 
+  
+  &lt;table cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;
+    &lt;tr&gt;
+      &lt;td&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pnhv8xkvpwEawT3G6tav9axv_4K2YbEMoO8KYgVw_eF8HMJfAauSipCy722gD8oxvu6HcyMhw2YY&quot; target=&quot;_blank&quot; rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pnhv8xkvpwEawT3G6tav9axv_4K2YbEMoO8KYgVw_eF8HMJfAauSipCy722gD8oxvu6HcyMhw2YY;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;660 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pnhv8xkvpwEawT3G6tav9axZCvpL9KnEuVVrks4Q5y_Mw7CVsgf7fuFITuVOkoJm0sJyRhMaHxwY&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+      
+      &lt;td width=&quot;15&quot;&gt;
+      &lt;/td&gt;
+      
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pgHk9hLZ9VLl0qj5JietYGBxgQqCOlA0KLgO6n09kVHKgSseFRbKV52qqwI9et7_GELehQ-wOXsI&quot; target='_blank' rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pgHk9hLZ9VLl0qj5JietYGBxgQqCOlA0KLgO6n09kVHKgSseFRbKV52qqwI9et7_GELehQ-wOXsI;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;656 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pgHk9hLZ9VLl0qj5JietYGCgSYGI1PJ0eEsBSPK3QsNRXdcSVG8UBUB5fbDGmiImb9h3InkQpPqk&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pgiUbVVwgKSWS6ueJZiX4t1sI7PLoyA4lInbCplIEkssT895ZYGE_vp2qKVX5WVqySAWzhMewG9w&quot; target=&quot;_blank&quot; rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pgiUbVVwgKSWS6ueJZiX4t1sI7PLoyA4lInbCplIEkssT895ZYGE_vp2qKVX5WVqySAWzhMewG9w;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;661 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pgiUbVVwgKSWS6ueJZiX4t7NZrb7T6f2qouu4uW_vBm0KtO5GpFCDHqPSc1p9U-Sespqn5BZMmPU&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+      
+      &lt;td width=&quot;15&quot;&gt;
+      &lt;/td&gt;
+      
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pF_xUg5QGXwqvdsH5TSjdzw5BO2c7MOv_oMlqXJQXyjiqan2eGsKnUtB8I6Spaei3vjjz13AR_l8&quot; target='_blank' rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pF_xUg5QGXwqvdsH5TSjdzw5BO2c7MOv_oMlqXJQXyjiqan2eGsKnUtB8I6Spaei3vjjz13AR_l8;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;662 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pF_xUg5QGXwqvdsH5TSjdz4hbF6obFZ73PgzpkjwL9H2LaTRyBUbSeiq6ZsJRRhouHYPbbBFSW8w&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pRYgmg2Ogf1rpLnFVqOACCQrHDSrKZJ4mQngOLQoNNPINsqyFl0Bp2w56vXrL3HGAU5o_3Tp2ctM&quot; target=&quot;_blank&quot; rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pRYgmg2Ogf1rpLnFVqOACCQrHDSrKZJ4mQngOLQoNNPINsqyFl0Bp2w56vXrL3HGAU5o_3Tp2ctM;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;663 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pRYgmg2Ogf1rpLnFVqOACCRrSzrJm0AX4lXft_WSCURgFHS1CSYaGMr2rXU4tV-Nil4ahaeP0lAk&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+      
+      &lt;td width=&quot;15&quot;&gt;
+      &lt;/td&gt;
+      
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pNe81X68RRaxsgciUpQTprLb1iApBvKY7w2dAOBsARFYuotwLMzh5M4IJSjLuuplwXzQR1CEI2xA&quot; target='_blank' rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pNe81X68RRaxsgciUpQTprLb1iApBvKY7w2dAOBsARFYuotwLMzh5M4IJSjLuuplwXzQR1CEI2xA;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;664 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pNe81X68RRaxsgciUpQTprIGh9JUIh3a2A9qv85_2tI-UeqiLYb6KC9YmXSf82vGNw7c2KXKDE_g&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1p37ih5ZcHTYooRFw78vmWddRrX83g5l-5X1YhBt6ijlCDwu0ouC_YC--hKqevqsRtORF5TLLskQY&quot; target=&quot;_blank&quot; rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1p37ih5ZcHTYooRFw78vmWddRrX83g5l-5X1YhBt6ijlCDwu0ouC_YC--hKqevqsRtORF5TLLskQY;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;665 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1p37ih5ZcHTYooRFw78vmWdV5_7hzLYpGJoNFwJHnWL2G3ijNHFgzFIQr5SrD-QHlb5hxAwn8rZxY&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+      
+      &lt;td width=&quot;15&quot;&gt;
+      &lt;/td&gt;
+      
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pHDtZ7OX-Nq3a_MnQnEyzul3rtl5jViwadiZwtib1CeZYdZs69ns3qk3AyJOZ0M_oMjbAm_KDcx8&quot; target='_blank' rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pHDtZ7OX-Nq3a_MnQnEyzul3rtl5jViwadiZwtib1CeZYdZs69ns3qk3AyJOZ0M_oMjbAm_KDcx8;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;666 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pHDtZ7OX-Nq3a_MnQnEyzurRaEWS-5wmkay8IG9P4KJadPPDN5qhnD_uFChG1a4jMjSxulxV9Dsg&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1p12X-AhKFspnsKAP-Wz73y71GvbQ3H6SjMq5mmYh-7Mm1JqVHN8DJnfeWC2Se1NebUr1ip4Rf9oU&quot; target=&quot;_blank&quot; rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1p12X-AhKFspnsKAP-Wz73y71GvbQ3H6SjMq5mmYh-7Mm1JqVHN8DJnfeWC2Se1NebUr1ip4Rf9oU;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;678 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1p12X-AhKFspnsKAP-Wz73y6sBrM2yr2V4UUUNBbJkpDlCQfgKSfIaNiSVQ35S6kfzDMdlwfNrFCE&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+      
+      &lt;td width=&quot;15&quot;&gt;
+      &lt;/td&gt;
+      
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pV7uTz5p8q1tgmZLNCZ-whvhgnI14xxB-YqCXH-p2kOF1iIg57Jrpn5oOllDLUkLLmvORDJV09Sg&quot; target='_blank' rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pV7uTz5p8q1tgmZLNCZ-whvhgnI14xxB-YqCXH-p2kOF1iIg57Jrpn5oOllDLUkLLmvORDJV09Sg;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;679 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pV7uTz5p8q1tgmZLNCZ-whhjqhseo67kAhZ-n4vvphy4WS16_EyAUiS1_6bhDOqqTCbyZvIDxK6w&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pQblUoz6EV7lfSovzi57ETKU_30MFCbGhQseMvdAs-GHmYrAm0AoE9_6K8w5KjGLEcTldZUn0bm0&quot; target=&quot;_blank&quot; rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pQblUoz6EV7lfSovzi57ETKU_30MFCbGhQseMvdAs-GHmYrAm0AoE9_6K8w5KjGLEcTldZUn0bm0;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;680 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pQblUoz6EV7lfSovzi57ETIcmPgmurO9LUj70gG9xWuN54mPdMIwajP3xq7CYsU0vcAHwytXxY0k&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+      
+      &lt;td width=&quot;15&quot;&gt;
+      &lt;/td&gt;
+      
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pu3n4myym0FyDm-7tBPllqvijV4ILHSva0wtBE380LQOExtXJIWIPf1j_U45PfH9VDfb_Gedi3Oc&quot; target='_blank' rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pu3n4myym0FyDm-7tBPllqvijV4ILHSva0wtBE380LQOExtXJIWIPf1j_U45PfH9VDfb_Gedi3Oc;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;681 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pu3n4myym0FyDm-7tBPllqpPS9R6dwZUhxs091QRL6YDqMU-FLVcDK9XgUTSQTA_rmncdqPWixec&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pwCz-wwJpf6PZboAX-4HynKqDi_yIOr7oJ_JK9OYCoGOS62f7cKr1ILVcPvYunu94Igs21vleNFs&quot; target=&quot;_blank&quot; rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pwCz-wwJpf6PZboAX-4HynKqDi_yIOr7oJ_JK9OYCoGOS62f7cKr1ILVcPvYunu94Igs21vleNFs;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;686 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pwCz-wwJpf6PZboAX-4HynHqe9c8jljDFPtG_YJpgvKuNjzslZoUuo9k5ppW-7pEbCYxRM9LlkQo&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+      
+      &lt;td width=&quot;15&quot;&gt;
+      &lt;/td&gt;
+      
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pSYQbaZYfHFsWfinwDd7_nhkfQoljGPGRwk5XQQ3Kkv5Iz2o99jX-Hi_FRF7wYYKZ2oljJVVmiwQ&quot; target='_blank' rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pSYQbaZYfHFsWfinwDd7_nhkfQoljGPGRwk5XQQ3Kkv5Iz2o99jX-Hi_FRF7wYYKZ2oljJVVmiwQ;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;692 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pSYQbaZYfHFsWfinwDd7_nqJ7KELO03W3p3PzBff19GLZoBYTSzLz3210jXXp8XpyusqSU3vEJsY&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pWG2hqv9WvWiPda5lf3eZ8hyOWeRHVY3rioYXb4ZEdjS-i4Ij7VPqYIqRcvlsiAHXQIcDoltDUs8&quot; target=&quot;_blank&quot; rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pWG2hqv9WvWiPda5lf3eZ8hyOWeRHVY3rioYXb4ZEdjS-i4Ij7VPqYIqRcvlsiAHXQIcDoltDUs8;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;699 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pWG2hqv9WvWiPda5lf3eZ8oUX6cadlbo5SOFcvh9uMcI-Msg9UrMhT-QpQytxUKJlbA-910nPCMw&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+      
+      &lt;td width=&quot;15&quot;&gt;
+      &lt;/td&gt;
+      
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pdsFUzcoZz9QXUy96qAMxG2rIf-xSKKF_Bl3yNSeP0SurLJJ5S3I61KaNChk35QiY1dQq9ubcSUE&quot; target='_blank' rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pdsFUzcoZz9QXUy96qAMxG2rIf-xSKKF_Bl3yNSeP0SurLJJ5S3I61KaNChk35QiY1dQq9ubcSUE;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;700 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pdsFUzcoZz9QXUy96qAMxG7X4fCvfGDXhguSRBpxG-f2_8SQUNS1IPJCQddiahw6rDxqlJZpgmkA&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1p2zU38xa91gefV2rXBA989G1IeeMnCPphWdUMdH7XzMz8TgWBwKJ6xjiWAde1sXobVr_npX1jfus&quot; target=&quot;_blank&quot; rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1p2zU38xa91gefV2rXBA989G1IeeMnCPphWdUMdH7XzMz8TgWBwKJ6xjiWAde1sXobVr_npX1jfus;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;701 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1p2zU38xa91gefV2rXBA989BIZ0oN51HLLxZEn2311-NiM3IESIFsH1-ZhG4HJBiyz5JkZPM2Qaa8&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+      
+      &lt;td width=&quot;15&quot;&gt;
+      &lt;/td&gt;
+      
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1p_2Rx-c22DQq1Yjbxlz-45r9RIWwp7QkXR1bhHnB9AqiDswNkcEELz0Kv8dCp_SJBVdi4xnMq42I&quot; target='_blank' rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1p_2Rx-c22DQq1Yjbxlz-45r9RIWwp7QkXR1bhHnB9AqiDswNkcEELz0Kv8dCp_SJBVdi4xnMq42I;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;657 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1p_2Rx-c22DQq1Yjbxlz-45i1ieKzeaj14oVBPywzrdl1QXNuCHnhMBxzVeN1gm0AXCW59xxgPrAo&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1p86COVKCstQaQRN_GnyDlwEEabKZrvjmNycw8cinskjX5OwntvRvtQajKRipjM9EOYmO9RhwjeWU&quot; target=&quot;_blank&quot; rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1p86COVKCstQaQRN_GnyDlwEEabKZrvjmNycw8cinskjX5OwntvRvtQajKRipjM9EOYmO9RhwjeWU;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;658 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1p86COVKCstQaQRN_GnyDlwAEozR5FOLN6Ge2eTSRzdEstCmtnZr38j8ywyfzxell4O7FgkV_dAU0&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+      
+      &lt;td width=&quot;15&quot;&gt;
+      &lt;/td&gt;
+      
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pvHrbxeivv1n2ypaftoE3Z1VbYHUAcW2hkvlzGUFFco4W9xb5BhKuF9YK9Nl2dH8osJHZdopohZs&quot; target='_blank' rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pvHrbxeivv1n2ypaftoE3Z1VbYHUAcW2hkvlzGUFFco4W9xb5BhKuF9YK9Nl2dH8osJHZdopohZs;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;659 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pvHrbxeivv1n2ypaftoE3Z8sB0zyvFvLVlgYtMA8YG2blbMrxSGykCy8wZv14z1lRV35OpUho8Po&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pc2t67IhIe_-etbU95q-yrF2IR9jSLla_hz20m8RFQB7289V-LNUF76muLhEXcFUnOC6KQV_o3rI&quot; target=&quot;_blank&quot; rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pc2t67IhIe_-etbU95q-yrF2IR9jSLla_hz20m8RFQB7289V-LNUF76muLhEXcFUnOC6KQV_o3rI;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;667 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pc2t67IhIe_-etbU95q-yrKHeBJ9yfMvFvTVGNythCJUdUTeg_F-cgzHUlyvqKNTqtA402KhRuBM&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+      
+      &lt;td width=&quot;15&quot;&gt;
+      &lt;/td&gt;
+      
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pt1p06MogG3yBwF8eewbci3qW8OOBghRr9lYeFCJUeN5G8Y2nV8VpFcz3oIyAR3tv56tR7wR9DTo&quot; target='_blank' rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pt1p06MogG3yBwF8eewbci3qW8OOBghRr9lYeFCJUeN5G8Y2nV8VpFcz3oIyAR3tv56tR7wR9DTo;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;668 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pt1p06MogG3yBwF8eewbciyvuKEwFb_VmKULTPx4dobIYUV8A-gwEXIEOpFGY23MyuGGGWtuFlMw&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pOH8bjhD5B303jp8WQDiOMFfbaoQ-ow8EDKoqlTjCMpTGWnLF3NblTG3bopJcXYPGU34GMfWIN_E&quot; target=&quot;_blank&quot; rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pOH8bjhD5B303jp8WQDiOMFfbaoQ-ow8EDKoqlTjCMpTGWnLF3NblTG3bopJcXYPGU34GMfWIN_E;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;669 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pOH8bjhD5B303jp8WQDiOMDQx0J8v3IWfSTZdZYSXhN4Zq207d8l-rV19u2nkp3129PlLy1MPmEU&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+      
+      &lt;td width=&quot;15&quot;&gt;
+      &lt;/td&gt;
+      
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pht_LYLdpxWk1xqwqWzqSBbhqWSE56ZkpqOQCNeed0ckcy5iJejnD6HOXhtzsZ8udG87zD7EKIjo&quot; target='_blank' rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pht_LYLdpxWk1xqwqWzqSBbhqWSE56ZkpqOQCNeed0ckcy5iJejnD6HOXhtzsZ8udG87zD7EKIjo;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;670 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pht_LYLdpxWk1xqwqWzqSBQLRY-PU8DpqrLGoyGHAzO7JnYAzkiZub90XCm0waHfammTq_ycM9vs&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1p7BcwL3GkofEYQndrplwvXBx_Eh_HJgV14dTHKlsRJ-GACPGedjHWXVE75NiJM1wNSQf0AxP1qt0&quot; target=&quot;_blank&quot; rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1p7BcwL3GkofEYQndrplwvXBx_Eh_HJgV14dTHKlsRJ-GACPGedjHWXVE75NiJM1wNSQf0AxP1qt0;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;671 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1p7BcwL3GkofEYQndrplwvXJrADuhz3xtZkPOu7FJS7WZgSdAYOl4Ie8G4wJBO8yRKDwipibd6dqA&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+      
+      &lt;td width=&quot;15&quot;&gt;
+      &lt;/td&gt;
+      
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pr_DkxN6h2GcxINIskwRXlMzLSccSESK1kGWLBZXoIIqVTFxPIWJFZi1ogCsvnjItknPAdlyJPbQ&quot; target='_blank' rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pr_DkxN6h2GcxINIskwRXlMzLSccSESK1kGWLBZXoIIqVTFxPIWJFZi1ogCsvnjItknPAdlyJPbQ;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;672 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pr_DkxN6h2GcxINIskwRXlKmbI40FYZPgMRFbbxTIVwHjanbvoN-1Ixf4gX06CKhyRPfw9bicFkY&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pzd51YwH-Z0kEik0OsG5Azqt_niM88RA0ONVCntbAiCb3M8Ahfpc_IOORBla0sECX25Nbxkk_4uo&quot; target=&quot;_blank&quot; rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pzd51YwH-Z0kEik0OsG5Azqt_niM88RA0ONVCntbAiCb3M8Ahfpc_IOORBla0sECX25Nbxkk_4uo;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;673 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pzd51YwH-Z0kEik0OsG5AzhxyrkBed1eIl_H1twKWJoLXUnj_nv5nwiuWcLXP7jBp8tmoCraUDrw&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+      
+      &lt;td width=&quot;15&quot;&gt;
+      &lt;/td&gt;
+      
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pR_G3JQ1QwGVcuK5q_7OskFjnu3TP7WoR-FdAo81qOBfz4iCZwO-WVoP0CYNez61VekuZn2nf3lo&quot; target='_blank' rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pR_G3JQ1QwGVcuK5q_7OskFjnu3TP7WoR-FdAo81qOBfz4iCZwO-WVoP0CYNez61VekuZn2nf3lo;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;674 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pR_G3JQ1QwGVcuK5q_7OskP7pHaCkEKW_1N7wxOQcxAzauUuY9yamFmSzHzO1NrkTK0eJKAn-SbQ&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1plEgAjPgHQo_3MJ_hS9MqTekrULK-r_sqrRWG7DKFqixXpV9BsjUgXITCiOVBvw0S7vREoHE8N64&quot; target=&quot;_blank&quot; rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1plEgAjPgHQo_3MJ_hS9MqTekrULK-r_sqrRWG7DKFqixXpV9BsjUgXITCiOVBvw0S7vREoHE8N64;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;675 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1plEgAjPgHQo_3MJ_hS9MqTWRivRxXIM96epkPM3Cce63IzWax_6tpCxZTxRTrauOPcdzoNlWx-cA&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+      
+      &lt;td width=&quot;15&quot;&gt;
+      &lt;/td&gt;
+      
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pFg8w2OFdKtFaNDnAs_lX0LU3WnOZBQ6FNWv7qR4PWe2r3DfScdV46Q4Nn9BTm3TdxwgYIchZ3Zc&quot; target='_blank' rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pFg8w2OFdKtFaNDnAs_lX0LU3WnOZBQ6FNWv7qR4PWe2r3DfScdV46Q4Nn9BTm3TdxwgYIchZ3Zc;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;682 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pFg8w2OFdKtFaNDnAs_lX0HeRSh3Fdsfx0vm6wmfrhAMJOPnO0_ArsovybLil-qS5RpvbQQFpweg&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pPGI-YDOEfO2Td7Lq9IfR8131a2zea-iYk-CxQ4oRvP0LvFtWWCiUjADMx7rpg1tY69pjItIRE4o&quot; target=&quot;_blank&quot; rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pPGI-YDOEfO2Td7Lq9IfR8131a2zea-iYk-CxQ4oRvP0LvFtWWCiUjADMx7rpg1tY69pjItIRE4o;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;683 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pPGI-YDOEfO2Td7Lq9IfR811p3mSkRyuFicrRhsS6gHhhsRdJFPZMrg7V1pStDagwxn86HQWF5Zg&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+      
+      &lt;td width=&quot;15&quot;&gt;
+      &lt;/td&gt;
+      
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pKzRPPuphxiECbPbssgvZzJwCMQI3UQZV9b0tnpGZkt_sYfrqYWm804h6nt4KJ_p3GMnaZfo4APE&quot; target='_blank' rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pKzRPPuphxiECbPbssgvZzJwCMQI3UQZV9b0tnpGZkt_sYfrqYWm804h6nt4KJ_p3GMnaZfo4APE;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;684 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pKzRPPuphxiECbPbssgvZzOsthRBNaZsziHeIyWmccTfSJcVPKNCeavm1zT1b2QfK1yJbdkWATG0&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pI126eYCiy39ysv4ZPTMm-HUYMaN3dLdmAW6ObGcnwrV16zASEYYgDqc2EXKM3hn_2hWpXL29pag&quot; target=&quot;_blank&quot; rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pI126eYCiy39ysv4ZPTMm-HUYMaN3dLdmAW6ObGcnwrV16zASEYYgDqc2EXKM3hn_2hWpXL29pag;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;685 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pI126eYCiy39ysv4ZPTMm-GQYEeU39ealtlIOWlhYmVfKjRWXsJ-MQ1fVUz6Pp7dX5rJbJkrER8I&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+      
+      &lt;td width=&quot;15&quot;&gt;
+      &lt;/td&gt;
+      
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1p8fG9qvXL7fZ_0sXIwxpDcAtlKgsn4pFfUeEGbCLb10FljR6k7q9HSheo9bIYDTz1Jl1wroJF4HQ&quot; target='_blank' rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1p8fG9qvXL7fZ_0sXIwxpDcAtlKgsn4pFfUeEGbCLb10FljR6k7q9HSheo9bIYDTz1Jl1wroJF4HQ;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;687 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1p8fG9qvXL7fZ_0sXIwxpDcM76gdiQ9eqdCmtRgM-9eC7s8qcj6p1UEqJ8u1xvMBxXsvyTfMWjCTs&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pmTnq3HqHCBuv32565_HyGVHsyu-xUcz93mZR3gw8YzOrq7r7lNyKowK6-Uu2YKhHWv6YgHZo0Jg&quot; target=&quot;_blank&quot; rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pmTnq3HqHCBuv32565_HyGVHsyu-xUcz93mZR3gw8YzOrq7r7lNyKowK6-Uu2YKhHWv6YgHZo0Jg;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;688 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pmTnq3HqHCBuv32565_HyGS-tixrGqmC6SvqpS5GmZAKqnywx2XOOphy_OG7GbL145fRbmwXGDp8&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+      
+      &lt;td width=&quot;15&quot;&gt;
+      &lt;/td&gt;
+      
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1ppNqkCny1xdcDLsR6iarrRudrIzbdkhhJtlLeqd1xDIdhzy0p_MCadm79i3w9m7dTkRwKJNCm1Q8&quot; target='_blank' rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1ppNqkCny1xdcDLsR6iarrRudrIzbdkhhJtlLeqd1xDIdhzy0p_MCadm79i3w9m7dTkRwKJNCm1Q8;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;689 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1ppNqkCny1xdcDLsR6iarrRjbYv0flwOvNaqwzIcMqv2kwJFseRgeP1-XWAu8TQnNji6ma6M6lE_w&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pbZXC-VD-YbO52iRGcgxauXRZcursRdMVavJX4sSJy_bK8D5eU4iFaqpNTLWNGF6IObbQkcntByI&quot; target=&quot;_blank&quot; rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pbZXC-VD-YbO52iRGcgxauXRZcursRdMVavJX4sSJy_bK8D5eU4iFaqpNTLWNGF6IObbQkcntByI;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;690 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pbZXC-VD-YbO52iRGcgxauUG9L_XM8Yu9F8bLW235ub-BtBnUW9TF7-SQC1pVPNKIm9phpttnQX8&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+      
+      &lt;td width=&quot;15&quot;&gt;
+      &lt;/td&gt;
+      
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pp0wPrdai9Ytvp-wZCdJMLSivUJTio77l6EQer0FVDW0spUymzjIsPggqDOUIL-o9ZSOF2emf74Y&quot; target='_blank' rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pp0wPrdai9Ytvp-wZCdJMLSivUJTio77l6EQer0FVDW0spUymzjIsPggqDOUIL-o9ZSOF2emf74Y;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;691 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pp0wPrdai9Ytvp-wZCdJMLYFTgKCroXJoJVtDVpd38mjSbB3By03anAZzmxVVx65JHvnJ0KOHsws&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1p9qCW0FsWDFoD3InHR1rf3nqniBqh7nHa6udYVWZtwQmuKerlNp_BoH53NTRe-OvhlXrn_M3JOqA&quot; target=&quot;_blank&quot; rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1p9qCW0FsWDFoD3InHR1rf3nqniBqh7nHa6udYVWZtwQmuKerlNp_BoH53NTRe-OvhlXrn_M3JOqA;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;693 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1p9qCW0FsWDFoD3InHR1rf3oyxhufbpubgo1KfCJQHjbMoiKeOkYFfTQMfb83va2LruQfp1yvN_yo&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+      
+      &lt;td width=&quot;15&quot;&gt;
+      &lt;/td&gt;
+      
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pmtrYNMBFXWsXAWg0pNWmLsXDDRbWlotIQGvT25WOSWGG380_SPG5I0ybuA7zzTW1Ua0ShkqjEn8&quot; target='_blank' rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pmtrYNMBFXWsXAWg0pNWmLsXDDRbWlotIQGvT25WOSWGG380_SPG5I0ybuA7zzTW1Ua0ShkqjEn8;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;694 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pmtrYNMBFXWsXAWg0pNWmLrNbHgQKetEJ6TVdNyzzGtee9dJYw5ZOACT_a9-Aahllkx7LP9k8bSc&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pBu3W7hjDkyHZ7yksvs62wXVVyVEanL3Ei1k30C5Psan_SVk3XM2XAWGc0xivljXVr4An7rZOfvg&quot; target=&quot;_blank&quot; rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pBu3W7hjDkyHZ7yksvs62wXVVyVEanL3Ei1k30C5Psan_SVk3XM2XAWGc0xivljXVr4An7rZOfvg;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;695 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pBu3W7hjDkyHZ7yksvs62wapqf7IgTPvUq8UWUkg3U96GNQNbwwWrhgaHI5V4qJ_lKVMWO8OxrW4&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+      
+      &lt;td width=&quot;15&quot;&gt;
+      &lt;/td&gt;
+      
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pt2CuWr5gw1-nbCwW65R3ZehG6a_lVJS9UzZhN_zTX1TXRbz0_F7ux2kyFg5oDlB4KlFLeZ5VuLY&quot; target='_blank' rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pt2CuWr5gw1-nbCwW65R3ZehG6a_lVJS9UzZhN_zTX1TXRbz0_F7ux2kyFg5oDlB4KlFLeZ5VuLY;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;696 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pt2CuWr5gw1-nbCwW65R3Zbi6UbaqEdf4Cm1B1xaFcllWgBD24q00_R4PQB16f4p0KjyS5iR7lP0&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pWkegroDCi5-OoBljM8-AGvXf-NTmqTfcxnbEIgh2EHCxwGnAnddYCB9HxzaYDNF6oZNL4jdTR2o&quot; target=&quot;_blank&quot; rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pWkegroDCi5-OoBljM8-AGvXf-NTmqTfcxnbEIgh2EHCxwGnAnddYCB9HxzaYDNF6oZNL4jdTR2o;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;697 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pWkegroDCi5-OoBljM8-AGrvEw3QSGFua7RkYfaijAHLNWEH4fQxrfWSwV6K_Deehls2T-DWq_W0&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+      
+      &lt;td width=&quot;15&quot;&gt;
+      &lt;/td&gt;
+      
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pjYEGPhQyUrdCOWOOMV1VNi7bplNgowH_bofSYTx69DuRkkiRehEnTr5A4HrErSImuScApE45g3U&quot; target='_blank' rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pjYEGPhQyUrdCOWOOMV1VNi7bplNgowH_bofSYTx69DuRkkiRehEnTr5A4HrErSImuScApE45g3U;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;698 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pjYEGPhQyUrdCOWOOMV1VNiFMzeihGjjaC_uzwwM_MCTOXaUgG-dHkkxlzORWri3NlPL3UMs52fU&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pjWqc1VvLWw9pu4EdycDXox8fltvrQZX-W-TJrapmXfPyzM8eymf9cLanhita3fBW-HAN9KfEPuc&quot; target=&quot;_blank&quot; rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pjWqc1VvLWw9pu4EdycDXox8fltvrQZX-W-TJrapmXfPyzM8eymf9cLanhita3fBW-HAN9KfEPuc;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;702 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pjWqc1VvLWw9pu4EdycDXo0MFpsM1fiFNcdmuasrbJu8-QaT8sBg_laAgigKaSGAZR-yUCqpq2Nk&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+      
+      &lt;td width=&quot;15&quot;&gt;
+      &lt;/td&gt;
+      
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1plPuqZpywrTi-Q-GTbFFmY5_XyL1NGc6WT8kNRGWj7GbjB8AFjXPPvJzmqgYM3O9BUw2tdeBkDS4&quot; target='_blank' rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1plPuqZpywrTi-Q-GTbFFmY5_XyL1NGc6WT8kNRGWj7GbjB8AFjXPPvJzmqgYM3O9BUw2tdeBkDS4;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;703 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1plPuqZpywrTi-Q-GTbFFmY5xrxVTsImdce0_FVaT8rcvt-WP0xVq3VTVi6GKGLifCP6Ji8nHRL6g&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pz3uuCS8VqD7poFyNBLcIUO4Hv-7rF0qZ3CxRPnOzoP1EVza1C2FNmqRdYod5eXTLFkRP4gZhD7Q&quot; target=&quot;_blank&quot; rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pz3uuCS8VqD7poFyNBLcIUO4Hv-7rF0qZ3CxRPnOzoP1EVza1C2FNmqRdYod5eXTLFkRP4gZhD7Q;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;704 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pz3uuCS8VqD7poFyNBLcIUH8i0Bmfv8xsF404doCO457JnNTfl3io4YKRa6sUz_bgPwA9EKvVriA&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+      
+      &lt;td width=&quot;15&quot;&gt;
+      &lt;/td&gt;
+      
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pTB3pyDIt_dGj-S5fSyYnQT_PgcpbLHgA_VHNoQWyKb4UO6oxp9zqbikx67WmqPQ7wkhKe3JHUxM&quot; target='_blank' rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pTB3pyDIt_dGj-S5fSyYnQT_PgcpbLHgA_VHNoQWyKb4UO6oxp9zqbikx67WmqPQ7wkhKe3JHUxM;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;705 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pTB3pyDIt_dGj-S5fSyYnQXay-WCPnVIdn4ezD68KNuAHUrOb-P8ueiA_Xch4ZJ1QsrjoaY1Uw00&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pDSNs59_zRSqZWf6DSWqKXdgSqUwwMf0Hjl7lXptoUuIWnouOz5cAoeX7OVtdrHxE06UmK-3aIqs&quot; target=&quot;_blank&quot; rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pDSNs59_zRSqZWf6DSWqKXdgSqUwwMf0Hjl7lXptoUuIWnouOz5cAoeX7OVtdrHxE06UmK-3aIqs;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;706 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pDSNs59_zRSqZWf6DSWqKXTDz2q9zk4qXwtsvZ-7sW-h6hqIBfleHY_NGqgP_ipqcXAdAYY9naU0&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+      
+      &lt;td width=&quot;15&quot;&gt;
+      &lt;/td&gt;
+      
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pvf4il4SJCFvk4X4e9gfHJgSlRLIjnuVpV7DdLIgNO9RepDkf2l81700JBeWCfS0VX7iQ6ur3UVs&quot; target='_blank' rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pvf4il4SJCFvk4X4e9gfHJgSlRLIjnuVpV7DdLIgNO9RepDkf2l81700JBeWCfS0VX7iQ6ur3UVs;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;676 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pvf4il4SJCFvk4X4e9gfHJk5jTEwN50eQST8o5zAuyt18QqWGD2IcDaBBmNOgqrqLuW5pSXdQvb8&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td valign=&quot;top&quot;&gt;
+        &lt;a href=&quot;http://blufiles.storage.live.com/y1pZdD4_rXjKqNPkXBKaMzo_oj-cE9qbKzDJBCw4obZzP4siaXQnljFfwCpoy9bQDqiV81T6inghA8&quot; target=&quot;_blank&quot; rel=&quot;WLPP;url=http://blufiles.storage.live.com/y1pZdD4_rXjKqNPkXBKaMzo_oj-cE9qbKzDJBCw4obZzP4siaXQnljFfwCpoy9bQDqiV81T6inghA8;cnsid=cns&amp;#033;DF55BEBFD8C052E1&amp;#033;677 noopener&quot;&gt;&lt;img src=&quot;http://blufiles.storage.live.com/y1pZdD4_rXjKqNPkXBKaMzo_tdd048YKQje2IAGh4WC8EviSVWTSteskoo6AaniOFJUuv2O4LAQejI&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;</code></pre>
+
+        </div>
+        <div class="mb-3 post-meta">
+          
+        </div>
+      </div>
+      <div class="col-lg-8 mx-auto block shadow">
+        
+        
+      </div>
+      
+      <div class="col-lg-8 mx-auto block shadow">
+        
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "fletchercloudadventures" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+<footer class="py-4 bg-light border-top">
+  <div class="container">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-lg-4 text-center text-lg-left mb-4 mb-lg-0">
+        <a href="https://flkellyneucloudblogpre.z16.web.core.windows.net/" class="d-block pb-3"><img src="/images/logo.svg" class="img-fluid" alt="Fletcher Kelly | Cloud Engineer"></a>
+      </div>
+      <div class="col-lg-4 text-center mb-4 mb-lg-0">
+        <ul class="list-inline mb-0">
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 text-lg-right text-center mb-4 mb-lg-0">
+        <ul class="list-inline social-icon mb-0">
+          
+          <li class="list-inline-item"><a href="https://www.twitter.com/fskelly"><i class="ti-twitter-alt"></i></a></li>
+          
+          <li class="list-inline-item"><a href="https://www.github.com/fskelly"><i class="ti-github"></i></a></li>
+          
+          <li class="list-inline-item"><a href="https://www.linkedin.com/in/fletcherkelly"><i class="ti-linkedin"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <span>© 2013 - 2021 Fletcher Kelly All Rights Reserved</span>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script>
+  var indexURL = "https://flkellyneucloudblogpre.z16.web.core.windows.net/index.json"
+</script>
+
+
+<!-- JS Plugins -->
+
+<script src="https://flkellyneucloudblogpre.z16.web.core.windows.net/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://flkellyneucloudblogpre.z16.web.core.windows.net/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://flkellyneucloudblogpre.z16.web.core.windows.net/plugins/search/fuse.min.js"></script>
+
+<script src="https://flkellyneucloudblogpre.z16.web.core.windows.net/plugins/search/mark.js"></script>
+
+<script src="https://flkellyneucloudblogpre.z16.web.core.windows.net/plugins/search/search.js"></script>
+
+
+<!-- Main Script -->
+
+<script src="https://flkellyneucloudblogpre.z16.web.core.windows.net/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-outline-primary ml-2">I Accept</span>
+</div>
+<script>
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
+</script>
+
+
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
+
+.cookie-box-hide {
+  display: none;
+}
+</style>
+
+</body>
+
+</html>

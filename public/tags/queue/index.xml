@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Queue on Fletcher Kelly | Cloud Engineer</title>
+    <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/queue/</link>
+    <description>Recent content in Queue on Fletcher Kelly | Cloud Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Jun 2011 10:47:16 +0000</lastBuildDate><atom:link href="https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/queue/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exchange(ing) e-mail</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/06/07/exchangeing-e-mail/</link>
+      <pubDate>Tue, 07 Jun 2011 10:47:16 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/06/07/exchangeing-e-mail/</guid>
+      <description>So, it has been another week and as always something new has been learnt. This time, however the product in question was Exchange Server 2010.</description>
+    </item>
+    
+  </channel>
+</rss>

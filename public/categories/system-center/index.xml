@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>System Center on Fletcher Kelly | Cloud Engineer</title>
+    <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/categories/system-center/</link>
+    <description>Recent content in System Center on Fletcher Kelly | Cloud Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Aug 2015 06:21:12 +0000</lastBuildDate><atom:link href="https://flkellyneucloudblogpre.z16.web.core.windows.net/categories/system-center/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SLA Reporting with PowerShell and SCSM</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2015-08-27-sla-reporting-with-powershell-and-scsm/</link>
+      <pubDate>Thu, 27 Aug 2015 06:21:12 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2015-08-27-sla-reporting-with-powershell-and-scsm/</guid>
+      <description>I always get asked about reporting from my customers, and specifically around SLA&amp;rsquo;s. SLA&amp;rsquo;s are very important to most companies as this is part of the tracking mechanism of employees and vendors and the like.</description>
+    </item>
+    
+    <item>
+      <title>Grey Agent Fixing with Orchestrator</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2015-04-14-grey-agent-fixing-with-orchestrator/</link>
+      <pubDate>Tue, 14 Apr 2015 05:08:44 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2015-04-14-grey-agent-fixing-with-orchestrator/</guid>
+      <description>So, here is the scenario, we managed a lot of customer’s System Centre Operations Manager (SCOM) environments.</description>
+    </item>
+    
+    <item>
+      <title>Deploy a VM – SCSM, SCVMM, SCORCH – all working in harmony</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2014-07-31-deploy-a-vm-scsm-scvmm-scorch-all-working-in-harmony/</link>
+      <pubDate>Thu, 31 Jul 2014 12:19:03 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2014-07-31-deploy-a-vm-scsm-scvmm-scorch-all-working-in-harmony/</guid>
+      <description>So, it has been a while.
+So, the requirement for this project was as follow.</description>
+    </item>
+    
+    <item>
+      <title>Cireson Outlook Console</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2014-06-17-cireson-outloook-console/</link>
+      <pubDate>Tue, 17 Jun 2014 06:01:55 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2014-06-17-cireson-outloook-console/</guid>
+      <description>So, Cireson hase been investing into System Centre Service Manager (SCSM) very heavily and the end results are WELL worth it.</description>
+    </item>
+    
+    <item>
+      <title>Adding Comments to Work Items with Orchestrator</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2014-04-04-adding-comments-to-work-items-with-orchestrator/</link>
+      <pubDate>Fri, 04 Apr 2014 08:18:16 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2014-04-04-adding-comments-to-work-items-with-orchestrator/</guid>
+      <description>Hi All,
+It has been a little while, i have been quite involved with an Integration Project.</description>
+    </item>
+    
+    <item>
+      <title>Send Email to 3rd Party from SCSM Console – PowerShell and Console Task</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-11-15-send-email-to-3rd-party-from-scsm-console-powershell-and-console-task/</link>
+      <pubDate>Fri, 15 Nov 2013 11:58:48 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-11-15-send-email-to-3rd-party-from-scsm-console-powershell-and-console-task/</guid>
+      <description>So recently, I had a customer ask me for the following as their previous incident management system had this functionality.</description>
+    </item>
+    
+    <item>
+      <title>Finding off site ready tapes for System Center Data Protection Manager with System Center Orchestrator</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-10-20-finding-off-site-ready-tapes-for-system-center-data-protection-manager-with-system-center-orchestrator/</link>
+      <pubDate>Sun, 20 Oct 2013 12:30:19 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-10-20-finding-off-site-ready-tapes-for-system-center-data-protection-manager-with-system-center-orchestrator/</guid>
+      <description>So, I am quite a keen user of PowerShell and System Centre Orchestrator. Ok, so I recently had a request from a customer that went as follows “I need DPM to alert me when tapes are ready to &amp;ldquo;be taken off-site&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Recover System Center Orchestrator 2012 with runbooks export</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-02-04-recover-system-center-orchestrator-2012-with-runbooks-export/</link>
+      <pubDate>Mon, 04 Feb 2013 11:17:34 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-02-04-recover-system-center-orchestrator-2012-with-runbooks-export/</guid>
+      <description>Just recently in a test environment, a script or some such other gremlin caused some absolute havoc on my system.</description>
+    </item>
+    
+    <item>
+      <title>Cireson Analyst Web Console</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-01-22-cireson-analyst-web-console/</link>
+      <pubDate>Tue, 22 Jan 2013 09:32:19 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-01-22-cireson-analyst-web-console/</guid>
+      <description>I have always heard complaints from some of the analysts in my company about having to install the Service Manager Console on their machines and then complaining about having to learn a new application.</description>
+    </item>
+    
+    <item>
+      <title>Group assignment with Service Manager</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2012-12-31-group-assignment-with-service-manager/</link>
+      <pubDate>Mon, 31 Dec 2012 06:58:52 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2012-12-31-group-assignment-with-service-manager/</guid>
+      <description>So one of the biggest issues I have with Service Manager is actually user based as seems to be quite difficult to teach the concept of this for some strange reason.</description>
+    </item>
+    
+    <item>
+      <title>AssignedTo and AffectedUser with Powershell – Service Manager</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2012-12-20-assignedto-and-affecteduser-with-powershell-service-manager/</link>
+      <pubDate>Thu, 20 Dec 2012 08:22:35 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2012-12-20-assignedto-and-affecteduser-with-powershell-service-manager/</guid>
+      <description>&amp;ldquo;I am trying to find a way to find all Incidents related to a specific person (assigned to or affected user) using PowerShell&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>ConfigMgr (SCCM) 2012 wont open console–cannot connect to the site</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/10/29/configmgr-sccm-2012-wont-open-consolecannot-connect-to-the-site/</link>
+      <pubDate>Mon, 29 Oct 2012 09:37:04 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/10/29/configmgr-sccm-2012-wont-open-consolecannot-connect-to-the-site/</guid>
+      <description>So, we have started our migration from ConfigMgr 2007 R2 to SCCM 2012. We have installed the new site and now we have started building the required collections as we are using a mix of old collections from ConfigMgr 2007 ( a lot of the built-in collections that are present in ConfigMgr 2007 are NOT present in SCCM 2012.</description>
+    </item>
+    
+    <item>
+      <title>Inactive Incidents–E-mail assigned to User</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/10/10/inactive-incidentse-mail-assigned-to-user/</link>
+      <pubDate>Wed, 10 Oct 2012 07:34:02 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/10/10/inactive-incidentse-mail-assigned-to-user/</guid>
+      <description>Just recently I was looking for a way to notify users about Inactive incidents as I have some departments that tend to ignore their work items and an e-mail about their “untouched” incidents seems to motivate them.</description>
+    </item>
+    
+    <item>
+      <title>Service Requests – Re-assignment notification</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/07/09/service-requests-re-assignment-notification/</link>
+      <pubDate>Mon, 09 Jul 2012 05:43:13 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/07/09/service-requests-re-assignment-notification/</guid>
+      <description>So, in an effort to get my business ready for Service Requests as we use mainly Incidents and we are beginning our journey into Service Requests and differentiating between Service Requests (day to day operations) and Incidents (something is broken), I needed to reproduce a workflow to notify the “AssignedToUser” when a new Service Request is assigned to him or her.</description>
+    </item>
+    
+    <item>
+      <title>Why is my Service Manager so slow?</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/06/26/why-is-my-service-manager-so-slow/</link>
+      <pubDate>Tue, 26 Jun 2012 07:16:36 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/06/26/why-is-my-service-manager-so-slow/</guid>
+      <description>So, I have been running Service Manager for quite some time now. From SCSM 2010 to SCSM SP1 and most of the CU’s before I upgraded to SCSM 2012 Beta and RC and then to RTM (with the help of a Microsoft TAP Program).</description>
+    </item>
+    
+    <item>
+      <title>Installing System Centre Orchestrator</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/06/13/installing-system-centre-orchestrator/</link>
+      <pubDate>Wed, 13 Jun 2012 12:44:38 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/06/13/installing-system-centre-orchestrator/</guid>
+      <description>So, just recently I decided to install System Centre Orchestrator. It appears easy enough if you follow the Technet articles.</description>
+    </item>
+    
+    <item>
+      <title>Upgrading from SCSM 2010 / SCSM 2012 PRE-RTM to SCSM 2012 RTM</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/04/30/upgrading-from-scsm-2010-scsm-2012-pre-rtm-to-scsm-2012-rtm/</link>
+      <pubDate>Mon, 30 Apr 2012 07:09:49 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/04/30/upgrading-from-scsm-2010-scsm-2012-pre-rtm-to-scsm-2012-rtm/</guid>
+      <description>So, You are now ready to take the plunge and upgrade to SCSM 2012 RTM as it now “publically” available.</description>
+    </item>
+    
+    <item>
+      <title>Building a Pre-Production environment for Service Manager 2010</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/11/09/building-a-pre-production-environment-for-service-manager-2010/</link>
+      <pubDate>Wed, 09 Nov 2011 06:25:16 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/11/09/building-a-pre-production-environment-for-service-manager-2010/</guid>
+      <description>I can now post this, as my steps have been published on the SCSM Team Engineering site here.</description>
+    </item>
+    
+    <item>
+      <title>Scheduled reports with SCSM Data Warehouse</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/10/26/scheduled-reports-with-scsm-data-warehouse/</link>
+      <pubDate>Wed, 26 Oct 2011 10:26:01 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/10/26/scheduled-reports-with-scsm-data-warehouse/</guid>
+      <description>Hi All,
+I know it has been a little while.
+The reports built into Service Manager are great, however when you try to get a bit creative and automate some of the reports, you are going to run into some issues.</description>
+    </item>
+    
+    <item>
+      <title>Some more trick and things I have learnt with Service Manager 2010 SP1</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/03/31/some-more-trick-and-things-i-have-learnt-with-service-manager-2010-sp1/</link>
+      <pubDate>Thu, 31 Mar 2011 10:11:56 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/03/31/some-more-trick-and-things-i-have-learnt-with-service-manager-2010-sp1/</guid>
+      <description>When creating a new Self Service portal, ensure that you log onto on the server using your “Service Manager” Account, the account configured when first creating the Service Manager Server.</description>
+    </item>
+    
+    <item>
+      <title>Service Manager 2010 SP1 Custom Portal</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/03/29/service-manager-2010-sp1-custom-portal/</link>
+      <pubDate>Tue, 29 Mar 2011 08:15:44 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/03/29/service-manager-2010-sp1-custom-portal/</guid>
+      <description>It has been a little bit of a busy while for me. However, I finally found the time to complete the Custom Service Manager Portal, I have not as yet implemented custom graphics.</description>
+    </item>
+    
+    <item>
+      <title>Service Manager and all the tricks I have learnt</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/03/04/service-manager-and-all-the-tricks-i-have-learnt/</link>
+      <pubDate>Fri, 04 Mar 2011 09:27:48 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/03/04/service-manager-and-all-the-tricks-i-have-learnt/</guid>
+      <description>It has been some time since I last blogged, been a really nutty time. however i will make the time to blog and hopefully who ever reads this, it will be of assistance to them.</description>
+    </item>
+    
+  </channel>
+</rss>

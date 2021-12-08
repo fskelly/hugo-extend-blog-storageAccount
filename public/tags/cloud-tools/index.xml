@@ -1,21 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>cloud tools on Fletcher&#39;s Cloud Journey</title>
-    <link>https://cloudadventures.fskelly.com/tags/cloud-tools/</link>
-    <description>Recent content in cloud tools on Fletcher&#39;s Cloud Journey</description>
+    <title>cloud tools on Fletcher Kelly | Cloud Engineer</title>
+    <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/cloud-tools/</link>
+    <description>Recent content in cloud tools on Fletcher Kelly | Cloud Engineer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Jul 2019 16:46:43 +0200</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/cloud-tools/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Aug 2019 16:33:36 +0200</lastBuildDate><atom:link href="https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/cloud-tools/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Csa Tools of the Trade</title>
-      <link>https://cloudadventures.fskelly.com/p/csa-tools-of-the-trade/</link>
+      <title>Importance of Networking Azure</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/2019/importance-of-networking-azure/</link>
+      <pubDate>Wed, 07 Aug 2019 16:33:36 +0200</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/2019/importance-of-networking-azure/</guid>
+      <description>As a start to this blog post, I think it is important to understand how I see my role as a CSA (Cloud Solution Architect) with my customer.</description>
+    </item>
+    
+    <item>
+      <title>Cloud Solutions Architect -  Tools of the Trade</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/2019/csa-tools-of-the-trade/</link>
       <pubDate>Tue, 09 Jul 2019 16:46:43 +0200</pubDate>
       
-      <guid>https://cloudadventures.fskelly.com/p/csa-tools-of-the-trade/</guid>
-      <description>So a question I often get asked is &amp;ldquo;what tools or products do you use?&amp;rdquo;. So I decided to do a post around the tools and technologies that I personally use on a daily basis. So to start this is what people see on my screen on a daily basis.
-VSCode
-This is my most common tool, Visual Studio Code, the version shown above is actually the Insiders Build.</description>
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/2019/csa-tools-of-the-trade/</guid>
+      <description>So a question I often get asked is &amp;ldquo;what tools or products do you use?&amp;rdquo;. So I decided to do a post around the tools and technologies that I personally use on a daily basis.</description>
+    </item>
+    
+    <item>
+      <title>Network Security Group Change Alerting</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/2019/network-security-group-change-alerting/</link>
+      <pubDate>Wed, 20 Feb 2019 08:21:49 +0200</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/2019/network-security-group-change-alerting/</guid>
+      <description>So, I was with a customer and they are asking for a fairly standard alert.</description>
     </item>
     
   </channel>

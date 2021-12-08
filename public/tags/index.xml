@@ -1,162 +1,1377 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Fletcher&#39;s Cloud Journey</title>
-    <link>https://cloudadventures.fskelly.com/tags/</link>
-    <description>Recent content in Tags on Fletcher&#39;s Cloud Journey</description>
+    <title>Tags on Fletcher Kelly | Cloud Engineer</title>
+    <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/</link>
+    <description>Recent content in Tags on Fletcher Kelly | Cloud Engineer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Aug 2021 05:58:18 +0200</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Aug 2021 05:58:18 +0200</lastBuildDate><atom:link href="https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>azure</title>
-      <link>https://cloudadventures.fskelly.com/tags/azure/</link>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/azure/</link>
       <pubDate>Wed, 25 Aug 2021 05:58:18 +0200</pubDate>
       
-      <guid>https://cloudadventures.fskelly.com/tags/azure/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>blog</title>
-      <link>https://cloudadventures.fskelly.com/tags/blog/</link>
-      <pubDate>Wed, 25 Aug 2021 05:58:18 +0200</pubDate>
-      
-      <guid>https://cloudadventures.fskelly.com/tags/blog/</guid>
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/azure/</guid>
       <description></description>
     </item>
     
     <item>
       <title>quick post</title>
-      <link>https://cloudadventures.fskelly.com/tags/quick-post/</link>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/quick-post/</link>
       <pubDate>Wed, 25 Aug 2021 05:58:18 +0200</pubDate>
       
-      <guid>https://cloudadventures.fskelly.com/tags/quick-post/</guid>
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/quick-post/</guid>
       <description></description>
     </item>
     
     <item>
       <title>resource graph</title>
-      <link>https://cloudadventures.fskelly.com/tags/resource-graph/</link>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/resource-graph/</link>
       <pubDate>Wed, 25 Aug 2021 05:58:18 +0200</pubDate>
       
-      <guid>https://cloudadventures.fskelly.com/tags/resource-graph/</guid>
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/resource-graph/</guid>
       <description></description>
     </item>
     
     <item>
       <title>bicep</title>
-      <link>https://cloudadventures.fskelly.com/tags/bicep/</link>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/bicep/</link>
       <pubDate>Fri, 02 Jul 2021 05:40:16 +0200</pubDate>
       
-      <guid>https://cloudadventures.fskelly.com/tags/bicep/</guid>
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/bicep/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iac</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/iac/</link>
+      <pubDate>Fri, 02 Jul 2021 05:40:16 +0200</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/iac/</guid>
       <description></description>
     </item>
     
     <item>
       <title>az cli</title>
-      <link>https://cloudadventures.fskelly.com/tags/az-cli/</link>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/az-cli/</link>
       <pubDate>Wed, 05 May 2021 07:03:02 +0200</pubDate>
       
-      <guid>https://cloudadventures.fskelly.com/tags/az-cli/</guid>
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/az-cli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>command line</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/command-line/</link>
+      <pubDate>Wed, 05 May 2021 07:03:02 +0200</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/command-line/</guid>
       <description></description>
     </item>
     
     <item>
       <title>api</title>
-      <link>https://cloudadventures.fskelly.com/tags/api/</link>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/api/</link>
       <pubDate>Wed, 14 Apr 2021 09:02:18 +0200</pubDate>
       
-      <guid>https://cloudadventures.fskelly.com/tags/api/</guid>
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/api/</guid>
       <description></description>
     </item>
     
     <item>
       <title>postman</title>
-      <link>https://cloudadventures.fskelly.com/tags/postman/</link>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/postman/</link>
       <pubDate>Wed, 14 Apr 2021 09:02:18 +0200</pubDate>
       
-      <guid>https://cloudadventures.fskelly.com/tags/postman/</guid>
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/postman/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>cdn</title>
-      <link>https://cloudadventures.fskelly.com/tags/cdn/</link>
-      <pubDate>Mon, 11 Jan 2021 07:00:18 +0200</pubDate>
+      <title>azure powershell</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/azure-powershell/</link>
+      <pubDate>Mon, 18 Jan 2021 07:06:03 +0200</pubDate>
       
-      <guid>https://cloudadventures.fskelly.com/tags/cdn/</guid>
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/azure-powershell/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>hugo</title>
-      <link>https://cloudadventures.fskelly.com/tags/hugo/</link>
-      <pubDate>Mon, 11 Jan 2021 07:00:18 +0200</pubDate>
+      <title>powershell</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/powershell/</link>
+      <pubDate>Mon, 18 Jan 2021 07:06:03 +0200</pubDate>
       
-      <guid>https://cloudadventures.fskelly.com/tags/hugo/</guid>
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/powershell/</guid>
       <description></description>
     </item>
     
     <item>
       <title>static web</title>
-      <link>https://cloudadventures.fskelly.com/tags/static-web/</link>
-      <pubDate>Tue, 05 Jan 2021 15:57:04 +0200</pubDate>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/static-web/</link>
+      <pubDate>Mon, 18 Jan 2021 07:06:03 +0200</pubDate>
       
-      <guid>https://cloudadventures.fskelly.com/tags/static-web/</guid>
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/static-web/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cdn</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/cdn/</link>
+      <pubDate>Mon, 11 Jan 2021 07:00:18 +0200</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/cdn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CMS</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/cms/</link>
+      <pubDate>Mon, 11 Jan 2021 07:00:18 +0200</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/cms/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Architecture</title>
-      <link>https://cloudadventures.fskelly.com/tags/architecture/</link>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/architecture/</link>
       <pubDate>Wed, 07 Aug 2019 16:33:36 +0200</pubDate>
       
-      <guid>https://cloudadventures.fskelly.com/tags/architecture/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>CSA</title>
-      <link>https://cloudadventures.fskelly.com/tags/csa/</link>
-      <pubDate>Wed, 07 Aug 2019 16:33:36 +0200</pubDate>
-      
-      <guid>https://cloudadventures.fskelly.com/tags/csa/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Networking</title>
-      <link>https://cloudadventures.fskelly.com/tags/networking/</link>
-      <pubDate>Wed, 07 Aug 2019 16:33:36 +0200</pubDate>
-      
-      <guid>https://cloudadventures.fskelly.com/tags/networking/</guid>
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/architecture/</guid>
       <description></description>
     </item>
     
     <item>
       <title>cloud tools</title>
-      <link>https://cloudadventures.fskelly.com/tags/cloud-tools/</link>
-      <pubDate>Tue, 09 Jul 2019 16:46:43 +0200</pubDate>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/cloud-tools/</link>
+      <pubDate>Wed, 07 Aug 2019 16:33:36 +0200</pubDate>
       
-      <guid>https://cloudadventures.fskelly.com/tags/cloud-tools/</guid>
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/cloud-tools/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>azure monitor</title>
-      <link>https://cloudadventures.fskelly.com/tags/azure-monitor/</link>
-      <pubDate>Wed, 20 Feb 2019 08:21:49 +0200</pubDate>
+      <title>Networking</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/networking/</link>
+      <pubDate>Wed, 07 Aug 2019 16:33:36 +0200</pubDate>
       
-      <guid>https://cloudadventures.fskelly.com/tags/azure-monitor/</guid>
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/networking/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>nsg</title>
-      <link>https://cloudadventures.fskelly.com/tags/nsg/</link>
-      <pubDate>Wed, 20 Feb 2019 08:21:49 +0200</pubDate>
+      <title>SLA</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/sla/</link>
+      <pubDate>Thu, 27 Aug 2015 06:21:12 +0000</pubDate>
       
-      <guid>https://cloudadventures.fskelly.com/tags/nsg/</guid>
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/sla/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SMLets</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/smlets/</link>
+      <pubDate>Thu, 27 Aug 2015 06:21:12 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/smlets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grey Agent</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/grey-agent/</link>
+      <pubDate>Tue, 14 Apr 2015 05:08:44 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/grey-agent/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grey Agent Fix</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/grey-agent-fix/</link>
+      <pubDate>Tue, 14 Apr 2015 05:08:44 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/grey-agent-fix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Runbook</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/runbook/</link>
+      <pubDate>Tue, 14 Apr 2015 05:08:44 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/runbook/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SCO</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/sco/</link>
+      <pubDate>Tue, 14 Apr 2015 05:08:44 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/sco/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ITSM</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/itsm/</link>
+      <pubDate>Thu, 31 Jul 2014 12:19:03 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/itsm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cireson</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/cireson/</link>
+      <pubDate>Tue, 17 Jun 2014 06:01:55 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/cireson/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SCSM</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/scsm/</link>
+      <pubDate>Tue, 17 Jun 2014 06:01:55 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/scsm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Integration Project</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/integration-project/</link>
+      <pubDate>Fri, 04 Apr 2014 08:18:16 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/integration-project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Orchestrator</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/orchestrator/</link>
+      <pubDate>Fri, 04 Apr 2014 08:18:16 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/orchestrator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Console</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/console/</link>
+      <pubDate>Fri, 15 Nov 2013 11:58:48 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/console/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Task</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/task/</link>
+      <pubDate>Fri, 15 Nov 2013 11:58:48 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/task/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DPM</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/dpm/</link>
+      <pubDate>Sun, 20 Oct 2013 12:30:19 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/dpm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SCORCH</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/scorch/</link>
+      <pubDate>Sun, 20 Oct 2013 12:30:19 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/scorch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scripting</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/scripting/</link>
+      <pubDate>Sun, 20 Oct 2013 12:30:19 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/scripting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Load Testing</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/load-testing/</link>
+      <pubDate>Wed, 11 Sep 2013 19:30:51 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/load-testing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ITAM</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/itam/</link>
+      <pubDate>Tue, 27 Aug 2013 14:11:29 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/itam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Asset Import</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/asset-import/</link>
+      <pubDate>Fri, 17 May 2013 05:10:29 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/asset-import/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CSV Import</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/csv-import/</link>
+      <pubDate>Fri, 17 May 2013 05:10:29 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/csv-import/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Change Request</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/change-request/</link>
+      <pubDate>Tue, 23 Apr 2013 05:27:42 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/change-request/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cubes</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/cubes/</link>
+      <pubDate>Wed, 20 Mar 2013 21:45:36 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/cubes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Warehouse</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/data-warehouse/</link>
+      <pubDate>Wed, 20 Mar 2013 21:45:36 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/data-warehouse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deployment</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/deployment/</link>
+      <pubDate>Wed, 20 Mar 2013 21:45:36 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/deployment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DWH</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/dwh/</link>
+      <pubDate>Wed, 20 Mar 2013 21:45:36 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/dwh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Processing</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/processing/</link>
+      <pubDate>Wed, 20 Mar 2013 21:45:36 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/processing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Risk Calculator</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/risk-calculator/</link>
+      <pubDate>Wed, 20 Mar 2013 21:45:36 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/risk-calculator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recover</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/recover/</link>
+      <pubDate>Mon, 04 Feb 2013 11:17:34 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/recover/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web Console</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/web-console/</link>
+      <pubDate>Tue, 22 Jan 2013 09:32:19 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/web-console/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Assigned to user</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/assigned-to-user/</link>
+      <pubDate>Mon, 31 Dec 2012 06:58:52 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/assigned-to-user/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Assignment</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/assignment/</link>
+      <pubDate>Mon, 31 Dec 2012 06:58:52 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/assignment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exchange</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/exchange/</link>
+      <pubDate>Thu, 06 Dec 2012 11:41:28 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/exchange/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IIS</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/iis/</link>
+      <pubDate>Thu, 06 Dec 2012 11:41:28 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/iis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Logs</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/logs/</link>
+      <pubDate>Thu, 06 Dec 2012 11:41:28 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/logs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Orchestration</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/orchestration/</link>
+      <pubDate>Thu, 06 Dec 2012 11:41:28 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/orchestration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>auto close</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/auto-close/</link>
+      <pubDate>Thu, 01 Nov 2012 05:41:13 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/auto-close/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>completed</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/completed/</link>
+      <pubDate>Thu, 01 Nov 2012 05:41:13 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/completed/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>resolved</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/resolved/</link>
+      <pubDate>Thu, 01 Nov 2012 05:41:13 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/resolved/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SCSM 2012</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/scsm-2012/</link>
+      <pubDate>Thu, 01 Nov 2012 05:41:13 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/scsm-2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>System Centre</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/system-centre/</link>
+      <pubDate>Thu, 01 Nov 2012 05:41:13 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/system-centre/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>work items</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/work-items/</link>
+      <pubDate>Thu, 01 Nov 2012 05:41:13 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/work-items/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>connect</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/connect/</link>
+      <pubDate>Mon, 29 Oct 2012 09:37:04 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/connect/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>failed</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/failed/</link>
+      <pubDate>Mon, 29 Oct 2012 09:37:04 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/failed/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Native client</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/native-client/</link>
+      <pubDate>Mon, 29 Oct 2012 09:37:04 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/native-client/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SCCM</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/sccm/</link>
+      <pubDate>Mon, 29 Oct 2012 09:37:04 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/sccm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>site</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/site/</link>
+      <pubDate>Mon, 29 Oct 2012 09:37:04 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/site/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SSRS</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/ssrs/</link>
+      <pubDate>Mon, 29 Oct 2012 09:37:04 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/ssrs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Assignedto</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/assignedto/</link>
+      <pubDate>Wed, 10 Oct 2012 07:34:02 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/assignedto/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>e-mail</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/e-mail/</link>
+      <pubDate>Wed, 10 Oct 2012 07:34:02 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/e-mail/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>notification</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/notification/</link>
+      <pubDate>Wed, 10 Oct 2012 07:34:02 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/notification/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reminder</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/reminder/</link>
+      <pubDate>Wed, 10 Oct 2012 07:34:02 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/reminder/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Service Manager</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/service-manager/</link>
+      <pubDate>Wed, 10 Oct 2012 07:34:02 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/service-manager/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ServiceManager</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/servicemanager/</link>
+      <pubDate>Wed, 10 Oct 2012 07:34:02 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/servicemanager/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>workflow</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/workflow/</link>
+      <pubDate>Wed, 10 Oct 2012 07:34:02 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/workflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exchange connector</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/exchange-connector/</link>
+      <pubDate>Wed, 19 Sep 2012 07:13:10 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/exchange-connector/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SMTP</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/smtp/</link>
+      <pubDate>Wed, 19 Sep 2012 07:13:10 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/smtp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2012</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/2012/</link>
+      <pubDate>Thu, 06 Sep 2012 15:12:58 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hyper-v</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/hyper-v/</link>
+      <pubDate>Thu, 06 Sep 2012 15:12:58 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/hyper-v/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hyper-V3</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/hyper-v3/</link>
+      <pubDate>Thu, 06 Sep 2012 15:12:58 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/hyper-v3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Replica</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/replica/</link>
+      <pubDate>Thu, 06 Sep 2012 15:12:58 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/replica/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VHDX</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/vhdx/</link>
+      <pubDate>Thu, 06 Sep 2012 15:12:58 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/vhdx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows Server 2012</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/windows-server-2012/</link>
+      <pubDate>Thu, 06 Sep 2012 15:12:58 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/windows-server-2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Failover Cluster</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/failover-cluster/</link>
+      <pubDate>Tue, 28 Aug 2012 13:35:56 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/failover-cluster/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NIC</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/nic/</link>
+      <pubDate>Tue, 28 Aug 2012 13:35:56 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/nic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nics</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/nics/</link>
+      <pubDate>Tue, 28 Aug 2012 13:35:56 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/nics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Virtual Switches</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/virtual-switches/</link>
+      <pubDate>Tue, 28 Aug 2012 13:35:56 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/virtual-switches/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>backup</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/backup/</link>
+      <pubDate>Mon, 13 Aug 2012 10:06:11 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/backup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Failing</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/failing/</link>
+      <pubDate>Mon, 13 Aug 2012 10:06:11 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/failing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Management Pack</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/management-pack/</link>
+      <pubDate>Mon, 09 Jul 2012 05:43:13 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/management-pack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>XML</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/xml/</link>
+      <pubDate>Mon, 09 Jul 2012 05:43:13 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/xml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>database</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/database/</link>
+      <pubDate>Tue, 26 Jun 2012 07:16:36 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/database/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>performance</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/performance/</link>
+      <pubDate>Tue, 26 Jun 2012 07:16:36 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/performance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Troubleshooting</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/troubleshooting/</link>
+      <pubDate>Tue, 26 Jun 2012 07:16:36 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/troubleshooting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Installation</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/installation/</link>
+      <pubDate>Wed, 13 Jun 2012 12:44:38 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/installation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Service</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/service/</link>
+      <pubDate>Wed, 13 Jun 2012 12:44:38 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/service/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cluster Service</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/cluster-service/</link>
+      <pubDate>Thu, 07 Jun 2012 12:17:25 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/cluster-service/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CSV</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/csv/</link>
+      <pubDate>Thu, 07 Jun 2012 12:17:25 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/csv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>node</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/node/</link>
+      <pubDate>Thu, 07 Jun 2012 12:17:25 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/node/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>owner</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/owner/</link>
+      <pubDate>Thu, 07 Jun 2012 12:17:25 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/owner/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Collation</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/collation/</link>
+      <pubDate>Mon, 07 May 2012 11:44:25 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/collation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OperationsManagerDB</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/operationsmanagerdb/</link>
+      <pubDate>Mon, 07 May 2012 11:44:25 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/operationsmanagerdb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OperationsManagerDW</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/operationsmanagerdw/</link>
+      <pubDate>Mon, 07 May 2012 11:44:25 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/operationsmanagerdw/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OpsMan</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/opsman/</link>
+      <pubDate>Mon, 07 May 2012 11:44:25 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/opsman/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reporting Services</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/reporting-services/</link>
+      <pubDate>Mon, 07 May 2012 11:44:25 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/reporting-services/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SQL</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/sql/</link>
+      <pubDate>Mon, 07 May 2012 11:44:25 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/sql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Connectors</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/connectors/</link>
+      <pubDate>Mon, 30 Apr 2012 07:09:49 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/connectors/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Upgrade</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/upgrade/</link>
+      <pubDate>Mon, 30 Apr 2012 07:09:49 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/upgrade/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cluster</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/cluster/</link>
+      <pubDate>Fri, 30 Mar 2012 07:03:07 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/cluster/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Storage</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/storage/</link>
+      <pubDate>Fri, 30 Mar 2012 07:03:07 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/storage/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>profile</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/profile/</link>
+      <pubDate>Thu, 29 Mar 2012 07:20:47 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/profile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>transcript</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/transcript/</link>
+      <pubDate>Thu, 29 Mar 2012 07:20:47 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/transcript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Active Directory</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/active-directory/</link>
+      <pubDate>Tue, 24 Jan 2012 11:04:36 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/active-directory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DC</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/dc/</link>
+      <pubDate>Tue, 24 Jan 2012 11:04:36 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/dc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Domain Controller</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/domain-controller/</link>
+      <pubDate>Tue, 24 Jan 2012 11:04:36 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/domain-controller/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cache</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/cache/</link>
+      <pubDate>Tue, 17 Jan 2012 07:16:27 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/cache/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Operatona Manager</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/operatona-manager/</link>
+      <pubDate>Tue, 17 Jan 2012 07:16:27 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/operatona-manager/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SSP</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/ssp/</link>
+      <pubDate>Wed, 30 Nov 2011 16:02:55 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/ssp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GPO</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/gpo/</link>
+      <pubDate>Thu, 01 Sep 2011 07:16:09 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/gpo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Group Policy</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/group-policy/</link>
+      <pubDate>Thu, 01 Sep 2011 07:16:09 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/group-policy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MCC</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/mcc/</link>
+      <pubDate>Thu, 01 Sep 2011 07:16:09 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/mcc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Receive Connector</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/receive-connector/</link>
+      <pubDate>Thu, 01 Sep 2011 07:16:09 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/receive-connector/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Virtual Machine Manager</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/virtual-machine-manager/</link>
+      <pubDate>Thu, 01 Sep 2011 07:16:09 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/virtual-machine-manager/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VMM</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/vmm/</link>
+      <pubDate>Thu, 01 Sep 2011 07:16:09 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/vmm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>InfoPath</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/infopath/</link>
+      <pubDate>Mon, 01 Aug 2011 13:33:20 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/infopath/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microsoft</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/microsoft/</link>
+      <pubDate>Mon, 01 Aug 2011 13:33:20 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/microsoft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sharepoint</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/sharepoint/</link>
+      <pubDate>Mon, 01 Aug 2011 13:33:20 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/sharepoint/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Submit</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/submit/</link>
+      <pubDate>Mon, 01 Aug 2011 13:33:20 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/submit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VBA</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/vba/</link>
+      <pubDate>Mon, 01 Aug 2011 13:33:20 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/vba/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Word</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/word/</link>
+      <pubDate>Mon, 01 Aug 2011 13:33:20 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/word/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>script</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/script/</link>
+      <pubDate>Mon, 18 Jul 2011 11:45:18 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/script/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>email</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/email/</link>
+      <pubDate>Mon, 11 Jul 2011 12:25:28 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/email/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>get-hotfix</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/get-hotfix/</link>
+      <pubDate>Mon, 11 Jul 2011 12:25:28 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/get-hotfix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Create</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/create/</link>
+      <pubDate>Thu, 07 Jul 2011 06:15:39 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/create/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DFS</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/dfs/</link>
+      <pubDate>Thu, 07 Jul 2011 06:15:39 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/dfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Distributed File System</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/distributed-file-system/</link>
+      <pubDate>Thu, 07 Jul 2011 06:15:39 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/distributed-file-system/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Folder Structure</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/folder-structure/</link>
+      <pubDate>Thu, 07 Jul 2011 06:15:39 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/folder-structure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Replicate</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/replicate/</link>
+      <pubDate>Thu, 07 Jul 2011 06:15:39 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/replicate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Prtoection Manager</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/data-prtoection-manager/</link>
+      <pubDate>Wed, 15 Jun 2011 15:13:42 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/data-prtoection-manager/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PSSession</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/pssession/</link>
+      <pubDate>Wed, 15 Jun 2011 15:13:42 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/pssession/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>eseutil</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/eseutil/</link>
+      <pubDate>Tue, 07 Jun 2011 10:47:16 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/eseutil/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HUB Transport</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/hub-transport/</link>
+      <pubDate>Tue, 07 Jun 2011 10:47:16 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/hub-transport/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mail</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/mail/</link>
+      <pubDate>Tue, 07 Jun 2011 10:47:16 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/mail/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mailflow</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/mailflow/</link>
+      <pubDate>Tue, 07 Jun 2011 10:47:16 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/mailflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Queue</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/queue/</link>
+      <pubDate>Tue, 07 Jun 2011 10:47:16 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/queue/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Protection Group</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/protection-group/</link>
+      <pubDate>Tue, 24 May 2011 14:05:12 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/protection-group/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Elevation</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/elevation/</link>
+      <pubDate>Fri, 20 May 2011 11:07:09 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/elevation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Module</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/module/</link>
+      <pubDate>Fri, 20 May 2011 11:07:09 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/module/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PSSnapin</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/pssnapin/</link>
+      <pubDate>Fri, 20 May 2011 11:07:09 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/pssnapin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cibecs</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/cibecs/</link>
+      <pubDate>Thu, 04 Nov 2010 14:57:21 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/cibecs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Encryption</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/encryption/</link>
+      <pubDate>Thu, 04 Nov 2010 14:57:21 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/encryption/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mimecast</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/mimecast/</link>
+      <pubDate>Thu, 04 Nov 2010 14:57:21 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/mimecast/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Weather</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/weather/</link>
+      <pubDate>Thu, 04 Nov 2010 14:57:21 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/weather/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DHCP helper</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/dhcp-helper/</link>
+      <pubDate>Wed, 27 Oct 2010 12:27:29 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/dhcp-helper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iSCSI</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/iscsi/</link>
+      <pubDate>Wed, 27 Oct 2010 12:27:29 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/iscsi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>technology</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/technology/</link>
+      <pubDate>Wed, 27 Oct 2010 12:27:29 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/technology/</guid>
       <description></description>
     </item>
     

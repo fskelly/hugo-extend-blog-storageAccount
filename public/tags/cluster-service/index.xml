@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cluster Service on Fletcher Kelly | Cloud Engineer</title>
+    <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/cluster-service/</link>
+    <description>Recent content in Cluster Service on Fletcher Kelly | Cloud Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 07 Jun 2012 12:17:25 +0000</lastBuildDate><atom:link href="https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/cluster-service/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basic Cluster Troubleshooting</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/06/07/basic-cluster-troubleshooting/</link>
+      <pubDate>Thu, 07 Jun 2012 12:17:25 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/06/07/basic-cluster-troubleshooting/</guid>
+      <description>So, just last night, we had an issue with our cluster.One of our disks would not come online.</description>
+    </item>
+    
+  </channel>
+</rss>

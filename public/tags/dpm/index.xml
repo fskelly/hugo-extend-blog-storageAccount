@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DPM on Fletcher Kelly | Cloud Engineer</title>
+    <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/dpm/</link>
+    <description>Recent content in DPM on Fletcher Kelly | Cloud Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Oct 2013 12:30:19 +0000</lastBuildDate><atom:link href="https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/dpm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Finding off site ready tapes for System Center Data Protection Manager with System Center Orchestrator</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-10-20-finding-off-site-ready-tapes-for-system-center-data-protection-manager-with-system-center-orchestrator/</link>
+      <pubDate>Sun, 20 Oct 2013 12:30:19 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-10-20-finding-off-site-ready-tapes-for-system-center-data-protection-manager-with-system-center-orchestrator/</guid>
+      <description>So, I am quite a keen user of PowerShell and System Centre Orchestrator. Ok, so I recently had a request from a customer that went as follows “I need DPM to alert me when tapes are ready to &amp;ldquo;be taken off-site&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>DPM and Exchange Mail Store Backup failing</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/08/13/dpm-and-exchange-mail-store-backup-failing/</link>
+      <pubDate>Mon, 13 Aug 2012 10:06:11 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/08/13/dpm-and-exchange-mail-store-backup-failing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DPM and Invoke-Command, bring the DPM shell to your machine</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/06/15/dpm-and-invoke-command-bring-the-dpm-shell-to-your-machine/</link>
+      <pubDate>Wed, 15 Jun 2011 15:13:42 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/06/15/dpm-and-invoke-command-bring-the-dpm-shell-to-your-machine/</guid>
+      <description>Not that long ago, I created an article about DPM and I referenced DPM commands to be run in the DPM shell and only now realised that not everyone has the DPM console installed as this is not the easiest console to install and get working.</description>
+    </item>
+    
+    <item>
+      <title>Changing your Protection Server in DPM to another server</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/05/27/changing-your-protection-server-in-dpm-to-another-server/</link>
+      <pubDate>Fri, 27 May 2011 09:17:03 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/05/27/changing-your-protection-server-in-dpm-to-another-server/</guid>
+      <description>Have you ever been in a situation where you have either removed or added a new DPM server to your environment?</description>
+    </item>
+    
+    <item>
+      <title>To Protect or NOT to Protect</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/05/24/to-protect-or-not-to-protect/</link>
+      <pubDate>Tue, 24 May 2011 14:05:12 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/05/24/to-protect-or-not-to-protect/</guid>
+      <description>I have finally found some time to look some more into DPM and decided to modify my environment and created some additional PROTECTION GROUPS.</description>
+    </item>
+    
+    <item>
+      <title>The “crisis” week</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/05/03/the-crisis-week/</link>
+      <pubDate>Tue, 03 May 2011 08:44:31 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/05/03/the-crisis-week/</guid>
+      <description>Hi All,
+The last two weeks have been a little nutty for me. I have however, learnt to appreciate a few more things in life.</description>
+    </item>
+    
+  </channel>
+</rss>

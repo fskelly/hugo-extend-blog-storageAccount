@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Uncategorized on Fletcher Kelly | Cloud Engineer</title>
+    <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/categories/uncategorized/</link>
+    <description>Recent content in Uncategorized on Fletcher Kelly | Cloud Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 06 Dec 2012 11:41:28 +0000</lastBuildDate><atom:link href="https://flkellyneucloudblogpre.z16.web.core.windows.net/categories/uncategorized/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exchange Log File Monitoring Orchestration</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/12/06/exchange-log-file-monitoring-orchestration/</link>
+      <pubDate>Thu, 06 Dec 2012 11:41:28 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/12/06/exchange-log-file-monitoring-orchestration/</guid>
+      <description>So what started this is actually quite simple. We have limited space on our virtual machines and the log files for IIS keeping filling up the drive on our Hub Transport Server (Exchange Server 2010).</description>
+    </item>
+    
+    <item>
+      <title>DPM and Exchange Mail Store Backup failing</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/08/13/dpm-and-exchange-mail-store-backup-failing/</link>
+      <pubDate>Mon, 13 Aug 2012 10:06:11 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/08/13/dpm-and-exchange-mail-store-backup-failing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Service Manager–Are my changes to management packs taking effect?</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/04/05/service-managerare-my-changes-to-management-packs-taking-effect/</link>
+      <pubDate>Thu, 05 Apr 2012 08:17:01 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/04/05/service-managerare-my-changes-to-management-packs-taking-effect/</guid>
+      <description>Okay,
+So now onto some “basics” or nice to know about Service Manager.
+Some of these I have learnt the hard way and some have been given to me as valuable information to avoid some mishaps if you will.</description>
+    </item>
+    
+    <item>
+      <title>Service Manager 2012 Management Server (Upgrade)</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/11/24/service-manager-2012-management-server-upgrade/</link>
+      <pubDate>Thu, 24 Nov 2011 05:36:25 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/11/24/service-manager-2012-management-server-upgrade/</guid>
+      <description>So, for the Management Server.
+This was very easy and quite painless for me.
+ Backup Encryption Key (for Disaster Recovery Purposes) Install Windows Server 2008 R2 SP1 (This is a pre-requisite for SCSM 2012) Remove Operations Manager Agent if this is installed, as the installer WILL stop you from continuing if the OpsMan Agent is installed.</description>
+    </item>
+    
+    <item>
+      <title>Monitoring the Environment</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/09/30/monitoring-the-environment/</link>
+      <pubDate>Fri, 30 Sep 2011 12:47:13 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/09/30/monitoring-the-environment/</guid>
+      <description>So, a little while ago I had a post about documenting the environment.
+Now, i am in the process of “Monitoring the Environment”.</description>
+    </item>
+    
+    <item>
+      <title>Some more trick and things I have learnt with Service Manager 2010 SP1</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/03/31/some-more-trick-and-things-i-have-learnt-with-service-manager-2010-sp1/</link>
+      <pubDate>Thu, 31 Mar 2011 10:11:56 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/03/31/some-more-trick-and-things-i-have-learnt-with-service-manager-2010-sp1/</guid>
+      <description>When creating a new Self Service portal, ensure that you log onto on the server using your “Service Manager” Account, the account configured when first creating the Service Manager Server.</description>
+    </item>
+    
+    <item>
+      <title>Service Manager 2010 SP1 Custom Portal</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/03/29/service-manager-2010-sp1-custom-portal/</link>
+      <pubDate>Tue, 29 Mar 2011 08:15:44 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/03/29/service-manager-2010-sp1-custom-portal/</guid>
+      <description>It has been a little bit of a busy while for me. However, I finally found the time to complete the Custom Service Manager Portal, I have not as yet implemented custom graphics.</description>
+    </item>
+    
+    <item>
+      <title>The joys of DPM and the pains of SQL</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/03/14/the-joys-of-dpm-and-the-pains-of-sql/</link>
+      <pubDate>Mon, 14 Mar 2011 11:36:25 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/03/14/the-joys-of-dpm-and-the-pains-of-sql/</guid>
+      <description>Just recently, as in the weekend just gone, I had a change for an upgrade of SQL 2008 to SQL 2008 R2.</description>
+    </item>
+    
+    <item>
+      <title>Service Manager and all the tricks I have learnt</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/03/04/service-manager-and-all-the-tricks-i-have-learnt/</link>
+      <pubDate>Fri, 04 Mar 2011 09:27:48 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/03/04/service-manager-and-all-the-tricks-i-have-learnt/</guid>
+      <description>It has been some time since I last blogged, been a really nutty time. however i will make the time to blog and hopefully who ever reads this, it will be of assistance to them.</description>
+    </item>
+    
+    <item>
+      <title>“Blue Wednesday”</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2010/10/27/blue-wednesday/</link>
+      <pubDate>Wed, 27 Oct 2010 12:27:29 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2010/10/27/blue-wednesday/</guid>
+      <description>Do you ever have those days where it just starts bad and gets worse?
+“Man Alive, what a day it has been and it is not over yet”</description>
+    </item>
+    
+    <item>
+      <title>Streaming Radio with Windows Media Services</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2010/10/08/streaming-radio-with-windows-media-services/</link>
+      <pubDate>Fri, 08 Oct 2010 11:23:09 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2010/10/08/streaming-radio-with-windows-media-services/</guid>
+      <description>First install Windows Media Services using which ever link is pertinent to you.
+How to install Windows Media Services in Windows Server 2008</description>
+    </item>
+    
+    <item>
+      <title>Hello world!</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2010/10/07/hello-world-2/</link>
+      <pubDate>Thu, 07 Oct 2010 10:55:14 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2010/10/07/hello-world-2/</guid>
+      <description>Welcome to WordPress.com. This is your first post. Edit or delete it and start blogging!</description>
+    </item>
+    
+    <item>
+      <title>ITIL, ITIL, ITIL</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2010/09/07/itil-itil-itil/</link>
+      <pubDate>Tue, 07 Sep 2010 06:58:41 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2010/09/07/itil-itil-itil/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Time for a change</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2010/05/14/time-for-a-change/</link>
+      <pubDate>Fri, 14 May 2010 11:18:52 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2010/05/14/time-for-a-change/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kiosk Roll-out Part II</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2010/03/29/kiosk-roll-out-part-ii/</link>
+      <pubDate>Mon, 29 Mar 2010 08:16:06 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2010/03/29/kiosk-roll-out-part-ii/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kiosk Roll-out Part I</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2010/03/25/kiosk-roll-out-part-i/</link>
+      <pubDate>Thu, 25 Mar 2010 11:04:09 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2010/03/25/kiosk-roll-out-part-i/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Breath of Fresh Air</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2010/03/09/a-breath-of-fresh-air/</link>
+      <pubDate>Tue, 09 Mar 2010 06:35:49 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2010/03/09/a-breath-of-fresh-air/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>“To roll out or not to roll out”</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/12/18/to-roll-out-or-not-to-roll-out/</link>
+      <pubDate>Fri, 18 Dec 2009 15:06:37 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/12/18/to-roll-out-or-not-to-roll-out/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The value of D.I.Y.</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/11/04/the-value-of-d-i-y/</link>
+      <pubDate>Wed, 04 Nov 2009 12:37:00 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/11/04/the-value-of-d-i-y/</guid>
+      <description>&amp;lt;div style=&amp;quot;width:965px;text-align:right;&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;http://cid-df55bebfd8c052e1.skydrive.live.com/redir.aspx?page=browse&amp;amp;resid=DF55BEBFD8C052E1!2403&amp;amp;ct=photos&amp;quot;&amp;gt;View Full Album&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;Now for the reason for the post and the true value of D.</description>
+    </item>
+    
+    <item>
+      <title>To monitor or not to monitor</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/10/26/to-monitor-or-not-to-monitor/</link>
+      <pubDate>Mon, 26 Oct 2009 09:19:18 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/10/26/to-monitor-or-not-to-monitor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>To encrypt or not to encrypt</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/10/15/to-encrypt-or-not-to-encrypt/</link>
+      <pubDate>Thu, 15 Oct 2009 11:23:25 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/10/15/to-encrypt-or-not-to-encrypt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scuba Photos</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/10/12/scuba-photos/</link>
+      <pubDate>Mon, 12 Oct 2009 06:17:03 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/10/12/scuba-photos/</guid>
+      <description> &amp;lt;div style=&amp;quot;width:965px;text-align:right;&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;http://cid-df55bebfd8c052e1.skydrive.live.com/redir.aspx?page=browse&amp;amp;resid=DF55BEBFD8C052E1!2373&amp;amp;ct=photos&amp;quot;&amp;gt;View Full Album&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;font color=&amp;quot;#ff0000&amp;quot; size=&amp;quot;6&amp;quot; face=&amp;quot;Broadway&amp;quot;&amp;gt;&amp;lt;em&amp;gt;“EMBRACE YOUR INNER GEEK AND ROCK ON”&amp;lt;/em&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;/p&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>What a wonderful IDEA(pad)</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/09/23/what-a-wonderful-ideapad/</link>
+      <pubDate>Wed, 23 Sep 2009 12:54:10 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/09/23/what-a-wonderful-ideapad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fully Connected (done)</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/09/21/fully-connected-done/</link>
+      <pubDate>Mon, 21 Sep 2009 11:24:26 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/09/21/fully-connected-done/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Finally, fully connected (pending)</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/09/16/finally-fully-connected-pending/</link>
+      <pubDate>Wed, 16 Sep 2009 11:13:27 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/09/16/finally-fully-connected-pending/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A technology catch up for me and Microsoft Fixes that FIX!!!!</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/09/14/a-technology-catch-up-for-me-and-microsoft-fixes-that-fix/</link>
+      <pubDate>Mon, 14 Sep 2009 06:55:00 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/09/14/a-technology-catch-up-for-me-and-microsoft-fixes-that-fix/</guid>
+      <description>&amp;lt;p&amp;gt;Click More Options, bottom of the currently displayed menu.&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;http://fskelly.files.wordpress.com/2009/09/optionsaccount6.png&amp;quot; rel=&amp;quot;WLPP&amp;quot;&amp;gt;&amp;lt;img loading=&amp;quot;lazy&amp;quot; style=&amp;quot;display:inline;border-width:0;&amp;quot; title=&amp;quot;options-account&amp;quot; border=&amp;quot;0&amp;quot; alt=&amp;quot;options-account&amp;quot; src=&amp;quot;http://fskelly.</description>
+    </item>
+    
+    <item>
+      <title>Unified Troubled Messaging</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/09/14/unified-troubled-messaging/</link>
+      <pubDate>Mon, 14 Sep 2009 05:43:04 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/09/14/unified-troubled-messaging/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sometimes sharing is a great thing.</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/09/07/sometimes-sharing-is-a-great-thing/</link>
+      <pubDate>Mon, 07 Sep 2009 07:12:30 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/09/07/sometimes-sharing-is-a-great-thing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The week that does not want to end</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/09/04/the-week-that-does-not-want-to-end/</link>
+      <pubDate>Fri, 04 Sep 2009 06:45:06 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/09/04/the-week-that-does-not-want-to-end/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Great applications</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/09/02/great-applications/</link>
+      <pubDate>Wed, 02 Sep 2009 06:03:01 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/09/02/great-applications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Life on two wheels</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/09/01/life-on-two-wheels/</link>
+      <pubDate>Tue, 01 Sep 2009 05:48:20 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/09/01/life-on-two-wheels/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The weekend Technology advancement</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/08/31/the-weekend-technology-advancement/</link>
+      <pubDate>Mon, 31 Aug 2009 04:49:55 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/08/31/the-weekend-technology-advancement/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WSS On Windows 7</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/08/28/wss-on-windows-7/</link>
+      <pubDate>Fri, 28 Aug 2009 05:04:05 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/08/28/wss-on-windows-7/</guid>
+      <description>&amp;lt;p&amp;gt;&amp;lt;a title=&amp;quot;http://community.bamboosolutions.com/blogs/bambooteamblog/archive/2009/05/07/installing-wss-3-0-moss-sp2-on-windows-7-rc.aspx&amp;quot; href=&amp;quot;http://community.bamboosolutions.com/blogs/bambooteamblog/archive/2009/05/07/installing-wss-3-0-moss-sp2-on-windows-7-rc.aspx&amp;quot;&amp;gt;http://community.bamboosolutions.com/blogs/bambooteamblog/archive/2009/05/07/installing-wss-3-0-moss-sp2-on-windows-7-rc.aspx&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>The geek is BACK</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/08/27/the-geek-is-back/</link>
+      <pubDate>Thu, 27 Aug 2009 05:35:54 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/08/27/the-geek-is-back/</guid>
+      <description>&amp;lt;p&amp;gt;Playstation 3 – Blu-Ray player and gaming console to boot.&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;So now I have my WHS Server storing content and streaming to my PS3 and my XBOX 360 will be joining the fun soon, finding the wireless adapter for XBOX 360 is not easy.</description>
+    </item>
+    
+    <item>
+      <title>Roadworks</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/08/27/roadworks/</link>
+      <pubDate>Thu, 27 Aug 2009 05:19:55 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/08/27/roadworks/</guid>
+      <description>&amp;lt;p&amp;gt;It is getting to the point where I have to do OFF-ROAD on my superbike to get around.</description>
+    </item>
+    
+    <item>
+      <title>The Return</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/04/07/the-return/</link>
+      <pubDate>Tue, 07 Apr 2009 14:03:30 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/04/07/the-return/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lost in Space</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2008/01/28/lost-in-space/</link>
+      <pubDate>Mon, 28 Jan 2008 13:26:44 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2008/01/28/lost-in-space/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>London is a Zoo and being the animal I am, I somehow survived.</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2007/12/18/london-is-a-zoo-and-being-the-animal-i-am-i-somehow-survived/</link>
+      <pubDate>Tue, 18 Dec 2007 17:59:15 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2007/12/18/london-is-a-zoo-and-being-the-animal-i-am-i-somehow-survived/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>11th Hour</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2007/12/07/11th-hour/</link>
+      <pubDate>Fri, 07 Dec 2007 09:28:35 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2007/12/07/11th-hour/</guid>
+      <description>&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;The LUNATIC with GPS Unit mounted&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;http://blufiles.storage.live.com/y1plfFrpul0llNq31SJdgAJof_6J3wjXsu9iIpjNFYV-2G8lo8WcAl3uJqpxg106X_P7eLQ8nU1ap4&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener&amp;quot;&amp;gt;&amp;lt;img loading=&amp;quot;lazy&amp;quot; height=&amp;quot;200&amp;quot; alt=&amp;quot;IMG_0695_2&amp;quot; src=&amp;quot;http://blufiles.</description>
+    </item>
+    
+    <item>
+      <title>3 Generation Run – Day One to Port Elizabeth (26/11/2007)</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2007/12/02/3-generation-run-day-one-to-port-elizabeth-26112007/</link>
+      <pubDate>Sun, 02 Dec 2007 16:06:04 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2007/12/02/3-generation-run-day-one-to-port-elizabeth-26112007/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>3 Generation Run – Day Two to Port Elizabeth (27/11/2007)</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2007/12/02/3-generation-run-day-two-to-port-elizabeth-27112007/</link>
+      <pubDate>Sun, 02 Dec 2007 15:49:54 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2007/12/02/3-generation-run-day-two-to-port-elizabeth-27112007/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>3 Generation Run – Day One to Johannesburg (01/12/2007)</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2007/12/02/3-generation-run-day-one-to-johannesburg-01122007/</link>
+      <pubDate>Sun, 02 Dec 2007 15:34:28 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2007/12/02/3-generation-run-day-one-to-johannesburg-01122007/</guid>
+      <description>&amp;lt;p&amp;gt;&amp;quot;Spot who has been riding in a straight line for a LONG time&amp;quot;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;Colesberg&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;The most eventful thing on the way back thus far, was the lunch spot.</description>
+    </item>
+    
+    <item>
+      <title>3 Generation Run – Day Two to Johannesburg (02/12/2007)</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2007/12/02/3-generation-run-day-two-to-johannesburg-02122007/</link>
+      <pubDate>Sun, 02 Dec 2007 15:13:09 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2007/12/02/3-generation-run-day-two-to-johannesburg-02122007/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Talking about 3 Generation Run</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2007/11/22/talking-about-3-generation-run/</link>
+      <pubDate>Thu, 22 Nov 2007 08:52:35 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2007/11/22/talking-about-3-generation-run/</guid>
+      <description>&amp;lt;div&amp;gt;Well,&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;I never thought I would thought I would live long enough to see this day.</description>
+    </item>
+    
+  </channel>
+</rss>

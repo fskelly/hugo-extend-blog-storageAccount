@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Cireson Outlook Console</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description"
+    content="This is meta description">
+    
+    
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Hugo 0.89.1" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://flkellyneucloudblogpre.z16.web.core.windows.net/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://flkellyneucloudblogpre.z16.web.core.windows.net/plugins/themify-icons/themify-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://flkellyneucloudblogpre.z16.web.core.windows.net/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://flkellyneucloudblogpre.z16.web.core.windows.net/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://flkellyneucloudblogpre.z16.web.core.windows.net/images/favicon.png " type="image/x-icon">
+
+  
+  
+  
+
+
+
+<style type="text/css" media="screen">
+  @media (prefers-color-scheme: dark) { 
+    /* Background */ .chroma { color: #f8f8f2; background-color: #272822 }
+/* Other */ .chroma .x {  }
+/* Error */ .chroma .err { color: #960050; background-color: #1e0010 }
+/* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
+/* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }
+/* LineHighlight */ .chroma .hl { display: block; width: 100%;background-color: #ffffcc }
+/* LineNumbersTable */ .chroma .lnt { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
+/* LineNumbers */ .chroma .ln { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
+/* Keyword */ .chroma .k { color: #66d9ef }
+/* KeywordConstant */ .chroma .kc { color: #66d9ef }
+/* KeywordDeclaration */ .chroma .kd { color: #66d9ef }
+/* KeywordNamespace */ .chroma .kn { color: #f92672 }
+/* KeywordPseudo */ .chroma .kp { color: #66d9ef }
+/* KeywordReserved */ .chroma .kr { color: #66d9ef }
+/* KeywordType */ .chroma .kt { color: #66d9ef }
+/* Name */ .chroma .n {  }
+/* NameAttribute */ .chroma .na { color: #a6e22e }
+/* NameBuiltin */ .chroma .nb {  }
+/* NameBuiltinPseudo */ .chroma .bp {  }
+/* NameClass */ .chroma .nc { color: #a6e22e }
+/* NameConstant */ .chroma .no { color: #66d9ef }
+/* NameDecorator */ .chroma .nd { color: #a6e22e }
+/* NameEntity */ .chroma .ni {  }
+/* NameException */ .chroma .ne { color: #a6e22e }
+/* NameFunction */ .chroma .nf { color: #a6e22e }
+/* NameFunctionMagic */ .chroma .fm {  }
+/* NameLabel */ .chroma .nl {  }
+/* NameNamespace */ .chroma .nn {  }
+/* NameOther */ .chroma .nx { color: #a6e22e }
+/* NameProperty */ .chroma .py {  }
+/* NameTag */ .chroma .nt { color: #f92672 }
+/* NameVariable */ .chroma .nv {  }
+/* NameVariableClass */ .chroma .vc {  }
+/* NameVariableGlobal */ .chroma .vg {  }
+/* NameVariableInstance */ .chroma .vi {  }
+/* NameVariableMagic */ .chroma .vm {  }
+/* Literal */ .chroma .l { color: #ae81ff }
+/* LiteralDate */ .chroma .ld { color: #e6db74 }
+/* LiteralString */ .chroma .s { color: #e6db74 }
+/* LiteralStringAffix */ .chroma .sa { color: #e6db74 }
+/* LiteralStringBacktick */ .chroma .sb { color: #e6db74 }
+/* LiteralStringChar */ .chroma .sc { color: #e6db74 }
+/* LiteralStringDelimiter */ .chroma .dl { color: #e6db74 }
+/* LiteralStringDoc */ .chroma .sd { color: #e6db74 }
+/* LiteralStringDouble */ .chroma .s2 { color: #e6db74 }
+/* LiteralStringEscape */ .chroma .se { color: #ae81ff }
+/* LiteralStringHeredoc */ .chroma .sh { color: #e6db74 }
+/* LiteralStringInterpol */ .chroma .si { color: #e6db74 }
+/* LiteralStringOther */ .chroma .sx { color: #e6db74 }
+/* LiteralStringRegex */ .chroma .sr { color: #e6db74 }
+/* LiteralStringSingle */ .chroma .s1 { color: #e6db74 }
+/* LiteralStringSymbol */ .chroma .ss { color: #e6db74 }
+/* LiteralNumber */ .chroma .m { color: #ae81ff }
+/* LiteralNumberBin */ .chroma .mb { color: #ae81ff }
+/* LiteralNumberFloat */ .chroma .mf { color: #ae81ff }
+/* LiteralNumberHex */ .chroma .mh { color: #ae81ff }
+/* LiteralNumberInteger */ .chroma .mi { color: #ae81ff }
+/* LiteralNumberIntegerLong */ .chroma .il { color: #ae81ff }
+/* LiteralNumberOct */ .chroma .mo { color: #ae81ff }
+/* Operator */ .chroma .o { color: #f92672 }
+/* OperatorWord */ .chroma .ow { color: #f92672 }
+/* Punctuation */ .chroma .p {  }
+/* Comment */ .chroma .c { color: #75715e }
+/* CommentHashbang */ .chroma .ch { color: #75715e }
+/* CommentMultiline */ .chroma .cm { color: #75715e }
+/* CommentSingle */ .chroma .c1 { color: #75715e }
+/* CommentSpecial */ .chroma .cs { color: #75715e }
+/* CommentPreproc */ .chroma .cp { color: #75715e }
+/* CommentPreprocFile */ .chroma .cpf { color: #75715e }
+/* Generic */ .chroma .g {  }
+/* GenericDeleted */ .chroma .gd { color: #f92672 }
+/* GenericEmph */ .chroma .ge { font-style: italic }
+/* GenericError */ .chroma .gr {  }
+/* GenericHeading */ .chroma .gh {  }
+/* GenericInserted */ .chroma .gi { color: #a6e22e }
+/* GenericOutput */ .chroma .go {  }
+/* GenericPrompt */ .chroma .gp {  }
+/* GenericStrong */ .chroma .gs { font-weight: bold }
+/* GenericSubheading */ .chroma .gu { color: #75715e }
+/* GenericTraceback */ .chroma .gt {  }
+/* GenericUnderline */ .chroma .gl {  }
+/* TextWhitespace */ .chroma .w {  }
+
+  }
+  @media (prefers-color-scheme: light) { 
+    /* Background */ .chroma { background-color: #f8f8f8 }
+/* Other */ .chroma .x {  }
+/* Error */ .chroma .err {  }
+/* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
+/* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }
+/* LineHighlight */ .chroma .hl { display: block; width: 100%;background-color: #ffffcc }
+/* LineNumbersTable */ .chroma .lnt { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
+/* LineNumbers */ .chroma .ln { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
+/* Keyword */ .chroma .k { color: #aa22ff; font-weight: bold }
+/* KeywordConstant */ .chroma .kc { color: #aa22ff; font-weight: bold }
+/* KeywordDeclaration */ .chroma .kd { color: #aa22ff; font-weight: bold }
+/* KeywordNamespace */ .chroma .kn { color: #aa22ff; font-weight: bold }
+/* KeywordPseudo */ .chroma .kp { color: #aa22ff }
+/* KeywordReserved */ .chroma .kr { color: #aa22ff; font-weight: bold }
+/* KeywordType */ .chroma .kt { color: #00bb00; font-weight: bold }
+/* Name */ .chroma .n {  }
+/* NameAttribute */ .chroma .na { color: #bb4444 }
+/* NameBuiltin */ .chroma .nb { color: #aa22ff }
+/* NameBuiltinPseudo */ .chroma .bp {  }
+/* NameClass */ .chroma .nc { color: #0000ff }
+/* NameConstant */ .chroma .no { color: #880000 }
+/* NameDecorator */ .chroma .nd { color: #aa22ff }
+/* NameEntity */ .chroma .ni { color: #999999; font-weight: bold }
+/* NameException */ .chroma .ne { color: #d2413a; font-weight: bold }
+/* NameFunction */ .chroma .nf { color: #00a000 }
+/* NameFunctionMagic */ .chroma .fm {  }
+/* NameLabel */ .chroma .nl { color: #a0a000 }
+/* NameNamespace */ .chroma .nn { color: #0000ff; font-weight: bold }
+/* NameOther */ .chroma .nx {  }
+/* NameProperty */ .chroma .py {  }
+/* NameTag */ .chroma .nt { color: #008000; font-weight: bold }
+/* NameVariable */ .chroma .nv { color: #b8860b }
+/* NameVariableClass */ .chroma .vc {  }
+/* NameVariableGlobal */ .chroma .vg {  }
+/* NameVariableInstance */ .chroma .vi {  }
+/* NameVariableMagic */ .chroma .vm {  }
+/* Literal */ .chroma .l {  }
+/* LiteralDate */ .chroma .ld {  }
+/* LiteralString */ .chroma .s { color: #bb4444 }
+/* LiteralStringAffix */ .chroma .sa { color: #bb4444 }
+/* LiteralStringBacktick */ .chroma .sb { color: #bb4444 }
+/* LiteralStringChar */ .chroma .sc { color: #bb4444 }
+/* LiteralStringDelimiter */ .chroma .dl { color: #bb4444 }
+/* LiteralStringDoc */ .chroma .sd { color: #bb4444; font-style: italic }
+/* LiteralStringDouble */ .chroma .s2 { color: #bb4444 }
+/* LiteralStringEscape */ .chroma .se { color: #bb6622; font-weight: bold }
+/* LiteralStringHeredoc */ .chroma .sh { color: #bb4444 }
+/* LiteralStringInterpol */ .chroma .si { color: #bb6688; font-weight: bold }
+/* LiteralStringOther */ .chroma .sx { color: #008000 }
+/* LiteralStringRegex */ .chroma .sr { color: #bb6688 }
+/* LiteralStringSingle */ .chroma .s1 { color: #bb4444 }
+/* LiteralStringSymbol */ .chroma .ss { color: #b8860b }
+/* LiteralNumber */ .chroma .m { color: #666666 }
+/* LiteralNumberBin */ .chroma .mb { color: #666666 }
+/* LiteralNumberFloat */ .chroma .mf { color: #666666 }
+/* LiteralNumberHex */ .chroma .mh { color: #666666 }
+/* LiteralNumberInteger */ .chroma .mi { color: #666666 }
+/* LiteralNumberIntegerLong */ .chroma .il { color: #666666 }
+/* LiteralNumberOct */ .chroma .mo { color: #666666 }
+/* Operator */ .chroma .o { color: #666666 }
+/* OperatorWord */ .chroma .ow { color: #aa22ff; font-weight: bold }
+/* Punctuation */ .chroma .p {  }
+/* Comment */ .chroma .c { color: #008800; font-style: italic }
+/* CommentHashbang */ .chroma .ch { color: #008800; font-style: italic }
+/* CommentMultiline */ .chroma .cm { color: #008800; font-style: italic }
+/* CommentSingle */ .chroma .c1 { color: #008800; font-style: italic }
+/* CommentSpecial */ .chroma .cs { color: #008800; font-weight: bold }
+/* CommentPreproc */ .chroma .cp { color: #008800 }
+/* CommentPreprocFile */ .chroma .cpf { color: #008800 }
+/* Generic */ .chroma .g {  }
+/* GenericDeleted */ .chroma .gd { color: #a00000 }
+/* GenericEmph */ .chroma .ge { font-style: italic }
+/* GenericError */ .chroma .gr { color: #ff0000 }
+/* GenericHeading */ .chroma .gh { color: #000080; font-weight: bold }
+/* GenericInserted */ .chroma .gi { color: #00a000 }
+/* GenericOutput */ .chroma .go { color: #888888 }
+/* GenericPrompt */ .chroma .gp { color: #000080; font-weight: bold }
+/* GenericStrong */ .chroma .gs { font-weight: bold }
+/* GenericSubheading */ .chroma .gu { color: #800080; font-weight: bold }
+/* GenericTraceback */ .chroma .gt { color: #0044dd }
+/* GenericUnderline */ .chroma .gl { text-decoration: underline }
+/* TextWhitespace */ .chroma .w { color: #bbbbbb }
+ 
+  }
+  </style>
+
+</head><body>
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="fixed-top navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <a class="navbar-brand"href="https://flkellyneucloudblogpre.z16.web.core.windows.net/"><img class="img-fluid" src="/images/logo.svg" alt="Fletcher Kelly | Cloud Engineer"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://flkellyneucloudblogpre.z16.web.core.windows.net/"> Home </a>
+          </li>
+          
+        </ul>
+        
+        <!-- search -->
+        <div class="search">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://flkellyneucloudblogpre.z16.web.core.windows.net/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation --> <div class="py-5 d-none d-lg-block"></div> 
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto block shadow mb-5">
+        <h2>Cireson Outlook Console</h2>
+        <div class="mb-3 post-meta">
+          <a href="/author/fletcher-kelly">Fletcher Kelly</a>,
+          Jun 17, 2014, 
+          <a href="/categories/system-center">System Center</a>
+          
+          <a href="/categories/service-manager">Service Manager</a>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <!-- raw HTML omitted -->
+<p>So, <a href="http://www.cireson.com/">Cireson</a> hase been investing into System Centre Service Manager (SCSM) very heavily and the end results are WELL worth it.</p>
+<p>The <a href="http://cireson.com/apps/outlook-console/">Cireson Outlook Console</a> has been out a little while, however it just keeps getting better and better. The Console is super easy to install. The Install instructions are provided by Cireson. There are a few steps to follow as well as the installation of an Outlook Plugin.</p>
+<p>Yes, as you may have guessed from the name, this allows you to connect to Service Manager with almost a full experience directly from OUTLOOK, how great is that. It simply sits in a corner and connects automatically or it can be set not to, if you are like me and always traveling and do not always have connection to your SCSM Environment. I have tested with extensively, it works VERY WELL over Mobile Broadband (please note that I am in South Africa, the broadband here is NOT great) with a VPN Connection.</p>
+<p>Yes, you read that correctly, it is configured in such a way to be light enough to use or a mobile connection with a VPN connection to your environment. Like I said, well worth the wait.</p>
+<p>So, once the installation is complete and the Management Packs have been imported and the Outlook Plugin has been installed, the fun can start.</p>
+<p>Ok, so onto configuring the Outlook Client,</p>
+<p>Click Settings
+<figure><img src="/wp-content/uploads/2014/06/2014-06-17_07-04-42.png"/>
+</figure>
+</p>
+<p>Configure as needed, you will notice that I have configured some of the features, like &ldquo;When Outlook starts, disable features and don&rsquo;t connect&rdquo;, i have done purely because i am NOT domain joined and do not always want the Outlook Console to always try and connect especially when I am NOT connected to my corporate environment in any way, this can be easily set and configured to meet your needs. I also enable the the &ldquo;Prompt for Credentials when connecting&rdquo;, if I do not do this, it will try to connect using <strong>NON DOMAIN</strong> credentials. <a href="http://www.cireson.com/">Cireson</a> have clearly thought of this scenario. 🙂</p>
+<figure><img src="/wp-content/uploads/2014/06/2014-06-17_07-11-13.png"/>
+</figure>
+
+<p>So, now we can connect to the Environment.</p>
+<figure><img src="/wp-content/uploads/2014/06/2014-06-17_07-13-00-1.png"/>
+</figure>
+
+<p>Provide the required username, password and domain.</p>
+<figure><img src="/wp-content/uploads/2014/06/2014-06-17_07-14-00-1.png"/>
+</figure>
+
+<p>The connection is usually made quite quickly and you can easily see when the connection has been made as a few more icons will now appear and allow you to start using the real power of the Outlook Connector.</p>
+<figure><img src="/wp-content/uploads/2014/06/2014-06-17_07-16-44-1.png"/>
+</figure>
+
+<p>Very quickly, you can see that you can easily Create, Edit and see you Active Work Items. The connector is very intuitive, and easy to use. Simply click one the buttons above or right click on an e-mail, this allows you to create or update a Work Item (yes, you can do this for Problems, Incidents, Changes and Service Requests). This outlook connector really is a ONE-STOP shop for everything Service Manager related.</p>
+<p>Creation is easy, and the subsequent menu are easy to understand</p>
+<figure><img src="/wp-content/uploads/2014/06/2014-06-17_07-20-49-1.png"/>
+</figure>
+
+<p>As is editing an incident,</p>
+<figure><img src="/wp-content/uploads/2014/06/2014-06-17_07-22-08.png"/>
+</figure>
+
+<p>With the Edit, it allows to search for the Work Item and then modify the required Work item.</p>
+<figure><img src="/wp-content/uploads/2014/06/2014-06-17_07-23-42.png"/>
+</figure>
+
+<p>The Outlook Console has a very familiar look and feel to it, allowing pretty much all the same functionality as the Native SCSM Console. When it comes to tasks and the like, such as resolving, you will notice that there is NO context pane for these tasks. However, this is solved by Cireson, with the use of a &ldquo;Tasks drop down&rdquo;, allowing for the simplest tasks do to completed as efficiently as possible.</p>
+<figure><img src="/wp-content/uploads/2014/06/2014-06-17_07-24-37.png"/>
+</figure>
+
+<p>Notice the tasks,</p>
+<figure><img src="/wp-content/uploads/2014/06/2014-06-17_07-27-58.png"/>
+</figure>
+
+<p>All tasks like re-assignment work in much the same way as the Native SCSM Console, also allowing for searching as you type.</p>
+<figure><img src="/wp-content/uploads/2014/06/2014-06-17_07-29-19.png"/>
+</figure>
+
+<p>Once all the required updates and/or tasks have been completed, simply click apply or OK, whichever you normal use.</p>
+<h2 id="more-functionality">More Functionality</h2>
+<p>You can also use email received by you to log calls.</p>
+<p>So, here is the scenario, you normally allow people to send email and then the call gets logged, or you get an e-mail directly from a user. This should be a new call or perhaps an update to an existing call, the [Cireson Outlook Console][2] handles this with ease. The [Cireson Outlook Console][2] allows you to update or log Work Items directly from Outlook.</p>
+<p>What is also very nice and handy is that the linking of the Affected user happens automatically, the &ldquo;From&rdquo; is used for the &ldquo;Affected User&rdquo;, in the same way that the Exchange Connector for SCSM works.</p>
+<figure><img src="/wp-content/uploads/2014/06/2014-06-17_07-36-44.png"/>
+</figure>
+
+<figure><img src="/wp-content/uploads/2014/06/2014-06-17_07-37-38.png"/>
+</figure>
+
+<figure><img src="/wp-content/uploads/2014/06/2014-06-17_07-38-33.png"/>
+</figure>
+
+<p>All required Fields completed, OK button is now available.</p>
+<figure><img src="http://fskelly.files.wordpress.com/2014/06/2014-06-17_07-42-10.png"/>
+</figure>
+
+<p>Updates to work Items are handled in pretty much the same way, select the e-mail, Right Click -&gt; Service Manager -&gt; Choose to Update or add to Work Item. Search for Work Item and and Click OK.</p>
+<figure><img src="/wp-content/uploads/2014/06/2014-06-17_07-47-56.png"/>
+</figure>
+
+<figure><img src="/wp-content/uploads/2014/06/2014-06-17_07-51-47-1.png"/>
+</figure>
+
+<p>OK, so you clicked &ldquo;OK&rdquo; and t disappeared, how do I check?</p>
+<p>Very easy, you can use the &ldquo;Edit&rdquo; option and search for Incident and you can check it was added as a log.</p>
+<figure><img src="http://fskelly.files.wordpress.com/2014/06/2014-06-17_07-55-47.png"/>
+</figure>
+
+<figure><img src="/wp-content/uploads/2014/06/2014-06-17_07-56-30.png"/>
+</figure>
+
+<figure><img src="/wp-content/uploads/2014/06/2014-06-17_07-57-18.png"/>
+</figure>
+
+<p>A lot of though has gone into this product, I ALWAYS recommend this product to my customers, as most of us spend the majority of our time within Outlook as it is, this simply adds the immense power of System Centre Service Manager into Outlook as well, allowing you to further empower your IT Staff.</p>
+<p>Follow me,</p>
+<p><a href="https://www.twitter.com/fskelly">Twitter</a><br>
+<a href="https://linkedin.com/in/fletcherkelly">LinkedIn</a></p>
+
+        </div>
+        <div class="mb-3 post-meta">
+           <a href="/tags/scsm">#SCSM</a>,   <a href="/tags/cireson">#Cireson</a>,  
+        </div>
+      </div>
+      <div class="col-lg-8 mx-auto block shadow">
+        
+        
+        <h3>See Also</h3>
+        <ul>
+          
+          <li><a href="/posts/history/2014-04-04-adding-comments-to-work-items-with-orchestrator/">Adding Comments to Work Items with Orchestrator</a></li>
+          
+          <li><a href="/posts/history/2013-11-15-send-email-to-3rd-party-from-scsm-console-powershell-and-console-task/">Send Email to 3rd Party from SCSM Console – PowerShell and Console Task</a></li>
+          
+          <li><a href="/posts/history/2013-08-27-new-featurescireson-it-asset-management/">New features–Cireson IT Asset Management</a></li>
+          
+          <li><a href="/posts/history/2013-08-05-end-user-portal-for-system-centre-orchestrator/">End User Portal for System Centre Orchestrator</a></li>
+          
+          <li><a href="/posts/history/2013-06-26-cireson-it-asset-management-with-service-manager/">Cireson IT Asset Management with Service Manager</a></li>
+          
+        </ul>
+        
+      </div>
+      
+      <div class="col-lg-8 mx-auto block shadow">
+        
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "fletchercloudadventures" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+<footer class="py-4 bg-light border-top">
+  <div class="container">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-lg-4 text-center text-lg-left mb-4 mb-lg-0">
+        <a href="https://flkellyneucloudblogpre.z16.web.core.windows.net/" class="d-block pb-3"><img src="/images/logo.svg" class="img-fluid" alt="Fletcher Kelly | Cloud Engineer"></a>
+      </div>
+      <div class="col-lg-4 text-center mb-4 mb-lg-0">
+        <ul class="list-inline mb-0">
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 text-lg-right text-center mb-4 mb-lg-0">
+        <ul class="list-inline social-icon mb-0">
+          
+          <li class="list-inline-item"><a href="https://www.twitter.com/fskelly"><i class="ti-twitter-alt"></i></a></li>
+          
+          <li class="list-inline-item"><a href="https://www.github.com/fskelly"><i class="ti-github"></i></a></li>
+          
+          <li class="list-inline-item"><a href="https://www.linkedin.com/in/fletcherkelly"><i class="ti-linkedin"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <span>© 2013 - 2021 Fletcher Kelly All Rights Reserved</span>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script>
+  var indexURL = "https://flkellyneucloudblogpre.z16.web.core.windows.net/index.json"
+</script>
+
+
+<!-- JS Plugins -->
+
+<script src="https://flkellyneucloudblogpre.z16.web.core.windows.net/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://flkellyneucloudblogpre.z16.web.core.windows.net/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://flkellyneucloudblogpre.z16.web.core.windows.net/plugins/search/fuse.min.js"></script>
+
+<script src="https://flkellyneucloudblogpre.z16.web.core.windows.net/plugins/search/mark.js"></script>
+
+<script src="https://flkellyneucloudblogpre.z16.web.core.windows.net/plugins/search/search.js"></script>
+
+
+<!-- Main Script -->
+
+<script src="https://flkellyneucloudblogpre.z16.web.core.windows.net/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-outline-primary ml-2">I Accept</span>
+</div>
+<script>
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
+</script>
+
+
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
+
+.cookie-box-hide {
+  display: none;
+}
+</style>
+
+</body>
+
+</html>

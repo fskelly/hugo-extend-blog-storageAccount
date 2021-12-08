@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hyper-V on Fletcher Kelly | Cloud Engineer</title>
+    <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/categories/hyper-v/</link>
+    <description>Recent content in Hyper-V on Fletcher Kelly | Cloud Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 06 Sep 2012 15:12:58 +0000</lastBuildDate><atom:link href="https://flkellyneucloudblogpre.z16.web.core.windows.net/categories/hyper-v/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Windows Server 2012 Journey</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/09/06/my-windows-server-2012-journey/</link>
+      <pubDate>Thu, 06 Sep 2012 15:12:58 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/09/06/my-windows-server-2012-journey/</guid>
+      <description>So, my journey with Windows Server 2012 has started. The primary focus of my company’s journey is Hyper-V3.</description>
+    </item>
+    
+    <item>
+      <title>Networking issues with Hyper-V</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/08/28/networking-issues-with-hyper-v/</link>
+      <pubDate>Tue, 28 Aug 2012 13:35:56 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/08/28/networking-issues-with-hyper-v/</guid>
+      <description>Just recently I was running into some very strange issues with my Hyper-V Cluster. we have numerous NICs to allow for redundancy and better throughput for our clustered environment.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Service Request Load Testing for SCSM</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description"
+    content="This is meta description">
+    
+    
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Hugo 0.89.1" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://flkellyneucloudblogpre.z16.web.core.windows.net/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://flkellyneucloudblogpre.z16.web.core.windows.net/plugins/themify-icons/themify-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://flkellyneucloudblogpre.z16.web.core.windows.net/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://flkellyneucloudblogpre.z16.web.core.windows.net/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://flkellyneucloudblogpre.z16.web.core.windows.net/images/favicon.png " type="image/x-icon">
+
+  
+  
+  
+
+
+
+<style type="text/css" media="screen">
+  @media (prefers-color-scheme: dark) { 
+    /* Background */ .chroma { color: #f8f8f2; background-color: #272822 }
+/* Other */ .chroma .x {  }
+/* Error */ .chroma .err { color: #960050; background-color: #1e0010 }
+/* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
+/* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }
+/* LineHighlight */ .chroma .hl { display: block; width: 100%;background-color: #ffffcc }
+/* LineNumbersTable */ .chroma .lnt { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
+/* LineNumbers */ .chroma .ln { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
+/* Keyword */ .chroma .k { color: #66d9ef }
+/* KeywordConstant */ .chroma .kc { color: #66d9ef }
+/* KeywordDeclaration */ .chroma .kd { color: #66d9ef }
+/* KeywordNamespace */ .chroma .kn { color: #f92672 }
+/* KeywordPseudo */ .chroma .kp { color: #66d9ef }
+/* KeywordReserved */ .chroma .kr { color: #66d9ef }
+/* KeywordType */ .chroma .kt { color: #66d9ef }
+/* Name */ .chroma .n {  }
+/* NameAttribute */ .chroma .na { color: #a6e22e }
+/* NameBuiltin */ .chroma .nb {  }
+/* NameBuiltinPseudo */ .chroma .bp {  }
+/* NameClass */ .chroma .nc { color: #a6e22e }
+/* NameConstant */ .chroma .no { color: #66d9ef }
+/* NameDecorator */ .chroma .nd { color: #a6e22e }
+/* NameEntity */ .chroma .ni {  }
+/* NameException */ .chroma .ne { color: #a6e22e }
+/* NameFunction */ .chroma .nf { color: #a6e22e }
+/* NameFunctionMagic */ .chroma .fm {  }
+/* NameLabel */ .chroma .nl {  }
+/* NameNamespace */ .chroma .nn {  }
+/* NameOther */ .chroma .nx { color: #a6e22e }
+/* NameProperty */ .chroma .py {  }
+/* NameTag */ .chroma .nt { color: #f92672 }
+/* NameVariable */ .chroma .nv {  }
+/* NameVariableClass */ .chroma .vc {  }
+/* NameVariableGlobal */ .chroma .vg {  }
+/* NameVariableInstance */ .chroma .vi {  }
+/* NameVariableMagic */ .chroma .vm {  }
+/* Literal */ .chroma .l { color: #ae81ff }
+/* LiteralDate */ .chroma .ld { color: #e6db74 }
+/* LiteralString */ .chroma .s { color: #e6db74 }
+/* LiteralStringAffix */ .chroma .sa { color: #e6db74 }
+/* LiteralStringBacktick */ .chroma .sb { color: #e6db74 }
+/* LiteralStringChar */ .chroma .sc { color: #e6db74 }
+/* LiteralStringDelimiter */ .chroma .dl { color: #e6db74 }
+/* LiteralStringDoc */ .chroma .sd { color: #e6db74 }
+/* LiteralStringDouble */ .chroma .s2 { color: #e6db74 }
+/* LiteralStringEscape */ .chroma .se { color: #ae81ff }
+/* LiteralStringHeredoc */ .chroma .sh { color: #e6db74 }
+/* LiteralStringInterpol */ .chroma .si { color: #e6db74 }
+/* LiteralStringOther */ .chroma .sx { color: #e6db74 }
+/* LiteralStringRegex */ .chroma .sr { color: #e6db74 }
+/* LiteralStringSingle */ .chroma .s1 { color: #e6db74 }
+/* LiteralStringSymbol */ .chroma .ss { color: #e6db74 }
+/* LiteralNumber */ .chroma .m { color: #ae81ff }
+/* LiteralNumberBin */ .chroma .mb { color: #ae81ff }
+/* LiteralNumberFloat */ .chroma .mf { color: #ae81ff }
+/* LiteralNumberHex */ .chroma .mh { color: #ae81ff }
+/* LiteralNumberInteger */ .chroma .mi { color: #ae81ff }
+/* LiteralNumberIntegerLong */ .chroma .il { color: #ae81ff }
+/* LiteralNumberOct */ .chroma .mo { color: #ae81ff }
+/* Operator */ .chroma .o { color: #f92672 }
+/* OperatorWord */ .chroma .ow { color: #f92672 }
+/* Punctuation */ .chroma .p {  }
+/* Comment */ .chroma .c { color: #75715e }
+/* CommentHashbang */ .chroma .ch { color: #75715e }
+/* CommentMultiline */ .chroma .cm { color: #75715e }
+/* CommentSingle */ .chroma .c1 { color: #75715e }
+/* CommentSpecial */ .chroma .cs { color: #75715e }
+/* CommentPreproc */ .chroma .cp { color: #75715e }
+/* CommentPreprocFile */ .chroma .cpf { color: #75715e }
+/* Generic */ .chroma .g {  }
+/* GenericDeleted */ .chroma .gd { color: #f92672 }
+/* GenericEmph */ .chroma .ge { font-style: italic }
+/* GenericError */ .chroma .gr {  }
+/* GenericHeading */ .chroma .gh {  }
+/* GenericInserted */ .chroma .gi { color: #a6e22e }
+/* GenericOutput */ .chroma .go {  }
+/* GenericPrompt */ .chroma .gp {  }
+/* GenericStrong */ .chroma .gs { font-weight: bold }
+/* GenericSubheading */ .chroma .gu { color: #75715e }
+/* GenericTraceback */ .chroma .gt {  }
+/* GenericUnderline */ .chroma .gl {  }
+/* TextWhitespace */ .chroma .w {  }
+
+  }
+  @media (prefers-color-scheme: light) { 
+    /* Background */ .chroma { background-color: #f8f8f8 }
+/* Other */ .chroma .x {  }
+/* Error */ .chroma .err {  }
+/* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
+/* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }
+/* LineHighlight */ .chroma .hl { display: block; width: 100%;background-color: #ffffcc }
+/* LineNumbersTable */ .chroma .lnt { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
+/* LineNumbers */ .chroma .ln { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
+/* Keyword */ .chroma .k { color: #aa22ff; font-weight: bold }
+/* KeywordConstant */ .chroma .kc { color: #aa22ff; font-weight: bold }
+/* KeywordDeclaration */ .chroma .kd { color: #aa22ff; font-weight: bold }
+/* KeywordNamespace */ .chroma .kn { color: #aa22ff; font-weight: bold }
+/* KeywordPseudo */ .chroma .kp { color: #aa22ff }
+/* KeywordReserved */ .chroma .kr { color: #aa22ff; font-weight: bold }
+/* KeywordType */ .chroma .kt { color: #00bb00; font-weight: bold }
+/* Name */ .chroma .n {  }
+/* NameAttribute */ .chroma .na { color: #bb4444 }
+/* NameBuiltin */ .chroma .nb { color: #aa22ff }
+/* NameBuiltinPseudo */ .chroma .bp {  }
+/* NameClass */ .chroma .nc { color: #0000ff }
+/* NameConstant */ .chroma .no { color: #880000 }
+/* NameDecorator */ .chroma .nd { color: #aa22ff }
+/* NameEntity */ .chroma .ni { color: #999999; font-weight: bold }
+/* NameException */ .chroma .ne { color: #d2413a; font-weight: bold }
+/* NameFunction */ .chroma .nf { color: #00a000 }
+/* NameFunctionMagic */ .chroma .fm {  }
+/* NameLabel */ .chroma .nl { color: #a0a000 }
+/* NameNamespace */ .chroma .nn { color: #0000ff; font-weight: bold }
+/* NameOther */ .chroma .nx {  }
+/* NameProperty */ .chroma .py {  }
+/* NameTag */ .chroma .nt { color: #008000; font-weight: bold }
+/* NameVariable */ .chroma .nv { color: #b8860b }
+/* NameVariableClass */ .chroma .vc {  }
+/* NameVariableGlobal */ .chroma .vg {  }
+/* NameVariableInstance */ .chroma .vi {  }
+/* NameVariableMagic */ .chroma .vm {  }
+/* Literal */ .chroma .l {  }
+/* LiteralDate */ .chroma .ld {  }
+/* LiteralString */ .chroma .s { color: #bb4444 }
+/* LiteralStringAffix */ .chroma .sa { color: #bb4444 }
+/* LiteralStringBacktick */ .chroma .sb { color: #bb4444 }
+/* LiteralStringChar */ .chroma .sc { color: #bb4444 }
+/* LiteralStringDelimiter */ .chroma .dl { color: #bb4444 }
+/* LiteralStringDoc */ .chroma .sd { color: #bb4444; font-style: italic }
+/* LiteralStringDouble */ .chroma .s2 { color: #bb4444 }
+/* LiteralStringEscape */ .chroma .se { color: #bb6622; font-weight: bold }
+/* LiteralStringHeredoc */ .chroma .sh { color: #bb4444 }
+/* LiteralStringInterpol */ .chroma .si { color: #bb6688; font-weight: bold }
+/* LiteralStringOther */ .chroma .sx { color: #008000 }
+/* LiteralStringRegex */ .chroma .sr { color: #bb6688 }
+/* LiteralStringSingle */ .chroma .s1 { color: #bb4444 }
+/* LiteralStringSymbol */ .chroma .ss { color: #b8860b }
+/* LiteralNumber */ .chroma .m { color: #666666 }
+/* LiteralNumberBin */ .chroma .mb { color: #666666 }
+/* LiteralNumberFloat */ .chroma .mf { color: #666666 }
+/* LiteralNumberHex */ .chroma .mh { color: #666666 }
+/* LiteralNumberInteger */ .chroma .mi { color: #666666 }
+/* LiteralNumberIntegerLong */ .chroma .il { color: #666666 }
+/* LiteralNumberOct */ .chroma .mo { color: #666666 }
+/* Operator */ .chroma .o { color: #666666 }
+/* OperatorWord */ .chroma .ow { color: #aa22ff; font-weight: bold }
+/* Punctuation */ .chroma .p {  }
+/* Comment */ .chroma .c { color: #008800; font-style: italic }
+/* CommentHashbang */ .chroma .ch { color: #008800; font-style: italic }
+/* CommentMultiline */ .chroma .cm { color: #008800; font-style: italic }
+/* CommentSingle */ .chroma .c1 { color: #008800; font-style: italic }
+/* CommentSpecial */ .chroma .cs { color: #008800; font-weight: bold }
+/* CommentPreproc */ .chroma .cp { color: #008800 }
+/* CommentPreprocFile */ .chroma .cpf { color: #008800 }
+/* Generic */ .chroma .g {  }
+/* GenericDeleted */ .chroma .gd { color: #a00000 }
+/* GenericEmph */ .chroma .ge { font-style: italic }
+/* GenericError */ .chroma .gr { color: #ff0000 }
+/* GenericHeading */ .chroma .gh { color: #000080; font-weight: bold }
+/* GenericInserted */ .chroma .gi { color: #00a000 }
+/* GenericOutput */ .chroma .go { color: #888888 }
+/* GenericPrompt */ .chroma .gp { color: #000080; font-weight: bold }
+/* GenericStrong */ .chroma .gs { font-weight: bold }
+/* GenericSubheading */ .chroma .gu { color: #800080; font-weight: bold }
+/* GenericTraceback */ .chroma .gt { color: #0044dd }
+/* GenericUnderline */ .chroma .gl { text-decoration: underline }
+/* TextWhitespace */ .chroma .w { color: #bbbbbb }
+ 
+  }
+  </style>
+
+</head><body>
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="fixed-top navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <a class="navbar-brand"href="https://flkellyneucloudblogpre.z16.web.core.windows.net/"><img class="img-fluid" src="/images/logo.svg" alt="Fletcher Kelly | Cloud Engineer"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://flkellyneucloudblogpre.z16.web.core.windows.net/"> Home </a>
+          </li>
+          
+        </ul>
+        
+        <!-- search -->
+        <div class="search">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://flkellyneucloudblogpre.z16.web.core.windows.net/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation --> <div class="py-5 d-none d-lg-block"></div> 
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto block shadow mb-5">
+        <h2>Service Request Load Testing for SCSM</h2>
+        <div class="mb-3 post-meta">
+          <a href="/author/fletcher-kelly">Fletcher Kelly</a>,
+          Sep 11, 2013, 
+          <a href="/categories/scsm">SCSM</a>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <!-- raw HTML omitted -->
+<p>I have found a great for load testing <a href="https://www.catapultsystems.com/blogs/powershell-script-to-load-test-scsm/">SCSM with Incidents</a> and copy <a href="https://github.com/fskelly/hugo-extend-blog-storageAccount/blob/main/externalFiles/2013/09/11/SCSM_Load_Test.ps1">here</a>. The script uses <a href="https://github.com/SMLets/SMLets">SMLets</a> to generate Incidents and you can then gauge how your system would handle the load you are planning within your Production Environment.</p>
+<p>I will not go into the detail of the script as this <a href="https://www.catapultsystems.com/blogs/powershell-script-to-load-test-scsm/">blog post</a> does a great job of explaining it. So this got me to thinking about other Load Testing you could perform. The most common Load Test is with Incidents. However, i decided that another good load test would be Service Requests. What is nice about this load test, is that it uses a Management Pack which I have included in this post. The Management Pack contains a Service Request Template with a Manual Activity added as the first Activity. This will allow you to test Service Requests and well as Activities, which would in turn, test any workflows or runbooks that you have configured.</p>
+<p>For my environment, I have additional runbooks which are also triggered when Manual Activities are completed or when Review Activities are completed. So with this Load Test script it also test my runbooks and other workflows.</p>
+<p>Remember, to set a different Implementer for the Manual Activity to allow the runbooks or workflows to be triggered off correctly. Remember, no Manual Activity Implementer or if the implementer has no email address, your emails will not be triggered correctly. Below, is a breakdown of the script I am using.</p>
+<p>Script</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="c">#SMLets is needed for the script to work  </span>
+<span class="nb">Import-Module</span> <span class="n">SMlets</span>
+
+<span class="c">#the number of Service requests to be created  </span>
+<span class="nv">$SRCount</span> <span class="p">=</span> <span class="n">10</span>
+
+<span class="c">#the delay between attempts  </span>
+<span class="nv">$delay</span> <span class="p">=</span> <span class="n">10</span>
+
+<span class="c"># Display Start Time  </span>
+<span class="nv">$StartTime</span> <span class="p">=</span> <span class="nb">get-date</span>  
+<span class="nb">Write-Host</span> <span class="s2">&#34;Started&#34;</span>  
+<span class="nb">Write-Host</span> <span class="nv">$StartTime</span>  
+<span class="nb">Write-Host</span> <span class="s2">&#34;---------</span><span class="se">`n</span><span class="s2">&#34;</span>  
+<span class="nb">Write-Host</span> <span class="s2">&#34;Creating Service Request&#34;</span>  
+<span class="nb">Write-Host</span> <span class="s2">&#34;---------&#34;</span>  
+<span class="nv">$i</span> <span class="p">=</span><span class="n">1</span>
+
+<span class="k">while</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">-le</span> <span class="nv">$SRCount</span><span class="p">)</span>  
+<span class="p">{</span>
+
+<span class="c">#Variable / Class Setup  </span>
+<span class="nv">$srClass</span> <span class="p">=</span> <span class="nb">Get-SCSMClass</span> <span class="n">-name</span> <span class="n">System</span><span class="p">.</span><span class="n">WorkItem</span><span class="p">.</span><span class="n">ServiceRequest</span><span class="p">$</span>  
+<span class="nv">$srprior</span> <span class="p">=</span> <span class="nb">Get-SCSMEnumeration</span> <span class="n">-Name</span> <span class="n">ServiceRequestPriorityEnum</span><span class="p">.</span><span class="n">Medium</span>  
+<span class="nv">$srurg</span> <span class="p">=</span> <span class="nb">Get-SCSMEnumeration</span> <span class="n">-Name</span> <span class="n">ServiceRequestUrgencyEnum</span><span class="p">.</span><span class="n">Medium</span>  
+<span class="nv">$srarea</span> <span class="p">=</span> <span class="nb">get-SCSMEnumeration</span> <span class="n">-Name</span> <span class="n">ServiceRequestAreaEnum</span><span class="p">.</span><span class="n">Other</span>
+
+<span class="c">#building your own SR Title  </span>
+<span class="nv">$title</span> <span class="p">=</span> <span class="s2">&#34;Fletcher Load Testing $i - &#34;</span> <span class="p">+</span> <span class="p">(</span><span class="nb">get-date</span><span class="p">)</span>
+
+<span class="c">#Service Request Arguments  </span>
+<span class="nv">$srargs</span> <span class="p">=</span> <span class="p">@{</span>  
+<span class="n">Title</span> <span class="p">=</span> <span class="nv">$title</span><span class="p">;</span>  
+<span class="n">Urgency</span> <span class="p">=</span> <span class="nv">$srurg</span><span class="p">;</span>  
+<span class="n">Priority</span> <span class="p">=</span> <span class="nv">$srprior</span><span class="p">;</span>  
+<span class="n">ID</span> <span class="p">=</span> <span class="s2">&#34;SR{0}&#34;</span><span class="p">;</span>  
+<span class="n">Area</span> <span class="p">=</span> <span class="nv">$srarea</span><span class="p">;</span>  
+<span class="n">Description</span> <span class="p">=</span> <span class="s2">&#34;Created by Script&#34;</span>  
+<span class="p">}</span>
+
+<span class="c">#Create Service Request  </span>
+<span class="nb">New-SCSMOBject</span> <span class="n">-Class</span> <span class="nv">$srClass</span> <span class="n">-PropertyHashtable</span> <span class="nv">$srargs</span>
+
+<span class="c">#Get Projection &amp; Object for Created Service Request  </span>
+<span class="nv">$srTypeProjection</span> <span class="p">=</span> <span class="nb">Get-SCSMTypeProjection</span> <span class="n">-name</span> <span class="n">System</span><span class="p">.</span><span class="n">WorkItem</span><span class="p">.</span><span class="n">ServiceRequestProjection</span><span class="p">$</span>  
+<span class="nv">$SRProj</span> <span class="p">=</span> <span class="nb">Get-scsmobjectprojection</span> <span class="n">-ProjectionName</span> <span class="nv">$srTypeProjection</span><span class="p">.</span><span class="n">Name</span> <span class="n">-filter</span> <span class="s2">&#34;title -eq $title&#34;</span>
+
+<span class="c">#Get Template  </span>
+<span class="nv">$template</span> <span class="p">=</span> <span class="nb">Get-SCSMObjectTemplate</span> <span class="n">-DisplayName</span> <span class="s2">&#34;Load Test SR Template&#34;</span>
+
+<span class="c">#Set Template  </span>
+<span class="nb">Set-SCSMObjectTemplate</span> <span class="n">-Projection</span> <span class="nv">$SRProj</span> <span class="n">-Template</span> <span class="nv">$template</span>  
+<span class="nv">$SR</span> <span class="p">=</span> <span class="nb">Get-SCSMObject</span> <span class="n">-Class</span> <span class="p">(</span><span class="nb">Get-SCSMClass</span> <span class="n">-Name</span> <span class="n">System</span><span class="p">.</span><span class="n">WorkItem</span><span class="p">.</span><span class="n">ServiceRequest</span><span class="p">$)</span> <span class="n">-filter</span> <span class="s2">&#34;Title -eq $title&#34;</span>  
+<span class="nv">$SRName</span> <span class="p">=</span> <span class="nv">$SR</span><span class="p">.</span><span class="n">name</span>  
+<span class="nv">$SRTitle</span> <span class="p">=</span> <span class="nv">$SR</span><span class="p">.</span><span class="n">Title</span>  
+<span class="nb">Write-Host</span> <span class="nv">$SRName</span> <span class="s2">&#34; - &#34;</span> <span class="nv">$SRTitle</span>  
+<span class="c">#$SRName</span>
+
+<span class="c"># Pause before creating next SR  </span>
+<span class="nb">Start-Sleep</span> <span class="n">-s</span> <span class="n">5</span>
+
+<span class="c">#getting the above created Service Request  </span>
+<span class="nv">$ServiceRequestToUpdate</span> <span class="p">=</span> <span class="nb">Get-SCSMObject</span> <span class="n">-Class</span> <span class="p">(</span><span class="nb">Get-SCSMClass</span> <span class="n">-Name</span> <span class="n">System</span><span class="p">.</span><span class="n">WorkItem</span><span class="p">.</span><span class="n">ServiceRequest</span><span class="p">$)</span> <span class="n">-Filter</span> <span class="s2">&#34;Id -eq $SRName&#34;</span>
+
+<span class="c">#get the Realted Child Manual Activity  </span>
+<span class="nv">$ChildActivities</span> <span class="p">=</span> <span class="p">(</span><span class="nb">Get-SCSMRelationshipObject</span> <span class="n">-BySource</span> <span class="nv">$ServiceRequestToUpdate</span> <span class="p">|</span> <span class="p">?{</span><span class="nv">$_</span><span class="p">.</span><span class="n">RelationshipID</span> <span class="o">-eq</span> <span class="s2">&#34;2DA498BE-0485-B2B2-D520-6EBD1698E61B&#34;</span><span class="p">})</span>
+
+<span class="nv">$get</span> <span class="n">the</span> <span class="n">ID</span> <span class="n">Value</span>  
+<span class="nv">$MAIDToUpdate</span> <span class="p">=</span> <span class="nv">$ChildActivities</span><span class="p">.</span><span class="n">targetobject</span><span class="p">.</span><span class="n">values</span><span class="p">[</span><span class="n">9</span><span class="p">].</span><span class="n">value</span>
+
+<span class="c">#getting the MA Class  </span>
+<span class="nv">$Class</span> <span class="p">=</span> <span class="nb">Get-SCSMClass</span> <span class="n">-Name</span> <span class="n">System</span><span class="p">.</span><span class="n">WorkItem</span><span class="p">.</span><span class="n">Activity</span><span class="p">.</span><span class="n">ManualActivity</span>
+
+<span class="c">#getting the &#34;Active&#34; Status  </span>
+<span class="nv">$StatusActive</span> <span class="p">=</span> <span class="nb">Get-SCSMEnumeration</span> <span class="n">-name</span> <span class="n">ActivityStatusEnum</span><span class="p">.</span><span class="n">Active</span>
+
+<span class="nv">$Activity</span> <span class="p">=</span> <span class="nb">Get-SCSMObject</span> <span class="n">-Class</span> <span class="nv">$Class</span> <span class="p">|</span> <span class="p">?</span> <span class="p">{</span><span class="nv">$_</span><span class="p">.</span><span class="n">ID</span> <span class="o">-eq</span> <span class="nv">$MAIDToUpdate</span><span class="p">}</span>
+
+<span class="c">#setting MA to Active  </span>
+<span class="nb">Set-SCSMObject</span> <span class="n">-SMObject</span> <span class="nv">$Activity</span> <span class="n">-Property</span> <span class="s2">&#34;Status&#34;</span> <span class="n">-Value</span> <span class="nv">$StatusActive</span>
+
+<span class="c">#showing current status  </span>
+<span class="nb">Write-host</span> <span class="nv">$MAIDToUpdate</span> <span class="s2">&#34; is now &#34;</span> <span class="nv">$StatusActive</span>  
+<span class="nv">$i</span> <span class="p">+=</span><span class="n">1</span>  
+<span class="nb">Start-Sleep</span> <span class="n">-s</span> <span class="nv">$delay</span>  
+<span class="p">}</span>
+
+<span class="c"># Display End Time  </span>
+<span class="nb">Write-Host</span> <span class="s2">&#34;----------</span><span class="se">`n</span><span class="s2">&#34;</span>  
+<span class="nv">$EndTime</span> <span class="p">=</span> <span class="nb">get-date</span>  
+<span class="nb">Write-Host</span> <span class="p">=</span> <span class="s2">&#34;Finished&#34;</span>  
+<span class="nb">Write-Host</span> <span class="nv">$EndTime</span>  
+<span class="c">#End of Script  </span>
+<span class="c">#  </span>
+</code></pre></div><p>The script can also be downloaded from the <del>Technet Gallery</del>, I am the authour, found <a href="https://github.com/fskelly/hugo-extend-blog-storageAccount/blob/main/externalFiles/2013/09/11/SCSM_Load_Test-SR-v1.ps1">here</a> now.</p>
+<p>Follow me,</p>
+<p><a href="https://www.twitter.com/fskelly">Twitter</a><br>
+<a href="https://linkedin.com/in/fletcherkelly">LinkedIn</a></p>
+
+        </div>
+        <div class="mb-3 post-meta">
+           <a href="/tags/load-testing">#Load Testing</a>,   <a href="/tags/scripting">#Scripting</a>,   <a href="/tags/powershell">#PowerShell</a>,  
+        </div>
+      </div>
+      <div class="col-lg-8 mx-auto block shadow">
+        
+        
+        <h3>See Also</h3>
+        <ul>
+          
+          <li><a href="/posts/history/2012-12-20-assignedto-and-affecteduser-with-powershell-service-manager/">AssignedTo and AffectedUser with Powershell – Service Manager</a></li>
+          
+        </ul>
+        
+      </div>
+      
+      <div class="col-lg-8 mx-auto block shadow">
+        
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "fletchercloudadventures" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+<footer class="py-4 bg-light border-top">
+  <div class="container">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-lg-4 text-center text-lg-left mb-4 mb-lg-0">
+        <a href="https://flkellyneucloudblogpre.z16.web.core.windows.net/" class="d-block pb-3"><img src="/images/logo.svg" class="img-fluid" alt="Fletcher Kelly | Cloud Engineer"></a>
+      </div>
+      <div class="col-lg-4 text-center mb-4 mb-lg-0">
+        <ul class="list-inline mb-0">
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 text-lg-right text-center mb-4 mb-lg-0">
+        <ul class="list-inline social-icon mb-0">
+          
+          <li class="list-inline-item"><a href="https://www.twitter.com/fskelly"><i class="ti-twitter-alt"></i></a></li>
+          
+          <li class="list-inline-item"><a href="https://www.github.com/fskelly"><i class="ti-github"></i></a></li>
+          
+          <li class="list-inline-item"><a href="https://www.linkedin.com/in/fletcherkelly"><i class="ti-linkedin"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <span>© 2013 - 2021 Fletcher Kelly All Rights Reserved</span>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script>
+  var indexURL = "https://flkellyneucloudblogpre.z16.web.core.windows.net/index.json"
+</script>
+
+
+<!-- JS Plugins -->
+
+<script src="https://flkellyneucloudblogpre.z16.web.core.windows.net/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://flkellyneucloudblogpre.z16.web.core.windows.net/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://flkellyneucloudblogpre.z16.web.core.windows.net/plugins/search/fuse.min.js"></script>
+
+<script src="https://flkellyneucloudblogpre.z16.web.core.windows.net/plugins/search/mark.js"></script>
+
+<script src="https://flkellyneucloudblogpre.z16.web.core.windows.net/plugins/search/search.js"></script>
+
+
+<!-- Main Script -->
+
+<script src="https://flkellyneucloudblogpre.z16.web.core.windows.net/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-outline-primary ml-2">I Accept</span>
+</div>
+<script>
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
+</script>
+
+
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
+
+.cookie-box-hide {
+  display: none;
+}
+</style>
+
+</body>
+
+</html>

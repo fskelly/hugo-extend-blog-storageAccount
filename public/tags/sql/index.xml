@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SQL on Fletcher Kelly | Cloud Engineer</title>
+    <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/sql/</link>
+    <description>Recent content in SQL on Fletcher Kelly | Cloud Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 07 May 2012 11:44:25 +0000</lastBuildDate><atom:link href="https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpsMan 2007 R2–Collation, Collation, Collation!!!!!!</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/05/07/opsman-2007-r2collation-collation-collation/</link>
+      <pubDate>Mon, 07 May 2012 11:44:25 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/05/07/opsman-2007-r2collation-collation-collation/</guid>
+      <description>So, recently I decided to take the plunge and upgrade to SCOM 2012. So, there were a few pre-requisites that I needed as per the prereq checker that is built into OpsMan 2012.</description>
+    </item>
+    
+    <item>
+      <title>“Blue Wednesday”</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2010/10/27/blue-wednesday/</link>
+      <pubDate>Wed, 27 Oct 2010 12:27:29 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2010/10/27/blue-wednesday/</guid>
+      <description>Do you ever have those days where it just starts bad and gets worse?
+“Man Alive, what a day it has been and it is not over yet”</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>email on Fletcher Kelly | Cloud Engineer</title>
+    <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/email/</link>
+    <description>Recent content in email on Fletcher Kelly | Cloud Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 11 Jul 2011 12:25:28 +0000</lastBuildDate><atom:link href="https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/email/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Get-hotfix on Steroids</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/07/11/get-hotfix-on-steroids/</link>
+      <pubDate>Mon, 11 Jul 2011 12:25:28 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/07/11/get-hotfix-on-steroids/</guid>
+      <description>Hi All,
+I have taken the get-hotfix and tweaked it so something useful for my environment.</description>
+    </item>
+    
+  </channel>
+</rss>

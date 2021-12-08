@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SCSM on Fletcher Kelly | Cloud Engineer</title>
+    <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/categories/scsm/</link>
+    <description>Recent content in SCSM on Fletcher Kelly | Cloud Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 11 Sep 2013 19:30:51 +0000</lastBuildDate><atom:link href="https://flkellyneucloudblogpre.z16.web.core.windows.net/categories/scsm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Service Request Load Testing for SCSM</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-09-11-service-request-load-testing-for-scsm/</link>
+      <pubDate>Wed, 11 Sep 2013 19:30:51 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-09-11-service-request-load-testing-for-scsm/</guid>
+      <description>I have found a great for load testing SCSM with Incidents and copy here. The script uses SMLets to generate Incidents and you can then gauge how your system would handle the load you are planning within your Production Environment.</description>
+    </item>
+    
+    <item>
+      <title>New features–Cireson IT Asset Management</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-08-27-new-featurescireson-it-asset-management/</link>
+      <pubDate>Tue, 27 Aug 2013 14:11:29 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-08-27-new-featurescireson-it-asset-management/</guid>
+      <description>I have previously done a post on Cireson IT Asset Management. However the people at Cireson have been very busy with new features to be added to their ITAM (IT Asset Management) tool.</description>
+    </item>
+    
+  </channel>
+</rss>

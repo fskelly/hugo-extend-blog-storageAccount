@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Protection Group on Fletcher Kelly | Cloud Engineer</title>
+    <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/protection-group/</link>
+    <description>Recent content in Protection Group on Fletcher Kelly | Cloud Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 24 May 2011 14:05:12 +0000</lastBuildDate><atom:link href="https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/protection-group/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>To Protect or NOT to Protect</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/05/24/to-protect-or-not-to-protect/</link>
+      <pubDate>Tue, 24 May 2011 14:05:12 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/05/24/to-protect-or-not-to-protect/</guid>
+      <description>I have finally found some time to look some more into DPM and decided to modify my environment and created some additional PROTECTION GROUPS.</description>
+    </item>
+    
+  </channel>
+</rss>

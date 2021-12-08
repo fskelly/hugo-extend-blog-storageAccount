@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technology on Fletcher Kelly | Cloud Engineer</title>
+    <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/categories/technology/</link>
+    <description>Recent content in Technology on Fletcher Kelly | Cloud Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Sep 2011 07:16:09 +0000</lastBuildDate><atom:link href="https://flkellyneucloudblogpre.z16.web.core.windows.net/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Documenting the Environment</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/09/01/documenting-the-environment/</link>
+      <pubDate>Thu, 01 Sep 2011 07:16:09 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/09/01/documenting-the-environment/</guid>
+      <description>Hi All,
+It has been a really busy time for me. However, I am very happy with life at the moment.</description>
+    </item>
+    
+    <item>
+      <title>Microsoft Word, SharePoint, a Form and NO InfoPath on Server</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/08/01/microsoft-word-sharepoint-a-form-and-no-infopath-on-server/</link>
+      <pubDate>Mon, 01 Aug 2011 13:33:20 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/08/01/microsoft-word-sharepoint-a-form-and-no-infopath-on-server/</guid>
+      <description>So, just recently I was asked to work yet another miracle.
+The Scope.
+  We need to go paperless.</description>
+    </item>
+    
+    <item>
+      <title>Get-hotfix on Steroids</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/07/11/get-hotfix-on-steroids/</link>
+      <pubDate>Mon, 11 Jul 2011 12:25:28 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/07/11/get-hotfix-on-steroids/</guid>
+      <description>Hi All,
+I have taken the get-hotfix and tweaked it so something useful for my environment.</description>
+    </item>
+    
+    <item>
+      <title>Building more redundancy and replicating folder structure</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/07/07/building-more-redundancy-and-replicating-folder-structure/</link>
+      <pubDate>Thu, 07 Jul 2011 06:15:39 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/07/07/building-more-redundancy-and-replicating-folder-structure/</guid>
+      <description>We have had a few failures of the power kind (thanks to the electricity provider in South Africa, who will remain nameless).</description>
+    </item>
+    
+    <item>
+      <title>Changing your Protection Server in DPM to another server</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/05/27/changing-your-protection-server-in-dpm-to-another-server/</link>
+      <pubDate>Fri, 27 May 2011 09:17:03 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/05/27/changing-your-protection-server-in-dpm-to-another-server/</guid>
+      <description>Have you ever been in a situation where you have either removed or added a new DPM server to your environment?</description>
+    </item>
+    
+    <item>
+      <title>To Protect or NOT to Protect</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/05/24/to-protect-or-not-to-protect/</link>
+      <pubDate>Tue, 24 May 2011 14:05:12 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/05/24/to-protect-or-not-to-protect/</guid>
+      <description>I have finally found some time to look some more into DPM and decided to modify my environment and created some additional PROTECTION GROUPS.</description>
+    </item>
+    
+    <item>
+      <title>POWERshell console to power all plugins</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/05/20/powershell-console-to-power-all-plugins/</link>
+      <pubDate>Fri, 20 May 2011 11:07:09 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/05/20/powershell-console-to-power-all-plugins/</guid>
+      <description>I do not know about everyone else. I am a rather busy admin and quite fond of powershell and scripting.</description>
+    </item>
+    
+    <item>
+      <title>Using SMLets practically</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/05/17/using-smlets-practically/</link>
+      <pubDate>Tue, 17 May 2011 11:27:51 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/05/17/using-smlets-practically/</guid>
+      <description>In my previous post, SCSM And Powershell, I mentioned that I am now starting to play with get-scsmobject.</description>
+    </item>
+    
+    <item>
+      <title>The “crisis” week</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/05/03/the-crisis-week/</link>
+      <pubDate>Tue, 03 May 2011 08:44:31 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/05/03/the-crisis-week/</guid>
+      <description>Hi All,
+The last two weeks have been a little nutty for me. I have however, learnt to appreciate a few more things in life.</description>
+    </item>
+    
+    <item>
+      <title>How I inadvertently tested our DR</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2010/11/04/how-i-inadvertently-tested-our-dr/</link>
+      <pubDate>Thu, 04 Nov 2010 14:57:21 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2010/11/04/how-i-inadvertently-tested-our-dr/</guid>
+      <description>I decided to yet again sue Bitlocker, even knowing the previous experencies i have with it.</description>
+    </item>
+    
+    <item>
+      <title>DPM is a life saver</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2010/10/07/dpm-is-a-life-saver/</link>
+      <pubDate>Thu, 07 Oct 2010 09:04:28 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2010/10/07/dpm-is-a-life-saver/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Taking “ONE” note of life</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2010/09/29/taking-one-note-of-life/</link>
+      <pubDate>Wed, 29 Sep 2010 05:56:20 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2010/09/29/taking-one-note-of-life/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wipe that “SmugMug” look off of your face.</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2010/09/16/wipe-that-smugmug-look-off-of-your-face/</link>
+      <pubDate>Thu, 16 Sep 2010 07:17:28 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2010/09/16/wipe-that-smugmug-look-off-of-your-face/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>“Boxed In”</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/11/17/boxed-in/</link>
+      <pubDate>Tue, 17 Nov 2009 06:12:29 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2009/11/17/boxed-in/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

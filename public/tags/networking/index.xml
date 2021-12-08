@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Networking on Fletcher&#39;s Cloud Journey</title>
-    <link>https://cloudadventures.fskelly.com/tags/networking/</link>
-    <description>Recent content in Networking on Fletcher&#39;s Cloud Journey</description>
+    <title>Networking on Fletcher Kelly | Cloud Engineer</title>
+    <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/networking/</link>
+    <description>Recent content in Networking on Fletcher Kelly | Cloud Engineer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Aug 2019 16:33:36 +0200</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/tags/networking/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Aug 2019 16:33:36 +0200</lastBuildDate><atom:link href="https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/networking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Importance of Networking Azure</title>
-      <link>https://cloudadventures.fskelly.com/p/importance-of-networking-azure/</link>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/2019/importance-of-networking-azure/</link>
       <pubDate>Wed, 07 Aug 2019 16:33:36 +0200</pubDate>
       
-      <guid>https://cloudadventures.fskelly.com/p/importance-of-networking-azure/</guid>
-      <description>As a start to this blog post, I think it is important to understand how I see my role as a CSA (Cloud Solution Architect) with my customer. I am primarily a trusted advisor and my customers respect what I have to say, I question and challenge my customers in a constructive way to approach the challenge or problem statement in a different way. I have an amazing role of using Azure as my LEGO playpen and then building a custom solution (LEGO model) to help my customers.</description>
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/2019/importance-of-networking-azure/</guid>
+      <description>As a start to this blog post, I think it is important to understand how I see my role as a CSA (Cloud Solution Architect) with my customer.</description>
+    </item>
+    
+    <item>
+      <title>Network Security Group Change Alerting</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/2019/network-security-group-change-alerting/</link>
+      <pubDate>Wed, 20 Feb 2019 08:21:49 +0200</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/2019/network-security-group-change-alerting/</guid>
+      <description>So, I was with a customer and they are asking for a fairly standard alert.</description>
     </item>
     
   </channel>

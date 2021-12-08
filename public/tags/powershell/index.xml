@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>powershell on Fletcher Kelly | Cloud Engineer</title>
+    <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/powershell/</link>
+    <description>Recent content in powershell on Fletcher Kelly | Cloud Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Jan 2021 07:06:03 +0200</lastBuildDate><atom:link href="https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Expiring Keys and Secrets within Azure Key Vault</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/2021/expiring-keys-azure-key-vault/</link>
+      <pubDate>Mon, 18 Jan 2021 07:06:03 +0200</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/2021/expiring-keys-azure-key-vault/</guid>
+      <description>I was working with a customer the other day and a fairly simple ask came up, I however could not find an immediate answer within the portal.</description>
+    </item>
+    
+    <item>
+      <title>SLA Reporting with PowerShell and SCSM</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2015-08-27-sla-reporting-with-powershell-and-scsm/</link>
+      <pubDate>Thu, 27 Aug 2015 06:21:12 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2015-08-27-sla-reporting-with-powershell-and-scsm/</guid>
+      <description>I always get asked about reporting from my customers, and specifically around SLA&amp;rsquo;s. SLA&amp;rsquo;s are very important to most companies as this is part of the tracking mechanism of employees and vendors and the like.</description>
+    </item>
+    
+    <item>
+      <title>Adding Comments to Work Items with Orchestrator</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2014-04-04-adding-comments-to-work-items-with-orchestrator/</link>
+      <pubDate>Fri, 04 Apr 2014 08:18:16 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2014-04-04-adding-comments-to-work-items-with-orchestrator/</guid>
+      <description>Hi All,
+It has been a little while, i have been quite involved with an Integration Project.</description>
+    </item>
+    
+    <item>
+      <title>Send Email to 3rd Party from SCSM Console – PowerShell and Console Task</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-11-15-send-email-to-3rd-party-from-scsm-console-powershell-and-console-task/</link>
+      <pubDate>Fri, 15 Nov 2013 11:58:48 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-11-15-send-email-to-3rd-party-from-scsm-console-powershell-and-console-task/</guid>
+      <description>So recently, I had a customer ask me for the following as their previous incident management system had this functionality.</description>
+    </item>
+    
+    <item>
+      <title>Finding off site ready tapes for System Center Data Protection Manager with System Center Orchestrator</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-10-20-finding-off-site-ready-tapes-for-system-center-data-protection-manager-with-system-center-orchestrator/</link>
+      <pubDate>Sun, 20 Oct 2013 12:30:19 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-10-20-finding-off-site-ready-tapes-for-system-center-data-protection-manager-with-system-center-orchestrator/</guid>
+      <description>So, I am quite a keen user of PowerShell and System Centre Orchestrator. Ok, so I recently had a request from a customer that went as follows “I need DPM to alert me when tapes are ready to &amp;ldquo;be taken off-site&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Backup Network Configuration with PowerShell</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-10-09-backup-network-config-with-powershell/</link>
+      <pubDate>Wed, 09 Oct 2013 19:30:29 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-10-09-backup-network-config-with-powershell/</guid>
+      <description>So, one of the consultants in the company I work at came to me with a strange request.</description>
+    </item>
+    
+    <item>
+      <title>Service Request Load Testing for SCSM</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-09-11-service-request-load-testing-for-scsm/</link>
+      <pubDate>Wed, 11 Sep 2013 19:30:51 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-09-11-service-request-load-testing-for-scsm/</guid>
+      <description>I have found a great for load testing SCSM with Incidents and copy here. The script uses SMLets to generate Incidents and you can then gauge how your system would handle the load you are planning within your Production Environment.</description>
+    </item>
+    
+    <item>
+      <title>AssignedTo and AffectedUser with Powershell – Service Manager</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2012-12-20-assignedto-and-affecteduser-with-powershell-service-manager/</link>
+      <pubDate>Thu, 20 Dec 2012 08:22:35 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2012-12-20-assignedto-and-affecteduser-with-powershell-service-manager/</guid>
+      <description>&amp;ldquo;I am trying to find a way to find all Incidents related to a specific person (assigned to or affected user) using PowerShell&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>Basic Cluster Troubleshooting</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/06/07/basic-cluster-troubleshooting/</link>
+      <pubDate>Thu, 07 Jun 2012 12:17:25 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/06/07/basic-cluster-troubleshooting/</guid>
+      <description>So, just last night, we had an issue with our cluster.One of our disks would not come online.</description>
+    </item>
+    
+    <item>
+      <title>Rebuilding the OpsMan Client Cache</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/01/17/rebuilding-the-opsman-client-cache/</link>
+      <pubDate>Tue, 17 Jan 2012 07:16:27 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/01/17/rebuilding-the-opsman-client-cache/</guid>
+      <description>Just recently I had the need to “rebuild” the client cache on a lot of my servers, due to a slight hiccup with our Network and subsequently our Operations Manager Server.</description>
+    </item>
+    
+    <item>
+      <title>Documenting the Environment</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/09/01/documenting-the-environment/</link>
+      <pubDate>Thu, 01 Sep 2011 07:16:09 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/09/01/documenting-the-environment/</guid>
+      <description>Hi All,
+It has been a really busy time for me. However, I am very happy with life at the moment.</description>
+    </item>
+    
+    <item>
+      <title>Get-hotfix on Steroids</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/07/11/get-hotfix-on-steroids/</link>
+      <pubDate>Mon, 11 Jul 2011 12:25:28 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/07/11/get-hotfix-on-steroids/</guid>
+      <description>Hi All,
+I have taken the get-hotfix and tweaked it so something useful for my environment.</description>
+    </item>
+    
+    <item>
+      <title>Building more redundancy and replicating folder structure</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/07/07/building-more-redundancy-and-replicating-folder-structure/</link>
+      <pubDate>Thu, 07 Jul 2011 06:15:39 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/07/07/building-more-redundancy-and-replicating-folder-structure/</guid>
+      <description>We have had a few failures of the power kind (thanks to the electricity provider in South Africa, who will remain nameless).</description>
+    </item>
+    
+    <item>
+      <title>Changing your Protection Server in DPM to another server</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/05/27/changing-your-protection-server-in-dpm-to-another-server/</link>
+      <pubDate>Fri, 27 May 2011 09:17:03 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/05/27/changing-your-protection-server-in-dpm-to-another-server/</guid>
+      <description>Have you ever been in a situation where you have either removed or added a new DPM server to your environment?</description>
+    </item>
+    
+    <item>
+      <title>To Protect or NOT to Protect</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/05/24/to-protect-or-not-to-protect/</link>
+      <pubDate>Tue, 24 May 2011 14:05:12 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/05/24/to-protect-or-not-to-protect/</guid>
+      <description>I have finally found some time to look some more into DPM and decided to modify my environment and created some additional PROTECTION GROUPS.</description>
+    </item>
+    
+    <item>
+      <title>POWERshell console to power all plugins</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/05/20/powershell-console-to-power-all-plugins/</link>
+      <pubDate>Fri, 20 May 2011 11:07:09 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/05/20/powershell-console-to-power-all-plugins/</guid>
+      <description>I do not know about everyone else. I am a rather busy admin and quite fond of powershell and scripting.</description>
+    </item>
+    
+    <item>
+      <title>Using SMLets practically</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/05/17/using-smlets-practically/</link>
+      <pubDate>Tue, 17 May 2011 11:27:51 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/05/17/using-smlets-practically/</guid>
+      <description>In my previous post, SCSM And Powershell, I mentioned that I am now starting to play with get-scsmobject.</description>
+    </item>
+    
+  </channel>
+</rss>

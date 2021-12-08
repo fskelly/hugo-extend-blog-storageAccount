@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Send Email to 3rd Party from SCSM Console – PowerShell and Console Task</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description"
+    content="This is meta description">
+    
+    
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Hugo 0.89.1" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://flkellyneucloudblogpre.z16.web.core.windows.net/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://flkellyneucloudblogpre.z16.web.core.windows.net/plugins/themify-icons/themify-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://flkellyneucloudblogpre.z16.web.core.windows.net/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://flkellyneucloudblogpre.z16.web.core.windows.net/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://flkellyneucloudblogpre.z16.web.core.windows.net/images/favicon.png " type="image/x-icon">
+
+  
+  
+  
+
+
+
+<style type="text/css" media="screen">
+  @media (prefers-color-scheme: dark) { 
+    /* Background */ .chroma { color: #f8f8f2; background-color: #272822 }
+/* Other */ .chroma .x {  }
+/* Error */ .chroma .err { color: #960050; background-color: #1e0010 }
+/* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
+/* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }
+/* LineHighlight */ .chroma .hl { display: block; width: 100%;background-color: #ffffcc }
+/* LineNumbersTable */ .chroma .lnt { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
+/* LineNumbers */ .chroma .ln { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
+/* Keyword */ .chroma .k { color: #66d9ef }
+/* KeywordConstant */ .chroma .kc { color: #66d9ef }
+/* KeywordDeclaration */ .chroma .kd { color: #66d9ef }
+/* KeywordNamespace */ .chroma .kn { color: #f92672 }
+/* KeywordPseudo */ .chroma .kp { color: #66d9ef }
+/* KeywordReserved */ .chroma .kr { color: #66d9ef }
+/* KeywordType */ .chroma .kt { color: #66d9ef }
+/* Name */ .chroma .n {  }
+/* NameAttribute */ .chroma .na { color: #a6e22e }
+/* NameBuiltin */ .chroma .nb {  }
+/* NameBuiltinPseudo */ .chroma .bp {  }
+/* NameClass */ .chroma .nc { color: #a6e22e }
+/* NameConstant */ .chroma .no { color: #66d9ef }
+/* NameDecorator */ .chroma .nd { color: #a6e22e }
+/* NameEntity */ .chroma .ni {  }
+/* NameException */ .chroma .ne { color: #a6e22e }
+/* NameFunction */ .chroma .nf { color: #a6e22e }
+/* NameFunctionMagic */ .chroma .fm {  }
+/* NameLabel */ .chroma .nl {  }
+/* NameNamespace */ .chroma .nn {  }
+/* NameOther */ .chroma .nx { color: #a6e22e }
+/* NameProperty */ .chroma .py {  }
+/* NameTag */ .chroma .nt { color: #f92672 }
+/* NameVariable */ .chroma .nv {  }
+/* NameVariableClass */ .chroma .vc {  }
+/* NameVariableGlobal */ .chroma .vg {  }
+/* NameVariableInstance */ .chroma .vi {  }
+/* NameVariableMagic */ .chroma .vm {  }
+/* Literal */ .chroma .l { color: #ae81ff }
+/* LiteralDate */ .chroma .ld { color: #e6db74 }
+/* LiteralString */ .chroma .s { color: #e6db74 }
+/* LiteralStringAffix */ .chroma .sa { color: #e6db74 }
+/* LiteralStringBacktick */ .chroma .sb { color: #e6db74 }
+/* LiteralStringChar */ .chroma .sc { color: #e6db74 }
+/* LiteralStringDelimiter */ .chroma .dl { color: #e6db74 }
+/* LiteralStringDoc */ .chroma .sd { color: #e6db74 }
+/* LiteralStringDouble */ .chroma .s2 { color: #e6db74 }
+/* LiteralStringEscape */ .chroma .se { color: #ae81ff }
+/* LiteralStringHeredoc */ .chroma .sh { color: #e6db74 }
+/* LiteralStringInterpol */ .chroma .si { color: #e6db74 }
+/* LiteralStringOther */ .chroma .sx { color: #e6db74 }
+/* LiteralStringRegex */ .chroma .sr { color: #e6db74 }
+/* LiteralStringSingle */ .chroma .s1 { color: #e6db74 }
+/* LiteralStringSymbol */ .chroma .ss { color: #e6db74 }
+/* LiteralNumber */ .chroma .m { color: #ae81ff }
+/* LiteralNumberBin */ .chroma .mb { color: #ae81ff }
+/* LiteralNumberFloat */ .chroma .mf { color: #ae81ff }
+/* LiteralNumberHex */ .chroma .mh { color: #ae81ff }
+/* LiteralNumberInteger */ .chroma .mi { color: #ae81ff }
+/* LiteralNumberIntegerLong */ .chroma .il { color: #ae81ff }
+/* LiteralNumberOct */ .chroma .mo { color: #ae81ff }
+/* Operator */ .chroma .o { color: #f92672 }
+/* OperatorWord */ .chroma .ow { color: #f92672 }
+/* Punctuation */ .chroma .p {  }
+/* Comment */ .chroma .c { color: #75715e }
+/* CommentHashbang */ .chroma .ch { color: #75715e }
+/* CommentMultiline */ .chroma .cm { color: #75715e }
+/* CommentSingle */ .chroma .c1 { color: #75715e }
+/* CommentSpecial */ .chroma .cs { color: #75715e }
+/* CommentPreproc */ .chroma .cp { color: #75715e }
+/* CommentPreprocFile */ .chroma .cpf { color: #75715e }
+/* Generic */ .chroma .g {  }
+/* GenericDeleted */ .chroma .gd { color: #f92672 }
+/* GenericEmph */ .chroma .ge { font-style: italic }
+/* GenericError */ .chroma .gr {  }
+/* GenericHeading */ .chroma .gh {  }
+/* GenericInserted */ .chroma .gi { color: #a6e22e }
+/* GenericOutput */ .chroma .go {  }
+/* GenericPrompt */ .chroma .gp {  }
+/* GenericStrong */ .chroma .gs { font-weight: bold }
+/* GenericSubheading */ .chroma .gu { color: #75715e }
+/* GenericTraceback */ .chroma .gt {  }
+/* GenericUnderline */ .chroma .gl {  }
+/* TextWhitespace */ .chroma .w {  }
+
+  }
+  @media (prefers-color-scheme: light) { 
+    /* Background */ .chroma { background-color: #f8f8f8 }
+/* Other */ .chroma .x {  }
+/* Error */ .chroma .err {  }
+/* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
+/* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }
+/* LineHighlight */ .chroma .hl { display: block; width: 100%;background-color: #ffffcc }
+/* LineNumbersTable */ .chroma .lnt { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
+/* LineNumbers */ .chroma .ln { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
+/* Keyword */ .chroma .k { color: #aa22ff; font-weight: bold }
+/* KeywordConstant */ .chroma .kc { color: #aa22ff; font-weight: bold }
+/* KeywordDeclaration */ .chroma .kd { color: #aa22ff; font-weight: bold }
+/* KeywordNamespace */ .chroma .kn { color: #aa22ff; font-weight: bold }
+/* KeywordPseudo */ .chroma .kp { color: #aa22ff }
+/* KeywordReserved */ .chroma .kr { color: #aa22ff; font-weight: bold }
+/* KeywordType */ .chroma .kt { color: #00bb00; font-weight: bold }
+/* Name */ .chroma .n {  }
+/* NameAttribute */ .chroma .na { color: #bb4444 }
+/* NameBuiltin */ .chroma .nb { color: #aa22ff }
+/* NameBuiltinPseudo */ .chroma .bp {  }
+/* NameClass */ .chroma .nc { color: #0000ff }
+/* NameConstant */ .chroma .no { color: #880000 }
+/* NameDecorator */ .chroma .nd { color: #aa22ff }
+/* NameEntity */ .chroma .ni { color: #999999; font-weight: bold }
+/* NameException */ .chroma .ne { color: #d2413a; font-weight: bold }
+/* NameFunction */ .chroma .nf { color: #00a000 }
+/* NameFunctionMagic */ .chroma .fm {  }
+/* NameLabel */ .chroma .nl { color: #a0a000 }
+/* NameNamespace */ .chroma .nn { color: #0000ff; font-weight: bold }
+/* NameOther */ .chroma .nx {  }
+/* NameProperty */ .chroma .py {  }
+/* NameTag */ .chroma .nt { color: #008000; font-weight: bold }
+/* NameVariable */ .chroma .nv { color: #b8860b }
+/* NameVariableClass */ .chroma .vc {  }
+/* NameVariableGlobal */ .chroma .vg {  }
+/* NameVariableInstance */ .chroma .vi {  }
+/* NameVariableMagic */ .chroma .vm {  }
+/* Literal */ .chroma .l {  }
+/* LiteralDate */ .chroma .ld {  }
+/* LiteralString */ .chroma .s { color: #bb4444 }
+/* LiteralStringAffix */ .chroma .sa { color: #bb4444 }
+/* LiteralStringBacktick */ .chroma .sb { color: #bb4444 }
+/* LiteralStringChar */ .chroma .sc { color: #bb4444 }
+/* LiteralStringDelimiter */ .chroma .dl { color: #bb4444 }
+/* LiteralStringDoc */ .chroma .sd { color: #bb4444; font-style: italic }
+/* LiteralStringDouble */ .chroma .s2 { color: #bb4444 }
+/* LiteralStringEscape */ .chroma .se { color: #bb6622; font-weight: bold }
+/* LiteralStringHeredoc */ .chroma .sh { color: #bb4444 }
+/* LiteralStringInterpol */ .chroma .si { color: #bb6688; font-weight: bold }
+/* LiteralStringOther */ .chroma .sx { color: #008000 }
+/* LiteralStringRegex */ .chroma .sr { color: #bb6688 }
+/* LiteralStringSingle */ .chroma .s1 { color: #bb4444 }
+/* LiteralStringSymbol */ .chroma .ss { color: #b8860b }
+/* LiteralNumber */ .chroma .m { color: #666666 }
+/* LiteralNumberBin */ .chroma .mb { color: #666666 }
+/* LiteralNumberFloat */ .chroma .mf { color: #666666 }
+/* LiteralNumberHex */ .chroma .mh { color: #666666 }
+/* LiteralNumberInteger */ .chroma .mi { color: #666666 }
+/* LiteralNumberIntegerLong */ .chroma .il { color: #666666 }
+/* LiteralNumberOct */ .chroma .mo { color: #666666 }
+/* Operator */ .chroma .o { color: #666666 }
+/* OperatorWord */ .chroma .ow { color: #aa22ff; font-weight: bold }
+/* Punctuation */ .chroma .p {  }
+/* Comment */ .chroma .c { color: #008800; font-style: italic }
+/* CommentHashbang */ .chroma .ch { color: #008800; font-style: italic }
+/* CommentMultiline */ .chroma .cm { color: #008800; font-style: italic }
+/* CommentSingle */ .chroma .c1 { color: #008800; font-style: italic }
+/* CommentSpecial */ .chroma .cs { color: #008800; font-weight: bold }
+/* CommentPreproc */ .chroma .cp { color: #008800 }
+/* CommentPreprocFile */ .chroma .cpf { color: #008800 }
+/* Generic */ .chroma .g {  }
+/* GenericDeleted */ .chroma .gd { color: #a00000 }
+/* GenericEmph */ .chroma .ge { font-style: italic }
+/* GenericError */ .chroma .gr { color: #ff0000 }
+/* GenericHeading */ .chroma .gh { color: #000080; font-weight: bold }
+/* GenericInserted */ .chroma .gi { color: #00a000 }
+/* GenericOutput */ .chroma .go { color: #888888 }
+/* GenericPrompt */ .chroma .gp { color: #000080; font-weight: bold }
+/* GenericStrong */ .chroma .gs { font-weight: bold }
+/* GenericSubheading */ .chroma .gu { color: #800080; font-weight: bold }
+/* GenericTraceback */ .chroma .gt { color: #0044dd }
+/* GenericUnderline */ .chroma .gl { text-decoration: underline }
+/* TextWhitespace */ .chroma .w { color: #bbbbbb }
+ 
+  }
+  </style>
+
+</head><body>
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="fixed-top navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <a class="navbar-brand"href="https://flkellyneucloudblogpre.z16.web.core.windows.net/"><img class="img-fluid" src="/images/logo.svg" alt="Fletcher Kelly | Cloud Engineer"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://flkellyneucloudblogpre.z16.web.core.windows.net/"> Home </a>
+          </li>
+          
+        </ul>
+        
+        <!-- search -->
+        <div class="search">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://flkellyneucloudblogpre.z16.web.core.windows.net/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation --> <div class="py-5 d-none d-lg-block"></div> 
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto block shadow mb-5">
+        <h2>Send Email to 3rd Party from SCSM Console – PowerShell and Console Task</h2>
+        <div class="mb-3 post-meta">
+          <a href="/author/fletcher-kelly">Fletcher Kelly</a>,
+          Nov 15, 2013, 
+          <a href="/categories/system-center">System Center</a>
+          
+          <a href="/categories/powershell">PowerShell</a>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <!-- raw HTML omitted -->
+<p>So recently, I had a customer ask me for the following as their previous incident management system had this functionality.</p>
+<p>The customer wanted to be able to send an &ldquo;Update Email&rdquo; to a 3rd party from the SCSM Console with automatically placing the reference number into said email. They needed the functionality of sending to any email address. This was a requirement for the type of business they are in.</p>
+<p>Please remember that I am by no means a developer. I was thinking of using System Centre Orchestrator, however for this simple requirement, I thought that it might be overkill. I am sure that in time, as the requirements grows and/or changes, System Centre Orchestrator will become a better fit. For this solution, I turned to my friend, <a href="https://docs.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.1">PowerShell</a></p>
+<p>I simply wanted to provide a clean interface for the customer to use. I follow a strict rule of KISS (Keep It Straight and Simple). With the PowerShell script, I provide two input fields.</p>
+<ol>
+<li>Email address of user for update to go to</li>
+<li>Update to be sent to customer.</li>
+</ol>
+<p>The screenshot of what the window looks like</p>
+<figure><img src="/wp-content/uploads/2013/11/111913_0952_sendemailto1.png" width="595" height="90"/>
+</figure>
+
+<p>All of this was built in PowerShell with some from [Sapien PrimalForms Community Edition][3] to assist with the GUI part. The GUI is fully functional and tested. &ldquo;Send Update&rdquo; is responsible for sending the update to the specified person and the &ldquo;Cancel&rdquo; simply closes the form nicely and allows you to continue as normal.</p>
+<p>PowerShell Code Below <a href="https://github.com/fskelly/hugo-extend-blog-storageAccount/blob/main/externalFiles/2013/11/15/SendUpdate.ps1">SendEmail</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="c">#region Script Settings</span>
+<span class="c">#&lt;ScriptSettings xmlns=&#34;http://tempuri.org/ScriptSettings.xsd&#34;&gt;</span>
+<span class="c">#  &lt;ScriptPackager&gt;</span>
+<span class="c">#    &lt;process&gt;powershell.exe&lt;/process&gt;</span>
+<span class="c">#    &lt;arguments /&gt;</span>
+<span class="c">#    &lt;extractdir&gt;%TEMP%&lt;/extractdir&gt;</span>
+<span class="c">#    &lt;files /&gt;</span>
+<span class="c">#    &lt;usedefaulticon&gt;true&lt;/usedefaulticon&gt;</span>
+<span class="c">#    &lt;showinsystray&gt;false&lt;/showinsystray&gt;</span>
+<span class="c">#    &lt;altcreds&gt;false&lt;/altcreds&gt;</span>
+<span class="c">#    &lt;efs&gt;true&lt;/efs&gt;</span>
+<span class="c">#    &lt;ntfs&gt;true&lt;/ntfs&gt;</span>
+<span class="c">#    &lt;local&gt;false&lt;/local&gt;</span>
+<span class="c">#    &lt;abortonfail&gt;true&lt;/abortonfail&gt;</span>
+<span class="c">#    &lt;product /&gt;</span>
+<span class="c">#    &lt;version&gt;1.0.0.1&lt;/version&gt;</span>
+<span class="c">#    &lt;versionstring /&gt;</span>
+<span class="c">#    &lt;comments /&gt;</span>
+<span class="c">#    &lt;company /&gt;</span>
+<span class="c">#    &lt;includeinterpreter&gt;false&lt;/includeinterpreter&gt;</span>
+<span class="c">#    &lt;forcecomregistration&gt;false&lt;/forcecomregistration&gt;</span>
+<span class="c">#    &lt;consolemode&gt;false&lt;/consolemode&gt;</span>
+<span class="c">#    &lt;EnableChangelog&gt;false&lt;/EnableChangelog&gt;</span>
+<span class="c">#    &lt;AutoBackup&gt;false&lt;/AutoBackup&gt;</span>
+<span class="c">#    &lt;snapinforce&gt;false&lt;/snapinforce&gt;</span>
+<span class="c">#    &lt;snapinshowprogress&gt;false&lt;/snapinshowprogress&gt;</span>
+<span class="c">#    &lt;snapinautoadd&gt;2&lt;/snapinautoadd&gt;</span>
+<span class="c">#    &lt;snapinpermanentpath /&gt;</span>
+<span class="c">#    &lt;cpumode&gt;1&lt;/cpumode&gt;</span>
+<span class="c">#    &lt;hidepsconsole&gt;false&lt;/hidepsconsole&gt;</span>
+<span class="c">#  &lt;/ScriptPackager&gt;</span>
+<span class="c">#&lt;/ScriptSettings&gt;</span>
+<span class="c">#endregion</span>
+
+<span class="k">param</span><span class="p">(</span><span class="nv">$ID</span><span class="p">)</span>
+<span class="nb">Import-Module</span> <span class="s1">&#39;C:\Program Files\Common Files\SMLets\SMLets.psd1&#39;</span> <span class="n">-Force</span>
+
+<span class="c">#Generated Form Function</span>
+<span class="k">function</span> <span class="n">GenerateForm</span> <span class="p">{</span>
+<span class="c">########################################################################</span>
+<span class="c"># Code Generated By: SAPIEN Technologies PrimalForms (Community Edition) v1.0.10.0</span>
+<span class="c"># Generated On: 2013-11-14 09:08 AM</span>
+<span class="c"># Generated By: Fletcher</span>
+<span class="c">########################################################################</span>
+
+<span class="c">#region Import the Assemblies</span>
+<span class="no">[reflection.assembly]</span><span class="p">::</span><span class="n">loadwithpartialname</span><span class="p">(</span><span class="s2">&#34;System.Windows.Forms&#34;</span><span class="p">)</span> <span class="p">|</span> <span class="nb">Out-Null</span>
+<span class="no">[reflection.assembly]</span><span class="p">::</span><span class="n">loadwithpartialname</span><span class="p">(</span><span class="s2">&#34;System.Drawing&#34;</span><span class="p">)</span> <span class="p">|</span> <span class="nb">Out-Null</span>
+<span class="c">#endregion</span>
+
+<span class="c">#region Generated Form Objects</span>
+<span class="nv">$SendUpdateForm</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="n">Windows</span><span class="p">.</span><span class="n">Forms</span><span class="p">.</span><span class="n">Form</span>
+<span class="nv">$CancelButton</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="n">Windows</span><span class="p">.</span><span class="n">Forms</span><span class="p">.</span><span class="n">Button</span>
+<span class="nv">$SendUpdateButton</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="n">Windows</span><span class="p">.</span><span class="n">Forms</span><span class="p">.</span><span class="n">Button</span>
+<span class="nv">$UpdateTextBox</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="n">Windows</span><span class="p">.</span><span class="n">Forms</span><span class="p">.</span><span class="n">TextBox</span>
+<span class="nv">$UpdateLabel</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="n">Windows</span><span class="p">.</span><span class="n">Forms</span><span class="p">.</span><span class="n">Label</span>
+<span class="nv">$EmailToTextBox</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="n">Windows</span><span class="p">.</span><span class="n">Forms</span><span class="p">.</span><span class="n">TextBox</span>
+<span class="nv">$EMailToLabel</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="n">Windows</span><span class="p">.</span><span class="n">Forms</span><span class="p">.</span><span class="n">Label</span>
+<span class="nv">$InitialFormWindowState</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="n">Windows</span><span class="p">.</span><span class="n">Forms</span><span class="p">.</span><span class="n">FormWindowState</span>
+<span class="c">#endregion Generated Form Objects</span>
+
+<span class="c">#----------------------------------------------</span>
+<span class="c">#Generated Event Script Blocks</span>
+<span class="c">#----------------------------------------------</span>
+<span class="c">#Provide Custom Code for events specified in PrimalForms.</span>
+<span class="nv">$SendUpdateButton_OnClick</span><span class="p">=</span> 
+<span class="p">{</span>
+	  <span class="nb">Write-Host</span> <span class="s2">&#34;Send Update&#34;</span>
+		<span class="nv">$to</span> <span class="p">=</span> <span class="nv">$EmailToTextBox</span><span class="p">.</span><span class="n">Text</span>
+		<span class="nb">Write-Host</span> <span class="nv">$to</span>
+		<span class="nv">$from</span> <span class="p">=</span> <span class="s2">&#34;enter your from address here&#34;</span>
+		<span class="nv">$emailbody</span> <span class="p">=</span> <span class="nv">$UpdateTextBox</span><span class="p">.</span><span class="n">Text</span>
+<span class="nv">$subject</span> <span class="p">=</span> <span class="sh">@&#34;
+</span><span class="sh">Update [ID]
+</span><span class="sh">&#34;@</span>
+<span class="nv">$body</span> <span class="p">=</span> <span class="sh">@&#34;
+</span><span class="sh">$emailbody
+</span><span class="sh">&#34;@</span>
+		<span class="c">#$subject = &#34;Update [ID]&#34;</span>
+		<span class="c">#Write-Host $subject</span>
+		<span class="c">#Write-Host $body</span>
+		<span class="nv">$smtpserver</span> <span class="p">=</span> <span class="s2">&#34;enter your server here&#34;</span>
+		<span class="c">#[string]$body = $UpdateTextBox.Text</span>
+		<span class="c">#$testcommand = &#34;Send-MailMessage -To $to -From $from -Subject $messagencontent -Body &#39;$body&#39; -SmtpServer $smtpserver&#34;</span>
+		<span class="nb">Send-MailMessage</span> <span class="n">-To</span> <span class="nv">$to</span> <span class="n">-From</span> <span class="nv">$from</span> <span class="n">-Subject</span> <span class="nv">$subject</span> <span class="n">-Body</span> <span class="nv">$body</span> <span class="n">-SmtpServer</span> <span class="nv">$smtpserver</span>
+		<span class="c">#Write-Host $testcommand</span>
+		<span class="nv">$SendUpdateForm</span><span class="p">.</span><span class="n">Close</span><span class="p">()</span>
+
+<span class="p">}</span>
+
+<span class="nv">$CancelButton_OnClick</span><span class="p">=</span> 
+<span class="p">{</span>
+<span class="nv">$SendUpdateForm</span><span class="p">.</span><span class="n">Close</span><span class="p">()</span>
+<span class="p">}</span>
+
+<span class="nv">$OnLoadForm_StateCorrection</span><span class="p">=</span>
+<span class="p">{</span><span class="c">#Correct the initial state of the form to prevent the .Net maximized form issue</span>
+	<span class="nv">$SendUpdateForm</span><span class="p">.</span><span class="n">WindowState</span> <span class="p">=</span> <span class="nv">$InitialFormWindowState</span>
+<span class="p">}</span>
+
+<span class="c">#----------------------------------------------</span>
+<span class="c">#region Generated Form Code</span>
+<span class="nv">$System_Drawing_Size</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="n">Drawing</span><span class="p">.</span><span class="n">Size</span>
+<span class="nv">$System_Drawing_Size</span><span class="p">.</span><span class="n">Height</span> <span class="p">=</span> <span class="n">323</span>
+<span class="nv">$System_Drawing_Size</span><span class="p">.</span><span class="n">Width</span> <span class="p">=</span> <span class="n">409</span>
+<span class="nv">$SendUpdateForm</span><span class="p">.</span><span class="n">ClientSize</span> <span class="p">=</span> <span class="nv">$System_Drawing_Size</span>
+<span class="nv">$SendUpdateForm</span><span class="p">.</span><span class="n">DataBindings</span><span class="p">.</span><span class="n">DefaultDataSourceUpdateMode</span> <span class="p">=</span> <span class="n">0</span>
+<span class="nv">$SendUpdateForm</span><span class="p">.</span><span class="n">Name</span> <span class="p">=</span> <span class="s2">&#34;SendUpdateForm&#34;</span>
+<span class="nv">$SendUpdateForm</span><span class="p">.</span><span class="n">Text</span> <span class="p">=</span> <span class="s2">&#34;Send Update&#34;</span>
+
+
+<span class="nv">$CancelButton</span><span class="p">.</span><span class="n">DataBindings</span><span class="p">.</span><span class="n">DefaultDataSourceUpdateMode</span> <span class="p">=</span> <span class="n">0</span>
+
+<span class="nv">$System_Drawing_Point</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="n">Drawing</span><span class="p">.</span><span class="n">Point</span>
+<span class="nv">$System_Drawing_Point</span><span class="p">.</span><span class="n">X</span> <span class="p">=</span> <span class="n">182</span>
+<span class="nv">$System_Drawing_Point</span><span class="p">.</span><span class="n">Y</span> <span class="p">=</span> <span class="n">264</span>
+<span class="nv">$CancelButton</span><span class="p">.</span><span class="n">Location</span> <span class="p">=</span> <span class="nv">$System_Drawing_Point</span>
+<span class="nv">$CancelButton</span><span class="p">.</span><span class="n">Name</span> <span class="p">=</span> <span class="s2">&#34;CancelButton&#34;</span>
+<span class="nv">$System_Drawing_Size</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="n">Drawing</span><span class="p">.</span><span class="n">Size</span>
+<span class="nv">$System_Drawing_Size</span><span class="p">.</span><span class="n">Height</span> <span class="p">=</span> <span class="n">23</span>
+<span class="nv">$System_Drawing_Size</span><span class="p">.</span><span class="n">Width</span> <span class="p">=</span> <span class="n">124</span>
+<span class="nv">$CancelButton</span><span class="p">.</span><span class="n">Size</span> <span class="p">=</span> <span class="nv">$System_Drawing_Size</span>
+<span class="nv">$CancelButton</span><span class="p">.</span><span class="n">TabIndex</span> <span class="p">=</span> <span class="n">5</span>
+<span class="nv">$CancelButton</span><span class="p">.</span><span class="n">Text</span> <span class="p">=</span> <span class="s2">&#34;Cancel&#34;</span>
+<span class="nv">$CancelButton</span><span class="p">.</span><span class="n">UseVisualStyleBackColor</span> <span class="p">=</span> <span class="nv">$True</span>
+<span class="nv">$CancelButton</span><span class="p">.</span><span class="n">add_Click</span><span class="p">(</span><span class="nv">$CancelButton_OnClick</span><span class="p">)</span>
+
+<span class="nv">$SendUpdateForm</span><span class="p">.</span><span class="n">Controls</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="nv">$CancelButton</span><span class="p">)</span>
+
+
+<span class="nv">$SendUpdateButton</span><span class="p">.</span><span class="n">DataBindings</span><span class="p">.</span><span class="n">DefaultDataSourceUpdateMode</span> <span class="p">=</span> <span class="n">0</span>
+
+<span class="nv">$System_Drawing_Point</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="n">Drawing</span><span class="p">.</span><span class="n">Point</span>
+<span class="nv">$System_Drawing_Point</span><span class="p">.</span><span class="n">X</span> <span class="p">=</span> <span class="n">35</span>
+<span class="nv">$System_Drawing_Point</span><span class="p">.</span><span class="n">Y</span> <span class="p">=</span> <span class="n">264</span>
+<span class="nv">$SendUpdateButton</span><span class="p">.</span><span class="n">Location</span> <span class="p">=</span> <span class="nv">$System_Drawing_Point</span>
+<span class="nv">$SendUpdateButton</span><span class="p">.</span><span class="n">Name</span> <span class="p">=</span> <span class="s2">&#34;SendUpdateButton&#34;</span>
+<span class="nv">$System_Drawing_Size</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="n">Drawing</span><span class="p">.</span><span class="n">Size</span>
+<span class="nv">$System_Drawing_Size</span><span class="p">.</span><span class="n">Height</span> <span class="p">=</span> <span class="n">23</span>
+<span class="nv">$System_Drawing_Size</span><span class="p">.</span><span class="n">Width</span> <span class="p">=</span> <span class="n">116</span>
+<span class="nv">$SendUpdateButton</span><span class="p">.</span><span class="n">Size</span> <span class="p">=</span> <span class="nv">$System_Drawing_Size</span>
+<span class="nv">$SendUpdateButton</span><span class="p">.</span><span class="n">TabIndex</span> <span class="p">=</span> <span class="n">4</span>
+<span class="nv">$SendUpdateButton</span><span class="p">.</span><span class="n">Text</span> <span class="p">=</span> <span class="s2">&#34;Send Update&#34;</span>
+<span class="nv">$SendUpdateButton</span><span class="p">.</span><span class="n">UseVisualStyleBackColor</span> <span class="p">=</span> <span class="nv">$True</span>
+<span class="nv">$SendUpdateButton</span><span class="p">.</span><span class="n">add_Click</span><span class="p">(</span><span class="nv">$SendUpdateButton_OnClick</span><span class="p">)</span>
+
+<span class="nv">$SendUpdateForm</span><span class="p">.</span><span class="n">Controls</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="nv">$SendUpdateButton</span><span class="p">)</span>
+
+<span class="nv">$UpdateTextBox</span><span class="p">.</span><span class="n">DataBindings</span><span class="p">.</span><span class="n">DefaultDataSourceUpdateMode</span> <span class="p">=</span> <span class="n">0</span>
+<span class="nv">$System_Drawing_Point</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="n">Drawing</span><span class="p">.</span><span class="n">Point</span>
+<span class="nv">$System_Drawing_Point</span><span class="p">.</span><span class="n">X</span> <span class="p">=</span> <span class="n">35</span>
+<span class="nv">$System_Drawing_Point</span><span class="p">.</span><span class="n">Y</span> <span class="p">=</span> <span class="n">135</span>
+<span class="nv">$UpdateTextBox</span><span class="p">.</span><span class="n">Location</span> <span class="p">=</span> <span class="nv">$System_Drawing_Point</span>
+<span class="nv">$UpdateTextBox</span><span class="p">.</span><span class="n">Multiline</span> <span class="p">=</span> <span class="nv">$True</span>
+<span class="nv">$UpdateTextBox</span><span class="p">.</span><span class="n">Name</span> <span class="p">=</span> <span class="s2">&#34;UpdateTextBox&#34;</span>
+<span class="nv">$System_Drawing_Size</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="n">Drawing</span><span class="p">.</span><span class="n">Size</span>
+<span class="nv">$System_Drawing_Size</span><span class="p">.</span><span class="n">Height</span> <span class="p">=</span> <span class="n">103</span>
+<span class="nv">$System_Drawing_Size</span><span class="p">.</span><span class="n">Width</span> <span class="p">=</span> <span class="n">290</span>
+<span class="nv">$UpdateTextBox</span><span class="p">.</span><span class="n">Size</span> <span class="p">=</span> <span class="nv">$System_Drawing_Size</span>
+<span class="nv">$UpdateTextBox</span><span class="p">.</span><span class="n">TabIndex</span> <span class="p">=</span> <span class="n">3</span>
+
+<span class="nv">$SendUpdateForm</span><span class="p">.</span><span class="n">Controls</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="nv">$UpdateTextBox</span><span class="p">)</span>
+
+<span class="nv">$UpdateLabel</span><span class="p">.</span><span class="n">DataBindings</span><span class="p">.</span><span class="n">DefaultDataSourceUpdateMode</span> <span class="p">=</span> <span class="n">0</span>
+
+<span class="nv">$System_Drawing_Point</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="n">Drawing</span><span class="p">.</span><span class="n">Point</span>
+<span class="nv">$System_Drawing_Point</span><span class="p">.</span><span class="n">X</span> <span class="p">=</span> <span class="n">35</span>
+<span class="nv">$System_Drawing_Point</span><span class="p">.</span><span class="n">Y</span> <span class="p">=</span> <span class="n">110</span>
+<span class="nv">$UpdateLabel</span><span class="p">.</span><span class="n">Location</span> <span class="p">=</span> <span class="nv">$System_Drawing_Point</span>
+<span class="nv">$UpdateLabel</span><span class="p">.</span><span class="n">Name</span> <span class="p">=</span> <span class="s2">&#34;UpdateLabel&#34;</span>
+<span class="nv">$System_Drawing_Size</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="n">Drawing</span><span class="p">.</span><span class="n">Size</span>
+<span class="nv">$System_Drawing_Size</span><span class="p">.</span><span class="n">Height</span> <span class="p">=</span> <span class="n">22</span>
+<span class="nv">$System_Drawing_Size</span><span class="p">.</span><span class="n">Width</span> <span class="p">=</span> <span class="n">359</span>
+<span class="nv">$UpdateLabel</span><span class="p">.</span><span class="n">Size</span> <span class="p">=</span> <span class="nv">$System_Drawing_Size</span>
+<span class="nv">$UpdateLabel</span><span class="p">.</span><span class="n">TabIndex</span> <span class="p">=</span> <span class="n">2</span>
+<span class="nv">$UpdateLabel</span><span class="p">.</span><span class="n">Text</span> <span class="p">=</span> <span class="s2">&#34;Please enter the information to be sent to intended recipient:&#34;</span>
+
+<span class="nv">$SendUpdateForm</span><span class="p">.</span><span class="n">Controls</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="nv">$UpdateLabel</span><span class="p">)</span>
+
+<span class="nv">$EmailToTextBox</span><span class="p">.</span><span class="n">DataBindings</span><span class="p">.</span><span class="n">DefaultDataSourceUpdateMode</span> <span class="p">=</span> <span class="n">0</span>
+<span class="nv">$System_Drawing_Point</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="n">Drawing</span><span class="p">.</span><span class="n">Point</span>
+<span class="nv">$System_Drawing_Point</span><span class="p">.</span><span class="n">X</span> <span class="p">=</span> <span class="n">35</span>
+<span class="nv">$System_Drawing_Point</span><span class="p">.</span><span class="n">Y</span> <span class="p">=</span> <span class="n">54</span>
+<span class="nv">$EmailToTextBox</span><span class="p">.</span><span class="n">Location</span> <span class="p">=</span> <span class="nv">$System_Drawing_Point</span>
+<span class="nv">$EmailToTextBox</span><span class="p">.</span><span class="n">Name</span> <span class="p">=</span> <span class="s2">&#34;EmailToTextBox&#34;</span>
+<span class="nv">$System_Drawing_Size</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="n">Drawing</span><span class="p">.</span><span class="n">Size</span>
+<span class="nv">$System_Drawing_Size</span><span class="p">.</span><span class="n">Height</span> <span class="p">=</span> <span class="n">20</span>
+<span class="nv">$System_Drawing_Size</span><span class="p">.</span><span class="n">Width</span> <span class="p">=</span> <span class="n">290</span>
+<span class="nv">$EmailToTextBox</span><span class="p">.</span><span class="n">Size</span> <span class="p">=</span> <span class="nv">$System_Drawing_Size</span>
+<span class="nv">$EmailToTextBox</span><span class="p">.</span><span class="n">TabIndex</span> <span class="p">=</span> <span class="n">1</span>
+
+<span class="nv">$SendUpdateForm</span><span class="p">.</span><span class="n">Controls</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="nv">$EmailToTextBox</span><span class="p">)</span>
+
+<span class="nv">$EMailToLabel</span><span class="p">.</span><span class="n">DataBindings</span><span class="p">.</span><span class="n">DefaultDataSourceUpdateMode</span> <span class="p">=</span> <span class="n">0</span>
+
+<span class="nv">$System_Drawing_Point</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="n">Drawing</span><span class="p">.</span><span class="n">Point</span>
+<span class="nv">$System_Drawing_Point</span><span class="p">.</span><span class="n">X</span> <span class="p">=</span> <span class="n">35</span>
+<span class="nv">$System_Drawing_Point</span><span class="p">.</span><span class="n">Y</span> <span class="p">=</span> <span class="n">27</span>
+<span class="nv">$EMailToLabel</span><span class="p">.</span><span class="n">Location</span> <span class="p">=</span> <span class="nv">$System_Drawing_Point</span>
+<span class="nv">$EMailToLabel</span><span class="p">.</span><span class="n">Name</span> <span class="p">=</span> <span class="s2">&#34;EMailToLabel&#34;</span>
+<span class="nv">$System_Drawing_Size</span> <span class="p">=</span> <span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="n">Drawing</span><span class="p">.</span><span class="n">Size</span>
+<span class="nv">$System_Drawing_Size</span><span class="p">.</span><span class="n">Height</span> <span class="p">=</span> <span class="n">24</span>
+<span class="nv">$System_Drawing_Size</span><span class="p">.</span><span class="n">Width</span> <span class="p">=</span> <span class="n">439</span>
+<span class="nv">$EMailToLabel</span><span class="p">.</span><span class="n">Size</span> <span class="p">=</span> <span class="nv">$System_Drawing_Size</span>
+<span class="nv">$EMailToLabel</span><span class="p">.</span><span class="n">TabIndex</span> <span class="p">=</span> <span class="n">0</span>
+<span class="nv">$EMailToLabel</span><span class="p">.</span><span class="n">Text</span> <span class="p">=</span> <span class="s2">&#34;Please enter the email address of the intended recipient:&#34;</span>
+
+<span class="nv">$SendUpdateForm</span><span class="p">.</span><span class="n">Controls</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="nv">$EMailToLabel</span><span class="p">)</span>
+
+<span class="c">#endregion Generated Form Code</span>
+
+<span class="c">#Save the initial state of the form</span>
+<span class="nv">$InitialFormWindowState</span> <span class="p">=</span> <span class="nv">$SendUpdateForm</span><span class="p">.</span><span class="n">WindowState</span>
+<span class="c">#Init the OnLoad event to correct the initial state of the form</span>
+<span class="nv">$SendUpdateForm</span><span class="p">.</span><span class="n">add_Load</span><span class="p">(</span><span class="nv">$OnLoadForm_StateCorrection</span><span class="p">)</span>
+<span class="c">#Show the Form</span>
+<span class="nv">$SendUpdateForm</span><span class="p">.</span><span class="n">ShowDialog</span><span class="p">()|</span> <span class="nb">Out-Null</span>
+
+<span class="p">}</span> <span class="c">#End Function</span>
+
+<span class="c">#Call the Function</span>
+<span class="n">GenerateForm</span>
+</code></pre></div><p>Ok, so that is the PowerShell side done. Now, it is time to create the console task. This is a fairly straight forward exercise. There are only a few tips I would like to share. I used a shared folder for the scripts and then mapped the console task to the shared folder.</p>
+<p>I have configured the PowerShell script to use a parameter, the ID of the Work Item, this is very easy to configure and ensure that the parameter is passed on. See below.</p>
+<figure><img src="/wp-content/uploads/2013/11/111913_0952_sendemailto2.png" width="595" height="90"/>
+</figure>
+
+<p>You will see that I used the &ldquo;Log in action log when this task is run&rdquo;. That is where the Write-host in the PowerShell script becomes handy, the write-host lines are added to the Action Log.</p>
+<p>Please feel free to use and modify to meet your needs.
+Follow me,</p>
+<p><a href="https://www.twitter.com/fskelly">Twitter</a><br>
+<a href="https://linkedin.com/in/fletcherkelly">LinkedIn</a></p>
+
+        </div>
+        <div class="mb-3 post-meta">
+           <a href="/tags/scsm">#SCSM</a>,   <a href="/tags/console">#Console</a>,   <a href="/tags/orchestrator">#Orchestrator</a>,   <a href="/tags/powershell">#PowerShell</a>,   <a href="/tags/task">#Task</a>,  
+        </div>
+      </div>
+      <div class="col-lg-8 mx-auto block shadow">
+        
+        
+        <h3>See Also</h3>
+        <ul>
+          
+          <li><a href="/posts/history/2012-12-20-assignedto-and-affecteduser-with-powershell-service-manager/">AssignedTo and AffectedUser with Powershell – Service Manager</a></li>
+          
+          <li><a href="/posts/history/2013-10-20-finding-off-site-ready-tapes-for-system-center-data-protection-manager-with-system-center-orchestrator/">Finding off site ready tapes for System Center Data Protection Manager with System Center Orchestrator</a></li>
+          
+          <li><a href="/posts/history/2013-10-09-backup-network-config-with-powershell/">Backup Network Configuration with PowerShell</a></li>
+          
+          <li><a href="/posts/history/2013-09-11-service-request-load-testing-for-scsm/">Service Request Load Testing for SCSM</a></li>
+          
+          <li><a href="/posts/history/2013-02-21-cireson-my-active-work-items/">Cireson My Active Work Items</a></li>
+          
+        </ul>
+        
+      </div>
+      
+      <div class="col-lg-8 mx-auto block shadow">
+        
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "fletchercloudadventures" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+<footer class="py-4 bg-light border-top">
+  <div class="container">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-lg-4 text-center text-lg-left mb-4 mb-lg-0">
+        <a href="https://flkellyneucloudblogpre.z16.web.core.windows.net/" class="d-block pb-3"><img src="/images/logo.svg" class="img-fluid" alt="Fletcher Kelly | Cloud Engineer"></a>
+      </div>
+      <div class="col-lg-4 text-center mb-4 mb-lg-0">
+        <ul class="list-inline mb-0">
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 text-lg-right text-center mb-4 mb-lg-0">
+        <ul class="list-inline social-icon mb-0">
+          
+          <li class="list-inline-item"><a href="https://www.twitter.com/fskelly"><i class="ti-twitter-alt"></i></a></li>
+          
+          <li class="list-inline-item"><a href="https://www.github.com/fskelly"><i class="ti-github"></i></a></li>
+          
+          <li class="list-inline-item"><a href="https://www.linkedin.com/in/fletcherkelly"><i class="ti-linkedin"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <span>© 2013 - 2021 Fletcher Kelly All Rights Reserved</span>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script>
+  var indexURL = "https://flkellyneucloudblogpre.z16.web.core.windows.net/index.json"
+</script>
+
+
+<!-- JS Plugins -->
+
+<script src="https://flkellyneucloudblogpre.z16.web.core.windows.net/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://flkellyneucloudblogpre.z16.web.core.windows.net/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://flkellyneucloudblogpre.z16.web.core.windows.net/plugins/search/fuse.min.js"></script>
+
+<script src="https://flkellyneucloudblogpre.z16.web.core.windows.net/plugins/search/mark.js"></script>
+
+<script src="https://flkellyneucloudblogpre.z16.web.core.windows.net/plugins/search/search.js"></script>
+
+
+<!-- Main Script -->
+
+<script src="https://flkellyneucloudblogpre.z16.web.core.windows.net/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-outline-primary ml-2">I Accept</span>
+</div>
+<script>
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
+</script>
+
+
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
+
+.cookie-box-hide {
+  display: none;
+}
+</style>
+
+</body>
+
+</html>

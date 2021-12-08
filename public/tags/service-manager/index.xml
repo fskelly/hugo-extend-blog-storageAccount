@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Service Manager on Fletcher Kelly | Cloud Engineer</title>
+    <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/service-manager/</link>
+    <description>Recent content in Service Manager on Fletcher Kelly | Cloud Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 10 Oct 2012 07:34:02 +0000</lastBuildDate><atom:link href="https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/service-manager/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Inactive Incidents–E-mail assigned to User</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/10/10/inactive-incidentse-mail-assigned-to-user/</link>
+      <pubDate>Wed, 10 Oct 2012 07:34:02 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/10/10/inactive-incidentse-mail-assigned-to-user/</guid>
+      <description>Just recently I was looking for a way to notify users about Inactive incidents as I have some departments that tend to ignore their work items and an e-mail about their “untouched” incidents seems to motivate them.</description>
+    </item>
+    
+    <item>
+      <title>Service Requests – Re-assignment notification</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/07/09/service-requests-re-assignment-notification/</link>
+      <pubDate>Mon, 09 Jul 2012 05:43:13 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/07/09/service-requests-re-assignment-notification/</guid>
+      <description>So, in an effort to get my business ready for Service Requests as we use mainly Incidents and we are beginning our journey into Service Requests and differentiating between Service Requests (day to day operations) and Incidents (something is broken), I needed to reproduce a workflow to notify the “AssignedToUser” when a new Service Request is assigned to him or her.</description>
+    </item>
+    
+    <item>
+      <title>Why is my Service Manager so slow?</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/06/26/why-is-my-service-manager-so-slow/</link>
+      <pubDate>Tue, 26 Jun 2012 07:16:36 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/06/26/why-is-my-service-manager-so-slow/</guid>
+      <description>So, I have been running Service Manager for quite some time now. From SCSM 2010 to SCSM SP1 and most of the CU’s before I upgraded to SCSM 2012 Beta and RC and then to RTM (with the help of a Microsoft TAP Program).</description>
+    </item>
+    
+    <item>
+      <title>Upgrading from SCSM 2010 / SCSM 2012 PRE-RTM to SCSM 2012 RTM</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/04/30/upgrading-from-scsm-2010-scsm-2012-pre-rtm-to-scsm-2012-rtm/</link>
+      <pubDate>Mon, 30 Apr 2012 07:09:49 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/04/30/upgrading-from-scsm-2010-scsm-2012-pre-rtm-to-scsm-2012-rtm/</guid>
+      <description>So, You are now ready to take the plunge and upgrade to SCSM 2012 RTM as it now “publically” available.</description>
+    </item>
+    
+    <item>
+      <title>System Centre Service Manager 2012 Portal</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/11/30/system-centre-service-manager-2012-portal/</link>
+      <pubDate>Wed, 30 Nov 2011 16:02:55 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/11/30/system-centre-service-manager-2012-portal/</guid>
+      <description>So now, I move onto the final part of the SCSM 2012 journey, the Portal.</description>
+    </item>
+    
+    <item>
+      <title>Service Manager 2012 Management Server (Upgrade)</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/11/24/service-manager-2012-management-server-upgrade/</link>
+      <pubDate>Thu, 24 Nov 2011 05:36:25 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/11/24/service-manager-2012-management-server-upgrade/</guid>
+      <description>So, for the Management Server.
+This was very easy and quite painless for me.
+ Backup Encryption Key (for Disaster Recovery Purposes) Install Windows Server 2008 R2 SP1 (This is a pre-requisite for SCSM 2012) Remove Operations Manager Agent if this is installed, as the installer WILL stop you from continuing if the OpsMan Agent is installed.</description>
+    </item>
+    
+    <item>
+      <title>Service Manager 2012 Data Warehouse (Upgrade)</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/11/22/service-manager-2012-data-warehouse-upgrade/</link>
+      <pubDate>Tue, 22 Nov 2011 07:25:40 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/11/22/service-manager-2012-data-warehouse-upgrade/</guid>
+      <description>So, my journey with System Centre Service Manager 2012 Beta has begun and so far I have indeed found some funnies.</description>
+    </item>
+    
+    <item>
+      <title>Scheduled reports with SCSM Data Warehouse</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/10/26/scheduled-reports-with-scsm-data-warehouse/</link>
+      <pubDate>Wed, 26 Oct 2011 10:26:01 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/10/26/scheduled-reports-with-scsm-data-warehouse/</guid>
+      <description>Hi All,
+I know it has been a little while.
+The reports built into Service Manager are great, however when you try to get a bit creative and automate some of the reports, you are going to run into some issues.</description>
+    </item>
+    
+  </channel>
+</rss>

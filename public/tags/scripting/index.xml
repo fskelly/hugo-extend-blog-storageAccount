@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scripting on Fletcher Kelly | Cloud Engineer</title>
+    <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/scripting/</link>
+    <description>Recent content in Scripting on Fletcher Kelly | Cloud Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Oct 2013 12:30:19 +0000</lastBuildDate><atom:link href="https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/scripting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Finding off site ready tapes for System Center Data Protection Manager with System Center Orchestrator</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-10-20-finding-off-site-ready-tapes-for-system-center-data-protection-manager-with-system-center-orchestrator/</link>
+      <pubDate>Sun, 20 Oct 2013 12:30:19 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-10-20-finding-off-site-ready-tapes-for-system-center-data-protection-manager-with-system-center-orchestrator/</guid>
+      <description>So, I am quite a keen user of PowerShell and System Centre Orchestrator. Ok, so I recently had a request from a customer that went as follows “I need DPM to alert me when tapes are ready to &amp;ldquo;be taken off-site&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Backup Network Configuration with PowerShell</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-10-09-backup-network-config-with-powershell/</link>
+      <pubDate>Wed, 09 Oct 2013 19:30:29 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-10-09-backup-network-config-with-powershell/</guid>
+      <description>So, one of the consultants in the company I work at came to me with a strange request.</description>
+    </item>
+    
+    <item>
+      <title>Service Request Load Testing for SCSM</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-09-11-service-request-load-testing-for-scsm/</link>
+      <pubDate>Wed, 11 Sep 2013 19:30:51 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-09-11-service-request-load-testing-for-scsm/</guid>
+      <description>I have found a great for load testing SCSM with Incidents and copy here. The script uses SMLets to generate Incidents and you can then gauge how your system would handle the load you are planning within your Production Environment.</description>
+    </item>
+    
+  </channel>
+</rss>

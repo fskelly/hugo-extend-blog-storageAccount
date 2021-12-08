@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Weather on Fletcher Kelly | Cloud Engineer</title>
+    <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/weather/</link>
+    <description>Recent content in Weather on Fletcher Kelly | Cloud Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Nov 2010 14:57:21 +0000</lastBuildDate><atom:link href="https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/weather/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I inadvertently tested our DR</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2010/11/04/how-i-inadvertently-tested-our-dr/</link>
+      <pubDate>Thu, 04 Nov 2010 14:57:21 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2010/11/04/how-i-inadvertently-tested-our-dr/</guid>
+      <description>I decided to yet again sue Bitlocker, even knowing the previous experencies i have with it.</description>
+    </item>
+    
+  </channel>
+</rss>

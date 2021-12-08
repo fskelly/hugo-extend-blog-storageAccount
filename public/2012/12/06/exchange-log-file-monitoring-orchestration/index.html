@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Exchange Log File Monitoring Orchestration</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description"
+    content="This is meta description">
+    
+    
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Hugo 0.89.1" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://flkellyneucloudblogpre.z16.web.core.windows.net/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://flkellyneucloudblogpre.z16.web.core.windows.net/plugins/themify-icons/themify-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://flkellyneucloudblogpre.z16.web.core.windows.net/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://flkellyneucloudblogpre.z16.web.core.windows.net/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://flkellyneucloudblogpre.z16.web.core.windows.net/images/favicon.png " type="image/x-icon">
+
+  
+  
+  
+
+
+
+<style type="text/css" media="screen">
+  @media (prefers-color-scheme: dark) { 
+    /* Background */ .chroma { color: #f8f8f2; background-color: #272822 }
+/* Other */ .chroma .x {  }
+/* Error */ .chroma .err { color: #960050; background-color: #1e0010 }
+/* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
+/* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }
+/* LineHighlight */ .chroma .hl { display: block; width: 100%;background-color: #ffffcc }
+/* LineNumbersTable */ .chroma .lnt { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
+/* LineNumbers */ .chroma .ln { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
+/* Keyword */ .chroma .k { color: #66d9ef }
+/* KeywordConstant */ .chroma .kc { color: #66d9ef }
+/* KeywordDeclaration */ .chroma .kd { color: #66d9ef }
+/* KeywordNamespace */ .chroma .kn { color: #f92672 }
+/* KeywordPseudo */ .chroma .kp { color: #66d9ef }
+/* KeywordReserved */ .chroma .kr { color: #66d9ef }
+/* KeywordType */ .chroma .kt { color: #66d9ef }
+/* Name */ .chroma .n {  }
+/* NameAttribute */ .chroma .na { color: #a6e22e }
+/* NameBuiltin */ .chroma .nb {  }
+/* NameBuiltinPseudo */ .chroma .bp {  }
+/* NameClass */ .chroma .nc { color: #a6e22e }
+/* NameConstant */ .chroma .no { color: #66d9ef }
+/* NameDecorator */ .chroma .nd { color: #a6e22e }
+/* NameEntity */ .chroma .ni {  }
+/* NameException */ .chroma .ne { color: #a6e22e }
+/* NameFunction */ .chroma .nf { color: #a6e22e }
+/* NameFunctionMagic */ .chroma .fm {  }
+/* NameLabel */ .chroma .nl {  }
+/* NameNamespace */ .chroma .nn {  }
+/* NameOther */ .chroma .nx { color: #a6e22e }
+/* NameProperty */ .chroma .py {  }
+/* NameTag */ .chroma .nt { color: #f92672 }
+/* NameVariable */ .chroma .nv {  }
+/* NameVariableClass */ .chroma .vc {  }
+/* NameVariableGlobal */ .chroma .vg {  }
+/* NameVariableInstance */ .chroma .vi {  }
+/* NameVariableMagic */ .chroma .vm {  }
+/* Literal */ .chroma .l { color: #ae81ff }
+/* LiteralDate */ .chroma .ld { color: #e6db74 }
+/* LiteralString */ .chroma .s { color: #e6db74 }
+/* LiteralStringAffix */ .chroma .sa { color: #e6db74 }
+/* LiteralStringBacktick */ .chroma .sb { color: #e6db74 }
+/* LiteralStringChar */ .chroma .sc { color: #e6db74 }
+/* LiteralStringDelimiter */ .chroma .dl { color: #e6db74 }
+/* LiteralStringDoc */ .chroma .sd { color: #e6db74 }
+/* LiteralStringDouble */ .chroma .s2 { color: #e6db74 }
+/* LiteralStringEscape */ .chroma .se { color: #ae81ff }
+/* LiteralStringHeredoc */ .chroma .sh { color: #e6db74 }
+/* LiteralStringInterpol */ .chroma .si { color: #e6db74 }
+/* LiteralStringOther */ .chroma .sx { color: #e6db74 }
+/* LiteralStringRegex */ .chroma .sr { color: #e6db74 }
+/* LiteralStringSingle */ .chroma .s1 { color: #e6db74 }
+/* LiteralStringSymbol */ .chroma .ss { color: #e6db74 }
+/* LiteralNumber */ .chroma .m { color: #ae81ff }
+/* LiteralNumberBin */ .chroma .mb { color: #ae81ff }
+/* LiteralNumberFloat */ .chroma .mf { color: #ae81ff }
+/* LiteralNumberHex */ .chroma .mh { color: #ae81ff }
+/* LiteralNumberInteger */ .chroma .mi { color: #ae81ff }
+/* LiteralNumberIntegerLong */ .chroma .il { color: #ae81ff }
+/* LiteralNumberOct */ .chroma .mo { color: #ae81ff }
+/* Operator */ .chroma .o { color: #f92672 }
+/* OperatorWord */ .chroma .ow { color: #f92672 }
+/* Punctuation */ .chroma .p {  }
+/* Comment */ .chroma .c { color: #75715e }
+/* CommentHashbang */ .chroma .ch { color: #75715e }
+/* CommentMultiline */ .chroma .cm { color: #75715e }
+/* CommentSingle */ .chroma .c1 { color: #75715e }
+/* CommentSpecial */ .chroma .cs { color: #75715e }
+/* CommentPreproc */ .chroma .cp { color: #75715e }
+/* CommentPreprocFile */ .chroma .cpf { color: #75715e }
+/* Generic */ .chroma .g {  }
+/* GenericDeleted */ .chroma .gd { color: #f92672 }
+/* GenericEmph */ .chroma .ge { font-style: italic }
+/* GenericError */ .chroma .gr {  }
+/* GenericHeading */ .chroma .gh {  }
+/* GenericInserted */ .chroma .gi { color: #a6e22e }
+/* GenericOutput */ .chroma .go {  }
+/* GenericPrompt */ .chroma .gp {  }
+/* GenericStrong */ .chroma .gs { font-weight: bold }
+/* GenericSubheading */ .chroma .gu { color: #75715e }
+/* GenericTraceback */ .chroma .gt {  }
+/* GenericUnderline */ .chroma .gl {  }
+/* TextWhitespace */ .chroma .w {  }
+
+  }
+  @media (prefers-color-scheme: light) { 
+    /* Background */ .chroma { background-color: #f8f8f8 }
+/* Other */ .chroma .x {  }
+/* Error */ .chroma .err {  }
+/* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
+/* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }
+/* LineHighlight */ .chroma .hl { display: block; width: 100%;background-color: #ffffcc }
+/* LineNumbersTable */ .chroma .lnt { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
+/* LineNumbers */ .chroma .ln { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
+/* Keyword */ .chroma .k { color: #aa22ff; font-weight: bold }
+/* KeywordConstant */ .chroma .kc { color: #aa22ff; font-weight: bold }
+/* KeywordDeclaration */ .chroma .kd { color: #aa22ff; font-weight: bold }
+/* KeywordNamespace */ .chroma .kn { color: #aa22ff; font-weight: bold }
+/* KeywordPseudo */ .chroma .kp { color: #aa22ff }
+/* KeywordReserved */ .chroma .kr { color: #aa22ff; font-weight: bold }
+/* KeywordType */ .chroma .kt { color: #00bb00; font-weight: bold }
+/* Name */ .chroma .n {  }
+/* NameAttribute */ .chroma .na { color: #bb4444 }
+/* NameBuiltin */ .chroma .nb { color: #aa22ff }
+/* NameBuiltinPseudo */ .chroma .bp {  }
+/* NameClass */ .chroma .nc { color: #0000ff }
+/* NameConstant */ .chroma .no { color: #880000 }
+/* NameDecorator */ .chroma .nd { color: #aa22ff }
+/* NameEntity */ .chroma .ni { color: #999999; font-weight: bold }
+/* NameException */ .chroma .ne { color: #d2413a; font-weight: bold }
+/* NameFunction */ .chroma .nf { color: #00a000 }
+/* NameFunctionMagic */ .chroma .fm {  }
+/* NameLabel */ .chroma .nl { color: #a0a000 }
+/* NameNamespace */ .chroma .nn { color: #0000ff; font-weight: bold }
+/* NameOther */ .chroma .nx {  }
+/* NameProperty */ .chroma .py {  }
+/* NameTag */ .chroma .nt { color: #008000; font-weight: bold }
+/* NameVariable */ .chroma .nv { color: #b8860b }
+/* NameVariableClass */ .chroma .vc {  }
+/* NameVariableGlobal */ .chroma .vg {  }
+/* NameVariableInstance */ .chroma .vi {  }
+/* NameVariableMagic */ .chroma .vm {  }
+/* Literal */ .chroma .l {  }
+/* LiteralDate */ .chroma .ld {  }
+/* LiteralString */ .chroma .s { color: #bb4444 }
+/* LiteralStringAffix */ .chroma .sa { color: #bb4444 }
+/* LiteralStringBacktick */ .chroma .sb { color: #bb4444 }
+/* LiteralStringChar */ .chroma .sc { color: #bb4444 }
+/* LiteralStringDelimiter */ .chroma .dl { color: #bb4444 }
+/* LiteralStringDoc */ .chroma .sd { color: #bb4444; font-style: italic }
+/* LiteralStringDouble */ .chroma .s2 { color: #bb4444 }
+/* LiteralStringEscape */ .chroma .se { color: #bb6622; font-weight: bold }
+/* LiteralStringHeredoc */ .chroma .sh { color: #bb4444 }
+/* LiteralStringInterpol */ .chroma .si { color: #bb6688; font-weight: bold }
+/* LiteralStringOther */ .chroma .sx { color: #008000 }
+/* LiteralStringRegex */ .chroma .sr { color: #bb6688 }
+/* LiteralStringSingle */ .chroma .s1 { color: #bb4444 }
+/* LiteralStringSymbol */ .chroma .ss { color: #b8860b }
+/* LiteralNumber */ .chroma .m { color: #666666 }
+/* LiteralNumberBin */ .chroma .mb { color: #666666 }
+/* LiteralNumberFloat */ .chroma .mf { color: #666666 }
+/* LiteralNumberHex */ .chroma .mh { color: #666666 }
+/* LiteralNumberInteger */ .chroma .mi { color: #666666 }
+/* LiteralNumberIntegerLong */ .chroma .il { color: #666666 }
+/* LiteralNumberOct */ .chroma .mo { color: #666666 }
+/* Operator */ .chroma .o { color: #666666 }
+/* OperatorWord */ .chroma .ow { color: #aa22ff; font-weight: bold }
+/* Punctuation */ .chroma .p {  }
+/* Comment */ .chroma .c { color: #008800; font-style: italic }
+/* CommentHashbang */ .chroma .ch { color: #008800; font-style: italic }
+/* CommentMultiline */ .chroma .cm { color: #008800; font-style: italic }
+/* CommentSingle */ .chroma .c1 { color: #008800; font-style: italic }
+/* CommentSpecial */ .chroma .cs { color: #008800; font-weight: bold }
+/* CommentPreproc */ .chroma .cp { color: #008800 }
+/* CommentPreprocFile */ .chroma .cpf { color: #008800 }
+/* Generic */ .chroma .g {  }
+/* GenericDeleted */ .chroma .gd { color: #a00000 }
+/* GenericEmph */ .chroma .ge { font-style: italic }
+/* GenericError */ .chroma .gr { color: #ff0000 }
+/* GenericHeading */ .chroma .gh { color: #000080; font-weight: bold }
+/* GenericInserted */ .chroma .gi { color: #00a000 }
+/* GenericOutput */ .chroma .go { color: #888888 }
+/* GenericPrompt */ .chroma .gp { color: #000080; font-weight: bold }
+/* GenericStrong */ .chroma .gs { font-weight: bold }
+/* GenericSubheading */ .chroma .gu { color: #800080; font-weight: bold }
+/* GenericTraceback */ .chroma .gt { color: #0044dd }
+/* GenericUnderline */ .chroma .gl { text-decoration: underline }
+/* TextWhitespace */ .chroma .w { color: #bbbbbb }
+ 
+  }
+  </style>
+
+</head><body>
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="fixed-top navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <a class="navbar-brand"href="https://flkellyneucloudblogpre.z16.web.core.windows.net/"><img class="img-fluid" src="/images/logo.svg" alt="Fletcher Kelly | Cloud Engineer"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://flkellyneucloudblogpre.z16.web.core.windows.net/"> Home </a>
+          </li>
+          
+        </ul>
+        
+        <!-- search -->
+        <div class="search">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://flkellyneucloudblogpre.z16.web.core.windows.net/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation --> <div class="py-5 d-none d-lg-block"></div> 
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto block shadow mb-5">
+        <h2>Exchange Log File Monitoring Orchestration</h2>
+        <div class="mb-3 post-meta">
+          <a href="/author/fskelly">Fskelly</a>,
+          Dec 6, 2012, 
+          <a href="/categories/uncategorized">Uncategorized</a>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <p><!-- raw HTML omitted -->So what started this is actually quite simple. We have limited space on our virtual machines and the log files for IIS keeping filling up the drive on our Hub Transport Server (Exchange Server 2010). It is a little know fact, that a certain amount of free space on C: is needed on an Exchange Hub Transport Server, the magic number happens to be 15%. There are a few ways to solve the log file issue. I found this <!-- raw HTML omitted --><a href="http://support.risualblogs.com/blog/2011/02/17/delete-iis-logs-after-certain-number-of-days-via-powershell/"><!-- raw HTML omitted -->solution<!-- raw HTML omitted --></a><!-- raw HTML omitted -->. This deletes all files older than 7 days. This can, of course, be modified to suit your needs, I personally have chosen 14 days. Some people choose more, it is basically a case of whatever works best for.<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->I could simple set this a scheduled task and allow this to run every few days and keep the log files to a reasonable size. However, I have orchestrator and was thinking that this would be a great chance to get my hands dirty and start to show the benefit of Orchestrator to some of the staff in our IT department. I know those that know Orchestrator, are saying “you have to convince them how good Orchestrator is?” and the answer is a resounding “YES”. Anyways, back onto topic here. Below is a diagram of the orchestration. I will go into more detail around my thinking for each step. Hopefully someone can learn from this and help drive the value of System Centre Orchestrator <!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><a href="/wp-content/uploads/2012/12/image.png"><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></a></p>
+<p><!-- raw HTML omitted -->So, the first bit is simply a monitor allowing you specify how often you would like the Runbook to Run.<!-- raw HTML omitted --></p>
+<p><a href="/wp-content/uploads/2012/12/image1.png"><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></a></p>
+<p><a href="/wp-content/uploads/2012/12/image2.png"><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></a></p>
+<p><!-- raw HTML omitted -->Next up, is a simple “Disk Space” monitor found under “Monitoring”<!-- raw HTML omitted --></p>
+<p><a href="/wp-content/uploads/2012/12/image3.png"><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></a></p>
+<p><!-- raw HTML omitted -->I have configured the parameters as needed.<!-- raw HTML omitted --></p>
+<p><a href="/wp-content/uploads/2012/12/image4.png"><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></a></p>
+<p><!-- raw HTML omitted -->I also tweaked the security parameters as needed to an account that has the required rights for checking Drive Space on the required server.<!-- raw HTML omitted --></p>
+<p><a href="/wp-content/uploads/2012/12/image5.png"><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></a></p>
+<p><!-- raw HTML omitted -->For the next step, I modified the “Link Properties” to match my needs of checking of the Disk Space to return a value that will allow the rest of the Runbook to run. It is simply a case of Clicking “Add” and then selecting the required values to check for. I chose “Percentage of Space Available” from Component Before “is less than” Desired percentage.<!-- raw HTML omitted --></p>
+<p><a href="/wp-content/uploads/2012/12/image6.png"><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></a></p>
+<p><!-- raw HTML omitted -->This is why I chose to create a runbook, my staff and Company like to be informed of any changes made on servers. So now I send an e-mail stating that the free space is low to the necessary recipients.<!-- raw HTML omitted --></p>
+<p><a href="/wp-content/uploads/2012/12/image7.png"><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></a></p>
+<p><!-- raw HTML omitted -->Now, I create a folder to allow for creation of text files for the logging of which files will be deleted. (more on this later)<!-- raw HTML omitted --></p>
+<p><a href="/wp-content/uploads/2012/12/image8.png"><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></a></p>
+<p><!-- raw HTML omitted -->I also use published data from earlier in the Databus to create unique folders based on date and time.<!-- raw HTML omitted --></p>
+<p><a href="/wp-content/uploads/2012/12/image9.png"><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></a></p>
+<p><!-- raw HTML omitted -->Now, I create a list of all the files to be deleted and read them into a “log file” and place them in the folder created above for “Auditing” purposes. I had to run this through a PowerShell script and there are some limitations with Orchestrator and Impersonating another account within PowerShell. I will continue to work on this to clean it up.<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->Please note that <em>subscribeddata</em> means data from earlier up the Databus, namely folder locations.<!-- raw HTML omitted --></p>
+<p><a href="/wp-content/uploads/2012/12/image10.png"><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></a></p>
+<p><!-- raw HTML omitted -->I run the below PowerShell script.<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->This reads the files to be deleted, older than 14 days, creates a log file, and reads the log file into the body of the e-mail.<!-- raw HTML omitted --></p>
+<p>[sourcecode language=”powershell”]net use H: *subsribeddata* /user:europcar\administrator <!-- raw HTML omitted -->       $files=get-childitem -Path \ms-ec-exc01\C$\inetpub\logs\LogFiles -recurse | where-object {$_.lastwritetime -lt (get-date).addDays(-14)}| out-file -filepath &ldquo;H:\logs.txt&rdquo; -append<!-- raw HTML omitted -->$body = (get-content *subscribeddata&gt;*logs.txt -encoding ASCII | out-string)<!-- raw HTML omitted -->send-mailmessage -attachments <!-- raw HTML omitted -->\logs.txt -body $body -to &ldquo;<a href="mailto:fletcher.kelly@europcar.co.za">fletcher.kelly@europcar.co.za</a>&rdquo; -from &ldquo;<a href="mailto:orchestrator@europcar.co.za">orchestrator@europcar.co.za</a>&rdquo; -subject &ldquo;Files to be deleted&rdquo; -smtpserver 172.21.195.69<!-- raw HTML omitted -->net use h: /delete[/sourcecode]</p>
+<p><!-- raw HTML omitted -->Now it is time to delete the actual files<!-- raw HTML omitted --></p>
+<p><a href="/wp-content/uploads/2012/12/image11.png"><!-- raw HTML omitted --></a></p>
+<p>[sourcecode language=”powershell”]net use H: *subsribeddata* /user:europcar\administrator *password*       $files=get-childitem -Path \ms-ec-exc01\C$\inetpub\logs\LogFiles -recurse | where-object {$_.lastwritetime -lt (get-date).addDays(-14)}| remove-item –recurse<!-- raw HTML omitted -->net use h: /delete[/sourcecode]</p>
+<p><!-- raw HTML omitted -->Now it is time to check the Disk Space is at an adequate level.<!-- raw HTML omitted --></p>
+<p><a href="/wp-content/uploads/2012/12/image12.png"><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></a></p>
+<p><!-- raw HTML omitted -->Modify the link Properties again to meet new requirements. So, I have tweaked the script to ensure that the free space is now above my threshold ( I have set mine to 15%)<!-- raw HTML omitted --></p>
+<p><a href="/wp-content/uploads/2012/12/image13.png"><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></a></p>
+<p><a href="/wp-content/uploads/2012/12/image14.png"><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></a></p>
+<p><!-- raw HTML omitted -->And then finally send an e-mail stating that the free space is now adequate. Tweaked to meet my needs with Subscribed data in the body and subject.<!-- raw HTML omitted --></p>
+<p><a href="/wp-content/uploads/2012/12/image15.png"><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></a></p>
+<p><!-- raw HTML omitted -->Please note that this information is provided as is. I can assist as much as possible. Please TEST, TEST and TEST again.<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->Hope this helps,<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->Follow me.<!-- raw HTML omitted --></p>
+<p><a href="http://www.facebook.com/fletcher.kelly"><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></a><a href="http://twitter.com/#!/fskelly"><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></a></p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+
+        </div>
+        <div class="mb-3 post-meta">
+           <a href="/tags/exchange">#Exchange</a>,   <a href="/tags/iis">#IIS</a>,   <a href="/tags/logs">#Logs</a>,   <a href="/tags/orchestration">#Orchestration</a>,   <a href="/tags/orchestrator">#Orchestrator</a>,   <a href="/tags/scorch">#SCORCH</a>,  
+        </div>
+      </div>
+      <div class="col-lg-8 mx-auto block shadow">
+        
+        
+        <h3>See Also</h3>
+        <ul>
+          
+          <li><a href="/2012/06/13/installing-system-centre-orchestrator/">Installing System Centre Orchestrator</a></li>
+          
+          <li><a href="/2012/08/13/dpm-and-exchange-mail-store-backup-failing/">DPM and Exchange Mail Store Backup failing</a></li>
+          
+          <li><a href="/2011/09/01/documenting-the-environment/">Documenting the Environment</a></li>
+          
+        </ul>
+        
+      </div>
+      
+      <div class="col-lg-8 mx-auto block shadow">
+        
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "fletchercloudadventures" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+<footer class="py-4 bg-light border-top">
+  <div class="container">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-lg-4 text-center text-lg-left mb-4 mb-lg-0">
+        <a href="https://flkellyneucloudblogpre.z16.web.core.windows.net/" class="d-block pb-3"><img src="/images/logo.svg" class="img-fluid" alt="Fletcher Kelly | Cloud Engineer"></a>
+      </div>
+      <div class="col-lg-4 text-center mb-4 mb-lg-0">
+        <ul class="list-inline mb-0">
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 text-lg-right text-center mb-4 mb-lg-0">
+        <ul class="list-inline social-icon mb-0">
+          
+          <li class="list-inline-item"><a href="https://www.twitter.com/fskelly"><i class="ti-twitter-alt"></i></a></li>
+          
+          <li class="list-inline-item"><a href="https://www.github.com/fskelly"><i class="ti-github"></i></a></li>
+          
+          <li class="list-inline-item"><a href="https://www.linkedin.com/in/fletcherkelly"><i class="ti-linkedin"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <span>© 2013 - 2021 Fletcher Kelly All Rights Reserved</span>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script>
+  var indexURL = "https://flkellyneucloudblogpre.z16.web.core.windows.net/index.json"
+</script>
+
+
+<!-- JS Plugins -->
+
+<script src="https://flkellyneucloudblogpre.z16.web.core.windows.net/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://flkellyneucloudblogpre.z16.web.core.windows.net/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://flkellyneucloudblogpre.z16.web.core.windows.net/plugins/search/fuse.min.js"></script>
+
+<script src="https://flkellyneucloudblogpre.z16.web.core.windows.net/plugins/search/mark.js"></script>
+
+<script src="https://flkellyneucloudblogpre.z16.web.core.windows.net/plugins/search/search.js"></script>
+
+
+<!-- Main Script -->
+
+<script src="https://flkellyneucloudblogpre.z16.web.core.windows.net/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-outline-primary ml-2">I Accept</span>
+</div>
+<script>
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
+</script>
+
+
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
+
+.cookie-box-hide {
+  display: none;
+}
+</style>
+
+</body>
+
+</html>

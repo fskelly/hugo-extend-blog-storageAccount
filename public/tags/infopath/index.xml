@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>InfoPath on Fletcher Kelly | Cloud Engineer</title>
+    <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/infopath/</link>
+    <description>Recent content in InfoPath on Fletcher Kelly | Cloud Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Aug 2011 13:33:20 +0000</lastBuildDate><atom:link href="https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/infopath/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Microsoft Word, SharePoint, a Form and NO InfoPath on Server</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/08/01/microsoft-word-sharepoint-a-form-and-no-infopath-on-server/</link>
+      <pubDate>Mon, 01 Aug 2011 13:33:20 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/08/01/microsoft-word-sharepoint-a-form-and-no-infopath-on-server/</guid>
+      <description>So, just recently I was asked to work yet another miracle.
+The Scope.
+  We need to go paperless.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SMLets on Fletcher Kelly | Cloud Engineer</title>
+    <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/smlets/</link>
+    <description>Recent content in SMLets on Fletcher Kelly | Cloud Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Aug 2015 06:21:12 +0000</lastBuildDate><atom:link href="https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/smlets/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SLA Reporting with PowerShell and SCSM</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2015-08-27-sla-reporting-with-powershell-and-scsm/</link>
+      <pubDate>Thu, 27 Aug 2015 06:21:12 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2015-08-27-sla-reporting-with-powershell-and-scsm/</guid>
+      <description>I always get asked about reporting from my customers, and specifically around SLA&amp;rsquo;s. SLA&amp;rsquo;s are very important to most companies as this is part of the tracking mechanism of employees and vendors and the like.</description>
+    </item>
+    
+    <item>
+      <title>Some more SMlets commands (more detail)</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/07/18/some-more-smlets-commands-more-detail/</link>
+      <pubDate>Mon, 18 Jul 2011 11:45:18 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/07/18/some-more-smlets-commands-more-detail/</guid>
+      <description>Would you like a nice graphical breakdown of all calls logged in (x) days and there status?</description>
+    </item>
+    
+    <item>
+      <title>Using SMLets practically</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/05/17/using-smlets-practically/</link>
+      <pubDate>Tue, 17 May 2011 11:27:51 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/05/17/using-smlets-practically/</guid>
+      <description>In my previous post, SCSM And Powershell, I mentioned that I am now starting to play with get-scsmobject.</description>
+    </item>
+    
+    <item>
+      <title>SCSM and Powershell</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/05/10/scsm-and-powershell/</link>
+      <pubDate>Tue, 10 May 2011 06:42:52 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/05/10/scsm-and-powershell/</guid>
+      <description>Hi all,
+i have been playing with SMLets3 and get-scsmobject and using information from the post by Travis Wright, Using SMLets Beta 3 Post #1 – Using Get-SCSMObject, Get-SCSMClass to Dump Data from SCSM.</description>
+    </item>
+    
+    <item>
+      <title>The “crisis” week</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/05/03/the-crisis-week/</link>
+      <pubDate>Tue, 03 May 2011 08:44:31 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2011/05/03/the-crisis-week/</guid>
+      <description>Hi All,
+The last two weeks have been a little nutty for me. I have however, learnt to appreciate a few more things in life.</description>
+    </item>
+    
+  </channel>
+</rss>

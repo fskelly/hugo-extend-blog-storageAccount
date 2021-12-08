@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Logs on Fletcher Kelly | Cloud Engineer</title>
+    <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/logs/</link>
+    <description>Recent content in Logs on Fletcher Kelly | Cloud Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 06 Dec 2012 11:41:28 +0000</lastBuildDate><atom:link href="https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/logs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exchange Log File Monitoring Orchestration</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/12/06/exchange-log-file-monitoring-orchestration/</link>
+      <pubDate>Thu, 06 Dec 2012 11:41:28 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/12/06/exchange-log-file-monitoring-orchestration/</guid>
+      <description>So what started this is actually quite simple. We have limited space on our virtual machines and the log files for IIS keeping filling up the drive on our Hub Transport Server (Exchange Server 2010).</description>
+    </item>
+    
+  </channel>
+</rss>

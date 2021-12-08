@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Operations Manager on Fletcher Kelly | Cloud Engineer</title>
+    <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/categories/operations-manager/</link>
+    <description>Recent content in Operations Manager on Fletcher Kelly | Cloud Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 14 Apr 2015 05:08:44 +0000</lastBuildDate><atom:link href="https://flkellyneucloudblogpre.z16.web.core.windows.net/categories/operations-manager/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Grey Agent Fixing with Orchestrator</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2015-04-14-grey-agent-fixing-with-orchestrator/</link>
+      <pubDate>Tue, 14 Apr 2015 05:08:44 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2015-04-14-grey-agent-fixing-with-orchestrator/</guid>
+      <description>So, here is the scenario, we managed a lot of customer’s System Centre Operations Manager (SCOM) environments.</description>
+    </item>
+    
+    <item>
+      <title>OpsMan 2007 R2–Collation, Collation, Collation!!!!!!</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/05/07/opsman-2007-r2collation-collation-collation/</link>
+      <pubDate>Mon, 07 May 2012 11:44:25 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/05/07/opsman-2007-r2collation-collation-collation/</guid>
+      <description>So, recently I decided to take the plunge and upgrade to SCOM 2012. So, there were a few pre-requisites that I needed as per the prereq checker that is built into OpsMan 2012.</description>
+    </item>
+    
+    <item>
+      <title>Rebuilding the OpsMan Client Cache</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/01/17/rebuilding-the-opsman-client-cache/</link>
+      <pubDate>Tue, 17 Jan 2012 07:16:27 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/2012/01/17/rebuilding-the-opsman-client-cache/</guid>
+      <description>Just recently I had the need to “rebuild” the client cache on a lot of my servers, due to a slight hiccup with our Network and subsequently our Operations Manager Server.</description>
+    </item>
+    
+  </channel>
+</rss>

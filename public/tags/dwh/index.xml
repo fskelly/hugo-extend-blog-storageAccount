@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DWH on Fletcher Kelly | Cloud Engineer</title>
+    <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/dwh/</link>
+    <description>Recent content in DWH on Fletcher Kelly | Cloud Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Mar 2013 21:45:36 +0000</lastBuildDate><atom:link href="https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/dwh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cubes Missing from Data Warehouse and throwing error from within the SCSM Console</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-02-27-cubes-missing-from-data-warehouse-and-throwing-error-from-within-the-scsm-console/</link>
+      <pubDate>Wed, 20 Mar 2013 21:45:36 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-02-27-cubes-missing-from-data-warehouse-and-throwing-error-from-within-the-scsm-console/</guid>
+      <description>So, just the other day I opened the SCSM console to look at the cubes and process as needed, since some new reports needed to be built and Excel spread sheets created by our BI person for business.</description>
+    </item>
+    
+  </channel>
+</rss>

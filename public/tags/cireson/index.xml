@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cireson on Fletcher Kelly | Cloud Engineer</title>
+    <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/cireson/</link>
+    <description>Recent content in Cireson on Fletcher Kelly | Cloud Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Jun 2014 06:01:55 +0000</lastBuildDate><atom:link href="https://flkellyneucloudblogpre.z16.web.core.windows.net/tags/cireson/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cireson Outlook Console</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2014-06-17-cireson-outloook-console/</link>
+      <pubDate>Tue, 17 Jun 2014 06:01:55 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2014-06-17-cireson-outloook-console/</guid>
+      <description>So, Cireson hase been investing into System Centre Service Manager (SCSM) very heavily and the end results are WELL worth it.</description>
+    </item>
+    
+    <item>
+      <title>New features–Cireson IT Asset Management</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-08-27-new-featurescireson-it-asset-management/</link>
+      <pubDate>Tue, 27 Aug 2013 14:11:29 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-08-27-new-featurescireson-it-asset-management/</guid>
+      <description>I have previously done a post on Cireson IT Asset Management. However the people at Cireson have been very busy with new features to be added to their ITAM (IT Asset Management) tool.</description>
+    </item>
+    
+    <item>
+      <title>End User Portal for System Centre Orchestrator</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-08-05-end-user-portal-for-system-centre-orchestrator/</link>
+      <pubDate>Mon, 05 Aug 2013 04:53:43 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-08-05-end-user-portal-for-system-centre-orchestrator/</guid>
+      <description>So, let’s ay you have invested the time and gotten System Centre Orchestrator up and running in your environment and you have the product performing some day to day tasks and it is working well.</description>
+    </item>
+    
+    <item>
+      <title>Cireson IT Asset Management with Service Manager</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-06-26-cireson-it-asset-management-with-service-manager/</link>
+      <pubDate>Wed, 26 Jun 2013 10:23:48 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-06-26-cireson-it-asset-management-with-service-manager/</guid>
+      <description>Cireson have recently released an new enhancement to the System Centre Service Manager console called the Cireson SCSM Asset Management App.</description>
+    </item>
+    
+    <item>
+      <title>Import CI Items with Cireson Asset Import Tool</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-05-17-import-ci-items-with-cireson-asset-import-tool/</link>
+      <pubDate>Fri, 17 May 2013 05:10:29 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-05-17-import-ci-items-with-cireson-asset-import-tool/</guid>
+      <description>With my previous post about importing data, I showed you how to use the built-in CSV connector to do this task and how to create the required Projection Classes.</description>
+    </item>
+    
+    <item>
+      <title>Cireson My Active Work Items</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-02-21-cireson-my-active-work-items/</link>
+      <pubDate>Thu, 21 Feb 2013 09:10:11 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-02-21-cireson-my-active-work-items/</guid>
+      <description>So, Cireson has been hard at work to fill a few gaps present within the Service Manager space.</description>
+    </item>
+    
+    <item>
+      <title>Cireson Analyst Web Console</title>
+      <link>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-01-22-cireson-analyst-web-console/</link>
+      <pubDate>Tue, 22 Jan 2013 09:32:19 +0000</pubDate>
+      
+      <guid>https://flkellyneucloudblogpre.z16.web.core.windows.net/posts/history/2013-01-22-cireson-analyst-web-console/</guid>
+      <description>I have always heard complaints from some of the analysts in my company about having to install the Service Manager Console on their machines and then complaining about having to learn a new application.</description>
+    </item>
+    
+  </channel>
+</rss>
