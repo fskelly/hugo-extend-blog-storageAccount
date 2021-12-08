@@ -1,4 +1,4 @@
-name: Blob Storage Copy - PreProd
+name: Blob Storage Copy - NorthEndLab
 
 on:
     push:
