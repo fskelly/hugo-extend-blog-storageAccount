@@ -1,11 +1,11 @@
-name: Blob Storage Copy
+name: Blob Storage Copy - NorthEndLab
 
 on:
     push:
-        branches: [ main ]
+        branches: [ northendLab ]
     pull_request:
         types: [opened, synchronize, reopened, closed]
-        branches: [main]
+        branches: [northendLab]
 
 jobs:
   build:
@@ -21,7 +21,7 @@ jobs:
       with:
         azcliversion: 2.0.72
         inlineScript: |
-            az storage blob upload-batch --account-name ${{ secrets.AZURE_STORAGE_ACCOUNT }} --auth-mode key -d '$web' -s $GITHUB_WORKSPACE/public
+            az storage blob upload-batch --account-name ${{ secrets.AZURE_STORAGE_ACCOUNT_PREPROD }} --auth-mode key -d '$web' -s $GITHUB_WORKSPACE/public
 #            az storage blob upload-batch --account-name ${{ secrets.AZURE_STORAGE_ACCOUNT }} --auth-mode key -d '$web' -s .
 #    - name: Purge CDN endpoint
 #      uses: azure/CLI@v1
