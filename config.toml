@@ -1,0 +1,156 @@
+############################ Default configuration #########################
+baseURL = "https://www.fskelly.com/"
+languageCode = "en-us"
+# site title 
+title = "Fletcher Kelly | Cloud Engineer"
+# theme
+theme = "northendlab-light"
+# post pagination
+paginate = "5"
+# post excerpt
+summaryLength = "15"
+# disqus short name
+disqusShortname = "fletchercloudadventures" # get your shortname form here : https://disqus.com
+
+[outputs]
+home = ["HTML", "AMP", "RSS", "JSON"]
+
+##########################################################################
+[params.variables]
+color_primary = "green"
+color_secondary = "#001111"
+body_color = "#fff"
+text_color = "#666666"
+text_dark = "#222222"
+text_light = "#959595"
+border_color = "#ACB9C4"
+black = "#000"
+white = "#fff"
+light = "#fdfdfd"
+
+[markup]
+  [markup.highlight]
+    noclasses = false
+
+custom_css = ["css/custom.css"]
+custom_js = ["js/custom.js"]
+
+enableEmoji = "true"
+
+########################## Plugins ######################################
+
+# css plugins
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+link = "plugins/themify-icons/themify-icons.css"
+
+# js plugins
+[[params.plugins.js]]
+link = "plugins/jQuery/jquery.min.js"
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+link = "plugins/search/fuse.min.js"
+[[params.plugins.js]]
+link = "plugins/search/mark.js"
+[[params.plugins.js]]
+link = "plugins/search/search.js"
+
+
+########################### Navigation ###################################
+
+# main menu
+#[[menu.main]]
+#URL = "contact"
+#name = "Contact"
+#weight = 1
+
+#[[menu.main]]
+#URL = "tools"
+#name = "tools"
+#weight = 2
+
+#[[menu.main]]
+#URL = "https://gethugothemes.com/products/northendlab/"
+#name = "Buy Premium"
+#weight = 2
+
+# footer menu
+#[[menu.footer]]
+#URL = "contact"
+#name = "Contact"
+#weight = 1
+
+#[[menu.footer]]
+#URL = "tools"
+#name = "tools"
+#weight = 2
+
+
+######################### Default Parameters ###########################
+[params]
+# home
+home = "Home"
+# logo
+logo = "images/logo.svg"
+# meta data
+author = "Themefisher"
+description = "This is meta description"
+# google tag manager
+google_tag_manager = "" # your id
+# contact form action
+contact_form_action = "#" # contact form works with : https://formspree.io
+# copyright
+copyright = "&copy; 2013 - 2021 Fletcher Kelly All Rights Reserved"
+
+# preloader
+[params.preloader]
+enable = true
+preloader = "" # use png, jpg, svg or gif format
+
+# search
+[params.search]
+enable = true
+
+# cookies
+[params.cookies]
+enable = true
+expire_days = 2
+
+####################### banner #######################################
+[params.banner]
+bgImage = "images/banner/banner-bg.svg"
+title = "Hi, I'm Fletcher Kelly. <br> Cloud Engineer and Advocate"
+image = "images/banner/illustration.svg"
+
+
+######################## call to action ###############################
+[params.cta]
+enable = false
+image = "images/hugo-muscot.svg"
+title = "Get the best hugo templates"
+description = "Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."
+[params.cta.button]
+enable = false
+label = "Visit Here"
+link = "https://gethugothemes.com/shop/"
+
+
+############################## Social Site ##########################
+#[[params.social]]
+# icon = "ti-facebook" # themify icon pack https://themify.me/themify-icons
+# link = "#"
+[[params.social]]
+icon = "ti-twitter-alt" # themify icon pack https://themify.me/themify-icons
+link = "https://www.twitter.com/fskelly"
+[[params.social]]
+icon = "ti-github" # themify icon pack https://themify.me/themify-icons
+link = "https://www.github.com/fskelly"
+[[params.social]]
+icon = "ti-linkedin" # themify icon pack https://themify.me/themify-icons
+link = "https://www.linkedin.com/in/fletcherkelly"
+
+
+
+
