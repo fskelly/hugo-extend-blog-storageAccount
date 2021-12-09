@@ -28,6 +28,7 @@ jobs:
       with:
         azcliversion: 2.0.72
         inlineScript: |
+            az account set --subscription 949ef534-07f5-4138-8b79-aae16a71310c
             az storage blob upload-batch --account-name ${{ secrets.AZURE_STORAGE_ACCOUNT_PREPROD }} --auth-mode key -d '$web' -s $GITHUB_WORKSPACE/public
 #            az storage blob upload-batch --account-name ${{ secrets.AZURE_STORAGE_ACCOUNT }} --auth-mode key -d '$web' -s .
 #    - name: Purge CDN endpoint
