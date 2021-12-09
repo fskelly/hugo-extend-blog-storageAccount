@@ -19,14 +19,14 @@ jobs:
     - name: Az Accoutn set
       uses: azure/CLI@v1
       with:
-        azcliversion: 2.0.72
+        azcliversion: 2.30.0
         inlineScript: |
             az account set --subscription 949ef534-07f5-4138-8b79-aae16a71310c
 
     - name: Upload to blob storage
       uses: azure/CLI@v1
       with:
-        azcliversion: 2.0.72
+        azcliversion: 2.30.0
         inlineScript: |
             az account set --subscription 949ef534-07f5-4138-8b79-aae16a71310c
             az storage blob upload-batch --account-name ${{ secrets.AZURE_STORAGE_ACCOUNT_PREPROD }} --auth-mode key -d '$web' -s $GITHUB_WORKSPACE/public
