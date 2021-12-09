@@ -1,7 +1,7 @@
 +++
 author = "Fletcher Kelly"
 title = "Azure Resource Graph - More queries for Networking and Management Groups"
-date = "2021-12-08T08:00:00+00:00"
+date = "2021-12-12T08:00:00+00:00"
 description = "Some network related Azure Resource Graph Queries."
 tags = [
     "azure",
