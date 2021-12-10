@@ -6,7 +6,66 @@
         <description>Recent content on Fletcher&#39;s Cloud Journey</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 25 Aug 2021 05:58:18 +0200</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 09 Dec 2021 08:00:00 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Azure Resource Graph - More queries for Networking and Management Groups</title>
+        <link>https://cloudadventures.fskelly.com/p/azure-resource-graph-more-queries-for-networking-and-management-groups/</link>
+        <pubDate>Thu, 09 Dec 2021 08:00:00 +0000</pubDate>
+        
+        <guid>https://cloudadventures.fskelly.com/p/azure-resource-graph-more-queries-for-networking-and-management-groups/</guid>
+        <description>&lt;!-- CANBEPUBLISHED --&gt;
+&lt;p&gt;Just some more queries I have developed.&lt;/p&gt;
+&lt;h2 id=&#34;networking&#34;&gt;Networking&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Don&amp;rsquo;t create unnecessarily large virtual networks (for example, /16) to ensure that IP address space isn&amp;rsquo;t wasted.&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-Kusto&#34; data-lang=&#34;Kusto&#34;&gt;resources
+| where type == &amp;quot;microsoft.network/virtualnetworks&amp;quot;
+| extend addressSpace = todynamic(properties.addressSpace)
+| extend addressPrefix = todynamic(properties.addressSpace.addressPrefixes)
+| mvexpand addressSpace
+| mvexpand addressPrefix
+| extend addressMask = split(addressPrefix,&#39;/&#39;)[1]
+| where addressMask &amp;lt;= 16
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Smallest recommended size for a GatewaySubnet is /27&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;When you are planning your gateway subnet size, refer to the documentation for the configuration that you are planning to create. For example, the ExpressRoute/VPN Gateway coexist configuration requires a larger gateway subnet than most other configurations. Additionally, you may want to make sure your gateway subnet contains enough IP addresses to accommodate possible future additional configurations. While you can create a gateway subnet as small as /29, we recommend that you create a gateway subnet of /27 or larger (/27, /26 etc.) if you have the available address space to do so. This will accommodate most configurations.&lt;/strong&gt; &lt;a class=&#34;link&#34; href=&#34;https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings#gwsub&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Microsoft Docs&lt;/a&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-kusto&#34; data-lang=&#34;kusto&#34;&gt;resources
+| where type == &amp;quot;microsoft.network/virtualnetworks&amp;quot;
+| extend subnets = todynamic(properties.subnets)
+| mvexpand subnets
+| project VNetname=name,SubnetName=subnets.name, resourceGroup, location, CIDR=subnets.properties.addressPrefix, id
+| where SubnetName == &#39;GatewaySubnet&#39;
+| extend subnetMask = split(CIDR,&#39;/&#39;)[1]
+| where subnetMask &amp;gt;= 27
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Use IP addresses from the address allocation for private internets (RFC 1918).&lt;/strong&gt;&lt;a class=&#34;link&#34; href=&#34;https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-ip-addressing&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Plan for IP addressing&lt;/a&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-kusto&#34; data-lang=&#34;kusto&#34;&gt;resources | where type == &#39;microsoft.network/virtualnetworks&#39; | extend addressSpace = todynamic(properties.addressSpace) | extend addressPrefix = todynamic(properties.addressSpace.addressPrefixes) | mvexpand addressSpace | mvexpand addressPrefix | project name, id, location, resourceGroup, subscriptionId, cidr = addressPrefix | where cidr matches regex @&#39;^(?:10|127|172\\.(?:1[6-9]|2[0-9]|3[01])|192\\.168)\\..*&#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-kusto&#34; data-lang=&#34;kusto&#34;&gt;resources | where type == &#39;microsoft.network/virtualnetworks&#39; | extend addressSpace = todynamic(properties.addressSpace) | extend addressPrefix = todynamic(properties.addressSpace.addressPrefixes) | mvexpand addressSpace | mvexpand addressPrefix | project name, id, location, resourceGroup, subscriptionId, cidr = addressPrefix | where not (cidr matches regex @&#39;^(?:10|127|172\\.(?:1[6-9]|2[0-9]|3[01])|192\\.168)\\..*&#39;)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Don&amp;rsquo;t create unnecessarily large virtual networks (for example, /16) to ensure that IP address space isn&amp;rsquo;t wasted. &lt;a class=&#34;link&#34; href=&#34;https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-ip-addressing&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Plan for IP addressing&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-kusto&#34; data-lang=&#34;kusto&#34;&gt;resources | where type == &#39;microsoft.network/virtualnetworks&#39; | extend addressSpace = todynamic(properties.addressSpace) | extend addressPrefix = todynamic(properties.addressSpace.addressPrefixes) | mvexpand addressSpace | mvexpand addressPrefix | extend addressMask = split(addressPrefix,&#39;/&#39;)[1] | where addressMask &amp;gt; 16 | project name, id, subscriptionId, resourceGroup, addressPrefix
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-kusto&#34; data-lang=&#34;kusto&#34;&gt;resources | where type == &#39;microsoft.network/virtualnetworks&#39; | extend addressSpace = todynamic(properties.addressSpace) | extend addressPrefix = todynamic(properties.addressSpace.addressPrefixes) | mvexpand addressSpace | mvexpand addressPrefix | extend addressMask = split(addressPrefix,&#39;/&#39;)[1] | where addressMask &amp;lt;= 16 | project name, id, subscriptionId, resourceGroup, addressPrefix
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;management-groups&#34;&gt;Management Groups&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Keep the management group hierarchy reasonably flat, with no more than three to four levels ideally. This restriction reduces management overhead and complexity.&lt;/strong&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/enterprise-scale/management-group-and-subscription-organization&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Define a management group hierarchy&lt;/a&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-kusto&#34; data-lang=&#34;kusto&#34;&gt;resourcecontainers
+| where type == &amp;quot;microsoft.resources/subscriptions&amp;quot;
+| extend ManagementGroup = tostring(tags),mgmtChain = properties.managementGroupAncestorsChain
+| where array_length(mgmtChain) ==1
+|mvexpand mgmt=mgmtChain
+|project id, subName = name, subscriptionId, managedBy, managementGroupName = mgmt.displayName
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-kusto&#34; data-lang=&#34;kusto&#34;&gt;resourcecontainers
+| where type == &amp;quot;microsoft.resources/subscriptions&amp;quot;
+| extend ManagementGroup = tostring(tags),mgmtChain = properties.managementGroupAncestorsChain
+| where array_length(mgmtChain) &amp;gt;=4
+|mvexpand mgmt=mgmtChain
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Follow me for more.&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://twitter.com/fskelly&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Twitter&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://www.linkedin.com/in/fletcherkelly/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;LinkedIn&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Azure Resource Group Enterprise Scale Landing Zone queries</title>
         <link>https://cloudadventures.fskelly.com/p/azure-resource-group-enterprise-scale-landing-zone-queries/</link>
         <pubDate>Wed, 25 Aug 2021 05:58:18 +0200</pubDate>

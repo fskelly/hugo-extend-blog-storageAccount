@@ -3,36 +3,48 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://cloudadventures.fskelly.com/categories/azure/</loc>
-    <lastmod>2021-08-25T05:58:18+02:00</lastmod>
+    <lastmod>2021-12-09T08:00:00+00:00</lastmod>
   </url><url>
     <loc>https://cloudadventures.fskelly.com/tags/azure/</loc>
-    <lastmod>2021-08-25T05:58:18+02:00</lastmod>
+    <lastmod>2021-12-09T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cloudadventures.fskelly.com/p/azure-resource-graph-more-queries-for-networking-and-management-groups/</loc>
+    <lastmod>2021-12-09T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cloudadventures.fskelly.com/tags/blog/</loc>
+    <lastmod>2021-12-09T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cloudadventures.fskelly.com/categories/</loc>
+    <lastmod>2021-12-09T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cloudadventures.fskelly.com/tags/eslz/</loc>
+    <lastmod>2021-12-09T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cloudadventures.fskelly.com/</loc>
+    <lastmod>2021-12-09T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cloudadventures.fskelly.com/categories/management-group/</loc>
+    <lastmod>2021-12-09T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cloudadventures.fskelly.com/categories/networking/</loc>
+    <lastmod>2021-12-09T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cloudadventures.fskelly.com/post/</loc>
+    <lastmod>2021-12-09T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cloudadventures.fskelly.com/categories/resource-graph/</loc>
+    <lastmod>2021-12-09T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cloudadventures.fskelly.com/tags/resource-graph/</loc>
+    <lastmod>2021-12-09T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cloudadventures.fskelly.com/tags/</loc>
+    <lastmod>2021-12-09T08:00:00+00:00</lastmod>
   </url><url>
     <loc>https://cloudadventures.fskelly.com/p/azure-resource-group-enterprise-scale-landing-zone-queries/</loc>
     <lastmod>2021-08-25T05:58:18+02:00</lastmod>
   </url><url>
-    <loc>https://cloudadventures.fskelly.com/tags/blog/</loc>
-    <lastmod>2021-08-25T05:58:18+02:00</lastmod>
-  </url><url>
-    <loc>https://cloudadventures.fskelly.com/categories/</loc>
-    <lastmod>2021-08-25T05:58:18+02:00</lastmod>
-  </url><url>
-    <loc>https://cloudadventures.fskelly.com/</loc>
-    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://cloudadventures.fskelly.com/post/</loc>
-    <lastmod>2021-08-25T05:58:18+02:00</lastmod>
-  </url><url>
     <loc>https://cloudadventures.fskelly.com/tags/quick-post/</loc>
-    <lastmod>2021-08-25T05:58:18+02:00</lastmod>
-  </url><url>
-    <loc>https://cloudadventures.fskelly.com/categories/resource-graph/</loc>
-    <lastmod>2021-08-25T05:58:18+02:00</lastmod>
-  </url><url>
-    <loc>https://cloudadventures.fskelly.com/tags/resource-graph/</loc>
-    <lastmod>2021-08-25T05:58:18+02:00</lastmod>
-  </url><url>
-    <loc>https://cloudadventures.fskelly.com/tags/</loc>
     <lastmod>2021-08-25T05:58:18+02:00</lastmod>
   </url><url>
     <loc>https://cloudadventures.fskelly.com/tags/bicep/</loc>
