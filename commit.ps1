@@ -15,7 +15,6 @@ if (test-path $publicFolderPath) {
     git add .
     git commit -m $gitCommitMessage
     git push
-}
-else {
+} else {
     write-output "something went WRONG"
 }
