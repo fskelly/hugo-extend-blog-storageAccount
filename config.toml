@@ -93,7 +93,7 @@ link = "plugins/search/search.js"
 # home
 home = "Home"
 # logo
-logo = "images/logo.svg"
+logo = "images/logo.png"
 # meta data
 author = "Themefisher"
 description = "This is meta description"
@@ -120,8 +120,8 @@ expire_days = 2
 
 ####################### banner #######################################
 [params.banner]
-bgImage = "images/banner/banner-bg.svg"
-title = "Hi, I'm Fletcher Kelly. <br> Cloud Engineer and Advocate"
+#bgImage = "images/banner/banner-bg.svg"
+title = "Cloud Engineer and Advocate"
 image = "images/banner/illustration.svg"
 
 
