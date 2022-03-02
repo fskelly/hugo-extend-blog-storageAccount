@@ -1,8 +1,8 @@
 ############################ Default configuration #########################
-baseURL = "https://demo.gethugothemes.com/northendlab-light/examplesite/"
+baseURL = "https://cloudadvocate.fskelly.com"
 languageCode = "en-us"
 # site title 
-title = "Northendlab | Blog Template"
+title = "Cloud Engineer and Advocate"
 # theme
 theme = "northendlab-light"
 # post pagination
@@ -35,7 +35,12 @@ link = "plugins/search/mark.js"
 [[params.plugins.js]]
 link = "plugins/search/search.js"
 
+custom_css = ["css/custom.css"]
+[markup]
+  [markup.highlight]
+    noclasses = false
 
+    
 ########################### Navigation ###################################
 
 # main menu

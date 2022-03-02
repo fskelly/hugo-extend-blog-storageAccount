@@ -46,4 +46,19 @@
   {{ end }}
   <!-- End Google Tag Manager -->
 
+  // css 
+  {{ range .Site.Params.custom_css -}}
+      <link rel="stylesheet" href="{{ . | absURL }}">
+  {{- end }}
+
+<!-- // css -->
+<style type="text/css" media="screen">
+  @media (prefers-color-scheme: dark) { 
+    {{ partial "css/syntax-dark.css" . | safeCSS }}
+  }
+  @media (prefers-color-scheme: light) { 
+    {{ partial "css/syntax-light.css" . | safeCSS }} 
+  }
+  </style>
+
 </head>
