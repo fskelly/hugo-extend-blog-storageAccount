@@ -2,6 +2,21 @@
 
 This is the backend of my [Azure Storage Account based blog](https://cloudadventures.fskelly.com)
 
+## Create a new post
+
+I like to create my content based upon year  
+My folder structure looks like this  
+```bash
+content  
+|---post
+    |---year
+        |---postTitle.md
+```
+
+```bash
+hugo new post/{{year}}/{{postTitle}}.md
+```
+
 ## Current Process flow
 
 1. Create content locally with [Hugo](https://gohugo.io/), I am actuall using the extended version of Hugo based upon my [theme choice](https://github.com/CaiJimmy/hugo-theme-stack)

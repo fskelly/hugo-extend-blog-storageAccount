@@ -144,7 +144,7 @@ params:
     opengraph:
         twitter:
             # Your Twitter username
-            site:
+            site: fskelly
 
             # Available values: summary, summary_large_image
             card: summary_large_image
@@ -180,7 +180,15 @@ menu:
           params:
               ### For demonstration purpose, the home link will be open in a new tab
               newTab: true
-              icon: home
+              icon: home-svgrepo-com
+#        - identifier: AVS
+#          name: AVS
+#          url: /categories/azure-vmware-solution/
+#          weight: -90
+#          params:
+#              ### For demonstration purpose, the home link will be open in a new tab
+#              newTab: true
+#              icon: AVS
     
     social:
         - identifier: github
