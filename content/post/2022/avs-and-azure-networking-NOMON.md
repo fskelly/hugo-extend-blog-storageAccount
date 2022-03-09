@@ -1,7 +1,7 @@
 ---
 title: "I want to use Azure VMware Solution, what should I know about networking?"
 date: 2022-03-02T12:41:13Z
-draft: true
+draft: false
 categories:
     - Azure VMware Solution
 tags: 

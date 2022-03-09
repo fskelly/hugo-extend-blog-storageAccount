@@ -6,7 +6,39 @@
         <description>Recent content on Fletcher&#39;s Cloud Journey</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Thu, 09 Dec 2021 08:00:00 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 02 Mar 2022 12:41:13 +0000</lastBuildDate><atom:link href="https://cloudadventures.fskelly.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>I want to use Azure VMware Solution, what should I know about networking?</title>
+        <link>https://cloudadventures.fskelly.com/p/i-want-to-use-azure-vmware-solution-what-should-i-know-about-networking/</link>
+        <pubDate>Wed, 02 Mar 2022 12:41:13 +0000</pubDate>
+        
+        <guid>https://cloudadventures.fskelly.com/p/i-want-to-use-azure-vmware-solution-what-should-i-know-about-networking/</guid>
+        <description>&lt;p&gt;&lt;strong&gt;What else do I need to know when using Azure VMware Solution (AVS)?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Networking Edition&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I have been working with many customers over the last little while that are looking at Azure VMware Solution (AVS).&lt;/p&gt;
+&lt;p&gt;Often the idea and use case for the customer is correct. There are a few great reasons to use AVS. If you fit within the use cases, you are in for a real treat.&lt;/p&gt;
+&lt;p&gt;Deciding whether or not you are a fit is part of the equation, there is more to this scenario. Let&amp;rsquo;s dive in a bit more.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;You are using the Azure platform but on dedicated hardware.&lt;/li&gt;
+&lt;li&gt;You will probably want to extend the connection from AVS to your existing data centre. This will introduce &lt;a class=&#34;link&#34; href=&#34;https://docs.microsoft.com/en-us/azure/azure-vmware/tutorial-expressroute-global-reach-private-cloud&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Global Reach&lt;/a&gt; if connecting back to on-premises with an ExpressRoute.&lt;/li&gt;
+&lt;li&gt;You will most likely use &lt;a class=&#34;link&#34; href=&#34;https://docs.microsoft.com/en-us/azure/azure-vmware/configure-vmware-hcx&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;HCX&lt;/a&gt; as part of your migration.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;So what does all of the above mean?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Networking can start to get a little interesting as there would now be many routing paths over a combination of Layer 2 and Layer 3 connections.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Asymmetric routing can become a real issue.&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Accidental&amp;rdquo; latency can be very easily introduced.&lt;/li&gt;
+&lt;li&gt;Traffic flow may not flow as expected.&lt;/li&gt;
+&lt;li&gt;A PoC (proof of concept) is very important with this technology.&lt;/li&gt;
+&lt;li&gt;Migration planning with network segments in mind is key.&lt;/li&gt;
+&lt;li&gt;Migration should be as &amp;ldquo;short-term&amp;rdquo; as possible, the longer the migration takes, the more networking challenges and complexities will arise.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Guidance for networking can be found &lt;a class=&#34;link&#34; href=&#34;https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/eslz-network-topology-connectivity&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Azure Resource Graph - More queries for Networking and Management Groups</title>
         <link>https://cloudadventures.fskelly.com/p/azure-resource-graph-more-queries-for-networking-and-management-groups/</link>
         <pubDate>Thu, 09 Dec 2021 08:00:00 +0000</pubDate>

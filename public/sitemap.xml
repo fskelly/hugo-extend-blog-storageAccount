@@ -2,6 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://cloudadventures.fskelly.com/tags/avs/</loc>
+    <lastmod>2022-03-02T12:41:13+00:00</lastmod>
+  </url><url>
+    <loc>https://cloudadventures.fskelly.com/categories/azure-vmware-solution/</loc>
+    <lastmod>2022-03-02T12:41:13+00:00</lastmod>
+  </url><url>
+    <loc>https://cloudadventures.fskelly.com/categories/</loc>
+    <lastmod>2022-03-02T12:41:13+00:00</lastmod>
+  </url><url>
+    <loc>https://cloudadventures.fskelly.com/</loc>
+    <lastmod>2022-03-02T12:41:13+00:00</lastmod>
+  </url><url>
+    <loc>https://cloudadventures.fskelly.com/p/i-want-to-use-azure-vmware-solution-what-should-i-know-about-networking/</loc>
+    <lastmod>2022-03-02T12:41:13+00:00</lastmod>
+  </url><url>
+    <loc>https://cloudadventures.fskelly.com/tags/networking/</loc>
+    <lastmod>2022-03-02T12:41:13+00:00</lastmod>
+  </url><url>
+    <loc>https://cloudadventures.fskelly.com/post/</loc>
+    <lastmod>2022-03-02T12:41:13+00:00</lastmod>
+  </url><url>
+    <loc>https://cloudadventures.fskelly.com/tags/</loc>
+    <lastmod>2022-03-02T12:41:13+00:00</lastmod>
+  </url><url>
     <loc>https://cloudadventures.fskelly.com/categories/azure/</loc>
     <lastmod>2021-12-09T08:00:00+00:00</lastmod>
   </url><url>
@@ -14,13 +38,7 @@
     <loc>https://cloudadventures.fskelly.com/tags/blog/</loc>
     <lastmod>2021-12-09T08:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cloudadventures.fskelly.com/categories/</loc>
-    <lastmod>2021-12-09T08:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://cloudadventures.fskelly.com/tags/eslz/</loc>
-    <lastmod>2021-12-09T08:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://cloudadventures.fskelly.com/</loc>
     <lastmod>2021-12-09T08:00:00+00:00</lastmod>
   </url><url>
     <loc>https://cloudadventures.fskelly.com/categories/management-group/</loc>
@@ -29,16 +47,10 @@
     <loc>https://cloudadventures.fskelly.com/categories/networking/</loc>
     <lastmod>2021-12-09T08:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cloudadventures.fskelly.com/post/</loc>
-    <lastmod>2021-12-09T08:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://cloudadventures.fskelly.com/categories/resource-graph/</loc>
     <lastmod>2021-12-09T08:00:00+00:00</lastmod>
   </url><url>
     <loc>https://cloudadventures.fskelly.com/tags/resource-graph/</loc>
-    <lastmod>2021-12-09T08:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://cloudadventures.fskelly.com/tags/</loc>
     <lastmod>2021-12-09T08:00:00+00:00</lastmod>
   </url><url>
     <loc>https://cloudadventures.fskelly.com/p/azure-resource-group-enterprise-scale-landing-zone-queries/</loc>
@@ -111,9 +123,6 @@
     <lastmod>2019-08-07T16:33:36+02:00</lastmod>
   </url><url>
     <loc>https://cloudadventures.fskelly.com/p/importance-of-networking-azure/</loc>
-    <lastmod>2019-08-07T16:33:36+02:00</lastmod>
-  </url><url>
-    <loc>https://cloudadventures.fskelly.com/tags/networking/</loc>
     <lastmod>2019-08-07T16:33:36+02:00</lastmod>
   </url><url>
     <loc>https://cloudadventures.fskelly.com/tags/cloud-tools/</loc>
